@@ -1,0 +1,144 @@
+"use client"
+
+import { useState, useEffect } from "react"
+import Link from "next/link"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Clock, ArrowRight } from "lucide-react"
+import type { BlogPost } from "@/types"
+
+export function FeaturedPosts() {
+  const [posts, setPosts] = useState<BlogPost[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    async function fetchPosts() {
+      try {
+        // En un entorno real, esto vendría de la API
+        // Simulamos datos para la preview
+        setPosts([
+          {
+            slug: "seguridad-blockchain",
+            title: "Seguridad en la Blockchain: Protegiendo tus Activos Digitales",
+            excerpt:
+              "Descubre las mejores prácticas para mantener tus criptomonedas seguras y protegidas contra ataques.",
+            content: "",
+            date: "2025-05-20",
+            author: "Ana Martínez",
+            category: "seguridad",
+            tags: ["blockchain", "seguridad", "criptomonedas"],
+            readTime: 8,
+            featured: true,
+          },
+          {
+            slug: "encriptacion-end-to-end",
+            title: "Encriptación End-to-End: La Clave para Comunicaciones Seguras",
+            excerpt: "Análisis profundo de los protocolos de encriptación más seguros para tus comunicaciones diarias.",
+            content: "",
+            date: "2025-05-15",
+            author: "Carlos Segura",
+            category: "encriptacion",
+            tags: ["encriptación", "privacidad", "comunicaciones"],
+            readTime: 6,
+            featured: true,
+          },
+          {
+            slug: "tendencias-crypto-2025",
+            title: "Tendencias en Criptomonedas para 2025",
+            excerpt: "Las principales tendencias que definirán el mercado de criptomonedas este año.",
+            content: "",
+            date: "2025-05-10",
+            author: "Elena Blockchain",
+            category: "criptomonedas",
+            tags: ["tendencias", "mercado", "inversiones"],
+            readTime: 5,
+            featured: true,
+          },
+        ])
+      } catch (error) {
+        console.error("Error cargando posts:", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchPosts()
+  }, [])
+
+  if (loading) {
+    return (
+      <section className="container py-16">
+        <h2 className="text-3xl font-bold tracking-tight mb-8">Artículos Destacados</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[1, 2, 3].map((i) => (
+            <Card key={i} className="animate-pulse">
+              <CardHeader className="h-48 bg-muted" />
+              <CardContent className="space-y-2 pt-6">
+                <div className="h-6 bg-muted rounded" />
+                <div className="h-4 bg-muted rounded w-3/4" />
+                <div className="h-4 bg-muted rounded" />
+                <div className="h-4 bg-muted rounded w-1/2" />
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  return (
+    <section className="container py-16">
+      <div className="flex justify-between items-center mb-8">
+        <h2 className="text-3xl font-bold tracking-tight">Artículos Destacados</h2>
+        <Button asChild variant="ghost" className="group">
+          <Link href="/blog">
+            Ver todos
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </Button>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.map((post) => (
+          <Card key={post.slug} className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md">
+            <div className="aspect-video relative bg-muted">
+              <img
+                src={`/placeholder.svg?height=250&width=500&query=${post.title}`}
+                alt={post.title}
+                className="object-cover w-full h-full"
+              />
+            </div>
+            <CardHeader className="pb-2">
+              <div className="flex items-center justify-between mb-2">
+                <Badge variant="outline" className="text-xs capitalize">
+                  {post.category}
+                </Badge>
+                <div className="flex items-center text-xs text-muted-foreground">
+                  <Clock className="mr-1 h-3 w-3" />
+                  <span>{post.readTime} min</span>
+                </div>
+              </div>
+              <CardTitle className="line-clamp-2">
+                <Link href={`/blog/${post.slug}`} className="hover:text-primary transition-colors">
+                  {post.title}
+                </Link>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="pb-2 flex-grow">
+              <p className="text-muted-foreground line-clamp-3">{post.excerpt}</p>
+            </CardContent>
+            <CardFooter className="pt-2">
+              <div className="flex justify-between items-center w-full">
+                <span className="text-xs text-muted-foreground">{new Date(post.date).toLocaleDateString()}</span>
+                <Button asChild variant="ghost" size="sm" className="text-xs">
+                  <Link href={`/blog/${post.slug}`}>Leer más</Link>
+                </Button>
+              </div>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    </section>
+  )
+}
