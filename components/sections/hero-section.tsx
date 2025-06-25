@@ -138,13 +138,13 @@ export function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.7, duration: 0.7 }}
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden ">
               <img
-                src="/placeholder.svg?height=600&width=800&query=cybersecurity expert with digital encryption visualization"
+                src="/hero.png"      
                 alt="Experto en ciberseguridad"
                 className="w-full h-auto"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              <div className="absolute inset-0 " />
             </div>
 
             {/* Floating Elements */}
