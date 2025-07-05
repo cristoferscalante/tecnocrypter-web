@@ -66,7 +66,7 @@ export function SecuritySection() {
             <div className="relative rounded-2xl overflow-hidden shadow-xl border">
               <div className="aspect-square">
                 <img
-                  src="/placeholder.svg?height=600&width=600&query=3D cybersecurity shield with digital lock and encryption visualization"
+                  src="/11.png"
                   alt="Seguridad multicapa"
                   className="w-full h-full object-cover"
                 />
