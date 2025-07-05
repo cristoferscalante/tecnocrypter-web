@@ -63,46 +63,14 @@ export function SecuritySection() {
           </AnimatedSection>
 
           <AnimatedSection direction="left" className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl border">
+            <div className="relative">
               <div className="aspect-square">
                 <img
                   src="/11.png"
                   alt="Seguridad multicapa"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
-
-              {/* Animated overlay elements */}
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
-              />
-
-              {/* Animated security elements */}
-              {[...Array(5)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute w-full h-full border-4 border-primary/10 rounded-2xl"
-                  initial={{
-                    opacity: 0,
-                    scale: 0.8 + i * 0.05,
-                  }}
-                  whileInView={{
-                    opacity: 0.3 - i * 0.05,
-                    scale: 1 + i * 0.05,
-                  }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 2,
-                    delay: 0.3 + i * 0.2,
-                    repeat: Number.POSITIVE_INFINITY,
-                    repeatType: "reverse",
-                  }}
-                />
-              ))}
             </div>
 
             {/* Floating badges */}
