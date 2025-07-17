@@ -54,7 +54,7 @@ export function FeaturesSection() {
   ]
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-background/95">
+    <section className="py-24 bg-gradient-to-b from-background/10 to-background/5">
       <div className="container">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Características de Seguridad de Vanguardia</h2>
@@ -69,7 +69,7 @@ export function FeaturesSection() {
             <AnimatedSection
               key={index}
               delay={0.1 * index}
-              className="p-6 rounded-xl border bg-card/50 backdrop-blur-sm hover:bg-card/80 transition-colors"
+              className="p-6 rounded-xl border bg-card/30 backdrop-blur-sm hover:bg-card/50 transition-colors"
             >
               <div className="rounded-full w-12 h-12 flex items-center justify-center bg-primary/10 mb-4">
                 <feature.icon className="h-6 w-6 text-primary" />

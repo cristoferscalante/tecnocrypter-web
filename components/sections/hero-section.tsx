@@ -25,7 +25,7 @@ export function HeroSection() {
   ]
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 min-h-[90vh] flex items-center">
+    <section className="relative overflow-hidden bg-gradient-to-br from-background/20 via-background/10 to-primary/5 min-h-[90vh] flex items-center">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
