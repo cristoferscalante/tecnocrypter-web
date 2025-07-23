@@ -32,7 +32,7 @@ export function TestimonialsSection() {
   ]
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-primary/5 relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-b from-background/5 to-primary/3 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -72,7 +72,7 @@ export function TestimonialsSection() {
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <AnimatedSection key={index} delay={0.1 * index} className="h-full">
-              <Card className="h-full bg-card/70 backdrop-blur-sm">
+              <Card className="h-full bg-card/30 backdrop-blur-sm">
                 <CardContent className="p-6 flex flex-col h-full">
                   <Quote className="h-10 w-10 text-primary/20 mb-4" />
                   <p className="text-lg mb-6 flex-grow">{testimonial.quote}</p>

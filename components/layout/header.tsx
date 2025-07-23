@@ -3,9 +3,10 @@
 import { useState } from "react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
-import { Moon, Sun, Menu, X, Shield, Search } from "lucide-react"
+import { Moon, Sun, Menu, X, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import Image from "next/image"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,11 +22,17 @@ export function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/30 backdrop-blur supports-[backdrop-filter]:bg-background/20 relative">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <Shield className="h-8 w-8 text-primary" />
+          <Image 
+            src="/Tecno.svg" 
+            alt="TecnoCrypter Logo" 
+            width={32} 
+            height={32} 
+            className="h-8 w-8"
+          />
           <span className="text-xl font-bold">
             Tecno<span className="text-primary">Crypter</span>
           </span>

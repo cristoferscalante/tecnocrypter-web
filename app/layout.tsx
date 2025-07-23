@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/providers/theme-provider"
 import { MotionProvider } from "@/components/providers/motion-provider"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
+import { MatrixBackground } from "@/components/ui/matrix-background"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -35,8 +36,9 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <MotionProvider>
             <div className="relative flex min-h-screen flex-col">
+              <MatrixBackground />
               <Header />
-              <main className="flex-1">{children}</main>
+              <main className="flex-1 relative z-10">{children}</main>
               <Footer />
             </div>
           </MotionProvider>

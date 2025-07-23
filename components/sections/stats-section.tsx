@@ -27,7 +27,7 @@ export function StatsSection() {
             <AnimatedSection
               key={index}
               delay={0.1 * index}
-              className="text-center p-6 rounded-xl border bg-card/50 backdrop-blur-sm"
+              className="text-center p-6 rounded-xl border bg-card/30 backdrop-blur-sm"
             >
               <motion.div
                 initial={{ scale: 0 }}

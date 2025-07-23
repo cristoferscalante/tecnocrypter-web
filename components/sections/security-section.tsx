@@ -15,7 +15,7 @@ export function SecuritySection() {
   ]
 
   return (
-    <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-background relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-primary/3 via-background/10 to-background/5 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <svg className="absolute top-0 left-0 w-full h-full opacity-5" viewBox="0 0 800 800">
@@ -75,7 +75,7 @@ export function SecuritySection() {
 
             {/* Floating badges */}
             <motion.div
-              className="absolute -top-6 -right-6 bg-card shadow-lg rounded-lg p-3 border"
+              className="absolute -top-6 -right-6 bg-card/40 backdrop-blur-sm shadow-lg rounded-lg p-3 border"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -88,7 +88,7 @@ export function SecuritySection() {
             </motion.div>
 
             <motion.div
-              className="absolute -bottom-6 -left-6 bg-card shadow-lg rounded-lg p-3 border"
+              className="absolute -bottom-6 -left-6 bg-card/40 backdrop-blur-sm shadow-lg rounded-lg p-3 border"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
