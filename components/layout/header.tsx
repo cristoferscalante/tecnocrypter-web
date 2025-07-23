@@ -14,11 +14,9 @@ export function Header() {
   const { theme, setTheme } = useTheme()
 
   const navigation = [
-    { name: "Inicio", href: "/" },
     { name: "Seguridad", href: "/seguridad" },
     { name: "Blog", href: "/blog" },
     { name: "Productos", href: "/productos" },
-    { name: "Contacto", href: "/contacto" },
   ]
 
   return (
@@ -49,6 +47,9 @@ export function Header() {
 
         {/* Actions */}
         <div className="flex items-center space-x-2">
+
+          {/* Contacto icono*/}
+
           {/* Search */}
           <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)} className="hidden sm:flex">
             <Search className="h-4 w-4" />
