@@ -25,13 +25,13 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/30 backdrop-blur supports-[backdrop-filter]:bg-background/20 relative">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-4">
           <Image 
             src="/Tecno.svg" 
             alt="TecnoCrypter Logo" 
-            width={32} 
-            height={32} 
-            className="h-8 w-8"
+            width={70} 
+            height={70} 
+            className="h-[70px] w-[70px]"
           />
           <span className="text-xl font-bold">
             Tecno<span className="text-primary">Crypter</span>
