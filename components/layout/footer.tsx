@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Shield } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -9,7 +9,13 @@ export function Footer() {
           {/* Logo y descripción */}
           <div className="md:col-span-1 space-y-4">
             <div className="flex items-center space-x-2">
-              <Shield className="h-6 w-6 text-primary" />
+              <Image 
+                src="/Tecno.svg" 
+                alt="TecnoCrypter Logo" 
+                width={24} 
+                height={24} 
+                className="h-6 w-6"
+              />
               <span className="text-lg font-bold">
                 Tecno<span className="text-primary">Crypter</span>
               </span>
