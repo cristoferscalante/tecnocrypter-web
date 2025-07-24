@@ -6,6 +6,7 @@ import { MotionProvider } from "@/components/providers/motion-provider"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { MatrixBackground } from "@/components/ui/matrix-background"
+import { Toaster } from "@/components/ui/sonner"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -40,6 +41,7 @@ export default function RootLayout({
               <Header />
               <main className="flex-1 relative z-10">{children}</main>
               <Footer />
+              <Toaster />
             </div>
           </MotionProvider>
         </ThemeProvider>

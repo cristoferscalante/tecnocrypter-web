@@ -7,84 +7,44 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Clock, ArrowRight } from "lucide-react"
 import type { BlogPost } from "@/types"
+import { useBlog } from "@/hooks/use-blog"
 
 export function FeaturedPosts() {
-  const [posts, setPosts] = useState<BlogPost[]>([])
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    async function fetchPosts() {
-      try {
-        // En un entorno real, esto vendría de la API
-        // Simulamos datos para la preview
-        setPosts([
-          {
-            slug: "seguridad-blockchain",
-            title: "Seguridad en la Blockchain: Protegiendo tus Activos Digitales",
-            excerpt:
-              "Descubre las mejores prácticas para mantener tus criptomonedas seguras y protegidas contra ataques.",
-            content: "",
-            date: "2025-05-20",
-            author: "Ana Martínez",
-            category: "seguridad",
-            tags: ["blockchain", "seguridad", "criptomonedas"],
-            readTime: 8,
-            featured: true,
-          },
-          {
-            slug: "encriptacion-end-to-end",
-            title: "Encriptación End-to-End: La Clave para Comunicaciones Seguras",
-            excerpt: "Análisis profundo de los protocolos de encriptación más seguros para tus comunicaciones diarias.",
-            content: "",
-            date: "2025-05-15",
-            author: "Carlos Segura",
-            category: "encriptacion",
-            tags: ["encriptación", "privacidad", "comunicaciones"],
-            readTime: 6,
-            featured: true,
-          },
-          {
-            slug: "tendencias-crypto-2025",
-            title: "Tendencias en Criptomonedas para 2025",
-            excerpt: "Las principales tendencias que definirán el mercado de criptomonedas este año.",
-            content: "",
-            date: "2025-05-10",
-            author: "Elena Blockchain",
-            category: "criptomonedas",
-            tags: ["tendencias", "mercado", "inversiones"],
-            readTime: 5,
-            featured: true,
-          },
-        ])
-      } catch (error) {
-        console.error("Error cargando posts:", error)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchPosts()
-  }, [])
+  const { posts, loading, error, getFeaturedPosts } = useBlog()
+  const featuredPosts = getFeaturedPosts().slice(0, 3)
 
   if (loading) {
     return (
-      <section className="container py-16">
-        <h2 className="text-3xl font-bold tracking-tight mb-8">Artículos Destacados</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3].map((i) => (
-            <Card key={i} className="animate-pulse">
-              <CardHeader className="h-48 bg-muted" />
-              <CardContent className="space-y-2 pt-6">
-                <div className="h-6 bg-muted rounded" />
-                <div className="h-4 bg-muted rounded w-3/4" />
-                <div className="h-4 bg-muted rounded" />
-                <div className="h-4 bg-muted rounded w-1/2" />
-              </CardContent>
-            </Card>
-          ))}
+      <section className="py-16 bg-muted/50">
+        <div className="container">
+          <div className="max-w-2xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Artículos Destacados</h2>
+            <p className="text-muted-foreground">
+              Los últimos insights sobre seguridad, encriptación y criptomonedas.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3].map((i) => (
+              <Card key={i} className="animate-pulse">
+                <div className="aspect-video bg-muted" />
+                <CardHeader className="space-y-2">
+                  <div className="h-4 bg-muted rounded w-3/4" />
+                  <div className="h-6 bg-muted rounded" />
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <div className="h-4 bg-muted rounded" />
+                  <div className="h-4 bg-muted rounded w-2/3" />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
     )
+  }
+
+  if (error || featuredPosts.length === 0) {
+    return null // No mostrar la sección si hay error o no hay posts destacados
   }
 
   return (
@@ -100,7 +60,7 @@ export function FeaturedPosts() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {posts.map((post) => (
+        {featuredPosts.map((post) => (
           <Card key={post.slug} className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md">
             <div className="aspect-video relative bg-muted">
               <img
