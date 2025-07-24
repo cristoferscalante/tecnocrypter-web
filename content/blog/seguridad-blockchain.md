@@ -1,11 +1,12 @@
 ---
 title: "Seguridad en la Blockchain: Protegiendo tus Activos Digitales"
 excerpt: "Descubre las mejores prácticas para mantener tus criptomonedas seguras y protegidas contra ataques."
-date: "2025-01-20"
-author: "Ana Martínez"
+date: "2025-07-24"
+author: "V1TR0"
 category: "seguridad"
 tags: ["blockchain", "seguridad", "criptomonedas"]
 featured: true
+image: "/blogs/seguridad_en_la_blockchain.webp"
 ---
 
 # Seguridad en la Blockchain: Protegiendo tus Activos Digitales

@@ -6,6 +6,7 @@ author: "Roberto Seguridad"
 category: "seguridad"
 tags: ["phishing", "ciberseguridad", "prevención"]
 featured: false
+image: "/blogs/ataques_phishing_avanzados.webp"
 ---
 
 # Cómo Detectar y Prevenir Ataques de Phishing Avanzados

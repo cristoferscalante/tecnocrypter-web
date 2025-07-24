@@ -171,7 +171,7 @@ export default function BlogPage() {
                 <Card key={post.slug} className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md">
                   <div className="aspect-video relative bg-muted">
                     <img
-                      src={`/placeholder.svg?height=250&width=500&query=${post.title}`}
+                      src={post.image || `/placeholder.svg?height=250&width=500&query=${post.title}`}
                       alt={post.title}
                       className="object-cover w-full h-full"
                     />
