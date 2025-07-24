@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
-import { Moon, Sun, Menu, X, Search } from "lucide-react"
+import { Moon, Sun, Menu, X, Search, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Image from "next/image"
@@ -49,6 +49,11 @@ export function Header() {
         <div className="flex items-center space-x-2">
 
           {/* Contacto icono*/}
+          <Link href="/contacto">
+          <Button variant="ghost" size="icon" className="hidden sm:flex">
+            <Phone className="h-4 w-4" />
+          </Button>
+          </Link>
 
           {/* Search */}
           <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)} className="hidden sm:flex">
