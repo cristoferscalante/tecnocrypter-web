@@ -1,6 +1,7 @@
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
+import { marked } from "marked"
 import type { BlogPost } from "@/types"
 
 const postsDirectory = path.join(process.cwd(), "content/blog")
@@ -42,11 +43,20 @@ export class BlogService {
       const fileContents = fs.readFileSync(fullPath, "utf8")
       const { data, content } = matter(fileContents)
 
+      // Configurar marked para mejor renderizado
+      marked.setOptions({
+        breaks: true,
+        gfm: true,
+      })
+
+      // Convertir markdown a HTML
+      const htmlContent = await marked(content)
+
       return {
         slug,
         title: data.title || "Sin título",
         excerpt: data.excerpt || content.substring(0, 160) + "...",
-        content,
+        content: htmlContent,
         date: data.date || new Date().toISOString(),
         author: data.author || "CriptoSecure Team",
         category: data.category || "seguridad",

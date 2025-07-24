@@ -1,19 +1,25 @@
+"use client"
+
 import type { Metadata } from "next"
 import Link from "next/link"
+import { useState } from "react"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Clock, Search } from "lucide-react"
+import { useBlog } from "@/hooks/use-blog"
+import type { BlogPost } from "@/types"
 
-export const metadata: Metadata = {
-  title: "Blog | TecnoCrypter",
-  description: "Artículos sobre seguridad cibernética, encriptación y criptomonedas.",
-}
+// Note: metadata export removed due to 'use client' directive
+// This should be handled at layout level or with generateMetadata
 
 export default function BlogPage() {
-  // Datos de ejemplo para la página
+  const { posts, loading, error, getPostsByCategory, searchPosts } = useBlog()
+  const [searchQuery, setSearchQuery] = useState("")
+  const [selectedCategory, setSelectedCategory] = useState("todos")
+
   const categories = [
     { id: "todos", name: "Todos" },
     { id: "seguridad", name: "Seguridad" },
@@ -22,72 +28,69 @@ export default function BlogPage() {
     { id: "noticias", name: "Noticias" },
   ]
 
-  const posts = [
-    {
-      slug: "seguridad-blockchain",
-      title: "Seguridad en la Blockchain: Protegiendo tus Activos Digitales",
-      excerpt: "Descubre las mejores prácticas para mantener tus criptomonedas seguras y protegidas contra ataques.",
-      date: "2025-05-20",
-      author: "Ana Martínez",
-      category: "seguridad",
-      tags: ["blockchain", "seguridad", "criptomonedas"],
-      readTime: 8,
-      featured: true,
-    },
-    {
-      slug: "encriptacion-end-to-end",
-      title: "Encriptación End-to-End: La Clave para Comunicaciones Seguras",
-      excerpt: "Análisis profundo de los protocolos de encriptación más seguros para tus comunicaciones diarias.",
-      date: "2025-05-15",
-      author: "Carlos Segura",
-      category: "encriptacion",
-      tags: ["encriptación", "privacidad", "comunicaciones"],
-      readTime: 6,
-      featured: true,
-    },
-    {
-      slug: "tendencias-crypto-2025",
-      title: "Tendencias en Criptomonedas para 2025",
-      excerpt: "Las principales tendencias que definirán el mercado de criptomonedas este año.",
-      date: "2025-05-10",
-      author: "Elena Blockchain",
-      category: "criptomonedas",
-      tags: ["tendencias", "mercado", "inversiones"],
-      readTime: 5,
-      featured: true,
-    },
-    {
-      slug: "ataques-phishing-avanzados",
-      title: "Cómo Detectar y Prevenir Ataques de Phishing Avanzados",
-      excerpt: "Guía completa para identificar y protegerte contra las técnicas de phishing más sofisticadas.",
-      date: "2025-05-08",
-      author: "Roberto Seguridad",
-      category: "seguridad",
-      tags: ["phishing", "ciberseguridad", "prevención"],
-      readTime: 7,
-    },
-    {
-      slug: "wallets-hardware",
-      title: "Comparativa de Wallets Hardware: Seguridad Máxima para tus Criptomonedas",
-      excerpt: "Análisis detallado de las mejores carteras hardware del mercado para almacenar tus activos digitales.",
-      date: "2025-05-05",
-      author: "Laura Crypto",
-      category: "criptomonedas",
-      tags: ["wallets", "hardware", "almacenamiento"],
-      readTime: 9,
-    },
-    {
-      slug: "zero-knowledge-proofs",
-      title: "Zero-Knowledge Proofs: El Futuro de la Privacidad Digital",
-      excerpt:
-        "Cómo esta tecnología revolucionaria está transformando la forma en que verificamos información sin revelarla.",
-      date: "2025-05-01",
-      author: "Miguel Técnico",
-      category: "encriptacion",
-      tags: ["privacidad", "criptografía", "blockchain"],
-      readTime: 10,
-    },
-  ]
+  // Filtrar posts según la categoría seleccionada y búsqueda
+  const getFilteredPosts = () => {
+    let filteredPosts = posts
+
+    // Filtrar por búsqueda si hay query
+    if (searchQuery.trim()) {
+      filteredPosts = searchPosts(searchQuery)
+    }
+
+    // Filtrar por categoría si no es "todos"
+    if (selectedCategory !== "todos") {
+      filteredPosts = filteredPosts.filter(post => post.category === selectedCategory)
+    }
+
+    return filteredPosts
+  }
+
+  const filteredPosts = getFilteredPosts()
+  const popularPosts = posts.filter(post => post.featured).slice(0, 3)
+
+  if (loading) {
+    return (
+      <main className="min-h-screen py-12">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h1 className="text-4xl font-bold tracking-tight mb-4">Blog de Seguridad y Criptomonedas</h1>
+            <p className="text-xl text-muted-foreground">
+              Artículos, guías y noticias sobre seguridad cibernética, encriptación y el mundo crypto.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <Card key={i} className="animate-pulse">
+                <div className="aspect-video bg-muted" />
+                <CardHeader className="space-y-2">
+                  <div className="h-4 bg-muted rounded w-3/4" />
+                  <div className="h-6 bg-muted rounded" />
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <div className="h-4 bg-muted rounded" />
+                  <div className="h-4 bg-muted rounded w-2/3" />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </main>
+    )
+  }
+
+  if (error) {
+    return (
+      <main className="min-h-screen py-12">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl font-bold tracking-tight mb-4">Error al cargar el blog</h1>
+            <p className="text-xl text-muted-foreground mb-8">{error}</p>
+            <Button onClick={() => window.location.reload()}>Intentar de nuevo</Button>
+          </div>
+        </div>
+      </main>
+    )
+  }
 
   return (
     <main className="min-h-screen py-12">
@@ -104,20 +107,27 @@ export default function BlogPage() {
           <div className="w-full md:w-1/4 space-y-6">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input placeholder="Buscar artículos..." className="pl-10" />
+              <Input 
+                placeholder="Buscar artículos..." 
+                className="pl-10" 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
             </div>
 
             <div className="space-y-4">
               <h3 className="font-medium">Categorías</h3>
               <div className="space-y-2">
                 {categories.map((category) => (
-                  <Link
+                  <button
                     key={category.id}
-                    href={`/blog?categoria=${category.id}`}
-                    className="block py-2 px-3 rounded-md hover:bg-muted transition-colors"
+                    onClick={() => setSelectedCategory(category.id)}
+                    className={`block w-full text-left py-2 px-3 rounded-md hover:bg-muted transition-colors ${
+                      selectedCategory === category.id ? 'bg-muted font-medium' : ''
+                    }`}
                   >
                     {category.name}
-                  </Link>
+                  </button>
                 ))}
               </div>
             </div>
@@ -125,7 +135,7 @@ export default function BlogPage() {
             <div className="space-y-4">
               <h3 className="font-medium">Artículos Populares</h3>
               <div className="space-y-4">
-                {posts.slice(0, 3).map((post) => (
+                {popularPosts.map((post) => (
                   <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
                     <h4 className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">
                       {post.title}
@@ -139,7 +149,7 @@ export default function BlogPage() {
 
           {/* Main Content */}
           <div className="w-full md:w-3/4">
-            <Tabs defaultValue="todos" className="mb-8">
+            <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="mb-8">
               <TabsList>
                 {categories.map((category) => (
                   <TabsTrigger key={category.id} value={category.id}>
@@ -150,7 +160,14 @@ export default function BlogPage() {
             </Tabs>
 
             <div className="grid md:grid-cols-2 gap-6">
-              {posts.map((post) => (
+              {filteredPosts.length === 0 ? (
+                <div className="col-span-2 text-center py-12">
+                  <p className="text-muted-foreground text-lg">
+                    {searchQuery ? `No se encontraron artículos para "${searchQuery}"` : 'No hay artículos en esta categoría'}
+                  </p>
+                </div>
+              ) : (
+                filteredPosts.map((post) => (
                 <Card key={post.slug} className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md">
                   <div className="aspect-video relative bg-muted">
                     <img
@@ -187,7 +204,8 @@ export default function BlogPage() {
                     </div>
                   </CardFooter>
                 </Card>
-              ))}
+                ))
+              )}
             </div>
 
             <div className="mt-8 flex justify-center">
