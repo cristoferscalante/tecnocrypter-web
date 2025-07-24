@@ -40,11 +40,18 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
         publishedTime: post.date,
         authors: [post.author],
         tags: post.tags,
+        images: post.image ? [{
+          url: post.image,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        }] : undefined,
       },
       twitter: {
         card: "summary_large_image",
         title: post.title,
         description: post.excerpt,
+        images: post.image ? [post.image] : undefined,
       },
     }
   } catch (error) {
@@ -166,6 +173,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
           <Separator className="mb-8" />
 
+          {/* Featured Image */}
+          {post.image && (
+            <div className="aspect-video relative bg-muted mb-8 rounded-lg overflow-hidden">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="object-cover w-full h-full"
+              />
+            </div>
+          )}
+
           {/* Article Content */}
           <div 
             className="prose prose-lg dark:prose-invert max-w-none"
@@ -201,7 +219,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedPosts.map((relatedPost) => (
                 <Card key={relatedPost.slug} className="overflow-hidden transition-all hover:shadow-md">
-                  <div className="aspect-video relative bg-muted" />
+                  <div className="aspect-video relative bg-muted">
+                    {relatedPost.image && (
+                      <img
+                        src={relatedPost.image}
+                        alt={relatedPost.title}
+                        className="object-cover w-full h-full"
+                      />
+                    )}
+                  </div>
                   <CardContent className="p-4">
                     <Badge className={`${getCategoryColor(relatedPost.category)} mb-2`}>
                       {relatedPost.category.charAt(0).toUpperCase() + relatedPost.category.slice(1)}

@@ -9,6 +9,7 @@ export interface BlogPost {
   tags: string[]
   readTime: number
   featured?: boolean
+  image?: string | null
 }
 
 export interface Product {

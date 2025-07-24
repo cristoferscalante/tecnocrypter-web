@@ -6,6 +6,7 @@ author: "Laura Crypto"
 category: "criptomonedas"
 tags: ["wallets", "hardware", "almacenamiento"]
 featured: false
+image: "/blogs/wallets_hardware.webp"
 ---
 
 # Comparativa de Wallets Hardware: Seguridad Máxima para tus Criptomonedas

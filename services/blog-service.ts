@@ -63,6 +63,7 @@ export class BlogService {
         tags: data.tags || [],
         readTime: this.calculateReadTime(content),
         featured: data.featured || false,
+        image: data.image || null,
       }
     } catch (error) {
       console.error(`Error al cargar post ${slug}:`, error)

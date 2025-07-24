@@ -1,11 +1,12 @@
 ---
 title: "Encriptación End-to-End: La Clave para Comunicaciones Seguras"
 excerpt: "Análisis profundo de los protocolos de encriptación más seguros para tus comunicaciones diarias."
-date: "2025-01-15"
-author: "Carlos Segura"
+date: "2025-07-24"
+author: "V1TR0"
 category: "encriptacion"
 tags: ["encriptación", "privacidad", "comunicaciones"]
 featured: true
+image: "/blogs/encriptacion_end_to_end.webp"
 ---
 
 # Encriptación End-to-End: La Clave para Comunicaciones Seguras
