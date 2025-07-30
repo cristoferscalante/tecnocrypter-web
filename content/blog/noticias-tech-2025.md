@@ -3,7 +3,7 @@ title: "5 Impactantes Noticias Tech que Están Redefiniendo el 2025"
 excerpt: "Desde una guerra de billones en IA hasta una pelota inteligente en la NBA y el temor que causa GPT‑5, descubre las noticias que están marcando el rumbo tecnológico del año."
 date: "2025-07-29"
 author: "V1TR0"
-category: "tecnología"
+category: "noticias"
 tags: ["inteligencia artificial", "guerra de IA", "pelota inteligente NBA", "venta de acciones Nvidia", "fabricación smartphones India", "GPT-5 riesgos"]
 featured: true
 image: "/blogs/noticias_tech_2025.webp"
