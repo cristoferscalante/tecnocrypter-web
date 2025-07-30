@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, ShoppingCart } from "lucide-react"
 import type { Product } from "@/types"
+import { ProductService } from "@/services/product-service"
 
 export function ProductShowcase() {
   const [products, setProducts] = useState<Product[]>([])
@@ -15,65 +16,8 @@ export function ProductShowcase() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        // En un entorno real, esto vendría de la API
-        // Simulamos datos para la preview
-        setProducts([
-          {
-            id: "secure-vpn-1",
-            name: "SecureVPN Premium",
-            description: "VPN de alta seguridad con encriptación de grado militar y política de no logs.",
-            price: 99.99,
-            cryptoPrice: {
-              btc: 0.0025,
-              eth: 0.035,
-              usdt: 99.99,
-            },
-            category: "vpn",
-            vendor: "CryptoSecure",
-            features: ["Encriptación AES-256", "Sin logs", "Servidores en 90 países", "Hasta 10 dispositivos"],
-            images: ["/placeholder.svg?height=300&width=500&query=VPN secure connection"],
-          },
-          {
-            id: "password-manager-1",
-            name: "CryptoPass Manager",
-            description: "Gestor de contraseñas con encriptación de extremo a extremo y generador de claves seguras.",
-            price: 79.99,
-            cryptoPrice: {
-              btc: 0.002,
-              eth: 0.028,
-              usdt: 79.99,
-            },
-            category: "password-manager",
-            vendor: "CryptoSecure",
-            features: [
-              "Encriptación Zero-Knowledge",
-              "Autenticación 2FA",
-              "Sincronización en la nube",
-              "Alertas de seguridad",
-            ],
-            images: ["/placeholder.svg?height=300&width=500&query=Password manager secure vault"],
-          },
-          {
-            id: "secure-messenger-1",
-            name: "SecureChat Messenger",
-            description: "Mensajería instantánea con encriptación de extremo a extremo y mensajes autodestructivos.",
-            price: 49.99,
-            cryptoPrice: {
-              btc: 0.0012,
-              eth: 0.018,
-              usdt: 49.99,
-            },
-            category: "messaging",
-            vendor: "SecureComm",
-            features: [
-              "Encriptación E2E",
-              "Mensajes autodestructivos",
-              "Verificación de identidad",
-              "Sin almacenamiento en servidores",
-            ],
-            images: ["/placeholder.svg?height=300&width=500&query=Encrypted messaging app"],
-          },
-        ])
+        const productsData = await ProductService.getFeaturedProducts(3)
+        setProducts(productsData)
       } catch (error) {
         console.error("Error cargando productos:", error)
       } finally {
@@ -122,7 +66,7 @@ export function ProductShowcase() {
           <Card key={product.id} className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md">
             <div className="aspect-video relative bg-muted">
               <img
-                src={product.images[0] || "/placeholder.svg"}
+                src={product.images[0]?.url || "/placeholder.svg"}
                 alt={product.name}
                 className="object-cover w-full h-full"
               />
@@ -162,7 +106,7 @@ export function ProductShowcase() {
                 <div className="flex flex-col">
                   <span className="font-bold text-lg">${product.price.toFixed(2)}</span>
                   <span className="text-xs text-muted-foreground">
-                    {product.cryptoPrice.btc.toFixed(4)} BTC / {product.cryptoPrice.eth.toFixed(3)} ETH
+                    {product.crypto_price_btc.toFixed(4)} BTC / {product.crypto_price_eth.toFixed(3)} ETH
                   </span>
                 </div>
                 <Button asChild size="sm">

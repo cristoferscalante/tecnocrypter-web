@@ -1,0 +1,72 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#075985;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#mapBg)"/>
+  
+  <!-- World Map Outline -->
+  <g fill="#1e40af" opacity="0.3">
+    <!-- North America -->
+    <path d="M80 80 L120 70 L140 90 L130 120 L90 130 Z"/>
+    <!-- Europe -->
+    <path d="M200 70 L240 65 L250 85 L230 100 L210 95 Z"/>
+    <!-- Asia -->
+    <path d="M280 60 L350 55 L370 80 L340 110 L300 105 Z"/>
+    <!-- South America -->
+    <path d="M100 150 L130 140 L140 180 L120 200 L110 190 Z"/>
+    <!-- Africa -->
+    <path d="M220 120 L250 115 L260 160 L240 180 L225 170 Z"/>
+    <!-- Australia -->
+    <path d="M320 180 L350 175 L360 190 L340 200 L325 195 Z"/>
+  </g>
+  
+  <!-- Server Locations -->
+  <circle cx="100" cy="95" r="8" fill="#10b981" opacity="0.8"/>
+  <circle cx="100" cy="95" r="4" fill="#ffffff"/>
+  <text x="100" y="115" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">USA</text>
+  
+  <circle cx="220" cy="80" r="8" fill="#10b981" opacity="0.8"/>
+  <circle cx="220" cy="80" r="4" fill="#ffffff"/>
+  <text x="220" y="100" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">EU</text>
+  
+  <circle cx="320" cy="75" r="8" fill="#10b981" opacity="0.8"/>
+  <circle cx="320" cy="75" r="4" fill="#ffffff"/>
+  <text x="320" y="95" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">ASIA</text>
+  
+  <circle cx="240" cy="150" r="8" fill="#10b981" opacity="0.8"/>
+  <circle cx="240" cy="150" r="4" fill="#ffffff"/>
+  <text x="240" y="170" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">AFRICA</text>
+  
+  <circle cx="340" cy="185" r="8" fill="#10b981" opacity="0.8"/>
+  <circle cx="340" cy="185" r="4" fill="#ffffff"/>
+  <text x="340" y="205" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">OCEANIA</text>
+  
+  <!-- Connection Lines -->
+  <line x1="100" y1="95" x2="220" y2="80" stroke="#10b981" stroke-width="1" opacity="0.6" stroke-dasharray="2,2"/>
+  <line x1="220" y1="80" x2="320" y2="75" stroke="#10b981" stroke-width="1" opacity="0.6" stroke-dasharray="2,2"/>
+  <line x1="240" y1="150" x2="320" y2="75" stroke="#10b981" stroke-width="1" opacity="0.6" stroke-dasharray="2,2"/>
+  
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Global Server Network</text>
+  
+  <!-- Stats Panel -->
+  <rect x="20" y="220" width="460" height="60" rx="5" fill="#1e40af" opacity="0.8"/>
+  
+  <!-- Stats -->
+  <text x="80" y="240" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">90+</text>
+  <text x="80" y="255" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">Countries</text>
+  
+  <text x="180" y="240" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">3000+</text>
+  <text x="180" y="255" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">Servers</text>
+  
+  <text x="280" y="240" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">99.9%</text>
+  <text x="280" y="255" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">Uptime</text>
+  
+  <text x="380" y="240" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">10Gbps</text>
+  <text x="380" y="255" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">Speed</text>
+</svg>

@@ -1,4 +1,6 @@
-import type { Metadata } from "next"
+"use client"
+
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -9,14 +11,14 @@ import { Search, ShoppingCart, Filter } from "lucide-react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Checkbox } from "@/components/ui/checkbox"
-
-export const metadata: Metadata = {
-  title: "Productos | TecnoCrypter",
-  description: "Productos de seguridad cibernética y encriptación con pago en criptomonedas.",
-}
+import { ProductService } from "@/services/product-service"
+import type { Product } from "@/types"
 
 export default function ProductosPage() {
-  // Datos de ejemplo para la página
+  const [products, setProducts] = useState<Product[]>([])
+  const [loading, setLoading] = useState(true)
+  const [searchQuery, setSearchQuery] = useState("")
+  const [selectedCategory, setSelectedCategory] = useState("todos")
   const categories = [
     { id: "todos", name: "Todos" },
     { id: "vpn", name: "VPN" },
@@ -25,113 +27,56 @@ export default function ProductosPage() {
     { id: "security", name: "Seguridad" },
   ]
 
-  const products = [
-    {
-      id: "secure-vpn-1",
-      name: "SecureVPN Premium",
-      description: "VPN de alta seguridad con encriptación de grado militar y política de no logs.",
-      price: 99.99,
-      cryptoPrice: {
-        btc: 0.0025,
-        eth: 0.035,
-        usdt: 99.99,
-      },
-      category: "vpn",
-      vendor: "CryptoSecure",
-      features: ["Encriptación AES-256", "Sin logs", "Servidores en 90 países", "Hasta 10 dispositivos"],
-      images: ["/placeholder.svg?height=300&width=500&query=VPN secure connection"],
-    },
-    {
-      id: "password-manager-1",
-      name: "CryptoPass Manager",
-      description: "Gestor de contraseñas con encriptación de extremo a extremo y generador de claves seguras.",
-      price: 79.99,
-      cryptoPrice: {
-        btc: 0.002,
-        eth: 0.028,
-        usdt: 79.99,
-      },
-      category: "password-manager",
-      vendor: "CryptoSecure",
-      features: [
-        "Encriptación Zero-Knowledge",
-        "Autenticación 2FA",
-        "Sincronización en la nube",
-        "Alertas de seguridad",
-      ],
-      images: ["/placeholder.svg?height=300&width=500&query=Password manager secure vault"],
-    },
-    {
-      id: "secure-messenger-1",
-      name: "SecureChat Messenger",
-      description: "Mensajería instantánea con encriptación de extremo a extremo y mensajes autodestructivos.",
-      price: 49.99,
-      cryptoPrice: {
-        btc: 0.0012,
-        eth: 0.018,
-        usdt: 49.99,
-      },
-      category: "encryption",
-      vendor: "SecureComm",
-      features: [
-        "Encriptación E2E",
-        "Mensajes autodestructivos",
-        "Verificación de identidad",
-        "Sin almacenamiento en servidores",
-      ],
-      images: ["/placeholder.svg?height=300&width=500&query=Encrypted messaging app"],
-    },
-    {
-      id: "file-encryptor-1",
-      name: "FileShield Encryptor",
-      description: "Software de encriptación de archivos con algoritmos de nivel militar para máxima protección.",
-      price: 129.99,
-      cryptoPrice: {
-        btc: 0.0032,
-        eth: 0.045,
-        usdt: 129.99,
-      },
-      category: "encryption",
-      vendor: "DataGuard",
-      features: ["Encriptación AES-256", "Protección de contraseña", "Borrado seguro", "Integración con la nube"],
-      images: ["/placeholder.svg?height=300&width=500&query=File encryption software"],
-    },
-    {
-      id: "security-suite-1",
-      name: "CryptoGuard Security Suite",
-      description: "Suite completa de seguridad con antivirus, firewall, VPN y protección de identidad.",
-      price: 149.99,
-      cryptoPrice: {
-        btc: 0.0037,
-        eth: 0.052,
-        usdt: 149.99,
-      },
-      category: "security",
-      vendor: "CryptoSecure",
-      features: ["Antivirus avanzado", "Firewall inteligente", "VPN integrada", "Protección de identidad"],
-      images: ["/placeholder.svg?height=300&width=500&query=Security suite software"],
-    },
-    {
-      id: "hardware-wallet-1",
-      name: "CryptoVault Hardware Wallet",
-      description: "Cartera hardware para almacenamiento seguro de criptomonedas con chip de seguridad EAL6+.",
-      price: 199.99,
-      cryptoPrice: {
-        btc: 0.005,
-        eth: 0.07,
-        usdt: 199.99,
-      },
-      category: "security",
-      vendor: "CryptoSecure",
-      features: [
-        "Chip de seguridad EAL6+",
-        "Soporte para 1500+ criptomonedas",
-        "Pantalla integrada",
-        "Respaldo de semilla",
-      ],
-      images: ["/placeholder.svg?height=300&width=500&query=Hardware wallet crypto"],
-    },
-  ]
+  useEffect(() => {
+    async function fetchProducts() {
+      try {
+        const productsData = await ProductService.getAllProducts()
+        setProducts(productsData)
+      } catch (error) {
+        console.error("Error cargando productos:", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchProducts()
+  }, [])
+
+  // Filtrar productos
+  const filteredProducts = products.filter(product => {
+    const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         product.description.toLowerCase().includes(searchQuery.toLowerCase())
+    const matchesCategory = selectedCategory === "todos" || product.category === selectedCategory
+    return matchesSearch && matchesCategory
+  })
+
+  if (loading) {
+    return (
+      <main className="min-h-screen py-12">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h1 className="text-4xl font-bold tracking-tight mb-4">Productos de Seguridad y Encriptación</h1>
+            <p className="text-xl text-muted-foreground">
+              Soluciones avanzadas para proteger tus activos digitales con pago en criptomonedas.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <Card key={i} className="animate-pulse">
+                <CardHeader className="h-48 bg-muted" />
+                <CardContent className="space-y-2 pt-6">
+                  <div className="h-6 bg-muted rounded" />
+                  <div className="h-4 bg-muted rounded w-3/4" />
+                  <div className="h-4 bg-muted rounded" />
+                  <div className="h-4 bg-muted rounded w-1/2" />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </main>
+    )
+  }
 
   return (
     <main className="min-h-screen py-12">
@@ -148,7 +93,12 @@ export default function ProductosPage() {
           <div className="w-full lg:w-1/4 space-y-6">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input placeholder="Buscar productos..." className="pl-10" />
+              <Input 
+                placeholder="Buscar productos..." 
+                className="pl-10" 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
             </div>
 
             <div className="border rounded-lg p-4">
@@ -262,7 +212,7 @@ export default function ProductosPage() {
           {/* Main Content */}
           <div className="w-full lg:w-3/4">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-              <Tabs defaultValue="todos" className="w-full sm:w-auto">
+              <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full sm:w-auto">
                 <TabsList>
                   {categories.map((category) => (
                     <TabsTrigger key={category.id} value={category.id}>
@@ -291,11 +241,11 @@ export default function ProductosPage() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {products.map((product) => (
+              {filteredProducts.map((product) => (
                 <Card key={product.id} className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md">
                   <div className="aspect-video relative bg-muted">
                     <img
-                      src={product.images[0] || "/placeholder.svg"}
+                      src={product.images[0]?.url || "/placeholder.svg"}
                       alt={product.name}
                       className="object-cover w-full h-full"
                     />
@@ -335,7 +285,7 @@ export default function ProductosPage() {
                       <div className="flex flex-col">
                         <span className="font-bold text-lg">${product.price.toFixed(2)}</span>
                         <span className="text-xs text-muted-foreground">
-                          {product.cryptoPrice.btc.toFixed(4)} BTC / {product.cryptoPrice.eth.toFixed(3)} ETH
+                          {product.crypto_price_btc.toFixed(4)} BTC / {product.crypto_price_eth.toFixed(3)} ETH
                         </span>
                       </div>
                       <Button asChild size="sm">
