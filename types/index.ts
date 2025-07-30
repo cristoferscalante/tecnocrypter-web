@@ -17,16 +17,26 @@ export interface Product {
   name: string
   description: string
   price: number
-  cryptoPrice: {
-    btc: number
-    eth: number
-    usdt: number
-  }
+  crypto_price_btc: number
+  crypto_price_eth: number
+  crypto_price_usdt: number
   category: string
   vendor: string
   features: string[]
-  images: string[]
-  downloadUrl?: string
+  images: ProductImage[]
+  download_url?: string
+  created_at?: string
+  updated_at?: string
+  is_active: boolean
+  is_featured: boolean
+}
+
+export interface ProductImage {
+  id: string
+  product_id: string
+  url: string
+  alt: string
+  display_order: number
 }
 
 export interface CryptoPayment {
