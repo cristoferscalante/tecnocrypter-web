@@ -49,17 +49,3 @@ Sam Altman, CEO de OpenAI, confesó en un podcast que el desarrollo de GPT‑5 l
 Estas palabras incrementan el debate ético sobre el ritmo de avance de la IA y la necesidad urgente de regulación responsable (TechRadar).
 
 ---
-
-### 📌 Palabras clave SEO:
-- inteligencia artificial  
-- guerra de IA  
-- pelota inteligente NBA  
-- venta de acciones Nvidia  
-- fabricación smartphones India  
-- GPT-5 riesgos
-
----
-
-### 📝 Meta descripción:
-
-> Descubre cómo Google, Amazon y Meta libran una guerra de billones por la IA, una pelota inteligente que podría llegar a la NBA, la venta sorpresa de acciones de Nvidia, el boom de smartphones de India y por qué GPT‑5 aterra a sus propios creadores.
