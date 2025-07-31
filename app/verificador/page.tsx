@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 
-const apiKey = process.env.NEXT_PUBLIC_VIRUSTOTAL_API_KEY!
+const apiKey = process.env.VIRUSTOTAL_API_KEY!
 
 export default function VerificadorPage() {
   const [url, setUrl] = useState('')
