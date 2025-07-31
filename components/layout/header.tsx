@@ -17,6 +17,7 @@ export function Header() {
     { name: "Seguridad", href: "/seguridad" },
     { name: "Blog", href: "/blog" },
     { name: "Productos", href: "/productos" },
+    { name: "tools", href: "/verificador" },
   ]
 
   return (

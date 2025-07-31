@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ShieldCheck, CheckCircle, AlertTriangle, XCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 
 const apiKey = process.env.NEXT_PUBLIC_VIRUSTOTAL_API_KEY!
 
@@ -59,72 +61,69 @@ export default function VerificadorPage() {
   }
 
   return (
-    <main className="relative min-h-screen bg-[#0a0a0a] text-white flex flex-col items-center justify-center px-4 pt-10">
+    <main className="relative min-h-screen flex flex-col items-center justify-center">
       <motion.div
-        className="relative z-10 max-w-xl w-full bg-[#1a1a1a]/80 rounded-xl shadow-lg p-8 text-center"
+        className="relative z-10 max-w-xl w-full"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="flex justify-center mb-4">
-          <ShieldCheck className="text-[#00e77f] w-10 h-10" />
-        </div>
-        <h1 className="text-3xl font-bold mb-4">Verificador de Enlaces Sospechosos</h1>
-        <p className="text-gray-400 mb-6">
-          Ingresa una URL para analizar si es segura o maliciosa.
-        </p>
+        <Card className="text-center">
+          <CardHeader>
+            <div className="flex justify-center mb-4">
+              <ShieldCheck className="text-primary w-10 h-10" />
+            </div>
+            <CardTitle className="text-3xl">Verificador de Enlaces Sospechosos</CardTitle>
+            <CardDescription className="text-base">
+              Ingresa una URL para analizar si es segura o maliciosa.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <Input
+              type="url"
+              placeholder="https://ejemplo.com"
+              value={url}
+              onChange={(e) => setUrl(e.target.value)}
+            />
 
-        <input
-          type="text"
-          placeholder="https://ejemplo.com"
-          className="w-full px-4 py-2 mb-4 rounded-md bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#00e77f]"
-          value={url}
-          onChange={(e) => setUrl(e.target.value)}
-        />
+            <Button
+              onClick={analizarURL}
+              disabled={loading || !url}
+              className="w-full"
+              size="lg"
+            >
+              {loading ? 'Analizando...' : 'Verificar Enlace'}
+            </Button>
 
-        <Button asChild size="lg" className="group" onClick={analizarURL} disabled={loading || !url}>
-                {loading ? 'Analizando...' : 'Verificar Enlace'}
-        </Button>
-
-        <button
-          onClick={analizarURL}
-          disabled={loading || !url}
-          className={`w-full py-2 rounded-md font-semibold transition-all duration-300 ${
-            loading
-              ? 'bg-gray-600 cursor-not-allowed'
-              : 'bg-[#00e77f] hover:bg-[#00d86f] hover:shadow-lg hover:scale-105'
-          }`}
-        >
-          {loading ? 'Analizando...' : 'Verificar Enlace'}
-        </button>
-
-        {resultado && (
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="mt-6 flex flex-col items-center justify-center gap-2 text-lg"
-          >
-            {resultado === 'segura' && (
-              <>
-                <CheckCircle className="text-green-400 w-7 h-7" />
-                <span className="text-green-400 font-medium">El enlace es seguro.</span>
-              </>
+            {resultado && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className="flex items-center justify-center gap-2 text-sm"
+              >
+                {resultado === 'segura' && (
+                  <>
+                    <CheckCircle className="text-green-500 w-5 h-5" />
+                    <span className="text-green-500 font-medium">El enlace es seguro.</span>
+                  </>
+                )}
+                {resultado === 'maliciosa' && (
+                  <>
+                    <AlertTriangle className="text-yellow-500 w-5 h-5" />
+                    <span className="text-yellow-500 font-medium">¡Cuidado! El enlace es malicioso.</span>
+                  </>
+                )}
+                {resultado === 'error' && (
+                  <>
+                    <XCircle className="text-destructive w-5 h-5" />
+                    <span className="text-destructive font-medium">Error al analizar el enlace.</span>
+                  </>
+                )}
+              </motion.div>
             )}
-            {resultado === 'maliciosa' && (
-              <>
-                <AlertTriangle className="text-yellow-400 w-7 h-7" />
-                <span className="text-yellow-400 font-medium">¡Cuidado! El enlace es malicioso.</span>
-              </>
-            )}
-            {resultado === 'error' && (
-              <>
-                <XCircle className="text-red-500 w-7 h-7" />
-                <span className="text-red-500 font-medium">Error al analizar el enlace.</span>
-              </>
-            )}
-          </motion.div>
-        )}
+          </CardContent>
+        </Card>
       </motion.div>
     </main>
   )
