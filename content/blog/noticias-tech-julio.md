@@ -1,11 +1,12 @@
 ---
 title: "¡Increíble! Las 6 Noticias Tech de Hoy que No Puedes Ignorar"
-description: "Descubre las 6 noticias tech imperdibles del 31 de julio de 2025: desde la polémica venta de chips de IA a China hasta la mega oferta de OnePlus y la fusión de Palo Alto Networks, todo en un solo lugar."
-og:image: "/blogs/noticias-tech-julio.webp"
-author: V1TR0
+excerpt: "Descubre las 6 noticias tech imperdibles del 31 de julio de 2025: desde la polémica venta de chips de IA a China hasta la mega oferta de OnePlus y la fusión de Palo Alto Networks, todo en un solo lugar."
 date: "2025-07-31"
+author: "V1TR0"
 category: "noticias"
 tags: ["noticias tecnológicas hoy", "ciberseguridad IA", "fusiones ciberseguridad 2025", "oferta OnePlus Independence Day", "despidos tecnología 2025"]
+featured: true
+image: "/blogs/noticias-tech-julio.webp"
 ---
 
 # ¡Increíble! Las 6 Noticias Tech de Hoy que No Puedes Ignorar
