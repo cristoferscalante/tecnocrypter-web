@@ -28,16 +28,13 @@ export default function BlogPage() {
     { id: "noticias", name: "Noticias" },
   ]
 
-  // Filtrar posts según la categoría seleccionada y búsqueda
   const getFilteredPosts = () => {
     let filteredPosts = posts
 
-    // Filtrar por búsqueda si hay query
     if (searchQuery.trim()) {
       filteredPosts = searchPosts(searchQuery)
     }
 
-    // Filtrar por categoría si no es "todos"
     if (selectedCategory !== "todos") {
       filteredPosts = filteredPosts.filter(post => post.category === selectedCategory)
     }
@@ -168,42 +165,40 @@ export default function BlogPage() {
                 </div>
               ) : (
                 filteredPosts.map((post) => (
-                <Card key={post.slug} className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md">
-                  <div className="aspect-video relative bg-muted">
-                    <img
-                      src={post.image || `/placeholder.svg?height=250&width=500&query=${post.title}`}
-                      alt={post.title}
-                      className="object-cover w-full h-full"
-                    />
-                  </div>
-                  <CardHeader className="pb-2">
-                    <div className="flex items-center justify-between mb-2">
-                      <Badge variant="outline" className="text-xs capitalize">
-                        {post.category}
-                      </Badge>
-                      <div className="flex items-center text-xs text-muted-foreground">
-                        <Clock className="mr-1 h-3 w-3" />
-                        <span>{post.readTime} min</span>
+                  <Link key={post.slug} href={`/blog/${post.slug}`} className="cursor-pointer">
+                    <Card className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md">
+                      <div className="aspect-video relative bg-muted">
+                        <img
+                          src={post.image || `/placeholder.svg?height=250&width=500&query=${post.title}`}
+                          alt={post.title}
+                          className="object-cover w-full h-full"
+                        />
                       </div>
-                    </div>
-                    <CardTitle className="line-clamp-2">
-                      <Link href={`/blog/${post.slug}`} className="hover:text-primary transition-colors">
-                        {post.title}
-                      </Link>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="pb-2 flex-grow">
-                    <p className="text-muted-foreground line-clamp-3">{post.excerpt}</p>
-                  </CardContent>
-                  <CardFooter className="pt-2">
-                    <div className="flex justify-between items-center w-full">
-                      <span className="text-xs text-muted-foreground">{new Date(post.date).toLocaleDateString()}</span>
-                      <Button asChild variant="ghost" size="sm" className="text-xs">
-                        <Link href={`/blog/${post.slug}`}>Leer más</Link>
-                      </Button>
-                    </div>
-                  </CardFooter>
-                </Card>
+                      <CardHeader className="pb-2">
+                        <div className="flex items-center justify-between mb-2">
+                          <Badge variant="outline" className="text-xs capitalize">
+                            {post.category}
+                          </Badge>
+                          <div className="flex items-center text-xs text-muted-foreground">
+                            <Clock className="mr-1 h-3 w-3" />
+                            <span>{post.readTime} min</span>
+                          </div>
+                        </div>
+                        <CardTitle className="line-clamp-2">{post.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent className="pb-2 flex-grow">
+                        <p className="text-muted-foreground line-clamp-3">{post.excerpt}</p>
+                      </CardContent>
+                      <CardFooter className="pt-2">
+                        <div className="flex justify-between items-center w-full">
+                          <span className="text-xs text-muted-foreground">{new Date(post.date).toLocaleDateString()}</span>
+                          <Button variant="ghost" size="sm" className="text-xs pointer-events-none">
+                            Leer más
+                          </Button>
+                        </div>
+                      </CardFooter>
+                    </Card>
+                  </Link>
                 ))
               )}
             </div>
