@@ -1,11 +1,12 @@
 ---
 title: "¿La Semana Laboral de 4 Días Llegará en 2040? La IA lo Hace Posible"
-description: "Un experimento de ChatGPT pronostica que la semana laboral de cuatro días podría ser realidad en 2040 gracias a la IA. Conoce ejemplos de pilotos, beneficios y retos sectoriales."
-og:image: /blogs/semana-laboral-ia.webp
-author: V1TR0
-date: 2025-08-06
-categories: ["Noticias"]
-tags: ["semana laboral 4 días", "IA", "productividad", "transformación digital", "automatización"]
+excerpt: "Un análisis sobre cómo la inteligencia artificial podría permitir la implementación global de la semana laboral de cuatro días hacia 2040."
+date: "2025-01-10"
+author: "Elena Blockchain"
+category: "noticias"
+tags: ["IA", "trabajo", "productividad", "futuro"]
+featured: true
+image: "/blogs/semana-laboral-ia.webp"
 ---
 
 ## ¿La Semana Laboral de 4 Días Llegará en 2040? La IA lo Hace Posible
