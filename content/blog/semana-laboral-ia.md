@@ -41,11 +41,3 @@ Al integrar estas mejoras, las empresas experimentarían una reducción de jorna
 - **Adaptación legislativa**: Necesidad de actualizar normas laborales para regular jornadas flexibles y proteger derechos de los trabajadores.
 
 ---
-
-## Palabras clave
-
-- semana laboral 4 días IA  
-- predicción IA 2040  
-- productividad con IA  
-- pilotos 4 días Bélgica  
-- gestión inteligente de cargas laborales
