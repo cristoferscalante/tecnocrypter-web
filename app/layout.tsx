@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Tu fuente confiable de información sobre seguridad cibernética, encriptación y criptomonedas. Productos seguros y análisis experto.",
   keywords: ["seguridad cibernética", "encriptación", "criptomonedas", "blockchain", "cybersecurity"],
   authors: [{ name: "V1TR0 Team" }],
-  icons: {
+    icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
     apple: '/favicon.ico',
