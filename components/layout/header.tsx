@@ -15,6 +15,7 @@ export function Header() {
 
   const navigation = [
     { name: "Seguridad", href: "/seguridad" },
+    { name: "Generador", href: "/generador-contrasenas" },
     { name: "Blog", href: "/blog" },
     { name: "Productos", href: "/productos" },
   ]
