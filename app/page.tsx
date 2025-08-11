@@ -3,7 +3,6 @@ import { FeaturesSection } from "@/components/sections/features-section"
 import { SecuritySection } from "@/components/sections/security-section"
 import { FeaturedPosts } from "@/components/sections/featured-posts"
 import { ProductShowcase } from "@/components/sections/product-showcase"
-import { TestimonialsSection } from "@/components/sections/testimonials-section"
 import { StatsSection } from "@/components/sections/stats-section"
 import { FaqSection } from "@/components/sections/faq-section"
 import { NewsletterSection } from "@/components/sections/newsletter-section"
@@ -18,7 +17,6 @@ export default function HomePage() {
       <StatsSection />
       <FeaturedPosts />
       <ProductShowcase />
-      <TestimonialsSection />
       <FaqSection />
       <NewsletterSection />
       <CtaSection />
