@@ -3,9 +3,17 @@
 import { useState } from "react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
-import { Moon, Sun, Menu, X, Search, Phone } from "lucide-react"
+import { Moon, Sun, Menu, X, Search, Phone, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu"
 import Image from "next/image"
 
 export function Header() {
@@ -15,10 +23,14 @@ export function Header() {
 
   const navigation = [
     { name: "Seguridad", href: "/seguridad" },
-    { name: "Generador", href: "/generador-contrasenas" },
     { name: "Metadatos", href: "/limpia-metadatos" },
     { name: "Blog", href: "/blog" },
     { name: "Productos", href: "/productos" },
+  ]
+
+  const toolsItems = [
+    { name: "Generador de Contraseñas", href: "/generador-contrasenas" },
+    { name: "Verificador de URL", href: "/verificador" },
   ]
 
   return (
@@ -45,6 +57,31 @@ export function Header() {
               {item.name}
             </Link>
           ))}
+          
+          {/* Tools Dropdown */}
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-sm font-medium transition-colors hover:text-primary bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent [&>svg]:hidden h-auto p-0">
+                  Tools
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid w-[200px] gap-1 p-2">
+                    {toolsItems.map((tool) => (
+                      <NavigationMenuLink key={tool.name} asChild>
+                        <Link
+                          href={tool.href}
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">{tool.name}</div>
+                        </Link>
+                      </NavigationMenuLink>
+                    ))}
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </nav>
 
         {/* Actions */}
@@ -99,6 +136,21 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
+            
+            {/* Tools section for mobile */}
+            <div className="py-2">
+              <div className="text-sm font-medium text-muted-foreground mb-2">Tools</div>
+              {toolsItems.map((tool) => (
+                <Link
+                  key={tool.name}
+                  href={tool.href}
+                  className="block py-2 pl-4 text-sm font-medium transition-colors hover:text-primary"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {tool.name}
+                </Link>
+              ))}
+            </div>
           </nav>
         </div>
       )}
