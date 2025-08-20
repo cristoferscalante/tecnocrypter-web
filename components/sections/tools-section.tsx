@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { AnimatedSection } from "@/components/ui/animated-section"
-import { Key, ImageIcon, ArrowRight, Shield } from "lucide-react"
+import { Key, ImageIcon, ArrowRight, Shield, Search } from "lucide-react"
 
 export function ToolsSection() {
   const tools = [
@@ -13,7 +13,7 @@ export function ToolsSection() {
       icon: Key,
       title: "Generador de Contraseñas",
       description: "Crea contraseñas seguras y personalizables con opciones avanzadas de configuración.",
-      href: "/generador-contrasenas",
+      href: "/tools/generador-contrasenas",
       badge: "Gratis",
       features: ["Múltiples opciones", "Verificación de seguridad", "Sin almacenamiento"]
     },
@@ -21,9 +21,17 @@ export function ToolsSection() {
       icon: ImageIcon,
       title: "Limpiador de Metadatos",
       description: "Elimina metadatos EXIF y GPS de tus imágenes para proteger tu privacidad.",
-      href: "/limpia-metadatos",
+      href: "/tools/limpia-metadatos",
       badge: "Nuevo",
       features: ["Procesamiento local", "Múltiples formatos", "Sin subida a servidor"]
+    },
+    {
+      icon: Search,
+      title: "Verificador de URL",
+      description: "Analiza la seguridad de URLs y detecta posibles amenazas antes de visitarlas.",
+      href: "/tools/verificador",
+      badge: "Beta",
+      features: ["Análisis en tiempo real", "Detección de malware", "Reporte detallado"]
     }
   ]
 
@@ -40,14 +48,14 @@ export function ToolsSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {tools.map((tool, index) => (
             <AnimatedSection
               key={index}
               delay={0.2 * index}
               className="group"
             >
-              <Card className="h-full transition-all duration-300 hover:shadow-lg hover:scale-[1.02] border-2 hover:border-primary/20">
+              <Card className="h-full transition-all duration-300 hover:shadow-lg hover:scale-[1.02] border-2 hover:border-primary/20 flex flex-col">
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between mb-4">
                     <div className="rounded-full w-12 h-12 flex items-center justify-center bg-primary/10 group-hover:bg-primary/20 transition-colors">
@@ -67,7 +75,7 @@ export function ToolsSection() {
                     {tool.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="pt-0">
+                <CardContent className="pt-0 flex-1 flex flex-col justify-end">
                   <div className="space-y-4">
                     <div className="flex flex-wrap gap-2">
                       {tool.features.map((feature, featureIndex) => (

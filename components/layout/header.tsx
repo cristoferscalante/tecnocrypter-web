@@ -22,15 +22,14 @@ export function Header() {
   const { theme, setTheme } = useTheme()
 
   const navigation = [
-    { name: "Seguridad", href: "/seguridad" },
-    { name: "Metadatos", href: "/limpia-metadatos" },
     { name: "Blog", href: "/blog" },
     { name: "Productos", href: "/productos" },
   ]
 
   const toolsItems = [
-    { name: "Generador de Contraseñas", href: "/generador-contrasenas" },
-    { name: "Verificador de URL", href: "/verificador" },
+    { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
+    { name: "Limpiador de Metadatos", href: "/tools/limpia-metadatos" },
+    { name: "Verificador de URL", href: "/tools/verificador" },
   ]
 
   return (
