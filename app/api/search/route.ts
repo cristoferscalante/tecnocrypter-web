@@ -8,8 +8,8 @@ interface SearchResult {
   excerpt: string
   type: 'blog' | 'product' | 'page'
   url: string
-  image?: string
-  category?: string
+  image?: string | null | undefined
+  category?: "seguridad" | "encriptacion" | "criptomonedas" | "noticias" | "herramientas" | "general" | "legal" | string
 }
 
 // Páginas estáticas para búsqueda
@@ -129,7 +129,7 @@ export async function GET(request: NextRequest) {
           excerpt: product.description,
           type: 'product' as const,
           url: `/productos/${product.id}`,
-          image: product.images?.[0]?.url,
+          image: product.images?.[0]?.url || null,
           category: product.category
         }))
       
