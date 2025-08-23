@@ -14,6 +14,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
+import { SearchDropdown } from "@/components/ui/search-dropdown"
 import Image from "next/image"
 
 export function Header() {
@@ -85,16 +86,20 @@ export function Header() {
 
         {/* Actions */}
         <div className="flex items-center space-x-2">
+          {/* Search - Desktop */}
+          <div className="hidden md:block">
+            <SearchDropdown className="w-80" />
+          </div>
 
           {/* Contacto icono*/}
           <Link href="/contacto">
-          <Button variant="ghost" size="icon" className="hidden sm:flex">
-            <Phone className="h-4 w-4" />
-          </Button>
+            <Button variant="ghost" size="icon" className="hidden sm:flex">
+              <Phone className="h-4 w-4" />
+            </Button>
           </Link>
 
-          {/* Search */}
-          <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)} className="hidden sm:flex">
+          {/* Search - Mobile Toggle */}
+          <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)} className="md:hidden">
             <Search className="h-4 w-4" />
           </Button>
 
@@ -112,11 +117,11 @@ export function Header() {
         </div>
       </div>
 
-      {/* Search Bar */}
+      {/* Search Bar - Mobile */}
       {isSearchOpen && (
-        <div className="border-t p-4">
+        <div className="border-t p-4 md:hidden">
           <div className="container">
-            <Input placeholder="Buscar artículos, productos..." className="max-w-md" autoFocus />
+            <SearchDropdown className="w-full" placeholder="Buscar artículos, productos..." />
           </div>
         </div>
       )}
