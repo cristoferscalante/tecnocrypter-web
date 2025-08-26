@@ -4,8 +4,14 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Shield, Lock, TrendingUp } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { DecryptText, useSequentialDecrypt } from "@/components/ui/decrypt-text"
 
 export function HeroSection() {
+  const { getTextDelay, handleTextComplete } = useSequentialDecrypt([
+    "Bienvenido a TecnoCrypter - Donde la Seguridad se Encuentra con la Innovación",
+    "Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada. Aquí transformamos datos en confianza digital y convertimos el conocimiento en tu mejor defensa contra un mundo en constante cambio. Conviértete en un experto en blindar tu presente y futuro digital. Seguridad no es solo protección, es evolución."
+  ], 500, 800)
+
   const features = [
     {
       icon: Shield,
@@ -69,83 +75,223 @@ export function HeroSection() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
               >
-                <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary ring-1 ring-inset ring-primary/20 mb-4">
-                  Seguridad de Vanguardia
+                <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary ring-1 ring-inset ring-primary/20 mb-4 font-space-grotesk">
+                  Innovación en Seguridad
                 </span>
               </motion.div>
               <motion.h1
-                className="text-4xl lg:text-6xl font-bold tracking-tight"
-                initial={{ opacity: 0, y: 20 }}
+                className="text-4xl lg:text-6xl font-bold font-orbitron tracking-tight"
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.5 }}
+                transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
               >
-                Bienvenido a <span className="text-primary">CriptoSecure</span>: Tu Fuente de Seguridad y Encriptación
+                <DecryptText
+                  text="Bienvenido a "
+                  delay={getTextDelay(0)}
+                  duration={1500}
+                  onComplete={() => handleTextComplete(0)}
+                />
+                <span className="text-primary">
+                  <DecryptText
+                    text="TecnoCrypter"
+                    delay={getTextDelay(0) + 800}
+                    duration={1200}
+                    scrambleChars="01010101ABCDEF#$%&*"
+                  />
+                </span>
+                <br />
+                <DecryptText
+                  text="Donde la Seguridad se Encuentra con la Innovación"
+                  delay={getTextDelay(0) + 1500}
+                  duration={1800}
+                />
               </motion.h1>
               <motion.p
-                className="text-xl text-muted-foreground max-w-2xl"
-                initial={{ opacity: 0, y: 20 }}
+                className="text-xl font-space-grotesk text-muted-foreground max-w-2xl"
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.5 }}
+                transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
               >
-                CriptoSecure te ofrece información actualizada sobre seguridad cibernética, encriptación y las últimas
-                noticias en tecnología y criptomonedas. Conviértete en un experto en proteger tu información digital.
+                <DecryptText
+                  text="Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada. Aquí transformamos datos en confianza digital y convertimos el conocimiento en tu mejor defensa contra un mundo en constante cambio. Conviértete en un experto en blindar tu presente y futuro digital. Seguridad no es solo protección, es evolución."
+                  delay={getTextDelay(1) + 2000}
+                  duration={2500}
+                  onComplete={() => handleTextComplete(1)}
+                />
               </motion.p>
             </motion.div>
 
             <motion.div
               className="flex flex-col sm:flex-row gap-4"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
+              transition={{ delay: 4.5, duration: 1, ease: "easeOut" }}
             >
-              <Button asChild size="lg" className="group">
-                <Link href="/blog">
-                  Explorar Contenido
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="/productos">Ver Productos</Link>
-              </Button>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 4.8, duration: 0.6, ease: "backOut" }}
+              >
+                <Button asChild size="lg" className="group relative overflow-hidden">
+                  <Link href="/blog">
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/40 opacity-0 group-hover:opacity-100"
+                      transition={{ duration: 0.3 }}
+                    />
+                    <span className="relative z-10">Explorar Contenido</span>
+                    <ArrowRight className="ml-2 h-4 w-4 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 relative z-10" />
+                  </Link>
+                </Button>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 5.1, duration: 0.6, ease: "backOut" }}
+              >
+                <Button asChild variant="outline" size="lg" className="group relative overflow-hidden border-2 hover:border-primary/50">
+                  <Link href="/productos">
+                    <motion.div
+                      className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100"
+                      transition={{ duration: 0.3 }}
+                    />
+                    <span className="relative z-10 group-hover:text-primary transition-colors duration-300">Ver Productos</span>
+                  </Link>
+                </Button>
+              </motion.div>
             </motion.div>
 
             {/* Features Grid */}
-            <div className="grid sm:grid-cols-3 gap-6 pt-8">
+            <motion.div 
+              className="grid sm:grid-cols-3 gap-6 pt-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 5.5, duration: 0.8 }}
+            >
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
-                  className="flex items-start space-x-3 p-4 rounded-lg bg-background/50 backdrop-blur-sm border"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.6 + index * 0.1, duration: 0.5 }}
+                  className="flex items-start space-x-3 p-4 rounded-lg bg-background/50 backdrop-blur-sm border group hover:bg-background/70 hover:border-primary/30 transition-all duration-300"
+                  initial={{ opacity: 0, y: 40, scale: 0.9 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ 
+                    delay: 5.8 + index * 0.2, 
+                    duration: 0.8, 
+                    ease: "backOut",
+                    type: "spring",
+                    stiffness: 100
+                  }}
+                  whileHover={{ 
+                    scale: 1.05, 
+                    y: -5,
+                    transition: { duration: 0.2 }
+                  }}
                 >
-                  <div className="flex-shrink-0 mt-1">
-                    <feature.icon className="h-6 w-6 text-primary" />
-                  </div>
+                  <motion.div 
+                    className="flex-shrink-0 mt-1"
+                    initial={{ rotate: -180, scale: 0 }}
+                    animate={{ rotate: 0, scale: 1 }}
+                    transition={{ 
+                      delay: 6 + index * 0.2, 
+                      duration: 0.6,
+                      type: "spring",
+                      stiffness: 200
+                    }}
+                  >
+                    <feature.icon className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+                  </motion.div>
                   <div>
-                    <h3 className="font-semibold">{feature.title}</h3>
-                    <p className="text-sm text-muted-foreground">{feature.description}</p>
+                    <motion.h3 
+                      className="font-semibold group-hover:text-primary transition-colors duration-300"
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 6.2 + index * 0.2, duration: 0.5 }}
+                    >
+                      {feature.title}
+                    </motion.h3>
+                    <motion.p 
+                      className="text-sm text-muted-foreground"
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 6.4 + index * 0.2, duration: 0.5 }}
+                    >
+                      {feature.description}
+                    </motion.p>
                   </div>
                 </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
 
           {/* Visual */}
           <motion.div
             className="relative"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.7, duration: 0.7 }}
+            initial={{ opacity: 0, scale: 0.5, rotateY: 45 }}
+            animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+            transition={{ 
+              delay: 2.5, 
+              duration: 1.2, 
+              ease: "backOut",
+              type: "spring",
+              stiffness: 80
+            }}
           >
-            <div className="relative rounded-2xl overflow-hidden ">
-              <img
-                src="/hero.png"      
-                alt="Experto en ciberseguridad"
-                className="w-full h-auto"
+            <motion.div 
+              className="relative rounded-2xl overflow-hidden"
+              whileHover={{ 
+                scale: 1.05, 
+                rotateY: 5,
+                transition: { duration: 0.3 }
+              }}
+            >
+              <motion.div
+                initial={{ opacity: 0, scale: 1.2 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 3, duration: 0.8 }}
+                className="relative w-full h-full"
+              >
+                <img
+                  src="/hero.png"      
+                  alt="Experto en ciberseguridad"
+                  className="w-full h-auto"
+                />
+              </motion.div>
+              
+              {/* Animated overlay effects */}
+              <motion.div 
+                className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 3.2, duration: 0.6 }}
               />
-              <div className="absolute inset-0 " />
-            </div>
+              
+              <motion.div 
+                className="absolute inset-0 ring-1 ring-white/10" 
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 3.4, duration: 0.5 }}
+              />
+              
+              {/* Glowing border effect */}
+              <motion.div
+                className="absolute inset-0 rounded-2xl"
+                initial={{ 
+                  boxShadow: "0 0 0 0 rgba(59, 130, 246, 0)" 
+                }}
+                animate={{ 
+                  boxShadow: [
+                    "0 0 0 0 rgba(59, 130, 246, 0)",
+                    "0 0 20px 2px rgba(59, 130, 246, 0.3)",
+                    "0 0 0 0 rgba(59, 130, 246, 0)"
+                  ]
+                }}
+                transition={{
+                  delay: 3.6,
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatDelay: 3
+                }}
+              />
+            </motion.div>
 
             {/* Floating Elements */}
             <motion.div
