@@ -20,6 +20,7 @@ import {
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useToast } from "@/hooks/use-toast"
+import { motion } from "framer-motion"
 
 interface ProcessedImage {
   id: string
@@ -303,7 +304,19 @@ const MetadataCleanerTool = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Shield className="h-5 w-5 text-primary" />
+            <motion.div
+              whileHover={{
+                scale: 1.2,
+                rotate: [0, -15, 15, 0],
+                filter: "drop-shadow(0 0 8px hsl(var(--primary)))"
+              }}
+              transition={{
+                duration: 0.6,
+                ease: "easeInOut"
+              }}
+            >
+              <Shield className="h-5 w-5 text-primary" />
+            </motion.div>
             Limpiador de Metadatos
           </CardTitle>
           <CardDescription>
@@ -322,13 +335,38 @@ const MetadataCleanerTool = () => {
             onDragLeave={handleDragLeave}
             onClick={() => fileInputRef.current?.click()}
           >
-            <Upload className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                y: [0, -10, 0],
+                filter: "drop-shadow(0 0 8px hsl(var(--primary)))"
+              }}
+              transition={{
+                duration: 0.8,
+                ease: "easeInOut"
+              }}
+            >
+              <Upload className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
+            </motion.div>
             <h3 className="text-lg font-semibold mb-2">Selecciona o arrastra imágenes</h3>
             <p className="text-muted-foreground mb-4">
               Formatos soportados: JPG, PNG, WebP, GIF
             </p>
-            <Button variant="outline">
-              <FileImage className="h-4 w-4 mr-2" />
+            <Button variant="outline" className="group">
+              <motion.div
+                whileHover={{
+                  scale: 1.2,
+                  rotate: [0, 10, -10, 0],
+                  filter: "drop-shadow(0 0 6px hsl(var(--primary)))"
+                }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut"
+                }}
+                className="mr-2"
+              >
+                <FileImage className="h-4 w-4" />
+              </motion.div>
               Seleccionar Archivos
             </Button>
           </div>

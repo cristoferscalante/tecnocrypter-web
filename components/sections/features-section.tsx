@@ -2,6 +2,7 @@
 
 import { AnimatedSection } from "@/components/ui/animated-section"
 import { Shield, Lock, Eye, Database, Server, Zap, Fingerprint, Key, RefreshCw } from "lucide-react"
+import { motion } from "framer-motion"
 
 export function FeaturesSection() {
   const features = [
@@ -69,11 +70,108 @@ export function FeaturesSection() {
             <AnimatedSection
               key={index}
               delay={0.1 * index}
-              className="p-6 rounded-xl border bg-card/30 backdrop-blur-sm hover:bg-card/50 transition-colors"
+              className="relative p-6 rounded-xl border bg-card/30 backdrop-blur-sm hover:bg-card/50 transition-colors group overflow-hidden"
             >
-              <div className="rounded-full w-12 h-12 flex items-center justify-center bg-primary/10 mb-4">
-                <feature.icon className="h-6 w-6 text-primary" />
-              </div>
+              {/* Binary border effect */}
+              <motion.div
+                className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+              >
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent overflow-hidden">
+                  <motion.div
+                    className="absolute inset-0 text-[8px] font-mono text-primary/80 whitespace-nowrap leading-none flex items-center"
+                    animate={{
+                      x: ["-100%", "100%"]
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                  >
+                    1010110010101100101011001010110010101100101011001010110010101100
+                  </motion.div>
+                </div>
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent overflow-hidden">
+                  <motion.div
+                    className="absolute inset-0 text-[8px] font-mono text-primary/80 whitespace-nowrap leading-none flex items-center"
+                    animate={{
+                      x: ["100%", "-100%"]
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "linear",
+                      delay: 1.5
+                    }}
+                  >
+                    0101001101010011010100110101001101010011010100110101001101010011
+                  </motion.div>
+                </div>
+                <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-transparent via-primary to-transparent overflow-hidden">
+                  <motion.div
+                    className="absolute inset-0 text-[8px] font-mono text-primary/80 whitespace-nowrap leading-none flex flex-col justify-center transform -rotate-90 origin-center"
+                    animate={{
+                      y: ["-100%", "100%"]
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "linear",
+                      delay: 0.5
+                    }}
+                  >
+                    1100110011001100110011001100110011001100
+                  </motion.div>
+                </div>
+                <div className="absolute right-0 top-0 h-full w-1 bg-gradient-to-b from-transparent via-primary to-transparent overflow-hidden">
+                  <motion.div
+                    className="absolute inset-0 text-[8px] font-mono text-primary/80 whitespace-nowrap leading-none flex flex-col justify-center transform -rotate-90 origin-center"
+                    animate={{
+                      y: ["100%", "-100%"]
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "linear",
+                      delay: 2
+                    }}
+                  >
+                    0011001100110011001100110011001100110011
+                  </motion.div>
+                </div>
+              </motion.div>
+              <motion.div 
+                className="rounded-full w-12 h-12 flex items-center justify-center bg-primary/10 mb-4 group-hover:bg-primary/20 transition-colors"
+                whileHover={{
+                  scale: 1.1,
+                  rotate: feature.title === "Protección Total" ? [0, -10, 10, 0] :
+                          feature.title === "Encriptación Avanzada" ? [0, 360] :
+                          feature.title === "Monitoreo 24/7" ? { scale: [1, 1.2, 1] } :
+                          feature.title === "Almacenamiento Seguro" ? { y: [0, -5, 0] } :
+                          feature.title === "Servidores Blindados" ? { x: [0, -3, 3, 0] } :
+                          feature.title === "Respuesta Rápida" ? { rotate: [0, 15, -15, 0] } :
+                          feature.title === "Autenticación Biométrica" ? { scale: [1, 0.9, 1.1, 1] } :
+                          feature.title === "Gestión de Accesos" ? { rotate: [0, 45, -45, 0] } :
+                          feature.title === "Actualizaciones Automáticas" ? { rotate: [0, 180, 360] } : {}
+                }}
+                transition={{
+                  duration: feature.title === "Encriptación Avanzada" || feature.title === "Actualizaciones Automáticas" ? 0.8 : 0.6,
+                  ease: "easeInOut",
+                  repeat: feature.title === "Monitoreo 24/7" ? 2 : 0
+                }}
+              >
+                <motion.div
+                  whileHover={{
+                    color: "hsl(var(--primary))",
+                    filter: "drop-shadow(0 0 8px hsl(var(--primary)))"
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <feature.icon className="h-6 w-6 text-primary" />
+                </motion.div>
+              </motion.div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-muted-foreground">{feature.description}</p>
             </AnimatedSection>
