@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { AnimatedSection } from "@/components/ui/animated-section"
 import { Key, ImageIcon, ArrowRight, Shield, Search } from "lucide-react"
+import { motion } from "framer-motion"
 
 export function ToolsSection() {
   const tools = [
@@ -40,7 +41,19 @@ export function ToolsSection() {
       <div className="container">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Shield className="h-8 w-8 text-primary" />
+            <motion.div
+              whileHover={{
+                scale: 1.2,
+                rotate: [0, -15, 15, 0],
+                filter: "drop-shadow(0 0 10px hsl(var(--primary)))"
+              }}
+              transition={{
+                duration: 0.6,
+                ease: "easeInOut"
+              }}
+            >
+              <Shield className="h-8 w-8 text-primary" />
+            </motion.div>
             <h2 className="text-3xl md:text-4xl font-bold">Herramientas de Seguridad</h2>
           </div>
           <p className="text-xl text-muted-foreground">
@@ -58,9 +71,30 @@ export function ToolsSection() {
               <Card className="h-full transition-all duration-300 hover:shadow-lg hover:scale-[1.02] border-2 hover:border-primary/20 flex flex-col">
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between mb-4">
-                    <div className="rounded-full w-12 h-12 flex items-center justify-center bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                      <tool.icon className="h-6 w-6 text-primary" />
-                    </div>
+                    <motion.div 
+                      className="rounded-full w-12 h-12 flex items-center justify-center bg-primary/10 group-hover:bg-primary/20 transition-colors"
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: tool.title === "Generador de Contraseñas" ? [0, 360] :
+                                tool.title === "Limpiador de Metadatos" ? { y: [0, -8, 0] } :
+                                tool.title === "Verificador de URL" ? { scale: [1, 1.3, 1] } : {}
+                      }}
+                      transition={{
+                        duration: tool.title === "Generador de Contraseñas" ? 0.8 : 0.6,
+                        ease: "easeInOut",
+                        repeat: tool.title === "Verificador de URL" ? 1 : 0
+                      }}
+                    >
+                      <motion.div
+                        whileHover={{
+                          color: "hsl(var(--primary))",
+                          filter: "drop-shadow(0 0 6px hsl(var(--primary)))"
+                        }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <tool.icon className="h-6 w-6 text-primary" />
+                      </motion.div>
+                    </motion.div>
                     <Badge 
                       variant={tool.badge === "Nuevo" ? "default" : "secondary"}
                       className={tool.badge === "Nuevo" ? "bg-green-500 hover:bg-green-600" : ""}

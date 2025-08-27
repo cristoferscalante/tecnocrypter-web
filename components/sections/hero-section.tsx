@@ -9,7 +9,7 @@ import { DecryptText, useSequentialDecrypt } from "@/components/ui/decrypt-text"
 export function HeroSection() {
   const { getTextDelay, handleTextComplete } = useSequentialDecrypt([
     "Bienvenido a TecnoCrypter - Donde la Seguridad se Encuentra con la Innovación",
-    "Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada. Aquí transformamos datos en confianza digital y convertimos el conocimiento en tu mejor defensa contra un mundo en constante cambio. Conviértete en un experto en blindar tu presente y futuro digital. Seguridad no es solo protección, es evolución."
+    "Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada."
   ], 500, 800)
 
   const features = [
@@ -41,9 +41,10 @@ export function HeroSection() {
             y: [0, 50, 0],
           }}
           transition={{
-            duration: 20,
+            duration: 25,
             repeat: Number.POSITIVE_INFINITY,
             repeatType: "reverse",
+            ease: "easeInOut",
           }}
         />
         <motion.div
@@ -53,9 +54,10 @@ export function HeroSection() {
             y: [0, 30, 0],
           }}
           transition={{
-            duration: 25,
+            duration: 30,
             repeat: Number.POSITIVE_INFINITY,
             repeatType: "reverse",
+            ease: "easeInOut",
           }}
         />
       </div>
@@ -68,12 +70,12 @@ export function HeroSection() {
               className="space-y-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}
               >
                 <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary ring-1 ring-inset ring-primary/20 mb-4 font-space-grotesk">
                   Innovación en Seguridad
@@ -83,7 +85,7 @@ export function HeroSection() {
                 className="text-4xl lg:text-6xl font-bold font-orbitron tracking-tight"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+                transition={{ delay: 0.3, duration: 1.0, ease: [0.25, 0.46, 0.45, 0.94] }}
               >
                 <DecryptText
                   text="Bienvenido a "
@@ -101,7 +103,7 @@ export function HeroSection() {
                 </span>
                 <br />
                 <DecryptText
-                  text="Donde la Seguridad se Encuentra con la Innovación"
+                  text="Seguridad y Encriptación"
                   delay={getTextDelay(0) + 1500}
                   duration={1800}
                 />
@@ -110,10 +112,10 @@ export function HeroSection() {
                 className="text-xl font-space-grotesk text-muted-foreground max-w-2xl"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
+                transition={{ delay: 0.6, duration: 1.0, ease: [0.25, 0.46, 0.45, 0.94] }}
               >
                 <DecryptText
-                  text="Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada. Aquí transformamos datos en confianza digital y convertimos el conocimiento en tu mejor defensa contra un mundo en constante cambio. Conviértete en un experto en blindar tu presente y futuro digital. Seguridad no es solo protección, es evolución."
+                  text="Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada."
                   delay={getTextDelay(1) + 2000}
                   duration={2500}
                   onComplete={() => handleTextComplete(1)}
@@ -125,36 +127,36 @@ export function HeroSection() {
               className="flex flex-col sm:flex-row gap-4"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 4.5, duration: 1, ease: "easeOut" }}
+              transition={{ delay: 4.5, duration: 1.2, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 4.8, duration: 0.6, ease: "backOut" }}
+                transition={{ delay: 4.8, duration: 0.8, ease: [0.68, -0.55, 0.265, 1.55] }}
               >
                 <Button asChild size="lg" className="group relative overflow-hidden">
                   <Link href="/blog">
                     <motion.div
                       className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/40 opacity-0 group-hover:opacity-100"
-                      transition={{ duration: 0.3 }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
                     />
                     <span className="relative z-10">Explorar Contenido</span>
-                    <ArrowRight className="ml-2 h-4 w-4 transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 relative z-10" />
+                    <ArrowRight className="ml-2 h-4 w-4 transition-all duration-500 ease-out group-hover:translate-x-1 group-hover:scale-110 relative z-10" />
                   </Link>
                 </Button>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 5.1, duration: 0.6, ease: "backOut" }}
+                transition={{ delay: 5.1, duration: 0.8, ease: [0.68, -0.55, 0.265, 1.55] }}
               >
                 <Button asChild variant="outline" size="lg" className="group relative overflow-hidden border-2 hover:border-primary/50">
                   <Link href="/productos">
                     <motion.div
                       className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100"
-                      transition={{ duration: 0.3 }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
                     />
-                    <span className="relative z-10 group-hover:text-primary transition-colors duration-300">Ver Productos</span>
+                    <span className="relative z-10 group-hover:text-primary transition-colors duration-500 ease-out">Ver Productos</span>
                   </Link>
                 </Button>
               </motion.div>
@@ -165,7 +167,7 @@ export function HeroSection() {
               className="grid sm:grid-cols-3 gap-6 pt-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 5.5, duration: 0.8 }}
+              transition={{ delay: 5.5, duration: 1.0, ease: "easeOut" }}
             >
               {features.map((feature, index) => (
                 <motion.div
@@ -175,15 +177,16 @@ export function HeroSection() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ 
                     delay: 5.8 + index * 0.2, 
-                    duration: 0.8, 
-                    ease: "backOut",
+                    duration: 1.0, 
+                    ease: [0.68, -0.55, 0.265, 1.55],
                     type: "spring",
-                    stiffness: 100
+                    stiffness: 80,
+                    damping: 15
                   }}
                   whileHover={{ 
                     scale: 1.05, 
                     y: -5,
-                    transition: { duration: 0.2 }
+                    transition: { duration: 0.3, ease: "easeOut" }
                   }}
                 >
                   <motion.div 
@@ -192,19 +195,20 @@ export function HeroSection() {
                     animate={{ rotate: 0, scale: 1 }}
                     transition={{ 
                       delay: 6 + index * 0.2, 
-                      duration: 0.6,
+                      duration: 0.8,
                       type: "spring",
-                      stiffness: 200
+                      stiffness: 150,
+                      damping: 12
                     }}
                   >
-                    <feature.icon className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+                    <feature.icon className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-500 ease-out" />
                   </motion.div>
                   <div>
                     <motion.h3 
                       className="font-semibold group-hover:text-primary transition-colors duration-300"
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 6.2 + index * 0.2, duration: 0.5 }}
+                      transition={{ delay: 6.2 + index * 0.2, duration: 0.7, ease: "easeOut" }}
                     >
                       {feature.title}
                     </motion.h3>
@@ -212,7 +216,7 @@ export function HeroSection() {
                       className="text-sm text-muted-foreground"
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 6.4 + index * 0.2, duration: 0.5 }}
+                      transition={{ delay: 6.4 + index * 0.2, duration: 0.7, ease: "easeOut" }}
                     >
                       {feature.description}
                     </motion.p>
@@ -229,10 +233,11 @@ export function HeroSection() {
             animate={{ opacity: 1, scale: 1, rotateY: 0 }}
             transition={{ 
               delay: 2.5, 
-              duration: 1.2, 
-              ease: "backOut",
+              duration: 1.5, 
+              ease: [0.68, -0.55, 0.265, 1.55],
               type: "spring",
-              stiffness: 80
+              stiffness: 60,
+              damping: 15
             }}
           >
             <motion.div 
@@ -240,13 +245,13 @@ export function HeroSection() {
               whileHover={{ 
                 scale: 1.05, 
                 rotateY: 5,
-                transition: { duration: 0.3 }
+                transition: { duration: 0.4, ease: "easeOut" }
               }}
             >
               <motion.div
                 initial={{ opacity: 0, scale: 1.2 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 3, duration: 0.8 }}
+                transition={{ delay: 3, duration: 1.0, ease: "easeOut" }}
                 className="relative w-full h-full"
               >
                 <img
@@ -261,14 +266,14 @@ export function HeroSection() {
                 className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 3.2, duration: 0.6 }}
+                transition={{ delay: 3.2, duration: 0.8, ease: "easeOut" }}
               />
               
               <motion.div 
                 className="absolute inset-0 ring-1 ring-white/10" 
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 3.4, duration: 0.5 }}
+                transition={{ delay: 3.4, duration: 0.7, ease: "easeOut" }}
               />
               
               {/* Glowing border effect */}
@@ -286,38 +291,15 @@ export function HeroSection() {
                 }}
                 transition={{
                   delay: 3.6,
-                  duration: 2,
+                  duration: 3,
                   repeat: Infinity,
-                  repeatDelay: 3
+                  repeatDelay: 4,
+                  ease: "easeInOut"
                 }}
               />
             </motion.div>
 
-            {/* Floating Elements */}
-            <motion.div
-              className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl"
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.5, 0.8, 0.5],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Number.POSITIVE_INFINITY,
-                repeatType: "reverse",
-              }}
-            />
-            <motion.div
-              className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl"
-              animate={{
-                scale: [1, 1.3, 1],
-                opacity: [0.3, 0.6, 0.3],
-              }}
-              transition={{
-                duration: 5,
-                repeat: Number.POSITIVE_INFINITY,
-                repeatType: "reverse",
-              }}
-            />
+
           </motion.div>
         </div>
 
@@ -326,16 +308,17 @@ export function HeroSection() {
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.5 }}
+          transition={{ delay: 1.5, duration: 0.8, ease: "easeOut" }}
         >
           <span className="text-sm text-muted-foreground mb-2">Descubre más</span>
           <motion.div
             className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center p-1"
             animate={{ y: [0, 10, 0] }}
             transition={{
-              duration: 1.5,
+              duration: 2.0,
               repeat: Number.POSITIVE_INFINITY,
               repeatType: "loop",
+              ease: "easeInOut",
             }}
           >
             <motion.div
@@ -345,9 +328,10 @@ export function HeroSection() {
                 opacity: [0, 1, 0],
               }}
               transition={{
-                duration: 1.5,
+                duration: 2.0,
                 repeat: Number.POSITIVE_INFINITY,
                 repeatType: "loop",
+                ease: "easeInOut",
               }}
             />
           </motion.div>
