@@ -4,11 +4,15 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Shield, Lock, Eye, Server, Zap, Fingerprint } from "lucide-react"
 import Link from "next/link"
+import { generatePageMetadata } from "@/lib/metadata"
 
-export const metadata: Metadata = {
-  title: "Seguridad | TecnoCrypter",
-  description: "Soluciones avanzadas de seguridad cibernética y encriptación para proteger tus activos digitales.",
-}
+export const metadata: Metadata = generatePageMetadata({
+  title: "Seguridad Cibernética - TecnoCrypter",
+  description: "Soluciones avanzadas de seguridad cibernética y encriptación para proteger tus activos digitales. Protección personal y empresarial.",
+  slug: "seguridad",
+  image: "https://tecnocrypter.com/og/seguridad.jpg",
+  keywords: ["seguridad cibernética", "encriptación", "protección digital", "antivirus", "VPN", "seguridad empresarial"]
+});
 
 export default function SeguridadPage() {
   const securityCategories = [

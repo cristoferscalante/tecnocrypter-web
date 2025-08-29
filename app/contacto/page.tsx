@@ -5,11 +5,15 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
+import { generatePageMetadata } from "@/lib/metadata"
 
-export const metadata: Metadata = {
-  title: "Contacto | TecnoCrypter",
-  description: "Ponte en contacto con nuestro equipo de expertos en seguridad cibernética y encriptación.",
-}
+export const metadata: Metadata = generatePageMetadata({
+  title: "Contacto - TecnoCrypter",
+  description: "Ponte en contacto con nuestro equipo de expertos en seguridad cibernética y encriptación. Soporte técnico 24/7 y consultas especializadas.",
+  slug: "contacto",
+  image: "/blogs/amenazas_cibernéticas.webp",
+  keywords: ["contacto tecnocrypter", "soporte técnico", "consultas ciberseguridad", "expertos encriptación"]
+});
 
 export default function ContactoPage() {
   return (

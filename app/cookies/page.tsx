@@ -1,11 +1,15 @@
 import type { Metadata } from "next"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Cookie, Shield, Lock, Eye, FileText, Mail, Calendar, Target, Scale, Users, Globe, Database, Clock, RefreshCw, CheckCircle, Settings, AlertTriangle } from "lucide-react"
+import { generatePageMetadata } from "@/lib/metadata"
 
-export const metadata: Metadata = {
-  title: "Política de Cookies | TecnoCrypter",
+export const metadata: Metadata = generatePageMetadata({
+  title: "Política de Cookies - TecnoCrypter",
   description: "Conoce cómo TecnoCrypter utiliza cookies y tecnologías similares bajo un enfoque de privacidad y mínima recolección de datos.",
-}
+  slug: "cookies",
+  image: "https://tecnocrypter.com/og/cookies.jpg",
+  keywords: ["política de cookies", "privacidad", "protección de datos", "TecnoCrypter", "cookies necesarias"]
+});
 
 export default function CookiesPage() {
   return (

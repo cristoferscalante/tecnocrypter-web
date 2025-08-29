@@ -7,6 +7,7 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { MatrixBackground } from "@/components/ui/matrix-background"
 import { Toaster } from "@/components/ui/sonner"
+import { StructuredData } from "@/components/seo/structured-data"
 import "./globals.css"
 
 const orbitron = Orbitron({ 
@@ -22,23 +23,60 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "TecnoCrypter - CriptoSecure | Seguridad Cibernética y Encriptación",
+  title: {
+    default: "TecnoCrypter - Ciberseguridad y Criptomonedas",
+    template: "%s | TecnoCrypter"
+  },
   description:
-    "Tu fuente confiable de información sobre seguridad cibernética, encriptación y criptomonedas. Productos seguros y análisis experto.",
-  keywords: ["seguridad cibernética", "encriptación", "criptomonedas", "blockchain", "cybersecurity"],
-  authors: [{ name: "V1TR0 Team" }],
-    icons: {
+    "Plataforma líder en ciberseguridad, encriptación y tecnología blockchain. Productos seguros, herramientas de privacidad y las últimas noticias en criptomonedas.",
+  keywords: ["ciberseguridad", "encriptación", "criptomonedas", "blockchain", "cybersecurity", "bitcoin", "ethereum", "privacidad", "seguridad digital"],
+  authors: [{ name: "TecnoCrypter Team" }],
+  creator: "TecnoCrypter",
+  publisher: "TecnoCrypter",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
     apple: '/favicon.ico',
   },
+  manifest: '/manifest.json',
   openGraph: {
-    title: "TecnoCrypter - CriptoSecure",
-    description: "Seguridad cibernética y encriptación de vanguardia",
     type: "website",
     locale: "es_ES",
+    url: "https://tecnocrypter.com",
+    siteName: "TecnoCrypter",
+    title: "TecnoCrypter - Ciberseguridad y Criptomonedas",
+    description: "Plataforma líder en ciberseguridad, encriptación y tecnología blockchain. Productos seguros, herramientas de privacidad y las últimas noticias en criptomonedas.",
+    images: [
+      {
+        url: "https://tecnocrypter.com/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "TecnoCrypter - Ciberseguridad y Criptomonedas",
+      },
+    ],
   },
-    generator: 'v0.dev'
+  twitter: {
+    card: "summary_large_image",
+    title: "TecnoCrypter - Ciberseguridad y Criptomonedas",
+    description: "Plataforma líder en ciberseguridad, encriptación y tecnología blockchain.",
+    creator: "@tecnocrypter",
+    images: ["https://tecnocrypter.com/hero.png"],
+  },
+  alternates: {
+    canonical: "https://tecnocrypter.com",
+  },
+  category: "technology",
 }
 
 export default function RootLayout({
@@ -48,6 +86,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        <StructuredData type="website" />
+        <StructuredData type="organization" />
+      </head>
       <body className={`${orbitron.variable} ${spaceGrotesk.variable} font-space-grotesk`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <MotionProvider>
