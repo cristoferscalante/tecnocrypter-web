@@ -1,12 +1,17 @@
 import type { Metadata } from "next"
 import GeneradorContrasenasClient from "@/components/tools/generador-contrasenas-client"
+import { generateToolMetadata } from "@/lib/metadata"
 
-export const metadata: Metadata = {
-  title: "Generador de Contraseñas Seguras | TecnoCrypter",
+export const metadata: Metadata = generateToolMetadata({
+  title: "Generador de Contraseñas Seguras",
   description: "Genera contraseñas seguras y aleatorias con nuestro generador avanzado. Incluye validadores, recomendaciones automáticas y consejos de seguridad.",
-  keywords: ["generador contraseñas", "contraseñas seguras", "seguridad", "ciberseguridad", "protección"],
-}
+  slug: "tools/generador-contrasenas",
+  image: "https://tecnocrypter.com/images/og/generador-contrasenas.jpg",
+  keywords: "generador contraseñas, contraseñas seguras, seguridad, ciberseguridad, protección, passwords"
+})
 
 export default function GeneradorContrasenasPage() {
-  return <GeneradorContrasenasClient />
+  return (
+    <GeneradorContrasenasClient />
+  )
 }

@@ -2,5 +2,15 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /api/
+Disallow: /dashboard/
+Disallow: /auth/
 
-Sitemap: https://tusitio.com/sitemap.xml
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dashboard/
+Disallow: /auth/
+
+Sitemap: https://tecnocrypter.com/sitemap.xml
+Sitemap: https://tecnocrypter.com/server-sitemap.xml

@@ -1,17 +1,15 @@
 import type { Metadata } from "next"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, Lock, Eye, FileText, Mail, Calendar, Scale, Users, Globe, AlertTriangle, Gavel, BookOpen, Settings, UserCheck, MessageSquare, Ban, Zap, Server, HelpCircle, MapPin } from "lucide-react"
+import { generatePageMetadata } from "@/lib/metadata"
 
-export const metadata: Metadata = {
-  title: "Términos de Servicio | TecnoCrypter",
+export const metadata: Metadata = generatePageMetadata({
+  title: "Términos de Servicio - TecnoCrypter",
   description: "Términos y condiciones de uso de TecnoCrypter. Conoce tus derechos y obligaciones al utilizar nuestros servicios de ciberseguridad.",
-  keywords: "términos de servicio, condiciones de uso, TecnoCrypter, ciberseguridad, legal",
-  openGraph: {
-    title: "Términos de Servicio | TecnoCrypter",
-    description: "Términos y condiciones de uso de TecnoCrypter. Conoce tus derechos y obligaciones al utilizar nuestros servicios de ciberseguridad.",
-    type: "website",
-  },
-}
+  slug: "terminos",
+  image: "https://tecnocrypter.com/og/terminos.jpg",
+  keywords: ["términos de servicio", "condiciones de uso", "TecnoCrypter", "ciberseguridad", "legal"]
+});
 
 export default function TerminosPage() {
   return (

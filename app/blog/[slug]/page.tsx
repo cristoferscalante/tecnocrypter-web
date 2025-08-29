@@ -9,6 +9,7 @@ import { BlogService } from "@/services/blog-service"
 import type { BlogPost } from "@/types"
 import type { Metadata } from "next"
 import { ShareButton } from "@/components/share-button"
+import { StructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
 
 interface BlogPostPageProps {
   params: {
@@ -115,8 +116,28 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <main className="min-h-screen py-8">
-      <div className="container max-w-4xl">
+    <>
+      <StructuredData 
+        type="article" 
+        data={{
+          title: post.title,
+          description: post.excerpt,
+          image: post.image,
+          publishedAt: post.date,
+          updatedAt: post.date,
+          slug: post.slug,
+          tags: post.tags,
+        }}
+      />
+      <BreadcrumbStructuredData 
+        items={[
+          { name: "Inicio", url: "https://tecnocrypter.com" },
+          { name: "Blog", url: "https://tecnocrypter.com/blog" },
+          { name: post.title, url: `https://tecnocrypter.com/blog/${post.slug}` },
+        ]}
+      />
+      <main className="min-h-screen py-8">
+        <div className="container max-w-4xl">
         {/* Navigation */}
         <div className="mb-8">
           <Link href="/blog">
@@ -258,8 +279,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               ))}
             </div>
           </section>
-        )}
-      </div>
-    </main>
+        )})}}
+        </div>
+      </main>
+    </>
   )
 }

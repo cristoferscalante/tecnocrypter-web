@@ -9,6 +9,7 @@ import type { Product } from "@/types"
 import type { Metadata } from "next"
 import { ProductImageGallery } from "@/components/product-image-gallery"
 import { ProductService } from "@/services/product-service"
+import { StructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
 
 interface ProductPageProps {
   params: {
@@ -58,8 +59,31 @@ export default async function ProductPage({ params }: ProductPageProps) {
   }
 
   return (
-    <main className="min-h-screen py-8">
-      <div className="container">
+    <>
+      <StructuredData 
+        type="product" 
+        data={{
+          name: product.name,
+          description: product.description,
+          image: product.images.length > 0 ? product.images[0].url : undefined,
+          price: product.price,
+          currency: "USD",
+          availability: "InStock",
+          brand: product.vendor,
+          category: product.category,
+          sku: product.id,
+          features: product.features,
+        }}
+      />
+      <BreadcrumbStructuredData 
+        items={[
+          { name: "Inicio", url: "https://tecnocrypter.com" },
+          { name: "Productos", url: "https://tecnocrypter.com/productos" },
+          { name: product.name, url: `https://tecnocrypter.com/productos/${product.id}` },
+        ]}
+      />
+      <main className="min-h-screen py-8">
+        <div className="container">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
           <Link href="/" className="hover:text-foreground transition-colors">
@@ -204,7 +228,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </Card>
           </div>
         </section>
-      </div>
-    </main>
+        </div>
+      </main>
+    </>
   )
 }

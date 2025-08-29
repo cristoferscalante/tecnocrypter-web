@@ -1,11 +1,15 @@
 import type { Metadata } from "next"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, Lock, Eye, FileText, Mail, Calendar, Target, Scale, Cookie, Users, Globe, Database, Clock, RefreshCw, CheckCircle, UserCheck, ClipboardCheck, AlertCircle } from "lucide-react"
+import { generatePageMetadata } from "@/lib/metadata"
 
-export const metadata: Metadata = {
-  title: "Política de Privacidad | TecnoCrypter",
-  description: "Conoce cómo TecnoCrypter protege tu privacidad y maneja tus datos personales bajo un modelo privacy-first.",
-}
+export const metadata: Metadata = generatePageMetadata({
+  title: "Política de Privacidad - TecnoCrypter",
+  description: "Conoce cómo TecnoCrypter protege tu privacidad y maneja tus datos personales bajo un modelo privacy-first con cifrado extremo a extremo.",
+  slug: "privacidad",
+  image: "https://tecnocrypter.com/og/privacidad.jpg",
+  keywords: ["política privacidad", "protección datos", "privacy-first", "cifrado extremo", "ciberseguridad"]
+});
 
 export default function PrivacidadPage() {
   return (
@@ -555,6 +559,6 @@ export default function PrivacidadPage() {
           </Card>
         </div>
       </div>
-    </main>
+      </main>
   )
 }
