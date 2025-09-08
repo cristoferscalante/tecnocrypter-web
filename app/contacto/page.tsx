@@ -1,23 +1,22 @@
-import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
-import { generatePageMetadata } from "@/lib/metadata"
-
-export const metadata: Metadata = generatePageMetadata({
-  title: "Contacto - TecnoCrypter",
-  description: "Ponte en contacto con nuestro equipo de expertos en seguridad cibernética y encriptación. Soporte técnico 24/7 y consultas especializadas.",
-  slug: "contacto",
-  image: "/blogs/amenazas_cibernéticas.webp",
-  keywords: ["contacto tecnocrypter", "soporte técnico", "consultas ciberseguridad", "expertos encriptación"]
-});
+import SeoPage from "@/components/seo/SeoPage"
 
 export default function ContactoPage() {
   return (
-    <main className="min-h-screen py-12">
+    <>
+      <SeoPage
+        title="Contacto - TecnoCrypter"
+        description="Ponte en contacto con nuestro equipo de expertos en seguridad cibernética y encriptación. Soporte técnico 24/7 y consultas especializadas."
+        slug="contacto"
+        image="https://tecnocrypter.com/seo/contacto.webp"
+        keywords="contacto tecnocrypter, soporte técnico, consultas ciberseguridad, expertos encriptación"
+      />
+      <main className="min-h-screen py-12">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight mb-4">Contacta con Nuestros Expertos</h1>
@@ -173,5 +172,6 @@ export default function ContactoPage() {
         </div>
       </div>
     </main>
+    </>
   )
 }
