@@ -1,19 +1,18 @@
-import type { Metadata } from "next"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Cookie, Shield, Lock, Eye, FileText, Mail, Calendar, Target, Scale, Users, Globe, Database, Clock, RefreshCw, CheckCircle, Settings, AlertTriangle } from "lucide-react"
-import { generatePageMetadata } from "@/lib/metadata"
-
-export const metadata: Metadata = generatePageMetadata({
-  title: "Política de Cookies - TecnoCrypter",
-  description: "Conoce cómo TecnoCrypter utiliza cookies y tecnologías similares bajo un enfoque de privacidad y mínima recolección de datos.",
-  slug: "cookies",
-  image: "https://tecnocrypter.com/og/cookies.jpg",
-  keywords: ["política de cookies", "privacidad", "protección de datos", "TecnoCrypter", "cookies necesarias"]
-});
+import SeoPage from "@/components/seo/SeoPage"
 
 export default function CookiesPage() {
   return (
-    <main className="min-h-screen py-12">
+    <>
+      <SeoPage
+        title="Política de Cookies - TecnoCrypter"
+        description="Conoce cómo TecnoCrypter utiliza cookies y tecnologías similares bajo un enfoque de privacidad y mínima recolección de datos."
+        slug="cookies"
+        image="https://tecnocrypter.com/seo/cookies.webp"
+        keywords="política de cookies, privacidad, protección de datos, TecnoCrypter, cookies necesarias"
+      />
+      <main className="min-h-screen py-12">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <div className="flex items-center justify-center mb-6">
@@ -292,6 +291,7 @@ export default function CookiesPage() {
           </Card>
         </div>
       </div>
-    </main>
+      </main>
+      </>
   )
 }
