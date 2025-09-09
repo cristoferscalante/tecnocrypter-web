@@ -1,19 +1,18 @@
-import type { Metadata } from "next"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, Lock, Eye, FileText, Mail, Calendar, Scale, Users, Globe, AlertTriangle, Gavel, BookOpen, Settings, UserCheck, MessageSquare, Ban, Zap, Server, HelpCircle, MapPin } from "lucide-react"
-import { generatePageMetadata } from "@/lib/metadata"
-
-export const metadata: Metadata = generatePageMetadata({
-  title: "Términos de Servicio - TecnoCrypter",
-  description: "Términos y condiciones de uso de TecnoCrypter. Conoce tus derechos y obligaciones al utilizar nuestros servicios de ciberseguridad.",
-  slug: "terminos",
-  image: "https://tecnocrypter.com/og/terminos.jpg",
-  keywords: ["términos de servicio", "condiciones de uso", "TecnoCrypter", "ciberseguridad", "legal"]
-});
+import SeoPage from "@/components/seo/SeoPage"
 
 export default function TerminosPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SeoPage
+        title="Términos de Servicio - TecnoCrypter"
+        description="Términos y condiciones de uso de TecnoCrypter. Conoce tus derechos y obligaciones al utilizar nuestros servicios de ciberseguridad."
+        slug="terminos"
+        image="https://tecnocrypter.com/seo/terminos.webp"
+        keywords="términos de servicio, condiciones de uso, TecnoCrypter, ciberseguridad, legal"
+      />
+      <div className="min-h-screen bg-background">
       <main className="container mx-auto px-4 py-16">
         {/* Header */}
         <div className="text-center mb-12">
@@ -443,6 +442,7 @@ export default function TerminosPage() {
           </Card>
         </div>
       </main>
-    </div>
+      </div>
+      </>
   )
 }
