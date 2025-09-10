@@ -110,16 +110,13 @@ export function HeroSection() {
               </motion.h1>
               <motion.p
                 className="text-xl font-space-grotesk text-muted-foreground max-w-2xl"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 1.0, ease: [0.25, 0.46, 0.45, 0.94] }}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 3, duration: 1.2, ease: "easeOut" }}
               >
-                <DecryptText
-                  text="Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada."
-                  delay={getTextDelay(1) + 2000}
-                  duration={2500}
-                  onComplete={() => handleTextComplete(1)}
-                />
+                <span className="relative">
+                  Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada.
+                </span>
               </motion.p>
             </motion.div>
 
@@ -240,62 +237,16 @@ export function HeroSection() {
               damping: 15
             }}
           >
-            <motion.div 
-              className="relative rounded-2xl overflow-hidden"
-              whileHover={{ 
-                scale: 1.05, 
-                rotateY: 5,
-                transition: { duration: 0.4, ease: "easeOut" }
-              }}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 3, duration: 1.2, ease: "easeOut" }}
+              className="relative"
             >
-              <motion.div
-                initial={{ opacity: 0, scale: 1.2 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 3, duration: 1.0, ease: "easeOut" }}
-                className="relative w-full h-full"
-              >
-                <img
-                  src="/hero.png"      
-                  alt="Experto en ciberseguridad"
-                  className="w-full h-auto"
-                />
-              </motion.div>
-              
-              {/* Animated overlay effects */}
-              <motion.div 
-                className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 3.2, duration: 0.8, ease: "easeOut" }}
-              />
-              
-              <motion.div 
-                className="absolute inset-0 ring-1 ring-white/10" 
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 3.4, duration: 0.7, ease: "easeOut" }}
-              />
-              
-              {/* Glowing border effect */}
-              <motion.div
-                className="absolute inset-0 rounded-2xl"
-                initial={{ 
-                  boxShadow: "0 0 0 0 rgba(59, 130, 246, 0)" 
-                }}
-                animate={{ 
-                  boxShadow: [
-                    "0 0 0 0 rgba(59, 130, 246, 0)",
-                    "0 0 20px 2px rgba(59, 130, 246, 0.3)",
-                    "0 0 0 0 rgba(59, 130, 246, 0)"
-                  ]
-                }}
-                transition={{
-                  delay: 3.6,
-                  duration: 3,
-                  repeat: Infinity,
-                  repeatDelay: 4,
-                  ease: "easeInOut"
-                }}
+              <img
+                src="/images/hero.png"      
+                alt="Experto en ciberseguridad"
+                className="w-full h-auto transform transition-transform duration-500 ease-out hover:scale-110 cursor-pointer"
               />
             </motion.div>
 

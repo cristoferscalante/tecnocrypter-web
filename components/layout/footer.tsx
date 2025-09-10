@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo y descripción */}
           <div className="md:col-span-1 space-y-4">
-            <div className="flex items-center space-x-4 group">
+            <Link href="/" className="flex items-center space-x-4 group">
               <Image 
                 src="/Tecno.svg" 
                 alt="TecnoCrypter Logo" 
@@ -20,7 +20,7 @@ export function Footer() {
               <span className="text-lg font-bold">
                 Tecno<span className="text-primary">Crypter</span>
               </span>
-            </div>
+            </Link>
             <p className="text-sm text-muted-foreground">
               Tu fuente confiable de información sobre seguridad cibernética, encriptación y criptomonedas.
             </p>

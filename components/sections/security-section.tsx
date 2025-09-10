@@ -66,7 +66,7 @@ export function SecuritySection() {
             <div className="relative">
               <div className="aspect-square">
                 <img
-                  src="/11.png"
+                  src="/images/11.png"
                   alt="Seguridad multicapa"
                   className="w-full h-full object-contain"
                 />
@@ -83,7 +83,7 @@ export function SecuritySection() {
             >
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full" />
-                <span className="font-medium">Protección Activa</span>
+                <span className="font-medium text-sm">Protección Activa</span>
               </div>
             </motion.div>
 

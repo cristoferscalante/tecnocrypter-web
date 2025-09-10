@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     description: "Plataforma líder en ciberseguridad, encriptación y tecnología blockchain. Productos seguros, herramientas de privacidad y las últimas noticias en criptomonedas.",
     images: [
       {
-        url: "https://tecnocrypter.com/hero.png",
+        url: "https://tecnocrypter.com/images/hero.png",
         width: 1200,
         height: 630,
         alt: "TecnoCrypter - Ciberseguridad y Criptomonedas",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: "TecnoCrypter - Ciberseguridad y Criptomonedas",
     description: "Plataforma líder en ciberseguridad, encriptación y tecnología blockchain.",
     creator: "@tecnocrypter",
-    images: ["https://tecnocrypter.com/hero.png"],
+    images: ["https://tecnocrypter.com/images/hero.png"],
   },
   alternates: {
     canonical: "https://tecnocrypter.com",

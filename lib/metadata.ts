@@ -6,7 +6,7 @@ export const baseMetadata = {
   siteUrl: 'https://tecnocrypter.com',
   defaultTitle: 'TecnoCrypter - Ciberseguridad y Criptomonedas',
   defaultDescription: 'Plataforma líder en ciberseguridad, encriptación y tecnología blockchain. Productos seguros, herramientas de privacidad y las últimas noticias en criptomonedas.',
-  defaultImage: 'https://tecnocrypter.com/hero.png',
+  defaultImage: 'https://tecnocrypter.com/images/hero.png',
   twitterHandle: '@tecnocrypter',
 };
 
