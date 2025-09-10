@@ -4,6 +4,7 @@ import { AnimatedSection } from "@/components/ui/animated-section"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 
 export function SecuritySection() {
   const securityLayers = [
@@ -30,75 +31,65 @@ export function SecuritySection() {
 
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <AnimatedSection direction="right">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Seguridad Multicapa para Protección Total</h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Nuestro enfoque de seguridad en capas proporciona múltiples niveles de protección para defender tus
-              activos digitales contra amenazas sofisticadas.
-            </p>
-
-            <div className="space-y-6 mb-8">
-              {securityLayers.map((layer, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="font-medium">{layer.name}</span>
-                    <span className="text-muted-foreground">{layer.percentage}%</span>
-                  </div>
-                  <div className="h-2 bg-muted rounded-full overflow-hidden">
-                    <motion.div
-                      className="h-full bg-primary"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${layer.percentage}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: 0.2 * index }}
-                    />
-                  </div>
-                </div>
-              ))}
+          <AnimatedSection direction="right" className="relative">
+            <div className="flex justify-center mb-8 relative z-20 py-12">
+              <motion.div
+                className="relative"
+                initial={{ y: 0, rotateY: 0, scale: 0.8 }}
+                animate={{ 
+                  y: [-15, 15, -15],
+                  rotateY: [0, 20, -20, 0],
+                  scale: [1, 1.05, 1]
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                <Image
+                   src="/images/tecno2.png"
+                   alt="Escudo de seguridad 3D"
+                   width={320}
+                   height={320}
+                   className="w-80 h-80 object-contain drop-shadow-2xl transform transition-transform duration-500 ease-out hover:scale-110 cursor-pointer"
+                   style={{
+                     filter: "drop-shadow(0 35px 70px rgba(0, 0, 0, 0.4))"
+                   }}
+                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent rounded-full blur-2xl transform scale-90 -z-10" />
+                <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl transform scale-110 -z-20" />
+              </motion.div>
+            </div>
+            
+            <div className="relative z-10 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Seguridad Multicapa para Protección Total</h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Nuestro enfoque de seguridad en capas proporciona múltiples niveles de protección para defender tus
+                activos digitales contra amenazas sofisticadas.
+              </p>
             </div>
 
-            <Button asChild size="lg">
-              <Link href="/seguridad">Explorar Soluciones de Seguridad</Link>
-            </Button>
+            <div className="flex justify-center">
+               <Button asChild size="lg">
+                 <Link href="/seguridad">Explorar Soluciones de Seguridad</Link>
+               </Button>
+             </div>
           </AnimatedSection>
 
           <AnimatedSection direction="left" className="relative">
-            <div className="relative">
+            <div className="relative py-8">
               <div className="aspect-square">
                 <img
                   src="/images/11.png"
                   alt="Seguridad multicapa"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain transform transition-transform duration-500 ease-out hover:scale-110 cursor-pointer"
                 />
               </div>
             </div>
 
             {/* Floating badges */}
-            <motion.div
-              className="absolute -top-6 -right-6 bg-card/40 backdrop-blur-sm shadow-lg rounded-lg p-3 border"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.8 }}
-            >
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-green-500 rounded-full" />
-                <span className="font-medium text-sm">Protección Activa</span>
-              </div>
-            </motion.div>
 
-            <motion.div
-              className="absolute -bottom-6 -left-6 bg-card/40 backdrop-blur-sm shadow-lg rounded-lg p-3 border"
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 1 }}
-            >
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-primary rounded-full" />
-                <span className="font-medium">Encriptación 256-bit</span>
-              </div>
-            </motion.div>
           </AnimatedSection>
         </div>
       </div>
