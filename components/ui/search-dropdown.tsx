@@ -51,6 +51,7 @@ export function SearchDropdown({ className, placeholder = "Buscar artículos, pr
   const searchRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const [selectedIndex, setSelectedIndex] = useState(-1)
+  const [isHovered, setIsHovered] = useState(false)
 
   // Cerrar dropdown al hacer clic fuera
   useEffect(() => {
@@ -113,9 +114,24 @@ export function SearchDropdown({ className, placeholder = "Buscar artículos, pr
   }
 
   return (
-    <div ref={searchRef} className={cn("relative w-full max-w-md", className)}>
-      <div className="relative">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+    <div ref={searchRef} className={cn("relative transition-all duration-500 ease-in-out", isHovered || isOpen || query ? "w-full max-w-md" : "w-10", className)}>
+      <div 
+        className="relative"
+        onMouseEnter={() => {
+          setIsHovered(true)
+          setIsOpen(true)
+          inputRef.current?.focus()
+        }}
+        onMouseLeave={() => {
+          setIsHovered(false)
+        }}
+      >
+        <Search 
+          className={cn(
+            "absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground cursor-pointer transition-all duration-300 ease-in-out",
+            isHovered ? "scale-125 text-primary rotate-12" : "scale-100 hover:text-primary"
+          )}
+        />
         <Input
           ref={inputRef}
           type="text"
@@ -123,7 +139,10 @@ export function SearchDropdown({ className, placeholder = "Buscar artículos, pr
           value={query}
           onChange={handleInputChange}
           onFocus={() => query.length >= 2 && setIsOpen(true)}
-          className="pl-10 pr-10 bg-background/50 backdrop-blur-sm border-border/50 focus:border-primary/50"
+          className={cn(
+            "pl-3 pr-10 bg-background/50 backdrop-blur-sm border-border/50 focus:border-primary/50 transition-all duration-500 ease-in-out transform origin-right",
+            isHovered || isOpen || query ? "w-full opacity-100 scale-x-100" : "w-0 opacity-0 scale-x-0 border-transparent bg-transparent"
+          )}
         />
         {query && (
           <Button

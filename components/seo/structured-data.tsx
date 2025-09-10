@@ -24,7 +24,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
         '@type': 'Article',
         headline: data.title,
         description: data.description,
-        image: data.image || 'https://tecnocrypter.com/hero.png',
+        image: data.image || 'https://tecnocrypter.com/images/hero.png',
         datePublished: data.publishedAt,
         dateModified: data.updatedAt || data.publishedAt,
         author: {
@@ -56,7 +56,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
         '@type': 'Product',
         name: data.name,
         description: data.description,
-        image: data.images?.[0] || 'https://tecnocrypter.com/hero.png',
+        image: data.images?.[0] || 'https://tecnocrypter.com/images/hero.png',
         brand: {
           '@type': 'Brand',
           name: 'TecnoCrypter',
