@@ -32,6 +32,7 @@ export function Header() {
     { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
     { name: "Limpiador de Metadatos", href: "/tools/limpia-metadatos" },
     { name: "Verificador de URL", href: "/tools/verificador" },
+    { name: "Generador de Códigos QR", href: "/tools/generador-qr" },
   ]
 
   return (
