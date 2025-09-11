@@ -95,16 +95,16 @@ export function SecuritySection() {
         {/* Navigation Buttons */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-primary/10 hover:bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-primary/10 hover:bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
         >
-          <ChevronLeft className="w-6 h-6 text-primary" />
+          <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 text-primary" />
         </button>
         
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-primary/10 hover:bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-primary/10 hover:bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
         >
-          <ChevronRight className="w-6 h-6 text-primary" />
+          <ChevronRight className="w-4 h-4 md:w-6 md:h-6 text-primary" />
         </button>
 
         {/* Carousel Container */}
@@ -126,8 +126,8 @@ export function SecuritySection() {
               {(() => {
                 const feature = securityFeatures[currentIndex]
                 return (
-                  <Card className="relative bg-transparent border-0 min-h-[500px]">
-                    <CardContent className="p-16 text-center flex flex-col items-center justify-center min-h-[500px]">
+                  <Card className="relative bg-transparent border-0 min-h-[400px] md:min-h-[500px]">
+                    <CardContent className="p-4 md:p-8 lg:p-16 text-center flex flex-col items-center justify-center min-h-[400px] md:min-h-[500px]">
                       {/* Animated large image */}
                        <div className="mb-8 mx-auto cursor-pointer" onClick={() => {
                          setIsGlowing(!isGlowing)
@@ -136,8 +136,8 @@ export function SecuritySection() {
                          }, 500)
                        }}>
                          <motion.div 
-                           className="w-[36rem] h-[36rem] mx-auto relative"
-                           whileHover={{ scale: 1.1 }}
+                           className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[36rem] lg:h-[36rem] mx-auto relative"
+                           whileHover={{ scale: 1.05 }}
                            transition={{ duration: 0.3, ease: "easeOut" }}
                          >
                            <motion.img
@@ -171,7 +171,7 @@ export function SecuritySection() {
 
 
                       {/* Content */}
-                      <p className="text-muted-foreground text-base leading-relaxed max-w-md">
+                      <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-xs md:max-w-md px-2">
                         {feature.description}
                       </p>
                     </CardContent>
@@ -183,12 +183,12 @@ export function SecuritySection() {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex justify-center mt-8 space-x-2">
+        <div className="flex justify-center mt-6 md:mt-8 space-x-2">
           {securityFeatures.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                 index === currentIndex 
                   ? 'bg-primary scale-125' 
                   : 'bg-primary/30 hover:bg-primary/50'
