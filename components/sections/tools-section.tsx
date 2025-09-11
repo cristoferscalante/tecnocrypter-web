@@ -7,11 +7,13 @@ import { Badge } from "@/components/ui/badge"
 import { AnimatedSection } from "@/components/ui/animated-section"
 import { Key, ImageIcon, ArrowRight, Shield, Search } from "lucide-react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export function ToolsSection() {
   const tools = [
     {
       icon: Key,
+      image: "/images/32.png",
       title: "Generador de Contraseñas",
       description: "Crea contraseñas seguras y personalizables con opciones avanzadas de configuración.",
       href: "/tools/generador-contrasenas",
@@ -20,6 +22,7 @@ export function ToolsSection() {
     },
     {
       icon: ImageIcon,
+      image: "/images/33.png",
       title: "Limpiador de Metadatos",
       description: "Elimina metadatos EXIF y GPS de tus imágenes para proteger tu privacidad.",
       href: "/tools/limpia-metadatos",
@@ -28,6 +31,7 @@ export function ToolsSection() {
     },
     {
       icon: Search,
+      image: "/images/34.png",
       title: "Verificador de URL",
       description: "Analiza la seguridad de URLs y detecta posibles amenazas antes de visitarlas.",
       href: "/tools/verificador",
@@ -70,54 +74,41 @@ export function ToolsSection() {
             >
               <Card className="h-full transition-all duration-300 hover:shadow-lg hover:scale-[1.02] border-2 hover:border-primary/20 flex flex-col">
                 <CardHeader className="pb-4">
-                  <div className="flex items-start justify-between mb-4">
-                    <motion.div 
-                      className="rounded-full w-12 h-12 flex items-center justify-center bg-primary/10 group-hover:bg-primary/20 transition-colors"
-                      whileHover={{
-                        scale: 1.1,
-                        rotate: tool.title === "Generador de Contraseñas" ? [0, 360] :
-                                tool.title === "Limpiador de Metadatos" ? { y: [0, -8, 0] } :
-                                tool.title === "Verificador de URL" ? { scale: [1, 1.3, 1] } : {}
-                      }}
-                      transition={{
-                        duration: tool.title === "Generador de Contraseñas" ? 0.8 : 0.6,
-                        ease: "easeInOut",
-                        repeat: tool.title === "Verificador de URL" ? 1 : 0
-                      }}
-                    >
+                  <div className="flex flex-col items-center text-center mb-4">
+                    <Link href={tool.href}>
                       <motion.div
+                        className="mb-4 cursor-pointer"
                         whileHover={{
-                          color: "hsl(var(--primary))",
-                          filter: "drop-shadow(0 0 6px hsl(var(--primary)))"
+                          scale: 1.1,
+                          rotate: tool.title === "Generador de Contraseñas" ? [0, 360] :
+                                  tool.title === "Limpiador de Metadatos" ? { y: [0, -8, 0] } :
+                                  tool.title === "Verificador de URL" ? { scale: [1, 1.3, 1] } : {}
                         }}
-                        transition={{ duration: 0.3 }}
+                        transition={{
+                          duration: tool.title === "Generador de Contraseñas" ? 0.8 : 0.6,
+                          ease: "easeInOut",
+                          repeat: tool.title === "Verificador de URL" ? 1 : 0
+                        }}
                       >
-                        <tool.icon className="h-6 w-6 text-primary" />
+                        <Image
+                       src={tool.image}
+                       alt={tool.title}
+                       width={120}
+                       height={120}
+                       className="w-32 h-32 object-contain"
+                     />
                       </motion.div>
-                    </motion.div>
-                    <Badge 
-                      variant={tool.badge === "Nuevo" ? "default" : "secondary"}
-                      className={tool.badge === "Nuevo" ? "bg-green-500 hover:bg-green-600" : ""}
-                    >
-                      {tool.badge}
-                    </Badge>
+                    </Link>
                   </div>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors text-center">
                     {tool.title}
                   </CardTitle>
-                  <CardDescription className="text-base">
+                  <CardDescription className="text-base text-center">
                     {tool.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0 flex-1 flex flex-col justify-end">
                   <div className="space-y-4">
-                    <div className="flex flex-wrap gap-2">
-                      {tool.features.map((feature, featureIndex) => (
-                        <Badge key={featureIndex} variant="outline" className="text-xs">
-                          {feature}
-                        </Badge>
-                      ))}
-                    </div>
                     <Button asChild className="w-full group/btn">
                       <Link href={tool.href}>
                         Usar Herramienta
