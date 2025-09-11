@@ -20,6 +20,8 @@ interface PasswordOptions {
   includeLowercase: boolean
   includeNumbers: boolean
   includeSymbols: boolean
+  useSeed: boolean
+  seed: string
 }
 
 interface PasswordStrength {
@@ -28,6 +30,75 @@ interface PasswordStrength {
   color: string
   recommendations: string[]
 }
+
+// Función para generar una contraseña basada en una semilla
+const generateSeedBasedPassword = (seed: string, options: PasswordOptions): string => {
+  // Conjuntos de caracteres
+  const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  const lowercase = "abcdefghijklmnopqrstuvwxyz"
+  const numbers = "0123456789"
+  const symbols = "!@#$%^&*()_+-=[]{}|;:,.<>?"
+  
+  // Crear un hash simple de la semilla
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) {
+    hash = ((hash << 5) - hash) + seed.charCodeAt(i);
+    hash |= 0; // Convertir a entero de 32 bits
+  }
+  
+  // Asegurar que el hash sea positivo
+  hash = Math.abs(hash);
+  
+  // Crear la contraseña basada en el hash
+  let password = "";
+  const seedStr = hash.toString();
+  
+  // Determinar qué conjuntos de caracteres usar
+  let charsets = [];
+  if (options.includeUppercase) charsets.push(uppercase);
+  if (options.includeLowercase) charsets.push(lowercase);
+  if (options.includeNumbers) charsets.push(numbers);
+  if (options.includeSymbols) charsets.push(symbols);
+  
+  // Si no hay conjuntos seleccionados, usar todos
+  if (charsets.length === 0) {
+    charsets = [uppercase, lowercase, numbers, symbols];
+  }
+  
+  // Generar la contraseña
+  for (let i = 0; i < options.length; i++) {
+    // Usar diferentes partes del hash para seleccionar caracteres
+    const charsetIndex = (hash + i) % charsets.length;
+    const charset = charsets[charsetIndex];
+    const charIndex = (hash + i * seedStr.length) % charset.length;
+    password += charset[charIndex];
+  }
+  
+  // Asegurar que la contraseña incluya al menos un carácter de cada tipo seleccionado
+  let finalPassword = password;
+  let index = 0;
+  
+  if (options.includeUppercase && !/[A-Z]/.test(finalPassword)) {
+    finalPassword = finalPassword.substring(0, index) + uppercase[hash % uppercase.length] + finalPassword.substring(index + 1);
+    index++;
+  }
+  
+  if (options.includeLowercase && !/[a-z]/.test(finalPassword)) {
+    finalPassword = finalPassword.substring(0, index) + lowercase[hash % lowercase.length] + finalPassword.substring(index + 1);
+    index++;
+  }
+  
+  if (options.includeNumbers && !/[0-9]/.test(finalPassword)) {
+    finalPassword = finalPassword.substring(0, index) + numbers[hash % numbers.length] + finalPassword.substring(index + 1);
+    index++;
+  }
+  
+  if (options.includeSymbols && !/[^A-Za-z0-9]/.test(finalPassword)) {
+    finalPassword = finalPassword.substring(0, index) + symbols[hash % symbols.length] + finalPassword.substring(index + 1);
+  }
+  
+  return finalPassword;
+};
 
 const PasswordGenerator = () => {
   const { toast } = useToast()
@@ -38,6 +109,8 @@ const PasswordGenerator = () => {
     includeLowercase: true,
     includeNumbers: true,
     includeSymbols: false,
+    useSeed: false,
+    seed: "",
   })
   const [strength, setStrength] = useState<PasswordStrength>({
     score: 0,
@@ -52,6 +125,24 @@ const PasswordGenerator = () => {
     const numbers = "0123456789"
     const symbols = "!@#$%^&*()_+-=[]{}|;:,.<>?"
 
+    // Si está usando semilla y la semilla está vacía, mostrar error
+    if (options.useSeed && !options.seed.trim()) {
+      toast({
+        title: "Error",
+        description: "Debes ingresar una palabra o frase secreta",
+        variant: "destructive",
+      })
+      return
+    }
+
+    // Si está usando semilla, generar contraseña basada en la semilla
+    if (options.useSeed && options.seed) {
+      const seedPassword = generateSeedBasedPassword(options.seed, options);
+      setPassword(seedPassword);
+      return;
+    }
+
+    // Generación aleatoria tradicional
     let charset = ""
     if (options.includeUppercase) charset += uppercase
     if (options.includeLowercase) charset += lowercase
@@ -219,6 +310,35 @@ const PasswordGenerator = () => {
           {/* Opciones de Generación */}
           <div className="space-y-4">
             <Label className="text-base font-semibold">Opciones de generación</Label>
+            
+            {/* Opción de Semilla */}
+            <div className="space-y-2 border p-4 rounded-lg bg-muted/30">
+              <div className="flex items-center space-x-2">
+                <Checkbox
+                  id="useSeed"
+                  checked={options.useSeed}
+                  onCheckedChange={(checked) =>
+                    setOptions({ ...options, useSeed: checked as boolean })
+                  }
+                />
+                <Label htmlFor="useSeed" className="font-medium">Configurar semilla</Label>
+              </div>
+              
+              {options.useSeed && (
+                <div className="mt-2 space-y-2">
+                  <Label htmlFor="seed">Palabra o frase secreta</Label>
+                  <Input
+                    id="seed"
+                    value={options.seed}
+                    onChange={(e) => setOptions({ ...options, seed: e.target.value })}
+                    placeholder="Ingresa una palabra o frase que puedas recordar"
+                  />
+                  <p className="text-xs text-muted-foreground">
+                    Esta palabra generará siempre la misma contraseña. Úsala para recuperar tu contraseña cuando la necesites.
+                  </p>
+                </div>
+              )}
+            </div>
             
             {/* Longitud */}
             <div className="space-y-2">
