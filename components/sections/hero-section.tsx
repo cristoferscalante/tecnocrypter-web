@@ -5,8 +5,10 @@ import { ArrowRight, Shield, Lock, TrendingUp } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { DecryptText, useSequentialDecrypt } from "@/components/ui/decrypt-text"
+import { useState } from "react"
 
 export function HeroSection() {
+  const [isGlowing, setIsGlowing] = useState(false)
   const { getTextDelay, handleTextComplete } = useSequentialDecrypt([
     "Bienvenido a TecnoCrypter - Donde la Seguridad se Encuentra con la Innovación",
     "Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada."
@@ -32,35 +34,7 @@ export function HeroSection() {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-background/20 via-background/10 to-primary/5 min-h-[90vh] flex items-center">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          className="absolute top-20 left-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl"
-          animate={{
-            x: [0, 30, 0],
-            y: [0, 50, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Number.POSITIVE_INFINITY,
-            repeatType: "reverse",
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-primary/10 blur-3xl"
-          animate={{
-            x: [0, -50, 0],
-            y: [0, 30, 0],
-          }}
-          transition={{
-            duration: 30,
-            repeat: Number.POSITIVE_INFINITY,
-            repeatType: "reverse",
-            ease: "easeInOut",
-          }}
-        />
-      </div>
+
 
       <div className="container py-24 lg:py-32 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -159,68 +133,7 @@ export function HeroSection() {
               </motion.div>
             </motion.div>
 
-            {/* Features Grid */}
-            <motion.div 
-              className="grid sm:grid-cols-3 gap-6 pt-8"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 5.5, duration: 1.0, ease: "easeOut" }}
-            >
-              {features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  className="flex items-start space-x-3 p-4 rounded-lg bg-background/50 backdrop-blur-sm border group hover:bg-background/70 hover:border-primary/30 transition-all duration-300"
-                  initial={{ opacity: 0, y: 40, scale: 0.9 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  transition={{ 
-                    delay: 5.8 + index * 0.2, 
-                    duration: 1.0, 
-                    ease: [0.68, -0.55, 0.265, 1.55],
-                    type: "spring",
-                    stiffness: 80,
-                    damping: 15
-                  }}
-                  whileHover={{ 
-                    scale: 1.05, 
-                    y: -5,
-                    transition: { duration: 0.3, ease: "easeOut" }
-                  }}
-                >
-                  <motion.div 
-                    className="flex-shrink-0 mt-1"
-                    initial={{ rotate: -180, scale: 0 }}
-                    animate={{ rotate: 0, scale: 1 }}
-                    transition={{ 
-                      delay: 6 + index * 0.2, 
-                      duration: 0.8,
-                      type: "spring",
-                      stiffness: 150,
-                      damping: 12
-                    }}
-                  >
-                    <feature.icon className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-500 ease-out" />
-                  </motion.div>
-                  <div>
-                    <motion.h3 
-                      className="font-semibold group-hover:text-primary transition-colors duration-300"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 6.2 + index * 0.2, duration: 0.7, ease: "easeOut" }}
-                    >
-                      {feature.title}
-                    </motion.h3>
-                    <motion.p 
-                      className="text-sm text-muted-foreground"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 6.4 + index * 0.2, duration: 0.7, ease: "easeOut" }}
-                    >
-                      {feature.description}
-                    </motion.p>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
+
           </div>
 
           {/* Visual */}
@@ -243,13 +156,87 @@ export function HeroSection() {
               transition={{ delay: 3, duration: 1.2, ease: "easeOut" }}
               className="relative"
             >
-              <img
+              <motion.img
                 src="/images/hero.png"      
                 alt="Experto en ciberseguridad"
-                className="w-full h-auto transform transition-transform duration-500 ease-out hover:scale-110 cursor-pointer"
+                className={`w-full h-auto transform transition-all duration-500 ease-out hover:scale-110 cursor-pointer ${
+                  isGlowing 
+                    ? 'drop-shadow-[0_0_20px_rgba(16,185,129,0.8)] filter brightness-110 contrast-110' 
+                    : ''
+                }`}
+                onClick={() => setIsGlowing(!isGlowing)}
+                animate={{
+                  filter: isGlowing 
+                    ? [
+                        'drop-shadow(0 0 20px rgba(16,185,129,0.8)) brightness(110%) contrast(110%)',
+                        'drop-shadow(0 0 30px rgba(16,185,129,1)) brightness(120%) contrast(120%)',
+                        'drop-shadow(0 0 20px rgba(16,185,129,0.8)) brightness(110%) contrast(110%)'
+                      ]
+                    : 'drop-shadow(0 0 0px rgba(16,185,129,0)) brightness(100%) contrast(100%)'
+                }}
+                transition={{
+                  duration: isGlowing ? 2 : 0.5,
+                  repeat: isGlowing ? Infinity : 0,
+                  repeatType: 'reverse',
+                  ease: 'easeInOut'
+                }}
               />
             </motion.div>
 
+            {/* Features Grid - Moved below image */}
+            <motion.div 
+              className="grid sm:grid-cols-3 gap-6 pt-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 3, duration: 1.0, ease: "easeOut" }}
+            >
+              {features.map((feature, index) => (
+                <motion.div
+                  key={index}
+                  className="flex items-center justify-center space-x-3 p-4 rounded-lg bg-background/50 backdrop-blur-sm border group hover:bg-background/70 hover:border-primary/30 transition-all duration-300"
+                  initial={{ opacity: 0, y: 40, scale: 0.9 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ 
+                    delay: 3.2 + index * 0.2, 
+                    duration: 1.0, 
+                    ease: [0.68, -0.55, 0.265, 1.55],
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 15
+                  }}
+                  whileHover={{ 
+                    scale: 1.05, 
+                    y: -5,
+                    transition: { duration: 0.3, ease: "easeOut" }
+                  }}
+                >
+                  <motion.div 
+                    className="flex-shrink-0"
+                    initial={{ rotate: -180, scale: 0 }}
+                    animate={{ rotate: 0, scale: 1 }}
+                    transition={{ 
+                      delay: 3.4 + index * 0.2, 
+                      duration: 0.8,
+                      type: "spring",
+                      stiffness: 150,
+                      damping: 12
+                    }}
+                  >
+                    <feature.icon className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-500 ease-out" />
+                  </motion.div>
+                  <div className="flex-1 text-center">
+                    <motion.h3 
+                      className="text-sm font-medium group-hover:text-primary transition-colors duration-300"
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 3.6 + index * 0.2, duration: 0.7, ease: "easeOut" }}
+                    >
+                      {feature.title}
+                    </motion.h3>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
 
           </motion.div>
         </div>
