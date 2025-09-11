@@ -92,7 +92,7 @@ export function SecuritySection() {
       </div>
 
       {/* Security Features Carousel */}
-      <div className="relative max-w-2xl mx-auto mb-16 container relative z-10">
+      <div className="relative max-w-6xl mx-auto mb-16 container relative z-10">
         {/* Navigation Buttons */}
         <button
           onClick={prevSlide}
@@ -127,8 +127,8 @@ export function SecuritySection() {
               {(() => {
                 const feature = securityFeatures[currentIndex]
                 return (
-                  <Card className="relative bg-transparent border-0 min-h-[300px]">
-                    <CardContent className="p-12 text-center flex flex-col items-center justify-center min-h-[300px]">
+                  <Card className="relative bg-transparent border-0 min-h-[500px]">
+                    <CardContent className="p-16 text-center flex flex-col items-center justify-center min-h-[500px]">
                       {/* Animated large image */}
                        <div className="mb-8 mx-auto cursor-pointer" onClick={() => {
                          setIsGlowing(!isGlowing)

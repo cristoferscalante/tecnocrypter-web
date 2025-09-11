@@ -3,6 +3,7 @@
 import { AnimatedSection } from "@/components/ui/animated-section"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 
 export function ShieldSection() {
 
@@ -10,14 +11,14 @@ export function ShieldSection() {
     <section className="py-24 relative overflow-hidden">
 
       <div className="container relative z-10">
-        {/* Main Content Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
-          {/* Left Character - tecno2.png with 3D Effects */}
-          <AnimatedSection delay={0.2} className="order-1 lg:order-1">
+        {/* Main Content Layout - Centered */}
+        <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
+          {/* Centered Character - tecno2.png with 3D Effects */}
+          <AnimatedSection delay={0.2} className="text-center">
             <motion.div
-              className="relative w-full max-w-sm mx-auto lg:ml-8"
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              className="relative w-full max-w-sm mx-auto"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               animate={{
                 y: [0, -12, -8, -15, -5, 0],
@@ -43,19 +44,21 @@ export function ShieldSection() {
                 transition: { duration: 0.3, ease: "easeOut" }
               }}
             >
-              <Image
-                src="/images/tecno2.png"
-                alt="Personaje de seguridad TecnoCrypter"
-                width={320}
-                height={320}
-                className="w-full h-auto object-contain drop-shadow-2xl"
-                priority
-              />
+              <Link href="/productos" className="block cursor-pointer">
+                <Image
+                  src="/images/tecno2.png"
+                  alt="Personaje de seguridad TecnoCrypter"
+                  width={320}
+                  height={320}
+                  className="w-full h-auto object-contain drop-shadow-2xl transition-transform hover:scale-105"
+                  priority
+                />
+              </Link>
             </motion.div>
             
             {/* Text Below tecno2.png */}
             <motion.div
-              className="text-center mt-8 max-w-sm mx-auto lg:ml-8"
+              className="text-center mt-8 max-w-sm mx-auto"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
@@ -66,29 +69,6 @@ export function ShieldSection() {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Nuestro avanzado sistema de protección vigila constantemente tus activos digitales con tecnología de vanguardia.
               </p>
-            </motion.div>
-          </AnimatedSection>
-
-          {/* Right Character - 11.png */}
-          <AnimatedSection delay={0.6} className="order-2 lg:order-2">
-            <motion.div
-              className="relative w-full max-w-xl mx-auto lg:mx-0 lg:ml-auto"
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              whileHover={{ 
-                scale: 1.05,
-                transition: { duration: 0.3 }
-              }}
-            >
-              <Image
-                src="/images/11.png"
-                alt="Personaje de protección digital"
-                width={600}
-                height={600}
-                className="w-full h-auto object-contain drop-shadow-2xl"
-                priority
-              />
             </motion.div>
           </AnimatedSection>
         </div>
