@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Key, FileCheck, ArrowRight } from "lucide-react"
+import { Shield, Key, FileCheck, ArrowRight, QrCode } from "lucide-react"
 import SeoPage from "@/components/seo/SeoPage"
 
 const tools = [
@@ -27,6 +27,13 @@ const tools = [
     href: "/tools/verificador",
     icon: Shield,
     category: "Análisis"
+  },
+  {
+    title: "Generador de Códigos QR",
+    description: "Crea códigos QR personalizados para enlaces, textos y contactos con opciones de personalización.",
+    href: "/tools/generador-qr",
+    icon: QrCode,
+    category: "Utilidades"
   }
 ]
 

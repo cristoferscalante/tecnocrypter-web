@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/sections/hero-section"
 import { FeaturesSection } from "@/components/sections/features-section"
 import { ToolsSection } from "@/components/sections/tools-section"
+import { ShieldSection } from "@/components/sections/shield-section"
 import { SecuritySection } from "@/components/sections/security-section"
 import { FeaturedPosts } from "@/components/sections/featured-posts"
 import { ProductShowcase } from "@/components/sections/product-showcase"
@@ -23,9 +24,9 @@ export default function HomePage() {
       <main className="min-h-screen">
         <HeroSection />
         <FeaturesSection />
-        <ToolsSection />
         <SecuritySection />
-        
+        <ToolsSection />
+        <ShieldSection />
         <FeaturedPosts />
         <ProductShowcase />
         <FaqSection />

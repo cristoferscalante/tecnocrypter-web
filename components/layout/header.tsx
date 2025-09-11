@@ -25,13 +25,14 @@ export function Header() {
 
   const navigation = [
     { name: "Blog", href: "/blog" },
-    { name: "Productos", href: "/productos" },
+    { name: "Tienda", href: "/productos" },
   ]
 
   const toolsItems = [
     { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
     { name: "Limpiador de Metadatos", href: "/tools/limpia-metadatos" },
     { name: "Verificador de URL", href: "/tools/verificador" },
+    { name: "Generador de Códigos QR", href: "/tools/generador-qr" },
   ]
 
   return (
