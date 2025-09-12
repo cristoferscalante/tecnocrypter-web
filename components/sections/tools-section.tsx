@@ -13,7 +13,7 @@ export function ToolsSection() {
   const tools = [
     {
       icon: Key,
-      image: "/images/32.png",
+      image: "/images/optimizadas/32.webp",
       title: "Generador de Contraseñas",
       description: "Crea contraseñas seguras y personalizables con opciones avanzadas de configuración.",
       href: "/tools/generador-contrasenas",
@@ -22,7 +22,7 @@ export function ToolsSection() {
     },
     {
       icon: ImageIcon,
-      image: "/images/33.png",
+      image: "/images/optimizadas/33.webp",
       title: "Limpiador de Metadatos",
       description: "Elimina metadatos EXIF y GPS de tus imágenes para proteger tu privacidad.",
       href: "/tools/limpia-metadatos",
@@ -31,7 +31,7 @@ export function ToolsSection() {
     },
     {
       icon: QrCode,
-      image: "/images/11.png",
+      image: "/images/optimizadas/11.webp",
       title: "Generador de QR",
       description: "Crea códigos QR personalizados con tu logo y colores para compartir información fácilmente.",
       href: "/tools/generador-qr",
@@ -40,7 +40,7 @@ export function ToolsSection() {
     },
     {
       icon: Search,
-      image: "/images/34.png",
+      image: "/images/optimizadas/34.webp",
       title: "Verificador de URL",
       description: "Analiza la seguridad de URLs y detecta posibles amenazas antes de visitarlas.",
       href: "/tools/verificador",
