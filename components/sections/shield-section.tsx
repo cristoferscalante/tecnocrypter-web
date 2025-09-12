@@ -46,7 +46,7 @@ export function ShieldSection() {
             >
               <Link href="/productos" className="block cursor-pointer">
                 <Image
-                  src="/images/tecno2.png"
+                  src="/images/optimizadas/tecno2.webp"
                   alt="Personaje de seguridad TecnoCrypter"
                   width={320}
                   height={320}

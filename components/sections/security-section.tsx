@@ -27,49 +27,49 @@ export function SecuritySection() {
   
   const securityFeatures = [
     {
-      image: "/images/security/almacenamiento_seguro.png",
+      image: "/images/optimizadas/almacenamiento_seguro.webp",
       title: "Almacenamiento Seguro",
       description: "Sistemas de almacenamiento con múltiples capas de seguridad y respaldos automáticos.",
       color: "from-orange-500 to-red-500",
       delay: 0
     },
     {
-      image: "/images/security/servidores_blindados.png",
+      image: "/images/optimizadas/servidores_blindados.webp",
       title: "Servidores Blindados",
       description: "Infraestructura robusta con protección contra ataques DDoS y vulnerabilidades.",
       color: "from-teal-500 to-cyan-500",
       delay: 0.1
     },
     {
-      image: "/images/security/repuesta_rapida.png",
+      image: "/images/optimizadas/repuesta_rapida.webp",
       title: "Respuesta Rápida",
       description: "Protocolos de respuesta inmediata ante incidentes de seguridad para minimizar daños.",
       color: "from-yellow-500 to-orange-500",
       delay: 0.2
     },
     {
-      image: "/images/security/autenticación_biometrica.png",
+      image: "/images/optimizadas/autenticación_biometrica.webp",
       title: "Autenticación Biométrica",
       description: "Sistemas de verificación de identidad mediante reconocimiento biométrico avanzado.",
       color: "from-pink-500 to-rose-500",
       delay: 0.3
     },
     {
-      image: "/images/security/proteccion_total.png",
+      image: "/images/optimizadas/proteccion_total.webp",
       title: "Protección Total",
       description: "Soluciones de seguridad integral para proteger todos tus activos digitales contra amenazas avanzadas.",
       color: "from-blue-500 to-cyan-500",
       delay: 0.4
     },
     {
-      image: "/images/security/encriptación_avanzada.png",
+      image: "/images/optimizadas/encriptación_avanzada.webp",
       title: "Encriptación Avanzada",
       description: "Algoritmos de encriptación de última generación que garantizan la confidencialidad de tus datos.",
       color: "from-green-500 to-emerald-500",
       delay: 0.5
     },
     {
-      image: "/images/security/monitoreo.png",
+      image: "/images/optimizadas/monitoreo.webp",
       title: "Monitoreo 24/7",
       description: "Vigilancia constante de tus sistemas para detectar y neutralizar amenazas en tiempo real.",
       color: "from-purple-500 to-violet-500",
