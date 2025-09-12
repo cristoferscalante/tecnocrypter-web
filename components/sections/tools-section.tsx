@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { AnimatedSection } from "@/components/ui/animated-section"
-import { Key, ImageIcon, ArrowRight, Shield, Search } from "lucide-react"
+import { Key, ImageIcon, ArrowRight, Shield, Search, QrCode } from "lucide-react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
@@ -28,6 +28,15 @@ export function ToolsSection() {
       href: "/tools/limpia-metadatos",
       badge: "Nuevo",
       features: ["Procesamiento local", "Múltiples formatos", "Sin subida a servidor"]
+    },
+    {
+      icon: QrCode,
+      image: "/images/11.png",
+      title: "Generador de QR",
+      description: "Crea códigos QR personalizados con tu logo y colores para compartir información fácilmente.",
+      href: "/tools/generador-qr",
+      badge: "Nuevo",
+      features: ["Personalización completa", "Añade tu logo", "Descarga en alta calidad"]
     },
     {
       icon: Search,
@@ -80,14 +89,15 @@ export function ToolsSection() {
                         className="mb-4 cursor-pointer"
                         whileHover={{
                           scale: 1.1,
-                          rotate: tool.title === "Generador de Contraseñas" ? [0, 360] :
-                                  tool.title === "Limpiador de Metadatos" ? { y: [0, -8, 0] } :
-                                  tool.title === "Verificador de URL" ? { scale: [1, 1.3, 1] } : {}
+                          ...(tool.title === "Generador de Contraseñas" ? { rotate: 360 } :
+                             tool.title === "Limpiador de Metadatos" ? { y: [0, -8, 0] } :
+                             tool.title === "Verificador de URL" ? { scale: [1, 1.3, 1] } : {})
                         }}
                         transition={{
                           duration: tool.title === "Generador de Contraseñas" ? 0.8 : 0.6,
                           ease: "easeInOut",
-                          repeat: tool.title === "Verificador de URL" ? 1 : 0
+                          repeat: tool.title === "Verificador de URL" ? 1 : 0,
+                          type: "spring"
                         }}
                       >
                         <Image

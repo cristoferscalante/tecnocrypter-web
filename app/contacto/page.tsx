@@ -16,16 +16,16 @@ export default function ContactoPage() {
         image="https://tecnocrypter.com/seo/contacto.webp"
         keywords="contacto tecnocrypter, soporte técnico, consultas ciberseguridad, expertos encriptación"
       />
-      <main className="min-h-screen py-12">
-      <div className="container">
-        <div className="max-w-4xl mx-auto text-center mb-12">
+      <main className="min-h-screen py-8">
+      <div className="container px-4">
+        <div className="max-w-4xl mx-auto text-center mb-8">
           <h1 className="text-4xl font-bold tracking-tight mb-4">Contacta con Nuestros Expertos</h1>
           <p className="text-xl text-muted-foreground">
             Estamos aquí para ayudarte con cualquier consulta sobre seguridad cibernética, encriptación o criptomonedas.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Contact Form */}
           <Card>
             <CardHeader>
@@ -33,8 +33,8 @@ export default function ContactoPage() {
               <CardDescription>Completa el formulario y te responderemos a la brevedad.</CardDescription>
             </CardHeader>
             <CardContent>
-              <form className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
+              <form className="space-y-3">
+                <div className="grid grid-cols-2 gap-3">
                   <div className="space-y-2">
                     <label htmlFor="first-name" className="text-sm font-medium">
                       Nombre
@@ -77,22 +77,31 @@ export default function ContactoPage() {
                   </label>
                   <Textarea id="message" placeholder="Escribe tu mensaje aquí..." rows={5} />
                 </div>
-                <Button type="submit" className="w-full">
-                  Enviar Mensaje
-                </Button>
+                <div className="space-y-3">
+                  <Button type="submit" className="w-full">
+                    Enviar Mensaje
+                  </Button>
+                  <div className="mt-3 rounded-lg overflow-hidden border">
+                    <img
+                      src="/Seo/Imagen_tecnocrypter.png"
+                      alt="TecnoCrypter - Seguridad Digital"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </div>
               </form>
             </CardContent>
           </Card>
 
           {/* Contact Info */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <Card>
               <CardHeader>
                 <CardTitle>Información de Contacto</CardTitle>
                 <CardDescription>Diferentes formas de ponerte en contacto con nosotros.</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-start space-x-4">
+              <CardContent className="space-y-3">
+                <div className="flex items-start space-x-3">
                   <Mail className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <h3 className="font-medium">Correo Electrónico</h3>
@@ -100,7 +109,7 @@ export default function ContactoPage() {
                     <p className="text-sm text-muted-foreground">soporte@tecnocrypter.com</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-3">
                   <Phone className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <h3 className="font-medium">Teléfono</h3>
@@ -108,7 +117,7 @@ export default function ContactoPage() {
                     <p className="text-sm text-muted-foreground">Lun-Vie: 9:00 - 18:00</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <h3 className="font-medium">Ubicación</h3>
@@ -119,7 +128,7 @@ export default function ContactoPage() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-3">
                   <Clock className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <h3 className="font-medium">Horario de Atención</h3>
@@ -138,7 +147,7 @@ export default function ContactoPage() {
                 <CardTitle>Preguntas Frecuentes</CardTitle>
                 <CardDescription>Respuestas rápidas a preguntas comunes.</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-3">
                 <div>
                   <h3 className="font-medium">¿Cuáles son los métodos de pago aceptados?</h3>
                   <p className="text-sm text-muted-foreground mt-1">
@@ -162,14 +171,7 @@ export default function ContactoPage() {
           </div>
         </div>
 
-        {/* Map */}
-        <div className="mt-12 max-w-5xl mx-auto rounded-lg overflow-hidden border h-[400px] bg-muted">
-          <img
-            src="/placeholder.svg?height=400&width=1000&query=map location office building"
-            alt="Mapa de ubicación"
-            className="w-full h-full object-cover"
-          />
-        </div>
+
       </div>
     </main>
     </>
