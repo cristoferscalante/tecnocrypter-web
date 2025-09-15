@@ -54,6 +54,28 @@ const nextConfig = {
         destination: '/productos',
         permanent: true,
       },
+      // Redirecciones para herramientas
+      {
+        source: '/generador-contrasenas',
+        destination: '/tools/generador-contrasenas',
+        permanent: true,
+      },
+      // Redirecciones para páginas de contenido
+      {
+        source: '/noticias',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/encriptacion',
+        destination: '/blog/encriptacion-end-to-end',
+        permanent: true,
+      },
+      {
+        source: '/criptomonedas',
+        destination: '/blog',
+        permanent: true,
+      },
     ]
   },
 }
