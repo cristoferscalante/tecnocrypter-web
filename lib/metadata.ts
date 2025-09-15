@@ -24,6 +24,38 @@ export interface MetadataParams {
   noIndex?: boolean;
 }
 
+// Funciones de validación SEO
+function validateTitle(title: string): string {
+  // Título óptimo: 50-60 caracteres
+  if (title.length > 60) {
+    console.warn(`Título demasiado largo (${title.length} caracteres): ${title.substring(0, 50)}...`);
+  }
+  if (title.length < 30) {
+    console.warn(`Título demasiado corto (${title.length} caracteres): ${title}`);
+  }
+  return title;
+}
+
+function validateDescription(description: string): string {
+  // Descripción óptima: 150-160 caracteres
+  if (description.length > 160) {
+    console.warn(`Descripción demasiado larga (${description.length} caracteres): ${description.substring(0, 50)}...`);
+  }
+  if (description.length < 120) {
+    console.warn(`Descripción demasiado corta (${description.length} caracteres): ${description.substring(0, 50)}...`);
+  }
+  return description;
+}
+
+function validateKeywords(keywords: string[]): string[] {
+  // Máximo 10 keywords recomendado
+  if (keywords.length > 10) {
+    console.warn(`Demasiadas keywords (${keywords.length}). Recomendado: máximo 10`);
+    return keywords.slice(0, 10);
+  }
+  return keywords;
+}
+
 // Función principal para generar metadatos
 export function generatePageMetadata(params: MetadataParams = {}): Metadata {
   const {
@@ -40,8 +72,11 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
   } = params;
 
   const pageTitle = title 
-    ? `${title} | ${baseMetadata.siteName}`
-    : baseMetadata.defaultTitle;
+    ? validateTitle(`${title} | ${baseMetadata.siteName}`)
+    : validateTitle(baseMetadata.defaultTitle);
+  
+  const validatedDescription = validateDescription(description);
+  const validatedKeywords = validateKeywords(keywords);
   
   const pageUrl = `${baseMetadata.siteUrl}${slug ? `/${slug}` : ''}`;
   const imageUrl = image.startsWith('http') ? image : `${baseMetadata.siteUrl}${image}`;
@@ -49,9 +84,9 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
   const metadata: Metadata = {
     metadataBase: new URL(baseMetadata.siteUrl),
     title: pageTitle,
-    description,
-    keywords: keywords.length > 0 ? keywords.join(', ') : undefined,
-    robots: noIndex ? 'noindex,nofollow' : 'index,follow',
+    description: validatedDescription,
+    keywords: validatedKeywords.length > 0 ? validatedKeywords.join(', ') : undefined,
+    robots: noIndex ? 'noindex,nofollow' : 'index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1',
     
     // Open Graph
     openGraph: {
@@ -60,7 +95,7 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
       url: pageUrl,
       siteName: baseMetadata.siteName,
       title: pageTitle,
-      description,
+      description: validatedDescription,
       images: [
         {
           url: imageUrl,
@@ -80,7 +115,7 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
       site: baseMetadata.twitterHandle,
       creator: baseMetadata.twitterHandle,
       title: pageTitle,
-      description,
+      description: validatedDescription,
       images: [imageUrl],
     },
 

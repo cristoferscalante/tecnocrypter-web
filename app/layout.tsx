@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/footer"
 import { MatrixBackground } from "@/components/ui/matrix-background"
 import { Toaster } from "@/components/ui/sonner"
 import { StructuredData } from "@/components/seo/structured-data"
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics"
 import "./globals.css"
 
 const orbitron = Orbitron({ 
@@ -77,6 +78,12 @@ export const metadata: Metadata = {
     canonical: "https://tecnocrypter.com",
   },
   category: "technology",
+  other: {
+    'google-site-verification': process.env.GOOGLE_SITE_VERIFICATION || '',
+  },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
 }
 
 export default function RootLayout({
@@ -89,6 +96,7 @@ export default function RootLayout({
       <head>
         <StructuredData type="website" />
         <StructuredData type="organization" />
+        <GoogleAnalytics />
       </head>
       <body className={`${orbitron.variable} ${spaceGrotesk.variable} font-space-grotesk`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
