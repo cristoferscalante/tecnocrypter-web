@@ -9,7 +9,7 @@ export default function TerminosPage() {
         title="Términos de Servicio - TecnoCrypter"
         description="Términos y condiciones de uso de TecnoCrypter. Conoce tus derechos y obligaciones al utilizar nuestros servicios de ciberseguridad."
         slug="terminos"
-        image="https://tecnocrypter.com/seo/terminos.webp"
+        image="tecnocrypter-web\public\Seo\terminos de servicio.webp"
         keywords="términos de servicio, condiciones de uso, TecnoCrypter, ciberseguridad, legal"
       />
       <div className="min-h-screen bg-background">

@@ -85,7 +85,7 @@ export default function ProductosPage() {
         title="Productos de Seguridad Digital | TecnoCrypter"
         description="Descubre nuestros productos especializados en seguridad digital, encriptación y protección de datos. Herramientas profesionales para mantener tu información segura."
         slug="productos"
-        image="https://tecnocrypter.com/seo/productos.webp"
+        image="tecnocrypter-web\public\Seo\productos.webp"
         keywords="productos seguridad, herramientas encriptación, software protección datos, seguridad digital, ciberseguridad"
       />
       <main className="min-h-screen py-12">

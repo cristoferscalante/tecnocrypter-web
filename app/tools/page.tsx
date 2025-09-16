@@ -44,7 +44,7 @@ export default function ToolsPage() {
         title="Herramientas de Seguridad Digital | TecnoCrypter"
         description="Accede a nuestras herramientas gratuitas de seguridad digital: generador de contraseñas, limpiador de metadatos, verificador de seguridad y más."
         slug="tools"
-        image="https://tecnocrypter.com/seo/tools.webp"
+        image="tecnocrypter-web\public\Seo\tools.webp"
         keywords="herramientas seguridad, generador contraseñas, limpiador metadatos, verificador seguridad, ciberseguridad gratuita"
       />
       <main className="min-h-screen py-12">

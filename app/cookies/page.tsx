@@ -9,7 +9,7 @@ export default function CookiesPage() {
         title="Política de Cookies - TecnoCrypter"
         description="Conoce cómo TecnoCrypter utiliza cookies y tecnologías similares bajo un enfoque de privacidad y mínima recolección de datos."
         slug="cookies"
-        image="https://tecnocrypter.com/seo/cookies.webp"
+        image="tecnocrypter-web\public\Seo\politicas de cookies.webp"
         keywords="política de cookies, privacidad, protección de datos, TecnoCrypter, cookies necesarias"
       />
       <main className="min-h-screen py-12">
