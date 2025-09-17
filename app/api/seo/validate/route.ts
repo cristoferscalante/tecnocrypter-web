@@ -198,7 +198,8 @@ export async function POST(request: NextRequest) {
 // GET endpoint para obtener el estado general SEO del sitio
 export async function GET() {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tecnocrypter.com';
+    const rawBaseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tecnocrypter.com';
+    const baseUrl = rawBaseUrl.replace(/\/$/, '');
     
     // URLs principales para validar
     const urlsToCheck = [
@@ -212,18 +213,21 @@ export async function GET() {
 
     const results = {
       timestamp: new Date().toISOString(),
-      baseUrl,
+      baseUrl: `${baseUrl}/`,
       totalUrls: urlsToCheck.length,
       summary: {
         avgScore: 0,
         totalIssues: 0,
         criticalIssues: 0
       },
-      urls: urlsToCheck.map(url => ({
-        url: `${baseUrl}${url}`,
-        status: 'pending', // En una implementación real, se haría fetch
-        lastChecked: new Date().toISOString()
-      }))
+      urls: urlsToCheck.map(u => {
+        const suffix = u.startsWith('/') ? u : `/${u}`;
+        return {
+          url: `${baseUrl}${suffix}`,
+          status: 'pending', // En una implementación real, se haría fetch
+          lastChecked: new Date().toISOString()
+        }
+      })
     };
 
     return NextResponse.json(results);

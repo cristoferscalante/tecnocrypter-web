@@ -1,0 +1,123 @@
+{
+  "timestamp": "2025-09-17T16:00:48.061Z",
+  "files": {
+    "sitemap": {
+      "exists": true,
+      "valid": true,
+      "urls": 32,
+      "errors": []
+    },
+    "robots": {
+      "exists": true,
+      "valid": true,
+      "errors": []
+    },
+    "metadata": {
+      "exists": true,
+      "valid": true,
+      "errors": []
+    }
+  },
+  "pages": [
+    {
+      "route": "blog",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\blog\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "blog/[slug]",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\blog\\[slug]\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "contacto",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\contacto\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "cookies",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\cookies\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "criptomonedas",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\criptomonedas\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "encriptacion",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\encriptacion\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "noticias",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\noticias\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "/",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "privacidad",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\privacidad\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "productos",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\productos\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "productos/[id]",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\productos\\[id]\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "seguridad",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\seguridad\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "terminos",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\terminos\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "terminos/verificador",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\terminos\\verificador\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "tools/generador-contrasenas",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\tools\\generador-contrasenas\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "tools/generador-qr",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\tools\\generador-qr\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "tools/limpia-metadatos",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\tools\\limpia-metadatos\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "tools",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\tools\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "tools/verificador",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\tools\\verificador\\page.tsx",
+      "exists": true
+    }
+  ],
+  "config": {
+    "redirects": true,
+    "sitemap": true,
+    "errors": []
+  }
+}
