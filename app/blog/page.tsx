@@ -96,7 +96,7 @@ export default function BlogPage() {
         title="Blog de Seguridad y Criptomonedas | TecnoCrypter"
         description="Artículos sobre seguridad cibernética, encriptación y criptomonedas. Mantente actualizado con las últimas tendencias y mejores prácticas en el mundo de la tecnología y la seguridad digital."
         slug="blog"
-        image="https://tecnocrypter.com/seo/blog.webp"
+        image="tecnocrypter-web\public\Seo\blog.webp"
         keywords="seguridad cibernética, encriptación, criptomonedas, blockchain, privacidad digital, tecnología, hacking ético"
       />
       <main className="min-h-screen py-12">

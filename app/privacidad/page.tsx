@@ -9,7 +9,7 @@ export default function PrivacidadPage() {
         title="Política de Privacidad - TecnoCrypter"
         description="Conoce cómo TecnoCrypter protege tu privacidad y maneja tus datos personales bajo un modelo privacy-first con cifrado extremo a extremo."
         slug="privacidad"
-        image="https://tecnocrypter.com/seo/privacidad.webp"
+        image="tecnocrypter-web\public\Seo\politicas de privacidad.webp"
         keywords="política privacidad, protección datos, privacy-first, cifrado extremo, ciberseguridad"
       />
       <main className="min-h-screen py-12">

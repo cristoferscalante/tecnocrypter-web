@@ -13,7 +13,7 @@ export default function ContactoPage() {
         title="Contacto - TecnoCrypter"
         description="Ponte en contacto con nuestro equipo de expertos en seguridad cibernética y encriptación. Soporte técnico 24/7 y consultas especializadas."
         slug="contacto"
-        image="https://tecnocrypter.com/seo/contacto.webp"
+        image="tecnocrypter-web\public\Seo\contacto.webp"
         keywords="contacto tecnocrypter, soporte técnico, consultas ciberseguridad, expertos encriptación"
       />
       <main className="min-h-screen py-8">
