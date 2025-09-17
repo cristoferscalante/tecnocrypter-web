@@ -21,3 +21,4 @@ Crawl-delay: 1
 # Sitemaps
 Sitemap: https://tecnocrypter.com/sitemap.xml
 Sitemap: https://tecnocrypter.com/sitemap-0.xml
+Sitemap: https://tecnocrypter.com/server-sitemap.xml

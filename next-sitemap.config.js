@@ -57,7 +57,40 @@ module.exports = {
       pathModule.join(appDir, pagePath + '.js')
     ];
     
-    const pageExists = possiblePaths.some(p => fs.existsSync(p));
+    let pageExists = possiblePaths.some(p => fs.existsSync(p));
+
+    // NUEVO: Aceptar rutas dinámicas conocidas (evitar falsos negativos)
+    if (!pageExists && path !== '/') {
+      const dynamicRouteChecks = [
+        {
+          matches: (p) => p.startsWith('/blog/'),
+          files: [
+            pathModule.join(appDir, 'blog', '[slug]', 'page.tsx'),
+            pathModule.join(appDir, 'blog', '[slug]', 'page.ts'),
+            pathModule.join(appDir, 'blog', '[slug]', 'page.jsx'),
+            pathModule.join(appDir, 'blog', '[slug]', 'page.js'),
+          ],
+        },
+        {
+          matches: (p) => p.startsWith('/productos/'),
+          files: [
+            pathModule.join(appDir, 'productos', '[id]', 'page.tsx'),
+            pathModule.join(appDir, 'productos', '[id]', 'page.ts'),
+            pathModule.join(appDir, 'productos', '[id]', 'page.jsx'),
+            pathModule.join(appDir, 'productos', '[id]', 'page.js'),
+          ],
+        },
+      ];
+
+      const matchesDynamic = dynamicRouteChecks.some(({ matches, files }) =>
+        matches(path) && files.some(fp => fs.existsSync(fp))
+      );
+
+      if (matchesDynamic) {
+        pageExists = true; // Considerar existente si hay ruta dinámica compatible
+      }
+    }
+
     if (!pageExists && path !== '/') {
       console.warn(`Página no encontrada para: ${path}`);
       return null; // Excluir del sitemap
@@ -109,7 +142,6 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      "https://tecnocrypter.com/sitemap.xml",
       "https://tecnocrypter.com/server-sitemap.xml",
     ],
   },

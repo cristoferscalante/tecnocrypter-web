@@ -36,7 +36,12 @@ async function checkUrlExists(url: string): Promise<{ exists: boolean; type?: st
       '/tools/generador-qr': 'tools/generador-qr/page.tsx',
       '/privacidad': 'privacidad/page.tsx',
       '/terminos': 'terminos/page.tsx',
-      '/cookies': 'cookies/page.tsx'
+      '/cookies': 'cookies/page.tsx',
+      // Rutas de categoría añadidas
+      '/encriptacion': 'encriptacion/page.tsx',
+      '/criptomonedas': 'criptomonedas/page.tsx',
+      '/noticias': 'noticias/page.tsx',
+      '/seguridad': 'seguridad/page.tsx',
     };
 
     // Verificar rutas estáticas
@@ -50,7 +55,7 @@ async function checkUrlExists(url: string): Promise<{ exists: boolean; type?: st
       }
     }
 
-    // Verificar rutas dinámicas
+    // Verificar rutas dinámicas conocidas
     if (cleanUrl.startsWith('/blog/') && cleanUrl !== '/blog') {
       const blogPagePath = path.join(appDir, 'blog/[slug]/page.tsx');
       try {
@@ -71,10 +76,32 @@ async function checkUrlExists(url: string): Promise<{ exists: boolean; type?: st
       }
     }
 
+    // Fallback genérico: buscar page.tsx en la ruta correspondiente
+    const genericRoutePath = cleanUrl === '/' ? 'page.tsx' : path.join(cleanUrl.slice(1), 'page.tsx');
+    const genericFilePath = path.join(appDir, genericRoutePath);
+    try {
+      await fs.access(genericFilePath);
+      return { exists: true, type: 'static-generic' };
+    } catch {
+      // no-op
+    }
+
     return { exists: false };
   } catch (error) {
     console.error('Error checking URL:', error);
     return { exists: false };
+  }
+}
+
+// Normalizar URLs quitando dobles barras (después del protocolo)
+function normalizeUrl(u: string): string {
+  try {
+    const parsed = new URL(u);
+    // Reemplazar múltiples barras en el pathname por una sola
+    parsed.pathname = parsed.pathname.replace(/\/+/g, '/');
+    return parsed.toString().replace(/\/$/, '');
+  } catch {
+    return u.replace(/([^:]\/)\/+/, '$1').replace(/\/$/, '');
   }
 }
 
@@ -86,7 +113,7 @@ function parseSitemapXML(xmlContent: string): string[] {
   if (urlMatches) {
     urlMatches.forEach(match => {
       const url = match.replace(/<\/?loc>/g, '');
-      urls.push(url);
+      urls.push(normalizeUrl(url));
     });
   }
   
@@ -121,7 +148,7 @@ export async function GET(request: NextRequest) {
 
     // Verificar cada URL
     for (const url of urls) {
-      const { exists, type } = await checkUrlExists(url);
+      const { exists } = await checkUrlExists(url);
       
       if (exists) {
         validUrls++;
@@ -145,10 +172,11 @@ export async function GET(request: NextRequest) {
       '/tools/generador-qr'
     ];
 
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tecnocrypter.com';
+    const rawBaseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tecnocrypter.com';
+    const baseUrl = rawBaseUrl.replace(/\/$/, '');
     
     for (const expectedUrl of expectedUrls) {
-      const fullUrl = `${baseUrl}${expectedUrl}`;
+      const fullUrl = normalizeUrl(`${baseUrl}${expectedUrl.startsWith('/') ? expectedUrl : `/${expectedUrl}`}`);
       if (!urls.includes(fullUrl)) {
         warnings.push(`URL faltante en sitemap: ${fullUrl}`);
         recommendations.push(`Agregar ${fullUrl} al sitemap`);
@@ -208,7 +236,7 @@ export async function POST(request: NextRequest) {
       const sitemapContent = await fs.readFile(sitemapPath, 'utf-8');
       const urls = parseSitemapXML(sitemapContent);
       
-      const results = [];
+      const results = [] as Array<{ url: string; status: 'valid' | 'broken'; checked: string }>; 
       for (const url of urls.slice(0, 10)) { // Limitar a 10 para evitar timeout
         const { exists } = await checkUrlExists(url);
         results.push({
