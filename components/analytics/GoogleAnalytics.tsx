@@ -92,7 +92,7 @@ export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps)
     };
 
     // Si el script ya está cargado
-    if (window.gtag) {
+    if (typeof window.gtag === 'function') {
       handleLoad();
     }
   }, [GA_MEASUREMENT_ID]);

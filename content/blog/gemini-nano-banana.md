@@ -1,17 +1,12 @@
 ---
 title: "Gemini 2.5 Flash Image Preview: Arquitectura Técnica y Avances en Generación de Imágenes por IA"
-description: "Análisis técnico profundo de Gemini 2.5 Flash Image Preview 'Nano Banana', explorando sus innovaciones arquitectónicas, optimizaciones algorítmicas y capacidades emergentes en síntesis visual multimodal."
-author: "Equipo Técnico de IA"
+excerpt: "Análisis técnico profundo de Gemini 2.5 Flash Image Preview 'Nano Banana', explorando sus innovaciones arquitectónicas, optimizaciones algorítmicas y capacidades emergentes en síntesis visual multimodal."
 date: "2025-01-25"
+author: "Equipo Técnico de IA"
 category: "tecnologia"
 tags: ["IA", "Gemini", "Generación de Imágenes", "Machine Learning", "Google DeepMind", "Arquitectura Técnica"]
-readTime: "12 min"
 featured: true
-image: "tecnocrypter-web\public\blogs\gemini-nano-banana.webp"
-seo:
-  metaTitle: "Gemini 2.5 Flash Image Preview: Análisis Técnico Completo | Nano Banana"
-  metaDescription: "Descubre la arquitectura técnica de Gemini 2.5 Flash Image Preview. Análisis profundo de innovaciones, optimizaciones y capacidades de generación de imágenes por IA."
-  keywords: "Gemini 2.5, Flash Image Preview, Nano Banana, IA generativa, arquitectura transformer-difusión, Google DeepMind"
+image: "/blogs/gemini-nano-banana.webp"
 ---
 
 # Gemini 2.5 Flash Image Preview: Arquitectura Técnica y Avances en Generación de Imágenes por IA

@@ -1,10 +1,9 @@
-"use client"
-
+import type { Metadata } from "next"
+import { generateToolMetadata } from "@/lib/metadata"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Shield, Key, FileCheck, ArrowRight, QrCode } from "lucide-react"
-import SeoPage from "@/components/seo/SeoPage"
 
 const tools = [
   {
@@ -37,16 +36,17 @@ const tools = [
   }
 ]
 
+export const metadata: Metadata = generateToolMetadata({
+  title: "Herramientas de Seguridad Digital",
+  description: "Accede a nuestras herramientas gratuitas de seguridad digital: generador de contraseñas, limpiador de metadatos, verificador de seguridad y más.",
+  slug: "tools",
+  image: "https://tecnocrypter.com/seo/tools.webp",
+  keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita"]
+})
+
 export default function ToolsPage() {
   return (
     <>
-      <SeoPage
-        title="Herramientas de Seguridad Digital | TecnoCrypter"
-        description="Accede a nuestras herramientas gratuitas de seguridad digital: generador de contraseñas, limpiador de metadatos, verificador de seguridad y más."
-        slug="tools"
-        image="tecnocrypter-web\public\Seo\tools.webp"
-        keywords="herramientas seguridad, generador contraseñas, limpiador metadatos, verificador seguridad, ciberseguridad gratuita"
-      />
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">

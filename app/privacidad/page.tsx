@@ -1,17 +1,19 @@
+import type { Metadata } from "next"
+import { generatePageMetadata } from "@/lib/metadata"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, Lock, Eye, FileText, Mail, Calendar, Target, Scale, Cookie, Users, Globe, Database, Clock, RefreshCw, CheckCircle, UserCheck, ClipboardCheck, AlertCircle } from "lucide-react"
-import SeoPage from "@/components/seo/SeoPage"
+
+export const metadata: Metadata = generatePageMetadata({
+  title: "Política de Privacidad - TecnoCrypter",
+  description: "Conoce cómo TecnoCrypter protege tu privacidad y maneja tus datos personales bajo un modelo privacy-first con cifrado extremo a extremo.",
+  slug: "privacidad",
+  image: "/Seo/politicas de privacidad.webp",
+  keywords: ["política privacidad", "protección datos", "privacy-first", "cifrado extremo", "ciberseguridad"]
+})
 
 export default function PrivacidadPage() {
   return (
     <>
-      <SeoPage
-        title="Política de Privacidad - TecnoCrypter"
-        description="Conoce cómo TecnoCrypter protege tu privacidad y maneja tus datos personales bajo un modelo privacy-first con cifrado extremo a extremo."
-        slug="privacidad"
-        image="tecnocrypter-web\public\Seo\politicas de privacidad.webp"
-        keywords="política privacidad, protección datos, privacy-first, cifrado extremo, ciberseguridad"
-      />
       <main className="min-h-screen py-12">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center mb-12">

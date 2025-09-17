@@ -13,7 +13,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Checkbox } from "@/components/ui/checkbox"
 import { ProductService } from "@/services/product-service"
 import type { Product } from "@/types"
-import SeoPage from "@/components/seo/SeoPage"
+
 
 export default function ProductosPage() {
   const [products, setProducts] = useState<Product[]>([])
@@ -81,13 +81,6 @@ export default function ProductosPage() {
 
   return (
     <>
-      <SeoPage
-        title="Productos de Seguridad Digital | TecnoCrypter"
-        description="Descubre nuestros productos especializados en seguridad digital, encriptación y protección de datos. Herramientas profesionales para mantener tu información segura."
-        slug="productos"
-        image="tecnocrypter-web\public\Seo\productos.webp"
-        keywords="productos seguridad, herramientas encriptación, software protección datos, seguridad digital, ciberseguridad"
-      />
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">
