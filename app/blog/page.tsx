@@ -11,7 +11,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Clock, Search } from "lucide-react"
 import { useBlog } from "@/hooks/use-blog"
 import type { BlogPost } from "@/types"
-import SeoPage from "@/components/seo/SeoPage"
+
 
 // Note: metadata export removed due to 'use client' directive
 // This should be handled at layout level or with generateMetadata
@@ -92,13 +92,6 @@ export default function BlogPage() {
 
   return (
     <>
-      <SeoPage
-        title="Blog de Seguridad y Criptomonedas | TecnoCrypter"
-        description="Artículos sobre seguridad cibernética, encriptación y criptomonedas. Mantente actualizado con las últimas tendencias y mejores prácticas en el mundo de la tecnología y la seguridad digital."
-        slug="blog"
-        image="tecnocrypter-web\public\Seo\blog.webp"
-        keywords="seguridad cibernética, encriptación, criptomonedas, blockchain, privacidad digital, tecnología, hacking ético"
-      />
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">

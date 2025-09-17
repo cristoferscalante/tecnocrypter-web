@@ -2,14 +2,16 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.16.1",
   "scripts": {
+    "preinstall": "node -e \"const pm=(process.env.npm_config_user_agent||'').split(' ')[0];if(!pm.startsWith('pnpm/')){console.error('❌ Usa pnpm para instalar dependencias.');process.exit(1)}\"",
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
     "postbuild": "next-sitemap",
     "seo:validate": "node scripts/seo-validation.js",
-    "seo:check": "npm run seo:validate && echo SEO validation completed"
+    "seo:check": "pnpm run seo:validate && echo SEO validation completed"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",

@@ -10,9 +10,9 @@ export const metadata: Metadata = generatePageMetadata({
   title: "Seguridad Cibernética - TecnoCrypter",
   description: "Soluciones avanzadas de seguridad cibernética y encriptación para proteger tus activos digitales. Protección personal y empresarial.",
   slug: "seguridad",
-  image: "https://tecnocrypter.com/og/seguridad.jpg",
+  image: "/Seo/seguridad.jpg",
   keywords: ["seguridad cibernética", "encriptación", "protección digital", "antivirus", "VPN", "seguridad empresarial"]
-});
+})
 
 export default function SeguridadPage() {
   const securityCategories = [
