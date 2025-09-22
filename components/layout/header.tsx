@@ -64,9 +64,11 @@ export function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-sm font-medium transition-colors hover:text-primary bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent [&>svg]:hidden h-auto p-0">
-                  Tools
-                </NavigationMenuTrigger>
+                <Link href="/tools">
+                  <NavigationMenuTrigger className="text-sm font-medium transition-colors hover:text-primary bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent [&>svg]:hidden h-auto p-0">
+                    Tools
+                  </NavigationMenuTrigger>
+                </Link>
                 <NavigationMenuContent>
                   <div className="grid w-[200px] gap-1 p-2">
                     {toolsItems.map((tool) => (
@@ -174,7 +176,15 @@ export function Header() {
             
             {/* Tools section for mobile */}
             <div className="py-2">
-              <div className="text-sm font-medium text-muted-foreground mb-2">Tools</div>
+              <div className="text-sm font-medium text-muted-foreground mb-2">
+                <Link
+                  href="/tools"
+                  className="transition-colors hover:text-primary"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Tools
+                </Link>
+              </div>
               {toolsItems.map((tool) => (
                 <Link
                   key={tool.name}
