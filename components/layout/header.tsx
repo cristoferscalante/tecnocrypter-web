@@ -20,12 +20,12 @@ import Image from "next/image"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
   const { theme, setTheme } = useTheme()
 
   const navigation = [
     { name: "Blog", href: "/blog" },
     { name: "Tienda", href: "/productos" },
+    { name: "Contacto", href: "/contacto" },
   ]
 
   const toolsItems = [
@@ -93,9 +93,9 @@ export function Header() {
             <SearchDropdown className="w-80" />
           </div>
 
-          {/* Contacto icono*/}
+          {/* Contacto icono - Solo Desktop */}
           <Link href="/contacto">
-            <Button variant="ghost" size="icon" className="hidden sm:flex group">
+            <Button variant="ghost" size="icon" className="hidden md:flex group">
               <motion.div
                 whileHover={{
                   scale: 1.2,
@@ -111,23 +111,6 @@ export function Header() {
               </motion.div>
             </Button>
           </Link>
-
-          {/* Search - Mobile Toggle */}
-          <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)} className="md:hidden group">
-            <motion.div
-              whileHover={{
-                scale: 1.2,
-                rotate: [0, 360],
-                filter: "drop-shadow(0 0 6px hsl(var(--primary)))"
-              }}
-              transition={{
-                duration: 0.8,
-                ease: "easeInOut"
-              }}
-            >
-              <Search className="h-4 w-4" />
-            </motion.div>
-          </Button>
 
           {/* Theme Toggle */}
           <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="group">
@@ -164,19 +147,20 @@ export function Header() {
         </div>
       </div>
 
-      {/* Search Bar - Mobile */}
-      {isSearchOpen && (
-        <div className="border-t p-4 md:hidden">
-          <div className="container">
-            <SearchDropdown className="w-full" placeholder="Buscar artículos, productos..." />
-          </div>
-        </div>
-      )}
+      {/* Search Bar - Mobile - Eliminado ya que ahora está en el menú */}
 
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="border-t md:hidden">
           <nav className="container py-4 space-y-2">
+            {/* Búsqueda en el menú móvil - Movida al inicio */}
+            <div className="py-2 border-b">
+              <div className="text-sm font-medium text-muted-foreground mb-2">Búsqueda</div>
+              <div className="pl-4">
+                <SearchDropdown className="w-full" placeholder="Buscar artículos, productos..." />
+              </div>
+            </div>
+
             {navigation.map((item) => (
               <Link
                 key={item.name}
