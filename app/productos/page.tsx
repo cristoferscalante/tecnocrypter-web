@@ -13,7 +13,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Checkbox } from "@/components/ui/checkbox"
 import { ProductService } from "@/services/product-service"
 import type { Product } from "@/types"
-import SeoPage from "@/components/seo/SeoPage"
+import { FaqSection } from "@/components/sections/faq-section"
+
 
 export default function ProductosPage() {
   const [products, setProducts] = useState<Product[]>([])
@@ -81,13 +82,6 @@ export default function ProductosPage() {
 
   return (
     <>
-      <SeoPage
-        title="Productos de Seguridad Digital | TecnoCrypter"
-        description="Descubre nuestros productos especializados en seguridad digital, encriptación y protección de datos. Herramientas profesionales para mantener tu información segura."
-        slug="productos"
-        image="tecnocrypter-web\public\Seo\productos.webp"
-        keywords="productos seguridad, herramientas encriptación, software protección datos, seguridad digital, ciberseguridad"
-      />
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">
@@ -314,6 +308,38 @@ export default function ProductosPage() {
             </div>
           </div>
         </div>
+        
+        {/* FAQ Section */}
+        <FaqSection 
+          title="Preguntas Frecuentes sobre Productos"
+          subtitle="Respuestas a las preguntas más comunes sobre nuestros productos de seguridad y encriptación."
+          faqs={[
+            {
+              question: "¿Qué productos de encriptación ofrecen?",
+              answer: "Ofrecemos una amplia gama de productos de encriptación incluyendo VPNs premium, gestores de contraseñas, software de encriptación de archivos, herramientas de comunicación segura y soluciones de backup encriptado."
+            },
+            {
+              question: "¿Son seguros los productos de encriptación que ofrecen?",
+              answer: "Sí, todos nuestros productos utilizan algoritmos de encriptación de nivel militar (AES-256) y son auditados regularmente por expertos independientes en seguridad cibernética para garantizar su robustez."
+            },
+            {
+              question: "¿Ofrecen soporte técnico para sus productos?",
+              answer: "Sí, ofrecemos soporte técnico 24/7 para todos nuestros productos. Nuestro equipo de expertos está disponible por chat en vivo, correo electrónico y teléfono para resolver cualquier problema."
+            },
+            {
+              question: "¿Cuál es la política de devoluciones?",
+              answer: "Ofrecemos una garantía de devolución de dinero de 30 días para todos nuestros productos. Si no estás satisfecho, puedes solicitar un reembolso completo dentro de este período."
+            },
+            {
+              question: "¿Aceptan pagos con criptomonedas?",
+              answer: "Sí, aceptamos Bitcoin, Ethereum y otras criptomonedas principales. Los pagos con criptomonedas ofrecen mayor privacidad y procesamiento más rápido de las transacciones."
+            },
+            {
+              question: "¿Los productos funcionan en todos los sistemas operativos?",
+              answer: "La mayoría de nuestros productos son compatibles con Windows, macOS, Linux, iOS y Android. Cada producto especifica claramente su compatibilidad en la página de detalles."
+            }
+          ]}
+        />
       </div>
     </main>
     </>

@@ -20,7 +20,6 @@ import Image from "next/image"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
   const { theme, setTheme } = useTheme()
 
   const navigation = [
@@ -65,7 +64,9 @@ export function Header() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-sm font-medium transition-colors hover:text-primary bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent [&>svg]:hidden h-auto p-0">
-                  Tools
+                  <Link href="/tools" className="text-sm font-medium transition-colors hover:text-primary">
+                    Tools
+                  </Link>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid w-[200px] gap-1 p-2">
@@ -112,22 +113,7 @@ export function Header() {
             </Button>
           </Link>
 
-          {/* Search - Mobile Toggle */}
-          <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)} className="md:hidden group">
-            <motion.div
-              whileHover={{
-                scale: 1.2,
-                rotate: [0, 360],
-                filter: "drop-shadow(0 0 6px hsl(var(--primary)))"
-              }}
-              transition={{
-                duration: 0.8,
-                ease: "easeInOut"
-              }}
-            >
-              <Search className="h-4 w-4" />
-            </motion.div>
-          </Button>
+
 
           {/* Theme Toggle */}
           <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="group">
@@ -164,19 +150,26 @@ export function Header() {
         </div>
       </div>
 
-      {/* Search Bar - Mobile */}
-      {isSearchOpen && (
-        <div className="border-t p-4 md:hidden">
-          <div className="container">
-            <SearchDropdown className="w-full" placeholder="Buscar artículos, productos..." />
-          </div>
-        </div>
-      )}
+
 
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="border-t md:hidden">
           <nav className="container py-4 space-y-2">
+            {/* Search Bar - Mobile (dentro del menú también) */}
+            <div className="py-2 border-b border-border/20 mb-4">
+              <SearchDropdown className="w-full" placeholder="Buscar artículos, productos..." />
+            </div>
+
+            {/* Contacto - Mobile */}
+            <Link
+              href="/contacto"
+              className="block py-2 text-sm font-medium transition-colors hover:text-primary"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contacto
+            </Link>
+
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -190,7 +183,13 @@ export function Header() {
             
             {/* Tools section for mobile */}
             <div className="py-2">
-              <div className="text-sm font-medium text-muted-foreground mb-2">Tools</div>
+              <Link
+                href="/tools"
+                className="block py-2 text-sm font-medium transition-colors hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Tools
+              </Link>
               {toolsItems.map((tool) => (
                 <Link
                   key={tool.name}

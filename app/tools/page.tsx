@@ -1,10 +1,10 @@
-"use client"
-
+import type { Metadata } from "next"
+import { generateToolMetadata } from "@/lib/metadata"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Shield, Key, FileCheck, ArrowRight, QrCode } from "lucide-react"
-import SeoPage from "@/components/seo/SeoPage"
+import { FaqSection } from "@/components/sections/faq-section"
 
 const tools = [
   {
@@ -37,16 +37,17 @@ const tools = [
   }
 ]
 
+export const metadata: Metadata = generateToolMetadata({
+  title: "Herramientas de Seguridad Digital",
+  description: "Accede a nuestras herramientas gratuitas de seguridad digital: generador de contraseñas, limpiador de metadatos, verificador de seguridad y más.",
+  slug: "tools",
+  image: "https://tecnocrypter.com/seo/tools.webp",
+  keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita"]
+})
+
 export default function ToolsPage() {
   return (
     <>
-      <SeoPage
-        title="Herramientas de Seguridad Digital | TecnoCrypter"
-        description="Accede a nuestras herramientas gratuitas de seguridad digital: generador de contraseñas, limpiador de metadatos, verificador de seguridad y más."
-        slug="tools"
-        image="tecnocrypter-web\public\Seo\tools.webp"
-        keywords="herramientas seguridad, generador contraseñas, limpiador metadatos, verificador seguridad, ciberseguridad gratuita"
-      />
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">
@@ -111,6 +112,38 @@ export default function ToolsPage() {
               </div>
             </div>
           </div>
+          
+          {/* FAQ Section */}
+          <FaqSection 
+            title="Preguntas Frecuentes sobre Herramientas"
+            subtitle="Respuestas a las preguntas más comunes sobre nuestras herramientas de seguridad online."
+            faqs={[
+              {
+                question: "¿Las herramientas son completamente gratuitas?",
+                answer: "Sí, todas nuestras herramientas online son completamente gratuitas. No requieren registro ni tienen límites de uso. Nuestro objetivo es democratizar el acceso a herramientas de seguridad."
+              },
+              {
+                question: "¿Necesito registrarme para usar las herramientas?",
+                answer: "No, ninguna de nuestras herramientas requiere registro. Puedes usarlas de forma anónima y sin proporcionar información personal. Simplemente accede y comienza a usar la herramienta que necesites."
+              },
+              {
+                question: "¿Qué tan seguras son sus herramientas online?",
+                answer: "Nuestras herramientas procesan toda la información localmente en tu navegador. No enviamos datos a nuestros servidores, garantizando máxima privacidad y seguridad para tu información."
+              },
+              {
+                question: "¿Guardan información de lo que proceso en las herramientas?",
+                answer: "No, no guardamos ninguna información. Todo el procesamiento se realiza en tu dispositivo y los datos no salen de tu navegador. Una vez que cierras la página, toda la información se elimina automáticamente."
+              },
+              {
+                question: "¿Puedo usar las herramientas desde móvil?",
+                answer: "Sí, todas nuestras herramientas están optimizadas para dispositivos móviles. Funcionan perfectamente en smartphones y tablets con cualquier navegador moderno."
+              },
+              {
+                question: "¿Van a agregar más herramientas en el futuro?",
+                answer: "¡Absolutamente! Estamos constantemente desarrollando nuevas herramientas basadas en las necesidades de nuestra comunidad. Si tienes sugerencias, no dudes en contactarnos."
+              }
+            ]}
+          />
         </div>
       </main>
     </>

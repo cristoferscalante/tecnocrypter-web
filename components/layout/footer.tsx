@@ -63,19 +63,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/encriptacion" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Encriptación
-                </Link>
+                <Link href="/encriptacion" className="text-sm text-muted-foreground hover:text-primary">Encriptación</Link>
               </li>
               <li>
-                <Link href="/criptomonedas" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Criptomonedas
-                </Link>
+                <Link href="/criptomonedas" className="text-sm text-muted-foreground hover:text-primary">Criptomonedas</Link>
               </li>
               <li>
-                <Link href="/noticias" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Noticias
-                </Link>
+                <Link href="/noticias" className="text-sm text-muted-foreground hover:text-primary">Noticias</Link>
               </li>
             </ul>
           </div>

@@ -18,7 +18,7 @@ export default function HomePage() {
         title="TecnoCrypter - Plataforma de Herramientas de Ciberseguridad"
         description="Descubre las mejores herramientas de ciberseguridad, análisis de vulnerabilidades, encriptación y protección digital. Recursos educativos y productos especializados."
         slug=""
-        image="https://tecnocrypter.com/seo/home.webp"
+        image="tecnocrypter-web\public\Seo\home.webp"
         keywords="ciberseguridad, herramientas seguridad, encriptación, vulnerabilidades, hacking ético, pentesting"
       />
       <main className="min-h-screen">

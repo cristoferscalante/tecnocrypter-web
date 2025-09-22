@@ -3,8 +3,24 @@
 import { AnimatedSection } from "@/components/ui/animated-section"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
-export function FaqSection() {
-  const faqs = [
+interface FAQ {
+  question: string
+  answer: string
+}
+
+interface FaqSectionProps {
+  title?: string
+  subtitle?: string
+  faqs?: FAQ[]
+}
+
+export function FaqSection({ 
+  title = "Preguntas Frecuentes",
+  subtitle = "Respuestas a las preguntas más comunes sobre seguridad cibernética y criptomonedas.",
+  faqs 
+}: FaqSectionProps) {
+  // FAQs por defecto (para la página principal)
+  const defaultFaqs: FAQ[] = [
     {
       question: "¿Qué es la encriptación de extremo a extremo?",
       answer:
@@ -37,19 +53,21 @@ export function FaqSection() {
     },
   ]
 
+  const faqsToShow = faqs || defaultFaqs
+
   return (
     <section className="py-24 bg-background/5">
       <div className="container">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Preguntas Frecuentes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
           <p className="text-xl text-muted-foreground">
-            Respuestas a las preguntas más comunes sobre seguridad cibernética y criptomonedas.
+            {subtitle}
           </p>
         </AnimatedSection>
 
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => (
+            {faqsToShow.map((faq, index) => (
               <AnimatedSection key={index} delay={0.1 * index}>
                 <AccordionItem value={`item-${index}`}>
                   <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
