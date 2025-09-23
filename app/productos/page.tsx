@@ -12,6 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Checkbox } from "@/components/ui/checkbox"
 import { ProductService } from "@/services/product-service"
+import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 import type { Product } from "@/types"
 
 
@@ -26,6 +27,34 @@ export default function ProductosPage() {
     { id: "password-manager", name: "Gestores de Contraseñas" },
     { id: "encryption", name: "Encriptación" },
     { id: "security", name: "Seguridad" },
+  ]
+
+  // FAQ específicas para productos
+  const productFaqs = [
+    {
+      question: "¿Cómo puedo comprar un producto de seguridad?",
+      answer: "Puedes comprar cualquier producto navegando por nuestro catálogo, seleccionando el producto que necesites y siguiendo el proceso de compra. Aceptamos pagos con criptomonedas y métodos tradicionales."
+    },
+    {
+      question: "¿Ofrecen garantía en sus productos de seguridad?",
+      answer: "Sí, todos nuestros productos incluyen garantía de satisfacción de 30 días. Si no estás completamente satisfecho, puedes solicitar un reembolso completo dentro de este período."
+    },
+    {
+      question: "¿Los productos son compatibles con todos los sistemas operativos?",
+      answer: "La mayoría de nuestros productos son multiplataforma y funcionan en Windows, macOS, Linux, iOS y Android. Cada producto especifica claramente su compatibilidad en la descripción."
+    },
+    {
+      question: "¿Qué diferencia hay entre los productos gratuitos y premium?",
+      answer: "Los productos gratuitos ofrecen funcionalidades básicas de seguridad, mientras que las versiones premium incluyen características avanzadas como soporte prioritario, actualizaciones automáticas y funciones empresariales."
+    },
+    {
+      question: "¿Cómo recibo las licencias después de la compra?",
+      answer: "Después de completar tu compra, recibirás inmediatamente por correo electrónico las claves de licencia y las instrucciones de instalación. También tendrás acceso a tu área de cliente para descargas futuras."
+    },
+    {
+      question: "¿Ofrecen descuentos para compras en volumen?",
+      answer: "Sí, ofrecemos descuentos especiales para empresas y compras en volumen. Contacta con nuestro equipo de ventas para obtener una cotización personalizada según tus necesidades."
+    }
   ]
 
   useEffect(() => {
@@ -308,6 +337,12 @@ export default function ProductosPage() {
           </div>
         </div>
       </div>
+      
+      <ReusableFaqSection 
+        title="Preguntas Frecuentes sobre Productos"
+        description="Respuestas a las preguntas más comunes sobre nuestros productos de seguridad."
+        faqs={productFaqs}
+      />
     </main>
     </>
   )

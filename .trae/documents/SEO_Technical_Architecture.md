@@ -39,48 +39,55 @@ graph TD
 
 ## 2. Descripción de Tecnologías
 
-- **Frontend**: Next.js 14 + App Router + TypeScript
-- **SEO**: next-sitemap + structured data + metadatos dinámicos
-- **Monitoreo**: Google Analytics 4 + Search Console API
-- **Validación**: Lighthouse CI + custom SEO validators
+* **Frontend**: Next.js 14 + App Router + TypeScript
+
+* **SEO**: next-sitemap + structured data + metadatos dinámicos
+
+* **Monitoreo**: Google Analytics 4 + Search Console API
+
+* **Validación**: Lighthouse CI + custom SEO validators
 
 ## 3. Definiciones de Rutas SEO
 
-| Ruta | Propósito SEO | Prioridad | Frecuencia |
-|------|---------------|-----------|------------|
-| / | Página principal, máxima autoridad | 1.0 | daily |
-| /blog | Hub de contenido, alta frecuencia | 0.9 | daily |
-| /blog/[slug] | Artículos individuales | 0.8 | weekly |
-| /productos | Catálogo de productos | 0.9 | weekly |
-| /productos/[id] | Páginas de productos específicos | 0.8 | monthly |
-| /tools/* | Herramientas SEO, tráfico orgánico | 0.7 | weekly |
-| /contacto | Página de contacto, conversión | 0.6 | monthly |
-| /privacidad | Páginas legales requeridas | 0.5 | yearly |
+| Ruta             | Propósito SEO                      | Prioridad | Frecuencia |
+| ---------------- | ---------------------------------- | --------- | ---------- |
+| /                | Página principal, máxima autoridad | 1.0       | daily      |
+| /blog            | Hub de contenido, alta frecuencia  | 0.9       | daily      |
+| /blog/\[slug]    | Artículos individuales             | 0.8       | weekly     |
+| /productos       | Catálogo de productos              | 0.9       | weekly     |
+| /productos/\[id] | Páginas de productos específicos   | 0.8       | monthly    |
+| /tools/\*        | Herramientas SEO, tráfico orgánico | 0.7       | weekly     |
+| /contacto        | Página de contacto, conversión     | 0.6       | monthly    |
+| /privacidad      | Páginas legales requeridas         | 0.5       | yearly     |
 
 ## 4. APIs de SEO
 
 ### 4.1 API de Metadatos
 
 **Generación de metadatos dinámicos**
+
 ```typescript
 // GET /api/seo/metadata
 ```
 
 Request:
-| Parámetro | Tipo | Requerido | Descripción |
-|-----------|------|-----------|-------------|
-| path | string | true | Ruta de la página |
-| type | string | false | Tipo de contenido (article, product, page) |
+
+| Parámetro | Tipo   | Requerido | Descripción                                |
+| --------- | ------ | --------- | ------------------------------------------ |
+| path      | string | true      | Ruta de la página                          |
+| type      | string | false     | Tipo de contenido (article, product, page) |
 
 Response:
-| Campo | Tipo | Descripción |
-|-------|------|-------------|
-| title | string | Título optimizado para SEO |
-| description | string | Meta descripción |
-| keywords | string[] | Palabras clave relevantes |
-| structuredData | object | Datos estructurados JSON-LD |
+
+| Campo          | Tipo      | Descripción                 |
+| -------------- | --------- | --------------------------- |
+| title          | string    | Título optimizado para SEO  |
+| description    | string    | Meta descripción            |
+| keywords       | string\[] | Palabras clave relevantes   |
+| structuredData | object    | Datos estructurados JSON-LD |
 
 Ejemplo:
+
 ```json
 {
   "title": "Productos de Seguridad - TecnoCrypter",
@@ -96,43 +103,49 @@ Ejemplo:
 ### 4.2 API de Sitemap
 
 **Generación dinámica de sitemap**
+
 ```typescript
 // GET /api/sitemap/generate
 ```
 
 Request:
-| Parámetro | Tipo | Requerido | Descripción |
-|-----------|------|-----------|-------------|
-| type | string | false | Tipo de sitemap (pages, blog, products) |
-| lastmod | string | false | Fecha de última modificación |
+
+| Parámetro | Tipo   | Requerido | Descripción                             |
+| --------- | ------ | --------- | --------------------------------------- |
+| type      | string | false     | Tipo de sitemap (pages, blog, products) |
+| lastmod   | string | false     | Fecha de última modificación            |
 
 Response:
-| Campo | Tipo | Descripción |
-|-------|------|-------------|
-| urls | array | Lista de URLs con metadatos |
-| count | number | Número total de URLs |
-| lastGenerated | string | Timestamp de generación |
+
+| Campo         | Tipo   | Descripción                 |
+| ------------- | ------ | --------------------------- |
+| urls          | array  | Lista de URLs con metadatos |
+| count         | number | Número total de URLs        |
+| lastGenerated | string | Timestamp de generación     |
 
 ### 4.3 API de Validación SEO
 
 **Validación de configuración SEO**
+
 ```typescript
 // POST /api/seo/validate
 ```
 
 Request:
-| Parámetro | Tipo | Requerido | Descripción |
-|-----------|------|-----------|-------------|
-| url | string | true | URL a validar |
-| checks | string[] | false | Tipos de validación a realizar |
+
+| Parámetro | Tipo      | Requerido | Descripción                    |
+| --------- | --------- | --------- | ------------------------------ |
+| url       | string    | true      | URL a validar                  |
+| checks    | string\[] | false     | Tipos de validación a realizar |
 
 Response:
-| Campo | Tipo | Descripción |
-|-------|------|-------------|
-| isValid | boolean | Estado general de validación |
-| errors | array | Lista de errores encontrados |
-| warnings | array | Lista de advertencias |
-| score | number | Puntuación SEO (0-100) |
+
+| Campo    | Tipo    | Descripción                  |
+| -------- | ------- | ---------------------------- |
+| isValid  | boolean | Estado general de validación |
+| errors   | array   | Lista de errores encontrados |
+| warnings | array   | Lista de advertencias        |
+| score    | number  | Puntuación SEO (0-100)       |
 
 ## 5. Arquitectura del Servidor SEO
 
@@ -214,6 +227,7 @@ erDiagram
 ### 6.2 Definición de Datos (DDL)
 
 **Tabla de Páginas SEO**
+
 ```sql
 -- Crear tabla de páginas SEO
 CREATE TABLE seo_pages (
@@ -235,6 +249,7 @@ CREATE INDEX idx_seo_pages_score ON seo_pages(seo_score DESC);
 ```
 
 **Tabla de Metadatos SEO**
+
 ```sql
 -- Crear tabla de metadatos
 CREATE TABLE seo_metadata (
@@ -255,6 +270,7 @@ CREATE INDEX idx_seo_metadata_keywords ON seo_metadata USING gin(keywords);
 ```
 
 **Tabla de Datos Estructurados**
+
 ```sql
 -- Crear tabla de structured data
 CREATE TABLE structured_data (
@@ -273,6 +289,7 @@ CREATE INDEX idx_structured_data_valid ON structured_data(is_valid);
 ```
 
 **Tabla de Entradas de Sitemap**
+
 ```sql
 -- Crear tabla de sitemap
 CREATE TABLE sitemap_entries (
@@ -293,6 +310,7 @@ CREATE INDEX idx_sitemap_entries_lastmod ON sitemap_entries(lastmod DESC);
 ```
 
 **Datos Iniciales**
+
 ```sql
 -- Insertar páginas principales
 INSERT INTO seo_pages (path, type, is_indexed, seo_score) VALUES
@@ -447,3 +465,4 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 ```
+
