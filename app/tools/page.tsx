@@ -4,6 +4,8 @@ import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Shield, Key, FileCheck, ArrowRight, QrCode } from "lucide-react"
+import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
+
 
 const tools = [
   {
@@ -36,6 +38,7 @@ const tools = [
   }
 ]
 
+
 export const metadata: Metadata = generateToolMetadata({
   title: "Herramientas de Seguridad Digital",
   description: "Accede a nuestras herramientas gratuitas de seguridad digital: generador de contraseñas, limpiador de metadatos, verificador de seguridad y más.",
@@ -43,6 +46,35 @@ export const metadata: Metadata = generateToolMetadata({
   image: "https://tecnocrypter.com/seo/tools.webp",
   keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita"]
 })
+
+// FAQ específicas para tools
+const toolsFaqs = [
+  {
+    question: "¿Las herramientas son completamente gratuitas?",
+    answer: "Sí, todas nuestras herramientas básicas son completamente gratuitas y no requieren registro. Algunas funciones avanzadas pueden requerir una cuenta premium, pero las funcionalidades principales están disponibles sin costo."
+  },
+  {
+    question: "¿Mis datos se almacenan en sus servidores?",
+    answer: "No, la mayoría de nuestras herramientas procesan los datos localmente en tu navegador por seguridad. Los datos no se envían a nuestros servidores, garantizando tu privacidad y confidencialidad."
+  },
+  {
+    question: "¿Puedo usar las herramientas sin conexión a internet?",
+    answer: "Algunas herramientas como el generador de contraseñas funcionan completamente offline una vez cargadas. Otras que requieren verificaciones en tiempo real necesitan conexión a internet."
+  },
+  {
+    question: "¿Con qué frecuencia actualizan las herramientas?",
+    answer: "Actualizamos nuestras herramientas regularmente para mejorar la seguridad, agregar nuevas funciones y corregir errores. Las actualizaciones se implementan automáticamente sin interrumpir tu experiencia."
+  },
+  {
+    question: "¿Puedo integrar estas herramientas en mi sitio web?",
+    answer: "Ofrecemos APIs y widgets embebibles para algunas de nuestras herramientas. Contacta con nuestro equipo técnico para conocer las opciones de integración disponibles."
+  },
+  {
+    question: "¿Las herramientas son seguras para uso empresarial?",
+    answer: "Sí, nuestras herramientas están diseñadas con estándares de seguridad empresarial. Ofrecemos versiones premium con funciones adicionales de auditoría y cumplimiento para entornos corporativos."
+  }
+]
+
 
 export default function ToolsPage() {
   return (
@@ -112,6 +144,12 @@ export default function ToolsPage() {
             </div>
           </div>
         </div>
+        
+        <ReusableFaqSection 
+          title="Preguntas Frecuentes sobre Herramientas"
+          description="Respuestas a las preguntas más comunes sobre nuestras herramientas de seguridad."
+          faqs={toolsFaqs}
+        />
       </main>
     </>
   )
