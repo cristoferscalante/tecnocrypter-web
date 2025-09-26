@@ -33,6 +33,8 @@ export function Header() {
     { name: "Limpiador de Metadatos", href: "/tools/limpia-metadatos" },
     { name: "Verificador de URL", href: "/tools/verificador" },
     { name: "Generador de Códigos QR", href: "/tools/generador-qr" },
+    { name: "Cifrado Online", href: "/tools/cifrado-online" },
+    { name: "Generador de Hash", href: "/tools/generador-hash" },
   ]
 
   return (

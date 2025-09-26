@@ -3,7 +3,7 @@ import { generateToolMetadata } from "@/lib/metadata"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Key, FileCheck, ArrowRight, QrCode } from "lucide-react"
+import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock } from "lucide-react"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 
 
@@ -35,6 +35,13 @@ const tools = [
     href: "/tools/generador-qr",
     icon: QrCode,
     category: "Utilidades"
+  },
+  {
+    title: "Cifrado Online",
+    description: "Cifra y descifra mensajes con una clave compartida. Todo el proceso se realiza en tu navegador.",
+    href: "/tools/cifrado-online",
+    icon: Lock,
+    category: "Seguridad"
   }
 ]
 
