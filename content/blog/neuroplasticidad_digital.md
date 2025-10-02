@@ -1,7 +1,7 @@
 ---
 title: "Neuroplasticidad Digital: Cómo la Era Tecnológica Está Reconfigurando el Cerebro Humano"
 excerpt: "Análisis neurocientífico de cómo los dispositivos digitales y la IA están transformando nuestros cerebros, incluyendo amnesia digital, scroll infinito y alucinaciones de IA."
-date: "2025-01-23"
+date: "2025-09-30"
 author: "V1TR0"
 category: "neurociencia"
 tags: ["neuroplasticidad", "tecnología", "cerebro", "IA", "cognición"]
