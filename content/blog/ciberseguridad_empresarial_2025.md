@@ -2,7 +2,7 @@
 title: "Ciberseguridad Empresarial 2025: 15 Mejores Prácticas que Todo CISO Debe Implementar"
 description: "Guía completa de las mejores prácticas de ciberseguridad para empresas en 2025, incluyendo frameworks actualizados, herramientas esenciales y estrategias de implementación."
 author: "Carlos Rodríguez, CISSP, CISM"
-date: "2025-01-23"
+date: "2025-09-30"
 category: "Ciberseguridad"
 tags: ["Best Practices", "CISO", "Zero Trust", "Incident Response", "Compliance"]
 readTime: "12 min"
