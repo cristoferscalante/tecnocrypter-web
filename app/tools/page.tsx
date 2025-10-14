@@ -3,7 +3,7 @@ import { generateToolMetadata } from "@/lib/metadata"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary } from "lucide-react"
+import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type } from "lucide-react"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 
 
@@ -49,6 +49,13 @@ const tools = [
     href: "/tools/codificador-base32",
     icon: Binary,
     category: "Codificación"
+  },
+  {
+    title: "Contador de Caracteres",
+    description: "Cuenta caracteres, palabras y analiza tu texto en tiempo real. Perfecto para redes sociales y SEO.",
+    href: "/tools/contador-caracteres",
+    icon: Type,
+    category: "Análisis"
   }
 ]
 
