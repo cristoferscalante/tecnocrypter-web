@@ -3,7 +3,7 @@ import { generateToolMetadata } from "@/lib/metadata"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock } from "lucide-react"
+import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary } from "lucide-react"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 
 
@@ -42,6 +42,13 @@ const tools = [
     href: "/tools/cifrado-online",
     icon: Lock,
     category: "Seguridad"
+  },
+  {
+    title: "Codificador Base32",
+    description: "Codifica y decodifica texto y archivos en Base32 con múltiples variantes y opciones avanzadas.",
+    href: "/tools/codificador-base32",
+    icon: Binary,
+    category: "Codificación"
   }
 ]
 

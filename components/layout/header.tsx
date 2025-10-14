@@ -35,6 +35,7 @@ export function Header() {
     { name: "Generador de Códigos QR", href: "/tools/generador-qr" },
     { name: "Cifrado Online", href: "/tools/cifrado-online" },
     { name: "Generador de Hash", href: "/tools/generador-hash" },
+    { name: "Codificador Base32", href: "/tools/codificador-base32" },
   ]
 
   return (
