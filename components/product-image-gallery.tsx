@@ -5,9 +5,10 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, Expand } from "lucide-react"
 import { cn } from "@/lib/utils"
+import type { ProductImage } from "@/types"
 
 interface ProductImageGalleryProps {
-  images: string[]
+  images: ProductImage[] | string[]
   productName: string
 }
 
@@ -23,21 +24,33 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
     )
   }
 
+  // Normalizar imágenes a un formato consistente
+  const normalizedImages = images.map(img => 
+    typeof img === 'string' ? { url: img, alt: productName } : img
+  ).sort((a, b) => {
+    // Si tienen display_order, usarlo para ordenar
+    const orderA = 'display_order' in a ? a.display_order : 0
+    const orderB = 'display_order' in b ? b.display_order : 0
+    return orderA - orderB
+  })
+
   const nextImage = () => {
-    setSelectedImage((prev) => (prev + 1) % images.length)
+    setSelectedImage((prev) => (prev + 1) % normalizedImages.length)
   }
 
   const prevImage = () => {
-    setSelectedImage((prev) => (prev - 1 + images.length) % images.length)
+    setSelectedImage((prev) => (prev - 1 + normalizedImages.length) % normalizedImages.length)
   }
+
+  const currentImage = normalizedImages[selectedImage]
 
   return (
     <div className="space-y-4">
       {/* Imagen principal */}
       <div className="relative aspect-square bg-muted rounded-lg overflow-hidden group">
         <img
-          src={images[selectedImage]}
-          alt={`${productName} - Imagen ${selectedImage + 1}`}
+          src={currentImage.url}
+          alt={currentImage.alt || `${productName} - Imagen ${selectedImage + 1}`}
           className="object-cover w-full h-full transition-transform group-hover:scale-105"
         />
         
@@ -55,13 +68,13 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
           <DialogContent className="max-w-4xl w-full">
             <div className="relative aspect-square bg-muted rounded-lg overflow-hidden">
               <img
-                src={images[selectedImage]}
-                alt={`${productName} - Imagen ${selectedImage + 1}`}
+                src={currentImage.url}
+                alt={currentImage.alt || `${productName} - Imagen ${selectedImage + 1}`}
                 className="object-cover w-full h-full"
               />
               
               {/* Controles de navegación en el modal */}
-              {images.length > 1 && (
+              {normalizedImages.length > 1 && (
                 <>
                   <Button
                     variant="secondary"
@@ -86,7 +99,7 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
         </Dialog>
         
         {/* Controles de navegación */}
-        {images.length > 1 && (
+        {normalizedImages.length > 1 && (
           <>
             <Button
               variant="secondary"
@@ -108,17 +121,17 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
         )}
         
         {/* Indicador de imagen actual */}
-        {images.length > 1 && (
+        {normalizedImages.length > 1 && (
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
-            {selectedImage + 1} / {images.length}
+            {selectedImage + 1} / {normalizedImages.length}
           </div>
         )}
       </div>
       
       {/* Miniaturas */}
-      {images.length > 1 && (
+      {normalizedImages.length > 1 && (
         <div className="grid grid-cols-4 gap-2">
-          {images.map((image, index) => (
+          {normalizedImages.map((image, index) => (
             <button
               key={index}
               onClick={() => setSelectedImage(index)}
@@ -130,8 +143,8 @@ export function ProductImageGallery({ images, productName }: ProductImageGallery
               )}
             >
               <img
-                src={image}
-                alt={`${productName} - Miniatura ${index + 1}`}
+                src={image.url}
+                alt={image.alt || `${productName} - Miniatura ${index + 1}`}
                 className="object-cover w-full h-full"
               />
             </button>

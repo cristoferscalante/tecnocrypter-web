@@ -2,11 +2,11 @@ import type { Metadata } from "next"
 import { generateProductMetadata } from "@/lib/metadata"
 
 export const metadata: Metadata = generateProductMetadata({
-  title: "Productos de Seguridad Digital | TecnoCrypter",
-  description: "Descubre nuestros productos especializados en seguridad digital, encriptación y protección de datos. Herramientas profesionales para mantener tu información segura.",
+  title: "Servicios de Seguridad Digital | TecnoCrypter",
+  description: "Desarrollo web seguro, capacitaciones en ciberseguridad, prevención de ataques y respuesta a incidentes.",
   slug: "productos",
   image: "/Seo/productos.webp",
-  keywords: ["productos seguridad", "herramientas encriptación", "software protección datos", "seguridad digital", "ciberseguridad"]  
+  keywords: ["desarrollo web seguro", "capacitación ciberseguridad", "prevención ataques", "servicios seguridad"]  
 })
 
 export default function ProductosLayout({
