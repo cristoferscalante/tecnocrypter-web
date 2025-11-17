@@ -4,12 +4,13 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import { ArrowLeft, ShoppingCart, Shield, Check, Star } from "lucide-react"
+import { ArrowLeft, ShoppingCart, Shield, Check, Star, ExternalLink, Globe, Award } from "lucide-react"
 import type { Product } from "@/types"
 import type { Metadata } from "next"
 import { ProductImageGallery } from "@/components/product-image-gallery"
 import { ProductService } from "@/services/product-service"
 import { StructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
+import { getVendorInfo, getCategoryName } from "@/lib/product-utils"
 
 interface ProductPageProps {
   params: {
@@ -57,6 +58,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
   if (!product) {
     notFound()
   }
+
+  // Obtener información del proveedor usando la utilidad
+  const currentVendor = getVendorInfo(product.vendor)
 
   return (
     <>
@@ -118,8 +122,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <Badge variant="outline" className="capitalize">
                   {product.category}
                 </Badge>
-                <Badge variant="secondary">
-                  {product.vendor}
+                <Badge variant="secondary" className="flex items-center gap-1">
+                  <Award className="h-3 w-3" />
+                  {currentVendor.name}
                 </Badge>
               </div>
               <h1 className="text-3xl font-bold tracking-tight mb-4">{product.name}</h1>
@@ -127,6 +132,25 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 {product.description}
               </p>
             </div>
+
+            {/* Información del Proveedor */}
+            {currentVendor.url !== '#' && (
+              <div className="border rounded-lg p-4 bg-muted/30">
+                <h4 className="font-medium mb-2 flex items-center gap-2">
+                  <Globe className="h-4 w-4" />
+                  Sobre el proveedor
+                </h4>
+                <p className="text-sm text-muted-foreground mb-3">
+                  {currentVendor.description}
+                </p>
+                <Button asChild variant="outline" size="sm" className="w-full">
+                  <Link href={currentVendor.url} target="_blank" rel="noopener noreferrer">
+                    Visitar sitio web
+                    <ExternalLink className="ml-2 h-3 w-3" />
+                  </Link>
+                </Button>
+              </div>
+            )}
 
             {/* Precio */}
             <div className="border rounded-lg p-6 bg-muted/30">
@@ -155,8 +179,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </div>
               <Button className="w-full" size="lg">
                 <ShoppingCart className="mr-2 h-5 w-5" />
-                Comprar con Crypto
+                Solicitar Cotización
               </Button>
+              <p className="text-xs text-center text-muted-foreground mt-2">
+                Aceptamos pagos en criptomonedas y métodos tradicionales
+              </p>
             </div>
 
             {/* Características */}

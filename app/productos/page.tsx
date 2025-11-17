@@ -23,37 +23,38 @@ export default function ProductosPage() {
   const [selectedCategory, setSelectedCategory] = useState("todos")
   const categories = [
     { id: "todos", name: "Todos" },
-    { id: "vpn", name: "VPN" },
-    { id: "password-manager", name: "Gestores de Contraseñas" },
-    { id: "encryption", name: "Encriptación" },
-    { id: "security", name: "Seguridad" },
+    { id: "web-development", name: "Desarrollo Web" },
+    { id: "security-training", name: "Capacitaciones" },
+    { id: "ai-training", name: "IA Segura" },
+    { id: "cybersecurity", name: "Ciberseguridad" },
+    { id: "incident-response", name: "Respuesta a Incidentes" },
   ]
 
   // FAQ específicas para productos
   const productFaqs = [
     {
-      question: "¿Cómo puedo comprar un producto de seguridad?",
-      answer: "Puedes comprar cualquier producto navegando por nuestro catálogo, seleccionando el producto que necesites y siguiendo el proceso de compra. Aceptamos pagos con criptomonedas y métodos tradicionales."
+      question: "¿Qué servicios de desarrollo web ofrecen?",
+      answer: "Ofrecemos desarrollo de sitios web y aplicaciones web seguras de alta calidad, con enfoque en seguridad desde el diseño. Utilizamos las mejores prácticas de la industria y tecnologías modernas para garantizar aplicaciones robustas y protegidas."
     },
     {
-      question: "¿Ofrecen garantía en sus productos de seguridad?",
-      answer: "Sí, todos nuestros productos incluyen garantía de satisfacción de 30 días. Si no estás completamente satisfecho, puedes solicitar un reembolso completo dentro de este período."
+      question: "¿Qué incluyen las capacitaciones de seguridad?",
+      answer: "Nuestras capacitaciones cubren desde conceptos básicos de seguridad digital hasta el uso avanzado de herramientas de seguridad. Incluyen prácticas hands-on, certificados de finalización y soporte continuo después del curso."
     },
     {
-      question: "¿Los productos son compatibles con todos los sistemas operativos?",
-      answer: "La mayoría de nuestros productos son multiplataforma y funcionan en Windows, macOS, Linux, iOS y Android. Cada producto especifica claramente su compatibilidad en la descripción."
+      question: "¿Cómo funcionan las capacitaciones en IA segura?",
+      answer: "Enseñamos a usar herramientas de inteligencia artificial de manera responsable, sin exponer datos sensibles. Aprenderás técnicas de anonimización, mejores prácticas de privacidad y cómo implementar IA en tu empresa de forma segura."
     },
     {
-      question: "¿Qué diferencia hay entre los productos gratuitos y premium?",
-      answer: "Los productos gratuitos ofrecen funcionalidades básicas de seguridad, mientras que las versiones premium incluyen características avanzadas como soporte prioritario, actualizaciones automáticas y funciones empresariales."
+      question: "¿Qué incluye el servicio de prevención de ataques?",
+      answer: "Incluye análisis de vulnerabilidades, implementación de medidas preventivas, monitoreo continuo, configuración de firewalls y sistemas de detección de intrusiones. Ofrecemos planes personalizados según el tamaño de tu empresa."
     },
     {
-      question: "¿Cómo recibo las licencias después de la compra?",
-      answer: "Después de completar tu compra, recibirás inmediatamente por correo electrónico las claves de licencia y las instrucciones de instalación. También tendrás acceso a tu área de cliente para descargas futuras."
+      question: "¿Cómo funciona el soporte ante ataques informáticos?",
+      answer: "Ofrecemos respuesta rápida 24/7 ante incidentes de seguridad. Nuestro equipo analiza el ataque, contiene la amenaza, recupera sistemas afectados y proporciona un informe detallado con recomendaciones para prevenir futuros incidentes."
     },
     {
-      question: "¿Ofrecen descuentos para compras en volumen?",
-      answer: "Sí, ofrecemos descuentos especiales para empresas y compras en volumen. Contacta con nuestro equipo de ventas para obtener una cotización personalizada según tus necesidades."
+      question: "¿Ofrecen planes corporativos?",
+      answer: "Sí, ofrecemos planes empresariales personalizados que combinan varios servicios. Contacta con nuestro equipo para una consulta gratuita y una cotización ajustada a las necesidades específicas de tu organización."
     }
   ]
 
@@ -85,9 +86,9 @@ export default function ProductosPage() {
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Productos de Seguridad y Encriptación</h1>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">Servicios Profesionales de Seguridad Digital</h1>
             <p className="text-xl text-muted-foreground">
-              Soluciones avanzadas para proteger tus activos digitales con pago en criptomonedas.
+              Desarrollo web seguro, capacitaciones especializadas y servicios de ciberseguridad empresarial.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -113,9 +114,9 @@ export default function ProductosPage() {
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Productos de Seguridad y Encriptación</h1>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">Servicios Profesionales de Seguridad Digital</h1>
             <p className="text-xl text-muted-foreground">
-              Soluciones avanzadas para proteger tus activos digitales con pago en criptomonedas.
+              Desarrollo web seguro, capacitaciones especializadas y servicios de ciberseguridad empresarial.
             </p>
           </div>
 
@@ -212,7 +213,7 @@ export default function ProductosPage() {
                           htmlFor="vendor-1"
                           className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         >
-                          CryptoSecure
+                          V1tr0
                         </label>
                       </div>
                       <div className="flex items-center space-x-2">
@@ -221,16 +222,7 @@ export default function ProductosPage() {
                           htmlFor="vendor-2"
                           className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         >
-                          SecureComm
-                        </label>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Checkbox id="vendor-3" />
-                        <label
-                          htmlFor="vendor-3"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          DataGuard
+                          TecnoCrypter
                         </label>
                       </div>
                     </div>
