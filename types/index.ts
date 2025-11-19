@@ -13,7 +13,7 @@ export interface BlogPost {
 }
 
 export interface Product {
-  id: string
+  id: number
   name: string
   description: string
   price: number
@@ -32,8 +32,8 @@ export interface Product {
 }
 
 export interface ProductImage {
-  id: string
-  product_id: string
+  id: number
+  product_id: number
   url: string
   alt: string
   display_order: number
