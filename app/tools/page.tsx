@@ -3,7 +3,7 @@ import { generateToolMetadata } from "@/lib/metadata"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type } from "lucide-react"
+import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type, KeyRound, GitCompare } from "lucide-react"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 
 
@@ -14,6 +14,13 @@ const tools = [
     href: "/tools/generador-contrasenas",
     icon: Key,
     category: "Seguridad"
+  },
+  {
+    title: "Generador de Credenciales Determinísticas",
+    description: "Crea usuarios y contraseñas determinísticas desde una palabra clave maestra, todo en tu navegador.",
+    href: "/tools/generador-credenciales",
+    icon: KeyRound,
+    category: "Privacidad"
   },
   {
     title: "Limpiador de Metadatos",
@@ -49,6 +56,13 @@ const tools = [
     href: "/tools/codificador-base32",
     icon: Binary,
     category: "Codificación"
+  },
+  {
+    title: "Comparador de Archivos y Texto (Diff Viewer)",
+    description: "Compara líneas entre dos textos o archivos. Vista dividida, ignorar espacios y exportar patch.",
+    href: "/tools/comparador-archivos",
+    icon: GitCompare,
+    category: "Utilidades"
   },
   {
     title: "Contador de Caracteres",
