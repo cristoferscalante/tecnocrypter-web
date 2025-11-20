@@ -3,7 +3,7 @@ import { generateToolMetadata } from "@/lib/metadata"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type } from "lucide-react"
+import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type, KeyRound, GitCompare, Hash } from "lucide-react"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 
 
@@ -16,6 +16,13 @@ const tools = [
     category: "Seguridad"
   },
   {
+    title: "Generador de Credenciales Determinísticas",
+    description: "Crea usuarios y contraseñas determinísticas desde una palabra clave maestra, todo en tu navegador.",
+    href: "/tools/generador-credenciales",
+    icon: KeyRound,
+    category: "Privacidad"
+  },
+  {
     title: "Limpiador de Metadatos",
     description: "Elimina metadatos sensibles de tus archivos para proteger tu privacidad.",
     href: "/tools/limpia-metadatos",
@@ -23,11 +30,18 @@ const tools = [
     category: "Privacidad"
   },
   {
-    title: "Verificador de Seguridad",
-    description: "Analiza y verifica la seguridad de URLs, archivos y sistemas.",
+    title: "Verificador de URL",
+    description: "Analiza y verifica la seguridad de URLs y detecta posibles amenazas antes de visitarlas.",
     href: "/tools/verificador",
     icon: Shield,
     category: "Análisis"
+  },
+  {
+    title: "Generador de Hash",
+    description: "Calcula hashes (MD5, SHA-1, SHA-256, etc.) de texto y archivos totalmente en tu navegador.",
+    href: "/tools/generador-hash",
+    icon: Hash,
+    category: "Seguridad"
   },
   {
     title: "Generador de Códigos QR",
@@ -49,6 +63,13 @@ const tools = [
     href: "/tools/codificador-base32",
     icon: Binary,
     category: "Codificación"
+  },
+  {
+    title: "Comparador de Archivos y Texto (Diff Viewer)",
+    description: "Compara líneas entre dos textos o archivos. Vista dividida, ignorar espacios y exportar patch.",
+    href: "/tools/comparador-archivos",
+    icon: GitCompare,
+    category: "Utilidades"
   },
   {
     title: "Contador de Caracteres",

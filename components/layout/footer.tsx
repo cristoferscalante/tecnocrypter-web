@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="border-t bg-background/30 backdrop-blur-sm">
       <div className="container py-8 md:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo y descripción */}
           <div className="md:col-span-1 space-y-4">
             <Link href="/" className="flex items-center space-x-4 group">
@@ -53,26 +53,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Categorías */}
-          <div>
-            <h3 className="text-sm font-semibold mb-4">Categorías</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/seguridad" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Seguridad Cibernética
-                </Link>
-              </li>
-              <li>
-                <Link href="/encriptacion" className="text-sm text-muted-foreground hover:text-primary">Encriptación</Link>
-              </li>
-              <li>
-                <Link href="/criptomonedas" className="text-sm text-muted-foreground hover:text-primary">Criptomonedas</Link>
-              </li>
-              <li>
-                <Link href="/noticias" className="text-sm text-muted-foreground hover:text-primary">Noticias</Link>
-              </li>
-            </ul>
-          </div>
+          
 
           {/* Legal */}
           <div>
