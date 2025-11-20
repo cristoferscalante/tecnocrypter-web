@@ -3,7 +3,7 @@ import { generateToolMetadata } from "@/lib/metadata"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type, KeyRound, GitCompare } from "lucide-react"
+import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type, KeyRound, GitCompare, Hash } from "lucide-react"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 
 
@@ -30,11 +30,18 @@ const tools = [
     category: "Privacidad"
   },
   {
-    title: "Verificador de Seguridad",
-    description: "Analiza y verifica la seguridad de URLs, archivos y sistemas.",
+    title: "Verificador de URL",
+    description: "Analiza y verifica la seguridad de URLs y detecta posibles amenazas antes de visitarlas.",
     href: "/tools/verificador",
     icon: Shield,
     category: "Análisis"
+  },
+  {
+    title: "Generador de Hash",
+    description: "Calcula hashes (MD5, SHA-1, SHA-256, etc.) de texto y archivos totalmente en tu navegador.",
+    href: "/tools/generador-hash",
+    icon: Hash,
+    category: "Seguridad"
   },
   {
     title: "Generador de Códigos QR",
