@@ -14,13 +14,19 @@ export function useCryptoPayment() {
     try {
       setLoading(true)
 
+      const amountByCurrency: Record<"BTC" | "ETH" | "USDT", number> = {
+        BTC: product.crypto_price_btc,
+        ETH: product.crypto_price_eth,
+        USDT: product.crypto_price_usdt,
+      }
+
       const response = await fetch("/api/payments/crypto/initialize", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           productId: product.id,
           currency,
-          amount: product.cryptoPrice[currency.toLowerCase() as keyof typeof product.cryptoPrice],
+          amount: amountByCurrency[currency],
         }),
       })
 

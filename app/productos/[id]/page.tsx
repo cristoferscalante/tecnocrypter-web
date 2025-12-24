@@ -12,9 +12,9 @@ import { ProductService } from "@/services/product-service"
 import { StructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 // Función para obtener el producto desde Supabase
