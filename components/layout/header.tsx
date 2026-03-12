@@ -30,6 +30,7 @@ export function Header() {
 
   const toolsItems = [
     { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
+    { name: "Generador de Credenciales Determinísticas", href: "/tools/generador-credenciales" },
     { name: "Limpiador de Metadatos", href: "/tools/limpia-metadatos" },
     { name: "Verificador de URL", href: "/tools/verificador" },
     { name: "Generador de Códigos QR", href: "/tools/generador-qr" },
@@ -37,6 +38,7 @@ export function Header() {
     { name: "Generador de Hash", href: "/tools/generador-hash" },
     { name: "Codificador Base32", href: "/tools/codificador-base32" },
     { name: "Contador de Caracteres", href: "/tools/contador-caracteres" },
+    { name: "Comparador de Archivos y Texto (Diff Viewer)", href: "/tools/comparador-archivos" },
   ]
 
   return (

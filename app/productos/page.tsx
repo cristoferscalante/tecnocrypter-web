@@ -21,6 +21,9 @@ export default function ProductosPage() {
   const [loading, setLoading] = useState(true)
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("todos")
+  const [selectedPriceRanges, setSelectedPriceRanges] = useState<string[]>([])
+  const [selectedVendors, setSelectedVendors] = useState<string[]>([])
+  
   const categories = [
     { id: "todos", name: "Todos" },
     { id: "web-development", name: "Desarrollo Web" },
@@ -29,6 +32,41 @@ export default function ProductosPage() {
     { id: "cybersecurity", name: "Ciberseguridad" },
     { id: "incident-response", name: "Respuesta a Incidentes" },
   ]
+
+  const priceRanges = [
+    { id: "range-1", label: "Menos de $1,000", min: 0, max: 1000 },
+    { id: "range-2", label: "$1,000 - $2,000", min: 1000, max: 2000 },
+    { id: "range-3", label: "$2,000 - $4,000", min: 2000, max: 4000 },
+    { id: "range-4", label: "Más de $4,000", min: 4000, max: Infinity },
+  ]
+
+  const vendors = [
+    { id: "V1tr0", name: "V1tr0" },
+    { id: "TecnoCrypter", name: "TecnoCrypter" },
+  ]
+
+  const handlePriceChange = (rangeId: string) => {
+    setSelectedPriceRanges(prev =>
+      prev.includes(rangeId)
+        ? prev.filter(id => id !== rangeId)
+        : [...prev, rangeId]
+    )
+  }
+
+  const handleVendorChange = (vendorId: string) => {
+    setSelectedVendors(prev =>
+      prev.includes(vendorId)
+        ? prev.filter(id => id !== vendorId)
+        : [...prev, vendorId]
+    )
+  }
+
+  const clearFilters = () => {
+    setSelectedCategory("todos")
+    setSelectedPriceRanges([])
+    setSelectedVendors([])
+    setSearchQuery("")
+  }
 
   // FAQ específicas para productos
   const productFaqs = [
@@ -78,7 +116,18 @@ export default function ProductosPage() {
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          product.description.toLowerCase().includes(searchQuery.toLowerCase())
     const matchesCategory = selectedCategory === "todos" || product.category === selectedCategory
-    return matchesSearch && matchesCategory
+    
+    // Filtro de precio
+    const matchesPrice = selectedPriceRanges.length === 0 || selectedPriceRanges.some(rangeId => {
+      const range = priceRanges.find(r => r.id === rangeId)
+      if (!range) return false
+      return product.price >= range.min && product.price < range.max
+    })
+    
+    // Filtro de proveedor
+    const matchesVendor = selectedVendors.length === 0 || selectedVendors.includes(product.vendor)
+    
+    return matchesSearch && matchesCategory && matchesPrice && matchesVendor
   })
 
   if (loading) {
@@ -136,7 +185,7 @@ export default function ProductosPage() {
             <div className="border rounded-lg p-4">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="font-medium">Filtros</h3>
-                <Button variant="ghost" size="sm" className="h-8 text-xs">
+                <Button variant="ghost" size="sm" className="h-8 text-xs" onClick={clearFilters}>
                   Limpiar
                 </Button>
               </div>
@@ -164,42 +213,21 @@ export default function ProductosPage() {
                   <AccordionTrigger className="py-2">Precio</AccordionTrigger>
                   <AccordionContent>
                     <div className="space-y-2">
-                      <div className="flex items-center space-x-2">
-                        <Checkbox id="price-1" />
-                        <label
-                          htmlFor="price-1"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          Menos de $50
-                        </label>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Checkbox id="price-2" />
-                        <label
-                          htmlFor="price-2"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          $50 - $100
-                        </label>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Checkbox id="price-3" />
-                        <label
-                          htmlFor="price-3"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          $100 - $200
-                        </label>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Checkbox id="price-4" />
-                        <label
-                          htmlFor="price-4"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          Más de $200
-                        </label>
-                      </div>
+                      {priceRanges.map((range) => (
+                        <div key={range.id} className="flex items-center space-x-2">
+                          <Checkbox 
+                            id={range.id}
+                            checked={selectedPriceRanges.includes(range.id)}
+                            onCheckedChange={() => handlePriceChange(range.id)}
+                          />
+                          <label
+                            htmlFor={range.id}
+                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                          >
+                            {range.label}
+                          </label>
+                        </div>
+                      ))}
                     </div>
                   </AccordionContent>
                 </AccordionItem>
@@ -207,24 +235,21 @@ export default function ProductosPage() {
                   <AccordionTrigger className="py-2">Proveedor</AccordionTrigger>
                   <AccordionContent>
                     <div className="space-y-2">
-                      <div className="flex items-center space-x-2">
-                        <Checkbox id="vendor-1" />
-                        <label
-                          htmlFor="vendor-1"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          V1tr0
-                        </label>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Checkbox id="vendor-2" />
-                        <label
-                          htmlFor="vendor-2"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
-                          TecnoCrypter
-                        </label>
-                      </div>
+                      {vendors.map((vendor) => (
+                        <div key={vendor.id} className="flex items-center space-x-2">
+                          <Checkbox 
+                            id={`vendor-${vendor.id}`}
+                            checked={selectedVendors.includes(vendor.id)}
+                            onCheckedChange={() => handleVendorChange(vendor.id)}
+                          />
+                          <label
+                            htmlFor={`vendor-${vendor.id}`}
+                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                          >
+                            {vendor.name}
+                          </label>
+                        </div>
+                      ))}
                     </div>
                   </AccordionContent>
                 </AccordionItem>

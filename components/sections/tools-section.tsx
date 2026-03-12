@@ -3,50 +3,72 @@
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { AnimatedSection } from "@/components/ui/animated-section"
-import { Key, ImageIcon, ArrowRight, Shield, Search, QrCode } from "lucide-react"
+import { Key, KeyRound, ArrowRight, Shield, QrCode, Lock, Binary, Type, GitCompare, Hash, FileCheck } from "lucide-react"
 import { motion } from "framer-motion"
-import Image from "next/image"
 
 export function ToolsSection() {
   const tools = [
     {
       icon: Key,
-      image: "/images/optimizadas/32.webp",
       title: "Generador de Contraseñas",
       description: "Crea contraseñas seguras y personalizables con opciones avanzadas de configuración.",
       href: "/tools/generador-contrasenas",
-      badge: "Gratis",
-      features: ["Múltiples opciones", "Verificación de seguridad", "Sin almacenamiento"]
     },
     {
-      icon: ImageIcon,
-      image: "/images/optimizadas/33.webp",
+      icon: KeyRound,
+      title: "Generador de Credenciales Determinísticas",
+      description: "Crea usuarios y contraseñas determinísticas desde una palabra clave maestra.",
+      href: "/tools/generador-credenciales",
+    },
+    {
+      icon: FileCheck,
       title: "Limpiador de Metadatos",
       description: "Elimina metadatos EXIF y GPS de tus imágenes para proteger tu privacidad.",
       href: "/tools/limpia-metadatos",
-      badge: "Nuevo",
-      features: ["Procesamiento local", "Múltiples formatos", "Sin subida a servidor"]
+    },
+    {
+      icon: Shield,
+      title: "Verificador de URL",
+      description: "Analiza la seguridad de URLs y detecta amenazas antes de visitarlas.",
+      href: "/tools/verificador",
     },
     {
       icon: QrCode,
-      image: "/images/optimizadas/11.webp",
       title: "Generador de QR",
-      description: "Crea códigos QR personalizados con tu logo y colores para compartir información fácilmente.",
+      description: "Crea códigos QR personalizados con logo y colores.",
       href: "/tools/generador-qr",
-      badge: "Nuevo",
-      features: ["Personalización completa", "Añade tu logo", "Descarga en alta calidad"]
     },
     {
-      icon: Search,
-      image: "/images/optimizadas/34.webp",
-      title: "Verificador de URL",
-      description: "Analiza la seguridad de URLs y detecta posibles amenazas antes de visitarlas.",
-      href: "/tools/verificador",
-      badge: "Beta",
-      features: ["Análisis en tiempo real", "Detección de malware", "Reporte detallado"]
-    }
+      icon: Lock,
+      title: "Cifrado Online",
+      description: "Cifra y descifra mensajes de forma local en tu navegador.",
+      href: "/tools/cifrado-online",
+    },
+    {
+      icon: Binary,
+      title: "Codificador Base32",
+      description: "Codifica y decodifica texto y archivos en Base32.",
+      href: "/tools/codificador-base32",
+    },
+    {
+      icon: GitCompare,
+      title: "Comparador de Archivos y Texto (Diff Viewer)",
+      description: "Compara líneas, ignora espacios y exporta patches.",
+      href: "/tools/comparador-archivos",
+    },
+    {
+      icon: Type,
+      title: "Contador de Caracteres",
+      description: "Cuenta caracteres y palabras en tiempo real.",
+      href: "/tools/contador-caracteres",
+    },
+    {
+      icon: Hash,
+      title: "Generador de Hash",
+      description: "Calcula MD5, SHA-1, SHA-256 de texto y archivos.",
+      href: "/tools/generador-hash",
+    },
   ]
 
   return (
@@ -74,8 +96,10 @@ export function ToolsSection() {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {tools.map((tool, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {tools.map((tool, index) => {
+            const IconComponent = tool.icon
+            return (
             <AnimatedSection
               key={index}
               delay={0.2 * index}
@@ -87,26 +111,12 @@ export function ToolsSection() {
                     <Link href={tool.href}>
                       <motion.div
                         className="mb-4 cursor-pointer"
-                        whileHover={{
-                          scale: 1.1,
-                          ...(tool.title === "Generador de Contraseñas" ? { rotate: 360 } :
-                             tool.title === "Limpiador de Metadatos" ? { y: [0, -8, 0] } :
-                             tool.title === "Verificador de URL" ? { scale: [1, 1.3, 1] } : {})
-                        }}
-                        transition={{
-                          duration: tool.title === "Generador de Contraseñas" ? 0.8 : 0.6,
-                          ease: "easeInOut",
-                          repeat: tool.title === "Verificador de URL" ? 1 : 0,
-                          type: "spring"
-                        }}
+                        whileHover={{ scale: 1.08 }}
+                        transition={{ duration: 0.3 }}
                       >
-                        <Image
-                       src={tool.image}
-                       alt={tool.title}
-                       width={120}
-                       height={120}
-                       className="w-32 h-32 object-contain"
-                     />
+                        <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                          <IconComponent className="h-7 w-7 text-primary" />
+                        </div>
                       </motion.div>
                     </Link>
                   </div>
@@ -129,7 +139,7 @@ export function ToolsSection() {
                 </CardContent>
               </Card>
             </AnimatedSection>
-          ))}
+          )})}
         </div>
 
         <AnimatedSection delay={0.6} className="text-center mt-12">

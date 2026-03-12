@@ -37,8 +37,17 @@ export class ProductService {
     }
   }
 
-  static async getProductById(id: string): Promise<Product | null> {
+  static async getProductById(id: string | number): Promise<Product | null> {
     try {
+      // Convertir a número si es string
+      const productId = typeof id === 'string' ? parseInt(id, 10) : id
+      
+      // Validar que sea un número válido
+      if (isNaN(productId)) {
+        console.error('Invalid product ID:', id)
+        return null
+      }
+
       const { data: product, error } = await supabase
         .from('products')
         .select(`
@@ -50,7 +59,7 @@ export class ProductService {
             display_order
           )
         `)
-        .eq('id', id)
+        .eq('id', productId)
         .eq('is_active', true)
         .single()
 
