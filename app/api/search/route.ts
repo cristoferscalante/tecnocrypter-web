@@ -124,7 +124,7 @@ export async function GET(request: NextRequest) {
         )
         .slice(0, 5) // Limitar resultados
         .map(product => ({
-          id: product.id,
+          id: String(product.id),
           title: product.name,
           excerpt: product.description,
           type: 'product' as const,

@@ -13,9 +13,9 @@ import { StructuredData, BreadcrumbStructuredData } from "@/components/seo/struc
 import { getVendorInfo, getCategoryName } from "@/lib/product-utils"
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 // Función para obtener el producto desde Supabase

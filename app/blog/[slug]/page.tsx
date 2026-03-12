@@ -12,9 +12,9 @@ import { ShareButton } from "@/components/share-button"
 import { StructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
@@ -279,7 +279,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               ))}
             </div>
           </section>
-        )})}}
+        )}
         </div>
       </main>
     </>

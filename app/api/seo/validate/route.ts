@@ -136,7 +136,7 @@ export async function POST(request: NextRequest) {
     const keywordsValidation = validateKeywords(keywords);
 
     // Validar imágenes
-    const imagesWithoutAlt = imgMatches.filter(img => !img.includes('alt=')).length;
+    const imagesWithoutAlt = imgMatches.filter((img: string) => !img.includes('alt=')).length;
     const imageValidation = {
       hasAlt: imagesWithoutAlt === 0,
       count: imgMatches.length,
@@ -146,7 +146,7 @@ export async function POST(request: NextRequest) {
     // Validar estructura de encabezados
     const headingValidation = {
       h1Count: h1Matches.length,
-      structure: h1Matches.map(h => h.replace(/<[^>]*>/g, '')),
+      structure: h1Matches.map((h: string) => h.replace(/<[^>]*>/g, '')),
       issues: h1Matches.length !== 1 ? ['Debe haber exactamente un H1 por página'] : []
     };
 

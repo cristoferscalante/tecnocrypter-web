@@ -249,7 +249,7 @@ export default function GeneradorHash() {
       setProgreso(30);
       
       let hashHex = '';
-      let hashBuffer;
+      let hashBuffer: ArrayBuffer | null = null;
       
       if (algoritmo === 'md5') {
         // Usamos nuestra implementación de MD5
@@ -273,10 +273,12 @@ export default function GeneradorHash() {
       
       setProgreso(70);
       
+      if (!hashBuffer) {
+        throw new Error('Algoritmo no soportado');
+      }
+
       // Convertir a Base64
-      const hashBase64 = algoritmo === 'md5' 
-        ? btoa(String.fromCharCode(...new Uint8Array(hashBuffer)))
-        : btoa(String.fromCharCode(...new Uint8Array(hashBuffer)));
+      const hashBase64 = btoa(String.fromCharCode(...new Uint8Array(hashBuffer)));
       
       setProgreso(90);
       
@@ -359,12 +361,14 @@ export default function GeneradorHash() {
         setProgreso(100);
       } else {
         // Para SHA-1 y SHA-256 usamos Web Crypto API
-        let hashObj;
+        let hashObj: ArrayBuffer;
         
         if (algoritmo === 'sha1') {
           hashObj = await crypto.subtle.digest('SHA-1', new ArrayBuffer(0));
         } else if (algoritmo === 'sha256') {
           hashObj = await crypto.subtle.digest('SHA-256', new ArrayBuffer(0));
+        } else {
+          throw new Error('Algoritmo no soportado');
         }
         
         while (offset < fileSize) {
@@ -372,7 +376,7 @@ export default function GeneradorHash() {
           offset += chunk.byteLength;
           
           // Actualizamos el hash con el nuevo chunk
-          hashObj = await crypto.subtle.digest(algoritmo.toUpperCase(), chunk);
+          hashObj = await crypto.subtle.digest(algoritmo === 'sha1' ? 'SHA-1' : 'SHA-256', chunk);
           
           // Actualizamos el progreso
           setProgreso(Math.floor((offset / fileSize) * 100));

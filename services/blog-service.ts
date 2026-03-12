@@ -25,7 +25,8 @@ export class BlogService {
           }),
       )
 
-      return posts.filter(Boolean).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      const validPosts = posts.filter((p): p is BlogPost => Boolean(p))
+      return validPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     } catch (error) {
       console.error("Error al cargar posts:", error)
       return []
