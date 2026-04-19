@@ -117,103 +117,26 @@ export function Header() {
           ))}
 
           {/* Mega menu trigger */}
-          <div
-            className="static"
+          <button
+            className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
+              isToolsActive ? "text-primary" : ""
+            }`}
             onMouseEnter={() => setIsMegaOpen(true)}
-            onMouseLeave={() => setIsMegaOpen(false)}
+            onClick={() => setIsMegaOpen((o) => !o)}
           >
-            <button
-              className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
-                isToolsActive ? "text-primary" : ""
-              }`}
-              onClick={() => setIsMegaOpen((o) => !o)}
-            >
-              Herramientas
-              <ChevronDown
-                className={`h-3.5 w-3.5 transition-transform duration-200 ${isMegaOpen ? "rotate-180" : ""}`}
-              />
-            </button>
-
-            {/* Mega menu panel */}
-            <AnimatePresence>
-              {isMegaOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 8 }}
-                  transition={{ duration: 0.2 }}
-                  className="fixed left-1/2 -translate-x-1/2 top-16 pt-2 z-50"
-                  style={{ width: "min(90vw, 720px)" }}
-                >
-                  <div className="rounded-xl border bg-background/95 backdrop-blur-lg shadow-2xl shadow-primary/5 p-5">
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-                      {toolCategories.map((cat) => {
-                        const CatIcon = cat.icon
-                        return (
-                          <div key={cat.label}>
-                            <div className="flex items-center gap-2 mb-3 pb-2 border-b border-border/50">
-                              <CatIcon className="h-4 w-4 text-primary" />
-                              <span className="text-xs font-bold uppercase tracking-wider text-primary">
-                                {cat.label}
-                              </span>
-                            </div>
-                            <div className="space-y-0.5">
-                              {cat.items.map((tool) => {
-                                const ToolIcon = tool.icon
-                                return (
-                                  <Link
-                                    key={tool.href}
-                                    href={tool.href}
-                                    onClick={() => setIsMegaOpen(false)}
-                                    className={`group/item flex items-start gap-2.5 rounded-lg p-2 transition-colors hover:bg-primary/5 ${
-                                      pathname === tool.href ? "bg-primary/10" : ""
-                                    }`}
-                                  >
-                                    <ToolIcon className="h-4 w-4 text-muted-foreground group-hover/item:text-primary mt-0.5 shrink-0 transition-colors" />
-                                    <div className="min-w-0">
-                                      <div className="text-sm font-medium leading-tight group-hover/item:text-primary transition-colors truncate">
-                                        {tool.name}
-                                      </div>
-                                      <div className="text-[11px] text-muted-foreground leading-tight mt-0.5 line-clamp-1">
-                                        {tool.description}
-                                      </div>
-                                    </div>
-                                  </Link>
-                                )
-                              })}
-                            </div>
-                          </div>
-                        )
-                      })}
-                    </div>
-                    {/* Footer */}
-                    <div className="mt-4 pt-3 border-t border-border/50 flex items-center justify-between">
-                      <span className="text-xs text-muted-foreground">
-                        {toolCategories.reduce((sum, c) => sum + c.items.length, 0)} herramientas gratuitas
-                      </span>
-                      <Link
-                        href="/tools"
-                        onClick={() => setIsMegaOpen(false)}
-                        className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
-                      >
-                        Ver todas las herramientas →
-                      </Link>
-                    </div>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+            Herramientas
+            <ChevronDown
+              className={`h-3.5 w-3.5 transition-transform duration-200 ${isMegaOpen ? "rotate-180" : ""}`}
+            />
+          </button>
         </nav>
 
         {/* Actions */}
         <div className="flex items-center space-x-2">
-          {/* Search - Desktop */}
           <div className="hidden md:block">
             <SearchDropdown className="w-80" />
           </div>
 
-          {/* Contacto icono*/}
           <Link href="/contacto">
             <Button variant="ghost" size="icon" className="hidden sm:flex group">
               <motion.div
@@ -222,67 +145,114 @@ export function Header() {
                   rotate: [0, -10, 10, 0],
                   filter: "drop-shadow(0 0 6px hsl(var(--primary)))"
                 }}
-                transition={{
-                  duration: 0.6,
-                  ease: "easeInOut"
-                }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
               >
                 <Phone className="h-4 w-4" />
               </motion.div>
             </Button>
           </Link>
 
-          {/* Search - Mobile Toggle */}
           <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(!isSearchOpen)} className="md:hidden group">
             <motion.div
-              whileHover={{
-                scale: 1.2,
-                rotate: [0, 360],
-                filter: "drop-shadow(0 0 6px hsl(var(--primary)))"
-              }}
-              transition={{
-                duration: 0.8,
-                ease: "easeInOut"
-              }}
+              whileHover={{ scale: 1.2, rotate: [0, 360], filter: "drop-shadow(0 0 6px hsl(var(--primary)))" }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
             >
               <Search className="h-4 w-4" />
             </motion.div>
           </Button>
 
-          {/* Theme Toggle */}
           <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="group">
             <motion.div
-                className="flex items-center justify-center"
-                whileHover={{
-                  scale: 1.2,
-                  filter: "drop-shadow(0 0 6px hsl(var(--primary)))"
-                }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
-              >
+              className="flex items-center justify-center"
+              whileHover={{ scale: 1.2, filter: "drop-shadow(0 0 6px hsl(var(--primary)))" }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+            >
               <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
             </motion.div>
             <span className="sr-only">Toggle theme</span>
           </Button>
 
-          {/* Mobile Menu Toggle */}
           <Button variant="ghost" size="icon" className="md:hidden group" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <motion.div
-              whileHover={{
-                scale: 1.2,
-                rotate: isMenuOpen ? [0, -90] : [0, 90],
-                filter: "drop-shadow(0 0 6px hsl(var(--primary)))"
-              }}
-              transition={{
-                duration: 0.5,
-                ease: "easeInOut"
-              }}
+              whileHover={{ scale: 1.2, rotate: isMenuOpen ? [0, -90] : [0, 90], filter: "drop-shadow(0 0 6px hsl(var(--primary)))" }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
             >
               {isMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
             </motion.div>
           </Button>
         </div>
       </div>
+
+      {/* Mega menu panel - centered on screen */}
+      <AnimatePresence>
+        {isMegaOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-x-0 top-16 z-50 hidden md:flex justify-center pt-2"
+            onMouseEnter={() => setIsMegaOpen(true)}
+            onMouseLeave={() => setIsMegaOpen(false)}
+          >
+            <div className="w-full max-w-[780px] mx-4 rounded-xl border bg-background/95 backdrop-blur-lg shadow-2xl shadow-primary/5 p-5">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+                {toolCategories.map((cat) => {
+                  const CatIcon = cat.icon
+                  return (
+                    <div key={cat.label}>
+                      <div className="flex items-center gap-2 mb-3 pb-2 border-b border-border/50">
+                        <CatIcon className="h-4 w-4 text-primary" />
+                        <span className="text-xs font-bold uppercase tracking-wider text-primary">
+                          {cat.label}
+                        </span>
+                      </div>
+                      <div className="space-y-0.5">
+                        {cat.items.map((tool) => {
+                          const ToolIcon = tool.icon
+                          return (
+                            <Link
+                              key={tool.href}
+                              href={tool.href}
+                              onClick={() => setIsMegaOpen(false)}
+                              className={`group/item flex items-start gap-2.5 rounded-lg p-2 transition-colors hover:bg-primary/5 ${
+                                pathname === tool.href ? "bg-primary/10" : ""
+                              }`}
+                            >
+                              <ToolIcon className="h-4 w-4 text-muted-foreground group-hover/item:text-primary mt-0.5 shrink-0 transition-colors" />
+                              <div className="min-w-0">
+                                <div className="text-sm font-medium leading-tight group-hover/item:text-primary transition-colors truncate">
+                                  {tool.name}
+                                </div>
+                                <div className="text-[11px] text-muted-foreground leading-tight mt-0.5 line-clamp-1">
+                                  {tool.description}
+                                </div>
+                              </div>
+                            </Link>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+              <div className="mt-4 pt-3 border-t border-border/50 flex items-center justify-between">
+                <span className="text-xs text-muted-foreground">
+                  {toolCategories.reduce((sum, c) => sum + c.items.length, 0)} herramientas gratuitas
+                </span>
+                <Link
+                  href="/tools"
+                  onClick={() => setIsMegaOpen(false)}
+                  className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
+                >
+                  Ver todas las herramientas →
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Search Bar - Mobile */}
       {isSearchOpen && (
