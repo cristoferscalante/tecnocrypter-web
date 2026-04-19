@@ -279,7 +279,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               ))}
             </div>
           </section>
-        )})}}
+        )}
         </div>
       </main>
     </>
