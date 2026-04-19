@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { ToolSeoSection } from './tool-seo-section'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import { Input } from '@/components/ui/input'
@@ -292,6 +293,31 @@ export default function ConversorBase64Client() {
             </ul>
           </CardContent>
         </Card>
+
+        <ToolSeoSection
+          title="Conversor Base64 Online: Codifica y Decodifica Datos"
+          paragraphs={[
+            "Base64 es un esquema de codificación que convierte datos binarios en texto ASCII de 64 caracteres. Se usa en Data URIs, tokens JWT, archivos adjuntos de email (MIME) y transmisión de datos binarios en protocolos de texto.",
+            "Nuestro conversor Base64 soporta texto, archivos y URL-safe Base64 (RFC 4648). Ideal para desarrolladores que trabajan con APIs REST, autenticación, codificación de imágenes en CSS y manipulación de datos binarios.",
+            "La codificación Base64 incrementa el tamaño de los datos en aproximadamente un 33%. No es cifrado ni compresión — es una representación que garantiza la integridad de datos binarios en canales de texto."
+          ]}
+          howTo={[
+            { step: "Selecciona el modo", description: "Elige entre codificar (texto a Base64) o decodificar (Base64 a texto)." },
+            { step: "Introduce los datos", description: "Pega el texto original o la cadena Base64 que quieres convertir." },
+            { step: "Copia el resultado", description: "El resultado se genera instantáneamente. Copia con un clic." },
+          ]}
+          faqs={[
+            { question: "¿Base64 es cifrado?", answer: "No. Base64 es codificación, no cifrado. Cualquier persona puede decodificar Base64 sin necesitar una clave. Si necesitas proteger datos, usa cifrado AES-256 con nuestra herramienta de cifrado online." },
+            { question: "¿Cuándo usar Base64 URL-safe?", answer: "Base64 URL-safe reemplaza + por - y / por _, y omite el padding =. Se usa en URLs, nombres de archivos y tokens donde los caracteres estándar de Base64 causarían problemas." },
+            { question: "¿Por qué Base64 aumenta el tamaño?", answer: "Cada 3 bytes de datos se convierten en 4 caracteres Base64. Esto produce un incremento del ~33% en tamaño. Es el costo de representar datos binarios como texto ASCII imprimible." },
+          ]}
+          relatedTools={[
+            { name: "Codificador Base32", href: "/tools/codificador-base32" },
+            { name: "Decodificador JWT", href: "/tools/decodificador-jwt" },
+            { name: "Conversor Hexadecimal", href: "/tools/conversor-hex" },
+            { name: "Codificador URL", href: "/tools/codificador-url" },
+          ]}
+        />
       </div>
     </div>
   )

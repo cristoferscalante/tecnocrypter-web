@@ -3,6 +3,7 @@
 import React, { useState, useRef, useCallback } from "react"
 import { QRCode } from "react-qrcode-logo"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { ToolSeoSection } from './tool-seo-section'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -427,6 +428,31 @@ export default function QrGeneratorClient() {
           </div>
         </div>
       </section>
+
+      <ToolSeoSection
+        title="Generador de Códigos QR Online: Crea QR Personalizados"
+        paragraphs={[
+          "Los códigos QR son la forma más rápida de compartir URLs, textos, datos de contacto WiFi y cualquier información. Nuestro generador QR online permite crear códigos personalizados con colores, logos y múltiples formatos de descarga.",
+          "Ideal para marketing digital, menús de restaurantes, tarjetas de presentación, empaques de productos, campañas publicitarias y cualquier escenario donde necesites conectar el mundo físico con contenido digital.",
+          "Los códigos QR incluyen corrección de errores Reed-Solomon que permite escanearlos incluso si están parcialmente dañados u obstruidos por un logo. Genera en PNG o SVG para máxima versatilidad."
+        ]}
+        howTo={[
+          { step: "Introduce el contenido", description: "Escribe la URL, texto, datos WiFi o cualquier información que quieras codificar." },
+          { step: "Personaliza el diseño", description: "Elige colores, añade un logo central y ajusta el nivel de corrección de errores." },
+          { step: "Descarga tu QR", description: "Descarga en formato PNG para impresión o SVG para escalado sin pérdida." },
+        ]}
+        faqs={[
+          { question: "¿Cuánta información cabe en un QR?", answer: "Un código QR puede almacenar hasta 4,296 caracteres alfanuméricos o 7,089 dígitos numéricos. Para URLs, se recomienda usar acortadores si la URL supera los 300 caracteres para mantener un QR fácilmente escaneable." },
+          { question: "¿PNG o SVG para imprimir?", answer: "SVG para impresión profesional: se escala a cualquier tamaño sin perder calidad. PNG es mejor para uso digital (web, redes sociales, emails) donde necesitas un formato de imagen rasterizado." },
+          { question: "¿El logo afecta al escaneo?", answer: "Con nivel de corrección de errores H (High, 30%), el QR soporta que hasta un 30% de los datos estén ocultos por un logo central. Nuestro generador ajusta automáticamente para garantizar la escaneabilidad." },
+        ]}
+        relatedTools={[
+          { name: "Codificador URL", href: "/tools/codificador-url" },
+          { name: "Cifrado Online", href: "/tools/cifrado-online" },
+          { name: "Conversor Base64", href: "/tools/conversor-base64" },
+          { name: "Limpiador de Metadatos", href: "/tools/limpia-metadatos" },
+        ]}
+      />
     </div>
   )
 }

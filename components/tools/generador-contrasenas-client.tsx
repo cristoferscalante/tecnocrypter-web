@@ -1,6 +1,7 @@
 "use client"
 
 import PasswordGenerator from "@/components/tools/password-generator"
+import { ToolSeoSection } from './tool-seo-section'
 import { Shield, Lock, Key } from "lucide-react"
 import { motion } from "framer-motion"
 
@@ -181,6 +182,31 @@ export default function GeneradorContrasenasClient() {
           </div>
         </div>
       </section>
+
+      <ToolSeoSection
+        title="Generador de Contraseñas Seguras: Crea Claves Irrompibles"
+        paragraphs={[
+          "Las contraseñas débiles son la causa número uno de filtraciones de datos. Nuestro generador de contraseñas crea claves aleatorias criptográficamente seguras usando la API Web Crypto del navegador.",
+          "Una contraseña de 16 caracteres con mayúsculas, minúsculas, números y símbolos tiene más de 10^30 combinaciones posibles. Aún con miles de millones de intentos por segundo, descifrarla por fuerza bruta llevaría millones de años.",
+          "Cada contraseña se genera localmente en tu navegador. Nunca almacenamos ni transmitimos las contraseñas generadas. Usa un gestor de contraseñas para almacenar tus claves de forma segura."
+        ]}
+        howTo={[
+          { step: "Configura los parámetros", description: "Elige la longitud y los tipos de caracteres: mayúsculas, minúsculas, números y símbolos." },
+          { step: "Genera la contraseña", description: "Haz clic en generar para obtener una contraseña aleatoria criptográficamente segura." },
+          { step: "Copia y almacena", description: "Copia la contraseña y guárdala en tu gestor de contraseñas favorito." },
+        ]}
+        faqs={[
+          { question: "¿Qué hace que una contraseña sea segura?", answer: "Tres factores: longitud (mínimo 12 caracteres), complejidad (mezcla de tipos de caracteres) y unicidad (no reutilizar contraseñas). La longitud es el factor más importante para la seguridad." },
+          { question: "¿Debo usar contraseñas diferentes para cada cuenta?", answer: "Sí, siempre. Si una contraseña se filtra, las demás cuentas están protegidas. Usa un gestor de contraseñas como Bitwarden, 1Password o KeePass para gestionarlas." },
+          { question: "¿Es seguro generar contraseñas online?", answer: "Con nuestra herramienta sí, porque todo se genera en tu navegador usando crypto.getRandomValues(). Ningún dato se envía a servidores. Puedes verificarlo desconectándote de internet y la herramienta seguirá funcionando." },
+        ]}
+        relatedTools={[
+          { name: "Verificador de Contraseñas", href: "/tools/verificador-contrasenas" },
+          { name: "Generador de Credenciales", href: "/tools/generador-credenciales" },
+          { name: "Cifrado Online", href: "/tools/cifrado-online" },
+          { name: "Generador de Hash", href: "/tools/generador-hash" },
+        ]}
+      />
     </div>
   )
 }

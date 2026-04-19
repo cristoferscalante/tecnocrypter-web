@@ -7,7 +7,8 @@ import { usePathname } from "next/navigation"
 import {
   Moon, Sun, Menu, X, Search, Phone, ChevronDown,
   Key, KeyRound, FileCheck, Shield, QrCode, Lock, Binary, Type,
-  GitCompare, Hash, FileCode2, Hexagon, ShieldCheck, Clock, Braces, Fingerprint
+  GitCompare, Hash, FileCode2, Hexagon, ShieldCheck, Clock, Braces, Fingerprint,
+  FileKey2, Link2, Palette, SearchCode, AlignLeft, Code2
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
@@ -37,6 +38,7 @@ const toolCategories: ToolCategory[] = [
       { name: "Generador de Hash", href: "/tools/generador-hash", icon: Hash, description: "MD5, SHA-1, SHA-256, SHA-512" },
       { name: "Verificador de URL", href: "/tools/verificador", icon: Shield, description: "Detecta amenazas y phishing" },
       { name: "Verificador Contraseñas", href: "/tools/verificador-contrasenas", icon: ShieldCheck, description: "¿Ha sido filtrada tu contraseña?" },
+      { name: "Decodificador JWT", href: "/tools/decodificador-jwt", icon: FileKey2, description: "Decodifica y analiza tokens JWT" },
     ],
   },
   {
@@ -57,6 +59,10 @@ const toolCategories: ToolCategory[] = [
       { name: "Conversor Timestamp", href: "/tools/conversor-timestamp", icon: Clock, description: "Unix ↔ fecha con zonas horarias" },
       { name: "Validador JSON", href: "/tools/validador-json", icon: Braces, description: "Valida, formatea y minifica" },
       { name: "Generador UUID", href: "/tools/generador-uuid", icon: Fingerprint, description: "UUID v4, v7, ULID, Nano ID" },
+      { name: "Codificador URL", href: "/tools/codificador-url", icon: Link2, description: "Encode/decode URLs y URIs" },
+      { name: "Conversor de Colores", href: "/tools/conversor-colores", icon: Palette, description: "HEX, RGB, HSL y Tailwind" },
+      { name: "Regex Tester", href: "/tools/regex-tester", icon: SearchCode, description: "Prueba expresiones regulares" },
+      { name: "Conversor Markdown", href: "/tools/conversor-markdown", icon: Code2, description: "Markdown ↔ HTML en tiempo real" },
     ],
   },
   {
@@ -66,6 +72,7 @@ const toolCategories: ToolCategory[] = [
       { name: "Generador QR", href: "/tools/generador-qr", icon: QrCode, description: "QR personalizados con logo" },
       { name: "Contador de Caracteres", href: "/tools/contador-caracteres", icon: Type, description: "Palabras, chars y límites" },
       { name: "Comparador de Archivos", href: "/tools/comparador-archivos", icon: GitCompare, description: "Diff viewer línea por línea" },
+      { name: "Generador Lorem Ipsum", href: "/tools/generador-lorem", icon: AlignLeft, description: "Texto placeholder configurable" },
     ],
   },
 ]

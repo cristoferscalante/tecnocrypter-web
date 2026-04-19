@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { ToolSeoSection } from './tool-seo-section';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { AlertCircle, Copy, Download, Eye, EyeOff, Trash2, CheckCircle, XCircle, Lock, Unlock, Check } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -521,6 +522,32 @@ export default function CifradoOnline() {
           )}
         </CardContent>
       </Card>
+
+        <ToolSeoSection
+          title="Cifrado Online: Protege tu Información con Algoritmos de Grado Militar"
+          paragraphs={[
+            "El cifrado de datos es la técnica más efectiva para proteger información confidencial. Nuestra herramienta de cifrado online implementa algoritmos de grado militar como AES-256 y ChaCha20 directamente en tu navegador, sin enviar datos a servidores externos.",
+            "AES-256 (Advanced Encryption Standard) es el estándar utilizado por gobiernos y organizaciones militares en todo el mundo. ChaCha20 es la alternativa moderna preferida por Google y utilizada en TLS 1.3 para conexiones HTTPS.",
+            "Todo el proceso de cifrado y descifrado ocurre localmente en tu dispositivo usando la Web Crypto API del navegador, garantizando que tus datos sensibles nunca abandonan tu equipo."
+          ]}
+          howTo={[
+            { step: "Escribe o pega tu mensaje", description: "Introduce el texto que deseas cifrar en el campo de entrada." },
+            { step: "Establece una contraseña", description: "Define una contraseña fuerte que se usará como clave de cifrado." },
+            { step: "Selecciona el algoritmo", description: "Elige entre AES-256 (estándar) o ChaCha20 (moderno y rápido)." },
+            { step: "Cifra o descifra", description: "Haz clic en cifrar para proteger tu mensaje o descifrar para recuperar el original." },
+          ]}
+          faqs={[
+            { question: "¿Es seguro cifrar datos en el navegador?", answer: "Sí. Usamos la Web Crypto API nativa del navegador que implementa los mismos algoritmos que las aplicaciones de escritorio. Tus datos nunca se envían a ningún servidor." },
+            { question: "¿Cuál es la diferencia entre AES-256 y ChaCha20?", answer: "AES-256 es el estándar más ampliamente adoptado, optimizado para hardware con instrucciones AES-NI. ChaCha20 es más rápido en dispositivos sin aceleración hardware (como móviles) y es resistente a ataques de temporización." },
+            { question: "¿Puedo recuperar un mensaje sin la contraseña?", answer: "No. El cifrado simétrico requiere la misma contraseña para cifrar y descifrar. Si pierdes la contraseña, los datos son irrecuperables. Esto es lo que hace al cifrado seguro." },
+          ]}
+          relatedTools={[
+            { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
+            { name: "Generador de Hash", href: "/tools/generador-hash" },
+            { name: "Verificador de Contraseñas", href: "/tools/verificador-contrasenas" },
+            { name: "Decodificador JWT", href: "/tools/decodificador-jwt" },
+          ]}
+        />
     </div>
   );
 }

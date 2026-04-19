@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { ToolSeoSection } from './tool-seo-section'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -251,6 +252,31 @@ export default function GeneradorUuidClient() {
             </div>
           </CardContent>
         </Card>
+
+        <ToolSeoSection
+          title="Generador UUID Online: UUID v4, v7, ULID y Nano ID"
+          paragraphs={[
+            "Los identificadores únicos universales (UUID) son esenciales en sistemas distribuidos, bases de datos y APIs. Nuestro generador soporta UUID v4 (aleatorio), UUID v7 (ordenable por tiempo), ULID y Nano ID.",
+            "UUID v7 y ULID son ideales para claves primarias en bases de datos con índices B-tree, ya que su componente temporal garantiza inserción secuencial y mejor rendimiento que UUID v4 aleatorio.",
+            "Nano ID genera identificadores compactos de 21 caracteres, perfectos para URLs, slugs y tokens donde el espacio es limitado. Todos se generan con entropía criptográficamente segura."
+          ]}
+          howTo={[
+            { step: "Elige el formato", description: "Selecciona entre UUID v4, UUID v7, ULID o Nano ID según tu caso de uso." },
+            { step: "Configura la cantidad", description: "Genera uno o múltiples identificadores de una vez." },
+            { step: "Copia los IDs", description: "Copia individual o todos los identificadores generados con un clic." },
+          ]}
+          faqs={[
+            { question: "¿UUID v4 o v7 para mi base de datos?", answer: "UUID v7 para la mayoría de casos. Es ordenable por tiempo, lo que mejora drásticamente el rendimiento de índices B-tree en PostgreSQL y MySQL. UUID v4 es mejor cuando no quieres revelar el orden temporal de creación." },
+            { question: "¿Pueden colisionar dos UUID?", answer: "La probabilidad es astronómicamente baja. UUID v4 tiene 122 bits de entropía aleatoria. Necesitarías generar 2.71×10^18 UUIDs para tener un 50% de probabilidad de colisión (paradoja del cumpleaños)." },
+            { question: "¿Cuándo usar Nano ID en vez de UUID?", answer: "Nano ID es ideal para URLs visibles, slugs y tokens cortos. Con 21 caracteres vs 36 de UUID, ahorra espacio manteniendo una probabilidad de colisión extremadamente baja." },
+          ]}
+          relatedTools={[
+            { name: "Conversor Timestamp", href: "/tools/conversor-timestamp" },
+            { name: "Generador de Hash", href: "/tools/generador-hash" },
+            { name: "Generador de Credenciales", href: "/tools/generador-credenciales" },
+            { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
+          ]}
+        />
       </div>
     </div>
   )

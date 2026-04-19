@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { ToolSeoSection } from './tool-seo-section';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -678,6 +679,31 @@ export default function GeneradorHash() {
           </Tabs>
         </CardContent>
       </Card>
+
+        <ToolSeoSection
+          title="Generador de Hash Online: MD5, SHA-1, SHA-256 y SHA-512"
+          paragraphs={[
+            "Las funciones hash criptográficas son fundamentales en seguridad informática. Transforman cualquier dato en una cadena de longitud fija única e irreversible, utilizada para verificar integridad de archivos, almacenar contraseñas y firmas digitales.",
+            "Nuestro generador de hash online soporta los algoritmos más utilizados: MD5 (legacy), SHA-1 (legacy), SHA-256 (estándar actual) y SHA-512 (máxima seguridad). Todo el procesamiento se realiza localmente en tu navegador.",
+            "SHA-256 es el algoritmo utilizado por Bitcoin y la mayoría de blockchains. SHA-512 ofrece mayor seguridad para aplicaciones críticas. MD5 y SHA-1 se incluyen por compatibilidad pero no se recomiendan para nuevos desarrollos."
+          ]}
+          howTo={[
+            { step: "Introduce el texto o archivo", description: "Escribe el texto o selecciona un archivo del cual quieres calcular el hash." },
+            { step: "Selecciona el algoritmo", description: "Elige entre MD5, SHA-1, SHA-256 o SHA-512 según tus necesidades." },
+            { step: "Obtén y compara", description: "Copia el hash resultante o compáralo con un hash conocido para verificar integridad." },
+          ]}
+          faqs={[
+            { question: "¿Cuál es la diferencia entre MD5, SHA-1 y SHA-256?", answer: "MD5 genera hashes de 128 bits y SHA-1 de 160 bits, pero ambos tienen vulnerabilidades conocidas. SHA-256 genera hashes de 256 bits y es el estándar actual para seguridad. SHA-512 usa 512 bits para máxima protección." },
+            { question: "¿Se puede revertir un hash?", answer: "No. Las funciones hash son unidireccionales por diseño. No es posible recuperar el dato original a partir del hash. Esta propiedad es lo que las hace útiles para almacenar contraseñas de forma segura." },
+            { question: "¿Para qué se usa el hash de archivos?", answer: "Para verificar que un archivo descargado no fue alterado. Si el hash del archivo descargado coincide con el hash publicado por el autor, el archivo es íntegro y no ha sido modificado." },
+          ]}
+          relatedTools={[
+            { name: "Cifrado Online", href: "/tools/cifrado-online" },
+            { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
+            { name: "Verificador de Contraseñas", href: "/tools/verificador-contrasenas" },
+            { name: "Conversor Hexadecimal", href: "/tools/conversor-hex" },
+          ]}
+        />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { ToolSeoSection } from './tool-seo-section'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { Copy, Check, Braces, Trash2, Download, Minimize2, Maximize2, CheckCircle, XCircle, ChevronRight, ChevronDown } from 'lucide-react'
@@ -308,6 +309,31 @@ export default function ValidadorJsonClient() {
             </CardContent>
           </Card>
         </div>
+
+        <ToolSeoSection
+          title="Validador y Formateador JSON Online: Valida, Formatea y Minifica"
+          paragraphs={[
+            "JSON (JavaScript Object Notation) es el formato de intercambio de datos más utilizado en APIs REST y aplicaciones web modernas. Nuestro validador JSON online detecta errores de sintaxis, formatea con indentación y minifica JSON en tiempo real.",
+            "Ideal para desarrolladores que trabajan con APIs, configuraciones de aplicaciones, archivos package.json, respuestas de servidores y cualquier dato estructurado en formato JSON.",
+            "El validador muestra errores con línea y columna exactas, calcula estadísticas del documento (tamaño, claves, profundidad) y permite alternar entre vista formateada y minificada con un clic."
+          ]}
+          howTo={[
+            { step: "Pega tu JSON", description: "Introduce o pega el código JSON que quieres validar en el editor izquierdo." },
+            { step: "Validación automática", description: "Los errores de sintaxis se detectan y muestran con la posición exacta del problema." },
+            { step: "Formatea o minifica", description: "Alterna entre JSON formateado (legible) y minificado (compacto) para copiar." },
+          ]}
+          faqs={[
+            { question: "¿Qué errores comunes detecta el validador?", answer: "Detecta comas finales (trailing commas), comillas simples en lugar de dobles, claves sin comillas, comentarios (no válidos en JSON estándar), comas faltantes entre elementos y brackets/llaves sin cerrar." },
+            { question: "¿Cuál es la diferencia entre JSON y JavaScript?", answer: "JSON es más estricto: las claves deben ir en comillas dobles, no permite trailing commas, no soporta comentarios, undefined ni funciones. JSON es un subconjunto de JavaScript diseñado para intercambio de datos." },
+            { question: "¿Por qué minificar JSON?", answer: "La minificación elimina espacios, saltos de línea e indentación innecesarios, reduciendo el tamaño del payload. Esto mejora el rendimiento de APIs al transmitir menos datos por la red." },
+          ]}
+          relatedTools={[
+            { name: "Conversor Markdown", href: "/tools/conversor-markdown" },
+            { name: "Comparador de Archivos", href: "/tools/comparador-archivos" },
+            { name: "Regex Tester", href: "/tools/regex-tester" },
+            { name: "Codificador URL", href: "/tools/codificador-url" },
+          ]}
+        />
       </div>
     </div>
   )

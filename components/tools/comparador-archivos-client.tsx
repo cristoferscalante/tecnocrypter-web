@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ToolSeoSection } from './tool-seo-section';
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -232,6 +233,31 @@ export default function ComparadorArchivosPage() {
           </div>
         </CardContent>
       </Card>
+
+        <ToolSeoSection
+          title="Comparador de Archivos y Texto Online: Diff Viewer Línea por Línea"
+          paragraphs={[
+            "Nuestro comparador de archivos online muestra las diferencias entre dos textos o archivos de forma visual, línea por línea, similar a las herramientas de diff de Git. Ideal para revisar cambios en código, documentos y configuraciones.",
+            "Resalta adiciones, eliminaciones y modificaciones con colores claros, facilitando la identificación rápida de cambios. Funciona con cualquier tipo de texto: código fuente, JSON, XML, CSV, configuraciones y documentos.",
+            "Todo el procesamiento se realiza en tu navegador. Tus archivos y textos nunca se envían a servidores externos, garantizando la privacidad de tu código y documentos confidenciales."
+          ]}
+          howTo={[
+            { step: "Introduce los textos", description: "Pega el texto original en el panel izquierdo y el texto modificado en el derecho." },
+            { step: "Compara automáticamente", description: "Las diferencias se resaltan en tiempo real: verde para adiciones, rojo para eliminaciones." },
+            { step: "Revisa los cambios", description: "Navega por las diferencias para identificar exactamente qué cambió entre ambas versiones." },
+          ]}
+          faqs={[
+            { question: "¿Qué algoritmo de diff usa?", answer: "Utiliza el algoritmo de Myers (el mismo que Git) para encontrar la secuencia de edición mínima entre dos textos. Esto produce la comparación más precisa y legible posible." },
+            { question: "¿Puedo comparar archivos de código fuente?", answer: "Sí. Funciona con cualquier formato de texto: JavaScript, Python, HTML, CSS, JSON, YAML, SQL, Markdown y cualquier otro texto plano." },
+            { question: "¿Hay límite de tamaño?", answer: "Al procesarse en tu navegador, el límite depende de la memoria disponible. Funciona bien con archivos de hasta varios miles de líneas." },
+          ]}
+          relatedTools={[
+            { name: "Validador JSON", href: "/tools/validador-json" },
+            { name: "Contador de Caracteres", href: "/tools/contador-caracteres" },
+            { name: "Conversor Markdown", href: "/tools/conversor-markdown" },
+            { name: "Regex Tester", href: "/tools/regex-tester" },
+          ]}
+        />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { ToolSeoSection } from './tool-seo-section'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -249,6 +250,31 @@ export default function ConversorTimestampClient() {
             </ul>
           </CardContent>
         </Card>
+
+        <ToolSeoSection
+          title="Conversor Unix Timestamp Online: Epoch a Fecha y Fecha a Timestamp"
+          paragraphs={[
+            "El Unix timestamp (epoch time) es el estándar universal para representar el tiempo en sistemas informáticos. Nuestro conversor permite convertir entre timestamps Unix y fechas legibles de forma bidireccional.",
+            "Los timestamps Unix se usan en bases de datos (PostgreSQL, MySQL), APIs REST, logs de servidor, sistemas de caché, cron jobs y prácticamente cualquier sistema que necesite almacenar o comparar fechas de forma eficiente.",
+            "Soporta timestamps en segundos y milisegundos, muestra la fecha en tu zona horaria local y en UTC, y proporciona un reloj en tiempo real con el timestamp actual."
+          ]}
+          howTo={[
+            { step: "Introduce un timestamp o fecha", description: "Escribe un Unix timestamp en segundos/milisegundos o selecciona una fecha del calendario." },
+            { step: "Conversión automática", description: "La herramienta convierte instantáneamente en ambas direcciones." },
+            { step: "Copia el formato que necesitas", description: "Obtén el resultado en timestamp, ISO 8601 o fecha legible." },
+          ]}
+          faqs={[
+            { question: "¿Qué es el problema del año 2038?", answer: "Los sistemas de 32 bits almacenan timestamps como enteros con signo de 32 bits, que se desbordan el 19 de enero de 2038. Los sistemas modernos de 64 bits no tienen este problema y soportan fechas hasta billones de años." },
+            { question: "¿Segundos o milisegundos?", answer: "El timestamp Unix tradicional está en segundos. JavaScript (Date.now()) y algunas APIs usan milisegundos. Si tu número tiene 13 dígitos, son milisegundos; si tiene 10, son segundos." },
+            { question: "¿Por qué usar timestamps en vez de fechas?", answer: "Los timestamps son independientes de zona horaria, ocupan solo 4-8 bytes, son fácilmente comparables y ordenables, y eliminan ambigüedades de formato de fecha (MM/DD vs DD/MM)." },
+          ]}
+          relatedTools={[
+            { name: "Generador UUID", href: "/tools/generador-uuid" },
+            { name: "Validador JSON", href: "/tools/validador-json" },
+            { name: "Contador de Caracteres", href: "/tools/contador-caracteres" },
+            { name: "Conversor Hexadecimal", href: "/tools/conversor-hex" },
+          ]}
+        />
       </div>
     </div>
   )

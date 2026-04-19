@@ -5,7 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import {
   Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type, KeyRound,
-  GitCompare, Hash, FileCode2, Hexagon, ShieldCheck, Clock, Braces, Fingerprint
+  GitCompare, Hash, FileCode2, Hexagon, ShieldCheck, Clock, Braces, Fingerprint,
+  FileKey2, Link2, Palette, SearchCode, AlignLeft, Code2
 } from "lucide-react"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 import { FAQStructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
@@ -123,16 +124,58 @@ const tools = [
     href: "/tools/generador-uuid",
     icon: Fingerprint,
     category: "Desarrollo"
+  },
+  {
+    title: "Decodificador JWT",
+    description: "Decodifica y analiza tokens JWT: visualiza header, payload y firma sin necesidad de la clave secreta.",
+    href: "/tools/decodificador-jwt",
+    icon: FileKey2,
+    category: "Seguridad"
+  },
+  {
+    title: "Codificador URL",
+    description: "Codifica y decodifica URLs con encodeURIComponent y encodeURI. Ideal para APIs y query strings.",
+    href: "/tools/codificador-url",
+    icon: Link2,
+    category: "Desarrollo"
+  },
+  {
+    title: "Conversor de Colores",
+    description: "Convierte entre HEX, RGB, HSL y RGBA con color picker visual y valores CSS/Tailwind.",
+    href: "/tools/conversor-colores",
+    icon: Palette,
+    category: "Desarrollo"
+  },
+  {
+    title: "Regex Tester",
+    description: "Prueba expresiones regulares en tiempo real con resaltado de coincidencias y grupos de captura.",
+    href: "/tools/regex-tester",
+    icon: SearchCode,
+    category: "Desarrollo"
+  },
+  {
+    title: "Generador Lorem Ipsum",
+    description: "Genera texto placeholder configurable: párrafos, oraciones o palabras para diseño y maquetación.",
+    href: "/tools/generador-lorem",
+    icon: AlignLeft,
+    category: "Utilidades"
+  },
+  {
+    title: "Conversor Markdown",
+    description: "Convierte entre Markdown y HTML en tiempo real con vista previa y soporte completo de sintaxis.",
+    href: "/tools/conversor-markdown",
+    icon: Code2,
+    category: "Desarrollo"
   }
 ]
 
 
 export const metadata: Metadata = generateToolMetadata({
   title: "Herramientas de Seguridad Digital",
-  description: "Accede a nuestras 16 herramientas gratuitas de seguridad digital: generador de contraseñas, verificador de filtraciones, conversor Base64, validador JSON y más.",
+  description: "Accede a nuestras 22 herramientas gratuitas de seguridad digital: generador de contraseñas, verificador de filtraciones, conversor Base64, validador JSON, decodificador JWT, regex tester y más.",
   slug: "tools",
   image: "https://tecnocrypter.com/seo/tools.webp",
-  keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita", "base64", "json validator", "uuid generator"]
+  keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita", "base64", "json validator", "uuid generator", "jwt decoder", "regex tester", "conversor colores", "lorem ipsum"]
 })
 
 // FAQ específicas para tools

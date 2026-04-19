@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { ToolSeoSection } from './tool-seo-section'
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
@@ -316,6 +317,31 @@ export default function ContadorCaracteresPage() {
           </div>
         </CardContent>
       </Card>
+
+      <ToolSeoSection
+        title="Contador de Caracteres Online: Palabras, Frases y Límites SEO"
+        paragraphs={[
+          "Nuestro contador de caracteres analiza texto en tiempo real: caracteres con y sin espacios, palabras, oraciones, párrafos y tiempo estimado de lectura. Imprescindible para redactores, copywriters y profesionales SEO.",
+          "Muestra los límites de caracteres de redes sociales (Twitter 280, Instagram 2200, LinkedIn 3000) y etiquetas SEO (meta title 50-60, meta description 150-155) para que nunca excedas los máximos permitidos.",
+          "También calcula estadísticas avanzadas como densidad de palabras, longitud media de oraciones y complejidad léxica. Ideal para optimizar textos de marketing, posts en redes y contenido web."
+        ]}
+        howTo={[
+          { step: "Escribe o pega tu texto", description: "Introduce el contenido que quieres analizar en el editor de texto." },
+          { step: "Análisis en tiempo real", description: "Las estadísticas se actualizan instantáneamente mientras escribes." },
+          { step: "Verifica los límites", description: "Comprueba que tu texto cumple con los límites de la plataforma objetivo." },
+        ]}
+        faqs={[
+          { question: "¿Cuál es el límite de meta description para SEO?", answer: "Google muestra entre 150-155 caracteres en los resultados de búsqueda. Aunque no hay un límite técnico, las descriptions más largas se truncan con '...'. Escribe lo más importante en los primeros 150 caracteres." },
+          { question: "¿Cómo se calcula el tiempo de lectura?", answer: "Se basa en la velocidad media de lectura de 200-250 palabras por minuto para textos en español. El cálculo divide el número total de palabras entre esta velocidad." },
+          { question: "¿Caracteres con o sin espacios?", answer: "Depende del contexto. Twitter y redes sociales cuentan con espacios. SMS y algunos campos de formulario cuentan sin espacios. Los límites SEO de Google cuentan con espacios." },
+        ]}
+        relatedTools={[
+          { name: "Generador Lorem Ipsum", href: "/tools/generador-lorem" },
+          { name: "Conversor Markdown", href: "/tools/conversor-markdown" },
+          { name: "Regex Tester", href: "/tools/regex-tester" },
+          { name: "Comparador de Archivos", href: "/tools/comparador-archivos" },
+        ]}
+      />
     </div>
   )
 }

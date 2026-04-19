@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ToolSeoSection } from './tool-seo-section';
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -222,6 +223,31 @@ export default function GeneradorCredencialesPage() {
           </div>
         </CardContent>
       </Card>
+
+        <ToolSeoSection
+          title="Credenciales Determinísticas: Genera Contraseñas Únicas desde una Clave Maestra"
+          paragraphs={[
+            "Las credenciales determinísticas son un enfoque innovador para la gestión de contraseñas. En lugar de recordar cientos de contraseñas diferentes, derivas contraseñas únicas para cada servicio a partir de una sola palabra clave maestra.",
+            "Este sistema utiliza funciones criptográficas (PBKDF2/HKDF) para generar contraseñas reproducibles: la misma palabra clave + servicio siempre produce la misma contraseña, sin necesidad de almacenarla en ningún gestor de contraseñas.",
+            "Todo el cálculo se realiza localmente en tu navegador. Tu palabra clave maestra nunca se envía ni se almacena en ningún servidor, ofreciendo máxima privacidad."
+          ]}
+          howTo={[
+            { step: "Define tu palabra clave maestra", description: "Elige una frase o palabra secreta que solo tú conozcas. Debe ser fuerte y memorable." },
+            { step: "Introduce el nombre del servicio", description: "Escribe el nombre del sitio o servicio (ej: gmail, github, netflix)." },
+            { step: "Genera y usa", description: "La contraseña se genera automáticamente. Siempre obtendrás la misma contraseña con los mismos datos de entrada." },
+          ]}
+          faqs={[
+            { question: "¿Es seguro usar credenciales determinísticas?", answer: "Sí, siempre que tu palabra clave maestra sea fuerte. La derivación usa PBKDF2 con salt, lo que hace computacionalmente inviable deducir la clave maestra a partir de una contraseña derivada." },
+            { question: "¿Qué pasa si alguien descubre una de mis contraseñas derivadas?", answer: "No pueden deducir tu clave maestra ni otras contraseñas. Cada derivación incluye el nombre del servicio como salt, haciendo que cada contraseña sea criptográficamente independiente." },
+            { question: "¿En qué se diferencia de un gestor de contraseñas?", answer: "Un gestor almacena contraseñas aleatorias en una base de datos cifrada. Las credenciales determinísticas no almacenan nada: regeneran la contraseña cada vez. Ventaja: sin base de datos que hackear. Desventaja: no puedes cambiar una contraseña individual." },
+          ]}
+          relatedTools={[
+            { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
+            { name: "Verificador de Contraseñas", href: "/tools/verificador-contrasenas" },
+            { name: "Cifrado Online", href: "/tools/cifrado-online" },
+            { name: "Generador de Hash", href: "/tools/generador-hash" },
+          ]}
+        />
     </div>
   );
 }

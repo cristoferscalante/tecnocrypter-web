@@ -1,6 +1,7 @@
 "use client"
 
 import MetadataCleanerTool from "@/components/tools/metadata-cleaner"
+import { ToolSeoSection } from './tool-seo-section'
 import { Shield, Image, Download, Trash2 } from "lucide-react"
 import { motion } from "framer-motion"
 
@@ -181,6 +182,31 @@ export default function LimpiaMetadatosClient() {
           </div>
         </div>
       </section>
+
+      <ToolSeoSection
+        title="Limpiador de Metadatos EXIF: Protege tu Privacidad en Imágenes"
+        paragraphs={[
+          "Cada foto que tomas contiene metadatos EXIF ocultos: ubicación GPS, modelo de cámara, fecha, hora y más. Nuestro limpiador de metadatos elimina toda esta información sensible antes de compartir tus imágenes.",
+          "Los metadatos EXIF pueden revelar tu ubicación exacta, rutinas diarias y el dispositivo que usas. Periodistas, activistas y cualquier persona preocupada por la privacidad debe limpiar los metadatos antes de publicar fotos online.",
+          "Todo el procesamiento se realiza en tu navegador. Tus imágenes nunca se suben a ningún servidor. Soporta formatos JPEG, PNG y WebP."
+        ]}
+        howTo={[
+          { step: "Sube tu imagen", description: "Arrastra o selecciona la imagen cuyos metadatos quieres eliminar." },
+          { step: "Revisa los metadatos", description: "Visualiza todos los metadatos EXIF que contiene la imagen original." },
+          { step: "Descarga limpia", description: "Descarga la imagen sin metadatos, lista para compartir de forma segura." },
+        ]}
+        faqs={[
+          { question: "¿Qué metadatos EXIF contienen las fotos?", answer: "Pueden incluir: coordenadas GPS, altitud, dirección, modelo de cámara/teléfono, configuración de la cámara (apertura, ISO, velocidad), fecha y hora exacta, software de edición, y en algunos casos datos del propietario." },
+          { question: "¿Las redes sociales eliminan los metadatos?", answer: "Algunas como Facebook e Instagram eliminan la mayoría de metadatos EXIF al subir fotos, pero no todas las plataformas lo hacen. Es mejor eliminarlos tú mismo antes de compartir para tener control total." },
+          { question: "¿Se pierde calidad al limpiar metadatos?", answer: "No. El limpiador solo modifica los datos EXIF incrustados, sin recomprimir ni alterar los píxeles de la imagen. La calidad visual permanece exactamente igual." },
+        ]}
+        relatedTools={[
+          { name: "Verificador de URLs", href: "/tools/verificador" },
+          { name: "Cifrado Online", href: "/tools/cifrado-online" },
+          { name: "Generador QR", href: "/tools/generador-qr" },
+          { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
+        ]}
+      />
     </div>
   )
 }

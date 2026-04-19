@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { ToolSeoSection } from './tool-seo-section';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -535,6 +536,31 @@ export default function CodificadorBase32() {
           </Tabs>
         </CardContent>
       </Card>
+
+        <ToolSeoSection
+          title="Codificador Base32 Online: RFC 4648, Crockford y más Variantes"
+          paragraphs={[
+            "Base32 es un esquema de codificación que representa datos binarios usando 32 caracteres alfanuméricos. A diferencia de Base64, Base32 solo usa mayúsculas y números, lo que lo hace ideal para contextos donde se requiere insensibilidad a mayúsculas.",
+            "Es ampliamente utilizado en autenticación de dos factores (TOTP/HOTP), como en Google Authenticator y aplicaciones similares. También se usa en direcciones de Tor (.onion) y protocolos de red seguros.",
+            "Nuestra herramienta soporta múltiples variantes de Base32: RFC 4648 estándar, Crockford (evita caracteres ambiguos como I, L, O), z-base-32 y Base32hex. Todo el procesamiento es local y privado."
+          ]}
+          howTo={[
+            { step: "Selecciona la variante", description: "Elige entre RFC 4648, Crockford, z-base-32 o Base32hex según tu necesidad." },
+            { step: "Introduce el texto", description: "Escribe o pega el texto que quieres codificar o el código Base32 a decodificar." },
+            { step: "Convierte y copia", description: "El resultado se genera automáticamente. Cópialo con un clic." },
+          ]}
+          faqs={[
+            { question: "¿Cuál es la diferencia entre Base32 y Base64?", answer: "Base64 usa 64 caracteres (mayúsculas, minúsculas, números, +, /) y es más compacto. Base32 usa solo 32 caracteres (mayúsculas y números) y es más legible y seguro contra errores de transcripción, aunque produce cadenas más largas." },
+            { question: "¿Por qué Google Authenticator usa Base32?", answer: "Las claves secretas TOTP usan Base32 porque los usuarios a veces necesitan transcribir manualmente el código. Base32 evita confusiones entre mayúsculas/minúsculas y caracteres ambiguos como 0/O o 1/I/l." },
+            { question: "¿Qué es Crockford Base32?", answer: "Es una variante creada por Douglas Crockford que excluye las letras I, L, O y U para evitar confusiones visuales y palabras ofensivas accidentales. Es ideal para códigos que los humanos necesitan leer o dictar." },
+          ]}
+          relatedTools={[
+            { name: "Conversor Base64", href: "/tools/conversor-base64" },
+            { name: "Conversor Hexadecimal", href: "/tools/conversor-hex" },
+            { name: "Codificador URL", href: "/tools/codificador-url" },
+            { name: "Generador de Hash", href: "/tools/generador-hash" },
+          ]}
+        />
     </div>
   );
 }

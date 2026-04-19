@@ -8,7 +8,7 @@ import { AnimatedSection } from "@/components/ui/animated-section"
 import {
   Key, KeyRound, ArrowRight, Shield, QrCode, Lock, Binary, Type,
   GitCompare, Hash, FileCheck, FileCode2, Hexagon, ShieldCheck,
-  Clock, Braces, Fingerprint
+  Clock, Braces, Fingerprint, FileKey2, Link2, Palette, SearchCode, AlignLeft, Code2
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -147,6 +147,54 @@ const tools: Tool[] = [
     title: "Generador UUID",
     description: "UUID v4, v7, ULID y nanoid con generación en lote.",
     href: "/tools/generador-uuid",
+    category: "Desarrollo",
+    isNew: true,
+  },
+  {
+    icon: FileKey2,
+    title: "Decodificador JWT",
+    description: "Decodifica y analiza tokens JWT: header, payload y firma.",
+    href: "/tools/decodificador-jwt",
+    category: "Seguridad",
+    isNew: true,
+  },
+  {
+    icon: Link2,
+    title: "Codificador URL",
+    description: "Encode/decode URLs con encodeURIComponent y encodeURI.",
+    href: "/tools/codificador-url",
+    category: "Desarrollo",
+    isNew: true,
+  },
+  {
+    icon: Palette,
+    title: "Conversor de Colores",
+    description: "HEX, RGB, HSL, RGBA con color picker y valores Tailwind.",
+    href: "/tools/conversor-colores",
+    category: "Desarrollo",
+    isNew: true,
+  },
+  {
+    icon: SearchCode,
+    title: "Regex Tester",
+    description: "Prueba expresiones regulares con resaltado en tiempo real.",
+    href: "/tools/regex-tester",
+    category: "Desarrollo",
+    isNew: true,
+  },
+  {
+    icon: AlignLeft,
+    title: "Generador Lorem Ipsum",
+    description: "Texto placeholder configurable: párrafos, oraciones o palabras.",
+    href: "/tools/generador-lorem",
+    category: "Utilidades",
+    isNew: true,
+  },
+  {
+    icon: Code2,
+    title: "Conversor Markdown",
+    description: "Markdown ↔ HTML en tiempo real con vista previa.",
+    href: "/tools/conversor-markdown",
     category: "Desarrollo",
     isNew: true,
   },

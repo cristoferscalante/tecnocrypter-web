@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { ToolSeoSection } from './tool-seo-section'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -213,6 +214,31 @@ export default function VerificadorContrasenasClient() {
             </p>
           </CardContent>
         </Card>
+
+        <ToolSeoSection
+          title="Verificador de Contraseñas Filtradas: ¿Tu Clave Ha Sido Expuesta?"
+          paragraphs={[
+            "Miles de millones de contraseñas han sido filtradas en brechas de seguridad. Nuestro verificador usa la base de datos de Have I Been Pwned para comprobar si tu contraseña aparece en filtraciones conocidas, todo sin revelar tu contraseña.",
+            "Utilizamos el protocolo k-anonymity: solo se envían los primeros 5 caracteres del hash SHA-1 de tu contraseña. La comparación final se realiza localmente en tu navegador, garantizando que tu contraseña nunca se transmite completa.",
+            "Si tu contraseña aparece en filtraciones, cámbiala inmediatamente en todos los servicios donde la uses. Utiliza nuestro generador de contraseñas para crear una nueva clave segura."
+          ]}
+          howTo={[
+            { step: "Introduce tu contraseña", description: "Escribe la contraseña que quieres verificar en el campo seguro." },
+            { step: "Verificación anónima", description: "Se genera el hash SHA-1 localmente y se consulta de forma anónima usando k-anonymity." },
+            { step: "Revisa el resultado", description: "Se muestra si la contraseña ha sido filtrada y en cuántas brechas aparece." },
+          ]}
+          faqs={[
+            { question: "¿Es seguro introducir mi contraseña aquí?", answer: "Sí. Tu contraseña nunca sale de tu navegador en texto plano. Se genera un hash SHA-1 local y solo se envían los primeros 5 caracteres (de 40) a la API, haciendo imposible reconstruir tu contraseña." },
+            { question: "¿Qué es k-anonymity?", answer: "Es un protocolo de privacidad donde tu consulta se mezcla con cientos de resultados similares. La API devuelve todos los hashes que comparten el mismo prefijo y la comparación final se hace localmente, sin revelar qué hash es el tuyo." },
+            { question: "Mi contraseña aparece filtrada, ¿qué hago?", answer: "Cámbiala inmediatamente en todos los servicios donde la uses. Genera una nueva contraseña única y fuerte para cada cuenta. Activa la autenticación de dos factores (2FA) donde sea posible." },
+          ]}
+          relatedTools={[
+            { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
+            { name: "Generador de Hash", href: "/tools/generador-hash" },
+            { name: "Cifrado Online", href: "/tools/cifrado-online" },
+            { name: "Verificador de URLs", href: "/tools/verificador" },
+          ]}
+        />
       </div>
     </div>
   )

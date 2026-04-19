@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { ToolSeoSection } from './tool-seo-section'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import { Input } from '@/components/ui/input'
@@ -300,6 +301,31 @@ export default function ConversorHexClient() {
             </Card>
           </TabsContent>
         </Tabs>
+
+        <ToolSeoSection
+          title="Conversor Hexadecimal Online: HEX, Decimal, Binario y RGB"
+          paragraphs={[
+            "El sistema hexadecimal (base 16) es fundamental en programación y electrónica. Nuestro conversor hexadecimal online permite convertir entre hexadecimal, decimal, binario y valores RGB de forma instantánea.",
+            "Los valores hexadecimales se usan extensivamente en desarrollo web (colores CSS), programación de bajo nivel (direcciones de memoria), criptografía (representación de hashes) y diseño electrónico.",
+            "Cada conversión se realiza en tu navegador sin enviar datos a servidores externos. Soporta números grandes y proporciona resultados en múltiples bases simultáneamente."
+          ]}
+          howTo={[
+            { step: "Introduce el valor", description: "Escribe un número hexadecimal, decimal o binario en el campo correspondiente." },
+            { step: "Conversión automática", description: "Los valores en todas las bases se actualizan automáticamente." },
+            { step: "Copia el resultado", description: "Haz clic en el botón de copiar junto al formato que necesitas." },
+          ]}
+          faqs={[
+            { question: "¿Por qué se usa hexadecimal en programación?", answer: "Porque cada dígito hexadecimal representa exactamente 4 bits. Un byte (8 bits) se representa con 2 dígitos hex, lo que es mucho más legible que 8 dígitos binarios. Por ejemplo, FF es más fácil de leer que 11111111." },
+            { question: "¿Cómo se representan los colores en hexadecimal?", answer: "Los colores CSS usan 6 dígitos hex: los 2 primeros para rojo, los 2 del medio para verde y los 2 últimos para azul. #FF0000 es rojo puro, #00FF00 es verde y #0000FF es azul." },
+            { question: "¿Cuál es la relación entre hex y binario?", answer: "Cada dígito hex equivale a exactamente 4 dígitos binarios (nibble). La conversión es directa: 0=0000, 1=0001, ..., A=1010, ..., F=1111. Esto hace que hex sea la forma compacta preferida de representar datos binarios." },
+          ]}
+          relatedTools={[
+            { name: "Conversor de Colores", href: "/tools/conversor-colores" },
+            { name: "Generador de Hash", href: "/tools/generador-hash" },
+            { name: "Conversor Base64", href: "/tools/conversor-base64" },
+            { name: "Codificador Base32", href: "/tools/codificador-base32" },
+          ]}
+        />
       </div>
     </div>
   )

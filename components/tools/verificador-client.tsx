@@ -1,6 +1,7 @@
 "use client"
 
 import URLVerifier from "@/components/tools/url-verifier"
+import { ToolSeoSection } from './tool-seo-section'
 import { Shield, Search, AlertTriangle, CheckCircle } from "lucide-react"
 import { motion } from "framer-motion"
 
@@ -181,6 +182,31 @@ export default function VerificadorClient() {
           </div>
         </div>
       </section>
+
+      <ToolSeoSection
+        title="Verificador de URLs: Detecta Enlaces Maliciosos y Phishing"
+        paragraphs={[
+          "Los ataques de phishing representan más del 80% de los incidentes de ciberseguridad. Nuestro verificador de URLs analiza enlaces sospechosos para detectar sitios de phishing, malware, scams y otras amenazas antes de que hagas clic.",
+          "El análisis incluye verificación del certificado SSL, reputación del dominio, detección de técnicas de ofuscación (homoglyphs, subdominios engañosos) y consultas contra bases de datos de URLs maliciosas conocidas.",
+          "Antes de hacer clic en un enlace de un email, mensaje o red social, pégalo aquí para verificar que es seguro. La prevención es la mejor defensa contra el phishing."
+        ]}
+        howTo={[
+          { step: "Copia el enlace sospechoso", description: "Sin hacer clic, copia la URL del email, mensaje o página web sospechosa." },
+          { step: "Pégala en el verificador", description: "Introduce la URL en el campo de análisis y ejecuta la verificación." },
+          { step: "Revisa el resultado", description: "El sistema analiza múltiples factores de riesgo y muestra un veredicto claro." },
+        ]}
+        faqs={[
+          { question: "¿Cómo funciona la detección de phishing?", answer: "Analizamos múltiples señales: similitud del dominio con sitios legítimos (typosquatting), edad del dominio, certificado SSL, presencia en listas negras, patrones de URL sospechosos y técnicas de ofuscación." },
+          { question: "¿Qué tipos de amenazas detecta?", answer: "Phishing (suplantación de identidad), malware (descargas maliciosas), scams (estafas), sitios de spam y URLs con técnicas de ofuscación como acortadores sospechosos o redirecciones encadenadas." },
+          { question: "¿Es 100% preciso?", answer: "Ninguna herramienta es infalible. Nuestro verificador reduce significativamente el riesgo, pero siéntete libre de reportar falsos positivos o negativos. Siempre aplica sentido común ante enlaces inesperados." },
+        ]}
+        relatedTools={[
+          { name: "Cifrado Online", href: "/tools/cifrado-online" },
+          { name: "Generador de Contraseñas", href: "/tools/generador-contrasenas" },
+          { name: "Limpiador de Metadatos", href: "/tools/limpia-metadatos" },
+          { name: "Verificador de Contraseñas", href: "/tools/verificador-contrasenas" },
+        ]}
+      />
     </div>
   )
 }
