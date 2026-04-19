@@ -8,7 +8,10 @@ import {
   Moon, Sun, Menu, X, Search, Phone, ChevronDown,
   Key, KeyRound, FileCheck, Shield, QrCode, Lock, Binary, Type,
   GitCompare, Hash, FileCode2, Hexagon, ShieldCheck, Clock, Braces, Fingerprint,
-  FileKey2, Link2, Palette, SearchCode, AlignLeft, Code2
+  FileKey2, Link2, Palette, SearchCode, AlignLeft, Code2,
+  Timer, Gauge, Mail, KeySquare, Unlink, UserRound, EyeOff, FileText,
+  Globe, ScanLine, AtSign, BookOpen, Database, CalendarClock, Minimize2,
+  Ruler, Percent, Table
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
@@ -39,6 +42,10 @@ const toolCategories: ToolCategory[] = [
       { name: "Verificador de URL", href: "/tools/verificador", icon: Shield, description: "Detecta amenazas y phishing" },
       { name: "Verificador Contraseñas", href: "/tools/verificador-contrasenas", icon: ShieldCheck, description: "¿Ha sido filtrada tu contraseña?" },
       { name: "Decodificador JWT", href: "/tools/decodificador-jwt", icon: FileKey2, description: "Decodifica y analiza tokens JWT" },
+      { name: "Generador TOTP/2FA", href: "/tools/generador-totp", icon: Timer, description: "Códigos TOTP para autenticación" },
+      { name: "Calculadora de Entropía", href: "/tools/calculadora-entropia", icon: Gauge, description: "Fortaleza de contraseñas en bits" },
+      { name: "Analizador de Email", href: "/tools/analizador-email", icon: Mail, description: "Detecta spoofing y phishing" },
+      { name: "Generador de Claves", href: "/tools/generador-claves", icon: KeySquare, description: "RSA y ECDSA en tu navegador" },
     ],
   },
   {
@@ -47,6 +54,14 @@ const toolCategories: ToolCategory[] = [
     items: [
       { name: "Credenciales Determinísticas", href: "/tools/generador-credenciales", icon: KeyRound, description: "Desde una palabra clave maestra" },
       { name: "Limpiador de Metadatos", href: "/tools/limpia-metadatos", icon: FileCheck, description: "Elimina EXIF, GPS de imágenes" },
+      { name: "Eliminador de Rastreo", href: "/tools/eliminador-rastreo", icon: Unlink, description: "Limpia UTM y tracking de URLs" },
+      { name: "Generador de Datos", href: "/tools/generador-datos", icon: UserRound, description: "Identidades ficticias para testing" },
+      { name: "Ofuscador de Texto", href: "/tools/ofuscador-texto", icon: EyeOff, description: "Homoglifos, Zalgo y Unicode" },
+      { name: "Analizador de Cookies", href: "/tools/analizador-cookies", icon: FileText, description: "Seguridad de cookies HTTP" },
+      { name: "Generador User-Agent", href: "/tools/generador-useragent", icon: Globe, description: "Genera y analiza cadenas UA" },
+      { name: "Huella Digital", href: "/tools/huella-digital", icon: ScanLine, description: "¿Cuán rastreable eres online?" },
+      { name: "Generador de Alias Email", href: "/tools/generador-alias", icon: AtSign, description: "Protege tu bandeja de entrada" },
+      { name: "Generador Passphrase", href: "/tools/generador-passphrase", icon: BookOpen, description: "Contraseñas memorables Diceware" },
     ],
   },
   {
@@ -56,13 +71,13 @@ const toolCategories: ToolCategory[] = [
       { name: "Codificador Base32", href: "/tools/codificador-base32", icon: Binary, description: "Base32, Crockford y más" },
       { name: "Conversor Base64", href: "/tools/conversor-base64", icon: FileCode2, description: "Texto, archivos e imágenes" },
       { name: "Conversor Hexadecimal", href: "/tools/conversor-hex", icon: Hexagon, description: "Hex, decimal, binario, RGB" },
-      { name: "Conversor Timestamp", href: "/tools/conversor-timestamp", icon: Clock, description: "Unix ↔ fecha con zonas horarias" },
       { name: "Validador JSON", href: "/tools/validador-json", icon: Braces, description: "Valida, formatea y minifica" },
       { name: "Generador UUID", href: "/tools/generador-uuid", icon: Fingerprint, description: "UUID v4, v7, ULID, Nano ID" },
       { name: "Codificador URL", href: "/tools/codificador-url", icon: Link2, description: "Encode/decode URLs y URIs" },
-      { name: "Conversor de Colores", href: "/tools/conversor-colores", icon: Palette, description: "HEX, RGB, HSL y Tailwind" },
       { name: "Regex Tester", href: "/tools/regex-tester", icon: SearchCode, description: "Prueba expresiones regulares" },
-      { name: "Conversor Markdown", href: "/tools/conversor-markdown", icon: Code2, description: "Markdown ↔ HTML en tiempo real" },
+      { name: "Formateador SQL", href: "/tools/formateador-sql", icon: Database, description: "Formatea y embellece SQL" },
+      { name: "Generador Cron", href: "/tools/generador-cron", icon: CalendarClock, description: "Expresiones cron visuales" },
+      { name: "Minificador CSS/JS", href: "/tools/minificador-css", icon: Minimize2, description: "Minifica CSS y JavaScript" },
     ],
   },
   {
@@ -71,8 +86,14 @@ const toolCategories: ToolCategory[] = [
     items: [
       { name: "Generador QR", href: "/tools/generador-qr", icon: QrCode, description: "QR personalizados con logo" },
       { name: "Contador de Caracteres", href: "/tools/contador-caracteres", icon: Type, description: "Palabras, chars y límites" },
-      { name: "Comparador de Archivos", href: "/tools/comparador-archivos", icon: GitCompare, description: "Diff viewer línea por línea" },
       { name: "Generador Lorem Ipsum", href: "/tools/generador-lorem", icon: AlignLeft, description: "Texto placeholder configurable" },
+      { name: "Comparador de Archivos", href: "/tools/comparador-archivos", icon: GitCompare, description: "Diff viewer línea por línea" },
+      { name: "Conversor de Colores", href: "/tools/conversor-colores", icon: Palette, description: "HEX, RGB, HSL y Tailwind" },
+      { name: "Conversor Markdown", href: "/tools/conversor-markdown", icon: Code2, description: "Markdown ↔ HTML en tiempo real" },
+      { name: "Conversor Timestamp", href: "/tools/conversor-timestamp", icon: Clock, description: "Unix ↔ fecha con zonas horarias" },
+      { name: "Conversor de Unidades", href: "/tools/conversor-unidades", icon: Ruler, description: "Longitud, peso, temperatura, datos" },
+      { name: "Calculadora Porcentajes", href: "/tools/calculadora-porcentajes", icon: Percent, description: "Porcentajes, IVA y descuentos" },
+      { name: "Generador CSV", href: "/tools/generador-csv", icon: Table, description: "Crea y exporta tablas CSV" },
     ],
   },
 ]
@@ -203,7 +224,7 @@ export function Header() {
             onMouseEnter={() => setIsMegaOpen(true)}
             onMouseLeave={() => setIsMegaOpen(false)}
           >
-            <div className="w-full max-w-[780px] mx-4 rounded-xl border bg-background/95 backdrop-blur-lg shadow-2xl shadow-primary/5 p-5">
+            <div className="w-full max-w-[900px] mx-4 rounded-xl border bg-background/95 backdrop-blur-lg shadow-2xl shadow-primary/5 p-5 max-h-[calc(100vh-5rem)] overflow-y-auto">
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
                 {toolCategories.map((cat) => {
                   const CatIcon = cat.icon

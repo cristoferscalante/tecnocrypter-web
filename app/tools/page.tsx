@@ -6,176 +6,69 @@ import { Button } from "@/components/ui/button"
 import {
   Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type, KeyRound,
   GitCompare, Hash, FileCode2, Hexagon, ShieldCheck, Clock, Braces, Fingerprint,
-  FileKey2, Link2, Palette, SearchCode, AlignLeft, Code2
+  FileKey2, Link2, Palette, SearchCode, AlignLeft, Code2,
+  Timer, Gauge, Mail, KeySquare, Unlink, UserRound, EyeOff, FileText,
+  Globe, ScanLine, AtSign, BookOpen, Database, CalendarClock, Minimize2,
+  Ruler, Percent, Table
 } from "lucide-react"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 import { FAQStructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
 
 
 const tools = [
-  {
-    title: "Generador de Contraseñas",
-    description: "Genera contraseñas seguras y personalizables con diferentes niveles de complejidad.",
-    href: "/tools/generador-contrasenas",
-    icon: Key,
-    category: "Seguridad"
-  },
-  {
-    title: "Generador de Credenciales Determinísticas",
-    description: "Crea usuarios y contraseñas determinísticas desde una palabra clave maestra, todo en tu navegador.",
-    href: "/tools/generador-credenciales",
-    icon: KeyRound,
-    category: "Privacidad"
-  },
-  {
-    title: "Limpiador de Metadatos",
-    description: "Elimina metadatos sensibles de tus archivos para proteger tu privacidad.",
-    href: "/tools/limpia-metadatos",
-    icon: FileCheck,
-    category: "Privacidad"
-  },
-  {
-    title: "Verificador de URL",
-    description: "Analiza y verifica la seguridad de URLs y detecta posibles amenazas antes de visitarlas.",
-    href: "/tools/verificador",
-    icon: Shield,
-    category: "Análisis"
-  },
-  {
-    title: "Generador de Hash",
-    description: "Calcula hashes (MD5, SHA-1, SHA-256, etc.) de texto y archivos totalmente en tu navegador.",
-    href: "/tools/generador-hash",
-    icon: Hash,
-    category: "Seguridad"
-  },
-  {
-    title: "Generador de Códigos QR",
-    description: "Crea códigos QR personalizados para enlaces, textos y contactos con opciones de personalización.",
-    href: "/tools/generador-qr",
-    icon: QrCode,
-    category: "Utilidades"
-  },
-  {
-    title: "Cifrado Online",
-    description: "Cifra y descifra mensajes con una clave compartida. Todo el proceso se realiza en tu navegador.",
-    href: "/tools/cifrado-online",
-    icon: Lock,
-    category: "Seguridad"
-  },
-  {
-    title: "Codificador Base32",
-    description: "Codifica y decodifica texto y archivos en Base32 con múltiples variantes y opciones avanzadas.",
-    href: "/tools/codificador-base32",
-    icon: Binary,
-    category: "Codificación"
-  },
-  {
-    title: "Comparador de Archivos y Texto (Diff Viewer)",
-    description: "Compara líneas entre dos textos o archivos. Vista dividida, ignorar espacios y exportar patch.",
-    href: "/tools/comparador-archivos",
-    icon: GitCompare,
-    category: "Utilidades"
-  },
-  {
-    title: "Contador de Caracteres",
-    description: "Cuenta caracteres, palabras y analiza tu texto en tiempo real. Perfecto para redes sociales y SEO.",
-    href: "/tools/contador-caracteres",
-    icon: Type,
-    category: "Análisis"
-  },
-  {
-    title: "Conversor Base64",
-    description: "Codifica y decodifica texto, archivos e imágenes en Base64. Convierte imágenes a Data URI.",
-    href: "/tools/conversor-base64",
-    icon: FileCode2,
-    category: "Codificación"
-  },
-  {
-    title: "Conversor Hexadecimal",
-    description: "Convierte entre texto, hexadecimal, decimal, binario y colores RGB.",
-    href: "/tools/conversor-hex",
-    icon: Hexagon,
-    category: "Codificación"
-  },
-  {
-    title: "Verificador de Contraseñas Filtradas",
-    description: "Comprueba si tu contraseña ha sido expuesta en filtraciones de datos usando Have I Been Pwned.",
-    href: "/tools/verificador-contrasenas",
-    icon: ShieldCheck,
-    category: "Seguridad"
-  },
-  {
-    title: "Conversor Unix Timestamp",
-    description: "Convierte entre Unix timestamp y fecha legible con soporte de zonas horarias.",
-    href: "/tools/conversor-timestamp",
-    icon: Clock,
-    category: "Utilidades"
-  },
-  {
-    title: "Validador y Formateador JSON",
-    description: "Valida, formatea y minifica JSON con vista de árbol interactiva.",
-    href: "/tools/validador-json",
-    icon: Braces,
-    category: "Desarrollo"
-  },
-  {
-    title: "Generador UUID, ULID y Nano ID",
-    description: "Genera identificadores únicos UUID v4, UUID v7, ULID y Nano ID con generación en lote.",
-    href: "/tools/generador-uuid",
-    icon: Fingerprint,
-    category: "Desarrollo"
-  },
-  {
-    title: "Decodificador JWT",
-    description: "Decodifica y analiza tokens JWT: visualiza header, payload y firma sin necesidad de la clave secreta.",
-    href: "/tools/decodificador-jwt",
-    icon: FileKey2,
-    category: "Seguridad"
-  },
-  {
-    title: "Codificador URL",
-    description: "Codifica y decodifica URLs con encodeURIComponent y encodeURI. Ideal para APIs y query strings.",
-    href: "/tools/codificador-url",
-    icon: Link2,
-    category: "Desarrollo"
-  },
-  {
-    title: "Conversor de Colores",
-    description: "Convierte entre HEX, RGB, HSL y RGBA con color picker visual y valores CSS/Tailwind.",
-    href: "/tools/conversor-colores",
-    icon: Palette,
-    category: "Desarrollo"
-  },
-  {
-    title: "Regex Tester",
-    description: "Prueba expresiones regulares en tiempo real con resaltado de coincidencias y grupos de captura.",
-    href: "/tools/regex-tester",
-    icon: SearchCode,
-    category: "Desarrollo"
-  },
-  {
-    title: "Generador Lorem Ipsum",
-    description: "Genera texto placeholder configurable: párrafos, oraciones o palabras para diseño y maquetación.",
-    href: "/tools/generador-lorem",
-    icon: AlignLeft,
-    category: "Utilidades"
-  },
-  {
-    title: "Conversor Markdown",
-    description: "Convierte entre Markdown y HTML en tiempo real con vista previa y soporte completo de sintaxis.",
-    href: "/tools/conversor-markdown",
-    icon: Code2,
-    category: "Desarrollo"
-  }
+  // === SEGURIDAD (10) ===
+  { title: "Generador de Contraseñas", description: "Genera contraseñas seguras y personalizables con diferentes niveles de complejidad.", href: "/tools/generador-contrasenas", icon: Key, category: "Seguridad" },
+  { title: "Verificador de URL", description: "Analiza y verifica la seguridad de URLs y detecta posibles amenazas antes de visitarlas.", href: "/tools/verificador", icon: Shield, category: "Seguridad" },
+  { title: "Cifrado Online", description: "Cifra y descifra mensajes con AES-256, ChaCha20 y más. Todo en tu navegador.", href: "/tools/cifrado-online", icon: Lock, category: "Seguridad" },
+  { title: "Generador de Hash", description: "Calcula hashes (MD5, SHA-1, SHA-256, etc.) de texto y archivos en tu navegador.", href: "/tools/generador-hash", icon: Hash, category: "Seguridad" },
+  { title: "Verificador de Contraseñas Filtradas", description: "Comprueba si tu contraseña ha sido expuesta en filtraciones usando Have I Been Pwned.", href: "/tools/verificador-contrasenas", icon: ShieldCheck, category: "Seguridad" },
+  { title: "Decodificador JWT", description: "Decodifica y analiza tokens JWT: visualiza header, payload y firma.", href: "/tools/decodificador-jwt", icon: FileKey2, category: "Seguridad" },
+  { title: "Generador TOTP/2FA", description: "Genera códigos TOTP para autenticación de dos factores desde un secreto Base32.", href: "/tools/generador-totp", icon: Timer, category: "Seguridad" },
+  { title: "Calculadora de Entropía", description: "Calcula la entropía y fortaleza de contraseñas con estimaciones de tiempo de crackeo.", href: "/tools/calculadora-entropia", icon: Gauge, category: "Seguridad" },
+  { title: "Analizador de Cabeceras Email", description: "Analiza cabeceras de email para detectar spoofing, SPF, DKIM y DMARC.", href: "/tools/analizador-email", icon: Mail, category: "Seguridad" },
+  { title: "Generador de Claves RSA/ECDSA", description: "Genera pares de claves RSA y ECDSA con Web Crypto API en formato PEM.", href: "/tools/generador-claves", icon: KeySquare, category: "Seguridad" },
+  // === PRIVACIDAD (10) ===
+  { title: "Generador de Credenciales Determinísticas", description: "Crea usuarios y contraseñas determinísticas desde una palabra clave maestra.", href: "/tools/generador-credenciales", icon: KeyRound, category: "Privacidad" },
+  { title: "Limpiador de Metadatos", description: "Elimina metadatos sensibles (EXIF, GPS) de tus imágenes para proteger tu privacidad.", href: "/tools/limpia-metadatos", icon: FileCheck, category: "Privacidad" },
+  { title: "Eliminador de Rastreo URL", description: "Elimina parámetros de tracking (UTM, fbclid, gclid) de URLs para proteger tu privacidad.", href: "/tools/eliminador-rastreo", icon: Unlink, category: "Privacidad" },
+  { title: "Generador de Datos Ficticios", description: "Genera identidades ficticias realistas con nombre, email, teléfono y dirección.", href: "/tools/generador-datos", icon: UserRound, category: "Privacidad" },
+  { title: "Ofuscador de Texto", description: "Ofusca texto con homoglifos, Zalgo, caracteres invisibles y más técnicas Unicode.", href: "/tools/ofuscador-texto", icon: EyeOff, category: "Privacidad" },
+  { title: "Analizador de Cookies HTTP", description: "Analiza cookies HTTP y verifica atributos de seguridad: Secure, HttpOnly, SameSite.", href: "/tools/analizador-cookies", icon: FileText, category: "Privacidad" },
+  { title: "Generador de User-Agent", description: "Genera User-Agents personalizados y analiza cadenas UA para testing y privacidad.", href: "/tools/generador-useragent", icon: Globe, category: "Privacidad" },
+  { title: "Huella Digital del Navegador", description: "Descubre qué información revela tu navegador y cuán rastreable eres online.", href: "/tools/huella-digital", icon: ScanLine, category: "Privacidad" },
+  { title: "Generador de Alias de Email", description: "Crea variaciones de tu email con +tags para detectar filtraciones y filtrar spam.", href: "/tools/generador-alias", icon: AtSign, category: "Privacidad" },
+  { title: "Generador de Passphrase", description: "Contraseñas memorables al estilo Diceware combinando palabras aleatorias.", href: "/tools/generador-passphrase", icon: BookOpen, category: "Privacidad" },
+  // === DESARROLLO (10) ===
+  { title: "Codificador Base32", description: "Codifica y decodifica en Base32 con múltiples variantes y opciones avanzadas.", href: "/tools/codificador-base32", icon: Binary, category: "Desarrollo" },
+  { title: "Conversor Base64", description: "Codifica y decodifica texto, archivos e imágenes en Base64 y Data URI.", href: "/tools/conversor-base64", icon: FileCode2, category: "Desarrollo" },
+  { title: "Conversor Hexadecimal", description: "Convierte entre texto, hexadecimal, decimal, binario y colores RGB.", href: "/tools/conversor-hex", icon: Hexagon, category: "Desarrollo" },
+  { title: "Validador y Formateador JSON", description: "Valida, formatea y minifica JSON con vista de árbol interactiva.", href: "/tools/validador-json", icon: Braces, category: "Desarrollo" },
+  { title: "Generador UUID, ULID y Nano ID", description: "Genera identificadores únicos UUID v4, v7, ULID y Nano ID con generación en lote.", href: "/tools/generador-uuid", icon: Fingerprint, category: "Desarrollo" },
+  { title: "Codificador URL", description: "Codifica y decodifica URLs con encodeURIComponent y encodeURI.", href: "/tools/codificador-url", icon: Link2, category: "Desarrollo" },
+  { title: "Regex Tester", description: "Prueba expresiones regulares en tiempo real con resaltado y grupos de captura.", href: "/tools/regex-tester", icon: SearchCode, category: "Desarrollo" },
+  { title: "Formateador de SQL", description: "Formatea, indenta y embellece consultas SQL automáticamente.", href: "/tools/formateador-sql", icon: Database, category: "Desarrollo" },
+  { title: "Generador de Expresiones Cron", description: "Construye expresiones cron visualmente con presets y próximas ejecuciones.", href: "/tools/generador-cron", icon: CalendarClock, category: "Desarrollo" },
+  { title: "Minificador CSS/JS", description: "Minifica CSS y JavaScript eliminando espacios, comentarios y caracteres innecesarios.", href: "/tools/minificador-css", icon: Minimize2, category: "Desarrollo" },
+  // === UTILIDADES (10) ===
+  { title: "Generador de Códigos QR", description: "Crea códigos QR personalizados para enlaces, textos y contactos.", href: "/tools/generador-qr", icon: QrCode, category: "Utilidades" },
+  { title: "Contador de Caracteres", description: "Cuenta caracteres, palabras y analiza tu texto en tiempo real.", href: "/tools/contador-caracteres", icon: Type, category: "Utilidades" },
+  { title: "Generador Lorem Ipsum", description: "Genera texto placeholder configurable: párrafos, oraciones o palabras.", href: "/tools/generador-lorem", icon: AlignLeft, category: "Utilidades" },
+  { title: "Comparador de Archivos y Texto", description: "Compara líneas entre dos textos o archivos con diff viewer visual.", href: "/tools/comparador-archivos", icon: GitCompare, category: "Utilidades" },
+  { title: "Conversor de Colores", description: "Convierte entre HEX, RGB, HSL y RGBA con color picker y valores Tailwind.", href: "/tools/conversor-colores", icon: Palette, category: "Utilidades" },
+  { title: "Conversor Markdown", description: "Convierte entre Markdown y HTML en tiempo real con vista previa.", href: "/tools/conversor-markdown", icon: Code2, category: "Utilidades" },
+  { title: "Conversor Unix Timestamp", description: "Convierte entre Unix timestamp y fecha legible con zonas horarias.", href: "/tools/conversor-timestamp", icon: Clock, category: "Utilidades" },
+  { title: "Conversor de Unidades", description: "Convierte entre unidades de longitud, peso, temperatura, datos y más.", href: "/tools/conversor-unidades", icon: Ruler, category: "Utilidades" },
+  { title: "Calculadora de Porcentajes", description: "Calcula porcentajes, cambios porcentuales, aumentos y descuentos al instante.", href: "/tools/calculadora-porcentajes", icon: Percent, category: "Utilidades" },
+  { title: "Generador de Tablas CSV", description: "Crea tablas de datos visualmente y expórtalas como archivos CSV.", href: "/tools/generador-csv", icon: Table, category: "Utilidades" },
 ]
 
 
 export const metadata: Metadata = generateToolMetadata({
-  title: "Herramientas de Seguridad Digital",
-  description: "Accede a nuestras 22 herramientas gratuitas de seguridad digital: generador de contraseñas, verificador de filtraciones, conversor Base64, validador JSON, decodificador JWT, regex tester y más.",
+  title: "40 Herramientas de Seguridad y Desarrollo Gratuitas",
+  description: "Accede a nuestras 40 herramientas gratuitas: seguridad, privacidad, desarrollo y utilidades. Generador de contraseñas, verificador de filtraciones, conversor Base64, validador JSON, formateador SQL, generador TOTP y mucho más.",
   slug: "tools",
   image: "https://tecnocrypter.com/seo/tools.webp",
-  keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita", "base64", "json validator", "uuid generator", "jwt decoder", "regex tester", "conversor colores", "lorem ipsum"]
+  keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita", "base64", "json validator", "uuid generator", "jwt decoder", "regex tester", "conversor colores", "formateador sql", "generador totp", "passphrase", "minificador css"]
 })
 
 // FAQ específicas para tools
