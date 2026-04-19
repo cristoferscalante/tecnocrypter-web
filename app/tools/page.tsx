@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type, KeyRound, GitCompare, Hash } from "lucide-react"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
+import { FAQStructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
 
 
 const tools = [
@@ -119,8 +120,34 @@ const toolsFaqs = [
 
 
 export default function ToolsPage() {
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Herramientas de Seguridad Digital",
+    description: "Colección de herramientas gratuitas de ciberseguridad y privacidad online.",
+    numberOfItems: tools.length,
+    itemListElement: tools.map((tool, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: tool.title,
+      description: tool.description,
+      url: `https://tecnocrypter.com${tool.href}`,
+    })),
+  }
+
   return (
     <>
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Inicio", url: "https://tecnocrypter.com" },
+          { name: "Herramientas", url: "https://tecnocrypter.com/tools" },
+        ]}
+      />
+      <FAQStructuredData faqs={toolsFaqs} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import GeneradorContrasenasClient from "@/components/tools/generador-contrasenas-client"
 import { generateToolMetadata } from "@/lib/metadata"
+import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
 export const metadata: Metadata = generateToolMetadata({
   title: "Generador de Contraseñas Seguras",
@@ -12,6 +13,18 @@ export const metadata: Metadata = generateToolMetadata({
 
 export default function GeneradorContrasenasPage() {
   return (
-    <GeneradorContrasenasClient />
+    <>
+      <BreadcrumbStructuredData items={[
+        { name: "Inicio", url: "https://tecnocrypter.com" },
+        { name: "Herramientas", url: "https://tecnocrypter.com/tools" },
+        { name: "Generador de Contraseñas", url: "https://tecnocrypter.com/tools/generador-contrasenas" },
+      ]} />
+      <WebApplicationStructuredData
+        name="Generador de Contraseñas Seguras - TecnoCrypter"
+        description="Genera contraseñas seguras y aleatorias con validadores y recomendaciones."
+        url="https://tecnocrypter.com/tools/generador-contrasenas"
+      />
+      <GeneradorContrasenasClient />
+    </>
   )
 }

@@ -1,5 +1,3 @@
-'use client';
-
 import { organizationSchema, websiteSchema } from '@/lib/metadata';
 
 interface StructuredDataProps {
@@ -170,6 +168,50 @@ export function FAQStructuredData({ faqs }: FAQStructuredDataProps) {
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(schema, null, 2),
       }}
+    />
+  );
+}
+
+// Componente para WebApplication (herramientas online)
+interface WebApplicationStructuredDataProps {
+  name: string;
+  description: string;
+  url: string;
+  category?: string;
+}
+
+export function WebApplicationStructuredData({
+  name,
+  description,
+  url,
+  category = "SecurityApplication",
+}: WebApplicationStructuredDataProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name,
+    description,
+    url,
+    applicationCategory: category,
+    operatingSystem: "All",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    provider: {
+      "@type": "Organization",
+      name: "TecnoCrypter",
+      url: "https://tecnocrypter.com",
+    },
+    browserRequirements: "Requires JavaScript. Requires HTML5.",
+    inLanguage: "es",
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   );
 }

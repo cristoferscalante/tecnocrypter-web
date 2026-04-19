@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import LimpiaMetadatosClient from "@/components/tools/limpia-metadatos-client"
 import { generateToolMetadata } from "@/lib/metadata"
+import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
 export const metadata: Metadata = generateToolMetadata({
   title: "Limpiador de Metadatos de Imágenes",
@@ -12,6 +13,18 @@ export const metadata: Metadata = generateToolMetadata({
 
 export default function LimpiaMetadatosPage() {
   return (
-    <LimpiaMetadatosClient />
+    <>
+      <BreadcrumbStructuredData items={[
+        { name: "Inicio", url: "https://tecnocrypter.com" },
+        { name: "Herramientas", url: "https://tecnocrypter.com/tools" },
+        { name: "Limpiador de Metadatos", url: "https://tecnocrypter.com/tools/limpia-metadatos" },
+      ]} />
+      <WebApplicationStructuredData
+        name="Limpiador de Metadatos - TecnoCrypter"
+        description="Elimina metadatos EXIF, GPS y datos ocultos de tus imágenes."
+        url="https://tecnocrypter.com/tools/limpia-metadatos"
+      />
+      <LimpiaMetadatosClient />
+    </>
   )
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { generateBlogMetadata } from "@/lib/metadata";
 import BlogClientPage from "./BlogClientPage";
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section";
+import { FAQStructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data";
 
 const blogFaqs = [
   {
@@ -56,6 +57,13 @@ export const metadata: Metadata = generateBlogMetadata({
 export default function BlogPage() {
   return (
     <>
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Inicio", url: "https://tecnocrypter.com" },
+          { name: "Blog", url: "https://tecnocrypter.com/blog" },
+        ]}
+      />
+      <FAQStructuredData faqs={blogFaqs} />
       <BlogClientPage />
       <ReusableFaqSection
         title="Preguntas Frecuentes sobre el Blog"
