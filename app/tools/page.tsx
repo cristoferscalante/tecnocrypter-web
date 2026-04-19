@@ -3,7 +3,10 @@ import { generateToolMetadata } from "@/lib/metadata"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type, KeyRound, GitCompare, Hash } from "lucide-react"
+import {
+  Shield, Key, FileCheck, ArrowRight, QrCode, Lock, Binary, Type, KeyRound,
+  GitCompare, Hash, FileCode2, Hexagon, ShieldCheck, Clock, Braces, Fingerprint
+} from "lucide-react"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 import { FAQStructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
 
@@ -78,16 +81,58 @@ const tools = [
     href: "/tools/contador-caracteres",
     icon: Type,
     category: "Análisis"
+  },
+  {
+    title: "Conversor Base64",
+    description: "Codifica y decodifica texto, archivos e imágenes en Base64. Convierte imágenes a Data URI.",
+    href: "/tools/conversor-base64",
+    icon: FileCode2,
+    category: "Codificación"
+  },
+  {
+    title: "Conversor Hexadecimal",
+    description: "Convierte entre texto, hexadecimal, decimal, binario y colores RGB.",
+    href: "/tools/conversor-hex",
+    icon: Hexagon,
+    category: "Codificación"
+  },
+  {
+    title: "Verificador de Contraseñas Filtradas",
+    description: "Comprueba si tu contraseña ha sido expuesta en filtraciones de datos usando Have I Been Pwned.",
+    href: "/tools/verificador-contrasenas",
+    icon: ShieldCheck,
+    category: "Seguridad"
+  },
+  {
+    title: "Conversor Unix Timestamp",
+    description: "Convierte entre Unix timestamp y fecha legible con soporte de zonas horarias.",
+    href: "/tools/conversor-timestamp",
+    icon: Clock,
+    category: "Utilidades"
+  },
+  {
+    title: "Validador y Formateador JSON",
+    description: "Valida, formatea y minifica JSON con vista de árbol interactiva.",
+    href: "/tools/validador-json",
+    icon: Braces,
+    category: "Desarrollo"
+  },
+  {
+    title: "Generador UUID, ULID y Nano ID",
+    description: "Genera identificadores únicos UUID v4, UUID v7, ULID y Nano ID con generación en lote.",
+    href: "/tools/generador-uuid",
+    icon: Fingerprint,
+    category: "Desarrollo"
   }
 ]
 
 
 export const metadata: Metadata = generateToolMetadata({
   title: "Herramientas de Seguridad Digital",
-  description: "Accede a nuestras herramientas gratuitas de seguridad digital: generador de contraseñas, limpiador de metadatos, verificador de seguridad y más.",
+  description: "Accede a nuestras 16 herramientas gratuitas de seguridad digital: generador de contraseñas, verificador de filtraciones, conversor Base64, validador JSON y más.",
   slug: "tools",
   image: "https://tecnocrypter.com/seo/tools.webp",
-  keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita"]
+  keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita", "base64", "json validator", "uuid generator"]
 })
 
 // FAQ específicas para tools
