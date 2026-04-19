@@ -9,7 +9,6 @@ import { MatrixBackground } from "@/components/ui/matrix-background"
 import { Toaster } from "@/components/ui/sonner"
 import { StructuredData } from "@/components/seo/structured-data"
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics"
-import Script from "next/script"
 import "./globals.css"
 
 const orbitron = Orbitron({ 
@@ -96,10 +95,10 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
       <head>
         <meta name="google-adsense-account" content="ca-pub-9286345048405462" />
-        <Script
+        <script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9286345048405462"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
         <StructuredData type="website" />
         <StructuredData type="organization" />
