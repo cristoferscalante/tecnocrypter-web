@@ -25,12 +25,12 @@ export default function HomePage() {
     <>
       <main className="min-h-screen">
         <HeroSection />
+        <ToolsSection />
         <FeaturesSection />
         <SecuritySection />
-        <ToolsSection />
         <ShieldSection />
-        <FeaturedPosts />
         <ProductShowcase />
+        <FeaturedPosts />
         <FaqSection />
         <NewsletterSection />
         <CtaSection />
