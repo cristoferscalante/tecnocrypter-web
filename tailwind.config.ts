@@ -19,6 +19,9 @@ const config: Config = {
       },
     },
     extend: {
+      screens: {
+        'xs': '475px',
+      },
       fontFamily: {
         'orbitron': ['var(--font-orbitron)', 'monospace'],
         'space-grotesk': ['var(--font-space-grotesk)', 'sans-serif'],

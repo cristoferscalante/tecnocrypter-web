@@ -73,6 +73,85 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* Responsive text overflow control */
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Custom breakpoint for extra small screens */
+@media (min-width: 475px) {
+  .xs\:inline {
+    display: inline;
+  }
+  .xs\:block {
+    display: block;
+  }
+  .xs\:flex {
+    display: flex;
+  }
+}
+
+/* Responsive text utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .break-anywhere {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Responsive tables and code blocks */
+@layer components {
+  /* Responsive tables */
+  .table-responsive {
+    @apply w-full overflow-x-auto;
+  }
+  
+  /* Code blocks that don't overflow */
+  pre, code {
+    @apply max-w-full;
+  }
+  
+  pre {
+    @apply overflow-x-auto;
+  }
+  
+  code {
+    word-break: break-word;
+  }
+  
+  /* Responsive containers */
+  .container {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 640px) {
+  /* Ensure inputs don't zoom on iOS */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+  
+  /* Better touch targets */
+  button, a {
+    min-height: 44px;
+  }
+  
+  /* Prevent horizontal scroll from long words */
+  h1, h2, h3, h4, h5, h6, p, li, td, th {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
 }
 
 /* Animaciones personalizadas */

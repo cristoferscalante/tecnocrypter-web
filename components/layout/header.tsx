@@ -114,18 +114,18 @@ export function Header() {
   const isToolsActive = pathname.startsWith("/tools")
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/30 backdrop-blur supports-[backdrop-filter]:bg-background/20 relative">
+    <header className="sticky top-0 z-50 w-full bg-background/30 backdrop-blur supports-[backdrop-filter]:bg-background/20">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-4 group">
+        <Link href="/" className="flex items-center space-x-2 sm:space-x-4 group shrink-0">
           <Image
             src="/Tecno.svg"
             alt="TecnoCrypter Logo"
             width={70}
             height={70}
-            className="h-[70px] w-[70px] transition-transform duration-300 group-hover:scale-110"
+            className="h-10 w-10 sm:h-[70px] sm:w-[70px] transition-transform duration-300 group-hover:scale-110"
           />
-          <span className="text-xl font-bold">
+          <span className="text-base sm:text-xl font-bold hidden xs:inline">
             Tecno<span className="text-primary">Crypter</span>
           </span>
         </Link>
@@ -160,7 +160,7 @@ export function Header() {
         </nav>
 
         {/* Actions */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-1 sm:space-x-2">
           <div className="hidden md:block">
             <SearchDropdown className="w-80" />
           </div>
@@ -299,9 +299,9 @@ export function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="border-t md:hidden overflow-hidden"
+            className="border-t md:hidden"
           >
-            <nav className="container py-4 space-y-1">
+            <nav className="container py-4 space-y-1 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
