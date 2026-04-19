@@ -118,7 +118,7 @@ export function Header() {
 
           {/* Mega menu trigger */}
           <div
-            className="relative"
+            className="static"
             onMouseEnter={() => setIsMegaOpen(true)}
             onMouseLeave={() => setIsMegaOpen(false)}
           >
@@ -142,7 +142,7 @@ export function Header() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute right-0 top-full pt-2"
+                  className="fixed left-1/2 -translate-x-1/2 top-16 pt-2 z-50"
                   style={{ width: "min(90vw, 720px)" }}
                 >
                   <div className="rounded-xl border bg-background/95 backdrop-blur-lg shadow-2xl shadow-primary/5 p-5">
