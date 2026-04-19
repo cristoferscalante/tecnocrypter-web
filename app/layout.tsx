@@ -94,6 +94,7 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
+        <meta name="google-adsense-account" content="ca-pub-9286345048405462" />
         <StructuredData type="website" />
         <StructuredData type="organization" />
         <GoogleAnalytics />
