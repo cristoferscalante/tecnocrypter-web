@@ -29,6 +29,8 @@
       "hot": "Popular",
       "addToCart": "Agregar al Carrito",
       "buyNow": "Comprar Ahora",
+      "contactSupport": "Contactar Soporte",
+      "whatsappMessage": "Hola, me gustaría cotizar el servicio de",
       "viewDetails": "Ver Detalles",
       "free": "Gratis",
       "from": "Desde",
@@ -55,8 +57,21 @@
       "copyAddress": "Copiar dirección",
       "copied": "¡Copiado!",
       "waitingPayment": "Esperando confirmación de pago...",
-      "paymentConfirmed": "¡Pago confirmado!",
-      "scanQR": "Escanea el código QR para pagar"
+      "paymentConfirmed": "¡Pago confirmado!"
+    },
+    "dbMapping": {
+      "web_dev": {
+        "name": "Desarrollo Web y Aplicaciones Seguras",
+        "description": "Creamos sitios web y aplicaciones web de alta calidad con seguridad integrada desde el diseño. Utilizamos las últimas tecnologías y mejores prácticas de la industria para garantizar un producto excepcional."
+      },
+      "sec_training": {
+        "name": "Capacitación en Seguridad Digital y Herramientas",
+        "description": "Programa de capacitación integral en seguridad digital y uso correcto de herramientas de protección. Aprende a proteger tu información y privacidad utilizando las mejores herramientas del mercado."
+      },
+      "ai_training": {
+        "name": "Capacitación en IA Segura: Uso sin Exponer Datos",
+        "description": "Aprende a aprovechar el poder de la inteligencia artificial sin comprometer la seguridad de tus datos. Esta capacitación te enseña técnicas de anonimización y uso de LLMs de forma segura para aumentar la productividad."
+      }
     }
   }
 }

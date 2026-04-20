@@ -12,8 +12,16 @@ import { useTranslations } from "next-intl"
 
 export function ProductShowcase() {
   const t = useTranslations("home.productShowcase")
+  const tProd = useTranslations("products")
   const [products, setProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
+
+  const getTranslationKey = (name: string) => {
+    if (name.includes("Desarrollo Web")) return "web_dev";
+    if (name.includes("Seguridad Digital")) return "sec_training";
+    if (name.includes("IA Segura")) return "ai_training";
+    return null;
+  }
 
   useEffect(() => {
     async function fetchProducts() {
@@ -84,12 +92,18 @@ export function ProductShowcase() {
               </div>
               <CardTitle className="line-clamp-2">
                 <Link href={`/productos/${product.id}`} className="hover:text-primary transition-colors">
-                  {product.name}
+                  {getTranslationKey(product.name) && tProd.has(`dbMapping.${getTranslationKey(product.name) as string}.name`) 
+                    ? tProd(`dbMapping.${getTranslationKey(product.name) as string}.name`) 
+                    : product.name}
                 </Link>
               </CardTitle>
             </CardHeader>
             <CardContent className="pb-2 flex-grow">
-              <p className="text-muted-foreground line-clamp-3 mb-4">{product.description}</p>
+              <p className="text-muted-foreground line-clamp-3 mb-4">
+                {getTranslationKey(product.name) && tProd.has(`dbMapping.${getTranslationKey(product.name) as string}.description`) 
+                  ? tProd(`dbMapping.${getTranslationKey(product.name) as string}.description`) 
+                  : product.description}
+              </p>
               <div className="flex flex-wrap gap-2 mt-2">
                 {product.features.slice(0, 2).map((feature, index) => (
                   <Badge key={index} variant="outline" className="text-xs bg-primary/5">
@@ -106,8 +120,8 @@ export function ProductShowcase() {
             <CardFooter className="pt-2 flex-col items-start gap-2">
               <div className="flex justify-center items-center w-full">
                 <Button asChild size="sm" className="w-full">
-                  <Link href={`https://wa.me/15551234567?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20el%20servicio%20de%20${encodeURIComponent(product.name)}`} target="_blank" rel="noopener noreferrer">
-                    Contactar Soporte
+                  <Link href={`https://wa.me/15551234567?text=${encodeURIComponent(tProd("card.whatsappMessage") + " " + product.name)}`} target="_blank" rel="noopener noreferrer">
+                    {tProd("card.contactSupport")}
                   </Link>
                 </Button>
               </div>

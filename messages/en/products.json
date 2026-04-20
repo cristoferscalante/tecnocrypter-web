@@ -26,9 +26,11 @@
     "card": {
       "featured": "Featured",
       "new": "New",
-      "hot": "Hot",
+      "hot": "Popular",
       "addToCart": "Add to Cart",
       "buyNow": "Buy Now",
+      "contactSupport": "Contact Support",
+      "whatsappMessage": "Hello, I would like to request a quote for",
       "viewDetails": "View Details",
       "free": "Free",
       "from": "From",
@@ -55,8 +57,21 @@
       "copyAddress": "Copy address",
       "copied": "Copied!",
       "waitingPayment": "Waiting for payment confirmation...",
-      "paymentConfirmed": "Payment confirmed!",
-      "scanQR": "Scan the QR code to pay"
+      "paymentConfirmed": "Payment confirmed!"
+    },
+    "dbMapping": {
+      "web_dev": {
+        "name": "Secure Web and App Development",
+        "description": "We create high-quality websites and applications with built-in security by design. We use the latest technologies and industry best practices to ensure an exceptional and secure product."
+      },
+      "sec_training": {
+        "name": "Digital Security and Tool Training",
+        "description": "Comprehensive training program on digital security and proper use of protection tools. Learn how to protect your information and privacy using the best tools on the market."
+      },
+      "ai_training": {
+        "name": "Secure AI Training: Usage without Data Exposure",
+        "description": "Learn to harness the power of artificial intelligence without compromising your data security. This training teaches you anonymization techniques and safe LLM usage to boost productivity safely."
+      }
     }
   }
 }

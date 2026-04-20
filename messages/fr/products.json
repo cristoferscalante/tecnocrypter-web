@@ -28,7 +28,9 @@
       "new": "Nouveau",
       "hot": "Populaire",
       "addToCart": "Ajouter au Panier",
-      "buyNow": "Acheter",
+      "buyNow": "Acheter Maintenant",
+      "contactSupport": "Contacter le Support",
+      "whatsappMessage": "Bonjour, je voudrais demander un devis pour",
       "viewDetails": "Voir les Détails",
       "free": "Gratuit",
       "from": "À partir de",
@@ -55,8 +57,21 @@
       "copyAddress": "Copier l'adresse",
       "copied": "Copié !",
       "waitingPayment": "En attente de confirmation de paiement...",
-      "paymentConfirmed": "Paiement confirmé !",
-      "scanQR": "Scannez le code QR pour payer"
+      "paymentConfirmed": "Paiement confirmé !"
+    },
+    "dbMapping": {
+      "web_dev": {
+        "name": "Développement Web et Applications Sécurisées",
+        "description": "Nous créons des sites web et applications de haute qualité avec une sécurité intégrée dès la conception. Nous utilisons les dernières technologies pour garantir un produit exceptionnel."
+      },
+      "sec_training": {
+        "name": "Formation en Sécurité Numérique et Outils",
+        "description": "Programme de formation complet sur la sécurité numérique et l'utilisation d'outils de protection. Apprenez à protéger vos informations grâce aux meilleurs outils du marché."
+      },
+      "ai_training": {
+        "name": "Formation IA Sécurisée : Utilisation sans Exposition des Données",
+        "description": "Apprenez à exploiter la puissance de l'intelligence artificielle sans compromettre vos données. Techniques d'anonymisation et utilisation sécurisée des LLM pour augmenter la productivité."
+      }
     }
   }
 }

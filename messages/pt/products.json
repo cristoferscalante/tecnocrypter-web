@@ -24,11 +24,13 @@
       "sortRating": "Melhor Avaliado"
     },
     "card": {
-      "featured": "Destaque",
+      "featured": "Em destaque",
       "new": "Novo",
       "hot": "Popular",
       "addToCart": "Adicionar ao Carrinho",
       "buyNow": "Comprar Agora",
+      "contactSupport": "Contatar Suporte",
+      "whatsappMessage": "Olá, gostaria de solicitar um orçamento para evitar o serviço de",
       "viewDetails": "Ver Detalhes",
       "free": "Grátis",
       "from": "A partir de",
@@ -55,8 +57,21 @@
       "copyAddress": "Copiar endereço",
       "copied": "Copiado!",
       "waitingPayment": "Aguardando confirmação de pagamento...",
-      "paymentConfirmed": "Pagamento confirmado!",
-      "scanQR": "Escaneie o código QR para pagar"
+      "paymentConfirmed": "Pagamento confirmado!"
+    },
+    "dbMapping": {
+      "web_dev": {
+        "name": "Desenvolvimento Web e de Aplicativos Seguros",
+        "description": "Criamos sites e aplicativos de alta qualidade com segurança integrada desde o design. Utilizamos as mais recentes tecnologias e melhores práticas da indústria para garantir um produto excepcional."
+      },
+      "sec_training": {
+        "name": "Treinamento em Segurança Digital e Ferramentas",
+        "description": "Programa de treinamento abrangente sobre segurança digital e o uso adequado das ferramentas de proteção. Aprenda a proteger suas informações utilizando as melhores ferramentas do mercado."
+      },
+      "ai_training": {
+        "name": "Treinamento em IA Segura: Uso sem Expor Dados",
+        "description": "Aprenda a aproveitar o poder da inteligência artificial sem comprometer a segurança de seus dados. Este treinamento ensina técnicas de anonimização e o uso seguro de LLMs."
+      }
     }
   }
 }

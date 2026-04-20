@@ -16,6 +16,13 @@ import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 import type { Product } from "@/types"
 import { useTranslations } from "next-intl"
 
+const getTranslationKey = (name: string) => {
+  if (name.includes("Desarrollo Web")) return "web_dev";
+  if (name.includes("Seguridad Digital")) return "sec_training";
+  if (name.includes("IA Segura")) return "ai_training";
+  return null;
+}
+
 export default function ProductosPage() {
   const t = useTranslations("products")
   const [products, setProducts] = useState<Product[]>([])
@@ -299,24 +306,32 @@ export default function ProductosPage() {
                       className="object-cover w-full h-full"
                     />
                   </div>
-                  <CardHeader className="pb-2">
-                    <div className="flex items-center justify-between mb-2">
-                      <Badge variant="outline" className="text-xs capitalize">
-                        {product.category}
-                      </Badge>
-                      <Badge variant="secondary" className="text-xs">
-                        {product.vendor}
-                      </Badge>
+                  <CardContent className="p-4">
+                    <div className="flex justify-between items-start mb-2">
+                      <div className="flex gap-2">
+                        <Badge variant="outline" className="bg-background/50">
+                          {product.category}
+                        </Badge>
+                        {product.is_featured && (
+                          <Badge className="bg-primary hover:bg-primary/90">{t("card.featured")}</Badge>
+                        )}
+                      </div>
+                      <div className="flex items-center text-sm font-medium">
+                        <Star className="h-3 w-3 text-yellow-500 fill-yellow-500 mr-1" />
+                        {product.rating}
+                      </div>
                     </div>
-                    <CardTitle className="line-clamp-2">
-                      <Link href={`/productos/${product.id}`} className="hover:text-primary transition-colors">
-                        {product.name}
-                      </Link>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="pb-2 flex-grow">
-                    <p className="text-muted-foreground line-clamp-3 mb-4">{product.description}</p>
-                    <div className="flex flex-wrap gap-2 mt-2">
+                    <h3 className="font-bold text-lg mb-2 line-clamp-2 mt-3 group-hover:text-primary transition-colors">
+                      {getTranslationKey(product.name) && t.has(`dbMapping.${getTranslationKey(product.name) as string}.name`) 
+                        ? t(`dbMapping.${getTranslationKey(product.name) as string}.name`) 
+                        : product.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                      {getTranslationKey(product.name) && t.has(`dbMapping.${getTranslationKey(product.name) as string}.description`) 
+                        ? t(`dbMapping.${getTranslationKey(product.name) as string}.description`) 
+                        : product.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mt-auto">
                       {product.features.slice(0, 2).map((feature, index) => (
                         <Badge key={index} variant="outline" className="text-xs bg-primary/5">
                           {feature}
@@ -332,8 +347,8 @@ export default function ProductosPage() {
                   <CardFooter className="pt-2 flex-col items-start gap-2">
                     <div className="flex justify-center items-center w-full">
                       <Button asChild size="sm" className="w-full">
-                        <Link href={`https://wa.me/15551234567?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20el%20servicio%20de%20${encodeURIComponent(product.name)}`} target="_blank" rel="noopener noreferrer">
-                          Contactar Soporte
+                        <Link href={`https://wa.me/15551234567?text=${encodeURIComponent(t("card.whatsappMessage") + " " + product.name)}`} target="_blank" rel="noopener noreferrer">
+                          {t("card.contactSupport")}
                         </Link>
                       </Button>
                     </div>
