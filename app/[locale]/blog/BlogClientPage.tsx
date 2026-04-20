@@ -9,18 +9,21 @@ import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Clock, Search } from "lucide-react"
 import { useBlog } from "@/hooks/use-blog"
+import { useTranslations } from "next-intl"
 
 export type BlogCategory = "todos" | "seguridad" | "encriptacion" | "criptomonedas" | "noticias"
 
 export default function BlogClientPage({ initialCategory = "todos" as BlogCategory }: { initialCategory?: BlogCategory }) {
+  const t = useTranslations("blog.client")
   const { posts, loading, error, searchPosts } = useBlog()
+  
   const categories: { id: BlogCategory; name: string }[] = useMemo(() => [
-    { id: "todos", name: "Todos" },
-    { id: "seguridad", name: "Seguridad" },
-    { id: "encriptacion", name: "Encriptación" },
-    { id: "criptomonedas", name: "Criptomonedas" },
-    { id: "noticias", name: "Noticias" },
-  ], [])
+    { id: "todos", name: t("categoryAll") },
+    { id: "seguridad", name: t("categorySecurity") },
+    { id: "encriptacion", name: t("categoryEncryption") },
+    { id: "criptomonedas", name: t("categoryCrypto") },
+    { id: "noticias", name: t("categoryNews") },
+  ], [t])
 
   const validInitial = categories.some(c => c.id === initialCategory) ? initialCategory : "todos"
   const [searchQuery, setSearchQuery] = useState("")
@@ -58,9 +61,9 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Blog de Seguridad y Criptomonedas</h1>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">{t("title")}</h1>
             <p className="text-xl text-muted-foreground">
-              Artículos, guías y noticias sobre seguridad cibernética, encriptación y el mundo crypto.
+              {t("description")}
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -88,9 +91,9 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Error al cargar el blog</h1>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">{t("errorLoading")}</h1>
             <p className="text-xl text-muted-foreground mb-8">{error}</p>
-            <Button onClick={() => window.location.reload()}>Intentar de nuevo</Button>
+            <Button onClick={() => window.location.reload()}>{t("retry")}</Button>
           </div>
         </div>
       </main>
@@ -101,9 +104,9 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
     <main className="min-h-screen py-12">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-4">Blog de Seguridad y Criptomonedas</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">{t("title")}</h1>
           <p className="text-xl text-muted-foreground">
-            Artículos, guías y noticias sobre seguridad cibernética, encriptación y el mundo crypto.
+            {t("description")}
           </p>
         </div>
 
@@ -113,7 +116,7 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
-                placeholder="Buscar artículos..."
+                placeholder={t("searchPlaceholder")}
                 className="pl-10"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -121,7 +124,7 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-medium">Categorías</h3>
+              <h3 className="font-medium">{t("categories")}</h3>
               <div className="space-y-2">
                 {categories.map((category) => (
                   <button
@@ -138,7 +141,7 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-medium">Artículos Populares</h3>
+              <h3 className="font-medium">{t("popularArticles")}</h3>
               <div className="space-y-4">
                 {popularPosts.map((post) => (
                   <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
@@ -168,7 +171,7 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
               {filteredPosts.length === 0 ? (
                 <div className="col-span-2 text-center py-12">
                   <p className="text-muted-foreground text-lg">
-                    {searchQuery ? `No se encontraron artículos para "${searchQuery}"` : "No hay artículos en esta categoría"}
+                    {searchQuery ? t("noResultsFor", { query: searchQuery }) : t("noArticlesInCategory")}
                   </p>
                 </div>
               ) : (
@@ -201,7 +204,7 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
                         <div className="flex justify-between items-center w-full">
                           <span className="text-xs text-muted-foreground">{new Date(post.date).toLocaleDateString()}</span>
                           <Button variant="ghost" size="sm" className="text-xs pointer-events-none">
-                            Leer más
+                            {t("readMore")}
                           </Button>
                         </div>
                       </CardFooter>
@@ -212,7 +215,7 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
             </div>
 
             <div className="mt-8 flex justify-center">
-              <Button variant="outline">Cargar Más Artículos</Button>
+              <Button variant="outline">{t("loadMore")}</Button>
             </div>
           </div>
         </div>
