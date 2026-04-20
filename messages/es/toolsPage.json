@@ -1,0 +1,45 @@
+{
+  "toolsPage": {
+    "meta": {
+      "title": "40 Herramientas de Seguridad y Desarrollo Gratuitas",
+      "description": "40 herramientas gratuitas de seguridad y desarrollo: generador de contraseñas, cifrado AES-256, verificador de filtraciones, conversor Base64 y más. Sin registro."
+    },
+    "breadcrumb": {
+      "home": "Inicio",
+      "tools": "Herramientas"
+    },
+    "heading": {
+      "title": "Herramientas de Seguridad",
+      "description": "Utiliza nuestras herramientas gratuitas para mejorar tu seguridad digital y proteger tu información."
+    },
+    "categoryNames": {
+      "Seguridad": "Seguridad",
+      "Privacidad": "Privacidad",
+      "Desarrollo": "Desarrollo",
+      "Utilidades": "Utilidades"
+    },
+    "useTool": "Usar Herramienta",
+    "needMore": {
+      "title": "¿Necesitas más herramientas?",
+      "description": "Estamos constantemente desarrollando nuevas herramientas de seguridad. Síguenos para estar al día con las últimas incorporaciones.",
+      "suggest": "Sugerir Herramienta",
+      "blog": "Ver Blog de Seguridad"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes sobre Herramientas",
+      "description": "Respuestas a las preguntas más comunes sobre nuestras herramientas de seguridad.",
+      "q1": "¿Las herramientas son completamente gratuitas?",
+      "a1": "Sí, todas nuestras herramientas básicas son completamente gratuitas y no requieren registro. Algunas funciones avanzadas pueden requerir una cuenta premium, pero las funcionalidades principales están disponibles sin costo.",
+      "q2": "¿Mis datos se almacenan en sus servidores?",
+      "a2": "No, la mayoría de nuestras herramientas procesan los datos localmente en tu navegador por seguridad. Los datos no se envían a nuestros servidores, garantizando tu privacidad y confidencialidad.",
+      "q3": "¿Puedo usar las herramientas sin conexión a internet?",
+      "a3": "Algunas herramientas como el generador de contraseñas funcionan completamente offline una vez cargadas. Otras que requieren verificaciones en tiempo real necesitan conexión a internet.",
+      "q4": "¿Con qué frecuencia actualizan las herramientas?",
+      "a4": "Actualizamos nuestras herramientas regularmente para mejorar la seguridad, agregar nuevas funciones y corregir errores. Las actualizaciones se implementan automáticamente sin interrumpir tu experiencia.",
+      "q5": "¿Puedo integrar estas herramientas en mi sitio web?",
+      "a5": "Ofrecemos APIs y widgets embebibles para algunas de nuestras herramientas. Contacta con nuestro equipo técnico para conocer las opciones de integración disponibles.",
+      "q6": "¿Las herramientas son seguras para uso empresarial?",
+      "a6": "Sí, nuestras herramientas están diseñadas con estándares de seguridad empresarial. Ofrecemos versiones premium con funciones adicionales de auditoría y cumplimiento para entornos corporativos."
+    }
+  }
+}

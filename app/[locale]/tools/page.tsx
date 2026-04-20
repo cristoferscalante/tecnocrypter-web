@@ -62,50 +62,42 @@ const tools = [
   { title: "Generador de Tablas CSV", description: "Crea tablas de datos visualmente y expórtalas como archivos CSV.", href: "/tools/generador-csv", icon: Table, category: "Utilidades" },
 ]
 
+import { getTranslations } from "next-intl/server"
 
-export const metadata: Metadata = generateToolMetadata({
-  title: "40 Herramientas de Seguridad y Desarrollo Gratuitas",
-  description: "40 herramientas gratuitas de seguridad y desarrollo: generador de contraseñas, cifrado AES-256, verificador de filtraciones, conversor Base64 y más. Sin registro.",
-  slug: "tools",
-  image: "https://tecnocrypter.com/seo/tools.webp",
-  keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita", "base64", "json validator", "uuid generator", "jwt decoder", "regex tester", "conversor colores", "formateador sql", "generador totp", "passphrase", "minificador css"]
-})
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "toolsPage.meta" })
+  return generateToolMetadata({
+    title: t("title"),
+    description: t("description"),
+    slug: "tools",
+    image: "https://tecnocrypter.com/seo/tools.webp",
+    keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita", "base64", "json validator", "uuid generator", "jwt decoder", "regex tester", "conversor colores", "formateador sql", "generador totp", "passphrase", "minificador css"]
+  })
+}
 
 // FAQ específicas para tools
 const toolsFaqs = [
-  {
-    question: "¿Las herramientas son completamente gratuitas?",
-    answer: "Sí, todas nuestras herramientas básicas son completamente gratuitas y no requieren registro. Algunas funciones avanzadas pueden requerir una cuenta premium, pero las funcionalidades principales están disponibles sin costo."
-  },
-  {
-    question: "¿Mis datos se almacenan en sus servidores?",
-    answer: "No, la mayoría de nuestras herramientas procesan los datos localmente en tu navegador por seguridad. Los datos no se envían a nuestros servidores, garantizando tu privacidad y confidencialidad."
-  },
-  {
-    question: "¿Puedo usar las herramientas sin conexión a internet?",
-    answer: "Algunas herramientas como el generador de contraseñas funcionan completamente offline una vez cargadas. Otras que requieren verificaciones en tiempo real necesitan conexión a internet."
-  },
-  {
-    question: "¿Con qué frecuencia actualizan las herramientas?",
-    answer: "Actualizamos nuestras herramientas regularmente para mejorar la seguridad, agregar nuevas funciones y corregir errores. Las actualizaciones se implementan automáticamente sin interrumpir tu experiencia."
-  },
-  {
-    question: "¿Puedo integrar estas herramientas en mi sitio web?",
-    answer: "Ofrecemos APIs y widgets embebibles para algunas de nuestras herramientas. Contacta con nuestro equipo técnico para conocer las opciones de integración disponibles."
-  },
-  {
-    question: "¿Las herramientas son seguras para uso empresarial?",
-    answer: "Sí, nuestras herramientas están diseñadas con estándares de seguridad empresarial. Ofrecemos versiones premium con funciones adicionales de auditoría y cumplimiento para entornos corporativos."
-  }
-]
 
 
-export default function ToolsPage() {
+export default async function ToolsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "toolsPage" })
+
+  const toolsFaqs = [
+    { question: t("faq.q1"), answer: t("faq.a1") },
+    { question: t("faq.q2"), answer: t("faq.a2") },
+    { question: t("faq.q3"), answer: t("faq.a3") },
+    { question: t("faq.q4"), answer: t("faq.a4") },
+    { question: t("faq.q5"), answer: t("faq.a5") },
+    { question: t("faq.q6"), answer: t("faq.a6") }
+  ]
+
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Herramientas de Seguridad Digital",
-    description: "Colección de herramientas gratuitas de ciberseguridad y privacidad online.",
+    name: t("heading.title"),
+    description: t("heading.description"),
     numberOfItems: tools.length,
     itemListElement: tools.map((tool, index) => ({
       "@type": "ListItem",
@@ -120,8 +112,8 @@ export default function ToolsPage() {
     <>
       <BreadcrumbStructuredData
         items={[
-          { name: "Inicio", url: "https://tecnocrypter.com" },
-          { name: "Herramientas", url: "https://tecnocrypter.com/tools" },
+          { name: t("breadcrumb.home"), url: "https://tecnocrypter.com" },
+          { name: t("breadcrumb.tools"), url: "https://tecnocrypter.com/tools" },
         ]}
       />
       <FAQStructuredData faqs={toolsFaqs} />
@@ -132,9 +124,9 @@ export default function ToolsPage() {
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Herramientas de Seguridad</h1>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">{t("heading.title")}</h1>
             <p className="text-xl text-muted-foreground">
-              Utiliza nuestras herramientas gratuitas para mejorar tu seguridad digital y proteger tu información.
+              {t("heading.description")}
             </p>
           </div>
 
@@ -149,7 +141,7 @@ export default function ToolsPage() {
                         <IconComponent className="h-6 w-6 text-primary" />
                       </div>
                       <span className="text-sm font-medium text-muted-foreground bg-muted px-2 py-1 rounded-full">
-                        {tool.category}
+                        {t(`categoryNames.${tool.category}`) || tool.category}
                       </span>
                     </div>
                     <CardTitle className="text-xl group-hover:text-primary transition-colors">
@@ -162,7 +154,7 @@ export default function ToolsPage() {
                   <CardContent>
                     <Link href={tool.href}>
                       <Button className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                        Usar Herramienta
+                        {t("useTool")}
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </Link>
@@ -174,20 +166,19 @@ export default function ToolsPage() {
 
           <div className="mt-16 text-center">
             <div className="bg-muted/50 rounded-lg p-8 max-w-2xl mx-auto">
-              <h2 className="text-2xl font-bold mb-4">¿Necesitas más herramientas?</h2>
+              <h2 className="text-2xl font-bold mb-4">{t("needMore.title")}</h2>
               <p className="text-muted-foreground mb-6">
-                Estamos constantemente desarrollando nuevas herramientas de seguridad. 
-                Síguenos para estar al día con las últimas incorporaciones.
+                {t("needMore.description")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contacto">
                   <Button variant="outline">
-                    Sugerir Herramienta
+                    {t("needMore.suggest")}
                   </Button>
                 </Link>
                 <Link href="/blog">
                   <Button>
-                    Ver Blog de Seguridad
+                    {t("needMore.blog")}
                   </Button>
                 </Link>
               </div>
@@ -196,8 +187,8 @@ export default function ToolsPage() {
         </div>
         
         <ReusableFaqSection 
-          title="Preguntas Frecuentes sobre Herramientas"
-          description="Respuestas a las preguntas más comunes sobre nuestras herramientas de seguridad."
+          title={t("faq.title")}
+          description={t("faq.description")}
           faqs={toolsFaqs}
         />
       </main>
