@@ -14,9 +14,10 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { ProductService } from "@/services/product-service"
 import { ReusableFaqSection } from "@/components/sections/reusable-faq-section"
 import type { Product } from "@/types"
-
+import { useTranslations } from "next-intl"
 
 export default function ProductosPage() {
+  const t = useTranslations("products")
   const [products, setProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
   const [searchQuery, setSearchQuery] = useState("")
@@ -135,9 +136,9 @@ export default function ProductosPage() {
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Servicios Profesionales de Seguridad Digital</h1>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">{t("heading.title")}</h1>
             <p className="text-xl text-muted-foreground">
-              Desarrollo web seguro, capacitaciones especializadas y servicios de ciberseguridad empresarial.
+              {t("heading.description")}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -175,7 +176,7 @@ export default function ProductosPage() {
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input 
-                placeholder="Buscar productos..." 
+                placeholder={t("filters.search")} 
                 className="pl-10" 
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -186,7 +187,7 @@ export default function ProductosPage() {
               <div className="flex items-center justify-between mb-4">
                 <h3 className="font-medium">Filtros</h3>
                 <Button variant="ghost" size="sm" className="h-8 text-xs" onClick={clearFilters}>
-                  Limpiar
+                  {t("empty.clear")}
                 </Button>
               </div>
 
@@ -276,10 +277,10 @@ export default function ProductosPage() {
                     <SelectValue placeholder="Ordenar por" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="featured">Destacados</SelectItem>
-                    <SelectItem value="price-low">Precio: Menor a Mayor</SelectItem>
-                    <SelectItem value="price-high">Precio: Mayor a Menor</SelectItem>
-                    <SelectItem value="newest">Más Recientes</SelectItem>
+                    <SelectItem value="featured">{t("filters.sortPopular")}</SelectItem>
+                    <SelectItem value="price-low">{t("filters.sortPriceLow")}</SelectItem>
+                    <SelectItem value="price-high">{t("filters.sortPriceHigh")}</SelectItem>
+                    <SelectItem value="newest">{t("filters.sortNewest")}</SelectItem>
                   </SelectContent>
                 </Select>
                 <Button variant="outline" size="icon" className="hidden sm:flex">
@@ -339,7 +340,7 @@ export default function ProductosPage() {
                       <Button asChild size="sm">
                         <Link href={`/productos/${product.id}`}>
                           <ShoppingCart className="mr-2 h-4 w-4" />
-                          Comprar
+                          {t("card.buyNow")}
                         </Link>
                       </Button>
                     </div>
@@ -349,7 +350,7 @@ export default function ProductosPage() {
             </div>
 
             <div className="mt-8 flex justify-center">
-              <Button variant="outline">Cargar Más Productos</Button>
+              <Button variant="outline">{t("loading").replace("...", "")} +</Button>
             </div>
           </div>
         </div>

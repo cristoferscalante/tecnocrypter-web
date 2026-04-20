@@ -1,13 +1,20 @@
 import type { Metadata } from "next"
 import { generateProductMetadata } from "@/lib/metadata"
 
-export const metadata: Metadata = generateProductMetadata({
-  title: "Servicios de Seguridad Digital | TecnoCrypter",
-  description: "Desarrollo web seguro, capacitaciones en ciberseguridad y respuesta a incidentes. Protege tu negocio con expertos certificados en seguridad digital.",
-  slug: "productos",
-  image: "/Seo/productos.webp",
-  keywords: ["desarrollo web seguro", "capacitación ciberseguridad", "prevención ataques", "servicios seguridad"]  
-})
+import { getTranslations } from "next-intl/server"
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "products.meta" })
+
+  return generateProductMetadata({
+    title: t("title"),
+    description: t("description"),
+    slug: "productos",
+    image: "/Seo/productos.webp",
+    keywords: ["desarrollo web seguro", "capacitación ciberseguridad", "prevención ataques", "servicios seguridad"]  
+  })
+}
 
 export default function ProductosLayout({
   children,
