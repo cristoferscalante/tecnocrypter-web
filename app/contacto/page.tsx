@@ -9,7 +9,7 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Contacto - TecnoCrypter",
-  description: "Ponte en contacto with nuestro equipo de expertos en seguridad cibernética y encriptación. Soporte técnico 24/7 y consultas especializadas.",
+  description: "Ponte en contacto con nuestro equipo de expertos en ciberseguridad y cifrado. Soporte técnico 24/7, consultas especializadas y asesoría personalizada.",
   slug: "contacto",
   image: "/Seo/contacto.webp",
   keywords: ["contacto tecnocrypter", "soporte técnico", "consultas ciberseguridad", "expertos encriptación"]

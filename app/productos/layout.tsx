@@ -3,7 +3,7 @@ import { generateProductMetadata } from "@/lib/metadata"
 
 export const metadata: Metadata = generateProductMetadata({
   title: "Servicios de Seguridad Digital | TecnoCrypter",
-  description: "Desarrollo web seguro, capacitaciones en ciberseguridad, prevención de ataques y respuesta a incidentes.",
+  description: "Desarrollo web seguro, capacitaciones en ciberseguridad y respuesta a incidentes. Protege tu negocio con expertos certificados en seguridad digital.",
   slug: "productos",
   image: "/Seo/productos.webp",
   keywords: ["desarrollo web seguro", "capacitación ciberseguridad", "prevención ataques", "servicios seguridad"]  

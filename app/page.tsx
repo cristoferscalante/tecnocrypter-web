@@ -13,11 +13,11 @@ import { NewsletterSection } from "@/components/sections/newsletter-section"
 import { CtaSection } from "@/components/sections/cta-section"
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "TecnoCrypter - Plataforma de Herramientas de Ciberseguridad",
-  description: "Descubre las mejores herramientas de ciberseguridad, análisis de vulnerabilidades, encriptación y protección digital. Recursos educativos y productos especializados.",
+  title: "TecnoCrypter - Herramientas Gratuitas de Ciberseguridad y Cifrado",
+  description: "+40 herramientas gratuitas de ciberseguridad: generador de contraseñas, cifrado AES-256, verificador de filtraciones y más. Todo funciona en tu navegador, sin enviar datos.",
   slug: "",
   image: "https://tecnocrypter.com/seo/home.webp",
-  keywords: ["ciberseguridad", "herramientas seguridad", "encriptación", "vulnerabilidades", "hacking ético", "pentesting"]
+  keywords: ["ciberseguridad", "herramientas seguridad", "encriptación", "generador contraseñas", "cifrado online", "privacidad digital"]
 })
 
 export default function HomePage() {

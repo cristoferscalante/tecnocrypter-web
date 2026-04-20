@@ -65,7 +65,7 @@ const tools = [
 
 export const metadata: Metadata = generateToolMetadata({
   title: "40 Herramientas de Seguridad y Desarrollo Gratuitas",
-  description: "Accede a nuestras 40 herramientas gratuitas: seguridad, privacidad, desarrollo y utilidades. Generador de contraseñas, verificador de filtraciones, conversor Base64, validador JSON, formateador SQL, generador TOTP y mucho más.",
+  description: "40 herramientas gratuitas de seguridad y desarrollo: generador de contraseñas, cifrado AES-256, verificador de filtraciones, conversor Base64 y más. Sin registro.",
   slug: "tools",
   image: "https://tecnocrypter.com/seo/tools.webp",
   keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita", "base64", "json validator", "uuid generator", "jwt decoder", "regex tester", "conversor colores", "formateador sql", "generador totp", "passphrase", "minificador css"]

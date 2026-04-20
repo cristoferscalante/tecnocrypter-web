@@ -4,15 +4,15 @@ import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/compon
 import CifradoOnline from "@/components/tools/cifrado-online-client"
 
 export const metadata: Metadata = generateToolMetadata({
-  title: "Cifrado Online",
-  description: "Cifra y descifra textos y archivos de forma segura directamente en tu navegador. Soporta AES-256-GCM, ChaCha20 y mÃ¡s algoritmos de encriptaciÃ³n modernos sin enviar datos al servidor.",
+  title: "Cifrado Online - AES-256 y ChaCha20 Gratis",
+  description: "Cifra y descifra textos y archivos de forma segura directamente en tu navegador. Soporta AES-256-GCM, ChaCha20 y más algoritmos modernos sin enviar datos al servidor.",
   slug: "tools/cifrado-online",
   keywords: [
     "cifrado online",
     "encriptar texto",
     "descifrar texto",
     "AES-256",
-    "encriptaciÃ³n online",
+    "encriptación online",
     "cifrado de archivos",
     "herramienta cifrado",
     "encriptar gratis",

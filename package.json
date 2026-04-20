@@ -9,7 +9,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "postbuild": "next-sitemap",
+
     "seo:validate": "node scripts/seo-validation.js",
     "seo:check": "pnpm run seo:validate && echo SEO validation completed"
   },

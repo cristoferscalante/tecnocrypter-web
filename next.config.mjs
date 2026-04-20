@@ -57,22 +57,8 @@ const nextConfig = {
         destination: '/tools/generador-contrasenas',
         permanent: true,
       },
-      // Redirecciones para páginas de contenido
-      {
-        source: '/noticias',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/encriptacion',
-        destination: '/blog/encriptacion-end-to-end',
-        permanent: true,
-      },
-      {
-        source: '/criptomonedas',
-        destination: '/blog',
-        permanent: true,
-      },
+      // NOTA: /noticias, /encriptacion, /criptomonedas tienen páginas propias
+      // No se redirigen para evitar conflictos con Google Search Console
     ]
   },
 }

@@ -7,8 +7,8 @@ import Link from "next/link"
 import { generatePageMetadata } from "@/lib/metadata"
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Seguridad Cibernética - TecnoCrypter",
-  description: "Soluciones avanzadas de seguridad cibernética y encriptación para proteger tus activos digitales. Protección personal y empresarial.",
+  title: "Seguridad Cibernética - Protección Personal y Empresarial",
+  description: "Protege tus datos con soluciones de ciberseguridad: antivirus, VPN, cifrado de archivos y auditorías de seguridad. Guía completa para empresas y particulares.",
   slug: "seguridad",
   image: "/Seo/seguridad.jpg",
   keywords: ["seguridad cibernética", "encriptación", "protección digital", "antivirus", "VPN", "seguridad empresarial"]

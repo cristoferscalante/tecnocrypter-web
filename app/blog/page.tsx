@@ -38,9 +38,9 @@ const blogFaqs = [
 ];
 
 export const metadata: Metadata = generateBlogMetadata({
-  title: "Blog de Seguridad y Criptomonedas",
+  title: "Blog de Ciberseguridad y Criptomonedas",
   description:
-    "Artículos, guías y noticias sobre seguridad cibernética, encriptación y el mundo crypto.",
+    "Guías prácticas, análisis técnicos y noticias actualizadas sobre ciberseguridad, cifrado, blockchain y criptomonedas. Escrito por expertos certificados.",
   slug: "blog",
   image: "https://tecnocrypter.com/seo/blog.webp",
   keywords: [
