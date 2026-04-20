@@ -1,0 +1,46 @@
+{
+  "blog": {
+    "meta": {
+      "title": "Cybersecurity and Cryptocurrency Blog",
+      "description": "Practical guides, technical analysis and updated news on cybersecurity, encryption, blockchain and cryptocurrencies. Written by certified experts."
+    },
+    "client": {
+      "title": "Security and Cryptocurrency Blog",
+      "description": "Articles, guides and news about cybersecurity, encryption and the crypto world.",
+      "searchPlaceholder": "Search articles...",
+      "categories": "Categories",
+      "popularArticles": "Popular Articles",
+      "categoryAll": "All",
+      "categorySecurity": "Security",
+      "categoryEncryption": "Encryption",
+      "categoryCrypto": "Cryptocurrencies",
+      "categoryNews": "News",
+      "noResultsFor": "No articles found for \"{query}\"",
+      "noArticlesInCategory": "No articles in this category",
+      "readMore": "Read more",
+      "loadMore": "Load More Articles",
+      "errorLoading": "Error loading blog",
+      "retry": "Try again"
+    },
+    "faq": {
+      "title": "Blog FAQ",
+      "description": "Answers to the most common questions about our cybersecurity blog.",
+      "q1": "How often do you publish new articles?",
+      "a1": "We publish new articles weekly, covering topics on cybersecurity, encryption and cryptocurrencies.",
+      "q2": "Can I suggest topics for future articles?",
+      "a2": "Of course! We love receiving suggestions. You can contact us through our contact form.",
+      "q3": "Are the articles written by certified experts?",
+      "a3": "Yes, all our content is created and reviewed by certified cybersecurity professionals.",
+      "q4": "Can I share blog articles?",
+      "a4": "Yes, all our articles can be shared. We appreciate if you cite the original source.",
+      "q5": "Do you offer content for beginners?",
+      "a5": "Yes, we have content for all levels, from beginners to security experts.",
+      "q6": "How can I stay up to date with the latest posts?",
+      "a6": "You can subscribe to our newsletter or follow us on social media to never miss an article."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "blog": "Blog"
+    }
+  }
+}

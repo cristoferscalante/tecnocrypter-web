@@ -1,0 +1,46 @@
+{
+  "blog": {
+    "meta": {
+      "title": "Blog de Cibersegurança e Criptomoedas",
+      "description": "Guias práticos, análises técnicas e notícias atualizadas sobre cibersegurança, criptografia, blockchain e criptomoedas. Escrito por especialistas certificados."
+    },
+    "client": {
+      "title": "Blog de Segurança e Criptomoedas",
+      "description": "Artigos, guias e notícias sobre cibersegurança, criptografia e o mundo crypto.",
+      "searchPlaceholder": "Buscar artigos...",
+      "categories": "Categorias",
+      "popularArticles": "Artigos Populares",
+      "categoryAll": "Todos",
+      "categorySecurity": "Segurança",
+      "categoryEncryption": "Criptografia",
+      "categoryCrypto": "Criptomoedas",
+      "categoryNews": "Notícias",
+      "noResultsFor": "Nenhum artigo encontrado para \"{query}\"",
+      "noArticlesInCategory": "Nenhum artigo nesta categoria",
+      "readMore": "Ler mais",
+      "loadMore": "Carregar Mais Artigos",
+      "errorLoading": "Erro ao carregar o blog",
+      "retry": "Tentar novamente"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes sobre o Blog",
+      "description": "Respostas às perguntas mais comuns sobre nosso blog de cibersegurança.",
+      "q1": "Com que frequência vocês publicam novos artigos?",
+      "a1": "Publicamos novos artigos semanalmente, cobrindo temas de cibersegurança, criptografia e criptomoedas.",
+      "q2": "Posso sugerir temas para futuros artigos?",
+      "a2": "Claro! Adoramos receber sugestões. Você pode nos contatar através do nosso formulário de contato.",
+      "q3": "Os artigos são escritos por especialistas certificados?",
+      "a3": "Sim, todo nosso conteúdo é criado e revisado por profissionais certificados em cibersegurança.",
+      "q4": "Posso compartilhar os artigos do blog?",
+      "a4": "Sim, todos os nossos artigos podem ser compartilhados. Agradecemos se você citar a fonte original.",
+      "q5": "Vocês oferecem conteúdo para iniciantes?",
+      "a5": "Sim, temos conteúdo para todos os níveis, de iniciantes a especialistas em segurança.",
+      "q6": "Como posso ficar por dentro das últimas publicações?",
+      "a6": "Você pode assinar nossa newsletter ou nos seguir nas redes sociais para não perder nenhum artigo."
+    },
+    "breadcrumb": {
+      "home": "Início",
+      "blog": "Blog"
+    }
+  }
+}

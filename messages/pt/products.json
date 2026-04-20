@@ -1,0 +1,62 @@
+{
+  "products": {
+    "meta": {
+      "title": "Produtos de Segurança Digital - TecnoCrypter",
+      "description": "Descubra nossa seleção de produtos premium de segurança digital, criptografia de dados e proteção de privacidade. Soluções avançadas aos melhores preços.",
+      "keywords": ["produtos segurança digital", "criptografia dados", "proteção privacidade"]
+    },
+    "heading": {
+      "title": "Produtos de Segurança Digital",
+      "description": "Descubra nossa seleção premium de ferramentas e soluções de segurança digital."
+    },
+    "filters": {
+      "search": "Buscar produtos...",
+      "all": "Todos",
+      "security": "Segurança",
+      "encryption": "Criptografia",
+      "privacy": "Privacidade",
+      "crypto": "Criptomoedas",
+      "sortBy": "Ordenar por",
+      "sortPopular": "Mais Popular",
+      "sortPriceLow": "Preço: Menor para Maior",
+      "sortPriceHigh": "Preço: Maior para Menor",
+      "sortNewest": "Mais Recente",
+      "sortRating": "Melhor Avaliado"
+    },
+    "card": {
+      "featured": "Destaque",
+      "new": "Novo",
+      "hot": "Popular",
+      "addToCart": "Adicionar ao Carrinho",
+      "buyNow": "Comprar Agora",
+      "viewDetails": "Ver Detalhes",
+      "free": "Grátis",
+      "from": "A partir de",
+      "reviews": "avaliações",
+      "rating": "classificação",
+      "outOfStock": "Esgotado",
+      "discount": "Desconto"
+    },
+    "empty": {
+      "title": "Nenhum produto encontrado",
+      "description": "Tente ajustar os filtros ou buscar com outros termos.",
+      "clear": "Limpar Filtros"
+    },
+    "loading": "Carregando produtos...",
+    "error": "Erro ao carregar os produtos",
+    "retry": "Tentar novamente",
+    "payWith": "Pagar com Criptomoedas",
+    "cryptoPayment": {
+      "title": "Pagamento com Criptomoedas",
+      "description": "Pague com segurança com Bitcoin, Ethereum ou outras criptomoedas.",
+      "selectCurrency": "Selecione a moeda",
+      "amount": "Valor a pagar",
+      "address": "Endereço de pagamento",
+      "copyAddress": "Copiar endereço",
+      "copied": "Copiado!",
+      "waitingPayment": "Aguardando confirmação de pagamento...",
+      "paymentConfirmed": "Pagamento confirmado!",
+      "scanQR": "Escaneie o código QR para pagar"
+    }
+  }
+}

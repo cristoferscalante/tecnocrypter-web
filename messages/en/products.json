@@ -1,0 +1,62 @@
+{
+  "products": {
+    "meta": {
+      "title": "Digital Security Products - TecnoCrypter",
+      "description": "Discover our selection of premium digital security products, data encryption and privacy protection. Advanced solutions at the best prices.",
+      "keywords": ["digital security products", "data encryption", "privacy protection"]
+    },
+    "heading": {
+      "title": "Digital Security Products",
+      "description": "Discover our premium selection of digital security tools and solutions."
+    },
+    "filters": {
+      "search": "Search products...",
+      "all": "All",
+      "security": "Security",
+      "encryption": "Encryption",
+      "privacy": "Privacy",
+      "crypto": "Cryptocurrencies",
+      "sortBy": "Sort by",
+      "sortPopular": "Most Popular",
+      "sortPriceLow": "Price: Low to High",
+      "sortPriceHigh": "Price: High to Low",
+      "sortNewest": "Newest",
+      "sortRating": "Top Rated"
+    },
+    "card": {
+      "featured": "Featured",
+      "new": "New",
+      "hot": "Hot",
+      "addToCart": "Add to Cart",
+      "buyNow": "Buy Now",
+      "viewDetails": "View Details",
+      "free": "Free",
+      "from": "From",
+      "reviews": "reviews",
+      "rating": "rating",
+      "outOfStock": "Out of Stock",
+      "discount": "Discount"
+    },
+    "empty": {
+      "title": "No products found",
+      "description": "Try adjusting the filters or searching with different terms.",
+      "clear": "Clear Filters"
+    },
+    "loading": "Loading products...",
+    "error": "Error loading products",
+    "retry": "Try again",
+    "payWith": "Pay with Cryptocurrencies",
+    "cryptoPayment": {
+      "title": "Cryptocurrency Payment",
+      "description": "Pay securely with Bitcoin, Ethereum or other cryptocurrencies.",
+      "selectCurrency": "Select currency",
+      "amount": "Amount to pay",
+      "address": "Payment address",
+      "copyAddress": "Copy address",
+      "copied": "Copied!",
+      "waitingPayment": "Waiting for payment confirmation...",
+      "paymentConfirmed": "Payment confirmed!",
+      "scanQR": "Scan the QR code to pay"
+    }
+  }
+}

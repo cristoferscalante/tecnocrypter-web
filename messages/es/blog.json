@@ -1,0 +1,46 @@
+{
+  "blog": {
+    "meta": {
+      "title": "Blog de Ciberseguridad y Criptomonedas",
+      "description": "Guías prácticas, análisis técnicos y noticias actualizadas sobre ciberseguridad, cifrado, blockchain y criptomonedas. Escrito por expertos certificados."
+    },
+    "client": {
+      "title": "Blog de Seguridad y Criptomonedas",
+      "description": "Artículos, guías y noticias sobre seguridad cibernética, encriptación y el mundo crypto.",
+      "searchPlaceholder": "Buscar artículos...",
+      "categories": "Categorías",
+      "popularArticles": "Artículos Populares",
+      "categoryAll": "Todos",
+      "categorySecurity": "Seguridad",
+      "categoryEncryption": "Encriptación",
+      "categoryCrypto": "Criptomonedas",
+      "categoryNews": "Noticias",
+      "noResultsFor": "No se encontraron artículos para \"{query}\"",
+      "noArticlesInCategory": "No hay artículos en esta categoría",
+      "readMore": "Leer más",
+      "loadMore": "Cargar Más Artículos",
+      "errorLoading": "Error al cargar el blog",
+      "retry": "Intentar de nuevo"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes sobre el Blog",
+      "description": "Respuestas a las preguntas más comunes sobre nuestro blog de ciberseguridad.",
+      "q1": "¿Con qué frecuencia publican nuevos artículos?",
+      "a1": "Publicamos nuevos artículos semanalmente, cubriendo temas de ciberseguridad, encriptación y criptomonedas.",
+      "q2": "¿Puedo sugerir temas para futuros artículos?",
+      "a2": "¡Por supuesto! Nos encanta recibir sugerencias. Puedes contactarnos a través de nuestro formulario de contacto.",
+      "q3": "¿Los artículos están escritos por expertos certificados?",
+      "a3": "Sí, todo nuestro contenido es creado y revisado por profesionales certificados en ciberseguridad.",
+      "q4": "¿Puedo compartir los artículos del blog?",
+      "a4": "Sí, todos nuestros artículos pueden ser compartidos. Agradecemos que cites la fuente original.",
+      "q5": "¿Ofrecen contenido para principiantes?",
+      "a5": "Sí, tenemos contenido para todos los niveles, desde principiantes hasta expertos en seguridad.",
+      "q6": "¿Cómo puedo estar al día con las últimas publicaciones?",
+      "a6": "Puedes suscribirte a nuestro boletín o seguirnos en redes sociales para no perderte ningún artículo."
+    },
+    "breadcrumb": {
+      "home": "Inicio",
+      "blog": "Blog"
+    }
+  }
+}

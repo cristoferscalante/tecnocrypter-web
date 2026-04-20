@@ -1,0 +1,12 @@
+{
+  "notFound": {
+    "code": "404",
+    "title": "Acceso Denegado",
+    "subtitle": "Ruta No Encontrada en el Sistema",
+    "securityBadge": "SISTEMA DE SEGURIDAD",
+    "description": "La página solicitada ha sido encriptada o reubicada por nuestros protocolos de seguridad. Nuestros sistemas de ciberseguridad mantienen la integridad de la plataforma en todo momento.",
+    "backHome": "Volver al Inicio",
+    "explore": "Explorar Contenido",
+    "protected": "Protegido por TecnoCrypter Security"
+  }
+}

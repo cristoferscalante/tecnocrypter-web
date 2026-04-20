@@ -1,0 +1,57 @@
+{
+  "contact": {
+    "meta": {
+      "title": "Contacto - TecnoCrypter",
+      "description": "Ponte en contacto con nuestro equipo de expertos en ciberseguridad y cifrado. Soporte técnico 24/7, consultas especializadas y asesoría personalizada.",
+      "keywords": ["contacto tecnocrypter", "soporte técnico", "consultas ciberseguridad", "expertos encriptación"]
+    },
+    "heading": {
+      "title": "Contacta con Nuestros Expertos",
+      "description": "Estamos aquí para ayudarte con cualquier consulta sobre seguridad cibernética, encriptación o criptomonedas."
+    },
+    "form": {
+      "title": "Envíanos un Mensaje",
+      "description": "Completa el formulario y te responderemos a la brevedad.",
+      "firstName": "Nombre",
+      "firstNamePlaceholder": "Tu nombre",
+      "lastName": "Apellido",
+      "lastNamePlaceholder": "Tu apellido",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Selecciona un asunto",
+      "subjectGeneral": "Consulta General",
+      "subjectSupport": "Soporte Técnico",
+      "subjectSales": "Ventas",
+      "subjectPartnership": "Asociaciones",
+      "subjectOther": "Otro",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí...",
+      "submit": "Enviar Mensaje"
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "description": "Diferentes formas de ponerte en contacto con nosotros.",
+      "emailTitle": "Correo Electrónico",
+      "phoneTitle": "Teléfono",
+      "phoneHours": "Lun-Vie: 9:00 - 18:00",
+      "locationTitle": "Ubicación",
+      "locationAddress1": "Calle Tecnología 123, Piso 4",
+      "locationAddress2": "Ciudad Digital, CD 12345",
+      "hoursTitle": "Horario de Atención",
+      "hoursWeekday": "Lunes a Viernes: 9:00 - 18:00",
+      "hoursSaturday": "Sábados: 10:00 - 14:00"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "description": "Respuestas rápidas a preguntas comunes.",
+      "q1": "¿Cuáles son los métodos de pago aceptados?",
+      "a1": "Aceptamos Bitcoin (BTC), Ethereum (ETH), Tether (USDT) y otras criptomonedas principales.",
+      "q2": "¿Ofrecen soporte técnico 24/7?",
+      "a2": "Sí, nuestro equipo de soporte técnico está disponible las 24 horas para clientes con plan Premium.",
+      "q3": "¿Tienen una política de reembolso?",
+      "a3": "Ofrecemos una garantía de devolución de 30 días para todos nuestros productos digitales."
+    },
+    "imageAlt": "TecnoCrypter - Seguridad Digital"
+  }
+}

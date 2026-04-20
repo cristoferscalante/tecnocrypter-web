@@ -1,0 +1,27 @@
+{
+  "security": {
+    "meta": {
+      "title": "Sécurité Numérique - TecnoCrypter",
+      "description": "Protégez votre monde numérique avec nos outils et guides de cybersécurité. Solutions avancées contre les menaces numériques.",
+      "keywords": ["sécurité numérique", "cybersécurité", "protection données", "menaces numériques"]
+    },
+    "heading": {
+      "title": "Sécurité Numérique",
+      "description": "Outils et ressources avancés pour protéger votre présence numérique."
+    },
+    "categories": {
+      "allCategories": "Toutes les Catégories",
+      "passwords": "Mots de Passe",
+      "encryption": "Chiffrement",
+      "privacy": "Confidentialité",
+      "authentication": "Authentification",
+      "network": "Réseau",
+      "malware": "Malware"
+    },
+    "cta": {
+      "title": "Besoin d'Aide pour Votre Sécurité ?",
+      "description": "Nos experts sont disponibles pour vous aider à protéger votre infrastructure numérique.",
+      "button": "Contacter les Experts"
+    }
+  }
+}

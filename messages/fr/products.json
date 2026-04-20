@@ -1,0 +1,62 @@
+{
+  "products": {
+    "meta": {
+      "title": "Produits de Sécurité Numérique - TecnoCrypter",
+      "description": "Découvrez notre sélection de produits premium de sécurité numérique, chiffrement de données et protection de la vie privée. Solutions avancées aux meilleurs prix.",
+      "keywords": ["produits sécurité numérique", "chiffrement données", "protection vie privée"]
+    },
+    "heading": {
+      "title": "Produits de Sécurité Numérique",
+      "description": "Découvrez notre sélection premium d'outils et solutions de sécurité numérique."
+    },
+    "filters": {
+      "search": "Rechercher des produits...",
+      "all": "Tous",
+      "security": "Sécurité",
+      "encryption": "Chiffrement",
+      "privacy": "Confidentialité",
+      "crypto": "Cryptomonnaies",
+      "sortBy": "Trier par",
+      "sortPopular": "Plus Populaire",
+      "sortPriceLow": "Prix : Croissant",
+      "sortPriceHigh": "Prix : Décroissant",
+      "sortNewest": "Plus Récent",
+      "sortRating": "Mieux Noté"
+    },
+    "card": {
+      "featured": "En vedette",
+      "new": "Nouveau",
+      "hot": "Populaire",
+      "addToCart": "Ajouter au Panier",
+      "buyNow": "Acheter",
+      "viewDetails": "Voir les Détails",
+      "free": "Gratuit",
+      "from": "À partir de",
+      "reviews": "avis",
+      "rating": "note",
+      "outOfStock": "Rupture de Stock",
+      "discount": "Remise"
+    },
+    "empty": {
+      "title": "Aucun produit trouvé",
+      "description": "Essayez d'ajuster les filtres ou de rechercher avec d'autres termes.",
+      "clear": "Effacer les Filtres"
+    },
+    "loading": "Chargement des produits...",
+    "error": "Erreur lors du chargement des produits",
+    "retry": "Réessayer",
+    "payWith": "Payer en Cryptomonnaies",
+    "cryptoPayment": {
+      "title": "Paiement en Cryptomonnaies",
+      "description": "Payez en toute sécurité avec Bitcoin, Ethereum ou d'autres cryptomonnaies.",
+      "selectCurrency": "Sélectionnez la monnaie",
+      "amount": "Montant à payer",
+      "address": "Adresse de paiement",
+      "copyAddress": "Copier l'adresse",
+      "copied": "Copié !",
+      "waitingPayment": "En attente de confirmation de paiement...",
+      "paymentConfirmed": "Paiement confirmé !",
+      "scanQR": "Scannez le code QR pour payer"
+    }
+  }
+}

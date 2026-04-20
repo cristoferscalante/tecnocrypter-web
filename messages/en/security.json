@@ -1,0 +1,27 @@
+{
+  "security": {
+    "meta": {
+      "title": "Digital Security - TecnoCrypter",
+      "description": "Protect your digital world with our cybersecurity tools and guides. Advanced solutions against digital threats.",
+      "keywords": ["digital security", "cybersecurity", "data protection", "digital threats"]
+    },
+    "heading": {
+      "title": "Digital Security",
+      "description": "Advanced tools and resources to protect your digital presence."
+    },
+    "categories": {
+      "allCategories": "All Categories",
+      "passwords": "Passwords",
+      "encryption": "Encryption",
+      "privacy": "Privacy",
+      "authentication": "Authentication",
+      "network": "Network",
+      "malware": "Malware"
+    },
+    "cta": {
+      "title": "Need Help with Your Security?",
+      "description": "Our experts are available to help you protect your digital infrastructure.",
+      "button": "Contact Experts"
+    }
+  }
+}

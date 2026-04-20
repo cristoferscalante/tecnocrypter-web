@@ -1,0 +1,19 @@
+{
+  "categories": {
+    "encriptacion": {
+      "title": "Criptografia e Ciframento - TecnoCrypter",
+      "description": "Guias completos sobre criptografia, ciframento de dados e proteção da informação.",
+      "keywords": ["criptografia", "ciframento", "proteção de dados", "AES", "RSA"]
+    },
+    "criptomonedas": {
+      "title": "Criptomoedas - TecnoCrypter",
+      "description": "Análises, guias e notícias atualizadas sobre Bitcoin, Ethereum e o ecossistema crypto.",
+      "keywords": ["criptomoedas", "bitcoin", "ethereum", "blockchain", "crypto"]
+    },
+    "noticias": {
+      "title": "Notícias de Cibersegurança - TecnoCrypter",
+      "description": "Últimas notícias e atualizações sobre cibersegurança, ameaças digitais e proteção.",
+      "keywords": ["notícias cibersegurança", "ameaças digitais", "atualizações segurança"]
+    }
+  }
+}
