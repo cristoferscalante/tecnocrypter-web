@@ -8,9 +8,11 @@ import { Button } from "@/components/ui/button"
 import { Clock, ArrowRight } from "lucide-react"
 import type { BlogPost } from "@/types"
 import { useBlog } from "@/hooks/use-blog"
+import { useTranslations } from "next-intl"
 
 export function FeaturedPosts() {
   const { posts, loading, error, getFeaturedPosts } = useBlog()
+  const t = useTranslations("home.featuredPosts")
   const featuredPosts = getFeaturedPosts().slice(0, 3)
 
   if (loading) {
@@ -18,9 +20,9 @@ export function FeaturedPosts() {
       <section className="py-16 bg-muted/50">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight mb-4">Artículos Destacados</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">{t("title")}</h2>
             <p className="text-muted-foreground">
-              Los últimos insights sobre seguridad, encriptación y criptomonedas.
+              {t("description")}
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -50,10 +52,10 @@ export function FeaturedPosts() {
   return (
     <section className="container py-16">
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl font-bold tracking-tight">Artículos Destacados</h2>
+        <h2 className="text-3xl font-bold tracking-tight">{t("title")}</h2>
         <Button asChild variant="ghost" className="group">
           <Link href="/blog">
-            Ver todos
+            {t("viewAll")}
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </Button>
@@ -93,7 +95,7 @@ export function FeaturedPosts() {
                     {new Date(post.date).toLocaleDateString()}
                   </span>
                   <Button variant="ghost" size="sm" className="text-xs pointer-events-none">
-                    Leer más
+                    {t("readMore")}
                   </Button>
                 </div>
               </CardFooter>

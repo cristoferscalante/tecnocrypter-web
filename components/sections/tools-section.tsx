@@ -14,6 +14,7 @@ import {
   Ruler, Percent, Table
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { useTranslations } from "next-intl"
 
 type Category = "Todas" | "Seguridad" | "Privacidad" | "Desarrollo" | "Utilidades"
 
@@ -341,10 +342,23 @@ const tools: Tool[] = [
 
 export function ToolsSection() {
   const [activeCategory, setActiveCategory] = useState<Category>("Todas")
+  const t = useTranslations("home.toolsSection")
 
   const filtered = activeCategory === "Todas"
     ? tools
     : tools.filter((t) => t.category === activeCategory)
+
+  // Map categories to localization keys
+  const getCategoryTranslation = (cat: Category) => {
+    switch(cat) {
+      case "Todas": return t("categoryAll")
+      case "Seguridad": return t("categorySecurity")
+      case "Privacidad": return t("categoryPrivacy")
+      case "Desarrollo": return t("categoryDev")
+      case "Utilidades": return t("categoryUtilities")
+      default: return cat
+    }
+  }
 
   return (
     <section className="py-24 bg-gradient-to-b from-background/5 to-background/10">
@@ -362,11 +376,11 @@ export function ToolsSection() {
               <Shield className="h-8 w-8 text-primary" />
             </motion.div>
             <h2 className="text-3xl md:text-4xl font-bold font-orbitron">
-              Herramientas de Seguridad
+              {t("title")}
             </h2>
           </div>
           <p className="text-xl text-muted-foreground">
-            {tools.length} herramientas gratuitas que funcionan 100% en tu navegador. Sin enviar datos al servidor.
+            {t("description", { count: tools.length })}
           </p>
         </AnimatedSection>
 
@@ -388,7 +402,7 @@ export function ToolsSection() {
                 whileTap={{ scale: 0.95 }}
               >
                 <CatIcon className="h-4 w-4" />
-                {cat.label}
+                {getCategoryTranslation(cat.label)}
                 <span className={`text-xs px-1.5 py-0.5 rounded-full ${
                   activeCategory === cat.label
                     ? "bg-primary-foreground/20 text-primary-foreground"
@@ -409,6 +423,7 @@ export function ToolsSection() {
           <AnimatePresence mode="popLayout">
             {filtered.map((tool) => {
               const IconComponent = tool.icon
+              const toolKey = tool.href.replace("/tools/", "")
               return (
                 <motion.div
                   key={tool.href}
@@ -423,7 +438,7 @@ export function ToolsSection() {
                       {tool.isNew && (
                         <div className="absolute top-3 right-3 z-10">
                           <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-primary text-primary-foreground shadow-sm">
-                            Nuevo
+                            {t("badgeNew")}
                           </span>
                         </div>
                       )}
@@ -438,21 +453,21 @@ export function ToolsSection() {
                           </motion.div>
                           <div className="min-w-0">
                             <CardTitle className="text-base leading-tight group-hover:text-primary transition-colors">
-                              {tool.title}
+                              {t(`tools.${toolKey}.title`)}
                             </CardTitle>
                           </div>
                         </div>
                         <CardDescription className="text-sm line-clamp-2">
-                          {tool.description}
+                          {t(`tools.${toolKey}.description`)}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="pt-0 mt-auto">
                         <div className="flex items-center justify-between">
                           <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded-full">
-                            {tool.category}
+                            {getCategoryTranslation(tool.category)}
                           </span>
                           <span className="text-xs text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
-                            Usar
+                            {t("useCta")}
                             <ArrowRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
                           </span>
                         </div>
@@ -468,7 +483,7 @@ export function ToolsSection() {
         <AnimatedSection delay={0.4} className="text-center mt-12">
           <Button asChild size="lg" className="group/btn">
             <Link href="/tools">
-              Ver Todas las Herramientas
+              {t("viewAll")}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
             </Link>
           </Button>

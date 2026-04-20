@@ -4,8 +4,10 @@ import { AnimatedSection } from "@/components/ui/animated-section"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export function ShieldSection() {
+  const t = useTranslations("home.shield")
 
   return (
     <section className="py-24 relative overflow-hidden">
@@ -47,7 +49,7 @@ export function ShieldSection() {
               <Link href="/productos" className="block cursor-pointer">
                 <Image
                   src="/images/optimizadas/tecno2.webp"
-                  alt="Personaje de seguridad TecnoCrypter"
+                  alt={t("alt")}
                   width={320}
                   height={320}
                   className="w-full h-auto object-contain drop-shadow-2xl transition-transform hover:scale-105"
@@ -64,10 +66,10 @@ export function ShieldSection() {
               transition={{ duration: 0.6, delay: 0.8 }}
             >
               <h3 className="text-xl font-semibold mb-2 text-foreground">
-                Guardián Digital
+                {t("title")}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Nuestro avanzado sistema de protección vigila constantemente tus activos digitales con tecnología de vanguardia.
+                {t("description")}
               </p>
             </motion.div>
           </AnimatedSection>

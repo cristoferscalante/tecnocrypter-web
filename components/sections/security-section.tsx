@@ -9,8 +9,10 @@ import Link from "next/link"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { useState } from "react"
+import { useTranslations } from "next-intl"
 
 export function SecuritySection() {
+  const t = useTranslations("home.security")
   const [currentIndex, setCurrentIndex] = useState(0)
   const [direction, setDirection] = useState(1) // 1 for right, -1 for left
   const [isGlowing, setIsGlowing] = useState(false)
@@ -28,50 +30,50 @@ export function SecuritySection() {
   const securityFeatures = [
     {
       image: "/images/optimizadas/almacenamiento_seguro.webp",
-      title: "Almacenamiento Seguro",
-      description: "Sistemas de almacenamiento con múltiples capas de seguridad y respaldos automáticos.",
+      title: t("storage"),
+      description: t("storageDesc"),
       color: "from-orange-500 to-red-500",
       delay: 0
     },
     {
       image: "/images/optimizadas/servidores_blindados.webp",
-      title: "Servidores Blindados",
-      description: "Infraestructura robusta con protección contra ataques DDoS y vulnerabilidades.",
+      title: t("servers"),
+      description: t("serversDesc"),
       color: "from-teal-500 to-cyan-500",
       delay: 0.1
     },
     {
       image: "/images/optimizadas/repuesta_rapida.webp",
-      title: "Respuesta Rápida",
-      description: "Protocolos de respuesta inmediata ante incidentes de seguridad para minimizar daños.",
+      title: t("response"),
+      description: t("responseDesc"),
       color: "from-yellow-500 to-orange-500",
       delay: 0.2
     },
     {
       image: "/images/optimizadas/autenticación_biometrica.webp",
-      title: "Autenticación Biométrica",
-      description: "Sistemas de verificación de identidad mediante reconocimiento biométrico avanzado.",
+      title: t("biometric"),
+      description: t("biometricDesc"),
       color: "from-pink-500 to-rose-500",
       delay: 0.3
     },
     {
       image: "/images/optimizadas/proteccion_total.webp",
-      title: "Protección Total",
-      description: "Soluciones de seguridad integral para proteger todos tus activos digitales contra amenazas avanzadas.",
+      title: t("total"),
+      description: t("totalDesc"),
       color: "from-blue-500 to-cyan-500",
       delay: 0.4
     },
     {
       image: "/images/optimizadas/encriptación_avanzada.webp",
-      title: "Encriptación Avanzada",
-      description: "Algoritmos de encriptación de última generación que garantizan la confidencialidad de tus datos.",
+      title: t("encryption"),
+      description: t("encryptionDesc"),
       color: "from-green-500 to-emerald-500",
       delay: 0.5
     },
     {
       image: "/images/optimizadas/monitoreo.webp",
-      title: "Monitoreo 24/7",
-      description: "Vigilancia constante de tus sistemas para detectar y neutralizar amenazas en tiempo real.",
+      title: t("monitoring"),
+      description: t("monitoringDesc"),
       color: "from-purple-500 to-violet-500",
       delay: 0.6
     }

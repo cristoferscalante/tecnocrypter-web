@@ -5,8 +5,10 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export function CtaSection() {
+  const t = useTranslations("home.cta")
   return (
     <section className="py-20 bg-primary/10 relative overflow-hidden">
       {/* Background animation */}
@@ -27,20 +29,19 @@ export function CtaSection() {
       <div className="container relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedSection>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Protege Tu Mundo Digital Hoy</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">{t("title")}</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Descubre nuestras soluciones de seguridad avanzada y productos de encriptación para mantener tus activos
-              digitales protegidos contra amenazas cibernéticas.
+              {t("description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="group">
                 <Link href="/productos">
-                  Explorar Productos
+                  {t("exploreCta")}
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="/contacto">Contactar con Expertos</Link>
+                <Link href="/contacto">{t("contactCta")}</Link>
               </Button>
             </div>
           </AnimatedSection>

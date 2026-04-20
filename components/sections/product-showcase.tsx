@@ -8,8 +8,10 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, ShoppingCart } from "lucide-react"
 import type { Product } from "@/types"
 import { ProductService } from "@/services/product-service"
+import { useTranslations } from "next-intl"
 
 export function ProductShowcase() {
+  const t = useTranslations("home.productShowcase")
   const [products, setProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
 
@@ -31,7 +33,7 @@ export function ProductShowcase() {
   if (loading) {
     return (
       <section className="container py-16 bg-muted/30">
-        <h2 className="text-3xl font-bold tracking-tight mb-8">Productos Destacados</h2>
+        <h2 className="text-3xl font-bold tracking-tight mb-8">{t("title")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[1, 2, 3].map((i) => (
             <Card key={i} className="animate-pulse">
@@ -52,10 +54,10 @@ export function ProductShowcase() {
   return (
     <section className="container py-16 bg-muted/30">
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl font-bold tracking-tight">Productos Destacados</h2>
+        <h2 className="text-3xl font-bold tracking-tight">{t("title")}</h2>
         <Button asChild variant="ghost" className="group">
           <Link href="/productos">
-            Ver todos
+            {t("viewAll")}
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </Button>
@@ -96,7 +98,7 @@ export function ProductShowcase() {
                 ))}
                 {product.features.length > 2 && (
                   <Badge variant="outline" className="text-xs">
-                    +{product.features.length - 2} más
+                    +{product.features.length - 2} {t("more")}
                   </Badge>
                 )}
               </div>
@@ -112,7 +114,7 @@ export function ProductShowcase() {
                 <Button asChild size="sm">
                   <Link href={`/productos/${product.id}`}>
                     <ShoppingCart className="mr-2 h-4 w-4" />
-                    Comprar
+                    {t("buy")}
                   </Link>
                 </Button>
               </div>

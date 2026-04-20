@@ -6,29 +6,32 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { DecryptText, useSequentialDecrypt } from "@/components/ui/decrypt-text"
 import { useState } from "react"
+import { useTranslations } from "next-intl"
 
 export function HeroSection() {
   const [isGlowing, setIsGlowing] = useState(false)
+  const t = useTranslations("home.hero")
+
   const { getTextDelay, handleTextComplete } = useSequentialDecrypt([
-    "Bienvenido a TecnoCrypter - Donde la Seguridad se Encuentra con la Innovación",
-    "Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada."
+    t("sequentialTitle"),
+    t("sequentialDesc")
   ], 500, 800)
 
   const features = [
     {
       icon: Shield,
-      title: "Seguridad Avanzada",
-      description: "Protección de última generación",
+      title: t("featureSecurity"),
+      description: t("featureSecurityDesc"),
     },
     {
       icon: Lock,
-      title: "Encriptación Robusta",
-      description: "Algoritmos de encriptación seguros",
+      title: t("featureEncryption"),
+      description: t("featureEncryptionDesc"),
     },
     {
       icon: TrendingUp,
-      title: "Análisis de Mercado",
-      description: "Tendencias en criptomonedas",
+      title: t("featureMarket"),
+      description: t("featureMarketDesc"),
     },
   ]
 
@@ -52,7 +55,7 @@ export function HeroSection() {
                 transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}
               >
                 <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary ring-1 ring-inset ring-primary/20 mb-4 font-space-grotesk">
-                  Innovación en Seguridad
+                  {t("badge")}
                 </span>
               </motion.div>
               <motion.h1
@@ -62,14 +65,14 @@ export function HeroSection() {
                 transition={{ delay: 0.3, duration: 1.0, ease: [0.25, 0.46, 0.45, 0.94] }}
               >
                 <DecryptText
-                  text="Bienvenido a "
+                  text={t("welcomeTo")}
                   delay={getTextDelay(0)}
                   duration={1500}
                   onComplete={() => handleTextComplete(0)}
                 />
                 <span className="text-primary">
                   <DecryptText
-                    text="TecnoCrypter"
+                    text={t("brandName")}
                     delay={getTextDelay(0) + 800}
                     duration={1200}
                     scrambleChars="01010101ABCDEF#$%&*"
@@ -77,7 +80,7 @@ export function HeroSection() {
                 </span>
                 <br />
                 <DecryptText
-                  text="Seguridad y Encriptación"
+                  text={t("subtitle")}
                   delay={getTextDelay(0) + 1500}
                   duration={1800}
                 />
@@ -89,7 +92,7 @@ export function HeroSection() {
                 transition={{ delay: 3, duration: 1.2, ease: "easeOut" }}
               >
                 <span className="relative">
-                  Explora el universo de la ciberseguridad, encriptación y cripto-tecnología con la información más avanzada y actualizada.
+                  {t("description")}
                 </span>
               </motion.p>
             </motion.div>
@@ -111,7 +114,7 @@ export function HeroSection() {
                       className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/40 opacity-0 group-hover:opacity-100"
                       transition={{ duration: 0.4, ease: "easeInOut" }}
                     />
-                    <span className="relative z-10">Explorar Contenido</span>
+                    <span className="relative z-10">{t("exploreCta")}</span>
                     <ArrowRight className="ml-2 h-4 w-4 transition-all duration-500 ease-out group-hover:translate-x-1 group-hover:scale-110 relative z-10" />
                   </Link>
                 </Button>
@@ -127,7 +130,7 @@ export function HeroSection() {
                       className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100"
                       transition={{ duration: 0.4, ease: "easeInOut" }}
                     />
-                    <span className="relative z-10 group-hover:text-primary transition-colors duration-500 ease-out">Ver Productos</span>
+                    <span className="relative z-10 group-hover:text-primary transition-colors duration-500 ease-out">{t("productsCta")}</span>
                   </Link>
                 </Button>
               </motion.div>
@@ -158,7 +161,7 @@ export function HeroSection() {
             >
               <motion.img
                 src="/images/hero.png"      
-                alt="Experto en ciberseguridad"
+                alt={t("heroAlt")}
                 className={`w-full h-auto transform transition-all duration-500 ease-out hover:scale-110 cursor-pointer ${
                   isGlowing 
                     ? 'drop-shadow-[0_0_20px_rgba(16,185,129,0.8)] filter brightness-110 contrast-110' 
@@ -248,7 +251,7 @@ export function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.8, ease: "easeOut" }}
         >
-          <span className="text-sm text-muted-foreground mb-2">Descubre más</span>
+          <span className="text-sm text-muted-foreground mb-2">{t("scrollMore")}</span>
           <motion.div
             className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center p-1"
             animate={{ y: [0, 10, 0] }}
