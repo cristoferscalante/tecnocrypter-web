@@ -1,8 +1,13 @@
-import Link from "next/link"
+"use client"
+
+import { Link } from "@/i18n/navigation"
 import Image from "next/image"
 import { Heart } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export function Footer() {
+  const t = useTranslations("footer")
+
   return (
     <footer className="border-t bg-background/30 backdrop-blur-sm">
       <div className="container py-8 md:py-12">
@@ -22,32 +27,32 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Tu fuente confiable de información sobre seguridad cibernética, encriptación y criptomonedas.
+              {t("description")}
             </p>
           </div>
 
-          {/* Enlaces rápidos */}
+          {/* Quick Links */}
           <div>
-            <h3 className="text-sm font-semibold mb-4">Enlaces Rápidos</h3>
+            <h3 className="text-sm font-semibold mb-4">{t("quickLinks")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Inicio
+                  {t("home")}
                 </Link>
               </li>
               <li>
                 <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Blog
+                  {t("blog")}
                 </Link>
               </li>
               <li>
                 <Link href="/productos" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Productos
+                  {t("products")}
                 </Link>
               </li>
               <li>
                 <Link href="/contacto" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Contacto
+                  {t("contact")}
                 </Link>
               </li>
             </ul>
@@ -57,21 +62,21 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="text-sm font-semibold mb-4">Legal</h3>
+            <h3 className="text-sm font-semibold mb-4">{t("legal")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/privacidad" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Política de Privacidad
+                  {t("privacy")}
                 </Link>
               </li>
               <li>
                 <Link href="/terminos" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Términos de Servicio
+                  {t("terms")}
                 </Link>
               </li>
               <li>
                 <Link href="/cookies" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Política de Cookies
+                  {t("cookies")}
                 </Link>
               </li>
             </ul>
@@ -80,8 +85,8 @@ export function Footer() {
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} TecnoCrypter. Todos los derechos reservados. 
-            <span className="mx-2">Hecho con</span>
+            &copy; {new Date().getFullYear()} TecnoCrypter. {t("rights")} 
+            <span className="mx-2">{t("madeWith")}</span>
             <Link 
               href="https://v1tr0.com/" 
               target="_blank" 
@@ -90,7 +95,7 @@ export function Footer() {
             >
               <Heart className="h-4 w-4 fill-current" />
             </Link>
-            <span className="ml-2">por V1tr0</span>
+            <span className="ml-2">{t("by")} V1tr0</span>
           </p>
         </div>
       </div>
