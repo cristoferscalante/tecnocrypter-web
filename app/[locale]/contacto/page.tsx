@@ -7,23 +7,33 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
-export const metadata: Metadata = generatePageMetadata({
-  title: "Contacto - TecnoCrypter",
-  description: "Ponte en contacto con nuestro equipo de expertos en ciberseguridad y cifrado. Soporte técnico 24/7, consultas especializadas y asesoría personalizada.",
-  slug: "contacto",
-  image: "/Seo/contacto.webp",
-  keywords: ["contacto tecnocrypter", "soporte técnico", "consultas ciberseguridad", "expertos encriptación"]
-})
+import { getTranslations } from "next-intl/server"
 
-export default function ContactoPage() {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "contact.meta" })
+
+  return generatePageMetadata({
+    title: t("title"),
+    description: t("description"),
+    slug: "contacto",
+    image: "/Seo/contacto.webp",
+    keywords: ["contacto tecnocrypter", "soporte técnico", "consultas ciberseguridad", "expertos encriptación"]
+  })
+}
+
+export default async function ContactoPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "contact" })
+
   return (
     <>
       <main className="min-h-screen py-8">
       <div className="container px-4">
         <div className="max-w-4xl mx-auto text-center mb-8">
-          <h1 className="text-4xl font-bold tracking-tight mb-4">Contacta con Nuestros Expertos</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">{t("heading.title")}</h1>
           <p className="text-xl text-muted-foreground">
-            Estamos aquí para ayudarte con cualquier consulta sobre seguridad cibernética, encriptación o criptomonedas.
+            {t("heading.description")}
           </p>
         </div>
 
@@ -31,62 +41,62 @@ export default function ContactoPage() {
           {/* Contact Form */}
           <Card>
             <CardHeader>
-              <CardTitle>Envíanos un Mensaje</CardTitle>
-              <CardDescription>Completa el formulario y te responderemos a la brevedad.</CardDescription>
+              <CardTitle>{t("form.title")}</CardTitle>
+              <CardDescription>{t("form.description")}</CardDescription>
             </CardHeader>
             <CardContent>
               <form className="space-y-3">
                 <div className="grid grid-cols-2 gap-3">
                   <div className="space-y-2">
                     <label htmlFor="first-name" className="text-sm font-medium">
-                      Nombre
+                      {t("form.firstName")}
                     </label>
-                    <Input id="first-name" placeholder="Tu nombre" />
+                    <Input id="first-name" placeholder={t("form.firstNamePlaceholder")} />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="last-name" className="text-sm font-medium">
-                      Apellido
+                      {t("form.lastName")}
                     </label>
-                    <Input id="last-name" placeholder="Tu apellido" />
+                    <Input id="last-name" placeholder={t("form.lastNamePlaceholder")} />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">
-                    Correo Electrónico
+                    {t("form.email")}
                   </label>
-                  <Input id="email" type="email" placeholder="tu@email.com" />
+                  <Input id="email" type="email" placeholder={t("form.emailPlaceholder")} />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="subject" className="text-sm font-medium">
-                    Asunto
+                    {t("form.subject")}
                   </label>
                   <Select>
                     <SelectTrigger>
-                      <SelectValue placeholder="Selecciona un asunto" />
+                      <SelectValue placeholder={t("form.subjectPlaceholder")} />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="general">Consulta General</SelectItem>
-                      <SelectItem value="support">Soporte Técnico</SelectItem>
-                      <SelectItem value="sales">Ventas</SelectItem>
-                      <SelectItem value="partnership">Asociaciones</SelectItem>
-                      <SelectItem value="other">Otro</SelectItem>
+                      <SelectItem value="general">{t("form.subjectGeneral")}</SelectItem>
+                      <SelectItem value="support">{t("form.subjectSupport")}</SelectItem>
+                      <SelectItem value="sales">{t("form.subjectSales")}</SelectItem>
+                      <SelectItem value="partnership">{t("form.subjectPartnership")}</SelectItem>
+                      <SelectItem value="other">{t("form.subjectOther")}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">
-                    Mensaje
+                    {t("form.message")}
                   </label>
-                  <Textarea id="message" placeholder="Escribe tu mensaje aquí..." rows={5} />
+                  <Textarea id="message" placeholder={t("form.messagePlaceholder")} rows={5} />
                 </div>
                 <div className="space-y-3">
                   <Button type="submit" className="w-full">
-                    Enviar Mensaje
+                    {t("form.submit")}
                   </Button>
                   <div className="mt-3 rounded-lg overflow-hidden border">
                     <img
                       src="/Seo/Imagen_tecnocrypter.png"
-                      alt="TecnoCrypter - Seguridad Digital"
+                      alt={t("imageAlt")}
                       className="w-full h-auto object-contain"
                     />
                   </div>
@@ -99,14 +109,14 @@ export default function ContactoPage() {
           <div className="space-y-4">
             <Card>
               <CardHeader>
-                <CardTitle>Información de Contacto</CardTitle>
-                <CardDescription>Diferentes formas de ponerte en contacto con nosotros.</CardDescription>
+                <CardTitle>{t("info.title")}</CardTitle>
+                <CardDescription>{t("info.description")}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <Mail className="h-5 w-5 text-primary mt-0.5" />
                   <div>
-                    <h3 className="font-medium">Correo Electrónico</h3>
+                    <h3 className="font-medium">{t("info.emailTitle")}</h3>
                     <p className="text-sm text-muted-foreground">info@tecnocrypter.com</p>
                     <p className="text-sm text-muted-foreground">soporte@tecnocrypter.com</p>
                   </div>
@@ -114,30 +124,30 @@ export default function ContactoPage() {
                 <div className="flex items-start space-x-3">
                   <Phone className="h-5 w-5 text-primary mt-0.5" />
                   <div>
-                    <h3 className="font-medium">Teléfono</h3>
+                    <h3 className="font-medium">{t("info.phoneTitle")}</h3>
                     <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
-                    <p className="text-sm text-muted-foreground">Lun-Vie: 9:00 - 18:00</p>
+                    <p className="text-sm text-muted-foreground">{t("info.phoneHours")}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
                   <div>
-                    <h3 className="font-medium">Ubicación</h3>
+                    <h3 className="font-medium">{t("info.locationTitle")}</h3>
                     <p className="text-sm text-muted-foreground">
-                      Calle Tecnología 123, Piso 4
+                      {t("info.locationAddress1")}
                       <br />
-                      Ciudad Digital, CD 12345
+                      {t("info.locationAddress2")}
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Clock className="h-5 w-5 text-primary mt-0.5" />
                   <div>
-                    <h3 className="font-medium">Horario de Atención</h3>
+                    <h3 className="font-medium">{t("info.hoursTitle")}</h3>
                     <p className="text-sm text-muted-foreground">
-                      Lunes a Viernes: 9:00 - 18:00
+                      {t("info.hoursWeekday")}
                       <br />
-                      Sábados: 10:00 - 14:00
+                      {t("info.hoursSaturday")}
                     </p>
                   </div>
                 </div>
@@ -146,26 +156,26 @@ export default function ContactoPage() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Preguntas Frecuentes</CardTitle>
-                <CardDescription>Respuestas rápidas a preguntas comunes.</CardDescription>
+                <CardTitle>{t("faq.title")}</CardTitle>
+                <CardDescription>{t("faq.description")}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div>
-                  <h3 className="font-medium">¿Cuáles son los métodos de pago aceptados?</h3>
+                  <h3 className="font-medium">{t("faq.q1")}</h3>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Aceptamos Bitcoin (BTC), Ethereum (ETH), Tether (USDT) y otras criptomonedas principales.
+                    {t("faq.a1")}
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-medium">¿Ofrecen soporte técnico 24/7?</h3>
+                  <h3 className="font-medium">{t("faq.q2")}</h3>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Sí, nuestro equipo de soporte técnico está disponible las 24 horas para clientes con plan Premium.
+                    {t("faq.a2")}
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-medium">¿Tienen una política de reembolso?</h3>
+                  <h3 className="font-medium">{t("faq.q3")}</h3>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Ofrecemos una garantía de devolución de 30 días para todos nuestros productos digitales.
+                    {t("faq.a3")}
                   </p>
                 </div>
               </CardContent>
