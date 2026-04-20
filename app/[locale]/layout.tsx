@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { NextIntlClientProvider, hasLocale } from "next-intl"
-import { setRequestLocale } from "next-intl/server"
+import { setRequestLocale, getMessages } from "next-intl/server"
 import { notFound } from "next/navigation"
 import { routing } from "@/i18n/routing"
 import { ThemeProvider } from "@/components/providers/theme-provider"
@@ -94,8 +94,8 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   setRequestLocale(locale)
 
-  // Load messages for the current locale
-  const messages = (await import(`../../messages/${locale}/common.json`)).default
+  // Load all messages for the current locale
+  const messages = await getMessages()
 
   return (
     <>
