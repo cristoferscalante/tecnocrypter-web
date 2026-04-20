@@ -1,5 +1,10 @@
 {
   "home": {
+    "meta": {
+      "title": "TecnoCrypter - Herramientas Gratuitas de Ciberseguridad y Cifrado",
+      "description": "+40 herramientas gratuitas de ciberseguridad: generador de contraseñas, cifrado AES-256, verificador de filtraciones y más. Todo funciona en tu navegador, sin enviar datos.",
+      "keywords": "ciberseguridad, herramientas seguridad, encriptación, generador contraseñas, cifrado online, privacidad digital"
+    },
     "hero": {
       "badge": "Innovación en Seguridad",
       "welcomeTo": "Bienvenido a ",

@@ -12,13 +12,20 @@ import { FaqSection } from "@/components/sections/faq-section"
 import { NewsletterSection } from "@/components/sections/newsletter-section"
 import { CtaSection } from "@/components/sections/cta-section"
 
-export const metadata: Metadata = generatePageMetadata({
-  title: "TecnoCrypter - Herramientas Gratuitas de Ciberseguridad y Cifrado",
-  description: "+40 herramientas gratuitas de ciberseguridad: generador de contraseñas, cifrado AES-256, verificador de filtraciones y más. Todo funciona en tu navegador, sin enviar datos.",
-  slug: "",
-  image: "https://tecnocrypter.com/seo/home.webp",
-  keywords: ["ciberseguridad", "herramientas seguridad", "encriptación", "generador contraseñas", "cifrado online", "privacidad digital"]
-})
+import { getTranslations } from "next-intl/server"
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "home.meta" })
+
+  return generatePageMetadata({
+    title: t("title"),
+    description: t("description"),
+    slug: "",
+    image: "https://tecnocrypter.com/seo/home.webp",
+    keywords: t("keywords").split(", ")
+  })
+}
 
 export default function HomePage() {
   return (

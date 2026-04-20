@@ -104,17 +104,10 @@ export function ProductShowcase() {
               </div>
             </CardContent>
             <CardFooter className="pt-2 flex-col items-start gap-2">
-              <div className="flex justify-between items-center w-full">
-                <div className="flex flex-col">
-                  <span className="font-bold text-lg">${product.price.toFixed(2)}</span>
-                  <span className="text-xs text-muted-foreground">
-                    {product.crypto_price_btc.toFixed(4)} BTC / {product.crypto_price_eth.toFixed(3)} ETH
-                  </span>
-                </div>
-                <Button asChild size="sm">
-                  <Link href={`/productos/${product.id}`}>
-                    <ShoppingCart className="mr-2 h-4 w-4" />
-                    {t("buy")}
+              <div className="flex justify-center items-center w-full">
+                <Button asChild size="sm" className="w-full">
+                  <Link href={`https://wa.me/15551234567?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20el%20servicio%20de%20${encodeURIComponent(product.name)}`} target="_blank" rel="noopener noreferrer">
+                    Contactar Soporte
                   </Link>
                 </Button>
               </div>

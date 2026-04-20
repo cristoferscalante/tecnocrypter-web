@@ -17,67 +17,71 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
 }
 
-export const metadata: Metadata = {
-  title: {
-    default: "TecnoCrypter - Ciberseguridad y Criptomonedas",
-    template: "%s | TecnoCrypter"
-  },
-  description:
-    "Plataforma líder en ciberseguridad, encriptación y tecnología blockchain. Productos seguros, herramientas de privacidad y las últimas noticias en criptomonedas.",
-  keywords: ["ciberseguridad", "encriptación", "criptomonedas", "blockchain", "cybersecurity", "bitcoin", "ethereum", "privacidad", "seguridad digital"],
-  authors: [{ name: "TecnoCrypter Team" }],
-  creator: "TecnoCrypter",
-  publisher: "TecnoCrypter",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+
+  return {
+    title: {
+      default: t("title"),
+      template: "%s | TecnoCrypter"
+    },
+    description: t("description"),
+    keywords: t("keywords").split(", "),
+    authors: [{ name: "TecnoCrypter Team" }],
+    creator: "TecnoCrypter",
+    publisher: "TecnoCrypter",
+    robots: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.ico',
-  },
-  manifest: '/manifest.json',
-  openGraph: {
-    type: "website",
-    locale: "es_ES",
-    url: "https://tecnocrypter.com",
-    siteName: "TecnoCrypter",
-    title: "TecnoCrypter - Ciberseguridad y Criptomonedas",
-    description: "Plataforma líder en ciberseguridad, encriptación y tecnología blockchain. Productos seguros, herramientas de privacidad y las últimas noticias en criptomonedas.",
-    images: [
-      {
-        url: "https://tecnocrypter.com/images/hero.png",
-        width: 1200,
-        height: 630,
-        alt: "TecnoCrypter - Ciberseguridad y Criptomonedas",
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
       },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "TecnoCrypter - Ciberseguridad y Criptomonedas",
-    description: "Plataforma líder en ciberseguridad, encriptación y tecnología blockchain.",
-    creator: "@tecnocrypter",
-    images: ["https://tecnocrypter.com/images/hero.png"],
-  },
-  alternates: {
-    canonical: "https://tecnocrypter.com",
-  },
-  category: "technology",
-  other: {
-    'google-site-verification': process.env.GOOGLE_SITE_VERIFICATION || '',
-  },
-  verification: {
-    google: process.env.GOOGLE_SITE_VERIFICATION,
-  },
+    },
+    icons: {
+      icon: '/favicon.ico',
+      shortcut: '/favicon.ico',
+      apple: '/favicon.ico',
+    },
+    manifest: '/manifest.json',
+    openGraph: {
+      type: "website",
+      locale: locale,
+      url: "https://tecnocrypter.com",
+      siteName: "TecnoCrypter",
+      title: t("title"),
+      description: t("description"),
+      images: [
+        {
+          url: "https://tecnocrypter.com/images/hero.png",
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      creator: "@tecnocrypter",
+      images: ["https://tecnocrypter.com/images/hero.png"],
+    },
+    alternates: {
+      canonical: "https://tecnocrypter.com",
+    },
+    category: "technology",
+    other: {
+      'google-site-verification': process.env.GOOGLE_SITE_VERIFICATION || '',
+    },
+    verification: {
+      google: process.env.GOOGLE_SITE_VERIFICATION,
+    },
+  };
 }
 
 type Props = {
