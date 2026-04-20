@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { NextIntlClientProvider, hasLocale } from "next-intl"
-import { setRequestLocale, getMessages } from "next-intl/server"
+import { setRequestLocale, getMessages, getTranslations } from "next-intl/server"
 import { notFound } from "next/navigation"
 import { routing } from "@/i18n/routing"
 import { ThemeProvider } from "@/components/providers/theme-provider"
