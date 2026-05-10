@@ -6,12 +6,25 @@
       "keywords": ["digital security products", "data encryption", "privacy protection"]
     },
     "heading": {
-      "title": "Digital Security Products",
-      "description": "Discover our premium selection of digital security tools and solutions."
+      "title": "Professional Digital Security Services",
+      "description": "Secure web development, specialized training and enterprise cybersecurity services."
     },
     "filters": {
       "search": "Search products...",
+      "title": "Filters",
+      "category": "Category",
+      "price": "Price",
+      "vendor": "Provider",
       "all": "All",
+      "webDevelopment": "Web Development",
+      "securityTraining": "Training",
+      "aiTraining": "Secure AI",
+      "cybersecurity": "Cybersecurity",
+      "incidentResponse": "Incident Response",
+      "priceRange1": "Under $1,000",
+      "priceRange2": "$1,000 - $2,000",
+      "priceRange3": "$2,000 - $4,000",
+      "priceRange4": "Over $4,000",
       "security": "Security",
       "encryption": "Encryption",
       "privacy": "Privacy",
@@ -37,7 +50,8 @@
       "reviews": "reviews",
       "rating": "rating",
       "outOfStock": "Out of Stock",
-      "discount": "Discount"
+      "discount": "Discount",
+      "moreFeatures": "+{count} more"
     },
     "empty": {
       "title": "No products found",
@@ -47,6 +61,23 @@
     "loading": "Loading products...",
     "error": "Error loading products",
     "retry": "Try again",
+    "loadMore": "Load more",
+    "faq": {
+      "title": "Frequently Asked Questions about Products",
+      "description": "Answers to the most common questions about our security products.",
+      "q1": "What web development services do you offer?",
+      "a1": "We offer high-quality secure website and web application development, with security built in from the design stage. We use industry best practices and modern technologies to deliver robust, protected applications.",
+      "q2": "What is included in the security training?",
+      "a2": "Our training covers everything from digital security basics to advanced use of security tools. It includes hands-on practice, completion certificates and ongoing support after the course.",
+      "q3": "How does secure AI training work?",
+      "a3": "We teach you to use artificial intelligence tools responsibly without exposing sensitive data. You will learn anonymization techniques, privacy best practices and how to implement AI safely in your company.",
+      "q4": "What is included in attack prevention services?",
+      "a4": "It includes vulnerability analysis, implementation of preventive measures, continuous monitoring, firewall configuration and intrusion detection systems. We offer custom plans based on your company size.",
+      "q5": "How does cyberattack support work?",
+      "a5": "We provide fast 24/7 response to security incidents. Our team analyzes the attack, contains the threat, restores affected systems and provides a detailed report with recommendations to prevent future incidents.",
+      "q6": "Do you offer corporate plans?",
+      "a6": "Yes, we offer customized business plans that combine multiple services. Contact our team for a free consultation and a quote tailored to your organization's needs."
+    },
     "payWith": "Pay with Cryptocurrencies",
     "cryptoPayment": {
       "title": "Cryptocurrency Payment",

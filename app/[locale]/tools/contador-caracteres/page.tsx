@@ -5,17 +5,17 @@ import ContadorCaracteresClient from "@/components/tools/contador-caracteres-cli
 
 export const metadata: Metadata = generateToolMetadata({
   title: "Contador de Caracteres",
-  description: "Cuenta caracteres, palabras, oraciones y pÃ¡rrafos en tiempo real. Incluye lÃ­mites para Twitter, Instagram, LinkedIn y mÃ¡s. Analiza la densidad de palabras y legibilidad de tu texto.",
+  description: "Cuenta caracteres, palabras, oraciones y párrafos en tiempo real. Incluye límites para Twitter, Instagram, LinkedIn y más. Analiza la densidad de palabras y legibilidad de tu texto.",
   slug: "tools/contador-caracteres",
   keywords: [
     "contador caracteres",
     "contador palabras",
     "contar caracteres online",
     "contador de texto",
-    "lÃ­mite caracteres twitter",
+    "límite caracteres twitter",
     "contador palabras online",
     "herramienta texto",
-    "anÃ¡lisis de texto",
+    "análisis de texto",
   ],
 })
 
@@ -29,7 +29,7 @@ export default function ContadorCaracteres() {
       ]} />
       <WebApplicationStructuredData
         name="Contador de Caracteres - TecnoCrypter"
-        description="Cuenta caracteres, palabras y pÃ¡rrafos con lÃ­mites para redes sociales."
+        description="Cuenta caracteres, palabras y párrafos con límites para redes sociales."
         url="https://tecnocrypter.com/tools/contador-caracteres"
         category="UtilitiesApplication"
       />

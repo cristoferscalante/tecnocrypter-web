@@ -15,6 +15,7 @@ export interface MetadataParams {
   title?: string;
   description?: string;
   slug?: string;
+  locale?: string;
   image?: string;
   keywords?: string[];
   type?: 'website' | 'article' | 'product';
@@ -62,6 +63,7 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
     title,
     description = baseMetadata.defaultDescription,
     slug = '',
+    locale = 'es',
     image = baseMetadata.defaultImage,
     keywords = [],
     type = 'website',
@@ -78,8 +80,20 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
   const validatedDescription = validateDescription(description);
   const validatedKeywords = validateKeywords(keywords);
   
-  const pageUrl = `${baseMetadata.siteUrl}${slug ? `/${slug}` : ''}`;
+  // Clean slug
+  const cleanSlug = slug.startsWith('/') ? slug : (slug ? `/${slug}` : '');
+  
+  // URL path based on locale and slug
+  const localePrefix = locale === 'es' ? '' : `/${locale}`;
+  const pagePath = `${localePrefix}${cleanSlug}`;
+  const pageUrl = `${baseMetadata.siteUrl}${pagePath}`;
+  
   const imageUrl = image.startsWith('http') ? image : `${baseMetadata.siteUrl}${image}`;
+
+  // For alternate languages
+  const languages: Record<string, string> = {
+    'es': `${baseMetadata.siteUrl}${cleanSlug}`,
+  };
 
   const metadata: Metadata = {
     metadataBase: new URL(baseMetadata.siteUrl),
@@ -91,7 +105,7 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
     // Open Graph
     openGraph: {
       type: type === 'product' ? 'website' : type,
-      locale: 'es_ES',
+      locale: locale === 'es' ? 'es_ES' : locale === 'en' ? 'en_US' : locale === 'pt' ? 'pt_BR' : 'fr_FR',
       url: pageUrl,
       siteName: baseMetadata.siteName,
       title: pageTitle,
@@ -119,9 +133,10 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
       images: [imageUrl],
     },
 
-    // Canonical URL
+    // Canonical URL and i18n
     alternates: {
       canonical: pageUrl,
+      languages: languages,
     },
 
     // Additional meta tags

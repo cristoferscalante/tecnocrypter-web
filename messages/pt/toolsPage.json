@@ -1,0 +1,45 @@
+{
+  "toolsPage": {
+    "meta": {
+      "title": "40 Ferramentas Gratuitas de Segurança e Desenvolvimento",
+      "description": "40 ferramentas gratuitas de segurança e desenvolvimento: gerador de senhas, criptografia AES-256, verificador de vazamentos, conversor Base64 e muito mais. Sem registro."
+    },
+    "breadcrumb": {
+      "home": "Início",
+      "tools": "Ferramentas"
+    },
+    "heading": {
+      "title": "Ferramentas de Segurança",
+      "description": "Use nossas ferramentas gratuitas para melhorar sua segurança digital e proteger suas informações."
+    },
+    "categoryNames": {
+      "Seguridad": "Segurança",
+      "Privacidad": "Privacidade",
+      "Desarrollo": "Desenvolvimento",
+      "Utilidades": "Utilidades"
+    },
+    "useTool": "Usar Ferramenta",
+    "needMore": {
+      "title": "Precisa de mais ferramentas?",
+      "description": "Estamos constantemente desenvolvendo novas ferramentas de segurança. Siga-nos para ficar por dentro das novidades.",
+      "suggest": "Sugerir Ferramenta",
+      "blog": "Ver Blog de Segurança"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes sobre Ferramentas",
+      "description": "Respostas para as perguntas mais comuns sobre nossas ferramentas de segurança.",
+      "q1": "As ferramentas são totalmente gratuitas?",
+      "a1": "Sim, todas as nossas ferramentas básicas são totalmente gratuitas e não requerem registro. Alguns recursos avançados podem exigir uma conta premium, mas as funcionalidades completas estão disponíveis sem custo.",
+      "q2": "Meus dados são armazenados nos seus servidores?",
+      "a2": "Não, a maioria das nossas ferramentas processa os dados localmente no seu navegador para garantir a segurança. Os dados não são enviados aos nossos servidores, garantindo sua privacidade.",
+      "q3": "Posso usar as ferramentas offline?",
+      "a3": "Algumas ferramentas, como o gerador de senhas, funcionam totalmente offline depois de carregadas. Outras que exigem verificações em tempo real precisam de conexão com a internet.",
+      "q4": "Com que frequência vocês atualizam as ferramentas?",
+      "a4": "Atualizamos regularmente nossas ferramentas para melhorar a segurança, adicionar novos recursos e corrigir erros. As atualizações são implementadas automaticamente sem interromper sua experiência.",
+      "q5": "Posso integrar essas ferramentas ao meu site?",
+      "a5": "Oferecemos APIs e widgets para incorporar algumas de nossas ferramentas. Entre em contato com a equipe técnica para conhecer as opções de integração disponíveis.",
+      "q6": "As ferramentas são seguras para uso corporativo?",
+      "a6": "Sim, nossas ferramentas foram desenvolvidas com os mais altos padrões de segurança corporativa. Oferecemos versões premium com recursos adicionais de auditoria e conformidade para ambientes de negócios."
+    }
+  }
+}

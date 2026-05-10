@@ -1,5 +1,10 @@
 {
   "home": {
+    "meta": {
+      "title": "TecnoCrypter - Free Cybersecurity and Encryption Tools",
+      "description": "More than 40 free cybersecurity tools: password generator, AES-256 encryption, breach checker and more. Everything runs in your browser without sending data.",
+      "keywords": "cybersecurity, security tools, encryption, password generator, online encryption, digital privacy"
+    },
     "hero": {
       "badge": "Security Innovation",
       "welcomeTo": "Welcome to ",

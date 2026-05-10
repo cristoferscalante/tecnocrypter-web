@@ -1,4 +1,9 @@
 {
+  "meta": {
+    "title": "TecnoCrypter - Cybersecurity and Cryptocurrencies",
+    "description": "A cybersecurity, encryption and blockchain technology platform with secure products, privacy tools and cryptocurrency news.",
+    "keywords": "cybersecurity, encryption, cryptocurrencies, blockchain, bitcoin, ethereum, privacy, digital security"
+  },
   "nav": {
     "blog": "Blog",
     "store": "Store",

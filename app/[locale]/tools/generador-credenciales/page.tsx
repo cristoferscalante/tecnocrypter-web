@@ -4,18 +4,18 @@ import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/compon
 import GeneradorCredencialesClient from "@/components/tools/generador-credenciales-client"
 
 export const metadata: Metadata = generateToolMetadata({
-  title: "Generador de Credenciales DeterminÃ­sticas",
-  description: "Genera usuarios y contraseÃ±as determinÃ­sticas a partir de una palabra clave maestra. Las credenciales se recrean siempre iguales sin almacenar nada. Todo funciona en tu navegador.",
+  title: "Generador de Credenciales Determinísticas",
+  description: "Genera usuarios y contraseñas determinísticas a partir de una palabra clave maestra. Las credenciales se recrean siempre iguales sin almacenar nada. Todo funciona en tu navegador.",
   slug: "tools/generador-credenciales",
   keywords: [
     "generador credenciales",
-    "credenciales determinÃ­sticas",
+    "credenciales determinísticas",
     "generador usuarios",
-    "contraseÃ±a maestra",
-    "gestor contraseÃ±as",
+    "contraseña maestra",
+    "gestor contraseñas",
     "credenciales seguras",
-    "generador determinÃ­stico",
-    "seguridad contraseÃ±as",
+    "generador determinístico",
+    "seguridad contraseñas",
   ],
 })
 
@@ -28,8 +28,8 @@ export default function GeneradorCredenciales() {
         { name: "Generador de Credenciales", url: "https://tecnocrypter.com/tools/generador-credenciales" },
       ]} />
       <WebApplicationStructuredData
-        name="Generador de Credenciales DeterminÃ­sticas - TecnoCrypter"
-        description="Genera usuarios y contraseÃ±as determinÃ­sticas a partir de una palabra clave maestra."
+        name="Generador de Credenciales Determinísticas - TecnoCrypter"
+        description="Genera usuarios y contraseñas determinísticas a partir de una palabra clave maestra."
         url="https://tecnocrypter.com/tools/generador-credenciales"
       />
       <GeneradorCredencialesClient />

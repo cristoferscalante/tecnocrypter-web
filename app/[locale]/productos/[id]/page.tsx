@@ -47,6 +47,12 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       description: product.description,
       images: product.images.length > 0 ? [product.images[0].url] : undefined,
     },
+    alternates: {
+      canonical: `https://tecnocrypter.com/productos/${id}`,
+      languages: {
+        es: `https://tecnocrypter.com/productos/${id}`,
+      },
+    },
   }
 }
 

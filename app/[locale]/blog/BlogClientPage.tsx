@@ -13,7 +13,19 @@ import { useTranslations } from "next-intl"
 
 export type BlogCategory = "todos" | "seguridad" | "encriptacion" | "criptomonedas" | "noticias"
 
-export default function BlogClientPage({ initialCategory = "todos" as BlogCategory }: { initialCategory?: BlogCategory }) {
+type BlogClientPageProps = {
+  initialCategory?: BlogCategory
+  title?: string
+  description?: string
+  editorialIntro?: string[]
+}
+
+export default function BlogClientPage({
+  initialCategory = "todos" as BlogCategory,
+  title,
+  description,
+  editorialIntro = [],
+}: BlogClientPageProps) {
   const t = useTranslations("blog.client")
   const { posts, loading, error, searchPosts } = useBlog()
   
@@ -104,11 +116,23 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
     <main className="min-h-screen py-12">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight mb-4">{t("title")}</h1>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">{title || t("title")}</h1>
           <p className="text-xl text-muted-foreground">
-            {t("description")}
+            {description || t("description")}
           </p>
         </div>
+
+        {editorialIntro.length > 0 && (
+          <section className="max-w-4xl mx-auto mb-12 rounded-lg border bg-background/70 p-6">
+            <div className="grid gap-4 md:grid-cols-3">
+              {editorialIntro.map((item) => (
+                <p key={item} className="text-sm leading-6 text-muted-foreground">
+                  {item}
+                </p>
+              ))}
+            </div>
+          </section>
+        )}
 
         <div className="flex flex-col md:flex-row gap-8">
           {/* Sidebar */}
@@ -212,10 +236,6 @@ export default function BlogClientPage({ initialCategory = "todos" as BlogCatego
                   </Link>
                 ))
               )}
-            </div>
-
-            <div className="mt-8 flex justify-center">
-              <Button variant="outline">{t("loadMore")}</Button>
             </div>
           </div>
         </div>

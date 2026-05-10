@@ -13,30 +13,43 @@ import { Toaster } from "@/components/ui/sonner"
 import { StructuredData } from "@/components/seo/structured-data"
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics"
 
+const INDEXABLE_LOCALES = new Set(["es"])
+const DEFAULT_META = {
+  title: "TecnoCrypter - Ciberseguridad y Criptomonedas",
+  description: "Plataforma de ciberseguridad, encriptación y tecnología blockchain con guías, herramientas gratuitas y recursos de privacidad digital.",
+  keywords: "ciberseguridad, encriptación, criptomonedas, blockchain, privacidad, seguridad digital",
+}
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "meta" });
+  const shouldIndex = INDEXABLE_LOCALES.has(locale);
+  const t = shouldIndex ? await getTranslations({ locale, namespace: "meta" }) : null;
+  const meta = {
+    title: t ? t("title") : DEFAULT_META.title,
+    description: t ? t("description") : DEFAULT_META.description,
+    keywords: t ? t("keywords") : DEFAULT_META.keywords,
+  };
 
   return {
     title: {
-      default: t("title"),
+      default: meta.title,
       template: "%s | TecnoCrypter"
     },
-    description: t("description"),
-    keywords: t("keywords").split(", "),
+    description: meta.description,
+    keywords: meta.keywords.split(", "),
     authors: [{ name: "TecnoCrypter Team" }],
     creator: "TecnoCrypter",
     publisher: "TecnoCrypter",
     robots: {
-      index: true,
-      follow: true,
+      index: shouldIndex,
+      follow: shouldIndex,
       googleBot: {
-        index: true,
-        follow: true,
+        index: shouldIndex,
+        follow: shouldIndex,
         'max-video-preview': -1,
         'max-image-preview': 'large',
         'max-snippet': -1,
@@ -53,26 +66,30 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       locale: locale,
       url: "https://tecnocrypter.com",
       siteName: "TecnoCrypter",
-      title: t("title"),
-      description: t("description"),
+      title: meta.title,
+      description: meta.description,
       images: [
         {
           url: "https://tecnocrypter.com/images/hero.png",
           width: 1200,
           height: 630,
-          alt: t("title"),
+          alt: meta.title,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: t("title"),
-      description: t("description"),
+      title: meta.title,
+      description: meta.description,
       creator: "@tecnocrypter",
       images: ["https://tecnocrypter.com/images/hero.png"],
     },
+    metadataBase: new URL("https://tecnocrypter.com"),
     alternates: {
-      canonical: "https://tecnocrypter.com",
+      canonical: locale === "es" ? "/" : "/",
+      languages: {
+        "es": "/",
+      },
     },
     category: "technology",
     other: {

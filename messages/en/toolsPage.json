@@ -1,0 +1,45 @@
+{
+  "toolsPage": {
+    "meta": {
+      "title": "40 Free Security and Development Tools",
+      "description": "40 free security and development tools: password generator, AES-256 encryption, breach checker, Base64 converter, and more. No registration required."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "tools": "Tools"
+    },
+    "heading": {
+      "title": "Security Tools",
+      "description": "Use our free tools to enhance your digital security and protect your information."
+    },
+    "categoryNames": {
+      "Seguridad": "Security",
+      "Privacidad": "Privacy",
+      "Desarrollo": "Development",
+      "Utilidades": "Utilities"
+    },
+    "useTool": "Use Tool",
+    "needMore": {
+      "title": "Need more tools?",
+      "description": "We are constantly developing new security tools. Follow us to stay updated with the latest additions.",
+      "suggest": "Suggest Tool",
+      "blog": "View Security Blog"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions about Tools",
+      "description": "Answers to the most common questions about our security tools.",
+      "q1": "Are the tools completely free?",
+      "a1": "Yes, all our basic tools are completely free and do not require registration. Some advanced features may require a premium account, but core functionalities are available at no cost.",
+      "q2": "Is my data stored on your servers?",
+      "a2": "No, most of our tools process data locally in your browser for security purposes. Data is not sent to our servers, ensuring your privacy and confidentiality.",
+      "q3": "Can I use the tools completely offline?",
+      "a3": "Some tools like the password generator work completely offline once loaded. Others that require real-time verification do need an internet connection.",
+      "q4": "How often do you update the tools?",
+      "a4": "We regularly update our tools to improve security, add new features, and fix bugs. Updates are deployed automatically without interrupting your experience.",
+      "q5": "Can I integrate these tools into my website?",
+      "a5": "We offer APIs and embeddable widgets for some of our tools. Contact our technical team for available integration options.",
+      "q6": "Are the tools safe for enterprise use?",
+      "a6": "Yes, our tools are designed following enterprise security standards. We offer premium versions with additional auditing and compliance features tailored for corporate environments."
+    }
+  }
+}

@@ -33,19 +33,19 @@ export default function ProductosPage() {
   const [selectedVendors, setSelectedVendors] = useState<string[]>([])
   
   const categories = [
-    { id: "todos", name: "Todos" },
-    { id: "web-development", name: "Desarrollo Web" },
-    { id: "security-training", name: "Capacitaciones" },
-    { id: "ai-training", name: "IA Segura" },
-    { id: "cybersecurity", name: "Ciberseguridad" },
-    { id: "incident-response", name: "Respuesta a Incidentes" },
+    { id: "todos", name: t("filters.all") },
+    { id: "web-development", name: t("filters.webDevelopment") },
+    { id: "security-training", name: t("filters.securityTraining") },
+    { id: "ai-training", name: t("filters.aiTraining") },
+    { id: "cybersecurity", name: t("filters.cybersecurity") },
+    { id: "incident-response", name: t("filters.incidentResponse") },
   ]
 
   const priceRanges = [
-    { id: "range-1", label: "Menos de $1,000", min: 0, max: 1000 },
-    { id: "range-2", label: "$1,000 - $2,000", min: 1000, max: 2000 },
-    { id: "range-3", label: "$2,000 - $4,000", min: 2000, max: 4000 },
-    { id: "range-4", label: "Más de $4,000", min: 4000, max: Infinity },
+    { id: "range-1", label: t("filters.priceRange1"), min: 0, max: 1000 },
+    { id: "range-2", label: t("filters.priceRange2"), min: 1000, max: 2000 },
+    { id: "range-3", label: t("filters.priceRange3"), min: 2000, max: 4000 },
+    { id: "range-4", label: t("filters.priceRange4"), min: 4000, max: Infinity },
   ]
 
   const vendors = [
@@ -78,30 +78,12 @@ export default function ProductosPage() {
 
   // FAQ específicas para productos
   const productFaqs = [
-    {
-      question: "¿Qué servicios de desarrollo web ofrecen?",
-      answer: "Ofrecemos desarrollo de sitios web y aplicaciones web seguras de alta calidad, con enfoque en seguridad desde el diseño. Utilizamos las mejores prácticas de la industria y tecnologías modernas para garantizar aplicaciones robustas y protegidas."
-    },
-    {
-      question: "¿Qué incluyen las capacitaciones de seguridad?",
-      answer: "Nuestras capacitaciones cubren desde conceptos básicos de seguridad digital hasta el uso avanzado de herramientas de seguridad. Incluyen prácticas hands-on, certificados de finalización y soporte continuo después del curso."
-    },
-    {
-      question: "¿Cómo funcionan las capacitaciones en IA segura?",
-      answer: "Enseñamos a usar herramientas de inteligencia artificial de manera responsable, sin exponer datos sensibles. Aprenderás técnicas de anonimización, mejores prácticas de privacidad y cómo implementar IA en tu empresa de forma segura."
-    },
-    {
-      question: "¿Qué incluye el servicio de prevención de ataques?",
-      answer: "Incluye análisis de vulnerabilidades, implementación de medidas preventivas, monitoreo continuo, configuración de firewalls y sistemas de detección de intrusiones. Ofrecemos planes personalizados según el tamaño de tu empresa."
-    },
-    {
-      question: "¿Cómo funciona el soporte ante ataques informáticos?",
-      answer: "Ofrecemos respuesta rápida 24/7 ante incidentes de seguridad. Nuestro equipo analiza el ataque, contiene la amenaza, recupera sistemas afectados y proporciona un informe detallado con recomendaciones para prevenir futuros incidentes."
-    },
-    {
-      question: "¿Ofrecen planes corporativos?",
-      answer: "Sí, ofrecemos planes empresariales personalizados que combinan varios servicios. Contacta con nuestro equipo para una consulta gratuita y una cotización ajustada a las necesidades específicas de tu organización."
-    }
+    { question: t("faq.q1"), answer: t("faq.a1") },
+    { question: t("faq.q2"), answer: t("faq.a2") },
+    { question: t("faq.q3"), answer: t("faq.a3") },
+    { question: t("faq.q4"), answer: t("faq.a4") },
+    { question: t("faq.q5"), answer: t("faq.a5") },
+    { question: t("faq.q6"), answer: t("faq.a6") },
   ]
 
   useEffect(() => {
@@ -171,9 +153,9 @@ export default function ProductosPage() {
       <main className="min-h-screen py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Servicios Profesionales de Seguridad Digital</h1>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">{t("heading.title")}</h1>
             <p className="text-xl text-muted-foreground">
-              Desarrollo web seguro, capacitaciones especializadas y servicios de ciberseguridad empresarial.
+              {t("heading.description")}
             </p>
           </div>
 
@@ -192,7 +174,7 @@ export default function ProductosPage() {
 
             <div className="border rounded-lg p-4">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="font-medium">Filtros</h3>
+                <h3 className="font-medium">{t("filters.title")}</h3>
                 <Button variant="ghost" size="sm" className="h-8 text-xs" onClick={clearFilters}>
                   {t("empty.clear")}
                 </Button>
@@ -200,7 +182,7 @@ export default function ProductosPage() {
 
               <Accordion type="multiple" className="w-full">
                 <AccordionItem value="category">
-                  <AccordionTrigger className="py-2">Categoría</AccordionTrigger>
+                  <AccordionTrigger className="py-2">{t("filters.category")}</AccordionTrigger>
                   <AccordionContent>
                     <div className="space-y-2">
                       {categories.map((category) => (
@@ -218,7 +200,7 @@ export default function ProductosPage() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="price">
-                  <AccordionTrigger className="py-2">Precio</AccordionTrigger>
+                  <AccordionTrigger className="py-2">{t("filters.price")}</AccordionTrigger>
                   <AccordionContent>
                     <div className="space-y-2">
                       {priceRanges.map((range) => (
@@ -240,7 +222,7 @@ export default function ProductosPage() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="vendor">
-                  <AccordionTrigger className="py-2">Proveedor</AccordionTrigger>
+                  <AccordionTrigger className="py-2">{t("filters.vendor")}</AccordionTrigger>
                   <AccordionContent>
                     <div className="space-y-2">
                       {vendors.map((vendor) => (
@@ -281,7 +263,7 @@ export default function ProductosPage() {
               <div className="flex items-center gap-2 w-full sm:w-auto">
                 <Select defaultValue="featured">
                   <SelectTrigger className="w-full sm:w-[180px]">
-                    <SelectValue placeholder="Ordenar por" />
+                    <SelectValue placeholder={t("filters.sortBy")} />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="featured">{t("filters.sortPopular")}</SelectItem>
@@ -339,7 +321,7 @@ export default function ProductosPage() {
                       ))}
                       {product.features.length > 2 && (
                         <Badge variant="outline" className="text-xs">
-                          +{product.features.length - 2} más
+                          {t("card.moreFeatures", { count: product.features.length - 2 })}
                         </Badge>
                       )}
                     </div>
@@ -358,15 +340,15 @@ export default function ProductosPage() {
             </div>
 
             <div className="mt-8 flex justify-center">
-              <Button variant="outline">{t("loading").replace("...", "")} +</Button>
+              <Button variant="outline">{t("loadMore")}</Button>
             </div>
           </div>
         </div>
       </div>
       
       <ReusableFaqSection 
-        title="Preguntas Frecuentes sobre Productos"
-        description="Respuestas a las preguntas más comunes sobre nuestros productos de seguridad."
+        title={t("faq.title")}
+        description={t("faq.description")}
         faqs={productFaqs}
       />
     </main>

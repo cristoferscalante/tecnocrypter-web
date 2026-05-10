@@ -54,6 +54,12 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
         description: post.excerpt,
         images: post.image ? [post.image] : undefined,
       },
+      alternates: {
+        canonical: `https://tecnocrypter.com/blog/${slug}`,
+        languages: {
+          es: `https://tecnocrypter.com/blog/${slug}`,
+        },
+      },
     }
   } catch (error) {
     return {

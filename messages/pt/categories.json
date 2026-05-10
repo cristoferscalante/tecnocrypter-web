@@ -3,17 +3,32 @@
     "encriptacion": {
       "title": "Criptografia e Ciframento - TecnoCrypter",
       "description": "Guias completos sobre criptografia, ciframento de dados e proteção da informação.",
-      "keywords": ["criptografia", "ciframento", "proteção de dados", "AES", "RSA"]
+      "keywords": ["criptografia", "ciframento", "proteção de dados", "AES", "RSA"],
+      "landingTitle": "Criptografia: guias claros para proteger informações",
+      "landingDescription": "Conteúdo educativo sobre criptografia, privacidade, mensagens seguras, proteção de arquivos e boas práticas para aplicar criptografia sem complexidade desnecessária.",
+      "intro1": "Traduzimos conceitos técnicos como AES, ChaCha20, hashing, chaves públicas e criptografia de ponta a ponta em decisões práticas.",
+      "intro2": "Os guias conectam teoria com uso real: quando criptografar, qual ferramenta escolher e quais erros de configuração evitar.",
+      "intro3": "O objetivo é ajudar você a proteger dados pessoais ou profissionais entendendo os limites de cada método."
     },
     "criptomonedas": {
       "title": "Criptomoedas - TecnoCrypter",
       "description": "Análises, guias e notícias atualizadas sobre Bitcoin, Ethereum e o ecossistema crypto.",
-      "keywords": ["criptomoedas", "bitcoin", "ethereum", "blockchain", "crypto"]
+      "keywords": ["criptomoedas", "bitcoin", "ethereum", "blockchain", "crypto"],
+      "landingTitle": "Criptomoedas: segurança, adoção e análise prática",
+      "landingDescription": "Guias e análises sobre Bitcoin, Ethereum, wallets, autocustódia e riscos reais do ecossistema cripto. Priorizamos contexto útil em vez de manchetes especulativas.",
+      "intro1": "Explicamos conceitos cripto com foco em segurança: custódia de chaves, wallets, contratos inteligentes e exposição a golpes comuns.",
+      "intro2": "Cada artigo separa tendências relevantes do ruído do mercado, com recomendações acionáveis para usuários e equipes técnicas.",
+      "intro3": "Quando cobrimos notícias, adicionamos implicações práticas: o que muda, quem é afetado e quais medidas vale revisar."
     },
     "noticias": {
       "title": "Notícias de Cibersegurança - TecnoCrypter",
       "description": "Últimas notícias e atualizações sobre cibersegurança, ameaças digitais e proteção.",
-      "keywords": ["notícias cibersegurança", "ameaças digitais", "atualizações segurança"]
+      "keywords": ["notícias cibersegurança", "ameaças digitais", "atualizações segurança"],
+      "landingTitle": "Notícias tech com contexto de segurança digital",
+      "landingDescription": "Atualidade sobre cibersegurança, inteligência artificial, privacidade e tecnologia explicada com impacto prático para usuários, criadores e empresas.",
+      "intro1": "Selecionamos notícias que afetam a segurança digital, a privacidade ou a forma como usamos tecnologia no trabalho diário.",
+      "intro2": "Cada cobertura prioriza contexto verificável, consequências e passos razoáveis antes de alarmismo ou repetição de comunicados.",
+      "intro3": "Quando uma notícia implica risco, adicionamos sinais para observar e ações concretas para reduzir exposição."
     }
   }
 }

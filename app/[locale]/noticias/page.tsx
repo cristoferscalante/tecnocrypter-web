@@ -1,16 +1,32 @@
 import type { Metadata } from "next"
 import { generateBlogMetadata } from "@/lib/metadata"
 import BlogClientPage from "../blog/BlogClientPage"
+import { getTranslations } from "next-intl/server"
 
-export const metadata: Metadata = generateBlogMetadata({
-  title: "Noticias Tech",
-  description:
-    "Actualidad tecnológica y ciberseguridad: lo último en IA, seguridad y tendencias del mundo digital.",
-  slug: "noticias",
-  image: "https://tecnocrypter.com/Seo/blog.webp",
-  keywords: ["noticias", "tecnología", "ciberseguridad", "IA"],
-})
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "categories.noticias" })
 
-export default function NoticiasPage() {
-  return <BlogClientPage initialCategory="noticias" />
+  return generateBlogMetadata({
+    title: t("title"),
+    description: t("description"),
+    slug: "noticias",
+    locale,
+    image: "https://tecnocrypter.com/Seo/blog.webp",
+    keywords: t.raw("keywords"),
+  })
+}
+
+export default async function NoticiasPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "categories.noticias" })
+
+  return (
+    <BlogClientPage
+      initialCategory="noticias"
+      title={t("landingTitle")}
+      description={t("landingDescription")}
+      editorialIntro={[t("intro1"), t("intro2"), t("intro3")]}
+    />
+  )
 }

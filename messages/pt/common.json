@@ -1,4 +1,9 @@
 {
+  "meta": {
+    "title": "TecnoCrypter - Cibersegurança e Criptomoedas",
+    "description": "Plataforma de cibersegurança, criptografia e tecnologia blockchain com produtos seguros, ferramentas de privacidade e notícias sobre criptomoedas.",
+    "keywords": "cibersegurança, criptografia, criptomoedas, blockchain, bitcoin, ethereum, privacidade, segurança digital"
+  },
   "nav": {
     "blog": "Blog",
     "store": "Loja",

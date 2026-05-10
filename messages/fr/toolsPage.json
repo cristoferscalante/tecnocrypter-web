@@ -1,0 +1,45 @@
+{
+  "toolsPage": {
+    "meta": {
+      "title": "40 Outils Gratuits de Sécurité et de Développement",
+      "description": "40 outils gratuits de sécurité et de développement : générateur de mot de passe, chiffrement AES-256, vérificateur de fuites, convertisseur Base64, et plus. Sans inscription."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "tools": "Outils"
+    },
+    "heading": {
+      "title": "Outils de Sécurité",
+      "description": "Utilisez nos outils gratuits pour renforcer votre sécurité numérique et protéger vos informations."
+    },
+    "categoryNames": {
+      "Seguridad": "Sécurité",
+      "Privacidad": "Confidentialité",
+      "Desarrollo": "Développement",
+      "Utilidades": "Utilitaires"
+    },
+    "useTool": "Utiliser l'outil",
+    "needMore": {
+      "title": "Besoin de plus d'outils ?",
+      "description": "Nous développons constamment de nouveaux outils de sécurité. Suivez-nous pour rester informé des derniers ajouts.",
+      "suggest": "Suggérer un outil",
+      "blog": "Voir le blog de sécurité"
+    },
+    "faq": {
+      "title": "Questions fréquentes sur les outils",
+      "description": "Réponses aux questions les plus courantes sur nos outils de sécurité.",
+      "q1": "Les outils sont-ils entièrement gratuits ?",
+      "a1": "Oui, tous nos outils de base sont entièrement gratuits et sans inscription. Certaines fonctionnalités avancées peuvent nécessiter un compte premium, mais les fonctions principales restent gratuites.",
+      "q2": "Mes données sont-elles stockées sur vos serveurs ?",
+      "a2": "Non, la plupart de nos outils traitent les données localement dans votre navigateur par mesure de sécurité. Les données ne sont pas envoyées à nos serveurs, garantissant ainsi votre vie privée.",
+      "q3": "Puis-je utiliser les outils hors ligne ?",
+      "a3": "Certains outils, comme le générateur de mots de passe, fonctionnent complètement hors ligne une fois chargés. D'autres, nécessitant des vérifications en temps réel, requièrent une connexion internet.",
+      "q4": "À quelle fréquence mettez-vous à jour les outils ?",
+      "a4": "Nous mettons régulièrement à jour nos outils pour améliorer la sécurité, ajouter de nouvelles fonctionnalités et corriger des bugs. Les mises à jour s'effectuent automatiquement sans interrompre votre utilisation.",
+      "q5": "Puis-je intégrer ces outils à mon site web ?",
+      "a5": "Nous proposons des API et des widgets intégrables pour certains de nos outils. Contactez notre équipe technique pour connaître les options d'intégration disponibles.",
+      "q6": "Ces outils sont-ils sûrs pour un usage professionnel ?",
+      "a6": "Oui, nos outils sont conçus selon les normes de sécurité en entreprise. Nous proposons des versions premium avec des fonctionnalités supplémentaires d'audit et de conformité adaptées aux entreprises."
+    }
+  }
+}

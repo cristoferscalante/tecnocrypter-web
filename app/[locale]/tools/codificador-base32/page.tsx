@@ -14,7 +14,7 @@ export const metadata: Metadata = generateToolMetadata({
     "convertir base32",
     "base32hex",
     "crockford base32",
-    "codificaciÃ³n binaria",
+    "codificación binaria",
     "herramienta base32",
   ],
 })

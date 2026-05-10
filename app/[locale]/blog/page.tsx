@@ -13,6 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: t("title"),
     description: t("description"),
     slug: "blog",
+    locale: locale,
     image: "https://tecnocrypter.com/seo/blog.webp",
     keywords: [
       "seguridad cibernética",

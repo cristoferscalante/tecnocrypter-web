@@ -1,7 +1,19 @@
 import createMiddleware from 'next-intl/middleware'
 import {routing} from './i18n/routing'
 
-export default createMiddleware(routing)
+const intlMiddleware = createMiddleware(routing)
+const INDEXABLE_LOCALES = new Set(['es'])
+
+export default function proxy(request: Parameters<typeof intlMiddleware>[0]) {
+  const response = intlMiddleware(request)
+  const firstSegment = request.nextUrl.pathname.split('/').filter(Boolean)[0]
+
+  if (routing.locales.includes(firstSegment as (typeof routing.locales)[number]) && !INDEXABLE_LOCALES.has(firstSegment)) {
+    response.headers.set('X-Robots-Tag', 'noindex, nofollow')
+  }
+
+  return response
+}
 
 export const config = {
   // Match all pathnames except for:

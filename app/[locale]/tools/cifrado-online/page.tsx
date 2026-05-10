@@ -29,7 +29,7 @@ export default function CifradoOnlinePage() {
       ]} />
       <WebApplicationStructuredData
         name="Cifrado Online - TecnoCrypter"
-        description="Cifra y descifra textos y archivos con AES-256-GCM y mÃ¡s algoritmos de encriptaciÃ³n."
+        description="Cifra y descifra textos y archivos con AES-256-GCM y más algoritmos de encriptación."
         url="https://tecnocrypter.com/tools/cifrado-online"
       />
       <CifradoOnline />

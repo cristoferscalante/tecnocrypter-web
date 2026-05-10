@@ -48,7 +48,7 @@ module.exports = {
     const pathModule = require('path');
     
     // Verificar que la página existe
-    const appDir = pathModule.join(process.cwd(), 'app');
+    const appDir = pathModule.join(process.cwd(), 'app', '[locale]');
     const pagePath = path === '/' ? '/page' : path + '/page';
     const possiblePaths = [
       pathModule.join(appDir, pagePath + '.tsx'),

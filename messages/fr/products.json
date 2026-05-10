@@ -6,12 +6,25 @@
       "keywords": ["produits sécurité numérique", "chiffrement données", "protection vie privée"]
     },
     "heading": {
-      "title": "Produits de Sécurité Numérique",
-      "description": "Découvrez notre sélection premium d'outils et solutions de sécurité numérique."
+      "title": "Services Professionnels de Sécurité Numérique",
+      "description": "Développement web sécurisé, formations spécialisées et services de cybersécurité pour entreprises."
     },
     "filters": {
       "search": "Rechercher des produits...",
+      "title": "Filtres",
+      "category": "Catégorie",
+      "price": "Prix",
+      "vendor": "Fournisseur",
       "all": "Tous",
+      "webDevelopment": "Développement Web",
+      "securityTraining": "Formations",
+      "aiTraining": "IA Sécurisée",
+      "cybersecurity": "Cybersécurité",
+      "incidentResponse": "Réponse aux Incidents",
+      "priceRange1": "Moins de $1,000",
+      "priceRange2": "$1,000 - $2,000",
+      "priceRange3": "$2,000 - $4,000",
+      "priceRange4": "Plus de $4,000",
       "security": "Sécurité",
       "encryption": "Chiffrement",
       "privacy": "Confidentialité",
@@ -37,7 +50,8 @@
       "reviews": "avis",
       "rating": "note",
       "outOfStock": "Rupture de Stock",
-      "discount": "Remise"
+      "discount": "Remise",
+      "moreFeatures": "+{count} de plus"
     },
     "empty": {
       "title": "Aucun produit trouvé",
@@ -47,6 +61,23 @@
     "loading": "Chargement des produits...",
     "error": "Erreur lors du chargement des produits",
     "retry": "Réessayer",
+    "loadMore": "Charger plus",
+    "faq": {
+      "title": "Questions Fréquentes sur les Produits",
+      "description": "Réponses aux questions les plus courantes sur nos produits de sécurité.",
+      "q1": "Quels services de développement web proposez-vous ?",
+      "a1": "Nous proposons le développement de sites et d'applications web sécurisés de haute qualité, avec une approche sécurité dès la conception. Nous utilisons les meilleures pratiques du secteur et des technologies modernes pour garantir des applications robustes et protégées.",
+      "q2": "Que comprennent les formations en sécurité ?",
+      "a2": "Nos formations couvrent les bases de la sécurité numérique jusqu'à l'utilisation avancée d'outils de sécurité. Elles incluent des exercices pratiques, des certificats de fin de formation et un support continu après le cours.",
+      "q3": "Comment fonctionnent les formations en IA sécurisée ?",
+      "a3": "Nous enseignons l'utilisation responsable des outils d'intelligence artificielle sans exposer de données sensibles. Vous apprendrez des techniques d'anonymisation, les bonnes pratiques de confidentialité et comment déployer l'IA en entreprise en toute sécurité.",
+      "q4": "Que comprend le service de prévention des attaques ?",
+      "a4": "Il comprend l'analyse des vulnérabilités, la mise en place de mesures préventives, la surveillance continue, la configuration de pare-feu et de systèmes de détection d'intrusions. Nous proposons des plans personnalisés selon la taille de votre entreprise.",
+      "q5": "Comment fonctionne le support en cas de cyberattaque ?",
+      "a5": "Nous assurons une réponse rapide 24/7 aux incidents de sécurité. Notre équipe analyse l'attaque, contient la menace, restaure les systèmes affectés et fournit un rapport détaillé avec des recommandations pour prévenir de futurs incidents.",
+      "q6": "Proposez-vous des plans d'entreprise ?",
+      "a6": "Oui, nous proposons des plans professionnels personnalisés combinant plusieurs services. Contactez notre équipe pour une consultation gratuite et un devis adapté aux besoins de votre organisation."
+    },
     "payWith": "Payer en Cryptomonnaies",
     "cryptoPayment": {
       "title": "Paiement en Cryptomonnaies",

@@ -1,5 +1,10 @@
 {
   "home": {
+    "meta": {
+      "title": "TecnoCrypter - Outils Gratuits de Cybersécurité et de Chiffrement",
+      "description": "Plus de 40 outils gratuits de cybersécurité : générateur de mots de passe, chiffrement AES-256, vérificateur de fuites et plus. Tout fonctionne dans votre navigateur sans envoyer de données.",
+      "keywords": "cybersécurité, outils de sécurité, chiffrement, générateur de mots de passe, chiffrement en ligne, confidentialité numérique"
+    },
     "hero": {
       "badge": "Innovation en Sécurité",
       "welcomeTo": "Bienvenue sur ",

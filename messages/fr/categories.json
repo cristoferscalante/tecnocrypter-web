@@ -3,17 +3,32 @@
     "encriptacion": {
       "title": "Chiffrement et Cryptographie - TecnoCrypter",
       "description": "Guides complets sur le chiffrement, la cryptographie des données et la protection de l'information.",
-      "keywords": ["chiffrement", "cryptographie", "protection données", "AES", "RSA"]
+      "keywords": ["chiffrement", "cryptographie", "protection données", "AES", "RSA"],
+      "landingTitle": "Chiffrement : des guides clairs pour protéger l'information",
+      "landingDescription": "Contenu éducatif sur le chiffrement, la confidentialité, la messagerie sécurisée, la protection des fichiers et les bonnes pratiques cryptographiques sans complexité inutile.",
+      "intro1": "Nous traduisons des concepts techniques comme AES, ChaCha20, le hachage, les clés publiques et le chiffrement de bout en bout en décisions pratiques.",
+      "intro2": "Les guides relient la théorie à l'usage réel : quand chiffrer, quel outil choisir et quelles erreurs de configuration éviter.",
+      "intro3": "L'objectif est de vous aider à protéger des données personnelles ou professionnelles en comprenant les limites de chaque méthode."
     },
     "criptomonedas": {
       "title": "Cryptomonnaies - TecnoCrypter",
       "description": "Analyses, guides et actualités sur Bitcoin, Ethereum et l'écosystème crypto.",
-      "keywords": ["cryptomonnaies", "bitcoin", "ethereum", "blockchain", "crypto"]
+      "keywords": ["cryptomonnaies", "bitcoin", "ethereum", "blockchain", "crypto"],
+      "landingTitle": "Cryptomonnaies : sécurité, adoption et analyse pratique",
+      "landingDescription": "Guides et analyses sur Bitcoin, Ethereum, les wallets, l'auto-conservation et les risques réels de l'écosystème crypto. Nous privilégions le contexte utile aux titres spéculatifs.",
+      "intro1": "Nous expliquons les concepts crypto avec un focus sécurité : garde des clés, wallets, contrats intelligents et exposition aux arnaques courantes.",
+      "intro2": "Chaque article sépare les tendances pertinentes du bruit du marché, avec des recommandations actionnables pour les utilisateurs et les équipes techniques.",
+      "intro3": "Lorsque nous couvrons une actualité, nous ajoutons ses implications pratiques : ce qui change, qui est concerné et quelles mesures revoir."
     },
     "noticias": {
       "title": "Actualités Cybersécurité - TecnoCrypter",
       "description": "Dernières actualités et mises à jour sur la cybersécurité, les menaces numériques et la protection.",
-      "keywords": ["actualités cybersécurité", "menaces numériques", "mises à jour sécurité"]
+      "keywords": ["actualités cybersécurité", "menaces numériques", "mises à jour sécurité"],
+      "landingTitle": "Actualités tech avec contexte de sécurité numérique",
+      "landingDescription": "Actualité sur la cybersécurité, l'intelligence artificielle, la confidentialité et la technologie expliquée avec un impact pratique pour les utilisateurs, créateurs et entreprises.",
+      "intro1": "Nous sélectionnons les nouvelles qui affectent la sécurité numérique, la confidentialité ou l'utilisation de la technologie au quotidien.",
+      "intro2": "Chaque couverture privilégie le contexte vérifiable, les conséquences et les étapes raisonnables plutôt que l'alarmisme ou la répétition de communiqués.",
+      "intro3": "Lorsqu'une nouvelle implique un risque, nous ajoutons les signaux à surveiller et les actions concrètes pour réduire l'exposition."
     }
   }
 }

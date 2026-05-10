@@ -14,16 +14,31 @@ import { CtaSection } from "@/components/sections/cta-section"
 
 import { getTranslations } from "next-intl/server"
 
+const INDEXABLE_LOCALES = new Set(["es"])
+const DEFAULT_HOME_META = {
+  title: "TecnoCrypter - Ciberseguridad, privacidad y herramientas online",
+  description: "Aprende ciberseguridad, protege tu privacidad y usa herramientas gratuitas para contraseñas, cifrado, análisis de URLs, hashes y datos digitales.",
+  keywords: "ciberseguridad, privacidad digital, herramientas online, encriptación, contraseñas seguras, criptomonedas",
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "home.meta" })
+  const shouldIndex = INDEXABLE_LOCALES.has(locale)
+  const t = shouldIndex ? await getTranslations({ locale, namespace: "home.meta" }) : null
+  const meta = {
+    title: t ? t("title") : DEFAULT_HOME_META.title,
+    description: t ? t("description") : DEFAULT_HOME_META.description,
+    keywords: t ? t("keywords") : DEFAULT_HOME_META.keywords,
+  }
 
   return generatePageMetadata({
-    title: t("title"),
-    description: t("description"),
+    title: meta.title,
+    description: meta.description,
     slug: "",
+    locale: locale,
     image: "https://tecnocrypter.com/seo/home.webp",
-    keywords: t("keywords").split(", ")
+    keywords: meta.keywords.split(", "),
+    noIndex: !shouldIndex,
   })
 }
 

@@ -4,6 +4,16 @@ import path from 'path'
 
 const BASE_URL = 'https://tecnocrypter.com'
 
+// Helper to generate alternates
+function getAlternates(routePath: string) {
+  const cleanPath = routePath === '/' ? '' : routePath;
+  return {
+    languages: {
+      es: `${BASE_URL}${cleanPath}`,
+    },
+  }
+}
+
 // Get blog slugs from content directory
 function getBlogSlugs(): string[] {
   const blogDir = path.join(process.cwd(), 'content', 'blog')
@@ -27,9 +37,9 @@ function getBlogLastMod(slug: string): Date {
   }
 }
 
-// Get tool directories from app/tools
+// Get tool directories from app/[locale]/tools
 function getToolSlugs(): string[] {
-  const toolsDir = path.join(process.cwd(), 'app', 'tools')
+  const toolsDir = path.join(process.cwd(), 'app', '[locale]', 'tools')
   try {
     return fs.readdirSync(toolsDir)
       .filter(item => {
@@ -45,81 +55,30 @@ function getToolSlugs(): string[] {
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
-  // Static pages with their priorities and change frequencies
-  const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: BASE_URL,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 1.0,
-    },
-    {
-      url: `${BASE_URL}/blog`,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/productos`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/tools`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/seguridad`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/criptomonedas`,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/encriptacion`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/noticias`,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/contacto`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${BASE_URL}/privacidad`,
-      lastModified: now,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-    {
-      url: `${BASE_URL}/terminos`,
-      lastModified: now,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-    {
-      url: `${BASE_URL}/cookies`,
-      lastModified: now,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
+  // Base routes for static pages
+  const staticRoutes = [
+    { path: '/', priority: 1.0, changeFrequency: 'daily' as const },
+    { path: '/blog', priority: 0.9, changeFrequency: 'daily' as const },
+    { path: '/productos', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/tools', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/seguridad', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/criptomonedas', priority: 0.8, changeFrequency: 'daily' as const },
+    { path: '/encriptacion', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/noticias', priority: 0.8, changeFrequency: 'daily' as const },
+    { path: '/contacto', priority: 0.6, changeFrequency: 'monthly' as const },
+    { path: '/privacidad', priority: 0.3, changeFrequency: 'yearly' as const },
+    { path: '/terminos', priority: 0.3, changeFrequency: 'yearly' as const },
+    { path: '/cookies', priority: 0.3, changeFrequency: 'yearly' as const },
   ]
+
+  // Generate sitemap items for static routes
+  const staticPages: MetadataRoute.Sitemap = staticRoutes.map(route => ({
+    url: `${BASE_URL}${route.path === '/' ? '' : route.path}`,
+    lastModified: now,
+    changeFrequency: route.changeFrequency,
+    priority: route.priority,
+    alternates: getAlternates(route.path)
+  }))
 
   // Blog posts - with real last modified dates
   const blogPages: MetadataRoute.Sitemap = getBlogSlugs().map(slug => ({
@@ -127,6 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: getBlogLastMod(slug),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
+    alternates: getAlternates(`/blog/${slug}`)
   }))
 
   // Tool pages
@@ -135,6 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
+    alternates: getAlternates(`/tools/${slug}`)
   }))
 
   return [...staticPages, ...blogPages, ...toolPages]

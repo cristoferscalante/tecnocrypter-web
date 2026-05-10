@@ -62,6 +62,13 @@ const tools = [
   { title: "Generador de Tablas CSV", description: "Crea tablas de datos visualmente y expórtalas como archivos CSV.", href: "/tools/generador-csv", icon: Table, category: "Utilidades" },
 ]
 
+const categoryKeyMap: Record<string, "security" | "privacy" | "development" | "utilities"> = {
+  Seguridad: "security",
+  Privacidad: "privacy",
+  Desarrollo: "development",
+  Utilidades: "utilities",
+}
+
 import { getTranslations } from "next-intl/server"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -79,6 +86,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function ToolsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: "toolsPage" })
+  const tTools = await getTranslations({ locale, namespace: "tools" })
+  const tCategories = await getTranslations({ locale, namespace: "toolCategories" })
 
   const toolsFaqs = [
     { question: t("faq.q1"), answer: t("faq.a1") },
@@ -98,8 +107,8 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
     itemListElement: tools.map((tool, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: tool.title,
-      description: tool.description,
+      name: tTools(`${tool.href.replace("/tools/", "")}.name`),
+      description: tTools(`${tool.href.replace("/tools/", "")}.description`),
       url: `https://tecnocrypter.com${tool.href}`,
     })),
   }
@@ -129,6 +138,8 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {tools.map((tool) => {
               const IconComponent = tool.icon
+              const slug = tool.href.replace("/tools/", "")
+              const categoryKey = categoryKeyMap[tool.category]
               return (
                 <Card key={tool.href} className="group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/20">
                   <CardHeader>
@@ -137,14 +148,14 @@ export default async function ToolsPage({ params }: { params: Promise<{ locale: 
                         <IconComponent className="h-6 w-6 text-primary" />
                       </div>
                       <span className="text-sm font-medium text-muted-foreground bg-muted px-2 py-1 rounded-full">
-                        {t(`categoryNames.${tool.category}`) || tool.category}
+                        {tCategories(categoryKey)}
                       </span>
                     </div>
                     <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                      {tool.title}
+                      {tTools(`${slug}.name`)}
                     </CardTitle>
                     <CardDescription className="text-base">
-                      {tool.description}
+                      {tTools(`${slug}.description`)}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>

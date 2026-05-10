@@ -6,12 +6,25 @@
       "keywords": ["productos seguridad digital", "cifrado datos", "protección privacidad"]
     },
     "heading": {
-      "title": "Productos de Seguridad Digital",
-      "description": "Descubre nuestra selección premium de herramientas y soluciones de seguridad digital."
+      "title": "Servicios Profesionales de Seguridad Digital",
+      "description": "Desarrollo web seguro, capacitaciones especializadas y servicios de ciberseguridad empresarial."
     },
     "filters": {
       "search": "Buscar productos...",
+      "title": "Filtros",
+      "category": "Categoría",
+      "price": "Precio",
+      "vendor": "Proveedor",
       "all": "Todos",
+      "webDevelopment": "Desarrollo Web",
+      "securityTraining": "Capacitaciones",
+      "aiTraining": "IA Segura",
+      "cybersecurity": "Ciberseguridad",
+      "incidentResponse": "Respuesta a Incidentes",
+      "priceRange1": "Menos de $1,000",
+      "priceRange2": "$1,000 - $2,000",
+      "priceRange3": "$2,000 - $4,000",
+      "priceRange4": "Más de $4,000",
       "security": "Seguridad",
       "encryption": "Encriptación",
       "privacy": "Privacidad",
@@ -37,7 +50,8 @@
       "reviews": "reseñas",
       "rating": "valoración",
       "outOfStock": "Agotado",
-      "discount": "Descuento"
+      "discount": "Descuento",
+      "moreFeatures": "+{count} más"
     },
     "empty": {
       "title": "No se encontraron productos",
@@ -47,6 +61,23 @@
     "loading": "Cargando productos...",
     "error": "Error al cargar los productos",
     "retry": "Intentar de nuevo",
+    "loadMore": "Cargar más",
+    "faq": {
+      "title": "Preguntas Frecuentes sobre Productos",
+      "description": "Respuestas a las preguntas más comunes sobre nuestros productos de seguridad.",
+      "q1": "¿Qué servicios de desarrollo web ofrecen?",
+      "a1": "Ofrecemos desarrollo de sitios web y aplicaciones web seguras de alta calidad, con enfoque en seguridad desde el diseño. Utilizamos las mejores prácticas de la industria y tecnologías modernas para garantizar aplicaciones robustas y protegidas.",
+      "q2": "¿Qué incluyen las capacitaciones de seguridad?",
+      "a2": "Nuestras capacitaciones cubren desde conceptos básicos de seguridad digital hasta el uso avanzado de herramientas de seguridad. Incluyen prácticas hands-on, certificados de finalización y soporte continuo después del curso.",
+      "q3": "¿Cómo funcionan las capacitaciones en IA segura?",
+      "a3": "Enseñamos a usar herramientas de inteligencia artificial de manera responsable, sin exponer datos sensibles. Aprenderás técnicas de anonimización, mejores prácticas de privacidad y cómo implementar IA en tu empresa de forma segura.",
+      "q4": "¿Qué incluye el servicio de prevención de ataques?",
+      "a4": "Incluye análisis de vulnerabilidades, implementación de medidas preventivas, monitoreo continuo, configuración de firewalls y sistemas de detección de intrusiones. Ofrecemos planes personalizados según el tamaño de tu empresa.",
+      "q5": "¿Cómo funciona el soporte ante ataques informáticos?",
+      "a5": "Ofrecemos respuesta rápida 24/7 ante incidentes de seguridad. Nuestro equipo analiza el ataque, contiene la amenaza, recupera sistemas afectados y proporciona un informe detallado con recomendaciones para prevenir futuros incidentes.",
+      "q6": "¿Ofrecen planes corporativos?",
+      "a6": "Sí, ofrecemos planes empresariales personalizados que combinan varios servicios. Contacta con nuestro equipo para una consulta gratuita y una cotización ajustada a las necesidades específicas de tu organización."
+    },
     "payWith": "Pagar con Criptomonedas",
     "cryptoPayment": {
       "title": "Pago con Criptomonedas",
