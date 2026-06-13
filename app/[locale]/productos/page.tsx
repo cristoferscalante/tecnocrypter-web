@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Search, ShoppingCart, Filter } from "lucide-react"
+import { Search, ShoppingCart, Filter, Star } from "lucide-react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Checkbox } from "@/components/ui/checkbox"
@@ -187,10 +187,14 @@ export default function ProductosPage() {
                     <div className="space-y-2">
                       {categories.map((category) => (
                         <div key={category.id} className="flex items-center space-x-2">
-                          <Checkbox id={`category-${category.id}`} />
+                          <Checkbox 
+                            id={`category-${category.id}`} 
+                            checked={selectedCategory === category.id}
+                            onCheckedChange={() => setSelectedCategory(category.id)}
+                          />
                           <label
                             htmlFor={`category-${category.id}`}
-                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 animate-none select-none cursor-pointer"
                           >
                             {category.name}
                           </label>
@@ -300,7 +304,7 @@ export default function ProductosPage() {
                       </div>
                       <div className="flex items-center text-sm font-medium">
                         <Star className="h-3 w-3 text-yellow-500 fill-yellow-500 mr-1" />
-                        {product.rating}
+                        4.8
                       </div>
                     </div>
                     <h3 className="font-bold text-lg mb-2 line-clamp-2 mt-3 group-hover:text-primary transition-colors">
