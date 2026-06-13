@@ -120,7 +120,7 @@ export function ProductShowcase() {
             <CardFooter className="pt-2 flex-col items-start gap-2">
               <div className="flex justify-center items-center w-full">
                 <Button asChild size="sm" className="w-full">
-                  <Link href={`https://wa.me/15551234567?text=${encodeURIComponent(tProd("card.whatsappMessage") + " " + product.name)}`} target="_blank" rel="noopener noreferrer">
+                  <Link href={`https://wa.me/573228836494?text=${encodeURIComponent(tProd("card.whatsappMessage") + " " + product.name)}`} target="_blank" rel="noopener noreferrer">
                     {tProd("card.contactSupport")}
                   </Link>
                 </Button>
