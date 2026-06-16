@@ -1,9 +1,11 @@
 ﻿import type { Metadata } from "next"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 import ContadorCaracteresClient from "@/components/tools/contador-caracteres-client"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("contador-caracteres", locale, {
   title: "Contador de Caracteres",
   description: "Cuenta caracteres, palabras, oraciones y párrafos en tiempo real. Incluye límites para Twitter, Instagram, LinkedIn y más. Analiza la densidad de palabras y legibilidad de tu texto.",
   slug: "tools/contador-caracteres",
@@ -17,7 +19,8 @@ export const metadata: Metadata = generateToolMetadata({
     "herramienta texto",
     "análisis de texto",
   ],
-})
+});
+}
 
 export default function ContadorCaracteres() {
   return (

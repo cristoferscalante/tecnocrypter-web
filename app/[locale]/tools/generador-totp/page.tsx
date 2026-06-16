@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import GeneradorTotpClient from "@/components/tools/generador-totp-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("generador-totp", locale, {
   title: "Generador TOTP/2FA Online",
   description: "Genera códigos TOTP (Time-based One-Time Password) para autenticación de dos factores. Compatible con Google Authenticator, Authy y más.",
   slug: "tools/generador-totp",
   keywords: ["generador totp", "2fa", "autenticación dos factores", "otp", "google authenticator", "seguridad"]
-})
+});
+}
 
 export default function GeneradorTotpPage() {
   return (

@@ -13,7 +13,7 @@ import { Toaster } from "@/components/ui/sonner"
 import { StructuredData } from "@/components/seo/structured-data"
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics"
 
-const INDEXABLE_LOCALES = new Set(["es"])
+const INDEXABLE_LOCALES = new Set(["es", "en", "fr", "pt"])
 const DEFAULT_META = {
   title: "TecnoCrypter - Ciberseguridad y Criptomonedas",
   description: "Plataforma de ciberseguridad, encriptación y tecnología blockchain con guías, herramientas gratuitas y recursos de privacidad digital.",
@@ -86,9 +86,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     metadataBase: new URL("https://tecnocrypter.com"),
     alternates: {
-      canonical: locale === "es" ? "/" : "/",
+      canonical: locale === "es" ? "/" : `/${locale}`,
       languages: {
         "es": "/",
+        "en": "/en",
+        "fr": "/fr",
+        "pt": "/pt",
+        "x-default": "/",
       },
     },
     category: "technology",

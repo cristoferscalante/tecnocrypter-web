@@ -1,9 +1,11 @@
 ﻿import type { Metadata } from "next"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 import GeneradorCredencialesClient from "@/components/tools/generador-credenciales-client"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("generador-credenciales", locale, {
   title: "Generador de Credenciales Determinísticas",
   description: "Genera usuarios y contraseñas determinísticas a partir de una palabra clave maestra. Las credenciales se recrean siempre iguales sin almacenar nada. Todo funciona en tu navegador.",
   slug: "tools/generador-credenciales",
@@ -17,7 +19,8 @@ export const metadata: Metadata = generateToolMetadata({
     "generador determinístico",
     "seguridad contraseñas",
   ],
-})
+});
+}
 
 export default function GeneradorCredenciales() {
   return (

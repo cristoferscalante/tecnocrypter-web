@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import ValidadorJsonClient from "@/components/tools/validador-json-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("validador-json", locale, {
   title: "Validador y Formateador JSON Online",
   description: "Valida, formatea y minifica JSON con vista de árbol interactiva. Detecta errores de sintaxis al instante. Herramienta gratuita para desarrolladores.",
   slug: "tools/validador-json",
   keywords: ["validador json", "formateador json", "json online", "json formatter", "json validator", "minificar json", "json tree"]
-})
+});
+}
 
 export default function ValidadorJsonPage() {
   return (

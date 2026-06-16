@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import FormateadorSqlClient from "@/components/tools/formateador-sql-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("formateador-sql", locale, {
   title: "Formateador de SQL Online",
   description: "Formatea, indenta y embellece consultas SQL automáticamente. Soporta SELECT, INSERT, UPDATE, DELETE, JOINs y más.",
   slug: "tools/formateador-sql",
   keywords: ["formateador sql", "sql beautifier", "sql formatter", "indentar sql", "embellecedor sql", "desarrollo"]
-})
+});
+}
 
 export default function FormateadorSqlPage() {
   return (

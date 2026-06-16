@@ -22,6 +22,52 @@
       "title": "Need Help with Your Security?",
       "description": "Our experts are available to help you protect your digital infrastructure.",
       "button": "Contact Experts"
+    },
+    "solutionsPage": {
+      "heading": {
+        "title": "Advanced Security Solutions",
+        "description": "Protect your digital assets with our cutting-edge cybersecurity solutions."
+      },
+      "viewDetails": "View Details",
+      "categories": {
+        "personal": {
+          "name": "Personal Security",
+          "description": "Protection for individuals and personal devices",
+          "antivirus": {
+            "title": "Antivirus Protection",
+            "description": "Real-time protection against malware, viruses, and ransomware for your personal devices."
+          },
+          "vpn": {
+            "title": "Secure VPN",
+            "description": "Browse anonymously and securely with our high-speed, no-logs VPN."
+          },
+          "passwords": {
+            "title": "Password Manager",
+            "description": "Store and generate secure passwords with end-to-end encryption."
+          }
+        },
+        "empresarial": {
+          "name": "Enterprise Security",
+          "description": "Robust solutions for companies and organizations",
+          "network": {
+            "title": "Network Security",
+            "description": "Advanced protection for corporate networks against intrusions and external attacks."
+          },
+          "monitoring": {
+            "title": "Continuous Monitoring",
+            "description": "24/7 surveillance of your systems with real-time alerts for suspicious behavior."
+          },
+          "incident": {
+            "title": "Incident Response",
+            "description": "Specialized team to respond quickly to security breaches."
+          }
+        }
+      },
+      "cta": {
+        "title": "Need a Custom Solution?",
+        "description": "Our team of security experts can design a solution tailored to your specific needs.",
+        "button": "Contact a Specialist"
+      }
     }
   }
 }

@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import OfuscadorTextoClient from "@/components/tools/ofuscador-texto-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("ofuscador-texto", locale, {
   title: "Ofuscador de Texto",
   description: "Ofusca texto usando homoglifos, Zalgo, caracteres invisibles y más técnicas Unicode para proteger tu privacidad o evitar filtros.",
   slug: "tools/ofuscador-texto",
   keywords: ["ofuscador texto", "homoglifos", "zalgo text", "unicode", "caracteres invisibles", "privacidad"]
-})
+});
+}
 
 export default function OfuscadorTextoPage() {
   return (

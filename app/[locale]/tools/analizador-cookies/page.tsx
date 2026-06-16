@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import AnalizadorCookiesClient from "@/components/tools/analizador-cookies-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("analizador-cookies", locale, {
   title: "Analizador de Cookies HTTP",
   description: "Analiza cookies HTTP y verifica sus atributos de seguridad: Secure, HttpOnly, SameSite, expiración y más.",
   slug: "tools/analizador-cookies",
   keywords: ["analizador cookies", "cookies http", "seguridad cookies", "SameSite", "HttpOnly", "Secure", "privacidad"]
-})
+});
+}
 
 export default function AnalizadorCookiesPage() {
   return (

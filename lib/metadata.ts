@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 // Configuración base para metadatos
 export const baseMetadata = {
@@ -57,6 +58,19 @@ function validateKeywords(keywords: string[]): string[] {
   return keywords;
 }
 
+// For alternate languages helper
+export function getAlternateLanguages(cleanSlug: string) {
+  const base = baseMetadata.siteUrl;
+  const slug = cleanSlug.startsWith('/') ? cleanSlug : (cleanSlug ? `/${cleanSlug}` : '');
+  return {
+    'es': `${base}${slug}`,
+    'en': `${base}/en${slug}`,
+    'fr': `${base}/fr${slug}`,
+    'pt': `${base}/pt${slug}`,
+    'x-default': `${base}${slug}`,
+  };
+}
+
 // Función principal para generar metadatos
 export function generatePageMetadata(params: MetadataParams = {}): Metadata {
   const {
@@ -74,7 +88,7 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
   } = params;
 
   const pageTitle = title 
-    ? validateTitle(`${title} | ${baseMetadata.siteName}`)
+    ? (title.includes(baseMetadata.siteName) ? validateTitle(title) : validateTitle(`${title} | ${baseMetadata.siteName}`))
     : validateTitle(baseMetadata.defaultTitle);
   
   const validatedDescription = validateDescription(description);
@@ -91,9 +105,7 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
   const imageUrl = image.startsWith('http') ? image : `${baseMetadata.siteUrl}${image}`;
 
   // For alternate languages
-  const languages: Record<string, string> = {
-    'es': `${baseMetadata.siteUrl}${cleanSlug}`,
-  };
+  const languages = getAlternateLanguages(cleanSlug);
 
   const metadata: Metadata = {
     metadataBase: new URL(baseMetadata.siteUrl),
@@ -174,6 +186,28 @@ export function generateToolMetadata(params: MetadataParams): Metadata {
     description: params.description || 'Herramientas gratuitas de ciberseguridad y privacidad. Protege tu información con nuestras utilidades online.',
     keywords: [...(params.keywords || []), 'herramientas', 'ciberseguridad', 'privacidad', 'online', 'gratuito'],
   });
+}
+
+export async function generateToolPageMetadata(slug: string, locale: string, fallbackParams: MetadataParams = {}): Promise<Metadata> {
+  try {
+    const t = await getTranslations({ locale, namespace: 'tools' });
+    const name = t(`${slug}.name`);
+    const desc = t(`${slug}.description`);
+    
+    return generateToolMetadata({
+      ...fallbackParams,
+      title: name || fallbackParams.title,
+      description: desc || fallbackParams.description,
+      slug: `tools/${slug}`,
+      locale,
+    });
+  } catch (e) {
+    return generateToolMetadata({
+      ...fallbackParams,
+      slug: `tools/${slug}`,
+      locale,
+    });
+  }
 }
 
 // Datos estructurados (JSON-LD) - mantener compatibilidad

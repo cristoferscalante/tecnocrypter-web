@@ -1,9 +1,11 @@
 ﻿import type { Metadata } from "next"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 import CifradoOnline from "@/components/tools/cifrado-online-client"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("cifrado-online", locale, {
   title: "Cifrado Online - AES-256 y ChaCha20 Gratis",
   description: "Cifra y descifra textos y archivos de forma segura directamente en tu navegador. Soporta AES-256-GCM, ChaCha20 y más algoritmos modernos sin enviar datos al servidor.",
   slug: "tools/cifrado-online",
@@ -17,7 +19,8 @@ export const metadata: Metadata = generateToolMetadata({
     "herramienta cifrado",
     "encriptar gratis",
   ],
-})
+});
+}
 
 export default function CifradoOnlinePage() {
   return (

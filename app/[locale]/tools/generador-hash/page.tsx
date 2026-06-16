@@ -1,9 +1,11 @@
 ﻿import type { Metadata } from "next"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 import GeneradorHash from "@/components/tools/generador-hash-client"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("generador-hash", locale, {
   title: "Generador de Hash",
   description: "Genera hashes MD5, SHA-1, SHA-256, SHA-384 y SHA-512 de textos y archivos. Compara hashes para verificar integridad. Herramienta gratuita que funciona en tu navegador.",
   slug: "tools/generador-hash",
@@ -17,7 +19,8 @@ export const metadata: Metadata = generateToolMetadata({
     "hash de archivo",
     "generador hash online",
   ],
-})
+});
+}
 
 export default function GeneradorHashPage() {
   return (

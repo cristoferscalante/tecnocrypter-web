@@ -10,11 +10,13 @@ import type { Metadata } from "next"
 import { ProductImageGallery } from "@/components/product-image-gallery"
 import { ProductService } from "@/services/product-service"
 import { StructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
+import { getAlternateLanguages } from "@/lib/metadata"
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
+    locale: string
     id: string
-  }
+  }>
 }
 
 // Función para obtener el producto desde Supabase
@@ -23,7 +25,7 @@ async function getProduct(id: string): Promise<Product | null> {
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
-  const { id } = await params
+  const { id, locale } = await params
   const product = await getProduct(id)
   
   if (!product) {
@@ -48,10 +50,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       images: product.images.length > 0 ? [product.images[0].url] : undefined,
     },
     alternates: {
-      canonical: `https://tecnocrypter.com/productos/${id}`,
-      languages: {
-        es: `https://tecnocrypter.com/productos/${id}`,
-      },
+      canonical: locale === "es" ? `https://tecnocrypter.com/productos/${id}` : `https://tecnocrypter.com/${locale}/productos/${id}`,
+      languages: getAlternateLanguages(`productos/${id}`),
     },
   }
 }

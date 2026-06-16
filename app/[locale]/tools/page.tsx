@@ -78,6 +78,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: t("title"),
     description: t("description"),
     slug: "tools",
+    locale,
     image: "https://tecnocrypter.com/seo/tools.webp",
     keywords: ["herramientas seguridad", "generador contraseñas", "limpiador metadatos", "verificador seguridad", "ciberseguridad gratuita", "base64", "json validator", "uuid generator", "jwt decoder", "regex tester", "conversor colores", "formateador sql", "generador totp", "passphrase", "minificador css"]
   })

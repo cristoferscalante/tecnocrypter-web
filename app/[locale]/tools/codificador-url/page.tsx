@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import CodificadorUrlClient from "@/components/tools/codificador-url-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("codificador-url", locale, {
   title: "Codificador URL Online",
   description: "Codifica y decodifica URLs y parámetros. Soporta encodeURIComponent y encodeURI. Herramienta gratuita para percent-encoding, 100% en tu navegador.",
   slug: "tools/codificador-url",
   keywords: ["codificar url", "decodificar url", "url encode", "url decode", "percent encoding", "encodeURIComponent", "query string"]
-})
+});
+}
 
 export default function CodificadorUrlPage() {
   return (

@@ -1,9 +1,11 @@
 ﻿import type { Metadata } from "next"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 import CodificadorBase32 from "@/components/tools/codificador-base32-client"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("codificador-base32", locale, {
   title: "Codificador Base32",
   description: "Codifica y decodifica textos y archivos en Base32, Base32Hex, z-base-32 y Crockford. Herramienta online gratuita que funciona completamente en tu navegador sin enviar datos.",
   slug: "tools/codificador-base32",
@@ -17,7 +19,8 @@ export const metadata: Metadata = generateToolMetadata({
     "codificación binaria",
     "herramienta base32",
   ],
-})
+});
+}
 
 export default function CodificadorBase32Page() {
   return (

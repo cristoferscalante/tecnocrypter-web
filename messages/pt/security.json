@@ -22,6 +22,52 @@
       "title": "Precisa de Ajuda com sua Segurança?",
       "description": "Nossos especialistas estão disponíveis para ajudá-lo a proteger sua infraestrutura digital.",
       "button": "Contatar Especialistas"
+    },
+    "solutionsPage": {
+      "heading": {
+        "title": "Soluções de Segurança Avançada",
+        "description": "Proteja seus ativos digitais com nossas soluções de segurança cibernética de última geração."
+      },
+      "viewDetails": "Ver Detalhes",
+      "categories": {
+        "personal": {
+          "name": "Segurança Pessoal",
+          "description": "Proteção para indivíduos e dispositivos pessoais",
+          "antivirus": {
+            "title": "Proteção Antivírus",
+            "description": "Proteção em tempo real contra malware, vírus e ransomware para seus dispositivos pessoais."
+          },
+          "vpn": {
+            "title": "VPN Segura",
+            "description": "Navegue de forma anônima e segura com nossa VPN de alta velocidade e sem registros."
+          },
+          "passwords": {
+            "title": "Gerenciador de Senhas",
+            "description": "Armazene e gere senhas seguras com criptografia de ponta a ponta."
+          }
+        },
+        "empresarial": {
+          "name": "Segurança Empresarial",
+          "description": "Soluções robustas para empresas e organizações",
+          "network": {
+            "title": "Segurança de Rede",
+            "description": "Proteção avançada para redes empresariais contra intrusões e ataques externos."
+          },
+          "monitoring": {
+            "title": "Monitoramento Contínuo",
+            "description": "Vigilância 24 horas por dia, 7 dias por semana de seus sistemas com alertas em tempo real para comportamentos suspeitos."
+          },
+          "incident": {
+            "title": "Resposta a Incidentes",
+            "description": "Equipe especialista para responder rapidamente a brechas de segurança."
+          }
+        }
+      },
+      "cta": {
+        "title": "Precisa de uma Solução Personalizada?",
+        "description": "Nossa equipe de especialistas em segurança pode projetar uma solução adaptada às suas necessidades específicas.",
+        "button": "Contatar um Especialista"
+      }
     }
   }
 }

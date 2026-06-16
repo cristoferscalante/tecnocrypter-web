@@ -14,7 +14,7 @@ import { CtaSection } from "@/components/sections/cta-section"
 
 import { getTranslations } from "next-intl/server"
 
-const INDEXABLE_LOCALES = new Set(["es"])
+const INDEXABLE_LOCALES = new Set(["es", "en", "fr", "pt"])
 const DEFAULT_HOME_META = {
   title: "TecnoCrypter - Ciberseguridad, privacidad y herramientas online",
   description: "Aprende ciberseguridad, protege tu privacidad y usa herramientas gratuitas para contraseñas, cifrado, análisis de URLs, hashes y datos digitales.",

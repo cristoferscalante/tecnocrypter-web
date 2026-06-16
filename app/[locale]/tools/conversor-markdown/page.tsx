@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import ConversorMarkdownClient from "@/components/tools/conversor-markdown-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("conversor-markdown", locale, {
   title: "Conversor Markdown a HTML Online",
   description: "Convierte Markdown a HTML y viceversa con vista previa en tiempo real. Soporta encabezados, listas, enlaces, imágenes y más. Herramienta gratuita.",
   slug: "tools/conversor-markdown",
   keywords: ["markdown a html", "conversor markdown", "markdown to html", "html to markdown", "markdown online", "markdown converter"]
-})
+});
+}
 
 export default function ConversorMarkdownPage() {
   return (

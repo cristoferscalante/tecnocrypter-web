@@ -7,35 +7,58 @@ import type { BlogPost } from "@/types"
 const postsDirectory = path.join(process.cwd(), "content/blog")
 
 export class BlogService {
-  static async getAllPosts(): Promise<BlogPost[]> {
+  static async getAllPosts(locale: string = "es"): Promise<BlogPost[]> {
     try {
-      // Crear directorio si no existe
       if (!fs.existsSync(postsDirectory)) {
         fs.mkdirSync(postsDirectory, { recursive: true })
         return []
       }
 
+      // 1. Obtener slugs por defecto en content/blog/ (default / es)
       const fileNames = fs.readdirSync(postsDirectory)
-      const posts = await Promise.all(
-        fileNames
+      const defaultSlugs = fileNames
+        .filter((name) => name.endsWith(".md"))
+        .map((name) => name.replace(/\.md$/, ""))
+
+      // 2. Obtener slugs específicos de content/blog/${locale}/ si el subdirectorio existe
+      let localeSlugs: string[] = []
+      const localeDir = path.join(postsDirectory, locale)
+      if (fs.existsSync(localeDir) && fs.statSync(localeDir).isDirectory()) {
+        const localeFiles = fs.readdirSync(localeDir)
+        localeSlugs = localeFiles
           .filter((name) => name.endsWith(".md"))
-          .map(async (fileName) => {
-            const slug = fileName.replace(/\.md$/, "")
-            return this.getPostBySlug(slug)
-          }),
+          .map((name) => name.replace(/\.md$/, ""))
+      }
+
+      // Unificar slugs (los localizados tienen prioridad sobre los default)
+      const allSlugs = Array.from(new Set([...localeSlugs, ...defaultSlugs]))
+
+      const posts = await Promise.all(
+        allSlugs.map(async (slug) => {
+          return this.getPostBySlug(slug, locale)
+        }),
       )
 
-      return posts.filter(Boolean).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      return posts
+        .filter((post): post is BlogPost => post !== null)
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     } catch (error) {
       console.error("Error al cargar posts:", error)
       return []
     }
   }
 
-  static async getPostBySlug(slug: string): Promise<BlogPost | null> {
+  static async getPostBySlug(slug: string, locale: string = "es"): Promise<BlogPost | null> {
     try {
-      const fullPath = path.join(postsDirectory, `${slug}.md`)
+      // 1. Buscar en content/blog/${locale}/${slug}.md
+      let fullPath = path.join(postsDirectory, locale, `${slug}.md`)
 
+      // 2. Si no existe, buscar en content/blog/${slug}.md
+      if (!fs.existsSync(fullPath)) {
+        fullPath = path.join(postsDirectory, `${slug}.md`)
+      }
+
+      // 3. Si sigue sin existir, retornar null
       if (!fs.existsSync(fullPath)) {
         return null
       }
@@ -64,9 +87,10 @@ export class BlogService {
         readTime: this.calculateReadTime(content),
         featured: data.featured || false,
         image: data.image || null,
+        faqs: data.faqs || null,
       }
     } catch (error) {
-      console.error(`Error al cargar post ${slug}:`, error)
+      console.error(`Error al cargar post ${slug} (locale: ${locale}):`, error)
       return null
     }
   }
@@ -77,8 +101,8 @@ export class BlogService {
     return Math.ceil(words / wordsPerMinute)
   }
 
-  static async getPostsByCategory(category: BlogPost["category"]): Promise<BlogPost[]> {
-    const allPosts = await this.getAllPosts()
+  static async getPostsByCategory(category: BlogPost["category"], locale: string = "es"): Promise<BlogPost[]> {
+    const allPosts = await this.getAllPosts(locale)
     return allPosts.filter((post) => post.category === category)
   }
 }

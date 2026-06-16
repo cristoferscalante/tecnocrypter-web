@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react"
 import type { BlogPost } from "@/types"
+import { useLocale } from "next-intl"
 
 export function useBlog() {
+  const locale = useLocale()
   const [posts, setPosts] = useState<BlogPost[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -12,7 +14,7 @@ export function useBlog() {
     const fetchPosts = async () => {
       try {
         setLoading(true)
-        const response = await fetch("/api/blog")
+        const response = await fetch(`/api/blog?locale=${locale}`)
         if (!response.ok) throw new Error("Error al cargar posts")
         const data = await response.json()
         setPosts(data)
@@ -24,7 +26,7 @@ export function useBlog() {
     }
 
     fetchPosts()
-  }, [])
+  }, [locale])
 
   const getPostsByCategory = (category: BlogPost["category"]) => {
     return posts.filter((post) => post.category === category)

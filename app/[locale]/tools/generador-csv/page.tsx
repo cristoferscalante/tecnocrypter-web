@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import GeneradorCsvClient from "@/components/tools/generador-csv-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("generador-csv", locale, {
   title: "Generador de Tablas CSV Online",
   description: "Crea tablas de datos visualmente y expórtalas como CSV. Edita celdas, añade columnas y descarga archivos CSV perfectos.",
   slug: "tools/generador-csv",
   keywords: ["generador csv", "crear csv", "tabla csv", "exportar csv", "datos tabulares", "excel"]
-})
+});
+}
 
 export default function GeneradorCsvPage() {
   return (

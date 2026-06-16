@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import ConversorHexClient from "@/components/tools/conversor-hex-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("conversor-hex", locale, {
   title: "Conversor Hexadecimal Online",
   description: "Convierte entre texto, hexadecimal, decimal, binario y colores RGB. Herramienta gratuita de conversión hex 100% en tu navegador.",
   slug: "tools/conversor-hex",
   keywords: ["hexadecimal", "conversor hex", "hex a texto", "hex a decimal", "hex a rgb", "binario", "colores hex"]
-})
+});
+}
 
 export default function ConversorHexPage() {
   return (

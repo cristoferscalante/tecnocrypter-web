@@ -1,9 +1,11 @@
 ﻿import type { Metadata } from "next"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 import ComparadorArchivosClient from "@/components/tools/comparador-archivos-client"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("comparador-archivos", locale, {
   title: "Comparador de Archivos",
   description: "Compara dos archivos o textos línea por línea y visualiza las diferencias al instante. Detecta cambios, adiciones y eliminaciones con resaltado visual. Todo funciona en tu navegador.",
   slug: "tools/comparador-archivos",
@@ -17,7 +19,8 @@ export const metadata: Metadata = generateToolMetadata({
     "diff checker",
     "herramienta comparación",
   ],
-})
+});
+}
 
 export default function ComparadorArchivos() {
   return (

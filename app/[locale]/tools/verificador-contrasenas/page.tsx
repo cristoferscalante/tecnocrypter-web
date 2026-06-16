@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import VerificadorContrasenasClient from "@/components/tools/verificador-contrasenas-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("verificador-contrasenas", locale, {
   title: "Verificador de Contraseñas Filtradas",
   description: "Comprueba si tu contraseña ha sido expuesta en filtraciones de datos usando Have I Been Pwned. Tu contraseña nunca se envía al servidor.",
   slug: "tools/verificador-contrasenas",
   keywords: ["verificador contraseñas", "contraseñas filtradas", "have i been pwned", "data breach", "seguridad contraseñas", "k-anonymity"]
-})
+});
+}
 
 export default function VerificadorContrasenasPage() {
   return (

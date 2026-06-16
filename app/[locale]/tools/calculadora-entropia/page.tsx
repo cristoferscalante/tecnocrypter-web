@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import CalculadoraEntropiaClient from "@/components/tools/calculadora-entropia-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("calculadora-entropia", locale, {
   title: "Calculadora de Entropía de Contraseñas",
   description: "Calcula la entropía y fortaleza de tus contraseñas. Muestra bits de entropía, tiempo estimado de crackeo y recomendaciones de seguridad.",
   slug: "tools/calculadora-entropia",
   keywords: ["entropía contraseña", "fortaleza password", "bits entropía", "seguridad contraseñas", "crackeo"]
-})
+});
+}
 
 export default function CalculadoraEntropiaPage() {
   return (

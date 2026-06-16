@@ -3,6 +3,7 @@ import fs from 'fs'
 import path from 'path'
 
 const BASE_URL = 'https://tecnocrypter.com'
+const LOCALES = ['es', 'en', 'fr', 'pt']
 
 // Helper to generate alternates
 function getAlternates(routePath: string) {
@@ -10,8 +11,19 @@ function getAlternates(routePath: string) {
   return {
     languages: {
       es: `${BASE_URL}${cleanPath}`,
+      en: `${BASE_URL}/en${cleanPath}`,
+      fr: `${BASE_URL}/fr${cleanPath}`,
+      pt: `${BASE_URL}/pt${cleanPath}`,
+      'x-default': `${BASE_URL}${cleanPath}`,
     },
   }
+}
+
+// Helper to get locale path
+function getLocalePath(routePath: string, locale: string) {
+  const cleanPath = routePath === '/' ? '' : routePath;
+  const prefix = locale === 'es' ? '' : `/${locale}`;
+  return `${BASE_URL}${prefix}${cleanPath}`;
 }
 
 // Get blog slugs from content directory
@@ -19,7 +31,12 @@ function getBlogSlugs(): string[] {
   const blogDir = path.join(process.cwd(), 'content', 'blog')
   try {
     return fs.readdirSync(blogDir)
-      .filter(file => file.endsWith('.md'))
+      .filter(file => {
+        if (!file.endsWith('.md')) return false
+        const nameWithoutExt = file.replace(/\.md$/, "")
+        const suffixPattern = /[-.](en|fr|pt)$/
+        return !suffixPattern.test(nameWithoutExt)
+      })
       .map(file => file.replace('.md', ''))
   } catch {
     return []
@@ -72,31 +89,46 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Generate sitemap items for static routes
-  const staticPages: MetadataRoute.Sitemap = staticRoutes.map(route => ({
-    url: `${BASE_URL}${route.path === '/' ? '' : route.path}`,
-    lastModified: now,
-    changeFrequency: route.changeFrequency,
-    priority: route.priority,
-    alternates: getAlternates(route.path)
-  }))
+  const staticPages: MetadataRoute.Sitemap = []
+  for (const locale of LOCALES) {
+    for (const route of staticRoutes) {
+      staticPages.push({
+        url: getLocalePath(route.path, locale),
+        lastModified: now,
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
+        alternates: getAlternates(route.path)
+      })
+    }
+  }
 
   // Blog posts - with real last modified dates
-  const blogPages: MetadataRoute.Sitemap = getBlogSlugs().map(slug => ({
-    url: `${BASE_URL}/blog/${slug}`,
-    lastModified: getBlogLastMod(slug),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-    alternates: getAlternates(`/blog/${slug}`)
-  }))
+  const blogPages: MetadataRoute.Sitemap = []
+  for (const locale of LOCALES) {
+    for (const slug of getBlogSlugs()) {
+      blogPages.push({
+        url: getLocalePath(`/blog/${slug}`, locale),
+        lastModified: getBlogLastMod(slug),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+        alternates: getAlternates(`/blog/${slug}`)
+      })
+    }
+  }
 
   // Tool pages
-  const toolPages: MetadataRoute.Sitemap = getToolSlugs().map(slug => ({
-    url: `${BASE_URL}/tools/${slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-    alternates: getAlternates(`/tools/${slug}`)
-  }))
+  const toolPages: MetadataRoute.Sitemap = []
+  for (const locale of LOCALES) {
+    for (const slug of getToolSlugs()) {
+      toolPages.push({
+        url: getLocalePath(`/tools/${slug}`, locale),
+        lastModified: now,
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+        alternates: getAlternates(`/tools/${slug}`)
+      })
+    }
+  }
 
   return [...staticPages, ...blogPages, ...toolPages]
 }

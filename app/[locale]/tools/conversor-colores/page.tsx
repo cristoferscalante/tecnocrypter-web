@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import ConversorColoresClient from "@/components/tools/conversor-colores-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("conversor-colores", locale, {
   title: "Conversor de Colores Online",
   description: "Convierte colores entre HEX, RGB, HSL y RGBA. Selector visual con vista previa en tiempo real. Genera valores para CSS y Tailwind CSS. Herramienta gratuita.",
   slug: "tools/conversor-colores",
   keywords: ["conversor colores", "hex a rgb", "rgb a hsl", "color picker", "convertir colores", "hex to rgb", "css colors", "tailwind colors"]
-})
+});
+}
 
 export default function ConversorColoresPage() {
   return (

@@ -10,6 +10,7 @@ export interface BlogPost {
   readTime: number
   featured?: boolean
   image?: string | null
+  faqs?: Array<{ question: string; answer: string }> | null
 }
 
 export interface Product {

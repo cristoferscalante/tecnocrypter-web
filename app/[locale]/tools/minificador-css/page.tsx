@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import MinificadorCssClient from "@/components/tools/minificador-css-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("minificador-css", locale, {
   title: "Minificador de CSS y JavaScript",
   description: "Minifica CSS y JavaScript eliminando espacios, comentarios y caracteres innecesarios. Reduce el tamaño de tus archivos web.",
   slug: "tools/minificador-css",
   keywords: ["minificador css", "minificador javascript", "minify", "compresión web", "optimización", "rendimiento web"]
-})
+});
+}
 
 export default function MinificadorCssPage() {
   return (

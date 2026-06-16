@@ -9,18 +9,20 @@ import { BlogService } from "@/services/blog-service"
 import type { BlogPost } from "@/types"
 import type { Metadata } from "next"
 import { ShareButton } from "@/components/share-button"
-import { StructuredData, BreadcrumbStructuredData } from "@/components/seo/structured-data"
+import { StructuredData, BreadcrumbStructuredData, FAQStructuredData } from "@/components/seo/structured-data"
+import { getAlternateLanguages } from "@/lib/metadata"
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
+    locale: string
     slug: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   try {
-    const { slug } = await params
-    const post = await BlogService.getPostBySlug(slug)
+    const { slug, locale } = await params
+    const post = await BlogService.getPostBySlug(slug, locale)
     
     if (!post) {
       return {
@@ -55,10 +57,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
         images: post.image ? [post.image] : undefined,
       },
       alternates: {
-        canonical: `https://tecnocrypter.com/blog/${slug}`,
-        languages: {
-          es: `https://tecnocrypter.com/blog/${slug}`,
-        },
+        canonical: locale === "es" ? `https://tecnocrypter.com/blog/${slug}` : `https://tecnocrypter.com/${locale}/blog/${slug}`,
+        languages: getAlternateLanguages(`blog/${slug}`),
       },
     }
   } catch (error) {
@@ -71,10 +71,18 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
 export async function generateStaticParams() {
   try {
-    const posts = await BlogService.getAllPosts()
-    return posts.map((post) => ({
-      slug: post.slug,
-    }))
+    const locales = ["es", "en", "fr", "pt"]
+    const paths = []
+    for (const locale of locales) {
+      const posts = await BlogService.getAllPosts(locale)
+      for (const post of posts) {
+        paths.push({
+          locale,
+          slug: post.slug,
+        })
+      }
+    }
+    return paths
   } catch (error) {
     console.error("Error generating static params:", error)
     return []
@@ -86,15 +94,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   let relatedPosts: BlogPost[] = []
 
   try {
-    const { slug } = await params
-    post = await BlogService.getPostBySlug(slug)
+    const { slug, locale } = await params
+    post = await BlogService.getPostBySlug(slug, locale)
     
     if (!post) {
       notFound()
     }
 
     // Obtener posts relacionados de la misma categoría
-    const allPosts = await BlogService.getAllPosts()
+    const allPosts = await BlogService.getAllPosts(locale)
     relatedPosts = allPosts
       .filter(p => p.slug !== post!.slug && p.category === post!.category)
       .slice(0, 3)
@@ -135,6 +143,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           tags: post.tags,
         }}
       />
+      {post.faqs && <FAQStructuredData faqs={post.faqs} />}
       <BreadcrumbStructuredData 
         items={[
           { name: "Inicio", url: "https://tecnocrypter.com" },

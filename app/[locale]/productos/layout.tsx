@@ -11,6 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: t("title"),
     description: t("description"),
     slug: "productos",
+    locale,
     image: "/Seo/productos.webp",
     keywords: ["desarrollo web seguro", "capacitación ciberseguridad", "prevención ataques", "servicios seguridad"]  
   })

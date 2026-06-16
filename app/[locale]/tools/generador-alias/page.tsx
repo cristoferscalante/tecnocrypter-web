@@ -1,14 +1,17 @@
 import type { Metadata } from "next"
 import GeneradorAliasClient from "@/components/tools/generador-alias-client"
-import { generateToolMetadata } from "@/lib/metadata"
+import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
 
-export const metadata: Metadata = generateToolMetadata({
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return generateToolPageMetadata("generador-alias", locale, {
   title: "Generador de Alias de Email",
   description: "Crea variaciones de tu email con +tags y puntos para rastrear quién comparte tus datos y filtrar spam automáticamente.",
   slug: "tools/generador-alias",
   keywords: ["alias email", "email tags", "subaddressing", "privacidad email", "anti spam", "gmail trucos"]
-})
+});
+}
 
 export default function GeneradorAliasPage() {
   return (
