@@ -14,11 +14,15 @@ export class BlogService {
         return []
       }
 
-      // 1. Obtener slugs por defecto en content/blog/ (default / es)
-      const fileNames = fs.readdirSync(postsDirectory)
-      const defaultSlugs = fileNames
-        .filter((name) => name.endsWith(".md"))
-        .map((name) => name.replace(/\.md$/, ""))
+      // 1. Obtener slugs por defecto en content/blog/es/ (default / es)
+      const esDirectory = path.join(postsDirectory, "es")
+      let defaultSlugs: string[] = []
+      if (fs.existsSync(esDirectory)) {
+        const fileNames = fs.readdirSync(esDirectory)
+        defaultSlugs = fileNames
+          .filter((name) => name.endsWith(".md"))
+          .map((name) => name.replace(/\.md$/, ""))
+      }
 
       // 2. Obtener slugs específicos de content/blog/${locale}/ si el subdirectorio existe
       let localeSlugs: string[] = []
@@ -53,9 +57,9 @@ export class BlogService {
       // 1. Buscar en content/blog/${locale}/${slug}.md
       let fullPath = path.join(postsDirectory, locale, `${slug}.md`)
 
-      // 2. Si no existe, buscar en content/blog/${slug}.md
+      // 2. Si no existe, buscar en content/blog/es/${slug}.md
       if (!fs.existsSync(fullPath)) {
-        fullPath = path.join(postsDirectory, `${slug}.md`)
+        fullPath = path.join(postsDirectory, "es", `${slug}.md`)
       }
 
       // 3. Si sigue sin existir, retornar null
