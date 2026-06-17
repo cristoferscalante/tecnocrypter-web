@@ -1,7 +1,8 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
+import { getTranslations } from "next-intl/server"
+import ContadorCaracteresClient from "@/components/tools/contador-caracteres-client"
 import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
-import ContadorCaracteresClient from "@/components/tools/contador-caracteres-client"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -22,18 +23,30 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 });
 }
 
-export default function ContadorCaracteres() {
+export default async function ContadorCaracteres({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  const tTools = await getTranslations({ locale, namespace: "tools" });
+
+  const homeUrl = locale === "es" ? "https://tecnocrypter.com" : `https://tecnocrypter.com/${locale}`;
+  const toolsUrl = locale === "es" ? "https://tecnocrypter.com/tools" : `https://tecnocrypter.com/${locale}/tools`;
+  const toolUrl = locale === "es" ? "https://tecnocrypter.com/tools/contador-caracteres" : `https://tecnocrypter.com/${locale}/tools/contador-caracteres`;
+
+  const toolName = tTools("contador-caracteres.name");
+  const toolDesc = tTools("contador-caracteres.description");
+
   return (
     <>
       <BreadcrumbStructuredData items={[
-        { name: "Inicio", url: "https://tecnocrypter.com" },
-        { name: "Herramientas", url: "https://tecnocrypter.com/tools" },
-        { name: "Contador de Caracteres", url: "https://tecnocrypter.com/tools/contador-caracteres" },
+        { name: tNav("home"), url: homeUrl },
+        { name: tNav("tools"), url: toolsUrl },
+        { name: toolName, url: toolUrl },
       ]} />
       <WebApplicationStructuredData
-        name="Contador de Caracteres - TecnoCrypter"
-        description="Cuenta caracteres, palabras y párrafos con límites para redes sociales."
-        url="https://tecnocrypter.com/tools/contador-caracteres"
+        name={`${toolName} - TecnoCrypter`}
+        description={toolDesc}
+        url={toolUrl}
+        inLanguage={locale}
         category="UtilitiesApplication"
       />
       <ContadorCaracteresClient />

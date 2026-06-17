@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { getTranslations } from "next-intl/server"
 import GeneradorUseragentClient from "@/components/tools/generador-useragent-client"
 import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
@@ -13,18 +14,31 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 });
 }
 
-export default function GeneradorUseragentPage() {
+export default async function GeneradorUseragentPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  const tTools = await getTranslations({ locale, namespace: "tools" });
+
+  const homeUrl = locale === "es" ? "https://tecnocrypter.com" : `https://tecnocrypter.com/${locale}`;
+  const toolsUrl = locale === "es" ? "https://tecnocrypter.com/tools" : `https://tecnocrypter.com/${locale}/tools`;
+  const toolUrl = locale === "es" ? "https://tecnocrypter.com/tools/generador-useragent" : `https://tecnocrypter.com/${locale}/tools/generador-useragent`;
+
+  const toolName = tTools("generador-useragent.name");
+  const toolDesc = tTools("generador-useragent.description");
+
   return (
     <>
       <BreadcrumbStructuredData items={[
-        { name: "Inicio", url: "https://tecnocrypter.com" },
-        { name: "Herramientas", url: "https://tecnocrypter.com/tools" },
-        { name: "Generador de User-Agent", url: "https://tecnocrypter.com/tools/generador-useragent" },
+        { name: tNav("home"), url: homeUrl },
+        { name: tNav("tools"), url: toolsUrl },
+        { name: toolName, url: toolUrl },
       ]} />
       <WebApplicationStructuredData
-        name="Generador de User-Agent - TecnoCrypter"
-        description="Genera y analiza cadenas User-Agent para testing y privacidad."
-        url="https://tecnocrypter.com/tools/generador-useragent"
+        name={`${toolName} - TecnoCrypter`}
+        description={toolDesc}
+        url={toolUrl}
+        inLanguage={locale}
+        
       />
       <GeneradorUseragentClient />
     </>

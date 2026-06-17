@@ -178,6 +178,7 @@ interface WebApplicationStructuredDataProps {
   description: string;
   url: string;
   category?: string;
+  inLanguage?: string;
 }
 
 export function WebApplicationStructuredData({
@@ -185,6 +186,7 @@ export function WebApplicationStructuredData({
   description,
   url,
   category = "SecurityApplication",
+  inLanguage = "es",
 }: WebApplicationStructuredDataProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -205,7 +207,7 @@ export function WebApplicationStructuredData({
       url: "https://tecnocrypter.com",
     },
     browserRequirements: "Requires JavaScript. Requires HTML5.",
-    inLanguage: "es",
+    inLanguage,
   };
 
   return (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { getTranslations } from "next-intl/server"
 import AnalizadorCookiesClient from "@/components/tools/analizador-cookies-client"
 import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
@@ -13,18 +14,31 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 });
 }
 
-export default function AnalizadorCookiesPage() {
+export default async function AnalizadorCookiesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  const tTools = await getTranslations({ locale, namespace: "tools" });
+
+  const homeUrl = locale === "es" ? "https://tecnocrypter.com" : `https://tecnocrypter.com/${locale}`;
+  const toolsUrl = locale === "es" ? "https://tecnocrypter.com/tools" : `https://tecnocrypter.com/${locale}/tools`;
+  const toolUrl = locale === "es" ? "https://tecnocrypter.com/tools/analizador-cookies" : `https://tecnocrypter.com/${locale}/tools/analizador-cookies`;
+
+  const toolName = tTools("analizador-cookies.name");
+  const toolDesc = tTools("analizador-cookies.description");
+
   return (
     <>
       <BreadcrumbStructuredData items={[
-        { name: "Inicio", url: "https://tecnocrypter.com" },
-        { name: "Herramientas", url: "https://tecnocrypter.com/tools" },
-        { name: "Analizador de Cookies", url: "https://tecnocrypter.com/tools/analizador-cookies" },
+        { name: tNav("home"), url: homeUrl },
+        { name: tNav("tools"), url: toolsUrl },
+        { name: toolName, url: toolUrl },
       ]} />
       <WebApplicationStructuredData
-        name="Analizador de Cookies HTTP - TecnoCrypter"
-        description="Analiza cookies HTTP y verifica sus atributos de seguridad."
-        url="https://tecnocrypter.com/tools/analizador-cookies"
+        name={`${toolName} - TecnoCrypter`}
+        description={toolDesc}
+        url={toolUrl}
+        inLanguage={locale}
+        
       />
       <AnalizadorCookiesClient />
     </>

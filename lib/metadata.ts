@@ -161,30 +161,92 @@ export function generatePageMetadata(params: MetadataParams = {}): Metadata {
 }
 
 // Metadatos específicos para diferentes secciones
+// Metadatos específicos para diferentes secciones
 export function generateBlogMetadata(params: MetadataParams): Metadata {
+  const locale = params.locale || 'es';
+  let titleSuffix = ' | Blog TecnoCrypter';
+  let defaultTitle = 'Blog TecnoCrypter';
+  let defaultDesc = 'Últimas noticias, análisis y tendencias en ciberseguridad, blockchain y criptomonedas. Mantente informado con nuestros expertos.';
+  
+  if (locale === 'en') {
+    titleSuffix = ' | Blog TecnoCrypter';
+    defaultTitle = 'Blog TecnoCrypter';
+    defaultDesc = 'Latest news, analysis and trends in cybersecurity, blockchain and cryptocurrencies. Stay informed with our experts.';
+  } else if (locale === 'fr') {
+    titleSuffix = ' | Blog TecnoCrypter';
+    defaultTitle = 'Blog TecnoCrypter';
+    defaultDesc = 'Dernières nouvelles, analyses et tendances en cybersécurité, blockchain et crypto-monnaies. Restez informé avec nos experts.';
+  } else if (locale === 'pt') {
+    titleSuffix = ' | Blog TecnoCrypter';
+    defaultTitle = 'Blog TecnoCrypter';
+    defaultDesc = 'Últimas notícias, análises e tendências em cibersegurança, blockchain e criptomoedas. Mantenha-se informado com nossos especialistas.';
+  }
+
   return generatePageMetadata({
     ...params,
     type: 'article',
-    title: params.title ? `${params.title} | Blog TecnoCrypter` : 'Blog TecnoCrypter',
-    description: params.description || 'Últimas noticias, análisis y tendencias en ciberseguridad, blockchain y criptomonedas. Mantente informado con nuestros expertos.',
+    title: params.title ? `${params.title}${titleSuffix}` : defaultTitle,
+    description: params.description || defaultDesc,
   });
 }
 
 export function generateProductMetadata(params: MetadataParams): Metadata {
+  const locale = params.locale || 'es';
+  let titleSuffix = ' | Productos TecnoCrypter';
+  let defaultTitle = 'Productos TecnoCrypter';
+  let defaultDesc = 'Productos de ciberseguridad y encriptación de última generación. Protege tu información con nuestras soluciones avanzadas.';
+
+  if (locale === 'en') {
+    titleSuffix = ' | Products TecnoCrypter';
+    defaultTitle = 'Products TecnoCrypter';
+    defaultDesc = 'Next-generation cybersecurity and encryption products. Protect your information with our advanced solutions.';
+  } else if (locale === 'fr') {
+    titleSuffix = ' | Produits TecnoCrypter';
+    defaultTitle = 'Produits TecnoCrypter';
+    defaultDesc = 'Produits de cybersécurité et de chiffrement de nouvelle génération. Protégez vos informations grâce à nos solutions avancées.';
+  } else if (locale === 'pt') {
+    titleSuffix = ' | Produtos TecnoCrypter';
+    defaultTitle = 'Produtos TecnoCrypter';
+    defaultDesc = 'Produtos de cibersegurança e criptografia de última geração. Proteja suas informações com nossas soluções avançadas.';
+  }
+
   return generatePageMetadata({
     ...params,
     type: 'product',
-    title: params.title ? `${params.title} | Productos TecnoCrypter` : 'Productos TecnoCrypter',
-    description: params.description || 'Productos de ciberseguridad y encriptación de última generación. Protege tu información con nuestras soluciones avanzadas.',
+    title: params.title ? `${params.title}${titleSuffix}` : defaultTitle,
+    description: params.description || defaultDesc,
   });
 }
 
 export function generateToolMetadata(params: MetadataParams): Metadata {
+  const locale = params.locale || 'es';
+  let titleSuffix = ' | Herramientas TecnoCrypter';
+  let defaultTitle = 'Herramientas TecnoCrypter';
+  let defaultDesc = 'Herramientas gratuitas de ciberseguridad y privacidad. Protege tu información con nuestras utilidades online.';
+  let defaultKeywords = ['herramientas', 'ciberseguridad', 'privacidad', 'online', 'gratuito'];
+
+  if (locale === 'en') {
+    titleSuffix = ' | Tools TecnoCrypter';
+    defaultTitle = 'Tools TecnoCrypter';
+    defaultDesc = 'Free cybersecurity and privacy tools. Protect your information with our online utilities.';
+    defaultKeywords = ['tools', 'cybersecurity', 'privacy', 'online', 'free'];
+  } else if (locale === 'fr') {
+    titleSuffix = ' | Outils TecnoCrypter';
+    defaultTitle = 'Outils TecnoCrypter';
+    defaultDesc = 'Outils gratuits de cybersécurité et de confidentialité. Protégez vos informations grâce à nos utilitaires en ligne.';
+    defaultKeywords = ['outils', 'cybersécurité', 'confidentialité', 'en ligne', 'gratuit'];
+  } else if (locale === 'pt') {
+    titleSuffix = ' | Ferramentas TecnoCrypter';
+    defaultTitle = 'Ferramentas TecnoCrypter';
+    defaultDesc = 'Ferramentas gratuitas de cibersegurança e privacidade. Proteja suas informações com nossos utilitários online.';
+    defaultKeywords = ['ferramentas', 'cibersegurança', 'privacidade', 'online', 'gratuito'];
+  }
+
   return generatePageMetadata({
     ...params,
-    title: params.title ? `${params.title} | Herramientas TecnoCrypter` : 'Herramientas TecnoCrypter',
-    description: params.description || 'Herramientas gratuitas de ciberseguridad y privacidad. Protege tu información con nuestras utilidades online.',
-    keywords: [...(params.keywords || []), 'herramientas', 'ciberseguridad', 'privacidad', 'online', 'gratuito'],
+    title: params.title ? `${params.title}${titleSuffix}` : defaultTitle,
+    description: params.description || defaultDesc,
+    keywords: [...(params.keywords || []), ...defaultKeywords],
   });
 }
 
@@ -194,16 +256,29 @@ export async function generateToolPageMetadata(slug: string, locale: string, fal
     const name = t(`${slug}.name`);
     const desc = t(`${slug}.description`);
     
+    let keywords: string[] | undefined = undefined;
+    try {
+      const rawKeywords = t.raw(`${slug}.keywords`);
+      if (Array.isArray(rawKeywords)) {
+        keywords = rawKeywords;
+      }
+    } catch (err) {
+      // Ignorar si no existe la clave
+    }
+    
     return generateToolMetadata({
       ...fallbackParams,
       title: name || fallbackParams.title,
       description: desc || fallbackParams.description,
+      keywords: keywords || fallbackParams.keywords,
+      image: fallbackParams.image || `/Seo/${slug}.png`,
       slug: `tools/${slug}`,
       locale,
     });
   } catch (e) {
     return generateToolMetadata({
       ...fallbackParams,
+      image: fallbackParams.image || `/Seo/${slug}.png`,
       slug: `tools/${slug}`,
       locale,
     });

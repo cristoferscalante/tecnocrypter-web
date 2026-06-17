@@ -23,46 +23,511 @@
     "utilities": "Utilitários"
   },
   "tools": {
-    "generador-contrasenas": { "name": "Gerador de Senhas", "description": "Senhas seguras e personalizáveis" },
-    "cifrado-online": { "name": "Criptografia Online", "description": "AES-256, ChaCha20 e mais" },
-    "generador-hash": { "name": "Gerador de Hash", "description": "MD5, SHA-1, SHA-256, SHA-512" },
-    "verificador": { "name": "Verificador de URL", "description": "Detecta ameaças e phishing" },
-    "verificador-contrasenas": { "name": "Verificador de Senhas", "description": "Sua senha foi vazada?" },
-    "decodificador-jwt": { "name": "Decodificador JWT", "description": "Decodifica e analisa tokens JWT" },
-    "generador-totp": { "name": "Gerador TOTP/2FA", "description": "Códigos TOTP para autenticação" },
-    "calculadora-entropia": { "name": "Calculadora de Entropia", "description": "Força de senhas em bits" },
-    "analizador-email": { "name": "Analisador de E-mail", "description": "Detecta spoofing e phishing" },
-    "generador-claves": { "name": "Gerador de Chaves", "description": "RSA e ECDSA no seu navegador" },
-    "generador-credenciales": { "name": "Credenciais Determinísticas", "description": "A partir de uma palavra-chave mestra" },
-    "limpia-metadatos": { "name": "Limpador de Metadados", "description": "Remove EXIF, GPS de imagens" },
-    "eliminador-rastreo": { "name": "Removedor de Rastreamento", "description": "Limpa UTM e tracking de URLs" },
-    "generador-datos": { "name": "Gerador de Dados", "description": "Identidades fictícias para testes" },
-    "ofuscador-texto": { "name": "Ofuscador de Texto", "description": "Homoglifos, Zalgo e Unicode" },
-    "analizador-cookies": { "name": "Analisador de Cookies", "description": "Segurança de cookies HTTP" },
-    "generador-useragent": { "name": "Gerador User-Agent", "description": "Gera e analisa strings UA" },
-    "huella-digital": { "name": "Impressão Digital", "description": "Quão rastreável você é online?" },
-    "generador-alias": { "name": "Gerador de Alias de E-mail", "description": "Proteja sua caixa de entrada" },
-    "generador-passphrase": { "name": "Gerador de Passphrase", "description": "Senhas memoráveis Diceware" },
-    "codificador-base32": { "name": "Codificador Base32", "description": "Base32, Crockford e mais" },
-    "conversor-base64": { "name": "Conversor Base64", "description": "Texto, arquivos e imagens" },
-    "conversor-hex": { "name": "Conversor Hexadecimal", "description": "Hex, decimal, binário, RGB" },
-    "validador-json": { "name": "Validador JSON", "description": "Valida, formata e minifica" },
-    "generador-uuid": { "name": "Gerador UUID", "description": "UUID v4, v7, ULID, Nano ID" },
-    "codificador-url": { "name": "Codificador URL", "description": "Codificar/decodificar URLs e URIs" },
-    "regex-tester": { "name": "Testador Regex", "description": "Testar expressões regulares" },
-    "formateador-sql": { "name": "Formatador SQL", "description": "Formata e embeleza SQL" },
-    "generador-cron": { "name": "Gerador Cron", "description": "Expressões cron visuais" },
-    "minificador-css": { "name": "Minificador CSS/JS", "description": "Minifica CSS e JavaScript" },
-    "generador-qr": { "name": "Gerador QR", "description": "QR personalizados com logo" },
-    "contador-caracteres": { "name": "Contador de Caracteres", "description": "Palavras, caracteres e limites" },
-    "generador-lorem": { "name": "Gerador Lorem Ipsum", "description": "Texto placeholder configurável" },
-    "comparador-archivos": { "name": "Comparador de Arquivos", "description": "Visualizador de diff linha por linha" },
-    "conversor-colores": { "name": "Conversor de Cores", "description": "HEX, RGB, HSL e Tailwind" },
-    "conversor-markdown": { "name": "Conversor Markdown", "description": "Markdown ↔ HTML em tempo real" },
-    "conversor-timestamp": { "name": "Conversor Timestamp", "description": "Unix ↔ data com fusos horários" },
-    "conversor-unidades": { "name": "Conversor de Unidades", "description": "Comprimento, peso, temperatura, dados" },
-    "calculadora-porcentajes": { "name": "Calculadora de Porcentagens", "description": "Porcentagens, IVA e descontos" },
-    "generador-csv": { "name": "Gerador CSV", "description": "Criar e exportar tabelas CSV" }
+    "generador-contrasenas": {
+      "name": "Gerador de Senhas",
+      "description": "Senhas seguras e personalizáveis",
+      "keywords": [
+        "gerador de senha",
+        "senhas seguras",
+        "segurança",
+        "segurança cibernética",
+        "proteção",
+        "senhas"
+      ]
+    },
+    "cifrado-online": {
+      "name": "Criptografia Online",
+      "description": "AES-256, ChaCha20 e mais",
+      "keywords": [
+        "criptografia on-line",
+        "criptografar texto",
+        "decifrar texto",
+        "AES-256",
+        "criptografia on-line",
+        "criptografia de arquivo",
+        "ferramenta de criptografia",
+        "criptografar gratuitamente"
+      ]
+    },
+    "generador-hash": {
+      "name": "Gerador de Hash",
+      "description": "MD5, SHA-1, SHA-256, SHA-512",
+      "keywords": [
+        "gerador de hash",
+        "hash on-line",
+        "SHA-256",
+        "MD5 on-line",
+        "SHA-512",
+        "verificar hash",
+        "hash de arquivo",
+        "gerador de hash on-line"
+      ]
+    },
+    "verificador": {
+      "name": "Verificador de URL",
+      "description": "Detecta ameaças e phishing",
+      "keywords": [
+        "verificador de URL",
+        "segurança na web",
+        "phishing",
+        "malware",
+        "análise de links",
+        "segurança cibernética"
+      ]
+    },
+    "verificador-contrasenas": {
+      "name": "Verificador de Senhas",
+      "description": "Sua senha foi vazada?",
+      "keywords": [
+        "verificador de senha",
+        "senhas vazadas",
+        "eu fui enganado",
+        "violação de dados",
+        "senhas de segurança",
+        "k-anonimato"
+      ]
+    },
+    "decodificador-jwt": {
+      "name": "Decodificador JWT",
+      "description": "Decodifica e analisa tokens JWT",
+      "keywords": [
+        "jwt",
+        "decodificar jwt",
+        "token web json",
+        "decodificador jwt",
+        "jwt on-line",
+        "token jwt",
+        "oauth",
+        "autenticação"
+      ]
+    },
+    "generador-totp": {
+      "name": "Gerador TOTP/2FA",
+      "description": "Códigos TOTP para autenticação",
+      "keywords": [
+        "gerador de topo",
+        "2fa",
+        "autenticação de dois fatores",
+        "otp",
+        "autenticador google",
+        "segurança"
+      ]
+    },
+    "calculadora-entropia": {
+      "name": "Calculadora de Entropia",
+      "description": "Força de senhas em bits",
+      "keywords": [
+        "entropia de senha",
+        "força da senha",
+        "entropia de bits",
+        "senhas de segurança",
+        "rachadura"
+      ]
+    },
+    "analizador-email": {
+      "name": "Analisador de E-mail",
+      "description": "Detecta spoofing e phishing",
+      "keywords": [
+        "analisador de e-mail",
+        "cabeçalhos de e-mail",
+        "falsificação",
+        "FPS",
+        "DKIM",
+        "DMARC",
+        "phishing"
+      ]
+    },
+    "generador-claves": {
+      "name": "Gerador de Chaves",
+      "description": "RSA e ECDSA no seu navegador",
+      "keywords": [
+        "Gerador de chave RSA",
+        "ECDSA",
+        "par de chaves",
+        "chave pública",
+        "chave privada",
+        "PEM",
+        "criptografia"
+      ]
+    },
+    "generador-credenciales": {
+      "name": "Credenciais Determinísticas",
+      "description": "A partir de uma palavra-chave mestra",
+      "keywords": [
+        "gerador de credenciais",
+        "credenciais determinísticas",
+        "gerador de usuário",
+        "senha mestra",
+        "gerenciador de senhas",
+        "credenciais seguras",
+        "gerador determinístico",
+        "senhas de segurança"
+      ]
+    },
+    "limpia-metadatos": {
+      "name": "Limpador de Metadados",
+      "description": "Remove EXIF, GPS de imagens",
+      "keywords": [
+        "limpador de metadados",
+        "EXIF",
+        "GPS",
+        "privacidade",
+        "imagens",
+        "segurança",
+        "limpador de metadados"
+      ]
+    },
+    "eliminador-rastreo": {
+      "name": "Removedor de Rastreamento",
+      "description": "Limpa UTM e tracking de URLs",
+      "keywords": [
+        "remover URL de rastreamento",
+        "limpo",
+        "privacidade do URL",
+        "fbclid",
+        "gclid",
+        "links de rastreamento"
+      ]
+    },
+    "generador-datos": {
+      "name": "Gerador de Dados",
+      "description": "Identidades fictícias para testes",
+      "keywords": [
+        "dados fictícios",
+        "gerador de identidade",
+        "dados de teste",
+        "falsificador",
+        "testando",
+        "privacidade"
+      ]
+    },
+    "ofuscador-texto": {
+      "name": "Ofuscador de Texto",
+      "description": "Homoglifos, Zalgo e Unicode",
+      "keywords": [
+        "ofuscador de texto",
+        "homóglifos",
+        "texto zalgo",
+        "Unicode",
+        "personagens invisíveis",
+        "privacidade"
+      ]
+    },
+    "analizador-cookies": {
+      "name": "Analisador de Cookies",
+      "description": "Segurança de cookies HTTP",
+      "keywords": [
+        "analisador de cookies",
+        "cookies http",
+        "segurança de cookies",
+        "MesmoSite",
+        "Somente http",
+        "Seguro",
+        "privacidade"
+      ]
+    },
+    "generador-useragent": {
+      "name": "Gerador User-Agent",
+      "description": "Gera e analisa strings UA",
+      "keywords": [
+        "agente do usuário",
+        "gerador de agente de usuário",
+        "seu analisador",
+        "navegador",
+        "string do agente do usuário",
+        "privacidade"
+      ]
+    },
+    "huella-digital": {
+      "name": "Impressão Digital",
+      "description": "Quão rastreável você é online?",
+      "keywords": [
+        "navegador de impressão digital",
+        "impressão digital do navegador",
+        "privacidade",
+        "rastreamento da web",
+        "impressão digital",
+        "monitorando"
+      ]
+    },
+    "generador-alias": {
+      "name": "Gerador de Alias de E-mail",
+      "description": "Proteja sua caixa de entrada",
+      "keywords": [
+        "alias e-mail",
+        "tags de e-mail",
+        "subendereçamento",
+        "privacidade de e-mail",
+        "anti-spam",
+        "truques do Gmail"
+      ]
+    },
+    "generador-passphrase": {
+      "name": "Gerador de Passphrase",
+      "description": "Senhas memoráveis Diceware",
+      "keywords": [
+        "senha",
+        "jogo de dados",
+        "senha memorável",
+        "palavras aleatórias",
+        "gerador de senha",
+        "segurança"
+      ]
+    },
+    "codificador-base32": {
+      "name": "Codificador Base32",
+      "description": "Base32, Crockford e mais",
+      "keywords": [
+        "codificador base32",
+        "decodificador base32",
+        "base32 on-line",
+        "converter base32",
+        "base32hex",
+        "base32 de crockford",
+        "codificação binária",
+        "ferramenta base32"
+      ]
+    },
+    "conversor-base64": {
+      "name": "Conversor Base64",
+      "description": "Texto, arquivos e imagens",
+      "keywords": [
+        "base64",
+        "codificar base64",
+        "decodificar base64",
+        "uri de dados",
+        "conversor",
+        "codificar",
+        "decodificar"
+      ]
+    },
+    "conversor-hex": {
+      "name": "Conversor Hexadecimal",
+      "description": "Hex, decimal, binário, RGB",
+      "keywords": [
+        "hexadecimal",
+        "conversor hexadecimal",
+        "hexadecimal para texto",
+        "hexadecimal para decimal",
+        "hexadecimal para rgb",
+        "binário",
+        "cores hexadecimais"
+      ]
+    },
+    "validador-json": {
+      "name": "Validador JSON",
+      "description": "Valida, formata e minifica",
+      "keywords": [
+        "validador json",
+        "formatador json",
+        "JSON on-line",
+        "formatador json",
+        "validador json",
+        "minificar json",
+        "árvore json"
+      ]
+    },
+    "generador-uuid": {
+      "name": "Gerador UUID",
+      "description": "UUID v4, v7, ULID, Nano ID",
+      "keywords": [
+        "gerador UUID",
+        "uuid v4",
+        "uuid v7",
+        "ulid",
+        "nanoide",
+        "identificador exclusivo",
+        "gerador de identificação"
+      ]
+    },
+    "codificador-url": {
+      "name": "Codificador URL",
+      "description": "Codificar/decodificar URLs e URIs",
+      "keywords": [
+        "codificar URL",
+        "URL de decodificação",
+        "codificação de URL",
+        "decodificação de URL",
+        "codificação percentual",
+        "codificarURIComponent",
+        "string de consulta"
+      ]
+    },
+    "regex-tester": {
+      "name": "Testador Regex",
+      "description": "Testar expressões regulares",
+      "keywords": [
+        "testador de expressão regular",
+        "expressões regulares",
+        "regex on-line",
+        "tente regex",
+        "expressão regular",
+        "expressões regulares",
+        "regex javascript"
+      ]
+    },
+    "formateador-sql": {
+      "name": "Formatador SQL",
+      "description": "Formata e embeleza SQL",
+      "keywords": [
+        "formatador sql",
+        "embelezador sql",
+        "formatador sql",
+        "recuo sql",
+        "embelezador sql",
+        "desenvolvimento"
+      ]
+    },
+    "generador-cron": {
+      "name": "Gerador Cron",
+      "description": "Expressões cron visuais",
+      "keywords": [
+        "gerador de cron",
+        "expressão cron",
+        "crontab",
+        "agendar tarefas",
+        "construtor cron",
+        "desenvolvimento"
+      ]
+    },
+    "minificador-css": {
+      "name": "Minificador CSS/JS",
+      "description": "Minifica CSS e JavaScript",
+      "keywords": [
+        "minificador css",
+        "minificador javascript",
+        "minificar",
+        "compressão da web",
+        "otimização",
+        "desempenho na web"
+      ]
+    },
+    "generador-qr": {
+      "name": "Gerador QR",
+      "description": "QR personalizados com logo",
+      "keywords": [
+        "Gerador QR",
+        "Códigos QR",
+        "QR personalizado",
+        "criar QR",
+        "QR com logotipo",
+        "ferramentas de segurança"
+      ]
+    },
+    "contador-caracteres": {
+      "name": "Contador de Caracteres",
+      "description": "Palavras, caracteres e limites",
+      "keywords": [
+        "contador de caracteres",
+        "contador de palavras",
+        "contar caracteres on-line",
+        "contador de texto",
+        "limite de caracteres do twitter",
+        "contador de palavras on-line",
+        "ferramenta de texto",
+        "análise de texto"
+      ]
+    },
+    "generador-lorem": {
+      "name": "Gerador Lorem Ipsum",
+      "description": "Texto placeholder configurável",
+      "keywords": [
+        "lorem ipsum",
+        "gerador lorem ipsum",
+        "texto de espaço reservado",
+        "texto de preenchimento",
+        "texto fictício",
+        "gerador lorem ipsum"
+      ]
+    },
+    "comparador-archivos": {
+      "name": "Comparador de Arquivos",
+      "description": "Visualizador de diff linha por linha",
+      "keywords": [
+        "comparador de arquivos",
+        "comparar textos",
+        "comparação on-line",
+        "diferenças entre arquivos",
+        "comparar código",
+        "comparador de texto on-line",
+        "verificador de diferenças",
+        "ferramenta de comparação"
+      ]
+    },
+    "conversor-colores": {
+      "name": "Conversor de Cores",
+      "description": "HEX, RGB, HSL e Tailwind",
+      "keywords": [
+        "conversor de cores",
+        "hexadecimal para rgb",
+        "rgb para hsl",
+        "seletor de cores",
+        "converter cores",
+        "hexadecimal para rgb",
+        "cores css",
+        "cores do vento de cauda"
+      ]
+    },
+    "conversor-markdown": {
+      "name": "Conversor Markdown",
+      "description": "Markdown ↔ HTML em tempo real",
+      "keywords": [
+        "marcação para html",
+        "conversor de redução",
+        "marcação para html",
+        "html para marcação",
+        "redução on-line",
+        "conversor de redução"
+      ]
+    },
+    "conversor-timestamp": {
+      "name": "Conversor Timestamp",
+      "description": "Unix ↔ data com fusos horários",
+      "keywords": [
+        "carimbo de data/hora unix",
+        "conversor de carimbo de data/hora",
+        "época",
+        "data unix",
+        "carimbo de data/hora até o momento",
+        "data para carimbo de data/hora",
+        "fusos horários"
+      ]
+    },
+    "conversor-unidades": {
+      "name": "Conversor de Unidades",
+      "description": "Comprimento, peso, temperatura, dados",
+      "keywords": [
+        "conversor de unidades",
+        "converter metros",
+        "Celsius Fahrenheit",
+        "bytes megabytes",
+        "calculadora de unidades"
+      ]
+    },
+    "calculadora-porcentajes": {
+      "name": "Calculadora de Porcentagens",
+      "description": "Porcentagens, IVA e descontos",
+      "keywords": [
+        "calculadora de porcentagem",
+        "percentagem",
+        "desconto",
+        "CUBA",
+        "mudança percentual",
+        "aumentar"
+      ]
+    },
+    "generador-csv": {
+      "name": "Gerador CSV",
+      "description": "Criar e exportar tabelas CSV",
+      "keywords": [
+        "gerador csv",
+        "criar csv",
+        "tabela csv",
+        "exportar csv",
+        "dados tabulares",
+        "excel"
+      ]
+    }
   },
   "footer": {
     "description": "Sua fonte confiável de informações sobre segurança cibernética, criptografia e criptomoedas.",

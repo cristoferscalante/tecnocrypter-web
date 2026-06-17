@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { getTranslations } from "next-intl/server"
 import ConversorBase64Client from "@/components/tools/conversor-base64-client"
 import { generateToolPageMetadata } from "@/lib/metadata"
 import { BreadcrumbStructuredData, WebApplicationStructuredData } from "@/components/seo/structured-data"
@@ -13,18 +14,31 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 });
 }
 
-export default function ConversorBase64Page() {
+export default async function ConversorBase64Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  const tTools = await getTranslations({ locale, namespace: "tools" });
+
+  const homeUrl = locale === "es" ? "https://tecnocrypter.com" : `https://tecnocrypter.com/${locale}`;
+  const toolsUrl = locale === "es" ? "https://tecnocrypter.com/tools" : `https://tecnocrypter.com/${locale}/tools`;
+  const toolUrl = locale === "es" ? "https://tecnocrypter.com/tools/conversor-base64" : `https://tecnocrypter.com/${locale}/tools/conversor-base64`;
+
+  const toolName = tTools("conversor-base64.name");
+  const toolDesc = tTools("conversor-base64.description");
+
   return (
     <>
       <BreadcrumbStructuredData items={[
-        { name: "Inicio", url: "https://tecnocrypter.com" },
-        { name: "Herramientas", url: "https://tecnocrypter.com/tools" },
-        { name: "Conversor Base64", url: "https://tecnocrypter.com/tools/conversor-base64" },
+        { name: tNav("home"), url: homeUrl },
+        { name: tNav("tools"), url: toolsUrl },
+        { name: toolName, url: toolUrl },
       ]} />
       <WebApplicationStructuredData
-        name="Conversor Base64 Online - TecnoCrypter"
-        description="Codifica y decodifica texto, archivos e imágenes en Base64. Convierte imágenes a Data URI."
-        url="https://tecnocrypter.com/tools/conversor-base64"
+        name={`${toolName} - TecnoCrypter`}
+        description={toolDesc}
+        url={toolUrl}
+        inLanguage={locale}
+        
       />
       <ConversorBase64Client />
     </>

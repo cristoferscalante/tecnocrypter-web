@@ -13,9 +13,20 @@ const { execSync } = require('child_process');
 const CONFIG = {
   baseUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://tecnocrypter.com',
   outputDir: path.join(process.cwd(), 'seo-reports'),
-  sitemapPath: path.join(process.cwd(), 'public', 'sitemap-0.xml'),
-  robotsPath: path.join(process.cwd(), 'public', 'robots.txt'),
 };
+
+// Helper para encontrar archivo existente entre varias opciones
+async function findExistingFile(paths) {
+  for (const p of paths) {
+    try {
+      await fs.access(p);
+      return p;
+    } catch (e) {
+      // continuar
+    }
+  }
+  return null;
+}
 
 // Colores para la consola
 const colors = {
@@ -52,40 +63,63 @@ async function validateSEOFiles() {
   };
 
   // Validar sitemap
-  try {
-    const sitemapContent = await fs.readFile(CONFIG.sitemapPath, 'utf-8');
-    results.sitemap.exists = true;
-    
-    // Contar URLs
-    const urlMatches = sitemapContent.match(/<loc>([^<]+)<\/loc>/g);
-    results.sitemap.urls = urlMatches ? urlMatches.length : 0;
-    
-    // Validar formato XML
-    if (sitemapContent.includes('<?xml') && sitemapContent.includes('<urlset')) {
-      results.sitemap.valid = true;
-      log(`✅ Sitemap válido con ${results.sitemap.urls} URLs`, 'green');
-    } else {
-      results.sitemap.errors.push('Formato XML inválido');
-      log('❌ Sitemap con formato inválido', 'red');
+  const possibleSitemapPaths = [
+    path.join(process.cwd(), 'public', 'sitemap.xml'),
+    path.join(process.cwd(), 'public', 'sitemap-0.xml'),
+    path.join(process.cwd(), '.next', 'server', 'app', 'sitemap.xml.body')
+  ];
+  const sitemapPath = await findExistingFile(possibleSitemapPaths);
+
+  if (sitemapPath) {
+    try {
+      const sitemapContent = await fs.readFile(sitemapPath, 'utf-8');
+      results.sitemap.exists = true;
+      
+      // Contar URLs
+      const urlMatches = sitemapContent.match(/<loc>([^<]+)<\/loc>/g);
+      results.sitemap.urls = urlMatches ? urlMatches.length : 0;
+      
+      // Validar formato XML
+      if (sitemapContent.includes('<?xml') && sitemapContent.includes('<urlset')) {
+        results.sitemap.valid = true;
+        log(`✅ Sitemap válido con ${results.sitemap.urls} URLs (${path.basename(sitemapPath)})`, 'green');
+      } else {
+        results.sitemap.errors.push('Formato XML inválido');
+        log('❌ Sitemap con formato inválido', 'red');
+      }
+    } catch (error) {
+      results.sitemap.errors.push('Error al leer sitemap');
+      log('❌ Error al leer sitemap', 'red');
     }
-  } catch (error) {
+  } else {
     results.sitemap.errors.push('Archivo no encontrado');
     log('❌ Sitemap no encontrado', 'red');
   }
 
   // Validar robots.txt
-  try {
-    const robotsContent = await fs.readFile(CONFIG.robotsPath, 'utf-8');
-    results.robots.exists = true;
-    
-    if (robotsContent.includes('User-agent:') && robotsContent.includes('Sitemap:')) {
-      results.robots.valid = true;
-      log('✅ Robots.txt válido', 'green');
-    } else {
-      results.robots.errors.push('Formato inválido o falta información');
-      log('❌ Robots.txt con formato inválido', 'red');
+  const possibleRobotsPaths = [
+    path.join(process.cwd(), 'public', 'robots.txt'),
+    path.join(process.cwd(), '.next', 'server', 'app', 'robots.txt.body')
+  ];
+  const robotsPath = await findExistingFile(possibleRobotsPaths);
+
+  if (robotsPath) {
+    try {
+      const robotsContent = await fs.readFile(robotsPath, 'utf-8');
+      results.robots.exists = true;
+      const lowerContent = robotsContent.toLowerCase();
+      if (lowerContent.includes('user-agent:') && lowerContent.includes('sitemap:')) {
+        results.robots.valid = true;
+        log(`✅ Robots.txt válido (${path.basename(robotsPath)})`, 'green');
+      } else {
+        results.robots.errors.push('Formato inválido o falta información');
+        log('❌ Robots.txt con formato inválido', 'red');
+      }
+    } catch (error) {
+      results.robots.errors.push('Error al leer robots.txt');
+      log('❌ Error al leer robots.txt', 'red');
     }
-  } catch (error) {
+  } else {
     results.robots.errors.push('Archivo no encontrado');
     log('❌ Robots.txt no encontrado', 'red');
   }
