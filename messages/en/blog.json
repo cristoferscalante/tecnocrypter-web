@@ -19,6 +19,8 @@
       "noArticlesInCategory": "No articles in this category",
       "readMore": "Read more",
       "loadMore": "Load More Articles",
+      "paginationPrevious": "Previous",
+      "paginationNext": "Next",
       "errorLoading": "Error loading blog",
       "retry": "Try again"
     },

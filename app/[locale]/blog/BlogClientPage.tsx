@@ -10,6 +10,15 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Clock, Search } from "lucide-react"
 import { useBlog } from "@/hooks/use-blog"
 import { useTranslations } from "next-intl"
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination"
 
 export type BlogCategory = "todos" | "seguridad" | "encriptacion" | "criptomonedas" | "noticias"
 
@@ -40,6 +49,13 @@ export default function BlogClientPage({
   const validInitial = categories.some(c => c.id === initialCategory) ? initialCategory : "todos"
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState<BlogCategory>(validInitial)
+  const [currentPage, setCurrentPage] = useState(1)
+  const postsPerPage = 6
+
+  // Reset page to 1 when search query or category changes
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [searchQuery, selectedCategory])
 
   // Permitir seleccionar categoría vía query (?category=seguridad) si se navega desde enlaces
   useEffect(() => {
@@ -48,6 +64,7 @@ export default function BlogClientPage({
     const qp = params.get("category") as BlogCategory | null
     if (qp && categories.find(c => c.id === qp)) {
       setSelectedCategory(qp)
+      setCurrentPage(1)
     }
   }, [categories])
 
@@ -67,6 +84,49 @@ export default function BlogClientPage({
 
   const filteredPosts = getFilteredPosts()
   const popularPosts = posts.filter((post) => post.featured).slice(0, 3)
+
+  // Lógica de paginación
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage)
+  const startIndex = (currentPage - 1) * postsPerPage
+  const paginatedPosts = filteredPosts.slice(startIndex, startIndex + postsPerPage)
+
+  const getPageNumbers = () => {
+    const pageNumbers: (number | string)[] = []
+    const maxVisiblePages = 5
+
+    if (totalPages <= maxVisiblePages) {
+      for (let i = 1; i <= totalPages; i++) {
+        pageNumbers.push(i)
+      }
+    } else {
+      pageNumbers.push(1)
+
+      let start = Math.max(2, currentPage - 1)
+      let end = Math.min(totalPages - 1, currentPage + 1)
+
+      if (currentPage <= 2) {
+        end = 4
+      } else if (currentPage >= totalPages - 1) {
+        start = totalPages - 3
+      }
+
+      if (start > 2) {
+        pageNumbers.push("ellipsis-start")
+      }
+
+      for (let i = start; i <= end; i++) {
+        pageNumbers.push(i)
+      }
+
+      if (end < totalPages - 1) {
+        pageNumbers.push("ellipsis-end")
+      }
+
+      pageNumbers.push(totalPages)
+    }
+
+    return pageNumbers
+  }
 
   if (loading) {
     return (
@@ -192,14 +252,14 @@ export default function BlogClientPage({
             </Tabs>
 
             <div className="grid md:grid-cols-2 gap-6">
-              {filteredPosts.length === 0 ? (
+              {paginatedPosts.length === 0 ? (
                 <div className="col-span-2 text-center py-12">
                   <p className="text-muted-foreground text-lg">
                     {searchQuery ? t("noResultsFor", { query: searchQuery }) : t("noArticlesInCategory")}
                   </p>
                 </div>
               ) : (
-                filteredPosts.map((post) => (
+                paginatedPosts.map((post) => (
                   <Link key={post.slug} href={`/blog/${post.slug}`} className="cursor-pointer">
                     <Card className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md">
                       <div className="aspect-video relative bg-muted">
@@ -237,6 +297,74 @@ export default function BlogClientPage({
                 ))
               )}
             </div>
+
+            {totalPages > 1 && (
+              <div className="mt-12 flex justify-center">
+                <Pagination>
+                  <PaginationContent>
+                    <PaginationItem>
+                      <PaginationPrevious
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault()
+                          if (currentPage > 1) {
+                            setCurrentPage(currentPage - 1)
+                            window.scrollTo({ top: 0, behavior: "smooth" })
+                          }
+                        }}
+                        className={currentPage === 1 ? "pointer-events-none opacity-50 select-none" : "cursor-pointer"}
+                      >
+                        {t("paginationPrevious")}
+                      </PaginationPrevious>
+                    </PaginationItem>
+
+                    {getPageNumbers().map((page, index) => {
+                      if (page === "ellipsis-start" || page === "ellipsis-end") {
+                        return (
+                          <PaginationItem key={`ellipsis-${index}`}>
+                            <PaginationEllipsis />
+                          </PaginationItem>
+                        )
+                      }
+
+                      const pageNum = page as number
+                      return (
+                        <PaginationItem key={pageNum}>
+                          <PaginationLink
+                            href="#"
+                            onClick={(e) => {
+                              e.preventDefault()
+                              setCurrentPage(pageNum)
+                              window.scrollTo({ top: 0, behavior: "smooth" })
+                            }}
+                            isActive={currentPage === pageNum}
+                            className="cursor-pointer"
+                          >
+                            {pageNum}
+                          </PaginationLink>
+                        </PaginationItem>
+                      )
+                    })}
+
+                    <PaginationItem>
+                      <PaginationNext
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault()
+                          if (currentPage < totalPages) {
+                            setCurrentPage(currentPage + 1)
+                            window.scrollTo({ top: 0, behavior: "smooth" })
+                          }
+                        }}
+                        className={currentPage === totalPages ? "pointer-events-none opacity-50 select-none" : "cursor-pointer"}
+                      >
+                        {t("paginationNext")}
+                      </PaginationNext>
+                    </PaginationItem>
+                  </PaginationContent>
+                </Pagination>
+              </div>
+            )}
           </div>
         </div>
       </div>
