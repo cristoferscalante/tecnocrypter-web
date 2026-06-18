@@ -1,0 +1,303 @@
+{
+  "timestamp": "2026-06-18T21:50:02.587Z",
+  "files": {
+    "sitemap": {
+      "exists": true,
+      "valid": true,
+      "urls": 404,
+      "errors": []
+    },
+    "robots": {
+      "exists": true,
+      "valid": true,
+      "errors": []
+    },
+    "metadata": {
+      "exists": true,
+      "valid": true,
+      "errors": []
+    }
+  },
+  "pages": [
+    {
+      "route": "[locale]/blog",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\blog\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/blog/[slug]",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\blog\\[slug]\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/contacto",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\contacto\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/cookies",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\cookies\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/criptomonedas",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\criptomonedas\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/encriptacion",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\encriptacion\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/noticias",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\noticias\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/privacidad",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\privacidad\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/productos",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\productos\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/productos/[id]",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\productos\\[id]\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/seguridad",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\seguridad\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/terminos",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\terminos\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/terminos/verificador",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\terminos\\verificador\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/analizador-cookies",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\analizador-cookies\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/analizador-email",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\analizador-email\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/calculadora-entropia",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\calculadora-entropia\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/calculadora-porcentajes",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\calculadora-porcentajes\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/cifrado-online",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\cifrado-online\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/codificador-base32",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\codificador-base32\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/codificador-url",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\codificador-url\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/comparador-archivos",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\comparador-archivos\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/contador-caracteres",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\contador-caracteres\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/conversor-base64",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\conversor-base64\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/conversor-colores",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\conversor-colores\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/conversor-hex",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\conversor-hex\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/conversor-markdown",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\conversor-markdown\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/conversor-timestamp",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\conversor-timestamp\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/conversor-unidades",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\conversor-unidades\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/decodificador-jwt",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\decodificador-jwt\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/eliminador-rastreo",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\eliminador-rastreo\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/formateador-sql",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\formateador-sql\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-alias",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-alias\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-claves",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-claves\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-contrasenas",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-contrasenas\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-credenciales",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-credenciales\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-cron",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-cron\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-csv",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-csv\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-datos",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-datos\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-hash",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-hash\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-lorem",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-lorem\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-passphrase",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-passphrase\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-qr",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-qr\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-totp",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-totp\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-useragent",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-useragent\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/generador-uuid",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\generador-uuid\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/huella-digital",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\huella-digital\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/limpia-metadatos",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\limpia-metadatos\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/minificador-css",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\minificador-css\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/ofuscador-texto",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\ofuscador-texto\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/regex-tester",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\regex-tester\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/validador-json",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\validador-json\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/verificador",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\verificador\\page.tsx",
+      "exists": true
+    },
+    {
+      "route": "[locale]/tools/verificador-contrasenas",
+      "file": "D:\\Clients\\tecnocrypter\\tecnocrypter-platform\\app\\[locale]\\tools\\verificador-contrasenas\\page.tsx",
+      "exists": true
+    }
+  ],
+  "config": {
+    "redirects": true,
+    "sitemap": true,
+    "errors": []
+  }
+}
