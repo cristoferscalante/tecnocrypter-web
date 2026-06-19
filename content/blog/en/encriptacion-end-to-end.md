@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["encryption", "privacy", "communications"]
 featured: true
 image: "/blogs/encriptacion_end_to_end.webp"
+
 ---
+
 # End-to-End Encryption: The Key to Secure Communications
 
 In today's digital age, the privacy of our communications is more important than ever. End-to-end encryption (E2EE) has become the gold standard for protecting our digital conversations.

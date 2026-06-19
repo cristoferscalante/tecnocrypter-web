@@ -1,4 +1,5 @@
 ---
+
 title: "Caballos de Troya generativos: La IA automatiza el envenenamiento de repositorios en la cadena de suministro de software"
 excerpt: "Los ciberdelincuentes recurren a agentes de IA para inyectar sigilosamente malware y dependencias comprometidas en registros como NPM y PyPI de forma masiva."
 date: "2026-06-18"
@@ -14,6 +15,7 @@ faqs:
     answer: "Es una técnica de intrusión en la que el atacante compromete una herramienta, biblioteca o dependencia legítima de terceros para infectar a todos los desarrolladores y usuarios finales que la descargan."
   - question: "¿De qué manera pueden los desarrolladores proteger sus dependencias?"
     answer: "Mediante el uso de herramientas de escaneo de dependencias estáticas (SCA), el bloqueo de versiones específicas usando archivos lock, la auditoría automática de firmas digitales y la desactivación de scripts de post-instalación no verificados."
+
 ---
 
 # Caballos de Troya generativos: La IA automatiza el envenenamiento de repositorios en la cadena de suministro de software

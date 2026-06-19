@@ -8,7 +8,9 @@ category: "noticias"
 tags: ["SMIC", "China", "semicondutores", "Litografia DUV", "5nm", "sanções tecnológicas"]
 featured: false
 image: "/blogs/smic-chips-china-tecnologia-fabricacion-costos.png"
+
 ---
+
 # O milagre e o custo de 5 nm na China: SMIC contorna sanções com litografia DUV
 
 O maior fabricante de semicondutores da China, **SMIC (Semiconductor Manufacturing International Corporation)**, marcou um marco histórico na corrida pela soberania tecnológica ao consolidar sua capacidade de produção de microchips avançados no nó de **5 nanômetros (N+3)**. O que é surpreendente nesta conquista não é apenas a tecnologia em si, mas o método utilizado para alcançá-la sob severas restrições comerciais.

@@ -15,7 +15,9 @@ faqs:
     answer: "Il s'agit d'un identifiant numérique soutenu par une cryptographie à clé publique. Il est lié au contrôle biométrique de votre appareil (empreinte digitale ou visage), empêchant un tiers de l'intercepter ou de le deviner."
   - question: "Est-il possible de se connecter sans mot de passe si je n'ai pas Internet ?"
     answer: "Oui, les clés d'accès sont stockées en toute sécurité localement sur votre appareil (ou dans votre trousseau cloud tel que iCloud/Google Drive), permettant une authentification locale sans avoir besoin d'une connexion active à des serveurs externes."
+
 ---
+
 # La fin des mots de passe : Pourquoi la décision de Spotify de forcer l'utilisation des Passkeys est une réussite en matière de sécurité
 
 Les mots de passe traditionnels sont morts, même si de nombreux utilisateurs refusent toujours de les enterrer. Le dernier grand géant du numérique à faire un pas définitif vers cette nouvelle ère est **Spotify**. Dans une mise à jour de sécurité historique, la plateforme de streaming audio a annoncé le déploiement progressif de l'accès obligatoire via les **Passkeys** (clés d'accès), supprimant la possibilité de se connecter avec l'ancien duo email et mot de passe.

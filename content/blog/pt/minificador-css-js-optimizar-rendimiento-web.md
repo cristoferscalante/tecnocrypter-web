@@ -15,7 +15,9 @@ faqs:
     answer: "A minificação altera diretamente o texto do código em nível sintático. A compactação (como Gzip ou Brotli) é um algoritmo de redução de dados executado pelo servidor web ao enviar o arquivo compactado pela rede."
   - question: "/*A minificação pode quebrar meu código?*/"
     answer: "Somente se o código não tiver sintaxe correta (como a omissão de ponto-e-vírgula em JavaScript) ou se os minificadores executarem ofuscação agressiva mal configurada. Um minificador básico padrão é seguro."
+
 ---
+
 # WPO avançado: como reduzir CSS e Javascript para acelerar seu site
 
 A velocidade de carregamento de um site é um dos fatores mais importantes tanto para reter os visitantes como para melhorar o seu posicionamento nos motores de busca. Na disciplina Web Performance Optimization (**WPO**), a **minificação de arquivos** é uma etapa obrigatória.

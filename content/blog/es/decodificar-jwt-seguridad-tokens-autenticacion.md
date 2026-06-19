@@ -1,4 +1,5 @@
 ---
+
 title: "Guía del estándar JWT: Cómo decodificar y analizar JSON Web Tokens de forma segura"
 excerpt: "Aprende a examinar JSON Web Tokens (JWT), entender su estructura de tres partes y verificar sus claims de seguridad de forma local."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Por defecto no. Un JWT estándar está firmado y codificado en Base64Url, lo que significa que cualquiera puede leer el payload. Nunca debes poner información sensible como contraseñas dentro del token."
   - question: "¿Cómo se previene la manipulación de un JWT?"
     answer: "El token contiene una firma criptográfica en su tercera sección. Si un cliente altera los datos del payload, la firma deja de coincidir y el servidor rechaza el token."
+
 ---
 
 # Guía del estándar JWT: Cómo decodificar y analizar JSON Web Tokens de forma segura

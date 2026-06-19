@@ -15,7 +15,9 @@ faqs:
     answer: "Le danger n’est pas la perte directe de fonds, mais la perte de votre vie privée. En dépensant cette « poussière » avec vos fonds habituels, vous permettez aux analystes de lier vos différentes adresses à une seule identité physique."
   - question: "Comment puis-je me protéger du suivi des poussières ?"
     answer: "Vous pouvez marquer ces minuscules soldes inconnus comme « non dépensés » (sur les portefeuilles contrôlés par UTXO) ou utiliser des services de mixage de confidentialité pour dissocier vos transactions."
+
 ---
+
 # Attaques de dépoussiérage : l'astuce invisible utilisée par les pirates pour suivre votre portefeuille crypto
 
 Imaginez ouvrir votre portefeuille Bitcoin ou Ethereum et découvrir que vous avez reçu une transaction non sollicitée pour un montant ridiculement petit, comme **0,000005 BTC** (quelques centimes par dollar). Bien qu'à première vue, cela puisse ressembler à une erreur de réseau ou à un cadeau insignifiant, en réalité, vous pourriez être dans le collimateur d'une **Dust Attack** ou d'une *Dusting Attack*.

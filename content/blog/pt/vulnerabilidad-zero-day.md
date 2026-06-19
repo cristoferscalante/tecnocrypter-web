@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["WinRAR", "dia zero", "vulnerabilidades", "malware"]
 featured: true
 image: "/blogs/vulnerabilidad-zero‑day.webp"
+
 ---
+
 # Vulnerabilidade de dia zero no WinRAR: como é explorada e como se proteger
 
 Em 11 de agosto de 2025, os pesquisadores da ESET tornaram pública a descoberta de uma vulnerabilidade de dia zero no WinRAR que estava sendo explorada ativamente. Essa falha permite que invasores executem códigos maliciosos descompactando arquivos especialmente criados.

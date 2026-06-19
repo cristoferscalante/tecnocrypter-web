@@ -15,7 +15,9 @@ faqs:
     answer: "They allow platforms (like Facebook or Google) to track which links you share with your friends and link your user profiles across multiple pages."
   - question: "Does tracking remover break link?"
     answer: "No. It only removes the unnecessary marketing and tracking variables that come after the question mark (?), leaving the original link intact to load the site identically."
+
 ---
+
 # URL Cleaning: How to Remove UTM Parameters and Trackers from Your Links
 
 Every time you share a link to a product you are interested in, or click on a news item on social media, the web address is usually full of long tags. These parameters, such as \`utm_source\`, \`fbclid\` or \`gclid\`, are **web crawling** tools.

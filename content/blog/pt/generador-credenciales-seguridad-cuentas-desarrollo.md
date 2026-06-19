@@ -15,7 +15,9 @@ faqs:
     answer: "Nomes aleatórios, nomes de usuário fictícios, e-mails de teste simulados e senhas de alta entropia que não são usadas em nenhum serviço real."
   - question: "Como a geração local ajuda os desenvolvedores?"
     answer: "Garante que nenhum perfil de teste gerado seja enviado para a Internet, cumprindo as regulamentações de proteção de dados durante o desenvolvimento local."
+
 ---
+
 # Criando ambientes seguros: como gerar credenciais e perfis aleatórios para teste
 
 Durante o ciclo de desenvolvimento de software, a criação de bancos de dados de teste e a validação de interfaces de usuário requerem entrada constante de informações pessoais: nomes, e-mails, senhas e chaves de API.

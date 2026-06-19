@@ -1,4 +1,5 @@
 ---
+
 title: "AES vs ChaCha20: diferencias, ventajas y cuándo usar cada uno"
 excerpt: "AES y ChaCha20 son dos algoritmos modernos de cifrado simétrico. ¿Cuál conviene más según el contexto?"
 date: "2025-09-24"
@@ -7,6 +8,7 @@ category: "encriptacion"
 tags: ["AES", "ChaCha20", "comparativa cifrado", "seguridad criptográfica"]
 featured: false
 image: "/blogs/AES-vs-ChaCha20.webp"
+
 ---
 
 # AES vs ChaCha20: diferencias, ventajas y cuándo usar cada uno

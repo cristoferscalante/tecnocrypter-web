@@ -15,7 +15,9 @@ faqs:
     answer: "Falta-lhes a capacidade de raciocínio lógico e determinístico puro, necessária para garantir a segurança em tempo real. Um erro no código de controle de atitude de um foguete pode destruir a missão."
   - question: "Por que o determinismo é crítico no desenvolvimento de software espacial?"
     answer: "Porque o software aeroespacial deve se comportar exatamente da mesma forma em cada execução. Os modelos probabilísticos de IA podem ser enganosos, tornando-os inadequados para software integrado crítico."
+
 ---
+
 # SpaceX adota Cursor como programador: A corrida espacial agora depende da autonomia dos agentes
 
 A velocidade de iteração na engenharia espacial sempre foi o maior obstáculo à exploração de outros planetas. Para superar isso, a **SpaceX** começou a integrar o editor de código com tecnologia de IA **Cursor** e seus agentes de agendamento autônomos ao fluxo de trabalho de suas equipes de desenvolvimento de software.

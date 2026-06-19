@@ -15,7 +15,9 @@ faqs:
     answer: "Quando combinados com outras variáveis ​​(como resolução de tela e fontes), os rastreadores criam uma impressão digital exclusiva para identificá-lo sem usar cookies."
   - question: "Por que alterar ou alternar meu User-Agent?"
     answer: "Ele permite simular que você está navegando em um dispositivo ou sistema diferente, confundindo algoritmos de rastreamento e permitindo acesso a versões restritas da web."
+
 ---
+
 # Evasão de impressão digital: como usar agentes de usuário para proteger sua privacidade de navegação
 
 Cada vez que você acessa um site, seu navegador faz uma apresentação formal enviando um cabeçalho de texto conhecido como **User-Agent**. Esta string contém detalhes exatos sobre a arquitetura do seu computador, seu sistema operacional e a versão exata do seu navegador.

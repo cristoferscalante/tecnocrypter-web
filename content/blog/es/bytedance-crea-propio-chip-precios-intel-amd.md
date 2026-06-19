@@ -1,4 +1,5 @@
 ---
+
 title: "Rebelión en el silicio: ByteDance fabricará sus propios chips para escapar de los precios de Intel y AMD"
 excerpt: "La matriz de TikTok se asocia con TSMC para diseñar sus propios microprocesadores y reducir la dependencia de las costosas arquitecturas tradicionales de Intel, AMD y NVIDIA."
 date: "2026-06-18"
@@ -14,6 +15,7 @@ faqs:
     answer: "Está diseñando chips ASIC y aceleradores de IA en colaboración con TSMC, optimizados para cargas de trabajo específicas en sus centros de datos masivos."
   - question: "¿Cómo afecta la subida de precios de Intel y AMD al mercado tecnológico?"
     answer: "Fuerza a las megacorporaciones de internet (hiperescaladores) a internalizar el diseño de silicio, acelerando la fragmentación del mercado y el declive del modelo x86 tradicional en favor de arquitecturas ARM y personalizadas."
+
 ---
 
 # Rebelión en el silicio: ByteDance fabricará sus propios chips para escapar de los precios de Intel y AMD

@@ -8,7 +8,9 @@ category: "tecnologia"
 tags: ["IA", "Gemini", "Image Generation", "Machine Learning", "Google DeepMind", "Technical Architecture"]
 featured: true
 image: "/blogs/gemini-nano-banana.webp"
+
 ---
+
 # Gemini 2.5 Flash Image Preview: Technical Architecture and Advances in AI Image Generation
 
 ## Executive Summary

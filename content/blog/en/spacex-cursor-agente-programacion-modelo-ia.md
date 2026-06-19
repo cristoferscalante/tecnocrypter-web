@@ -15,7 +15,9 @@ faqs:
     answer: "They lack the capacity for pure logical and deterministic reasoning required to ensure real-time security. An error in a rocket's attitude control code can destroy the mission."
   - question: "Why is determinism critical in spatial software development?"
     answer: "Because aerospace software must behave exactly the same in each run. Probabilistic AI models can be misleading, making them unsuitable for critical onboard software."
+
 ---
+
 # SpaceX adopts Cursor as a programmer: The space race now depends on the autonomy of the agents
 
 The speed of iteration in space engineering has always been the biggest obstacle to the exploration of other planets. To overcome this, **SpaceX** has begun integrating the AI-powered code editor **Cursor** and its autonomous scheduling agents into the workflow of its software development teams.

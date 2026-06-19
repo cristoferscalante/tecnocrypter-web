@@ -15,7 +15,9 @@ faqs:
     answer: "To confirm its integrity. If a file was modified (even by a single bit due to a network error or an injected virus), the final hash changes drastically."
   - question: "/*Is MD5 still safe?*/"
     answer: "Not for cryptographic or password authentication purposes due to known collisions, but still useful as a basic checksum to detect file transfer errors."
+
 ---
+
 # Data integrity: How to verify files using MD5 and SHA-256 hashes
 
 When you download critical software from the internet (such as a Linux distribution, operating system installers, or crypto wallets), how do you know that the file wasn't tampered with by a third party or corrupted due to a poor network connection?

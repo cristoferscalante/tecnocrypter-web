@@ -1,4 +1,5 @@
 ---
+
 title: "Vulnerabilidad zero‑day en WinRAR: cómo se explota y cómo protegerte"
 excerpt: "ESET descubrió una vulnerabilidad de día cero en WinRAR (CVE‑2025‑8088) que ya está siendo explotada por el grupo RomCom. Aprende cómo funciona y qué medidas tomar."
 date: "2025-08-13"
@@ -7,6 +8,7 @@ category: "seguridad"
 tags: ["WinRAR", "zero‑day", "vulnerabilidades", "malware"]
 featured: true
 image: "/blogs/vulnerabilidad-zero‑day.webp"
+
 ---
 
 # Vulnerabilidad zero‑day en WinRAR: cómo se explota y cómo protegerte

@@ -15,7 +15,9 @@ faqs:
     answer: "URLs padrão não podem conter espaços em branco. No sistema de codificação, o espaço é substituído pela sua representação hexadecimal `%20` ou pelo sinal de mais (+)."
   - question: "Quais caracteres são considerados reservados em uma URL?"
     answer: "Caracteres reservados possuem funções sintáticas específicas (como ?, &, =, /, :, #). Se fizerem parte de um dado que queremos enviar como parâmetro, devem ser codificados para não quebrar a estrutura da URL."
+
 ---
+
 # Estrutura da Web: Codificação de caracteres especiais em URLs (Percent-Encoding)
 
 O padrão que define a estrutura dos endereços da Internet (RFC 3986) estabelece que uma **URL** só pode usar um conjunto limitado de caracteres seguros (letras alfanuméricas do alfabeto inglês e alguns símbolos não reservados). 

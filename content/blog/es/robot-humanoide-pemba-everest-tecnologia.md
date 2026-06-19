@@ -1,4 +1,5 @@
 ---
+
 title: "Pemba, el robot humanoide que conquistó los Andes y ahora apunta al Everest"
 excerpt: "El robot humanoide Pemba, basado en el modelo Unitree G1 y adaptado a climas extremos, corona el Chimborazo y se prepara para el Everest en un hito histórico para la robótica de alta montaña."
 date: "2026-06-16"
@@ -7,6 +8,7 @@ category: "noticias"
 tags: ["robot humanoide", "Pemba", "Unitree G1", "Everest", "robótica extrema", "tecnología"]
 featured: false
 image: "/blogs/robot-humanoide-pemba-everest-tecnologia.png"
+
 ---
 
 # Pemba, el robot humanoide que conquistó los Andes y ahora apunta al Everest

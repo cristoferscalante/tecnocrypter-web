@@ -8,7 +8,9 @@ category: "noticias"
 tags: ["job losses 2025", "automation and AI", "AI job cuts", "re-skilling Karnataka", "skills gap"]
 featured: true
 image: "/blogs/impacto-ia-empleos-2025.webp"
+
 ---
+
 # More than 10,000 Jobs Disappear in 2025: Are We Ready for the Future?
 
 So far in 2025, automation and artificial intelligence have led to the loss of more than 10,000 jobs in the United States, according to The Economic Times. This phenomenon is not just a shocking headline, but a reflection of how AI is transforming traditional roles, forcing governments and companies to rethink training and adaptation strategies.

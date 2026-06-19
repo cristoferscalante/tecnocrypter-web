@@ -1,4 +1,5 @@
 ---
+
 title: "VPNs y cifrado: ¿qué tipo de cifrado usan y qué tan seguros son?"
 excerpt: "No todas las VPN cifran igual. Descubre los protocolos y niveles de seguridad detrás de tu conexión privada."
 date: "2025-11-05"
@@ -7,8 +8,8 @@ category: "Encriptación"
 tags: ["VPN", "cifrado VPN", "WireGuard", "OpenVPN"]
 featured: false
 image: "/blogs/vpn-cifrado.webp"
----
 
+---
 
 # VPNs y cifrado: ¿qué tipo de cifrado usan y qué tan seguros son?
 
@@ -16,7 +17,6 @@ image: "/blogs/vpn-cifrado.webp"
 Las VPN cifran tu tráfico con algoritmos modernos (AES, ChaCha20) y protocolos como OpenVPN, WireGuard o IKEv2/IPSec. La seguridad real depende de la implementación y las políticas del proveedor.
 
 ---
-
 ## Introducción
 Las VPN cifran el tráfico de tu conexión a internet, pero no todas lo hacen de la misma forma. Es vital entender qué tecnologías utilizan.
 
@@ -28,7 +28,6 @@ Las VPN cifran el tráfico de tu conexión a internet, pero no todas lo hacen de
 
 
 ---
-
 ## Comparativa de seguridad
 | Protocolo | Seguridad | Velocidad |
 |----------|-----------|-----------|
@@ -38,7 +37,6 @@ Las VPN cifran el tráfico de tu conexión a internet, pero no todas lo hacen de
 
 
 ---
-
 ## Recomendaciones
 - Usa VPNs con políticas claras de no registros.
 - Revisa si el software es open source.
@@ -46,7 +44,6 @@ Las VPN cifran el tráfico de tu conexión a internet, pero no todas lo hacen de
 
 
 ---
-
 ## Conclusiones
 Una buena VPN no solo oculta tu IP, también debe ofrecer un cifrado sólido. Elegir bien es proteger tus datos.
 

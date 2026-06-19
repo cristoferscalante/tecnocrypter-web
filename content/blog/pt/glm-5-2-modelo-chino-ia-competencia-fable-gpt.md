@@ -15,7 +15,9 @@ faqs:
     answer: "Destaca-se pelo raciocínio matemático complexo, programação avançada e eficiência operacional que reduz a uma fração os custos de inferência em comparação com gigantes americanos."
   - question: "Quão relevante é este desenvolvimento para a indústria de IA na China?"
     answer: "Demonstra que a lacuna tecnológica entre a China e os Estados Unidos no sector da aprendizagem profunda está a diminuir rapidamente, desafiando sanções e o controlo de hardware avançado."
+
 ---
+
 # A surpresa de Pequim: como o modelo chinês GLM-5.2 conseguiu enfrentar Fable 5 e GPT-5.5
 
 O setor da inteligência artificial vive num estado de revolução permanente, mas poucos esperavam um golpe tão contundente do continente asiático. Quando os analistas estimaram que modelos ocidentais como **GPT-5.5** (da OpenAI) ou o esperado **Fable 5** manteriam sua hegemonia por anos graças ao acesso exclusivo aos chips NVIDIA mais poderosos, a empresa chinesa **Zhipu AI** quebrou o molde com a apresentação do **GLM-5.2**.

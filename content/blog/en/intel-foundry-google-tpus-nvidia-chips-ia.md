@@ -15,7 +15,9 @@ faqs:
     answer: "NVIDIA seeks to diversify its manufacturing suppliers to reduce dependence on TSMC (Taiwan) in the face of growing geopolitical tensions and capacity shortages."
   - question: "How relevant is Intel's 18A manufacturing process?"
     answer: "The 18A process (equivalent to 1.8nm) represents Intel's technological spearhead, which promises to surpass competing nodes through new transistor technologies and rear-side power delivery."
+
 ---
+
 # Intel Foundry resurfaces: It will manufacture Google TPUs and courts NVIDIA
 
 In the volatile and crucial semiconductor manufacturing market, **Intel** has scored a vitally important strategic goal. Its independent manufacturing division, **Intel Foundry**, has secured a multi-million dollar contract to produce **Google**'s next generation of tensor processing units (**TPUs**) using its advanced **3 nanometer** node. 

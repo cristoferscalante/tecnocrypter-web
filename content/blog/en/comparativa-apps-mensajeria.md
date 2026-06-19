@@ -8,7 +8,9 @@ category: "Encriptación"
 tags: ["secure messaging apps", "signal", "Telegram", "security comparisons"]
 featured: false
 image: "/blogs/comparativa-apps-mensajeria.webp"
+
 ---
+
 # Comparison of secure messaging apps in 2025
 
 ## Summary

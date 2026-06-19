@@ -15,7 +15,9 @@ faqs:
     answer: "É composto por cinco ou seis campos numéricos separados por espaços que indicam: minuto, hora, dia do mês, mês e dia da semana."
   - question: "/*O que significam os caracteres especiais (*, /, ,) no cron?*/"
     answer: "O asterisco (*) significa 'qualquer valor', a barra (/) define etapas ou intervalos (por exemplo, */15 é a cada 15 minutos) e a vírgula (,) separa valores específicos."
+
 ---
+
 # Automação de servidor: um guia prático para criar expressões Cron sem falhas
 
 A automação de processos de rotina (como rotação de logs de servidores, envio de relatórios diários, sincronização de arquivos ou realização de backups de bancos de dados) é tradicionalmente gerenciada usando **cron** em sistemas operacionais Unix e Linux.

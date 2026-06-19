@@ -15,7 +15,9 @@ faqs:
     answer: "Ils permettent aux plateformes (comme Facebook ou Google) de suivre les liens que vous partagez avec vos amis et de relier vos profils d'utilisateurs sur plusieurs pages."
   - question: "Le outil de suppression de suivi rompt-il le lien ?"
     answer: "Non. Il supprime uniquement les variables de marketing et de suivi inutiles qui viennent après le point d'interrogation (?), laissant le lien d'origine intact pour charger le site à l'identique."
+
 ---
+
 # Nettoyage d'URL : comment supprimer les paramètres et les trackers UTM de vos liens
 
 Chaque fois que vous partagez un lien vers un produit qui vous intéresse ou cliquez sur une actualité sur les réseaux sociaux, l'adresse Web est généralement pleine de longues balises. Ces paramètres, tels que \`utm_source\`, \`fbclid\` ou \`gclid\`, sont des outils d'**exploration Web**.

@@ -15,7 +15,9 @@ faqs:
     answer: "O silício natural gera interferência magnética que destrói a coerência quântica dos qubits. O Silicon-28 cria um ambiente magnético de “ruído zero”, estendendo drasticamente a vida útil dos qubits e reduzindo erros de processamento."
   - question: "O que este avanço significa para a soberania tecnológica da China?"
     answer: "Até agora, a produção global de silício-28 dependia quase inteiramente da Rússia e da infra-estrutura europeia. Produzi-lo internamente garante que a China possa fabricar os seus próprios processadores quânticos em grande escala, sem receio de bloqueios comerciais."
+
 ---
+
 # China dá um passo decisivo em direção à autonomia quântica com silício ultrapuro
 
 A corrida global pela supremacia quântica tomou uma viragem estratégica crucial. Num anúncio oficial em junho de 2026, os institutos de pesquisa nuclear na China confirmaram o sucesso da produção, pela primeira vez em escala industrial, de **silício ultrapuro-28** com uma concentração que excede os padrões de pureza de 99,99%.

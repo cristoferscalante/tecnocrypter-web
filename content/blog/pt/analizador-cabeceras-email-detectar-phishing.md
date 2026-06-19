@@ -15,7 +15,9 @@ faqs:
     answer: "Você deve procurar inconsistências entre o domínio do remetente visível e o servidor de origem real (Return-Path) e verificar se as validações SPF ou DKIM falharam."
   - question: "O que significam SPF, DKIM e DMARC?"
     answer: "Eles são protocolos de autenticação de e-mail. O SPF define quais servidores podem enviar e-mails do domínio, o DKIM adiciona uma assinatura criptográfica de validação e o DMARC estabelece políticas para lidar com e-mails que falham no SPF ou DKIM."
+
 ---
+
 # Como analisar cabeçalhos de e-mail para detectar phishing e spoofing
 
 O e-mail continua sendo o principal vetor de ataque dos cibercriminosos. Usando técnicas de falsificação de e-mail, os invasores conseguem camuflar e-mails maliciosos, fazendo-os passar por notificações do seu banco, suporte técnico ou chefes corporativos.

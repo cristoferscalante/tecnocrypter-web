@@ -8,7 +8,9 @@ category: "inteligencia-artificial"
 tags: ["Implementação de IA", "Estratégia Empresarial", "Transformação Digital", "ROI", "Gestão de Mudanças"]
 featured: true
 image: "/blogs/ai-business-implementation-2025.webp"
+
 ---
+
 # Guia Definitivo para Implementar IA na sua Empresa: 10 Recomendações Estratégicas para 2025
 
 ## Resumo Executivo

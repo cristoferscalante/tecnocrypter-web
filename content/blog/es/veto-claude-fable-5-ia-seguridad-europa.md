@@ -1,4 +1,5 @@
 ---
+
 title: "El veto a Claude Fable 5: La IA no es un producto comercial, es la nueva arma nacional"
 excerpt: "El veto del gobierno estadounidense a la exportación de Claude Fable 5 de Anthropic en Europa confirma que los modelos avanzados de IA son catalogados como recursos de defensa nacional."
 date: "2026-06-16"
@@ -7,6 +8,7 @@ category: "noticias"
 tags: ["Claude Fable 5", "Anthropic", "veto tecnológico", "seguridad nacional", "Europa", "soberanía digital"]
 featured: false
 image: "/blogs/veto-claude-fable-5-ia-seguridad-europa.png"
+
 ---
 
 # El veto a Claude Fable 5: La IA no es un producto comercial, es la nueva arma nacional

@@ -1,4 +1,5 @@
 ---
+
 title: "Matemáticas cotidianas: Cómo calcular porcentajes, IVA y descuentos online"
 excerpt: "Aprende a realizar cálculos financieros esenciales como la suma y resta de porcentajes, el cálculo de márgenes y la desagregación de impuestos como el IVA."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Para quitar el IVA (por ejemplo, del 21%), divides el precio final entre $1.21$ (o $1 + \text{impuesto}/100$). La diferencia entre el precio original y este resultado es el impuesto cobrado."
   - question: "/*¿Qué es el incremento porcentual?*/"
     answer: "Mide el cambio relativo entre un valor inicial y uno final. Se calcula restando el valor inicial al final, dividiendo entre el inicial y multiplicando por 100."
+
 ---
 
 # Matemáticas cotidianas: Cómo calcular porcentajes, IVA y descuentos online

@@ -1,4 +1,5 @@
 ---
+
 title: "Ofuscación de caracteres: El arte de ocultar texto con Unicode y Zalgo"
 excerpt: "Aprende cómo funciona el estándar Unicode y cómo los caracteres combinados te permiten ofuscar mensajes de texto y evitar filtros automáticos."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Permite ocultar caracteres de texto de los algoritmos de escaneo automáticos, protegiendo mensajes privados o evitando censuras de palabras clave en foros públicos."
   - question: "¿Cómo interpreta una computadora el texto ofuscado?"
     answer: "A nivel visual puede parecer distorsionado, pero la computadora lee los puntos de código Unicode individuales correspondientes a las letras base originales."
+
 ---
 
 # Ofuscación de caracteres: El arte de ocultar texto con Unicode y Zalgo

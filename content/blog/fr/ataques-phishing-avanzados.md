@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["hameçonnage", "cybersécurité", "prévention"]
 featured: false
 image: "/blogs/ataques_phishing_avanzados.webp"
+
 ---
+
 # Comment détecter et prévenir les attaques de phishing avancées
 
 Les attaques de phishing ont considérablement évolué, devenant plus sophistiquées et difficiles à détecter. Dans ce guide complet, vous apprendrez à vous identifier et à vous protéger contre les techniques les plus avancées.

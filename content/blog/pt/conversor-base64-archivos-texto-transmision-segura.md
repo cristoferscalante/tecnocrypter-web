@@ -15,7 +15,9 @@ faqs:
     answer: "É ideal para otimizar o desempenho incorporando pequenos ícones ou imagens em folhas de estilo CSS ou HTML, reduzindo o número de solicitações HTTP do servidor."
   - question: "Quanto a conversão para Base64 aumenta o tamanho do arquivo?"
     answer: "A codificação Base64 aumenta o tamanho do arquivo em aproximadamente 33% em comparação com sua representação binária original."
+
 ---
+
 # Transmissão de dados na web: Convertendo arquivos e imagens para Base64
 
 Transportar dados binários (como imagens, áudio ou documentos PDF) através de protocolos projetados exclusivamente para texto simples (como JSON ou HTML) representa um desafio clássico no desenvolvimento de software. A solução padrão é a codificação **Base64**.

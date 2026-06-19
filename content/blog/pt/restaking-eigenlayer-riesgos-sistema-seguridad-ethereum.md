@@ -15,7 +15,9 @@ faqs:
     answer: "O principal risco é o double slashing (penalidade), onde uma falha em um serviço secundário pode causar a perda de ETH depositado na rede principal do Ethereum."
   - question: "Por que Vitalik Buterin alerta contra a sobrecarga do consenso Ethereum?"
     answer: "Porque confiar no consenso social do Ethereum para resgatar falhas de aplicações financeiras externas cria uma fragilidade sistêmica que põe em risco a segurança de toda a rede base."
+
 ---
+
 # A bolha de restabelecimento: os perigos ocultos e o risco sistêmico do EigenLayer no Ethereum
 
 O ecossistema Ethereum DeFi é conhecido por sua capacidade de construir instrumentos financeiros complexos sobre protocolos existentes. O exemplo mais paradigmático dos últimos anos é o **restake**, conceito popularizado pelo **EigenLayer** que atraiu bilhões de dólares em depósitos, tornando-se o mecanismo de desempenho mais popular do mercado.

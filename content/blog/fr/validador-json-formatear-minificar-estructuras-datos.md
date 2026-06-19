@@ -10,12 +10,14 @@ featured: false
 image: "/blogs/validador-json-formatear-minificar-estructuras-datos.png"
 faqs:
   - question: "/*Quelles sont les erreurs de syntaxe courantes dans un fichier JSON ?*/"
-    answer: "Les erreurs les plus courantes sont : laisser une virgule à la fin du dernier élément d'un objet ou d'une liste, utiliser des guillemets simples (') au lieu de guillemets doubles (\\"), ou des accolades et des crochets ouverts."
+    answer: "Les erreurs les plus courantes sont : laisser une virgule à la fin du dernier élément d'un objet ou d'une liste, utiliser des guillemets simples (') au lieu de guillemets doubles (\"), ou des accolades et des crochets ouverts."
   - question: "/*Quelle est la différence entre le formatage et la réduction de JSON ?*/"
     answer: "Le formatage ajoute des indentations et des sauts de ligne pour faciliter la lecture par les programmeurs. Minify supprime tous les espaces inutiles et les lignes vides pour réduire la taille du fichier lors de la transmission sur le réseau."
   - question: "/*Est-il sécuritaire de valider des fichiers JSON en ligne ?*/"
     answer: "Uniquement si cela est fait localement dans votre navigateur en utilisant Javascript. Si vous envoyez le JSON à des serveurs distants pour traitement, vous risquez de perdre des données client ou des clés API."
+
 ---
+
 # API de débogage : Comment valider, formater et réduire les fichiers JSON sans erreurs
 
 Le format **JSON** (JavaScript Object Notation) est le standard omniprésent pour l'échange de données sur le Web moderne. Malgré sa simplicité, JSON a des règles syntaxiques extrêmement strictes qui empêchent les analyseurs de lire les informations en cas de moindre erreur.

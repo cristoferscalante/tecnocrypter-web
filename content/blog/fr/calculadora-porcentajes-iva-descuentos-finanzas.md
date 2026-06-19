@@ -15,7 +15,9 @@ faqs:
     answer: "Pour supprimer la TVA (par exemple, 21 %), vous divisez le prix final par 1,21 $ (ou 1 $ + \text{tax}/100$). La différence entre le prix initial et ce résultat correspond à la taxe facturée."
   - question: "/*Qu'est-ce que le pourcentage d'augmentation ?*/"
     answer: "Mesure le changement relatif entre une valeur initiale et une valeur finale. Il est calculé en soustrayant la valeur initiale de la valeur finale, en divisant par la valeur initiale et en multipliant par 100."
+
 ---
+
 # Mathématiques au quotidien : comment calculer les pourcentages, la TVA et les remises en ligne
 
 Le calcul de pourcentages est l'une des applications mathématiques les plus utilisées dans la vie quotidienne : pour évaluer les offres dans les magasins commerciaux, calculer les pourboires, estimer les intérêts d'un prêt ou détailler les taxes sur les factures d'achat.

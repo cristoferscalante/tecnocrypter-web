@@ -15,7 +15,9 @@ faqs:
     answer: "Les URL standard ne peuvent pas contenir d'espaces. Dans le système d'encodage, l'espace est remplacé par sa représentation hexadécimale `%20` ou par le signe plus (+)."
   - question: "Quels caractères sont considérés comme réservés dans une URL ?"
     answer: "Les caractères réservés ont des fonctions syntaxiques spécifiques (telles que ?, &, =, /, :, #). S'ils font partie d'une donnée que l'on souhaite envoyer en paramètre, ils doivent être encodés pour ne pas casser la structure de l'URL."
+
 ---
+
 # Structure Web : Encodage des caractères spéciaux dans les URL (Percent-Encoding)
 
 La norme qui définit la structure des adresses Internet (RFC 3986) établit qu'une **URL** ne peut utiliser qu'un ensemble limité de caractères sécurisés (lettres alphanumériques de l'alphabet anglais et certains symboles non réservés). 

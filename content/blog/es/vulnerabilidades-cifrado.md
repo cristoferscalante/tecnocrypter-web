@@ -1,4 +1,5 @@
 ---
+
 title: "Vulnerabilidades famosas en la encriptación: casos que marcaron la historia"
 excerpt: "Errores como Heartbleed o Logjam mostraron lo frágil que puede ser la seguridad digital. Aprende qué falló y cómo evitarlo."
 date: "2025-11-05"
@@ -7,6 +8,7 @@ category: "Encriptación"
 tags: ["Heartbleed", "vulnerabilidades criptográficas", "casos históricos de seguridad"]
 featured: false
 image: "/blogs/vulnerabilidades-cifrado.webp"
+
 ---
 
 # Vulnerabilidades famosas en la encriptación: casos que marcaron la historia

@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["blockchain", "segurança", "criptomoedas"]
 featured: true
 image: "/blogs/seguridad_en_la_blockchain.webp"
+
 ---
+
 # Segurança Blockchain: Protegendo seus ativos digitais
 
 A segurança no mundo das criptomoedas e do blockchain é essencial para proteger seus ativos digitais. Neste artigo, exploraremos as melhores práticas e estratégias para manter seus investimentos seguros.

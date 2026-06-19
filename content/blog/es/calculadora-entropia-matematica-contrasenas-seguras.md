@@ -1,4 +1,5 @@
 ---
+
 title: "La matemática de la seguridad: Cómo calcular la entropía de tus contraseñas"
 excerpt: "Descubre el concepto de entropía criptográfica y por qué la longitud es mucho más importante que la complejidad al diseñar tus contraseñas."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Porque la longitud incrementa de manera exponencial el número total de combinaciones posibles, mientras que añadir caracteres especiales a una contraseña corta solo incrementa la base de la potencia de forma lineal."
   - question: "¿Cuántos bits de entropía se consideran seguros hoy en día?"
     answer: "Se considera que una contraseña con más de 80 bits de entropía es extremadamente difícil de descifrar por la tecnología de cómputo actual, requiriendo siglos de fuerza bruta."
+
 ---
 
 # La matemática de la seguridad: Cómo calcular la entropía de tus contraseñas

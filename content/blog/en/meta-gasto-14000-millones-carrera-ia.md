@@ -15,7 +15,9 @@ faqs:
     answer: "Because despite the multi-million dollar spending, the assistant market is still led by OpenAI and Anthropic. Meta is struggling to monetize its open source Llama models and to convince the public to use its agents on Instagram and WhatsApp."
   - question: "What is the role of Scale AI in Meta's strategy?"
     answer: "Scale AI provides critical human data labeling and curation (RLHF) services, essential to refine foundational Llama models and make them competitive against closed solutions."
+
 ---
+
 # The 14 billion trap: Meta invests massively in AI to stay in the same place
 
 The social media giant **Meta** has redoubled its commitment to leading the technological future. Mark Zuckerberg has directed his company's immense machinery towards artificial intelligence, making investments that border on the implausible. Recent financial analysis reveals that Meta has committed at least **$14 billion** to capital expenditures related to AI infrastructure and data.

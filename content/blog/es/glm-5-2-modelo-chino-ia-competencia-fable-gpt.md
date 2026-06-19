@@ -1,4 +1,5 @@
 ---
+
 title: "La sorpresa de Pekín: Cómo el modelo chino GLM-5.2 ha logrado plantar cara a Fable 5 y GPT-5.5"
 excerpt: "Análisis técnico del inesperado lanzamiento de GLM-5.2 por parte de Zhipu AI. Descubre cómo sus capacidades de razonamiento lógico y eficiencia en costes desafían a los modelos occidentales."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Destaca por su razonamiento matemático complejo, programación avanzada y una eficiencia operativa que reduce los costes de inferencia a una fracción en comparación con los gigantes estadounidenses."
   - question: "¿Qué relevancia tiene este avance para la industria de la IA en China?"
     answer: "Demuestra que la brecha tecnológica entre China y Estados Unidos en el sector del Deep Learning se está cerrando rápidamente, desafiando las sanciones y el control del hardware avanzado."
+
 ---
 
 # La sorpresa de Pekín: Cómo el modelo chino GLM-5.2 ha logrado plantar cara a Fable 5 y GPT-5.5

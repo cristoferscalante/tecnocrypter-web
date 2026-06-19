@@ -1,4 +1,5 @@
 ---
+
 title: "Fortalezas vulneradas: Cómo los ataques de canal lateral desafían la seguridad de las Hardware Wallets"
 excerpt: "Análisis de seguridad física sobre billeteras frías. Explicamos cómo los atacantes con acceso físico analizan fluctuaciones de energía para extraer la clave semilla."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Si el dispositivo no cuenta con un elemento seguro de grado bancario y el hacker posee acceso físico directo junto a equipamiento de laboratorio avanzado, podría monitorizar las señales eléctricas para deducir la semilla de recuperación."
   - question: "¿Cómo protegen los chips de elemento seguro (Secure Element) a las wallets?"
     answer: "Los chips Secure Element (como los usados en tarjetas de crédito) incorporan contramedidas físicas activas, como la adición de ruido eléctrico aleatorio y escudos físicos que impiden las mediciones estables."
+
 ---
 
 # Fortalezas vulneradas: Cómo los ataques de canal lateral desafían la seguridad de las Hardware Wallets

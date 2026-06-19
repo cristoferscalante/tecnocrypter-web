@@ -8,7 +8,9 @@ category: "criptomonedas"
 tags: ["carteiras", "hardware", "armazenar"]
 featured: false
 image: "/blogs/wallets_hardware.webp"
+
 ---
+
 # Comparação de carteiras de hardware: segurança máxima para suas criptomoedas
 
 As carteiras de hardware representam o padrão ouro em segurança para armazenamento de criptomoedas. Neste guia completo analisamos as melhores opções do mercado e ajudamos você a escolher a ideal para sua necessidade.

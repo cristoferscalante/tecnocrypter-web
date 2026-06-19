@@ -8,7 +8,9 @@ category: "Encriptación"
 tags: ["aplicativos de mensagens seguros", "sinal", "Telegrama", "comparações de segurança"]
 featured: false
 image: "/blogs/comparativa-apps-mensajeria.webp"
+
 ---
+
 # Comparação de aplicativos de mensagens seguras em 2025
 
 ## Resumo

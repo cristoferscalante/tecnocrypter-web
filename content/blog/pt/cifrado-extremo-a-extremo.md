@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["E2E", "criptografia de ponta a ponta", "segurança digital", "sinal", "WhatsApp"]
 featured: true
 image: "/blogs/cifrado_extremo_a_extremo.webp"
+
 ---
+
 # O que é criptografia ponta a ponta e por que ela é essencial hoje
 
 A criptografia ponta a ponta (E2E) é uma técnica de segurança que protege os dados durante todo o seu percurso: desde o momento em que saem do remetente até chegar ao destinatário, sem possibilidade de serem lidos por intermediários, nem mesmo pelos próprios servidores do serviço.

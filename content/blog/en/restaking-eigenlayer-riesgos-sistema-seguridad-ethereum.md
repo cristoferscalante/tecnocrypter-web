@@ -15,7 +15,9 @@ faqs:
     answer: "The main risk is double slashing (penalty), where a failure in a secondary service can cause the loss of ETH deposited on the Ethereum main network."
   - question: "Why does Vitalik Buterin warn against overloading the Ethereum consensus?"
     answer: "Because relying on Ethereum's social consensus to rescue failures of external financial applications creates a systemic fragility that endangers the security of the entire base network."
+
 ---
+
 # The Restaking Bubble: The Hidden Dangers and Systemic Risk of EigenLayer on Ethereum
 
 The Ethereum DeFi ecosystem is known for its ability to build complex financial instruments on top of existing protocols. The most paradigmatic example of recent years is **restaking**, a concept popularized by **EigenLayer** that has attracted billions of dollars in deposits, becoming the most popular performance engine on the market.

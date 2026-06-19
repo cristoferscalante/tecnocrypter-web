@@ -15,7 +15,9 @@ faqs:
     answer: "É uma vulnerabilidade que ocorre quando um padrão Regex ineficiente entra em um ciclo de avaliação exponencial (retrocesso catastrófico) ao receber determinadas strings de texto, congelando os servidores devido ao consumo massivo de CPU."
   - question: "/*O que significam os modificadores globais (Sinalizadores) no Regex?*/"
     answer: "São parâmetros que alteram a pesquisa: 'g' (global, pesquisa todas as correspondências), 'i' (não diferencia maiúsculas de minúsculas, ignora maiúsculas/minúsculas) e 'm' (multilinha, avalia correspondências por linhas)."
+
 ---
+
 # O poder das expressões regulares: como testar e construir padrões Regex
 
 **Expressões regulares (Regex)** são uma das ferramentas mais poderosas e versáteis para qualquer desenvolvedor de software. Eles permitem pesquisas avançadas de texto, validações complexas de formatos de entrada e substituição de caracteres em grandes bases de código em uma única linha de código.

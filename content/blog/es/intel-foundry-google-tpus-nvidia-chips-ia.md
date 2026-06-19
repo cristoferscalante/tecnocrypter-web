@@ -1,4 +1,5 @@
 ---
+
 title: "Intel Foundry resurge: Fabricará las TPUs de Google y corteja a NVIDIA"
 excerpt: "Intel asegura un contrato clave para fabricar chips de inteligencia artificial en 3nm para Google y se posiciona como alternativa a TSMC con su tecnología 18A."
 date: "2026-06-17"
@@ -14,6 +15,7 @@ faqs:
     answer: "NVIDIA busca diversificar sus proveedores de fabricación para reducir la dependencia de TSMC (Taiwán) ante las crecientes tensiones geopolíticas y la escasez de capacidad."
   - question: "¿Qué relevancia tiene el proceso de fabricación 18A de Intel?"
     answer: "El proceso 18A (equivalente a 1.8nm) representa la punta de lanza tecnológica de Intel, que promete superar a los nodos competidores mediante nuevas tecnologías de transistores y entrega de energía por la cara trasera."
+
 ---
 
 # Intel Foundry resurge: Fabricará las TPUs de Google y corteja a NVIDIA
@@ -48,7 +50,6 @@ El nodo **18A** de Intel es la gran apuesta del CEO Pat Gelsinger para recuperar
 Si Intel logra demostrar que puede producir obleas 18A de forma masiva y con tasas de rendimiento (*yield*) estables, podría arrebatarle a TSMC una porción sustancial de los contratos de hardware de IA más rentables del mundo, redefiniendo la geopolítica de los semiconductores en favor de Occidente.
 
 ---
-
 ## Preguntas Frecuentes (FAQ)
 
 ### ¿Qué acuerdo han alcanzado Intel y Google para chips de IA?

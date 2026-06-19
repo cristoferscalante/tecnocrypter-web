@@ -15,7 +15,9 @@ faqs:
     answer: "The danger is not the direct loss of funds, but the loss of your privacy. By spending that 'dust' along with your normal funds, you allow analysts to link your different addresses to a single physical identity."
   - question: "How can I protect myself from dusting tracking?"
     answer: "You can mark those tiny unknown balances as 'non-spendable' (on UTXO-controlled wallets) or use privacy mixing services to unlink your transactions."
+
 ---
+
 # Dusting attacks: The invisible trick hackers use to track your crypto wallet
 
 Imagine opening your Bitcoin or Ethereum wallet and discovering that you have received an unsolicited transaction for a ridiculously small amount, like **0.000005 BTC** (a few cents on the dollar). Although at first glance it may seem like a network error or an insignificant gift, in reality you could be under the crosshairs of a **Dust Attack** or *Dusting Attack*.

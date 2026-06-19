@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["histoire du cryptage", "Figurine César", "cryptographie moderne", "post-quantique"]
 featured: false
 image: "/blogs/Historia_del_cifrado_quantum-safe.webp"
+
 ---
+
 # Histoire du chiffrement : du chiffre César au quantique sécurisé
 
 Le besoin de protéger les informations est aussi ancien que l’écriture elle-même. Depuis des méthodes simples comme le **chiffre de César** jusqu'aux algorithmes complexes résistants aux ordinateurs quantiques, le chiffrement a évolué avec l'humanité.

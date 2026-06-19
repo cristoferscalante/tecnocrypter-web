@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["post-quantum cryptography", "NIST", "quantum resistant algorithms", "quantum computing"]
 featured: false
 image: "/blogs/Criptografía-post-cuántica.webp"
+
 ---
+
 # Post-quantum cryptography: this is how they prepare algorithms for the future
 
 Quantum computers represent a real threat to current encryption systems. Algorithms like RSA and ECC could be broken in seconds with enough quantum power.

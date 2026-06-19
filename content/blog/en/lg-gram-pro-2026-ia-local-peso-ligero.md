@@ -15,7 +15,9 @@ faqs:
     answer: "It allows you to run language models (LLMs), real-time transcription and photo retouching directly on the laptop without sending data to the cloud, reducing latency and protecting your privacy."
   - question: "How does local processing affect battery life?"
     answer: "Unlike traditional GPUs, NPUs are extremely efficient, managing to extend the autonomy of the LG gram Pro up to 22 hours of mixed use even running AI processes in the background."
+
 ---
+
 # Extreme lightness and massive NPU: The LG gram Pro (2026) redefines the power of local AI
 
 LG's historic obsession with manufacturing the lightest laptops on the planet has reached a new technical milestone in its **LG gram Pro (2026)** range. What once forced professionals to choose between featherweight or raw computing power for artificial intelligence tasks, today is merged into a device weighing just **1.09 kg** equipped with a state-of-the-art neural acceleration engine.

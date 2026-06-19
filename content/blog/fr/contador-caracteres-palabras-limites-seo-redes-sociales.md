@@ -15,7 +15,9 @@ faqs:
     answer: "Les principales limites sont : Twitter (280 caractères), Instagram (2 200 en légendes), LinkedIn (3 000 en publications) et Facebook (63 206)."
   - question: "/*Quelle est la vitesse moyenne de lecture humaine ?*/"
     answer: "La vitesse moyenne de lecture pour un adulte est de 200 à 250 mots par minute, une information utile pour calculer le temps estimé de lecture de vos articles."
+
 ---
+
 # Rédaction stratégique : Des outils pour compter les mots et respecter les limites SEO
 
 Lors de la création de contenu numérique (qu’il s’agisse de rédiger des textes persuasifs pour les réseaux sociaux ou de rédiger des balises méta pour optimiser le référencement d’un article), la longueur de vos textes n’est pas facultative.

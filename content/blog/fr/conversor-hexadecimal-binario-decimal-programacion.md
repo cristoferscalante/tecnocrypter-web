@@ -15,7 +15,9 @@ faqs:
     answer: "Il s'agit du système numérique en base 2, qui utilise uniquement les chiffres 0 et 1. C'est le langage naturel des transistors en électronique numérique."
   - question: "Comment convertir un nombre hexadécimal en binaire ?"
     answer: "Chaque chiffre hexadécimal est converti directement en sa valeur binaire de 4 bits. Par exemple, le chiffre « 9 » est « 1001 » et « A » est « 1010 », donc « 9A » en hexadécimal est « 10011010 » en binaire."
+
 ---
+
 # Langage machine : Conversion entre Hexadécimal, Binaire et Décimal
 
 En informatique et en électronique numérique, l’utilisation du système décimal traditionnel (base 10) est inefficace pour comprendre comment les données circulent en mémoire. Les programmeurs et les administrateurs système doivent maîtriser la conversion entre les systèmes **binaire (base 2)** et **hexadécimal (base 16)**.

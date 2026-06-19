@@ -8,7 +8,9 @@ category: "neurociencia"
 tags: ["neuroplasticidade", "tecnologia", "cérebro", "IA", "cognição"]
 featured: true
 image: "/blogs/neuroplasticidad-digital.webp"
+
 ---
+
 # Neuroplasticidade digital: como a era tecnológica está remodelando o cérebro humano
 
 A onipresença dos dispositivos digitais e da inteligência artificial está gerando mudanças neuroplásticas sem precedentes no cérebro humano. Este artigo examina os efeitos cognitivos do consumo digital em massa, incluindo o fenômeno da “amnésia digital”, alterações nos padrões de atenção causadas pela rolagem infinita e alucinações induzidas por sistemas de IA.

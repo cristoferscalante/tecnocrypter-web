@@ -8,7 +8,9 @@ category: "Encriptación"
 tags: ["applications de messagerie sécurisées", "signal", "Télégramme", "comparaisons de sécurité"]
 featured: false
 image: "/blogs/comparativa-apps-mensajeria.webp"
+
 ---
+
 # Comparatif des applications de messagerie sécurisée en 2025
 
 ## Résumé

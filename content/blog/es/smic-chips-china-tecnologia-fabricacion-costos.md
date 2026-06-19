@@ -1,4 +1,5 @@
 ---
+
 title: "El milagro y el costo de los 5nm en China: SMIC burla las sanciones con litografía DUV"
 excerpt: "A pesar de los estrictos bloqueos internacionales, SMIC ha logrado fabricar microchips de clase 5nm utilizando maquinaria DUV mediante técnicas complejas de patronado múltiple."
 date: "2026-06-16"
@@ -7,6 +8,7 @@ category: "noticias"
 tags: ["SMIC", "China", "semiconductores", "litografía DUV", "5nm", "sanciones tecnológicas"]
 featured: false
 image: "/blogs/smic-chips-china-tecnologia-fabricacion-costos.png"
+
 ---
 
 # El milagro y el costo de los 5nm en China: SMIC burla las sanciones con litografía DUV

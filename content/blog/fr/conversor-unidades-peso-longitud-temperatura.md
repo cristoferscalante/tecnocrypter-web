@@ -15,7 +15,9 @@ faqs:
     answer: "Des pays comme les États-Unis et le Royaume-Uni utilisent encore les unités impériales (pouces, livres, Fahrenheit) dans leur vie quotidienne et dans des secteurs spécifiques comme l'aéronautique ou la construction."
   - question: "/*Comment convertir les degrés Fahrenheit en Celsius avec précision ?*/"
     answer: "La formule mathématique est : $C = (F - 32) \times 5/9$. Effectuer mentalement ce calcul est complexe, il est donc préférable de l’automatiser avec des outils locaux."
+
 ---
+
 # Calculs rapides : Comment convertir les unités de longueur, de poids et de température
 
 Que vous programmiez des logiciels pris en charge au niveau international, analysiez les spécifications techniques du matériel importé des États-Unis ou résolviez simplement des problèmes académiques, la conversion d'unités est une nécessité quotidienne.

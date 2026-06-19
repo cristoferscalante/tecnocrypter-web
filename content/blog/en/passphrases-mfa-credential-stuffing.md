@@ -13,7 +13,9 @@ seo:
   metaTitle: "Passphrases y TOTP vs Credential Stuffing | TecnoCrypter"
   metaDescription: "Fortalece tus cuentas. Descubre qué es la entropía de contraseñas, cómo usar frases de contraseña (passphrases) y la importancia del MFA offline."
   keywords: "frases de contraseña, entropía contraseñas, credential stuffing, generador TOTP, seguridad cuentas"
+
 ---
+
 # Beyond Common Passwords: Passphrases and MFA vs. Credential Stuffing
 
 ## Introduction

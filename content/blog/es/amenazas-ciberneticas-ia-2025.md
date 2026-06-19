@@ -1,4 +1,5 @@
 ---
+
 title: "Amenazas Cibernéticas Potenciadas por IA: El Nuevo Panorama de Seguridad en 2025"
 description: "Análisis profundo de cómo la inteligencia artificial está transformando el landscape de las amenazas cibernéticas y las estrategias de defensa necesarias."
 author: "Equipo de Ciberseguridad"
@@ -12,6 +13,7 @@ seo:
   metaTitle: "Amenazas Cibernéticas con IA 2025 | Análisis Experto"
   metaDescription: "Descubre las nuevas amenazas cibernéticas potenciadas por IA en 2025. Análisis técnico y estrategias de defensa para empresas."
   keywords: "amenazas IA, ciberseguridad 2025, deepfakes, phishing IA, machine learning seguridad"
+
 ---
 
 # Amenazas Cibernéticas Potenciadas por IA: El Nuevo Panorama de Seguridad en 2025
@@ -109,7 +111,6 @@ El 2025 marca el inicio de una nueva era en ciberseguridad donde la IA no es sol
 La clave del éxito radica en entender que la ciberseguridad moderna requiere un enfoque híbrido: combinar la potencia de la IA con la experiencia humana y mantener una vigilancia constante ante la evolución del panorama de amenazas.
 
 ---
-
 **Sobre el Autor**: Nuestro equipo de ciberseguridad cuenta con más de 15 años de experiencia en threat intelligence y defensa avanzada contra amenazas emergentes.
 
 **Recursos Adicionales**:

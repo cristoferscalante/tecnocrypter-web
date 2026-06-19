@@ -15,7 +15,9 @@ faqs:
     answer: "Ils n’ont pas la capacité de raisonnement logique pur et déterministe nécessaire pour garantir la sécurité en temps réel. Une erreur dans le code de contrôle d'attitude d'une fusée peut détruire la mission."
   - question: "Pourquoi le déterminisme est-il essentiel dans le développement de logiciels spatiaux ?"
     answer: "Parce que les logiciels aérospatiaux doivent se comporter exactement de la même manière à chaque exécution. Les modèles d’IA probabilistes peuvent être trompeurs, les rendant inadaptés aux logiciels embarqués critiques."
+
 ---
+
 # SpaceX adopte Cursor comme programmeur : La course à l'espace dépend désormais de l'autonomie des agents
 
 La vitesse d’itération dans l’ingénierie spatiale a toujours été le plus grand obstacle à l’exploration d’autres planètes. Pour surmonter ce problème, **SpaceX** a commencé à intégrer l'éditeur de code **Cursor** basé sur l'IA et ses agents de planification autonomes dans le flux de travail de ses équipes de développement logiciel.

@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["phishing", "segurança cibernética", "prevenção"]
 featured: false
 image: "/blogs/ataques_phishing_avanzados.webp"
+
 ---
+
 # Como detectar e prevenir ataques avançados de phishing
 
 Os ataques de phishing evoluíram significativamente, tornando-se mais sofisticados e difíceis de detectar. Neste guia completo você aprenderá como identificar e se proteger contra as técnicas mais avançadas.

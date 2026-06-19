@@ -15,7 +15,9 @@ faqs:
     answer: "The attacker sends an SMS, WhatsApp, or iMessage message with a crafted media file. The operating system attempts to process or preview the file automatically in the background, triggering a memory overflow bug that executes malicious code."
   - question: "How do I defend myself against zero-click attacks on my smartphone?"
     answer: "The most effective defense is to activate Lockdown Mode on iOS, disable automatic previews and restart the phone daily (which expels non-persistent memory implants)."
+
 ---
+
 # The Threat of \"Zero-Click\" Exploits: Vulnerabilities without user interaction
 
 In the world of cybersecurity, for years the defense mantra has been simple: *"do not click on suspicious links or download files from unknown sources"*. However, the sophistication of state actors and organized cybercrime has given life to the threat most feared by activists, journalists and corporate executives worldwide: **Zero-Click** exploits.

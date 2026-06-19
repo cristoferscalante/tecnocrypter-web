@@ -15,7 +15,9 @@ faqs:
     answer: "Il s'agit d'une vulnérabilité qui se produit lorsqu'un modèle Regex inefficace entre dans un cycle d'évaluation exponentiel (backtracking catastrophique) lors de la réception de certaines chaînes de texte, gelant les serveurs en raison d'une consommation massive de processeur."
   - question: "/*Que signifient les modificateurs globaux (Flags) dans Regex ?*/"
     answer: "Ce sont des paramètres qui modifient la recherche : « g » (global, recherche toutes les correspondances), « i » (insensible à la casse, ignore les majuscules/minuscules) et « m » (multiligne, évalue les correspondances par lignes)."
+
 ---
+
 # La puissance des expressions régulières : comment tester et créer des modèles Regex
 
 Les **expressions régulières (Regex)** sont l'un des outils les plus puissants et les plus polyvalents pour tout développeur de logiciels. Ils permettent des recherches de texte avancées, des validations de formats d'entrée complexes et le remplacement de caractères dans des bases de code volumineuses en une seule ligne de code.

@@ -1,4 +1,5 @@
 ---
+
 title: "La trampa de los 14.000 millones: Meta invierte masivamente en IA para quedar en el mismo lugar"
 excerpt: "A pesar de destinar miles de millones a infraestructura e inteligencia artificial, Meta enfrenta serias dificultades para dominar el mercado frente a OpenAI."
 date: "2026-06-17"
@@ -14,6 +15,7 @@ faqs:
     answer: "Porque a pesar del gasto multimillonario, el mercado de asistentes sigue liderado por OpenAI y Anthropic. Meta lucha por monetizar sus modelos Llama de código abierto y por convencer al público de usar sus agentes en Instagram y WhatsApp."
   - question: "¿Cuál es el rol de Scale AI en la estrategia de Meta?"
     answer: "Scale AI provee servicios críticos de etiquetado y curación de datos humanos (RLHF), esenciales para refinar los modelos fundacionales Llama y hacerlos competitivos frente a soluciones cerradas."
+
 ---
 
 # La trampa de los 14.000 millones: Meta invierte masivamente en IA para quedar en el mismo lugar
@@ -42,7 +44,6 @@ La inversión récord en IA ha permitido a Meta mantener el ritmo de desarrollo 
 Para los accionistas de la firma de Menlo Park, la duda de fondo persiste: ¿hasta cuándo es sostenible un gasto de infraestructura de tal magnitud si Meta sigue atrapada en la zona media de la tabla en términos de adopción comercial y relevancia tecnológica de sus productos de IA?
 
 ---
-
 ## Preguntas Frecuentes (FAQ)
 
 ### ¿Cuánto ha gastado Meta en el desarrollo de su inteligencia artificial?

@@ -1,4 +1,5 @@
 ---
+
 title: "WPO avanzado: Cómo minificar CSS y Javascript para acelerar tu web"
 excerpt: "Descubre cómo la minificación de recursos web mejora los tiempos de carga, reduce el ancho de banda consumido por tus servidores y optimiza tu posicionamiento SEO."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "La minificación altera directamente el texto del código a nivel sintáctico. La compresión (como Gzip o Brotli) es un algoritmo de reducción de datos que ejecuta el servidor web al enviar el archivo comprimido a la red."
   - question: "/*¿La minificación puede romper mi código?*/"
     answer: "Solo si el código carece de sintaxis correcta (como la omisión de puntos y comas en JavaScript) o si los minificadores realizan ofuscación agresiva mal configurada. Un minificador básico estándar es seguro."
+
 ---
 
 # WPO avanzado: Cómo minificar CSS y Javascript para acelerar tu web

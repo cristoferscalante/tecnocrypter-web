@@ -15,7 +15,9 @@ faqs:
     answer: "Ele permite que um segundo modelo audite os dados retornados pelo primeiro, comparando-os com uma base de conhecimento verificada (RAG) ou procurando contradições lógicas no texto."
   - question: "Que vantagens de segurança oferece em relação às respostas diretas?"
     answer: "Atua como um firewall inteligente. Ele pode interceptar tentativas de injeção imediata, detectar vazamento de informações confidenciais (PII) e bloquear códigos maliciosos gerados automaticamente."
+
 ---
+
 # Desconfiança inteligente: por que o encadeamento de modelos é a verdadeira defesa contra alucinações de IA
 
 Confiar cegamente na primeira resposta gerada por um modelo de linguagem grande (LLM) é uma receita para o desastre em ambientes corporativos e de segurança. Os LLMs são probabilísticos, não determinísticos; Eles são projetados para adivinhar a palavra mais provável, o que inevitavelmente leva a alucinações (fatos inventados que parecem verossímeis) e injeções de código se não houver controle intermediário.

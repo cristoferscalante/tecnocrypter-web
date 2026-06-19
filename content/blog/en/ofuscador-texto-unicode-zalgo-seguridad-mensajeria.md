@@ -15,7 +15,9 @@ faqs:
     answer: "It allows you to hide text characters from automatic scanning algorithms, protecting private messages or avoiding keyword censorship in public forums."
   - question: "How does a computer interpret obfuscated text?"
     answer: "Visually it may appear distorted, but the computer reads the individual Unicode code points corresponding to the original base letters."
+
 ---
+
 # Character Obfuscation: The Art of Hiding Text with Unicode and Zalgo
 
 The **Unicode** standard allows computers to represent text in almost any language and symbol on the planet. However, this standard includes advanced capabilities that can be used for creative privacy purposes: **text obfuscation**.

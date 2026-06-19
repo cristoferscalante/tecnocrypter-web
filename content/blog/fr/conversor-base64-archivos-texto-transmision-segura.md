@@ -15,7 +15,9 @@ faqs:
     answer: "Il est idéal pour optimiser les performances en intégrant de petites icônes ou images dans des feuilles de style CSS ou HTML, réduisant ainsi le nombre de requêtes HTTP du serveur."
   - question: "Dans quelle mesure la conversion en Base64 augmente-t-elle la taille du fichier ?"
     answer: "L'encodage Base64 augmente la taille du fichier d'environ 33 % par rapport à sa représentation binaire d'origine."
+
 ---
+
 # Transmission de données sur le web : Conversion de fichiers et d'images en Base64
 
 Le transport de données binaires (telles que des images, de l'audio ou des documents PDF) via des protocoles conçus exclusivement pour le texte brut (tels que JSON ou HTML) représente un défi classique dans le développement de logiciels. La solution standard est l'encodage **Base64**.

@@ -15,7 +15,9 @@ faqs:
     answer: "To remove VAT (for example, 21%), you divide the final price by $1.21$ (or $1 + \text{tax}/100$). The difference between the original price and this result is the tax charged."
   - question: "/*What is percentage increase?*/"
     answer: "Measures the relative change between an initial value and a final value. It is calculated by subtracting the initial value from the final value, dividing by the initial value and multiplying by 100."
+
 ---
+
 # Everyday mathematics: How to calculate percentages, VAT and discounts online
 
 Calculating percentages is one of the most used mathematical applications in everyday life: when evaluating offers in commercial stores, calculating tips, estimating the interest on a loan, or itemizing taxes on purchase invoices.

@@ -15,7 +15,9 @@ faqs:
     answer: "Por ser um número inteiro simples, é extremamente rápido indexar, classificar e comparar no nível do banco de dados, bem como eliminar a ambiguidade dos fusos horários locais."
   - question: "/*O que acontecerá com o clima do Unix no ano de 2038?*/"
     answer: "Em sistemas de 32 bits, o valor inteiro máximo irá estourar em 19 de janeiro de 2038 (o problema do ano 2038), causando erros críticos de tempo semelhantes ao efeito Y2K se não for migrado para arquiteturas de 64 bits."
+
 ---
+
 # Tempo na computação: convertendo o carimbo de data / hora do Epoch Unix em datas reais
 
 Medir o tempo e gerenciar fusos horários locais em aplicativos de software é um dos problemas mais complexos no desenvolvimento de software. Para evitar confusão com formatos de data regionais, os sistemas de computador usam o **Unix Timestamp** ou o padrão de hora Epoch.

@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["phishing", "cybersecurity", "prevention"]
 featured: false
 image: "/blogs/ataques_phishing_avanzados.webp"
+
 ---
+
 # How to Detect and Prevent Advanced Phishing Attacks
 
 Phishing attacks have evolved significantly, becoming more sophisticated and difficult to detect. In this complete guide, you will learn how to identify and protect yourself against the most advanced techniques.

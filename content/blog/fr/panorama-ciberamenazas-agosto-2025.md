@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["cybermenaces", "vulnérabilités", "rançongiciel", "malware"]
 featured: false
 image: "/blogs/panorama_de_ciberamenazas.webp"
+
 ---
+
 # Paysage des cybermenaces : vulnérabilités et attaques en vedette pour août 2025
 
 CronUp, société spécialisée dans la cybersécurité, publie des newsletters qui compilent l'actualité des alertes de sécurité, des vulnérabilités et des cyberattaques. Leur fil du 27 juin 2025 explique que l'objectif est de donner "une idée claire du paysage des menaces, de l'évolution constante de la cybercriminalité et de la manière dont elle affecte les différents secteurs". Dans les livraisons début août, les tendances suivantes se démarquent :

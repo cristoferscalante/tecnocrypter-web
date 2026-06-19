@@ -15,7 +15,9 @@ faqs:
     answer: "It is designing ASIC chips and AI accelerators in collaboration with TSMC, optimized for specific workloads in its massive data centers."
   - question: "How does the price rise of Intel and AMD affect the technology market?"
     answer: "It forces internet megacorporations (hyperscalers) to internalize silicon design, accelerating market fragmentation and the decline of the traditional x86 model in favor of ARM and custom architectures."
+
 ---
+
 # Rebellion in silicon: ByteDance will manufacture its own chips to escape the prices of Intel and AMD
 
 The escalation of prices in the semiconductor market is forcing internet giants to take extreme measures. **ByteDance**, the Chinese parent corporation of TikTok, has begun an ambitious program to develop its own microprocessors for its data centers in partnership with the Taiwanese chip manufacturer **TSMC**. 

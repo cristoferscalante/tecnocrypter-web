@@ -14,8 +14,10 @@ faqs:
   - question: "/*Why does Excel have problems opening certain CSV files?*/"
     answer: "It occurs due to differences in the regional delimiter (some countries use semicolons instead of commas) or inconsistencies in character encoding (e.g. UTF-8 with or without BOM)."
   - question: "/*How do I escape special characters in a CSV file?*/"
-    answer: "If a text field contains the delimiter (e.g. a comma) or a line break, that entire field must be wrapped in double quotes (\\") so that the parser does not break it when reading it."
+    answer: "If a text field contains the delimiter (e.g. a comma) or a line break, that entire field must be wrapped in double quotes (\") so that the parser does not break it when reading it."
+
 ---
+
 # Spreadsheet Manipulation: Creating and Exporting CSV Files
 
 The **CSV** (*Comma-Separated Values*) format is the most widespread and universal method for migrating and exchanging tabular data sets between different spreadsheet applications (such as Microsoft Excel or Google Sheets) and relational databases.

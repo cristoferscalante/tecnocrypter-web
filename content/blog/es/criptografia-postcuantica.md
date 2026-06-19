@@ -1,4 +1,5 @@
 ---
+
 title: "Criptografía post-cuántica: así preparan los algoritmos para el futuro"
 excerpt: "La computación cuántica amenaza los cifrados actuales. Conoce las propuestas de criptografía resistentes a esta nueva era."
 date: "2025-09-24"
@@ -7,6 +8,7 @@ category: "encriptacion"
 tags: ["criptografía post-cuántica", "NIST", "algoritmos resistentes a cuántica", "computación cuántica"]
 featured: false
 image: "/blogs/Criptografía-post-cuántica.webp"
+
 ---
 
 # Criptografía post-cuántica: así preparan los algoritmos para el futuro

@@ -1,4 +1,5 @@
 ---
+
 title: "El poder de las expresiones regulares: Cómo testear y construir patrones Regex"
 excerpt: "Aprende los fundamentos de las expresiones regulares (Regex) y cómo testear tus patrones para evitar problemas de rendimiento y seguridad como ReDoS."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Es una vulnerabilidad que ocurre cuando un patrón Regex ineficiente entra en un ciclo de evaluación exponencial (catastrophic backtracking) al recibir ciertas cadenas de texto, congelando los servidores por el consumo masivo de CPU."
   - question: "/*¿Qué significan los modificadores globales (Flags) en Regex?*/"
     answer: "Son parámetros que alteran la búsqueda: 'g' (global, busca todas las coincidencias), 'i' (case-insensitive, ignora mayúsculas/minúsculas) y 'm' (multiline, evalúa coincidencias por líneas)."
+
 ---
 
 # El poder de las expresiones regulares: Cómo testear y construir patrones Regex

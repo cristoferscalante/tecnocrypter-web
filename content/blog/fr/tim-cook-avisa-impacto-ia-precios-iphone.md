@@ -15,7 +15,9 @@ faqs:
     answer: "Chaque requête sur un modèle de langage avancé nécessite une infrastructure spécialisée (GPU, TPU) avec une consommation d'énergie élevée et un traitement cloud, ce qui exerce une pression sur les marges traditionnelles d'Apple."
   - question: "Quelle est la différence entre l’IA sur site et dans le cloud privé (PCC) ?"
     answer: "L'IA locale s'exécute entièrement sur le matériel du téléphone pour des tâches simples. Les tâches complexes sont envoyées au Private Cloud Computing (PCC) d'Apple, qui traite les informations sous forme cryptée sans stocker les données des utilisateurs."
+
 ---
+
 # L'IA fera des ravages : Tim Cook prévient que le coût du traitement fera monter en flèche le prix de l'iPhone
 
 L’intelligence artificielle ne transforme pas seulement la façon dont nous interagissons avec la technologie ; Il s’agit également de transformer le prix de nos appareils. Dans les récentes déclarations du PDG d'Apple, Tim Cook, une réalité inconfortable mais inévitable a été mise sur la table : le traitement massif des données requis par **Apple Intelligence** a un coût d'exploitation à long terme insoutenable dans le cadre des systèmes de tarification actuels.

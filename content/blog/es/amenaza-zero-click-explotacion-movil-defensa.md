@@ -1,4 +1,5 @@
 ---
+
 title: "La Amenaza de los Exploits \"Zero-Click\": Vulnerabilidades sin interacción del usuario"
 excerpt: "Analizamos técnicamente cómo funcionan los ataques 'clic cero' que infectan smartphones sin que el usuario pulse ningún enlace, y cómo defenderse de ellos."
 date: "2026-06-17"
@@ -14,6 +15,7 @@ faqs:
     answer: "El atacante envía un mensaje SMS, de WhatsApp o iMessage con un archivo multimedia manipulado. El sistema operativo intenta procesar o previsualizar el archivo automáticamente de fondo, activando un fallo de desbordamiento de memoria que ejecuta código malicioso."
   - question: "¿Cómo me defiendo de ataques de clic cero en mi smartphone?"
     answer: "La defensa más efectiva es activar el Modo de Aislamiento (Lockdown Mode) en iOS, desactivar las previsualizaciones automáticas y reiniciar el móvil diariamente (lo que expulsa a implantes no persistentes de la memoria)."
+
 ---
 
 # La Amenaza de los Exploits \"Zero-Click\": Vulnerabilidades sin interacción del usuario
@@ -56,7 +58,6 @@ Aunque combatir los exploits de clic cero a nivel individual es complejo, existe
 La ciberseguridad ya no consiste solo en educar al usuario para evitar enlaces fraudulentos, sino en asumir que el software puede verse comprometido de forma invisible, exigiendo arquitecturas de aislamiento y una desconfianza sistemática a nivel de hardware.
 
 ---
-
 ## Preguntas Frecuentes (FAQ)
 
 ### ¿Qué es un ataque o exploit Zero-Click?

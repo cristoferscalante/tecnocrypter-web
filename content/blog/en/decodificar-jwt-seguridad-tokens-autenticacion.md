@@ -15,7 +15,9 @@ faqs:
     answer: "By default no. A standard JWT is signed and Base64Url encoded, meaning anyone can read the payload. You should never put sensitive information like passwords inside the token."
   - question: "How do you prevent manipulation of a JWT?"
     answer: "The token contains a cryptographic signature in its third section. If a client alters the payload data, the signature no longer matches and the server rejects the token."
+
 ---
+
 # JWT Standard Guide: How to Securely Decode and Parse JSON Web Tokens
 
 In modern web development, **JSON Web Tokens (JWT)** are the dominant standard for managing user sessions and authentication in APIs and microservices. They allow servers to verify a client's identity without needing to constantly query session databases.

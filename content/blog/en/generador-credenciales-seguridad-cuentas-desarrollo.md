@@ -15,7 +15,9 @@ faqs:
     answer: "Random names, fictitious usernames, simulated test emails, and high-entropy passwords that are not used in any real service."
   - question: "How does local generation help developers?"
     answer: "Ensures that no generated test profiles are sent to the internet, complying with data protection regulations during local development."
+
 ---
+
 # Creating secure environments: How to generate random credentials and profiles for testing
 
 During the software development cycle, creating test databases and validating user interfaces requires constant input of personal information: names, emails, passwords, and API keys.

@@ -8,7 +8,9 @@ category: "noticias"
 tags: ["IA", "emploi", "productivité", "avenir"]
 featured: true
 image: "/blogs/semana-laboral-ia.webp"
+
 ---
+
 ## La semaine de travail de 4 jours arrivera-t-elle en 2040 ? L’IA rend cela possible
 
 Une expérience ChatGPT suggère que l'automatisation avancée des tâches permettra d'établir la semaine de travail de quatre jours à l'échelle mondiale d'ici 2040, bien que des secteurs tels que l'éducation et la logistique pourraient maintenir cinq jours en raison des exigences opérationnelles. [Source : Inc.com](https://www.inc.com)

@@ -15,7 +15,9 @@ faqs:
     answer: "Each query to an advanced language model requires specialized infrastructure (GPUs, TPUs) with high energy consumption and cloud processing, which puts pressure on Apple's traditional margins."
   - question: "What is the difference between AI on premises and in the private cloud (PCC)?"
     answer: "Local AI runs entirely on the phone's hardware for simple tasks. Complex tasks are sent to Apple's Private Cloud Computing (PCC), which processes information in encrypted form without storing user data."
+
 ---
+
 # AI will take its toll: Tim Cook warns that the cost of processing will skyrocket the price of the iPhone
 
 Artificial intelligence is not only transforming the way we interact with technology; It is also about to transform the price of our devices. In recent statements by Apple CEO, Tim Cook, an uncomfortable but inevitable reality has been put on the table: the massive data processing required by **Apple Intelligence** has an unsustainable long-term operating cost under current pricing schemes.

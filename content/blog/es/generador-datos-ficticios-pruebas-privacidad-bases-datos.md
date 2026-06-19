@@ -1,4 +1,5 @@
 ---
+
 title: "Testing ético: Generación de datos ficticios realistas para proteger la privacidad"
 excerpt: "Conoce las mejores técnicas de enmascaramiento de datos y cómo poblar tus bases de datos de prueba con información ficticia segura."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Permite rellenar formularios de prueba, bases de datos o interfaces en desarrollo con nombres, direcciones y teléfonos ficticios para verificar su funcionamiento sin usar datos reales."
   - question: "¿Los datos generados localmente son seguros?"
     answer: "Sí, ya que al procesarse en tu propio navegador web no se transmiten datos privados a servidores externos, garantizando el anonimato de tus pruebas."
+
 ---
 
 # Testing ético: Generación de datos ficticios realistas para proteger la privacidad

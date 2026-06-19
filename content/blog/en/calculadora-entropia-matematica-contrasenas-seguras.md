@@ -15,7 +15,9 @@ faqs:
     answer: "Because the length exponentially increases the total number of possible combinations, while adding special characters to a short password only increases the power base linearly."
   - question: "How many bits of entropy are considered safe today?"
     answer: "A password with more than 80 bits of entropy is considered extremely difficult to crack by current computing technology, requiring centuries of brute force."
+
 ---
+
 # The mathematics of security: How to calculate the entropy of your passwords
 
 The strength of a password is not based on how "rare" it is for you, but on how much mathematical resistance it offers against an automated brute force attack. This measurement is known in cryptography as **password entropy**.

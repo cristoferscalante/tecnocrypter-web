@@ -15,7 +15,9 @@ faqs:
     answer: "Ele permite inspecionar as alterações antes de salvá-las no controle de versão (Git), revisar patches de código e localizar erros lógicos introduzidos em atualizações recentes."
   - question: "/*É seguro comparar arquivos com dados confidenciais on-line?*/"
     answer: "Somente se a comparação for feita totalmente do lado do cliente usando JavaScript. Enviar seus arquivos para um servidor web de terceiros para fazer a 'diferença' expõe sua propriedade intelectual ou dados confidenciais."
+
 ---
+
 # Rastrear alterações: como usar visualizadores de diferenças para comparar arquivos linha por linha
 
 No desenvolvimento de software e administração de sistemas, o controle de mudanças é uma tarefa diária. Ao editar o código-fonte ou atualizar arquivos de configuração, é crucial saber exatamente quais caracteres foram modificados.

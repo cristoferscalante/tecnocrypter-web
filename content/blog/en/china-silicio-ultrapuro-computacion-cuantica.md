@@ -15,7 +15,9 @@ faqs:
     answer: "Natural silicon generates magnetic interference that destroys the quantum coherence of qubits. Silicon-28 creates a magnetic 'zero noise' environment, dramatically extending the lifetime of the qubits and reducing processing errors."
   - question: "What does this advance mean for China's technological sovereignty?"
     answer: "Until now, global production of silicon-28 depended almost entirely on Russia and European infrastructure. Producing it domestically ensures that China can manufacture its own quantum processors at scale without fear of trade blockades."
+
 ---
+
 # China takes a decisive step towards quantum autonomy with ultrapure silicon
 
 The global race for quantum supremacy has taken a crucial strategic turn. In an official announcement in June 2026, nuclear research institutes in China have confirmed the successful production, for the first time on an industrial scale, of **ultrapure silicon-28** with a concentration exceeding purity standards of 99.99%.

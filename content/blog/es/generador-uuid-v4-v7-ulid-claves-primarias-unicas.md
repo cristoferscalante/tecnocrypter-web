@@ -1,4 +1,5 @@
 ---
+
 title: "Identificadores únicos: Diferencias entre UUID v4, v7 y ULID en bases de datos"
 excerpt: "Descubre cómo elegir el identificador único adecuado para tus tablas de bases de datos. Comparativa de rendimiento entre UUID aleatorios y ordenados por tiempo."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Al ser completamente aleatorio, fragmenta el índice primario (B-Tree) de las tablas SQL, provocando constantes escrituras en disco y ralentizando las consultas de inserción."
   - question: "¿Cómo soluciona UUID v7 y ULID este problema?"
     answer: "Integran un timestamp de milisegundos en la primera sección del identificador. Esto los hace ordenados cronológicamente (monotónicos), preservando la velocidad del indexado en la base de datos."
+
 ---
 
 # Identificadores únicos: Diferencias entre UUID v4, v7 y ULID en bases de datos

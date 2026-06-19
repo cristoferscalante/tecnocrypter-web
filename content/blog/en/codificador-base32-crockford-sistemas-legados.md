@@ -15,7 +15,9 @@ faqs:
     answer: "It is case insensitive and omits visually confusing characters (such as 0, 1, O, I), making it ideal for humans to copy security codes manually."
   - question: "Where is Base32 commonly used?"
     answer: "Its most famous application is the encryption of secret seed keys in two-factor authentication (2FA/TOTP) applications such as Google Authenticator."
+
 ---
+
 # Base32 Encoding: When to use it vs. Base64 and how its algorithm works
 
 In software development and data transmission, we often need to represent binary data (such as bytes of a file or cryptographic keys) in text format to prevent it from being corrupted over standard communication channels.

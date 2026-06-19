@@ -15,7 +15,9 @@ faqs:
     answer: "Le principal risque est le double slashing (pénalité), où une défaillance d’un service secondaire peut entraîner la perte de l’ETH déposé sur le réseau principal Ethereum."
   - question: "Pourquoi Vitalik Buterin met-il en garde contre une surcharge du consensus Ethereum ?"
     answer: "Parce que s’appuyer sur le consensus social d’Ethereum pour sauver les échecs des applications financières externes crée une fragilité systémique qui met en danger la sécurité de l’ensemble du réseau de base."
+
 ---
+
 # La bulle de restauration : les dangers cachés et le risque systémique d'EigenLayer sur Ethereum
 
 L'écosystème Ethereum DeFi est connu pour sa capacité à créer des instruments financiers complexes en plus des protocoles existants. L'exemple le plus paradigmatique de ces dernières années est le **restaking**, un concept popularisé par **EigenLayer** qui a attiré des milliards de dollars de dépôts, devenant ainsi le moteur de performance le plus populaire du marché.

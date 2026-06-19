@@ -15,7 +15,9 @@ faqs:
     answer: "So that the evaluator of a design can concentrate on the typographic composition, spatial distribution and colors, instead of being distracted by reading and interpreting the content of the text."
   - question: "/*What problems can misuse of Lorem Ipsum cause?*/"
     answer: "It may hide real space needs if the final real texts are significantly longer or shorter than the simulated filler, so it should be combined with tests of real content."
+
 ---
+
 # Design and layout: The correct use of filler text (Lorem Ipsum)
 
 In newspaper layout, graphic design and user interface development (**UI/UX**), the use of mock text is an industry standard. The most well-known piece of filler text in the world is, without a doubt, **Lorem Ipsum**.

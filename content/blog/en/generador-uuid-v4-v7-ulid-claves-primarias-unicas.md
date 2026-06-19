@@ -15,7 +15,9 @@ faqs:
     answer: "Being completely random, it fragments the primary index (B-Tree) of the SQL tables, causing constant disk writes and slowing down insert queries."
   - question: "How does UUID v7 and ULID solve this problem?"
     answer: "They integrate a timestamp of milliseconds in the first section of the identifier. This makes them ordered chronologically (monotonic), preserving the speed of indexing in the database."
+
 ---
+
 # Unique identifiers: Differences between UUID v4, v7 and ULID in databases
 
 When designing distributed computing systems, assigning primary keys in databases requires identifiers that never collide. For years, the standard solution has been **UUID v4**. However, modern computing is adopting more efficient alternatives such as **UUID v7** and **ULID**.

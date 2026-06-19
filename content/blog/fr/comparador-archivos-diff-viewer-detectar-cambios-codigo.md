@@ -15,7 +15,9 @@ faqs:
     answer: "Il vous permet d'inspecter les modifications avant de les enregistrer dans le contrôle de version (Git), d'examiner les correctifs de code et de localiser les erreurs logiques introduites dans les mises à jour récentes."
   - question: "/*Est-il sécuritaire de comparer des fichiers contenant des données sensibles en ligne ?*/"
     answer: "Uniquement si la comparaison est effectuée entièrement côté client à l'aide de JavaScript. L'envoi de vos fichiers à un serveur Web tiers pour effectuer la « différence » expose votre propriété intellectuelle ou vos données sensibles."
+
 ---
+
 # Suivre les modifications : comment utiliser les visionneuses de différences pour comparer des fichiers ligne par ligne
 
 Dans le développement de logiciels et l’administration de systèmes, le contrôle des modifications est une tâche quotidienne. Lors de l'édition du code source ou de la mise à jour des fichiers de configuration, il est crucial de savoir exactement quels caractères ont été modifiés.

@@ -15,7 +15,9 @@ faqs:
     answer: "It is an intrusion technique in which the attacker compromises a legitimate third-party tool, library, or dependency to infect all developers and end users who download it."
   - question: "How can developers secure their dependencies?"
     answer: "By using static dependency scanning (SCA) tools, locking specific versions using lock files, automatically auditing digital signatures, and disabling unverified post-installation scripts."
+
 ---
+
 # Generative Trojan Horses: AI Automates Repository Poisoning in the Software Supply Chain
 
 Modern software is not written from scratch. It is assembled using existing building blocks: open source libraries and dependencies hosted in public repositories such as **NPM** (for Node.js) and **PyPI** (for Python). 

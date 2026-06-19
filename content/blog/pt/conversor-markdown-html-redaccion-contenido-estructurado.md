@@ -14,8 +14,10 @@ faqs:
   - question: "/*Quais são as vantagens de escrever em Markdown em vez de HTML?*/"
     answer: "Markdown evita ter que escrever dezenas de tags complicadas como <h1>, <p> ou <a> manualmente, permitindo que você se concentre na escrita e agilize a criação de conteúdo."
   - question: "/*Como você converte um cabeçalho no Markdown?*/"
-    answer: "sinais de libra (#) são usados. Um único hash representa um cabeçalho principal \`<h1>\`, dois representam um \`<h2>\` e assim por diante até seis níveis."
+    answer: "sinais de libra (#) são usados. Um único hash representa um cabeçalho principal `<h1>`, dois representam um `<h2>` e assim por diante até seis níveis."
+
 ---
+
 # Formatação simplificada: como converter textos Markdown em código HTML limpo
 
 Escrever documentação técnica, artigos de blog e e-mails avançados requer uma estrutura HTML válida para ser processada pelos navegadores. Escrever código HTML diretamente, entretanto, é lento e sujeito a erros de digitação.

@@ -15,7 +15,9 @@ faqs:
     answer: "You should look for inconsistencies between the visible sender domain and the actual origin server (Return-Path), and check whether SPF or DKIM validations have failed."
   - question: "What do SPF, DKIM and DMARC mean?"
     answer: "They are email authentication protocols. SPF defines which servers can send emails from the domain, DKIM adds a validating cryptographic signature, and DMARC establishes policies to handle emails that fail SPF or DKIM."
+
 ---
+
 # How to analyze email headers to detect phishing and spoofing
 
 Email remains the main attack vector for cybercriminals. Using email spoofing techniques, attackers manage to camouflage malicious emails by passing them off as notifications from your bank, technical support or corporate bosses.

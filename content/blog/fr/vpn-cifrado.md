@@ -8,7 +8,9 @@ category: "Encriptación"
 tags: ["VPN", "cryptage VPN", "WireGuard", "OpenVPN"]
 featured: false
 image: "/blogs/vpn-cifrado.webp"
+
 ---
+
 # VPN et cryptage : quel type de cryptage utilisent-ils et quel est leur niveau de sécurité ?
 
 ## Résumé

@@ -1,4 +1,5 @@
 ---
+
 title: "Correos desechables y alias: Protege tu bandeja de entrada contra el spam y filtraciones"
 excerpt: "Descubre el uso de alias de correo y credenciales deterministas para identificar qué empresas venden tus datos y evitar el spam masivo."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Si te registras en un sitio usando un alias único (ej. miusuario+sitioA@dominio.com) y empiezas a recibir spam en esa dirección, sabes exactamente qué sitio filtró o vendió tu información."
   - question: "¿Qué son las credenciales deterministas?"
     answer: "Son sistemas de generación de nombres de usuario y contraseñas basados en algoritmos deterministas a partir de una palabra clave, haciendo que sean recuperables pero únicos por plataforma."
+
 ---
 
 # Correos desechables y alias: Protege tu bandeja de entrada contra el spam y filtraciones

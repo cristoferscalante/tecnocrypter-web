@@ -1,4 +1,5 @@
 ---
+
 title: "Más Allá de las Contraseñas Comunes: Passphrases y MFA frente al Credential Stuffing"
 description: "Por qué las contraseñas clásicas fallan ante la computación moderna. Introducción al concepto de entropía y al uso de frases de contraseña y códigos TOTP sin conexión."
 author: "Equipo de Identidad TecnoCrypter"
@@ -12,6 +13,7 @@ seo:
   metaTitle: "Passphrases y TOTP vs Credential Stuffing | TecnoCrypter"
   metaDescription: "Fortalece tus cuentas. Descubre qué es la entropía de contraseñas, cómo usar frases de contraseña (passphrases) y la importancia del MFA offline."
   keywords: "frases de contraseña, entropía contraseñas, credential stuffing, generador TOTP, seguridad cuentas"
+
 ---
 
 # Más Allá de las Contraseñas Comunes: Passphrases y MFA frente al Credential Stuffing
@@ -23,7 +25,6 @@ En 2026, la velocidad con la que los sistemas de computación en la nube y la in
 Para proteger tu identidad digital, es indispensable evolucionar hacia dos conceptos fundamentales: **Frases de Contraseña (Passphrases)** con alta entropía y **Autenticación Multifactor Adaptativa (MFA/TOTP)** gestionada localmente.
 
 ---
-
 ## El Problema de la Complejidad Artificial vs. la Entropía
 
 Durante años, las políticas de seguridad nos obligaron a crear contraseñas difíciles de recordar pero fáciles de adivinar para una computadora, como `P@ssw0rd123!`. Este tipo de contraseñas tienen una **entropía de información** baja.
@@ -50,7 +51,6 @@ Para ayudarte a crear y validar la solidez de tus credenciales, puedes utilizar 
 3.  **[Verificador de Contraseñas](/tools/verificador-contrasenas)**: Analiza el nivel de entropía en bits y estima el tiempo necesario para romper tu credencial mediante ataques de fuerza bruta.
 
 ---
-
 ## La Capa de Defensa Definitiva: MFA sin Conexión (TOTP)
 
 Incluso si utilizas la mejor contraseña del mundo, esta puede ser robada a través de un ataque de phishing o una filtración de base de datos del propio servicio. Por eso, la Autenticación de Doble Factor (2FA) o Multifactor (MFA) es obligatoria.
@@ -80,7 +80,6 @@ def generate_totp(secret_key):
 El protocolo TOTP funciona de manera 100% offline. No requiere que tu dispositivo tenga acceso a internet para validar el código, protegiéndote de interceptaciones. En nuestra plataforma disponemos del **[Generador de TOTP](/tools/generador-totp)**, una herramienta web integrada que te permite importar claves secretas o escanear semillas de autenticación para generar tus códigos de acceso de forma local y privada.
 
 ---
-
 ## Buenas Prácticas de Gestión de Credenciales
 
 *   **Nunca reutilices contraseñas**: Si se filtra un servicio, todas tus cuentas estarán en peligro.

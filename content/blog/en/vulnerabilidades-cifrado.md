@@ -8,7 +8,9 @@ category: "Encriptación"
 tags: ["heartbleed", "cryptographic vulnerabilities", "historical security cases"]
 featured: false
 image: "/blogs/vulnerabilidades-cifrado.webp"
+
 ---
+
 # Famous vulnerabilities in encryption: cases that marked history
 
 Throughout digital history, several implementation failures have challenged trust in cryptography.

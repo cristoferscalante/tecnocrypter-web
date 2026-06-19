@@ -8,7 +8,9 @@ category: "noticias"
 tags: ["Claude Fábula 5", "Antrópico", "veto tecnológico", "segurança nacional", "Europa", "soberania digital"]
 featured: false
 image: "/blogs/veto-claude-fable-5-ia-seguridad-europa.png"
+
 ---
+
 # O veto de Claude Fable 5: IA não é um produto comercial, é a nova arma nacional
 
 A recente decisão da administração dos EUA de suspender temporariamente o acesso global ao novo e poderoso modelo de inteligência artificial da **Anthropic] **Claude Fable 5** (e seu homólogo Mythos 5) fez soar o alarme geopolítico. O veto, focado diretamente em bloquear o uso do modelo até mesmo para seus aliados na Europa, confirma uma realidade incômoda, mas inegável: **a inteligência artificial de fronteira não é mais considerada software comercial; É uma arma de segurança nacional**.

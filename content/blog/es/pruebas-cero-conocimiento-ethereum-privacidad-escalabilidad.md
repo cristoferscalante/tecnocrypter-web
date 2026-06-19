@@ -1,4 +1,5 @@
 ---
+
 title: "El secreto mejor guardado de Ethereum: Cómo las pruebas de cero conocimiento (ZKPs) blindan tu privacidad"
 excerpt: "Explicación conceptual y técnica de las pruebas de cero conocimiento. Su integración en redes de Ethereum permite transacciones privadas y escalabilidad masiva."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Agrupan miles de transacciones fuera de la red principal de Ethereum, generan una prueba ZK que certifica su validez y envían únicamente esa pequeña prueba a la red principal, reduciendo drásticamente las comisiones de gas."
   - question: "¿Por qué las pruebas ZK son fundamentales para la privacidad financiera?"
     answer: "Permiten verificar que una transacción de criptomonedas cumple con las normas de la red (como tener saldo suficiente) sin necesidad de hacer públicos en el explorador el saldo emisor, el receptor ni el monto exacto."
+
 ---
 
 # El secreto mejor guardado de Ethereum: Cómo las pruebas de cero conocimiento (ZKPs) blindan tu privacidad

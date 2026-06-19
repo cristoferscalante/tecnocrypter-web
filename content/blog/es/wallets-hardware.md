@@ -1,4 +1,5 @@
 ---
+
 title: "Comparativa de Wallets Hardware: Seguridad Máxima para tus Criptomonedas"
 excerpt: "Análisis detallado de las mejores carteras hardware del mercado para almacenar tus activos digitales."
 date: "2025-01-05"
@@ -7,6 +8,7 @@ category: "criptomonedas"
 tags: ["wallets", "hardware", "almacenamiento"]
 featured: false
 image: "/blogs/wallets_hardware.webp"
+
 ---
 
 # Comparativa de Wallets Hardware: Seguridad Máxima para tus Criptomonedas

@@ -15,7 +15,9 @@ faqs:
     answer: "Os principais limites são: Twitter (280 caracteres), Instagram (2.200 em legendas), LinkedIn (3.000 em postagens) e Facebook (63.206)."
   - question: "/*Qual é a velocidade média de leitura humana?*/"
     answer: "A velocidade média de leitura de um adulto é de 200 a 250 palavras por minuto, informação útil para calcular o tempo estimado de leitura de seus artigos."
+
 ---
+
 # Redação estratégica: ferramentas para contar palavras e respeitar os limites de SEO
 
 Ao criar conteúdo digital (seja escrevendo textos persuasivos para redes sociais ou escrevendo meta tags para otimizar o SEO de um artigo), a extensão dos seus textos não é opcional.

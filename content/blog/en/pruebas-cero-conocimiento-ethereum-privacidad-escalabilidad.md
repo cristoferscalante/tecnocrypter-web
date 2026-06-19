@@ -15,7 +15,9 @@ faqs:
     answer: "They aggregate thousands of transactions outside the Ethereum mainnet, generate a ZK proof that certifies its validity, and send only that small proof to the mainnet, drastically reducing gas fees."
   - question: "Why ZK testing is essential for financial privacy?"
     answer: "They allow you to verify that a cryptocurrency transaction complies with network rules (such as having a sufficient balance) without having to make the sender balance, the receiver balance, or the exact amount public in the browser."
+
 ---
+
 # Ethereum's Best Kept Secret: How Zero-Knowledge Proofs (ZKPs) Shield Your Privacy
 
 One of the great paradoxes of the blockchain ecosystem is that, despite being born under an ideal of individual sovereignty, public networks like Bitcoin and Ethereum are inherently hostile to privacy. Every transaction, address and balance is exposed to the view of anyone in the world through a block explorer.

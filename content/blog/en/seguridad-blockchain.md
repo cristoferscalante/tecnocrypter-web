@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["blockchain", "security", "cryptocurrencies"]
 featured: true
 image: "/blogs/seguridad_en_la_blockchain.webp"
+
 ---
+
 # Blockchain Security: Protecting your Digital Assets
 
 Security in the world of cryptocurrencies and blockchain is essential to protect your digital assets. In this article, we will explore best practices and strategies to keep your investments safe.

@@ -13,7 +13,9 @@ seo:
   metaTitle: "Amenazas Cibernéticas con IA 2025 | Análisis Experto"
   metaDescription: "Descubre las nuevas amenazas cibernéticas potenciadas por IA en 2025. Análisis técnico y estrategias de defensa para empresas."
   keywords: "amenazas IA, ciberseguridad 2025, deepfakes, phishing IA, machine learning seguridad"
+
 ---
+
 # AI-Powered Cyber Threats: The New Security Landscape in 2025
 
 ## Introduction

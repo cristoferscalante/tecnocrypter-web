@@ -15,7 +15,9 @@ faqs:
     answer: "O invasor envia uma mensagem SMS, WhatsApp ou iMessage com um arquivo de mídia criado. O sistema operacional tenta processar ou visualizar o arquivo automaticamente em segundo plano, acionando um bug de estouro de memória que executa código malicioso."
   - question: "Como posso me defender contra ataques de clique zero no meu smartphone?"
     answer: "A defesa mais eficaz é ativar o Modo Lockdown no iOS, desativar as visualizações automáticas e reiniciar o telefone diariamente (o que expele implantes de memória não persistentes)."
+
 ---
+
 # A ameaça de explorações de "clique zero": vulnerabilidades sem interação do usuário
 
 No mundo da segurança cibernética, há anos o mantra de defesa tem sido simples: *"não clique em links suspeitos nem baixe arquivos de fontes desconhecidas"*. No entanto, a sofisticação dos intervenientes estatais e do crime cibernético organizado deram vida à ameaça mais temida por ativistas, jornalistas e executivos empresariais em todo o mundo: as explorações **Zero-Click**.

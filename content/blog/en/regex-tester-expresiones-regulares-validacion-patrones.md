@@ -15,7 +15,9 @@ faqs:
     answer: "It is a vulnerability that occurs when an inefficient Regex pattern enters an exponential evaluation cycle (catastrophic backtracking) upon receiving certain text strings, freezing the servers due to massive CPU consumption."
   - question: "/*What do global modifiers (Flags) mean in Regex?*/"
     answer: "They are parameters that alter the search: 'g' (global, searches all matches), 'i' (case-insensitive, ignores upper/lower case) and 'm' (multiline, evaluates matches by lines)."
+
 ---
+
 # The power of regular expressions: How to test and build Regex patterns
 
 **Regular Expressions (Regex)** are one of the most powerful and versatile tools for any software developer. They enable advanced text searches, complex input format validations, and character replacement in massive codebases in a single line of code.

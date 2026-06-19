@@ -15,7 +15,9 @@ faqs:
     answer: "Si vous vous inscrivez sur un site en utilisant un alias unique (par exemple monutilisateur+siteA@domain.com) et commencez à recevoir du spam à cette adresse, vous savez exactement quel site a divulgué ou vendu vos informations."
   - question: "Que sont les références déterministes ?"
     answer: "Il s'agit de systèmes de génération de noms d'utilisateur et de mots de passe basés sur des algorithmes déterministes basés sur un mot-clé, ce qui les rend récupérables mais uniques par plateforme."
+
 ---
+
 # E-mails et alias jetables : protégez votre boîte de réception contre le spam et les fuites
 
 Donner votre adresse e-mail personnelle sur chaque service Web auquel vous vous inscrivez est l'une des principales sources de **spam massif** et de risques d'usurpation d'identité. Si l'un de ces sites est piraté, votre adresse e-mail est ajoutée aux listes mondiales de phishing.

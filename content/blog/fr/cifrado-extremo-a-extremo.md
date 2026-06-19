@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["E2E", "cryptage de bout en bout", "sécurité numérique", "signal", "WhatsApp"]
 featured: true
 image: "/blogs/cifrado_extremo_a_extremo.webp"
+
 ---
+
 # Qu'est-ce que le chiffrement de bout en bout et pourquoi il est indispensable aujourd'hui
 
 Le chiffrement de bout en bout (E2E) est une technique de sécurité qui protège les données tout au long de leur parcours : depuis le moment où elles quittent l'expéditeur jusqu'à ce qu'elles atteignent le destinataire, sans possibilité d'être lues par des intermédiaires, pas même par les propres serveurs du service.

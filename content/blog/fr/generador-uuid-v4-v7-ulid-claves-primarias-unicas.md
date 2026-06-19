@@ -15,7 +15,9 @@ faqs:
     answer: "Étant complètement aléatoire, il fragmente l'index principal (B-Tree) des tables SQL, provoquant des écritures constantes sur le disque et ralentissant les requêtes d'insertion."
   - question: "Comment l'UUID v7 et l'ULID résolvent-ils ce problème ?"
     answer: "Ils intègrent un horodatage en millisecondes dans la première section de l'identifiant. Cela les rend ordonnés chronologiquement (monotones), préservant ainsi la rapidité d'indexation dans la base de données."
+
 ---
+
 # Identifiants uniques : Différences entre UUID v4, v7 et ULID dans les bases de données
 
 Lors de la conception de systèmes informatiques distribués, l'attribution de clés primaires dans les bases de données nécessite des identifiants qui n'entrent jamais en collision. Depuis des années, la solution standard est **UUID v4**. Cependant, l'informatique moderne adopte des alternatives plus efficaces telles que **UUID v7** et **ULID**.

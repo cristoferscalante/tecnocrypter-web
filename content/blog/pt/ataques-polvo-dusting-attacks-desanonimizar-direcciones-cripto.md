@@ -15,7 +15,9 @@ faqs:
     answer: "O perigo não é a perda direta de fundos, mas a perda da sua privacidade. Ao gastar essa “poeira” junto com seus fundos normais, você permite que os analistas vinculem seus diferentes endereços a uma única identidade física."
   - question: "Como posso me proteger do rastreamento de poeira?"
     answer: "Você pode marcar esses pequenos saldos desconhecidos como “não gastáveis” (em carteiras controladas por UTXO) ou usar serviços de combinação de privacidade para desvincular suas transações."
+
 ---
+
 # Ataques de poeira: o truque invisível que os hackers usam para rastrear sua carteira criptografada
 
 Imagine abrir sua carteira Bitcoin ou Ethereum e descobrir que recebeu uma transação não solicitada por uma quantia ridiculamente pequena, como **0,000005 BTC** (alguns centavos por dólar). Embora à primeira vista possa parecer um erro de rede ou um presente insignificante, na realidade você pode estar na mira de um **Ataque de Poeira** ou *Ataque de Poeira*.

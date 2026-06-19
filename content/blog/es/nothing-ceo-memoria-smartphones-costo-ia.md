@@ -1,4 +1,5 @@
 ---
+
 title: "La memoria es el nuevo rey del costo: Carl Pei explica por qué los móviles suben de precio"
 excerpt: "Carl Pei, CEO de Nothing, advierte que los chips DRAM y NAND flash ya superan al procesador en coste debido al acaparamiento de memoria para centros de datos de IA."
 date: "2026-06-17"
@@ -14,6 +15,7 @@ faqs:
     answer: "Las grandes tecnológicas y centros de datos dedicados a la IA acaparan la capacidad de fabricación de memoria DRAM y HBM. Esto reduce la oferta disponible para dispositivos móviles y eleva los precios globalmente."
   - question: "¿Qué componentes de los móviles se han encarecido más?"
     answer: "La memoria de acceso aleatorio (RAM) y el almacenamiento físico (NAND Flash). El CEO de Nothing indica que hoy en día la memoria puede representar más del 50% del coste total de hardware de un teléfono."
+
 ---
 
 # La memoria es el nuevo rey del costo: Carl Pei explica por qué los móviles suben de precio
@@ -48,7 +50,6 @@ Carl Pei advierte también a los consumidores que las rebajas estacionales agres
 Para el usuario que busca renovar su terminal, el consejo del CEO de Nothing es pragmático: esperar a que los precios bajen no es una estrategia viable a corto plazo, ya que las proyecciones de escasez de chips se extienden bien entrado el próximo año.
 
 ---
-
 ## Preguntas Frecuentes (FAQ)
 
 ### ¿Por qué está subiendo el precio de los smartphones en 2026?

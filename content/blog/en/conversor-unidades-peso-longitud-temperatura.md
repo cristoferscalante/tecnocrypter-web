@@ -15,7 +15,9 @@ faqs:
     answer: "Countries like the United States and the United Kingdom still use imperial units (inches, pounds, Fahrenheit) in their daily lives and specific industries such as aeronautics or construction."
   - question: "/*How do you convert Fahrenheit to Celsius accurately?*/"
     answer: "The mathematical formula is: $C = (F - 32) \times 5/9$. Performing this calculation mentally is complex, so it is best to automate it with local tools."
+
 ---
+
 # Quick calculations: How to convert units of length, weight and temperature
 
 Whether you are programming internationally supported software, analyzing technical specifications of hardware imported from the United States, or simply solving academic problems, unit conversion is an everyday necessity.

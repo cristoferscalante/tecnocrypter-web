@@ -15,7 +15,9 @@ faqs:
     answer: "Não. Os mecanismos de banco de dados removem espaços em branco desnecessários antes de compilar e otimizar o plano de execução da consulta. A melhoria é a legibilidade puramente humana."
   - question: "/*Quais regras padrão se aplicam ao formatar SQL?*/"
     answer: "Escreva as palavras-chave em letras maiúsculas (SELECT, FROM, JOIN, WHERE), tabule os parâmetros e organize cada seção de filtro em linhas separadas para facilitar a leitura."
+
 ---
+
 # Código limpo em bancos de dados: como formatar e embelezar consultas SQL
 
 Na administração de banco de dados e no desenvolvimento de back-end, escrever código estruturado e limpo é uma regra de ouro. No entanto, consultas **SQL** complexas muitas vezes se transformam rapidamente em longas sequências de texto de linha única que são difíceis de entender durante auditorias de desempenho ou revisões de código.

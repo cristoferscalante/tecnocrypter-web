@@ -1,4 +1,5 @@
 ---
+
 title: "Hacking Humano: Por qué la ingeniería social supera a la encriptación matemática"
 excerpt: "Analizamos por qué los atacantes modernos rara vez intentan romper el cifrado criptográfico, prefiriendo manipular la psicología humana para vulnerar sistemas."
 date: "2026-06-17"
@@ -14,6 +15,7 @@ faqs:
     answer: "Es la manipulación psicológica de personas para que realicen acciones voluntarias o divulguen información confidencial. Es altamente efectiva porque explota sesgos de confianza, urgencia, obediencia a la autoridad o despiste de los usuarios."
   - question: "¿Cómo se evitan los ataques de fatiga de MFA y phishing?"
     answer: "Utilizando llaves físicas FIDO2/WebAuthn en lugar de códigos SMS o push genéricos, adoptando políticas rigurosas de verificación doble de peticiones inusuales y reforzando la concienciación de seguridad del personal."
+
 ---
 
 # Hacking Humano: Por qué la ingeniería social supera a la encriptación matemática
@@ -54,7 +56,6 @@ La defensa frente al hacking humano exige ir más allá de la simple teoría de 
 La seguridad informática no se limita a un problema de ingeniería de software; es fundamentalmente una disciplina social donde el eslabón más débil no está programado en código, sino arraigado en la propia condición humana.
 
 ---
-
 ## Preguntas Frecuentes (FAQ)
 
 ### ¿Es posible vulnerar un sistema con cifrado AES-256?

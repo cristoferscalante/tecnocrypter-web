@@ -1,4 +1,5 @@
 ---
+
 title: "Depuración de APIs: Cómo validar, formatear y minificar archivos JSON sin errores"
 excerpt: "Aprende las reglas estrictas de sintaxis de JSON, cómo detectar comas huérfanas y optimizar tus payloads mediante minificación."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Formatear añade sangrías y saltos de línea para facilitar la lectura a los programadores. Minificar elimina todos los espacios y líneas en blanco innecesarias para reducir el tamaño del archivo al transmitirlo por red."
   - question: "/*¿Es seguro validar archivos JSON online?*/"
     answer: "Solo si se hace de forma local en tu navegador mediante Javascript. Si envías el JSON a servidores remotos para su procesamiento, corres el riesgo de filtrar datos de clientes o claves API."
+
 ---
 
 # Depuración de APIs: Cómo validar, formatear y minificar archivos JSON sin errores

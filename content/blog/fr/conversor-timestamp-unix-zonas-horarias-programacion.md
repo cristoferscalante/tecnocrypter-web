@@ -15,7 +15,9 @@ faqs:
     answer: "Parce qu'il s'agit d'un simple entier, il est extrêmement rapide d'indexer, de trier et de comparer au niveau de la base de données, ainsi que de lever l'ambiguïté des fuseaux horaires locaux."
   - question: "/*Qu'arrivera-t-il à la météo Unix en 2038 ?*/"
     answer: "Sur les systèmes 32 bits, la valeur entière maximale dépassera le 19 janvier 2038 (le problème de l'année 2038), provoquant des erreurs critiques similaires à l'effet de l'an 2000 si la migration n'est pas effectuée vers des architectures 64 bits."
+
 ---
+
 # Le temps en informatique : conversion de l'horodatage Epoch Unix en dates réelles
 
 Mesurer l'heure et gérer les fuseaux horaires locaux dans les applications logicielles est l'un des problèmes les plus complexes du développement logiciel. Pour éviter toute confusion avec les formats de date régionaux, les systèmes informatiques utilisent la norme d'heure **Unix Timestamp** ou Epoch.

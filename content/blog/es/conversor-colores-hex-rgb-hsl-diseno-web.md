@@ -1,4 +1,5 @@
 ---
+
 title: "Teoría del color digital: Conversión entre formatos HEX, RGB, HSL y Tailwind"
 excerpt: "Aprende cómo representan las pantallas el espectro de colores y las diferencias clave entre los modelos de color digital más comunes."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "RGB representa la mezcla aditiva directa de luz (Red, Green, Blue). HSL define el color basándose en la percepción humana: Matiz (Hue, 0-360 grados), Saturación (Saturation, 0-100%) y Luminosidad (Lightness, 0-100%)."
   - question: "/*¿Por qué los diseñadores web prefieren usar HSL?*/"
     answer: "Porque es mucho más intuitivo para realizar ajustes visuales: por ejemplo, oscurecer o aclarar un color solo requiere modificar el porcentaje de Luminosidad (L), manteniendo el mismo tono (H) intacto."
+
 ---
 
 # Teoría del color digital: Conversión entre formatos HEX, RGB, HSL y Tailwind

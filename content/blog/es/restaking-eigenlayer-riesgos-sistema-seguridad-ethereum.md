@@ -1,4 +1,5 @@
 ---
+
 title: "La burbuja del restaking: Los peligros ocultos y el riesgo sistémico de EigenLayer en Ethereum"
 excerpt: "Explicación técnica del restaking y su impacto en EigenLayer. Analizamos cómo el apalancamiento de seguridad puede sobrecargar el consenso de Ethereum."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "El principal riesgo es el doble 'slashing' (penalización), donde un fallo en un servicio secundario puede provocar la pérdida del ETH depositado en la red principal de Ethereum."
   - question: "¿Por qué Vitalik Buterin advierte de no sobrecargar el consenso de Ethereum?"
     answer: "Porque depender del consenso social de Ethereum para rescatar fallos de aplicaciones financieras externas crea una fragilidad sistémica que pone en peligro la seguridad de toda la red base."
+
 ---
 
 # La burbuja del restaking: Los peligros ocultos y el riesgo sistémico de EigenLayer en Ethereum

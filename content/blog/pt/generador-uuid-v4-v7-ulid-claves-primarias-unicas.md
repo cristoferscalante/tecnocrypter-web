@@ -15,7 +15,9 @@ faqs:
     answer: "Por ser completamente aleatório, ele fragmenta o índice primário (B-Tree) das tabelas SQL, causando constantes gravações em disco e retardando as consultas de inserção."
   - question: "Como o UUID v7 e o ULID resolvem esse problema?"
     answer: "Eles integram um carimbo de data/hora de milissegundos na primeira seção do identificador. Isso os torna ordenados cronologicamente (monotônicos), preservando a velocidade de indexação no banco de dados."
+
 ---
+
 # Identificadores exclusivos: diferenças entre UUID v4, v7 e ULID em bancos de dados
 
 Ao projetar sistemas de computação distribuídos, a atribuição de chaves primárias em bancos de dados requer identificadores que nunca colidem. Durante anos, a solução padrão foi **UUID v4**. No entanto, a computação moderna está adotando alternativas mais eficientes, como **UUID v7** e **ULID**.

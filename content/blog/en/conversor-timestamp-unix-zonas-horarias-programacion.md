@@ -15,7 +15,9 @@ faqs:
     answer: "Because being a simple integer, it is extremely fast to index, sort and compare at the database level, as well as disambiguating local time zones."
   - question: "/*What will happen to Unix weather in the year 2038?*/"
     answer: "On 32-bit systems, the maximum integer value will overflow on January 19, 2038 (the year 2038 problem), causing time-critical errors similar to the Y2K effect if not migrated to 64-bit architectures."
+
 ---
+
 # Time in Computing: Converting Epoch Unix Timestamp to Real Dates
 
 Measuring time and managing local time zones in software applications is one of the most complex problems in software development. To avoid confusion with regional date formats, computer systems use the **Unix Timestamp** or Epoch time standard.

@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["cyber threats", "vulnerabilities", "ransomware", "malware"]
 featured: false
 image: "/blogs/panorama_de_ciberamenazas.webp"
+
 ---
+
 # Cyber Threat Landscape: Featured Vulnerabilities and Attacks for August 2025
 
 CronUp, a company specialized in cybersecurity, publishes newsletters that compile news about security alerts, vulnerabilities and cyberattacks. Their feed from June 27, 2025 explains that the goal is to provide "a clear idea of ​​the threat landscape, the constant evolution of cybercrime and how it affects different sectors." In early August deliveries, the following trends stand out:

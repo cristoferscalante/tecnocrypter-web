@@ -15,7 +15,9 @@ faqs:
     answer: "RVB représente un mélange additif direct de lumière (rouge, vert, bleu). HSL définit la couleur en fonction de la perception humaine : teinte (0-360 degrés), saturation (0-100 %) et luminosité (0-100 %)."
   - question: "/*Pourquoi les concepteurs Web préfèrent-ils utiliser HSL ?*/"
     answer: "Parce qu'il est beaucoup plus intuitif d'effectuer des réglages visuels : par exemple, assombrir ou éclaircir une couleur nécessite uniquement de modifier le pourcentage de luminosité (L), en gardant intact le même ton (H)."
+
 ---
+
 # Théorie numérique des couleurs : Conversion entre les formats HEX, RVB, HSL et Tailwind
 
 La conception d’interfaces Web attrayantes et fonctionnelles dépend en grande partie d’une bonne gestion des couleurs. Les ordinateurs et les écrans affichent les couleurs en combinant trois canaux lumineux (Rouge, Vert et Bleu). Il existe cependant différentes manières mathématiques de définir ces mélanges dans le code source.

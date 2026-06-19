@@ -15,7 +15,9 @@ faqs:
     answer: "La minification modifie directement le texte du code au niveau syntaxique. La compression (comme Gzip ou Brotli) est un algorithme de réduction de données exécuté par le serveur Web lors de l'envoi du fichier compressé sur le réseau."
   - question: "/*La minification peut-elle casser mon code ?*/"
     answer: "Uniquement si le code manque de syntaxe correcte (par exemple en omettant les points-virgules dans JavaScript) ou si les minificateurs effectuent un obscurcissement agressif mal configuré. Un minificateur de base standard est sûr."
+
 ---
+
 # Advanced WPO : Comment réduire CSS et Javascript pour accélérer votre site Web
 
 La vitesse de chargement d’un site internet est l’un des facteurs les plus importants à la fois pour fidéliser vos visiteurs et pour améliorer votre positionnement dans les moteurs de recherche. Dans la discipline Web Performance Optimization (**WPO**), la **minification des fichiers** est une étape obligatoire.

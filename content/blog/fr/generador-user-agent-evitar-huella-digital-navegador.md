@@ -15,7 +15,9 @@ faqs:
     answer: "Lorsqu'ils sont combinés avec d'autres variables (telles que la résolution de l'écran et les polices), les trackers créent une empreinte digitale unique pour vous identifier sans utiliser de cookies."
   - question: "Pourquoi changer ou basculer mon User-Agent ?"
     answer: "Il vous permet de simuler que vous naviguez à partir d'un appareil ou d'un système différent, ce qui confond les algorithmes de suivi et permet l'accès à des versions Web restreintes."
+
 ---
+
 # Évasion des empreintes digitales : comment utiliser des agents utilisateurs pour protéger votre confidentialité de navigation
 
 Chaque fois que vous accédez à un site Web, votre navigateur effectue une présentation formelle en envoyant un en-tête de texte appelé **User-Agent**. Cette chaîne contient des détails exacts sur l'architecture de votre ordinateur, votre système d'exploitation et la version exacte de votre navigateur.

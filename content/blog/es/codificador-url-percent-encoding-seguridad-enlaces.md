@@ -1,4 +1,5 @@
 ---
+
 title: "Estructura web: Codificación de caracteres especiales en URLs (Percent-Encoding)"
 excerpt: "Descubre cómo funciona la codificación URL o Percent-Encoding y por qué es indispensable para transmitir parámetros seguros en internet."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Las URLs estándar no pueden contener espacios en blanco. En el sistema de codificación, el espacio se reemplaza por su representación hexadecimal `%20` o por el signo más (+)."
   - question: "¿Qué caracteres se consideran reservados en una URL?"
     answer: "Los caracteres reservados tienen funciones sintácticas específicas (como ?, &, =, /, :, #). Si forman parte de un dato que queremos enviar como parámetro, deben codificarse para no romper la estructura de la URL."
+
 ---
 
 # Estructura web: Codificación de caracteres especiales en URLs (Percent-Encoding)

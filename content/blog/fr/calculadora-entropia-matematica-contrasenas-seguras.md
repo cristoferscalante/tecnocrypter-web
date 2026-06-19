@@ -15,7 +15,9 @@ faqs:
     answer: "Parce que la longueur augmente de façon exponentielle le nombre total de combinaisons possibles, tandis que l'ajout de caractères spéciaux à un mot de passe court ne fait qu'augmenter la base de puissance de manière linéaire."
   - question: "Combien de bits d’entropie sont considérés comme sûrs aujourd’hui ?"
     answer: "Un mot de passe comportant plus de 80 bits d’entropie est considéré comme extrêmement difficile à déchiffrer par la technologie informatique actuelle, nécessitant des siècles de force brute."
+
 ---
+
 # Les mathématiques de la sécurité : Comment calculer l'entropie de vos mots de passe
 
 La force d'un mot de passe ne dépend pas de sa « rareté » pour vous, mais de la résistance mathématique qu'il offre contre une attaque automatisée par force brute. Cette mesure est connue en cryptographie sous le nom d'**entropie du mot de passe**.

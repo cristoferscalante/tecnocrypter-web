@@ -15,7 +15,9 @@ faqs:
     answer: "Se você se inscrever em um site usando um alias exclusivo (por exemplo, meuusuário+siteA@domínio.com) e começar a receber spam nesse endereço, você saberá exatamente qual site vazou ou vendeu suas informações."
   - question: "O que são credenciais determinísticas?"
     answer: "São sistemas de geração de nome de usuário e senha baseados em algoritmos determinísticos baseados em uma palavra-chave, tornando-os recuperáveis, mas únicos por plataforma."
+
 ---
+
 # E-mails e aliases descartáveis: proteja sua caixa de entrada contra spam e vazamentos
 
 Fornecer seu endereço de e-mail pessoal em cada serviço da web em que você se inscreve é uma das principais fontes de **spam em massa** e riscos de falsificação. Se um desses sites for hackeado, seu endereço de e-mail será adicionado a listas globais de phishing.

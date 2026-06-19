@@ -13,7 +13,9 @@ seo:
   metaTitle: "Detectar Phishing con IA | Guía de Ciberseguridad TecnoCrypter"
   metaDescription: "Aprende a detectar ataques de phishing avanzados creados por IA. Guía práctica para analizar correos y verificar enlaces maliciosos."
   keywords: "phishing IA, analizar cabeceras email, detectar correo falso, verificar URL, seguridad correo"
+
 ---
+
 # Como detectar e-mails falsos e phishing na era da IA: guia defensivo
 
 ## Introdução

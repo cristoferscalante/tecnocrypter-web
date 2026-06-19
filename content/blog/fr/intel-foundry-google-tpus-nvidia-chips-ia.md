@@ -15,7 +15,9 @@ faqs:
     answer: "NVIDIA cherche à diversifier ses fournisseurs de fabrication pour réduire sa dépendance à l'égard de TSMC (Taiwan) face aux tensions géopolitiques croissantes et aux pénuries de capacités."
   - question: "Dans quelle mesure le processus de fabrication 18A d'Intel est-il pertinent ?"
     answer: "Le processus 18A (équivalent à 1,8 nm) représente le fer de lance technologique d'Intel, qui promet de surpasser les nœuds concurrents grâce à de nouvelles technologies de transistors et à une alimentation électrique par l'arrière."
+
 ---
+
 # Intel Foundry refait surface : Elle fabriquera les TPU Google et court NVIDIA
 
 Sur le marché volatile et crucial de la fabrication de semi-conducteurs, **Intel** a atteint un objectif stratégique d'une importance vitale. Sa division de fabrication indépendante, **Intel Foundry**, a obtenu un contrat de plusieurs millions de dollars pour produire la prochaine génération d'unités de traitement tensoriel (**TPU**) de **Google** à l'aide de son nœud avancé **3 nanomètres**. 

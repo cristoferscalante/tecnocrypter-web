@@ -8,7 +8,9 @@ category: "neurociencia"
 tags: ["neuroplasticity", "technology", "brain", "IA", "cognition"]
 featured: true
 image: "/blogs/neuroplasticidad-digital.webp"
+
 ---
+
 # Digital Neuroplasticity: How the Technological Age is Reshaping the Human Brain
 
 The omnipresence of digital devices and artificial intelligence is generating unprecedented neuroplastic changes in the human brain. This article examines the cognitive effects of mass digital consumption, including the phenomenon of "digital amnesia", alterations in attention patterns caused by infinite scrolling, and hallucinations induced by AI systems.

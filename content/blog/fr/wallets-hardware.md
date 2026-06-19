@@ -8,7 +8,9 @@ category: "criptomonedas"
 tags: ["portefeuilles", "matériel", "stockage"]
 featured: false
 image: "/blogs/wallets_hardware.webp"
+
 ---
+
 # Comparatif des Hardware Wallets : Sécurité maximale pour vos cryptomonnaies
 
 Les portefeuilles matériels représentent la référence en matière de sécurité pour le stockage de crypto-monnaie. Dans ce guide complet, nous analysons les meilleures options du marché et vous aidons à choisir celle idéale pour vos besoins.

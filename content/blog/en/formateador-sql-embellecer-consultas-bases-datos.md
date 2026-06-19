@@ -15,7 +15,9 @@ faqs:
     answer: "No. Database engines remove unnecessary whitespace before compiling and optimizing the query execution plan. The improvement is purely human readability."
   - question: "/*What standard rules apply when formatting SQL?*/"
     answer: "Write the keywords in capital letters (SELECT, FROM, JOIN, WHERE), tabulate the parameters and organize each filter section on separate lines for easy reading."
+
 ---
+
 # Clean Code in Databases: How to Format and Beautify SQL Queries
 
 In database administration and backend development, writing structured and clean code is a golden rule. However, complex **SQL** queries often quickly become long single-line text strings that are difficult to understand during performance audits or code reviews.

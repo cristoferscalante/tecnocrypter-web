@@ -1,4 +1,5 @@
 ---
+
 title: "Redacción estratégica: Herramientas para contar palabras y respetar límites SEO"
 excerpt: "Conoce los límites exactos de caracteres recomendados para tus publicaciones en redes sociales y etiquetas meta de SEO para evitar el truncamiento."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Los límites principales son: Twitter (280 caracteres), Instagram (2,200 en subtítulos), LinkedIn (3,000 en publicaciones) y Facebook (63,206)."
   - question: "/*¿Cuál es la velocidad de lectura humana promedio?*/"
     answer: "La velocidad de lectura media para un adulto es de 200 a 250 palabras por minuto, dato útil para calcular el tiempo estimado de lectura de tus artículos."
+
 ---
 
 # Redacción estratégica: Herramientas para contar palabras y respetar límites SEO

@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["escroqueries numériques", "rançongiciel", "hameçonnage", "cybersécurité", "protection juridique", "intelligence artificielle"]
 featured: true
 image: "/blogs/estafas-digitales.webp"
+
 ---
+
 # Les arnaques numériques à l’ère de l’intelligence artificielle : analyse multidisciplinaire des menaces émergentes et stratégies de protection
 
 ## Résumé

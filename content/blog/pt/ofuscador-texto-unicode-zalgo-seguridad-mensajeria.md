@@ -15,7 +15,9 @@ faqs:
     answer: "Ele permite ocultar caracteres de texto de algoritmos de verificação automática, protegendo mensagens privadas ou evitando a censura de palavras-chave em fóruns públicos."
   - question: "Como um computador interpreta texto ofuscado?"
     answer: "Visualmente pode parecer distorcido, mas o computador lê os pontos de código Unicode individuais correspondentes às letras base originais."
+
 ---
+
 # Ofuscação de caracteres: a arte de ocultar texto com Unicode e Zalgo
 
 O padrão **Unicode** permite que os computadores representem texto em praticamente qualquer idioma e símbolo do planeta. No entanto, este padrão inclui recursos avançados que podem ser usados ​​para fins criativos de privacidade: **ofuscação de texto**.

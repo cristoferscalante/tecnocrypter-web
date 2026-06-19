@@ -15,7 +15,9 @@ faqs:
     answer: "Porque um único rack Blackwell B200 pode consumir até 120 quilowatts de energia, gerando calor extremo que os ventiladores de ar tradicionais não conseguem dissipar."
   - question: "Como esse gargalo impacta os custos das startups de IA?"
     answer: "Provoca esperas de até 9 meses para acessar clusters de GPU e aumenta a taxa de aluguel por hora de computação na nuvem, encarecendo o treinamento de novos modelos."
+
 ---
+
 # O calcanhar de Aquiles da IA: a crise de abastecimento e o colossal consumo de eletricidade dos chips NVIDIA Blackwell
 
 A indústria da inteligência artificial corre o risco de sofrer uma desaceleração imprevista. Apesar do entusiasmo em torno dos novos superchips **NVIDIA Blackwell B200**, prometidos como o motor que impulsionará o treinamento dos próximos LLMs em escala de fronteira, a realidade da cadeia de fornecimento e a física da eletricidade estão impondo limites severos.

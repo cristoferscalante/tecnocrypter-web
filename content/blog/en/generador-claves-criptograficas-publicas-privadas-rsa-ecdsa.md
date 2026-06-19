@@ -15,7 +15,9 @@ faqs:
     answer: "RSA is based on the difficulty of factoring large prime numbers and requires longer keys (e.g. 2048 or 4096 bits). ECDSA is based on elliptic curves, offering the same level of security with much smaller and faster keys."
   - question: "Is it safe to generate SSH or OpenSSL keys online?"
     answer: "Only if they are generated locally in your browser using the JavaScript Web Crypto API, without sending the keys to any server. Our tool works under this local security principle."
+
 ---
+
 # Asymmetric cryptography: Secure generation of RSA and ECDSA key pairs locally
 
 The foundation of modern internet security (from HTTPS certificates to SSH connections and blockchain transactions) lies in **asymmetric** or public key cryptography.

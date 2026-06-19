@@ -8,7 +8,9 @@ category: "tecnologia"
 tags: ["IA", "Gêmeos", "Geração de imagem", "Aprendizado de máquina", "Google DeepMind", "Arquitetura Técnica"]
 featured: true
 image: "/blogs/gemini-nano-banana.webp"
+
 ---
+
 # Visualização de imagem Flash Gemini 2.5: arquitetura técnica e avanços na geração de imagens de IA
 
 ## Resumo Executivo

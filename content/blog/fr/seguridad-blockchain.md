@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["chaîne de blocs", "sécurité", "crypto-monnaies"]
 featured: true
 image: "/blogs/seguridad_en_la_blockchain.webp"
+
 ---
+
 # Sécurité Blockchain : protéger vos actifs numériques
 
 La sécurité dans le monde des crypto-monnaies et de la blockchain est essentielle pour protéger vos actifs numériques. Dans cet article, nous explorerons les meilleures pratiques et stratégies pour assurer la sécurité de vos investissements.

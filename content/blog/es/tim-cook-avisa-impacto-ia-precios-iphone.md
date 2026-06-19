@@ -1,4 +1,5 @@
 ---
+
 title: "La IA pasará factura: Tim Cook advierte de que el coste de procesamiento disparará el precio del iPhone"
 excerpt: "El CEO de Apple anticipa que los elevados gastos operativos de Apple Intelligence en servidores y NPU forzarán subidas en los precios de los futuros dispositivos."
 date: "2026-06-18"
@@ -14,6 +15,7 @@ faqs:
     answer: "Cada consulta a un modelo avanzado de lenguaje requiere de infraestructura especializada (GPUs, TPUs) con un alto consumo de energía y procesamiento en la nube, lo cual presiona los márgenes tradicionales de Apple."
   - question: "¿Qué diferencia hay entre la IA en local y en la nube privada (PCC)?"
     answer: "La IA en local se ejecuta enteramente en el hardware del teléfono para tareas sencillas. Las tareas complejas se envían a la Computación en la Nube Privada (PCC) de Apple, que procesa la información de forma encriptada sin almacenar datos del usuario."
+
 ---
 
 # La IA pasará factura: Tim Cook advierte de que el coste de procesamiento disparará el precio del iPhone

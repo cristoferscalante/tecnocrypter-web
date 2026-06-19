@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["cryptage dans le cloud", "sécurité du cloud", "outils de cryptage", "Zéro connaissance"]
 featured: false
 image: "/blogs/Como_cifrar_tus_datos_en_la_nube.webp"
+
 ---
+
 # Comment chiffrer vos données dans le cloud : meilleurs outils et pratiques
 
 Le cloud est pratique, mais il expose aussi nos fichiers si les bonnes pratiques ne sont pas utilisées. Le cryptage est votre meilleur allié pour préserver la confidentialité.

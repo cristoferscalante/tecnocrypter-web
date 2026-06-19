@@ -15,7 +15,9 @@ faqs:
     answer: "Por padrão não. Um JWT padrão é assinado e codificado em Base64Url, o que significa que qualquer pessoa pode ler a carga útil. Você nunca deve colocar informações confidenciais, como senhas, dentro do token."
   - question: "Como você evita a manipulação de um JWT?"
     answer: "O token contém uma assinatura criptográfica em sua terceira seção. Se um cliente alterar os dados da carga útil, a assinatura não corresponderá mais e o servidor rejeitará o token."
+
 ---
+
 # Guia padrão JWT: como decodificar e analisar tokens JSON Web com segurança
 
 No desenvolvimento web moderno, **JSON Web Tokens (JWT)** são o padrão dominante para gerenciar sessões de usuário e autenticação em APIs e microsserviços. Eles permitem que os servidores verifiquem a identidade de um cliente sem a necessidade de consultar constantemente os bancos de dados da sessão.

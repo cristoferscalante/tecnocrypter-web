@@ -15,7 +15,9 @@ faqs:
     answer: "It is a digital credential backed by public key cryptography. It is linked to the biometric control of your device (fingerprint or face), preventing a third party from intercepting or guessing it."
   - question: "Is it possible to log in without passwords if I don't have internet?"
     answer: "Yes, Passkeys are securely stored locally on your device (or in your cloud keychain such as iCloud/Google Drive), allowing local authentication without the need for an active connection to external servers."
+
 ---
+
 # The end of passwords: Why Spotify's decision to force the use of Passkeys is a security success
 
 Traditional passwords are dead, although many users still refuse to bury them. The last major digital giant to take a definitive step towards this new era has been **Spotify**. In a historic security update, the audio streaming platform has announced the progressive rollout of mandatory access through **Passkeys** (access keys), eliminating the possibility of logging in with the old email and password duo.

@@ -1,4 +1,5 @@
 ---
+
 title: "Neuroplasticidad Digital: Cómo la Era Tecnológica Está Reconfigurando el Cerebro Humano"
 excerpt: "Análisis neurocientífico de cómo los dispositivos digitales y la IA están transformando nuestros cerebros, incluyendo amnesia digital, scroll infinito y alucinaciones de IA."
 date: "2025-09-30"
@@ -7,6 +8,7 @@ category: "neurociencia"
 tags: ["neuroplasticidad", "tecnología", "cerebro", "IA", "cognición"]
 featured: true
 image: "/blogs/neuroplasticidad-digital.webp"
+
 ---
 
 # Neuroplasticidad Digital: Cómo la Era Tecnológica Está Reconfigurando el Cerebro Humano
@@ -161,7 +163,6 @@ La evidencia científica actual sugiere que estos cambios, aunque significativos
 El desafío no es resistir el cambio tecnológico, sino dirigirlo de manera que preserve y amplifique las capacidades cognitivas que nos definen como especie.
 
 ---
-
 **Sobre el Autor**
 
 *Dr. Miguel Rodríguez es neurocientífico especializado en neuroplasticidad digital en el Instituto de Neurociencias Cognitivas de Barcelona. Sus investigaciones se centran en los efectos de la tecnología digital en la cognición humana.*

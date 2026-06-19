@@ -1,4 +1,5 @@
 ---
+
 title: "Robo invisible en la DeFi: Así es como los bots de MEV manipulan tus transacciones (y cómo evitarlo)"
 excerpt: "Explicamos cómo funcionan los bots de MEV en las redes blockchain. Descubre qué son los ataques sándwich y cómo usar RPCs privadas para proteger tus compras."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Un bot detecta tu transacción pendiente en la mempool pública, inserta una compra antes que la tuya (subiendo el precio) y una venta inmediatamente después, quedándose con la diferencia a tu costa."
   - question: "¿De qué manera puedo proteger mis transacciones DeFi contra bots MEV?"
     answer: "La forma más efectiva es configurar en tu billetera (como MetaMask) un endpoint de RPC privada, como Flashbots Protect o MEV-Share, que envía tus transacciones directamente a los constructores de bloques sin pasar por la mempool pública."
+
 ---
 
 # Robo invisible en la DeFi: Así es como los bots de MEV manipulan tus transacciones (y cómo evitarlo)

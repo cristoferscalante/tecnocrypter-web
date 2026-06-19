@@ -1,4 +1,5 @@
 ---
+
 title: "Integridad de datos: Cómo verificar archivos mediante hashes MD5 y SHA-256"
 excerpt: "Aprende qué son los algoritmos de hashing criptográficos y cómo utilizarlos para asegurar que un archivo descargado no fue alterado."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Para confirmar su integridad. Si un archivo fue modificado (aunque sea por un solo bit debido a un error de red o por un virus inyectado), el hash final cambia drásticamente."
   - question: "/*¿MD5 sigue siendo seguro?*/"
     answer: "No para fines criptográficos o de autenticación de contraseñas debido a colisiones conocidas, pero sigue siendo útil como suma de verificación básica para detectar errores de transferencia de archivos."
+
 ---
 
 # Integridad de datos: Cómo verificar archivos mediante hashes MD5 y SHA-256

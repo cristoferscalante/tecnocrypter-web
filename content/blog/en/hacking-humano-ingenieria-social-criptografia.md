@@ -15,7 +15,9 @@ faqs:
     answer: "It is the psychological manipulation of people into taking voluntary actions or disclosing confidential information. It is highly effective because it exploits biases of trust, urgency, obedience to authority or user confusion."
   - question: "How do you avoid MFA fatigue and phishing attacks?"
     answer: "Using physical FIDO2/WebAuthn keys instead of generic SMS or push codes, adopting rigorous double-checking policies for unusual requests, and reinforcing staff security awareness."
+
 ---
+
 # Human Hacking: Why social engineering beats mathematical encryption
 
 The famous cryptographer Bruce Schneier wrote a phrase that perfectly sums up the modern security dilemma: *"Cryptography is mathematics, and mathematics is perfect. Software is written by humans, and humans make mistakes. But real security is a matter of people, and people are easy to fool."*

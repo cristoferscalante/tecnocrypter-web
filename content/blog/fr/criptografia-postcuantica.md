@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["cryptographie post-quantique", "NIST", "algorithmes résistants aux quantiques", "informatique quantique"]
 featured: false
 image: "/blogs/Criptografía-post-cuántica.webp"
+
 ---
+
 # Cryptographie post-quantique : voilà comment ils préparent les algorithmes du futur
 
 Les ordinateurs quantiques représentent une réelle menace pour les systèmes de chiffrement actuels. Des algorithmes comme RSA et ECC pourraient être brisés en quelques secondes avec suffisamment de puissance quantique.

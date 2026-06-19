@@ -15,7 +15,9 @@ faqs:
     answer: "Le silicium naturel génère des interférences magnétiques qui détruisent la cohérence quantique des qubits. Le silicium-28 crée un environnement magnétique « sans bruit », prolongeant considérablement la durée de vie des qubits et réduisant les erreurs de traitement."
   - question: "Que signifie cette avancée pour la souveraineté technologique de la Chine ?"
     answer: "Jusqu’à présent, la production mondiale de silicium 28 dépendait presque entièrement des infrastructures russes et européennes. Le produire au niveau national garantit que la Chine peut fabriquer ses propres processeurs quantiques à grande échelle sans craindre de blocus commerciaux."
+
 ---
+
 # La Chine fait un pas décisif vers l'autonomie quantique avec le silicium ultrapur
 
 La course mondiale à la suprématie quantique a pris un tournant stratégique crucial. Dans une annonce officielle de juin 2026, les instituts de recherche nucléaire chinois ont confirmé la production réussie, pour la première fois à l'échelle industrielle, de **silicium-28 ultra-pur** avec une concentration dépassant les normes de pureté de 99,99 %.

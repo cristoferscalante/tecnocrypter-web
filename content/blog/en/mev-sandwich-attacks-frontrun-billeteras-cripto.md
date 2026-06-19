@@ -15,7 +15,9 @@ faqs:
     answer: "A bot detects your pending transaction in the public mempool, inserts a purchase before yours (raising the price) and a sale immediately after, keeping the difference at your expense."
   - question: "How can I protect my DeFi transactions against MEV bots?"
     answer: "The most effective way is to set up a private RPC endpoint in your wallet (like MetaMask), like Flashbots Protect or MEV-Share, which sends your transactions directly to the block builders without going through the public mempool."
+
 ---
+
 # Invisible theft in DeFi: This is how MEV bots manipulate your transactions (and how to avoid it)
 
 Operating in decentralized finance (DeFi) promises disintermediation and transparency. However, behind the screen, there is a high-frequency underworld where automatic algorithms wage a constant battle to squeeze cent by penny out of user transactions. 

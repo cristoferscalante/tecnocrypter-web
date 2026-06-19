@@ -15,7 +15,9 @@ faqs:
     answer: "Cada consulta a um modelo de linguagem avançada requer infraestrutura especializada (GPUs, TPUs) com alto consumo de energia e processamento em nuvem, o que pressiona as margens tradicionais da Apple."
   - question: "Qual é a diferença entre IA local e na nuvem privada (PCC)?"
     answer: "A IA local é executada inteiramente no hardware do telefone para tarefas simples. Tarefas complexas são enviadas para o Private Cloud Computing (PCC) da Apple, que processa informações de forma criptografada sem armazenar dados do usuário."
+
 ---
+
 # A IA terá seu preço: Tim Cook alerta que o custo do processamento disparará no preço do iPhone
 
 A inteligência artificial não está apenas transformando a forma como interagimos com a tecnologia; Também está prestes a transformar o preço dos nossos aparelhos. Em declarações recentes do CEO da Apple, Tim Cook, uma realidade desconfortável, mas inevitável, foi colocada em cima da mesa: o processamento massivo de dados exigido pela **Apple Intelligence** tem um custo operacional insustentável a longo prazo sob os atuais esquemas de preços.

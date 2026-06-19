@@ -15,7 +15,9 @@ faqs:
     answer: "L'attaquant envoie un message SMS, WhatsApp ou iMessage avec un fichier multimédia contrefait. Le système d'exploitation tente de traiter ou de prévisualiser le fichier automatiquement en arrière-plan, déclenchant un bug de dépassement de mémoire qui exécute du code malveillant."
   - question: "Comment puis-je me défendre contre les attaques zéro clic sur mon smartphone ?"
     answer: "La défense la plus efficace consiste à activer le mode de verrouillage sur iOS, à désactiver les aperçus automatiques et à redémarrer le téléphone quotidiennement (ce qui expulse les implants de mémoire non persistants)."
+
 ---
+
 # La menace des exploits « Zéro-clic » : vulnérabilités sans interaction de l'utilisateur
 
 Dans le monde de la cybersécurité, depuis des années, le mantra de défense est simple : *"ne cliquez pas sur des liens suspects et ne téléchargez pas de fichiers provenant de sources inconnues"*. Cependant, la sophistication des acteurs étatiques et la cybercriminalité organisée ont donné vie à la menace la plus redoutée par les militants, les journalistes et les dirigeants d'entreprise du monde entier : les exploits **Zero-Click**.

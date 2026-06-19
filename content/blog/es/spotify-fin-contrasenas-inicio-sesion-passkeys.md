@@ -1,4 +1,5 @@
 ---
+
 title: "El fin de las contraseñas: Por qué la decisión de Spotify de obligar al uso de Passkeys es un acierto de seguridad"
 excerpt: "La transición de Spotify hacia el acceso exclusivo mediante Passkeys (llaves de acceso) marca el inicio del fin de las contraseñas tradicionales. Analizamos cómo erradica el phishing."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Es una credencial digital respaldada por criptografía de clave pública. Se vincula al control biométrico de tu dispositivo (huella o rostro), impidiendo que un tercero pueda interceptarla o adivinarla."
   - question: "¿Es posible iniciar sesión sin contraseñas si no tengo internet?"
     answer: "Sí, las Passkeys se almacenan localmente de forma segura en tu dispositivo (o en tu llavero en la nube como iCloud/Google Drive), permitiendo la autenticación local sin necesidad de conexión activa a servidores externos."
+
 ---
 
 # El fin de las contraseñas: Por qué la decisión de Spotify de obligar al uso de Passkeys es un acierto de seguridad

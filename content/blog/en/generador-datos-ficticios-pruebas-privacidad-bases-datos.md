@@ -15,7 +15,9 @@ faqs:
     answer: "It allows filling out test forms, databases or interfaces in development with fictitious names, addresses and telephone numbers to verify their operation without using real data."
   - question: "Is locally generated data secure?"
     answer: "Yes, since when processed in your own web browser, no private data is transmitted to external servers, guaranteeing the anonymity of your tests."
+
 ---
+
 # Ethical testing: Generation of realistic fictional data to protect privacy
 
 In the era of Big Data and strict privacy compliance, protecting the information your applications handle during the development and commercial demonstration phases is mandatory. 

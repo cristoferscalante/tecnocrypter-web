@@ -8,7 +8,9 @@ category: "Encriptación"
 tags: ["saignement de cœur", "vulnérabilités cryptographiques", "cas de sécurité historiques"]
 featured: false
 image: "/blogs/vulnerabilidades-cifrado.webp"
+
 ---
+
 # Vulnérabilités célèbres du chiffrement : des cas qui ont marqué l'Histoire
 
 Tout au long de l’histoire numérique, plusieurs échecs de mise en œuvre ont remis en question la confiance dans la cryptographie.

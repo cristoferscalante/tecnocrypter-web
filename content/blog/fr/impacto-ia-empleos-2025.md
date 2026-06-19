@@ -8,7 +8,9 @@ category: "noticias"
 tags: ["pertes d'emplois 2025", "automatisation et IA", "Suppressions d'emplois dans l'IA", "requalification du Karnataka", "déficit de compétences"]
 featured: true
 image: "/blogs/impacto-ia-empleos-2025.webp"
+
 ---
+
 # Plus de 10 000 emplois disparaîtront en 2025 : sommes-nous prêts pour l'avenir ?
 
 Jusqu’à présent, en 2025, l’automatisation et l’intelligence artificielle ont entraîné la perte de plus de 10 000 emplois aux États-Unis, selon The Economic Times. Ce phénomène n’est pas seulement un titre choquant, mais reflète la manière dont l’IA transforme les rôles traditionnels, obligeant les gouvernements et les entreprises à repenser leurs stratégies de formation et d’adaptation.

@@ -15,7 +15,9 @@ faqs:
     answer: "Para que o avaliador de um projeto possa se concentrar na composição tipográfica, na distribuição espacial e nas cores, ao invés de se distrair lendo e interpretando o conteúdo do texto."
   - question: "/*Que problemas o uso indevido de Lorem Ipsum pode causar?*/"
     answer: "Pode ocultar necessidades reais de espaço se os textos reais finais forem significativamente mais longos ou mais curtos que o preenchimento simulado, por isso deve ser combinado com testes de conteúdo real."
+
 ---
+
 # Design e layout: O uso correto do texto de preenchimento (Lorem Ipsum)
 
 No layout de jornais, design gráfico e desenvolvimento de interface de usuário (**UI/UX**), o uso de texto simulado é um padrão da indústria. O texto de preenchimento mais conhecido do mundo é, sem dúvida, **Lorem Ipsum**.

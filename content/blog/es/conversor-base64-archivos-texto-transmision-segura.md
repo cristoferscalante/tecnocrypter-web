@@ -1,4 +1,5 @@
 ---
+
 title: "Transmisión de datos en la web: Conversión de archivos e imágenes a Base64"
 excerpt: "Aprende qué es la codificación Base64, cómo incrustar archivos e imágenes directamente en tu código HTML y los costes de rendimiento asociados."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Es ideal para optimizar el rendimiento al incrustar pequeños iconos o imágenes en hojas de estilo CSS o HTML, reduciendo el número de peticiones HTTP del servidor."
   - question: "¿Cuánto aumenta el tamaño del archivo al convertirlo a Base64?"
     answer: "La codificación Base64 incrementa el tamaño del archivo en aproximadamente un 33% en comparación con su representación binaria original."
+
 ---
 
 # Transmisión de datos en la web: Conversión de archivos e imágenes a Base64

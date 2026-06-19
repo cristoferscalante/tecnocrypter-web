@@ -1,4 +1,5 @@
 ---
+
 title: "Codificación Base32: Cuándo usarla frente a Base64 y cómo funciona su algoritmo"
 excerpt: "Descubre las propiedades del algoritmo de codificación Base32 y sus ventajas de legibilidad humana en sistemas criptográficos y URLs."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Es insensible a mayúsculas/minúsculas y omite caracteres confusos visualmente (como el 0, 1, O, I), haciéndolo ideal para que los humanos copien códigos de seguridad manualmente."
   - question: "¿Dónde se utiliza comúnmente Base32?"
     answer: "Su aplicación más famosa es la codificación de las claves semilla secreta en aplicaciones de autenticación de doble factor (2FA/TOTP) como Google Authenticator."
+
 ---
 
 # Codificación Base32: Cuándo usarla frente a Base64 y cómo funciona su algoritmo

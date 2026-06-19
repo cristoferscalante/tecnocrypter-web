@@ -15,7 +15,9 @@ faqs:
     answer: "Il n'est pas sensible à la casse et omet les caractères visuellement déroutants (tels que 0, 1, O, I), ce qui le rend idéal pour les humains qui souhaitent copier manuellement les codes de sécurité."
   - question: "Où Base32 est-il couramment utilisé ?"
     answer: "Son application la plus connue est le cryptage des clés secrètes dans les applications d'authentification à deux facteurs (2FA/TOTP) telles que Google Authenticator."
+
 ---
+
 # Encodage Base32 : quand l'utiliser par rapport à Base64 et comment fonctionne son algorithme
 
 Lors du développement de logiciels et de la transmission de données, nous devons souvent représenter des données binaires (telles que des octets d'un fichier ou des clés cryptographiques) au format texte pour éviter qu'elles ne soient corrompues sur les canaux de communication standard.

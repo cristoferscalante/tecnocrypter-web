@@ -1,4 +1,5 @@
 ---
+
 title: "Panorama de ciberamenazas: vulnerabilidades y ataques destacados de agosto 2025"
 excerpt: "Resumen de los principales incidentes de ciberseguridad reportados por CronUp a inicios de agosto de 2025: vulnerabilidades, ciberataques, malware y ransomware."
 date: "2025-08-13"
@@ -7,6 +8,7 @@ category: "seguridad"
 tags: ["ciberamenazas", "vulnerabilidades", "ransomware", "malware"]
 featured: false
 image: "/blogs/panorama_de_ciberamenazas.webp"
+
 ---
 
 # Panorama de ciberamenazas: vulnerabilidades y ataques destacados de agosto 2025

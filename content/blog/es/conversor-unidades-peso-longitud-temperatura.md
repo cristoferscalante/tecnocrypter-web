@@ -1,4 +1,5 @@
 ---
+
 title: "Cálculos rápidos: Cómo convertir unidades de longitud, peso y temperatura"
 excerpt: "Descubre cómo los sistemas de unidades métricos e imperiales difieren y cómo automatizar conversiones complejas sin cometer errores matemáticos."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Países como Estados Unidos y el Reino Unido aún usan unidades imperiales (pulgadas, libras, Fahrenheit) en su vida cotidiana e industrias específicas como la aeronáutica o construcción."
   - question: "/*¿Cómo se convierte Fahrenheit a Celsius de forma precisa?*/"
     answer: "La fórmula matemática es: $C = (F - 32) \times 5/9$. Realizar este cálculo mentalmente es complejo, por lo que es mejor automatizarlo con herramientas locales."
+
 ---
 
 # Cálculos rápidos: Cómo convertir unidades de longitud, peso y temperatura

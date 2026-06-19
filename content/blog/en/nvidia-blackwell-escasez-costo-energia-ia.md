@@ -15,7 +15,9 @@ faqs:
     answer: "Because a single Blackwell B200 rack can consume up to 120 kilowatts of power, generating extreme heat that traditional air fans are unable to dissipate."
   - question: "How does this bottleneck impact the costs of AI startups?"
     answer: "It causes waits of up to 9 months to access GPU clusters and increases the rental rate per hour of computing in the cloud, making it more expensive to train new models."
+
 ---
+
 # The Achilles heel of AI: The supply crisis and the colossal electricity consumption of NVIDIA Blackwell chips
 
 The artificial intelligence industry is at risk of suffering an unforeseen slowdown. Despite the excitement around the new **NVIDIA Blackwell B200** superchips, promised as the engine that will power the training of the next frontier-scale LLMs, the reality of the supply chain and the physics of electricity are imposing severe limits.

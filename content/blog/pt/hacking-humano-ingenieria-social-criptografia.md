@@ -15,7 +15,9 @@ faqs:
     answer: "É a manipulação psicológica de pessoas para que tomem ações voluntárias ou divulguem informações confidenciais. É altamente eficaz porque explora preconceitos de confiança, urgência, obediência à autoridade ou confusão do utilizador."
   - question: "Como você evita a fadiga do MFA e os ataques de phishing?"
     answer: "Usar chaves físicas FIDO2/WebAuthn em vez de SMS genéricos ou códigos push, adotar políticas rigorosas de verificação dupla para solicitações incomuns e reforçar a conscientização da equipe sobre segurança."
+
 ---
+
 # Human Hacking: Por que a engenharia social supera a criptografia matemática
 
 O famoso criptógrafo Bruce Schneier escreveu uma frase que resume perfeitamente o dilema da segurança moderna: *"A criptografia é matemática, e a matemática é perfeita. O software é escrito por humanos, e os humanos cometem erros. Mas a verdadeira segurança é uma questão de pessoas, e as pessoas são fáceis de enganar."*

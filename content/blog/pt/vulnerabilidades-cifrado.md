@@ -8,7 +8,9 @@ category: "Encriptación"
 tags: ["coração sangrando", "vulnerabilidades criptográficas", "casos históricos de segurança"]
 featured: false
 image: "/blogs/vulnerabilidades-cifrado.webp"
+
 ---
+
 # Famosas vulnerabilidades em criptografia: casos que marcaram história
 
 Ao longo da história digital, diversas falhas de implementação desafiaram a confiança na criptografia.

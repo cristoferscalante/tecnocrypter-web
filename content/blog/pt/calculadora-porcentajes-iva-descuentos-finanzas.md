@@ -15,7 +15,9 @@ faqs:
     answer: "Para remover o IVA (por exemplo, 21%), você divide o preço final por US$ 1,21$ (ou US$ 1 + \text{tax}/100$). A diferença entre o preço original e esse resultado é o imposto cobrado."
   - question: "/*O que é aumento percentual?*/"
     answer: "Mede a mudança relativa entre um valor inicial e um valor final. É calculado subtraindo o valor inicial do valor final, dividindo pelo valor inicial e multiplicando por 100."
+
 ---
+
 # Matemática do dia a dia: como calcular percentagens, IVA e descontos online
 
 O cálculo de percentuais é uma das aplicações matemáticas mais utilizadas no dia a dia: na avaliação de ofertas em lojas comerciais, no cálculo de gorjetas, na estimativa de juros de um empréstimo ou na discriminação de impostos nas notas fiscais de compras.

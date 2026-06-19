@@ -14,8 +14,10 @@ faqs:
   - question: "/*What are the advantages of writing in Markdown over HTML?*/"
     answer: "Markdown avoids having to write dozens of cumbersome tags such as <h1>, <p> or <a> manually, allowing you to focus on writing and speeding up content creation."
   - question: "/*How do you convert a header in Markdown?*/"
-    answer: "pound signs (#) are used. A single hash represents a main heading \`<h1>\`, two represent a \`<h2>\`, and so on up to six levels."
+    answer: "pound signs (#) are used. A single hash represents a main heading `<h1>`, two represent a `<h2>`, and so on up to six levels."
+
 ---
+
 # Simplified formatting: How to convert Markdown texts to clean HTML code
 
 Writing technical documentation, blog articles, and rich emails requires a valid HTML structure to be processed by browsers. Writing HTML code directly, however, is slow and prone to typos.

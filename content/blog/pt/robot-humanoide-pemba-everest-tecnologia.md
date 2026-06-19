@@ -8,7 +8,9 @@ category: "noticias"
 tags: ["robô humanóide", "Pemba", "Unidade G1", "Everest", "robótica extrema", "tecnologia"]
 featured: false
 image: "/blogs/robot-humanoide-pemba-everest-tecnologia.png"
+
 ---
+
 #Pemba, o robô humanóide que conquistou os Andes e agora aponta para o Everest
 
 A robótica de alta montanha deu um salto colossal. Em uma expedição histórica que desafia os limites da engenharia e da física, o robô humanóide **Pemba** alcançou com sucesso o cume do **vulcão Chimborazo** no Equador, atingindo uma altitude recorde de **6.263 metros acima do nível do mar**.

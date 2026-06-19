@@ -14,8 +14,10 @@ faqs:
   - question: "/*Quels sont les avantages d'écrire en Markdown par rapport au HTML ?*/"
     answer: "Markdown évite d'avoir à écrire manuellement des dizaines de balises encombrantes telles que <h1>, <p> ou <a>, vous permettant ainsi de vous concentrer sur l'écriture et d'accélérer la création de contenu."
   - question: "/*Comment convertir un en-tête dans Markdown ?*/"
-    answer: "des signes dièse (#) sont utilisés. Un seul hachage représente un en-tête principal \`<h1>\`, deux représentent un \`<h2>\`, et ainsi de suite jusqu'à six niveaux."
+    answer: "des signes dièse (#) sont utilisés. Un seul hachage représente un en-tête principal `<h1>`, deux représentent un `<h2>`, et ainsi de suite jusqu'à six niveaux."
+
 ---
+
 # Formatage simplifié : Comment convertir des textes Markdown en code HTML propre
 
 La rédaction de documentation technique, d'articles de blog et d'e-mails riches nécessite une structure HTML valide pour être traitée par les navigateurs. Cependant, l'écriture directe de code HTML est lente et sujette aux fautes de frappe.

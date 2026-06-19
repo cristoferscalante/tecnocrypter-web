@@ -1,4 +1,5 @@
 ---
+
 title: "Evasión del Fingerprinting: Cómo usar User-Agents para proteger tu privacidad de navegación"
 excerpt: "Aprende qué es la cabecera User-Agent, cómo los sitios web la utilizan para identificarte y cómo alterarla ayuda a mitigar el rastreo en línea."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Al combinarse con otras variables (como resolución de pantalla y tipografías), los rastreadores construyen una huella digital única (fingerprint) para identificarte sin usar cookies."
   - question: "¿Por qué cambiar o alternar mi User-Agent?"
     answer: "Permite simular que estás navegando desde un dispositivo o sistema diferente, confundiendo a los algoritmos de tracking y permitiendo acceder a versiones web restringidas."
+
 ---
 
 # Evasión del Fingerprinting: Cómo usar User-Agents para proteger tu privacidad de navegación

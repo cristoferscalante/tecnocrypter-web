@@ -1,4 +1,5 @@
 ---
+
 title: "Código limpio en bases de datos: Cómo formatear y embellecer consultas SQL"
 excerpt: "Descubre los principios de la legibilidad en el código SQL y cómo el formato estructurado reduce las posibilidades de cometer errores lógicos."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "No. Los motores de bases de datos eliminan los espacios en blanco innecesarios antes de compilar y optimizar el plan de ejecución de la consulta. La mejora es puramente de legibilidad humana."
   - question: "/*¿Qué reglas estándar se aplican al formatear SQL?*/"
     answer: "Escribir las palabras clave en mayúsculas (SELECT, FROM, JOIN, WHERE), tabular los parámetros y organizar cada sección de filtro en líneas independientes para fácil lectura."
+
 ---
 
 # Código limpio en bases de datos: Cómo formatear y embellecer consultas SQL

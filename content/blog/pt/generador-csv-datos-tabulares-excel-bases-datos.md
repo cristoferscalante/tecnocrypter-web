@@ -14,8 +14,10 @@ faqs:
   - question: "/*Por que o Excel tem problemas para abrir determinados arquivos CSV?*/"
     answer: "Isso ocorre devido a diferenças no delimitador regional (alguns países usam ponto e vírgula em vez de vírgulas) ou inconsistências na codificação de caracteres (por exemplo, UTF-8 com ou sem BOM)."
   - question: "/*Como faço para escapar caracteres especiais em um arquivo CSV?*/"
-    answer: "Se um campo de texto contiver o delimitador (por exemplo, uma vírgula) ou uma quebra de linha, todo o campo deverá ser colocado entre aspas duplas (\\") para que o analisador não o quebre ao lê-lo."
+    answer: "Se um campo de texto contiver o delimitador (por exemplo, uma vírgula) ou uma quebra de linha, todo o campo deverá ser colocado entre aspas duplas (\") para que o analisador não o quebre ao lê-lo."
+
 ---
+
 # Manipulação de planilha: criação e exportação de arquivos CSV
 
 O formato **CSV** (*Valores separados por vírgula*) é o método mais difundido e universal para migrar e trocar conjuntos de dados tabulares entre diferentes aplicativos de planilhas (como Microsoft Excel ou Planilhas Google) e bancos de dados relacionais.

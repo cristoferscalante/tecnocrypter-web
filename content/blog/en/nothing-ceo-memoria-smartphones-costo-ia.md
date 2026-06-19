@@ -15,7 +15,9 @@ faqs:
     answer: "Large technology companies and data centers dedicated to AI monopolize the manufacturing capacity of DRAM and HBM memory. This reduces the supply available for mobile devices and raises prices globally."
   - question: "What mobile phone components have become more expensive?"
     answer: "Random access memory (RAM) and physical storage (NAND Flash). The CEO of Nothing indicates that today memory can represent more than 50% of the total hardware cost of a phone."
+
 ---
+
 # Memory is the new king of cost: Carl Pei explains why mobile phones are rising in price
 
 The mobile phone market is facing a silent but devastating paradigm shift for the user's pocket. **Carl Pei**, the media CEO and founder of the technology firm **Nothing**, has raised his voice to warn about a structural crisis: **memory chips (DRAM and NAND Flash) already cost more than the processor and the screen combined**.

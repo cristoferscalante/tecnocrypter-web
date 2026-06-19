@@ -8,7 +8,9 @@ category: "noticias"
 tags: ["IA", "job", "productivity", "future"]
 featured: true
 image: "/blogs/semana-laboral-ia.webp"
+
 ---
+
 ## Will the 4-Day Workweek Arrive in 2040? AI Makes It Possible
 
 A ChatGPT experiment suggests that advanced task automation will allow the four-day work week to be established globally by 2040, although sectors such as education and logistics could maintain five days due to operational requirements. [Source: Inc.com](https://www.inc.com)

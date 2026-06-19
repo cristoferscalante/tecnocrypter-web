@@ -15,7 +15,9 @@ faqs:
     answer: "The main limits are: Twitter (280 characters), Instagram (2,200 in captions), LinkedIn (3,000 in posts), and Facebook (63,206)."
   - question: "/*What is the average human reading speed?*/"
     answer: "The average reading speed for an adult is 200 to 250 words per minute, useful information for calculating the estimated reading time of your articles."
+
 ---
+
 # Strategic writing: Tools to count words and respect SEO limits
 
 When creating digital content (whether writing persuasive copy for social networks or writing meta tags to optimize the SEO of an article), the length of your texts is not optional.

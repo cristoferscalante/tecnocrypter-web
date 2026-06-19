@@ -15,7 +15,9 @@ faqs:
     answer: "Ela está projetando chips ASIC e aceleradores de IA em colaboração com a TSMC, otimizados para cargas de trabalho específicas em seus enormes data centers."
   - question: "Como o aumento de preços da Intel e da AMD afeta o mercado de tecnologia?"
     answer: "Força as megacorporações da Internet (hiperscalers) a internalizar o design do silício, acelerando a fragmentação do mercado e o declínio do modelo x86 tradicional em favor do ARM e de arquiteturas personalizadas."
+
 ---
+
 # Rebelião no silício: ByteDance fabricará seus próprios chips para fugir dos preços da Intel e AMD
 
 A escalada dos preços no mercado de semicondutores está a forçar os gigantes da Internet a tomar medidas extremas. **ByteDance**, empresa controladora chinesa da TikTok, iniciou um ambicioso programa para desenvolver seus próprios microprocessadores para seus data centers em parceria com o fabricante taiwanês de chips **TSMC**. 

@@ -13,7 +13,9 @@ seo:
   metaTitle: "Rastreo Web: Cookies y Browser Fingerprinting | TecnoCrypter"
   metaDescription: "Descubre cómo los sitios web crean un perfil de tu navegador mediante cookies y huella digital (fingerprinting). Herramientas de análisis local."
   keywords: "cookies de rastreo, browser fingerprinting, huella digital navegador, analizar cookies, privacidad web"
+
 ---
+
 # Cookies, Fingerprints and Telemetry: How Websites Track Your Activity and How to Avoid It
 
 ## Introduction

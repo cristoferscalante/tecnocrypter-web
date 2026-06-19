@@ -15,7 +15,9 @@ faqs:
     answer: "É uma técnica de intrusão na qual o invasor compromete uma ferramenta, biblioteca ou dependência legítima de terceiros para infectar todos os desenvolvedores e usuários finais que a baixam."
   - question: "Como os desenvolvedores podem proteger suas dependências?"
     answer: "Usando ferramentas de verificação de dependência estática (SCA), bloqueando versões específicas usando arquivos de bloqueio, auditando automaticamente assinaturas digitais e desativando scripts pós-instalação não verificados."
+
 ---
+
 # Cavalos de Tróia generativos: IA automatiza envenenamento de repositórios na cadeia de suprimentos de software
 
 O software moderno não é escrito do zero. Ele é montado usando blocos de construção existentes: bibliotecas de código aberto e dependências hospedadas em repositórios públicos como **NPM** (para Node.js) e **PyPI** (para Python). 

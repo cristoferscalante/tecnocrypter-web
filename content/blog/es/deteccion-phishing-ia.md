@@ -1,4 +1,5 @@
 ---
+
 title: "Cómo Detectar Correos Falsos y Phishing en la Era de la IA: Guía Defensiva"
 description: "Análisis de cómo los atacantes usan la IA generativa para redactar correos de phishing hiperrealistas y cómo defenderse mediante análisis de cabeceras y verificación de enlaces."
 author: "Equipo de Seguridad TecnoCrypter"
@@ -12,6 +13,7 @@ seo:
   metaTitle: "Detectar Phishing con IA | Guía de Ciberseguridad TecnoCrypter"
   metaDescription: "Aprende a detectar ataques de phishing avanzados creados por IA. Guía práctica para analizar correos y verificar enlaces maliciosos."
   keywords: "phishing IA, analizar cabeceras email, detectar correo falso, verificar URL, seguridad correo"
+
 ---
 
 # Cómo Detectar Correos Falsos y Phishing en la Era de la IA: Guía Defensiva
@@ -23,7 +25,6 @@ En 2026, la proliferación de modelos de lenguaje avanzados (LLM) ha cambiado po
 Frente a esta sofisticación, confiar únicamente en la intuición visual es insuficiente. Debemos adoptar un enfoque técnico y metodológico apoyado en herramientas avanzadas de análisis.
 
 ---
-
 ## La Weaponización de la IA en los Ataques de Phishing
 
 La IA permite a los ciberdelincuentes escalar y refinar sus ataques de formas antes imposibles:
@@ -38,7 +39,6 @@ Flujo de un Ataque de Phishing con IA:
 ```
 
 ---
-
 ## Estrategias Técnicas de Detección
 
 Para no caer en la trampa, debemos auditar dos pilares fundamentales de cada correo sospechoso: **la cabecera del correo** y **los enlaces incluidos**.
@@ -78,7 +78,6 @@ Antes de interactuar:
 Para verificar la seguridad de cualquier enlace sin exponerte, puedes utilizar nuestro [Verificador de URLs de TecnoCrypter](/tools/verificador). Esta utilidad escanea el enlace a través de bases de datos de amenazas conocidas y analiza la reputación del dominio en tiempo real para alertarte si es malicioso.
 
 ---
-
 ## Checklist Rápido para Evitar Phishing
 
 *   [ ] ¿El remitente visible coincide exactamente con la dirección de correo real?

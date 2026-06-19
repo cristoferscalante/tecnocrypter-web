@@ -8,7 +8,9 @@ category: "noticias"
 tags: ["humanoid robot", "pemba", "Unitree G1", "Everest", "extreme robotics", "technology"]
 featured: false
 image: "/blogs/robot-humanoide-pemba-everest-tecnologia.png"
+
 ---
+
 # Pemba, the humanoid robot that conquered the Andes and now aims for Everest
 
 High mountain robotics have taken a colossal leap. In a historic expedition that challenges the limits of engineering and physics, the humanoid robot **Pemba** has successfully reached the summit of the **Chimborazo volcano** in Ecuador, reaching a record altitude of **6,263 meters above sea level**.

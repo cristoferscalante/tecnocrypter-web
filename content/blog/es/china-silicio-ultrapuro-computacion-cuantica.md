@@ -1,4 +1,5 @@
 ---
+
 title: "China da un paso decisivo hacia la autonomía cuántica con silicio ultrapuro"
 excerpt: "Por primera vez, institutos nucleares en China producen silicio-28 ultrapuro de grado cuántico, rompiendo el monopolio de suministro extranjero de isótopos clave."
 date: "2026-06-17"
@@ -14,6 +15,7 @@ faqs:
     answer: "El silicio natural genera interferencias magnéticas que destruyen la coherencia cuántica de los qubits. El silicio-28 crea un entorno de 'ruido cero' magnético, extendiendo drásticamente la vida útil de los qubits y reduciendo errores de procesamiento."
   - question: "¿Qué significa este avance para la soberanía tecnológica de China?"
     answer: "Hasta ahora, la producción mundial de silicio-28 dependía casi en su totalidad de Rusia y de infraestructuras europeas. Producirlo domésticamente asegura que China puede fabricar sus propios procesadores cuánticos a escala sin temor a bloqueos comerciales."
+
 ---
 
 # China da un paso decisivo hacia la autonomía cuántica con silicio ultrapuro
@@ -49,7 +51,6 @@ El bloqueo comercial y las crecientes tensiones geopolíticas hacían temer a Be
 Este hito allana el camino para que plataformas cuánticas nacionales, como la serie superconductora *Origin Wukong*, den el salto hacia arquitecturas basadas en silicio, beneficiándose de las líneas de producción de semiconductores tradicionales ya existentes.
 
 ---
-
 ## Preguntas Frecuentes (FAQ)
 
 ### ¿Qué es el silicio ultrapuro (silicio-28)?

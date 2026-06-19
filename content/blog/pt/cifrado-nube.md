@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["criptografia em nuvem", "segurança na nuvem", "ferramentas de criptografia", "Conhecimento Zero"]
 featured: false
 image: "/blogs/Como_cifrar_tus_datos_en_la_nube.webp"
+
 ---
+
 # Como criptografar seus dados na nuvem: melhores ferramentas e práticas
 
 A nuvem é prática, mas também expõe nossos arquivos caso não sejam utilizadas boas práticas. A criptografia é sua melhor aliada para manter a privacidade.

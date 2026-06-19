@@ -1,4 +1,5 @@
 ---
+
 title: "El talón de Aquiles de la IA: La crisis de suministro y el colosal consumo eléctrico de los chips NVIDIA Blackwell"
 excerpt: "Los retrasos en la producción de los superchips Blackwell de NVIDIA y los brutales requisitos eléctricos de sus racks amenazan con frenar los planes de los hiperescaladores de la nube."
 date: "2026-06-18"
@@ -14,6 +15,7 @@ faqs:
     answer: "Porque un único rack de Blackwell B200 puede consumir hasta 120 kilovatios de potencia, generando un calor extremo que los ventiladores de aire tradicionales son incapaces de disipar."
   - question: "¿Cómo repercute este cuello de botella en los costes de las startups de IA?"
     answer: "Provoca esperas de hasta 9 meses para acceder a clusters de GPU e incrementa la tarifa de alquiler por hora de cómputo en la nube, encareciendo el entrenamiento de nuevos modelos."
+
 ---
 
 # El talón de Aquiles de la IA: La crisis de suministro y el colosal consumo eléctrico de los chips NVIDIA Blackwell

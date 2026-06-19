@@ -15,7 +15,9 @@ faqs:
     answer: "RSA é baseado na dificuldade de fatorar grandes números primos e requer chaves mais longas (por exemplo, 2.048 ou 4.096 bits). O ECDSA é baseado em curvas elípticas, oferecendo o mesmo nível de segurança com chaves muito menores e mais rápidas."
   - question: "É seguro gerar chaves SSH ou OpenSSL online?"
     answer: "Somente se forem gerados localmente no seu navegador usando a API JavaScript Web Crypto, sem enviar as chaves para nenhum servidor. Nossa ferramenta funciona sob este princípio de segurança local."
+
 ---
+
 # Criptografia assimétrica: geração segura de pares de chaves RSA e ECDSA localmente
 
 A base da segurança moderna da Internet (de certificados HTTPS a conexões SSH e transações blockchain) reside na criptografia **assimétrica** ou de chave pública.

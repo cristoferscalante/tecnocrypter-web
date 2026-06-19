@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["cloud encryption", "cloud security", "encryption tools", "Zero Knowledge"]
 featured: false
 image: "/blogs/Como_cifrar_tus_datos_en_la_nube.webp"
+
 ---
+
 # How to encrypt your data in the cloud: best tools and practices
 
 The cloud is practical, but it also exposes our files if good practices are not used. Encryption is your best ally to maintain privacy.

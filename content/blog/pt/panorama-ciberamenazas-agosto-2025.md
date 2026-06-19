@@ -8,7 +8,9 @@ category: "seguridad"
 tags: ["ameaças cibernéticas", "vulnerabilidades", "ransomware", "malware"]
 featured: false
 image: "/blogs/panorama_de_ciberamenazas.webp"
+
 ---
+
 # Cenário de ameaças cibernéticas: vulnerabilidades e ataques em destaque para agosto de 2025
 
 A CronUp, empresa especializada em segurança cibernética, publica newsletters que compilam notícias sobre alertas de segurança, vulnerabilidades e ataques cibernéticos. O feed de 27 de junho de 2025 explica que o objetivo é fornecer “uma ideia clara do cenário de ameaças, a evolução constante do crime cibernético e como ele afeta diferentes setores”. Nas entregas do início de agosto, destacam-se as seguintes tendências:

@@ -15,7 +15,9 @@ faqs:
     answer: "Ils regroupent des milliers de transactions en dehors du réseau principal Ethereum, génèrent une preuve ZK qui certifie sa validité et n'envoient que cette petite preuve au réseau principal, réduisant ainsi considérablement les frais de gaz."
   - question: "Pourquoi les tests ZK sont essentiels à la confidentialité financière ?"
     answer: "Ils vous permettent de vérifier qu'une transaction de cryptomonnaie est conforme aux règles du réseau (comme avoir un solde suffisant) sans avoir à rendre publics le solde de l'expéditeur, le solde du destinataire ou le montant exact dans le navigateur."
+
 ---
+
 # Le secret le mieux gardé d'Ethereum : comment les preuves à connaissance nulle (ZKP) protègent votre vie privée
 
 L’un des grands paradoxes de l’écosystème blockchain est que, bien qu’ils soient nés sous un idéal de souveraineté individuelle, les réseaux publics comme Bitcoin et Ethereum sont intrinsèquement hostiles à la vie privée. Chaque transaction, adresse et solde est exposé à la vue de n'importe qui dans le monde via un explorateur de blocs.

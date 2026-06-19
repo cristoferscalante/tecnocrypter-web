@@ -14,8 +14,10 @@ faqs:
   - question: "/*Pourquoi Excel a-t-il des problèmes pour ouvrir certains fichiers CSV ?*/"
     answer: "Cela se produit en raison de différences dans le délimiteur régional (certains pays utilisent des points-virgules au lieu de virgules) ou d'incohérences dans le codage des caractères (par exemple UTF-8 avec ou sans nomenclature)."
   - question: "/*Comment puis-je échapper les caractères spéciaux dans un fichier CSV ?*/"
-    answer: "Si un champ de texte contient un délimiteur (par exemple une virgule) ou un saut de ligne, ce champ entier doit être entouré de guillemets doubles (\\") afin que l'analyseur ne le brise pas lors de sa lecture."
+    answer: "Si un champ de texte contient un délimiteur (par exemple une virgule) ou un saut de ligne, ce champ entier doit être entouré de guillemets doubles (\") afin que l'analyseur ne le brise pas lors de sa lecture."
+
 ---
+
 # Manipulation de feuilles de calcul : création et exportation de fichiers CSV
 
 Le format **CSV** (*Comma-Separated Values*) est la méthode la plus répandue et la plus universelle pour migrer et échanger des ensembles de données tabulaires entre différentes applications de tableur (telles que Microsoft Excel ou Google Sheets) et bases de données relationnelles.

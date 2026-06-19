@@ -15,7 +15,9 @@ faqs:
     answer: "Se o dispositivo não tiver um elemento seguro de nível bancário e o hacker tiver acesso físico direto junto com equipamentos de laboratório avançados, eles poderão monitorar os sinais elétricos para deduzir a semente de recuperação."
   - question: "Como os chips Secure Element protegem as carteiras?"
     answer: "Os chips Secure Element (como aqueles usados ​​em cartões de crédito) incorporam contramedidas físicas ativas, como a adição de ruído elétrico aleatório e blindagens físicas que impedem medições estáveis."
+
 ---
+
 # Pontos fortes violados: como os ataques de canal lateral desafiam a segurança das carteiras de hardware
 
 Carteiras de hardware (ou carteiras frias) são consideradas o padrão ouro para armazenar criptomoedas com segurança. Ao manter as chaves privadas completamente isoladas da Internet, elas neutralizam ataques de malware, cavalos de Tróia ou acesso remoto. No entanto, não existe segurança absoluta. Quando um invasor consegue colocar fisicamente as mãos no dispositivo, as regras do jogo mudam completamente.

@@ -8,7 +8,9 @@ category: "criptomonedas"
 tags: ["tendencies", "market", "investments"]
 featured: true
 image: "/blogs/tendencias_crypto_2025.webp"
+
 ---
+
 # Trends in Cryptocurrencies for 2025
 
 The year 2025 promises to be transformative for the cryptocurrency ecosystem. From institutional adoption to technological innovations, we explore the trends that will shape the financial future.

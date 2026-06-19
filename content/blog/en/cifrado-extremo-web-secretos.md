@@ -13,7 +13,9 @@ seo:
   metaTitle: "Cifrado de Extremo a Extremo en la Web | TecnoCrypter"
   metaDescription: "Aprende a proteger tus secretos en tránsito. Cómo cifrar datos localmente antes de enviarlos y cómo analizar JWT de manera segura."
   keywords: "cifrado online, cifrado extremo a extremo, decodificar JWT local, generador de claves, cifrado simétrico"
+
 ---
+
 # End-to-End Encryption on the Web: Protecting Data and Secrets in Transit
 
 ## Introduction

@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["E2E", "end to end encryption", "digital security", "signal", "WhatsApp"]
 featured: true
 image: "/blogs/cifrado_extremo_a_extremo.webp"
+
 ---
+
 # What is end-to-end encryption and why it is essential today
 
 End-to-end encryption (E2E) is a security technique that protects data throughout its journey: from the moment it leaves the sender until it reaches the receiver, without the possibility of being read by intermediaries, not even by the service's own servers.

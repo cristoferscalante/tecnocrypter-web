@@ -1,4 +1,5 @@
 ---
+
 title: "Manipulación de hojas de cálculo: Creación y exportación de archivos CSV"
 excerpt: "Descubre el estándar CSV para almacenar datos estructurados en texto plano y aprende cómo importar y exportar tablas de forma compatible."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Ocurre debido a diferencias en el delimitador regional (algunos países usan punto y coma en lugar de comas) o a inconsistencias en la codificación de caracteres (ej. UTF-8 con o sin BOM)."
   - question: "/*¿Cómo se escapan los caracteres especiales en un archivo CSV?*/"
     answer: "Si un campo de texto contiene el delimitador (ej. una coma) o un salto de línea, ese campo completo debe ir envuelto entre comillas dobles (\") para que el parser no lo rompa al leerlo."
+
 ---
 
 # Manipulación de hojas de cálculo: Creación y exportación de archivos CSV

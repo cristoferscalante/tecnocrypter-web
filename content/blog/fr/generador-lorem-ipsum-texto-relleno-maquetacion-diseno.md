@@ -15,7 +15,9 @@ faqs:
     answer: "Pour que l'évaluateur d'un design puisse se concentrer sur la composition typographique, la répartition spatiale et les couleurs, au lieu d'être distrait par la lecture et l'interprétation du contenu du texte."
   - question: "/*Quels problèmes une mauvaise utilisation du Lorem Ipsum peut-elle causer ?*/"
     answer: "Il peut masquer les besoins réels en espace si les textes réels finaux sont nettement plus longs ou plus courts que le remplissage simulé, il doit donc être combiné avec des tests de contenu réel."
+
 ---
+
 # Conception et mise en page : L'utilisation correcte du texte de remplissage (Lorem Ipsum)
 
 Dans la mise en page des journaux, la conception graphique et le développement d'interfaces utilisateur (**UI/UX**), l'utilisation de texte fictif est une norme de l'industrie. Le texte de remplissage le plus connu au monde est sans aucun doute **Lorem Ipsum**.

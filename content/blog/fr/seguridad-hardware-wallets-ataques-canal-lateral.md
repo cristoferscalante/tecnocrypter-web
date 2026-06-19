@@ -15,7 +15,9 @@ faqs:
     answer: "Si l'appareil ne dispose pas d'un élément sécurisé de niveau bancaire et que le pirate informatique dispose d'un accès physique direct ainsi que d'un équipement de laboratoire avancé, il pourrait surveiller les signaux électriques pour en déduire la graine de récupération."
   - question: "Comment les puces Secure Element protègent-elles les portefeuilles ?"
     answer: "Les puces Secure Element (comme celles utilisées dans les cartes de crédit) intègrent des contre-mesures physiques actives, telles que l'ajout de bruit électrique aléatoire et de boucliers physiques qui empêchent les mesures stables."
+
 ---
+
 # Points forts violés : comment les attaques par canal secondaire remettent en question la sécurité des portefeuilles matériels
 
 Les portefeuilles matériels (ou portefeuilles froids) sont considérés comme la référence en matière de stockage en toute sécurité des crypto-monnaies. En gardant les clés privées complètement isolées d'Internet, ils neutralisent les attaques de malwares, de chevaux de Troie ou d'accès à distance. Cependant, la sécurité absolue n’existe pas. Lorsqu’un attaquant parvient à mettre physiquement la main sur l’appareil, les règles du jeu changent complètement.

@@ -15,7 +15,9 @@ faqs:
     answer: "Grandes empresas de tecnologia e data centers dedicados à IA monopolizam a capacidade de fabricação de memórias DRAM e HBM. Isto reduz a oferta disponível para dispositivos móveis e aumenta os preços a nível mundial."
   - question: "Quais componentes de telefones celulares ficaram mais caros?"
     answer: "Memória de acesso aleatório (RAM) e armazenamento físico (NAND Flash). O CEO da Nothing indica que hoje a memória pode representar mais de 50% do custo total de hardware de um telefone."
+
 ---
+
 # A memória é o novo rei do custo: Carl Pei explica por que o preço dos telefones celulares está subindo
 
 O mercado de telefonia móvel enfrenta uma mudança de paradigma silenciosa, mas devastadora para o bolso do usuário. **Carl Pei**, CEO de mídia e fundador da empresa de tecnologia **Nothing**, levantou a voz para alertar sobre uma crise estrutural: **chips de memória (DRAM e NAND Flash) já custam mais do que o processador e a tela juntos**.

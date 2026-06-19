@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["criptografia", "privacidade", "comunicações"]
 featured: true
 image: "/blogs/encriptacion_end_to_end.webp"
+
 ---
+
 # Criptografia ponta a ponta: a chave para comunicações seguras
 
 Na era digital de hoje, a privacidade das nossas comunicações é mais importante do que nunca. A criptografia ponta a ponta (E2EE) tornou-se o padrão ouro para proteger nossas conversas digitais.

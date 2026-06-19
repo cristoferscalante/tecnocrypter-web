@@ -1,4 +1,5 @@
 ---
+
 title: "Desconfianza inteligente: Por qué el encadenamiento de modelos es la defensa real contra las alucinaciones de la IA"
 excerpt: "Exponer directamente las respuestas crudas de los LLM es un riesgo de seguridad y fiabilidad. Así funciona la verificación mediante tuberías de modelos encadenados."
 date: "2026-06-18"
@@ -14,6 +15,7 @@ faqs:
     answer: "Permite que un segundo modelo audite los datos arrojados por el primero contrastándolos con una base de conocimientos verificada (RAG) o buscando contradicciones lógicas en el texto."
   - question: "¿Qué ventajas de seguridad ofrece frente a las respuestas directas?"
     answer: "Actúa como un firewall inteligente. Puede interceptar intentos de prompt injection, detectar la fuga de información confidencial (PII) y bloquear código malicioso autogenerado."
+
 ---
 
 # Desconfianza inteligente: Por qué el encadenamiento de modelos es la defensa real contra las alucinaciones de la IA

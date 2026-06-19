@@ -15,7 +15,9 @@ faqs:
     answer: "É uma credencial digital apoiada por criptografia de chave pública. Está vinculado ao controle biométrico do seu dispositivo (impressão digital ou rosto), evitando que terceiros o interceptem ou adivinhem."
   - question: "É possível fazer login sem senha se eu não tiver internet?"
     answer: "Sim, as chaves de acesso são armazenadas com segurança localmente no seu dispositivo (ou nas chaves da nuvem, como iCloud/Google Drive), permitindo a autenticação local sem a necessidade de uma conexão ativa com servidores externos."
+
 ---
+
 # O fim das senhas: Por que a decisão do Spotify de forçar o uso de senhas é um sucesso de segurança
 
 As senhas tradicionais estão mortas, embora muitos usuários ainda se recusem a enterrá-las. O último grande gigante digital a dar um passo definitivo em direção a esta nova era foi o **Spotify**. Em uma histórica atualização de segurança, a plataforma de streaming de áudio anunciou a implementação progressiva do acesso obrigatório por meio de **Passkeys** (chaves de acesso), eliminando a possibilidade de login com a antiga dupla de e-mail e senha.

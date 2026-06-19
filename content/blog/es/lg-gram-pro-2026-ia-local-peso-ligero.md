@@ -1,4 +1,5 @@
 ---
+
 title: "Ligereza extrema y NPU masiva: El LG gram Pro (2026) redefine la potencia de la IA en local"
 excerpt: "Analizamos el LG gram Pro (edición 2026). Descubre cómo integra una NPU de última generación de 50+ TOPS para procesamiento de IA sin sacrificar su chasis ultraligero."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Permite ejecutar modelos de lenguaje (LLMs), transcripciones en tiempo real y retoque fotográfico directamente en el portátil sin enviar datos a la nube, reduciendo la latencia y protegiendo tu privacidad."
   - question: "¿Cómo afecta el procesamiento en local a la duración de la batería?"
     answer: "A diferencia de las GPUs tradicionales, las NPUs son extremadamente eficientes, logrando prolongar la autonomía del LG gram Pro hasta las 22 horas de uso mixto incluso ejecutando procesos de IA en segundo plano."
+
 ---
 
 # Ligereza extrema y NPU masiva: El LG gram Pro (2026) redefine la potencia de la IA en local

@@ -8,7 +8,9 @@ category: "noticias"
 tags: ["SpaceX", "xAI", "Cursor", "Grok", "technological acquisition", "IA"]
 featured: true
 image: "/blogs/spacex-adquisicion-cursor-xai-grok.png"
+
 ---
+
 # SpaceX acquires Cursor for $60 billion: The ace up its sleeve to resurrect Grok
 
 In an unprecedented strategic move that has shaken the foundations of Silicon Valley, SpaceX has officially announced the acquisition of **Anysphere**, the startup behind the acclaimed intelligent code editor **Cursor**, for a staggering **$60 billion** in a transaction structured primarily in stock.

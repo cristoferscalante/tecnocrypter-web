@@ -15,7 +15,9 @@ faqs:
     answer: "Il permet à un deuxième modèle d'auditer les données renvoyées par le premier en les comparant à une base de connaissances vérifiée (RAG) ou en recherchant des contradictions logiques dans le texte."
   - question: "Quels avantages en matière de sécurité offre-t-il par rapport aux réponses directes ?"
     answer: "Agit comme un pare-feu intelligent. Il peut intercepter les tentatives d'injection rapides, détecter les fuites d'informations sensibles (PII) et bloquer le code malveillant auto-généré."
+
 ---
+
 # Méfiance intelligente : pourquoi le chaînage de modèles est la véritable défense contre les hallucinations de l'IA
 
 Faire aveuglément confiance à la première réponse générée par un grand modèle de langage (LLM) est une recette pour un désastre dans les environnements d'entreprise et de sécurité. Les LLM sont probabilistes et non déterministes ; Ils sont conçus pour deviner le mot le plus probable, ce qui conduit inévitablement à des hallucinations (des faits inventés qui semblent crédibles) et à des injections de code s'il n'y a pas de contrôle intermédiaire.

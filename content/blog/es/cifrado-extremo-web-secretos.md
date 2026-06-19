@@ -1,4 +1,5 @@
 ---
+
 title: "Cifrado de Extremo a Extremo en la Web: Protegiendo Datos y Secretos en Tránsito"
 description: "Buenas prácticas para evitar filtraciones de tokens JWT, claves de API y credenciales confidenciales en canales de comunicación no seguros usando cifrado simétrico local."
 author: "Equipo de Criptografía TecnoCrypter"
@@ -12,6 +13,7 @@ seo:
   metaTitle: "Cifrado de Extremo a Extremo en la Web | TecnoCrypter"
   metaDescription: "Aprende a proteger tus secretos en tránsito. Cómo cifrar datos localmente antes de enviarlos y cómo analizar JWT de manera segura."
   keywords: "cifrado online, cifrado extremo a extremo, decodificar JWT local, generador de claves, cifrado simétrico"
+
 ---
 
 # Cifrado de Extremo a Extremo en la Web: Protegiendo Datos y Secretos en Tránsito
@@ -23,7 +25,6 @@ En el día a día del trabajo colaborativo, tanto desarrolladores como usuarios 
 Aunque muchas de estas plataformas afirman cifrar sus datos, no siempre lo hacen "de extremo a extremo" con claves controladas por ti. Las corporaciones propietarias del servicio o un atacante que comprometa tu cuenta de mensajería podrían interceptar e inspeccionar estos secretos en tránsito. Para mitigar este riesgo, la criptografía simétrica local en la web es una herramienta fundamental.
 
 ---
-
 ## La Importancia del Cifrado de Extremo a Extremo (E2EE) Local
 
 El cifrado de extremo a extremo significa que la información es encriptada en el dispositivo de origen y solo se desencripta en el dispositivo de destino. Nadie en el medio (servidores de tránsito, proveedores de hosting o atacantes) puede leer los datos.
@@ -47,7 +48,6 @@ En nuestra plataforma ofrecemos la herramienta **[Cifrado Online](/tools/cifrado
 Para complementar la seguridad de este flujo, puedes utilizar nuestro **[Generador de Claves Criptográficas](/tools/generador-claves)** para obtener llaves de cifrado criptográficamente fuertes y aleatorias de diferentes longitudes (128, 256 o 512 bits) listas para tus despliegues o cifrados locales.
 
 ---
-
 ## El Riesgo de Inspeccionar Tokens JWT en Sitios Web de Terceros
 
 Los **JSON Web Tokens (JWT)** son el estándar de la industria para autenticar usuarios en aplicaciones web modernas. Un JWT contiene información sobre la sesión de un usuario (roles, ID de usuario, correos electrónicos y tiempos de expiración).
@@ -66,7 +66,6 @@ Para inspeccionar e interpretar tus JSON Web Tokens de forma segura, hemos desar
 Al igual que nuestras otras herramientas, realiza la decodificación en local. El token se procesa y desglosa en tu propio navegador en cuestión de milisegundos, permitiéndote auditar su cabecera, payload y firma sin exponer tus datos a internet.
 
 ---
-
 ## Tabla de Buenas Prácticas para Compartir Secretos
 
 | Qué NO Hacer | Qué HACER en su Lugar | Herramienta Recomendada |
@@ -77,7 +76,6 @@ Al igual que nuestras otras herramientas, realiza la decodificación en local. E
 | Compartir contraseñas y claves de descifrado en el mismo canal. | Separar los canales de transmisión (ej. texto cifrado por Slack, clave por llamada). | - |
 
 ---
-
 ## Conclusión
 
 La seguridad de la información confidencial en tránsito es responsabilidad directa de quienes la manejan. Al utilizar cifrado local simétrico y utilidades locales para auditar tokens de sesión, eliminas la dependencia de la confianza en los servidores intermedios de los chats y las aplicaciones de mensajería.

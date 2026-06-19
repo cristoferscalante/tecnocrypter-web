@@ -1,4 +1,5 @@
 ---
+
 title: "El lenguaje de la máquina: Conversión entre Hexadecimal, Binario y Decimal"
 excerpt: "Comprende la importancia de los sistemas numéricos base 2, base 10 y base 16 y aprende a realizar conversiones numéricas de manera lógica."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Es el sistema numérico de base 2, que utiliza únicamente los dígitos 0 y 1. Es el lenguaje natural de los transistores en la electrónica digital."
   - question: "¿Cómo convierto un número Hexadecimal a Binario?"
     answer: "Cada dígito hexadecimal se convierte directamente a su valor binario de 4 bits. Por ejemplo, el dígito '9' es '1001' y 'A' es '1010', por lo que '9A' en hexadecimal es '10011010' en binario."
+
 ---
 
 # El lenguaje de la máquina: Conversión entre Hexadecimal, Binario y Decimal

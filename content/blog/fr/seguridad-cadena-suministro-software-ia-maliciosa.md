@@ -15,7 +15,9 @@ faqs:
     answer: "Il s'agit d'une technique d'intrusion dans laquelle l'attaquant compromet un outil, une bibliothèque ou une dépendance tiers légitime pour infecter tous les développeurs et utilisateurs finaux qui le téléchargent."
   - question: "Comment les développeurs peuvent-ils sécuriser leurs dépendances ?"
     answer: "En utilisant des outils d'analyse des dépendances statiques (SCA), en verrouillant des versions spécifiques à l'aide de fichiers de verrouillage, en auditant automatiquement les signatures numériques et en désactivant les scripts de post-installation non vérifiés."
+
 ---
+
 # Chevaux de Troie génératifs : l'IA automatise l'empoisonnement des référentiels dans la chaîne d'approvisionnement logicielle
 
 Les logiciels modernes ne sont pas écrits à partir de zéro. Il est assemblé à l'aide de blocs de construction existants : bibliothèques open source et dépendances hébergées dans des référentiels publics tels que **NPM** (pour Node.js) et **PyPI** (pour Python). 

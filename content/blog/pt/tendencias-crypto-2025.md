@@ -8,7 +8,9 @@ category: "criptomonedas"
 tags: ["tendências", "mercado", "investimentos"]
 featured: true
 image: "/blogs/tendencias_crypto_2025.webp"
+
 ---
+
 # Tendências em criptomoedas para 2025
 
 O ano de 2025 promete ser transformador para o ecossistema das criptomoedas. Da adoção institucional às inovações tecnológicas, exploramos as tendências que moldarão o futuro financeiro.

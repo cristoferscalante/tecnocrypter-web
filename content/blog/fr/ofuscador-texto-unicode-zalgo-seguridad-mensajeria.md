@@ -15,7 +15,9 @@ faqs:
     answer: "Il vous permet de masquer les caractères du texte des algorithmes d'analyse automatique, de protéger les messages privés ou d'éviter la censure des mots clés dans les forums publics."
   - question: "Comment un ordinateur interprète-t-il le texte obscurci ?"
     answer: "Visuellement, cela peut paraître déformé, mais l'ordinateur lit les points de code Unicode individuels correspondant aux lettres de base d'origine."
+
 ---
+
 # Obscurcissement des caractères : l'art de cacher du texte avec Unicode et Zalgo
 
 La norme **Unicode** permet aux ordinateurs de représenter du texte dans presque toutes les langues et tous les symboles de la planète. Cependant, cette norme inclut des fonctionnalités avancées qui peuvent être utilisées à des fins créatives de confidentialité : **obscurcissement du texte**.

@@ -15,7 +15,9 @@ faqs:
     answer: "When combined with other variables (such as screen resolution and fonts), trackers build a unique fingerprint to identify you without using cookies."
   - question: "Why change or toggle my User-Agent?"
     answer: "It allows you to simulate that you are browsing from a different device or system, confusing tracking algorithms and allowing access to restricted web versions."
+
 ---
+
 # Fingerprinting Evasion: How to Use User-Agents to Protect Your Browsing Privacy
 
 Every time you access a website, your browser makes a formal presentation by sending a text header known as **User-Agent**. This string contains exact details about your computer's architecture, your operating system, and the exact version of your browser.

@@ -1,4 +1,5 @@
 ---
+
 title: "Más de 10,000 Empleos Desaparecen en 2025: ¿Estamos Listos para el Futuro?"
 excerpt: "En 2025 más de 10,000 empleos se perdieron por automatización e IA. Descubre cómo el gobierno de Karnataka y las empresas están diseñando programas de re-capacitación para afrontar este desafío."
 date: "2025-01-20"
@@ -7,6 +8,7 @@ category: "noticias"
 tags: ["pérdida de empleos 2025", "automatización e IA", "recortes laborales por IA", "re-skilling Karnataka", "brecha de habilidades"]
 featured: true
 image: "/blogs/impacto-ia-empleos-2025.webp"
+
 ---
 
 # Más de 10,000 Empleos Desaparecen en 2025: ¿Estamos Listos para el Futuro?

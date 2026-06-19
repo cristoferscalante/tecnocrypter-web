@@ -1,4 +1,5 @@
 ---
+
 title: "SpaceX adopta Cursor como programador: La carrera espacial ahora depende de la autonomía de los agentes"
 excerpt: "La compañía de Elon Musk integra el entorno de desarrollo Cursor en sus equipos de ingeniería de software para optimizar la codificación de telemetría y sistemas de tierra."
 date: "2026-06-18"
@@ -14,6 +15,7 @@ faqs:
     answer: "Carecen de la capacidad de razonamiento lógico y determinista puro que se requiere para garantizar la seguridad en tiempo real. Un error en el código de control de actitud de un cohete puede destruir la misión."
   - question: "¿Por qué es crítico el determinismo en el desarrollo de software espacial?"
     answer: "Porque el software aeroespacial debe comportarse exactamente igual en cada ejecución. Los modelos probabilísticos de IA pueden alucinar, lo que los hace inadecuados para el software de a bordo crítico."
+
 ---
 
 # SpaceX adopta Cursor como programador: La carrera espacial ahora depende de la autonomía de los agentes

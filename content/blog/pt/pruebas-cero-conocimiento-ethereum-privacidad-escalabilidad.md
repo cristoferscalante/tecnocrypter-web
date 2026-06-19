@@ -15,7 +15,9 @@ faqs:
     answer: "Eles agregam milhares de transações fora da rede principal Ethereum, geram uma prova ZK que certifica sua validade e enviam apenas essa pequena prova para a rede principal, reduzindo drasticamente as taxas de gás."
   - question: "Por que o teste ZK é essencial para a privacidade financeira?"
     answer: "Eles permitem que você verifique se uma transação de criptomoeda está em conformidade com as regras da rede (como ter saldo suficiente) sem ter que tornar público o saldo do remetente, o saldo do destinatário ou o valor exato no navegador."
+
 ---
+
 # O segredo mais bem guardado da Ethereum: como as provas de conhecimento zero (ZKPs) protegem sua privacidade
 
 Um dos grandes paradoxos do ecossistema blockchain é que, apesar de terem nascido sob um ideal de soberania individual, redes públicas como Bitcoin e Ethereum são inerentemente hostis à privacidade. Cada transação, endereço e saldo são expostos à visão de qualquer pessoa no mundo através de um explorador de blocos.

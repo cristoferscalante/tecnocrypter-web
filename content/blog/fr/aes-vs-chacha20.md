@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["AES", "ChaCha20", "comparaison de chiffrement", "sécurité cryptographique"]
 featured: false
 image: "/blogs/AES-vs-ChaCha20.webp"
+
 ---
+
 # AES vs ChaCha20 : différences, avantages et quand utiliser chacun
 
 **AES** et **ChaCha20** sont tous deux des algorithmes de chiffrement symétriques, mais ils diffèrent par leur structure, leurs performances et leur résistance à certaines attaques.

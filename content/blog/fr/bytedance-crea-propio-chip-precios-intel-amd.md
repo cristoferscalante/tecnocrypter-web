@@ -15,7 +15,9 @@ faqs:
     answer: "Elle conçoit des puces ASIC et des accélérateurs d'IA en collaboration avec TSMC, optimisés pour des charges de travail spécifiques dans ses immenses centres de données."
   - question: "Comment la hausse des prix d’Intel et d’AMD affecte-t-elle le marché technologique ?"
     answer: "Cela oblige les mégacorporations Internet (hyperscalers) à internaliser la conception du silicium, accélérant ainsi la fragmentation du marché et le déclin du modèle x86 traditionnel au profit d’ARM et d’architectures personnalisées."
+
 ---
+
 # Rébellion dans le silicium : ByteDance va fabriquer ses propres puces pour échapper aux prix d'Intel et d'AMD
 
 La flambée des prix sur le marché des semi-conducteurs oblige les géants de l’Internet à prendre des mesures extrêmes. **ByteDance**, la société mère chinoise de TikTok, a lancé un programme ambitieux visant à développer ses propres microprocesseurs pour ses centres de données en partenariat avec le fabricant de puces taïwanais **TSMC**. 

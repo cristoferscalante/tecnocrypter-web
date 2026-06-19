@@ -1,4 +1,5 @@
 ---
+
 title: "Cómo Detectar y Prevenir Ataques de Phishing Avanzados"
 excerpt: "Guía completa para identificar y protegerte contra las técnicas de phishing más sofisticadas."
 date: "2025-01-08"
@@ -7,6 +8,7 @@ category: "seguridad"
 tags: ["phishing", "ciberseguridad", "prevención"]
 featured: false
 image: "/blogs/ataques_phishing_avanzados.webp"
+
 ---
 
 # Cómo Detectar y Prevenir Ataques de Phishing Avanzados

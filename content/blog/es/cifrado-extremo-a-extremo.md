@@ -1,4 +1,5 @@
 ---
+
 title: "Qué es el cifrado de extremo a extremo y por qué es esencial hoy"
 excerpt: "El cifrado de extremo a extremo garantiza que solo emisor y receptor puedan leer los mensajes. Descubre cómo funciona y por qué apps como Signal o WhatsApp lo adoptan."
 date: "2025-09-24"
@@ -7,6 +8,7 @@ category: "encriptacion"
 tags: ["E2E", "cifrado extremo a extremo", "seguridad digital", "Signal", "WhatsApp"]
 featured: true
 image: "/blogs/cifrado_extremo_a_extremo.webp"
+
 ---
 
 # Qué es el cifrado de extremo a extremo y por qué es esencial hoy

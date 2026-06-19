@@ -15,7 +15,9 @@ faqs:
     answer: "Il vous permet d'exécuter des modèles linguistiques (LLM), une transcription en temps réel et des retouches de photos directement sur l'ordinateur portable sans envoyer de données vers le cloud, réduisant ainsi la latence et protégeant votre vie privée."
   - question: "Comment le traitement local affecte-t-il la durée de vie de la batterie ?"
     answer: "Contrairement aux GPU traditionnels, les NPU sont extrêmement efficaces, parvenant à étendre l'autonomie du LG gram Pro jusqu'à 22 heures d'utilisation mixte, même en exécutant des processus d'IA en arrière-plan."
+
 ---
+
 # Légèreté extrême et NPU massif : Le LG gram Pro (2026) redéfinit la puissance de l'IA locale
 
 L'obsession historique de LG de fabriquer les ordinateurs portables les plus légers de la planète a franchi une nouvelle étape technique dans sa gamme **LG gram Pro (2026)**. Ce qui obligeait autrefois les professionnels à choisir entre un poids plume ou une puissance de calcul brute pour les tâches d'intelligence artificielle est aujourd'hui fusionné dans un appareil pesant seulement **1,09 kg** équipé d'un moteur d'accélération neuronale de pointe.

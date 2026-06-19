@@ -15,7 +15,9 @@ faqs:
     answer: "RSA est basé sur la difficulté de factoriser de grands nombres premiers et nécessite des clés plus longues (par exemple 2048 ou 4096 bits). ECDSA est basé sur des courbes elliptiques, offrant le même niveau de sécurité avec des clés beaucoup plus petites et plus rapides."
   - question: "Est-il sécuritaire de générer des clés SSH ou OpenSSL en ligne ?"
     answer: "Uniquement s'ils sont générés localement dans votre navigateur à l'aide de l'API JavaScript Web Crypto, sans envoyer les clés à aucun serveur. Notre outil fonctionne selon ce principe de sécurité locale."
+
 ---
+
 # Cryptographie asymétrique : génération sécurisée de paires de clés RSA et ECDSA en local
 
 Le fondement de la sécurité Internet moderne (des certificats HTTPS aux connexions SSH et aux transactions blockchain) réside dans la cryptographie **asymétrique** ou à clé publique.

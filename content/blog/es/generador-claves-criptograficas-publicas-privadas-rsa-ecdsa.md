@@ -1,4 +1,5 @@
 ---
+
 title: "Criptografía asimétrica: Generación segura de pares de claves RSA y ECDSA en local"
 excerpt: "Entiende los principios de la criptografía asimétrica y aprende las diferencias entre los algoritmos de firmas RSA y ECDSA."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "RSA se basa en la dificultad de factorizar números primos grandes y requiere claves más largas (ej. 2048 o 4096 bits). ECDSA se basa en curvas elípticas, ofreciendo el mismo nivel de seguridad con claves mucho más pequeñas y rápidas."
   - question: "¿Es seguro generar claves SSH u OpenSSL online?"
     answer: "Solo si se generan de manera local en tu navegador mediante la API Web Crypto de JavaScript, sin enviar las claves a ningún servidor. Nuestra herramienta funciona bajo este principio de seguridad local."
+
 ---
 
 # Criptografía asimétrica: Generación segura de pares de claves RSA y ECDSA en local

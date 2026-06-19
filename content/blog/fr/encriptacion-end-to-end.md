@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["cryptage", "confidentialité", "communications"]
 featured: true
 image: "/blogs/encriptacion_end_to_end.webp"
+
 ---
+
 # Chiffrement de bout en bout : la clé des communications sécurisées
 
 À l’ère numérique d’aujourd’hui, la confidentialité de nos communications est plus importante que jamais. Le chiffrement de bout en bout (E2EE) est devenu la référence en matière de protection de nos conversations numériques.

@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["history of encryption", "Caesar figure", "modern cryptography", "post quantum"]
 featured: false
 image: "/blogs/Historia_del_cifrado_quantum-safe.webp"
+
 ---
+
 # History of encryption: from the Caesar cipher to quantum-safe
 
 The need to protect information is as old as writing itself. From simple methods like the **Caesar cipher** to complex algorithms resistant to quantum computers, encryption has evolved with humanity.

@@ -13,7 +13,9 @@ seo:
   metaTitle: "Mejores Prácticas Ciberseguridad Empresarial 2025 | Guía CISO"
   metaDescription: "15 mejores prácticas esenciales de ciberseguridad para empresas en 2025. Frameworks, herramientas y estrategias de implementación para CISOs."
   keywords: "ciberseguridad empresarial, mejores prácticas CISO, zero trust, incident response, compliance 2025"
+
 ---
+
 # Enterprise Cybersecurity 2025: 15 melhores práticas que todo CISO deve implementar
 
 ## Introdução

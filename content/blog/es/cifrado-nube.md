@@ -1,4 +1,5 @@
 ---
+
 title: "Cómo cifrar tus datos en la nube: mejores herramientas y prácticas"
 excerpt: "Subir datos a la nube no implica renunciar a la privacidad. Aprende cómo proteger tu información con cifrado fuerte."
 date: "2025-09-24"
@@ -7,6 +8,7 @@ category: "encriptacion"
 tags: ["cifrado en la nube", "seguridad cloud", "herramientas de cifrado", "Zero Knowledge"]
 featured: false
 image: "/blogs/Como_cifrar_tus_datos_en_la_nube.webp"
+
 ---
 
 # Cómo cifrar tus datos en la nube: mejores herramientas y prácticas

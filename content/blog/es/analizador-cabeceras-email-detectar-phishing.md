@@ -1,4 +1,5 @@
 ---
+
 title: "Cómo analizar cabeceras de correo electrónico para detectar phishing y spoofing"
 excerpt: "Aprende a inspeccionar las cabeceras técnicas de un email para verificar su autenticidad y protegerte de ataques de suplantación de identidad (spoofing)."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Debes buscar inconsistencias entre el dominio del remitente visible y el servidor de origen real (Return-Path), y comprobar si las validaciones de SPF o DKIM han fallado."
   - question: "¿Qué significan SPF, DKIM y DMARC?"
     answer: "Son protocolos de autenticación de email. SPF define qué servidores pueden enviar correos del dominio, DKIM añade una firma criptográfica de validación, y DMARC establece políticas para manejar correos que fallen SPF o DKIM."
+
 ---
 
 # Cómo analizar cabeceras de correo electrónico para detectar phishing y spoofing

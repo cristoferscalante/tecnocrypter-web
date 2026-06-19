@@ -15,7 +15,9 @@ faqs:
     answer: "If you sign up for a site using a unique alias (e.g. myuser+siteA@domain.com) and start receiving spam at that address, you know exactly which site leaked or sold your information."
   - question: "What are deterministic credentials?"
     answer: "They are username and password generation systems based on deterministic algorithms based on a keyword, making them recoverable but unique per platform."
+
 ---
+
 # Disposable emails and aliases: Protect your inbox against spam and leaks
 
 Giving out your personal email address on every web service you sign up for is one of the main sources of **bulk spam** and spoofing risks. If one of those sites is hacked, your email address is added to global phishing lists.

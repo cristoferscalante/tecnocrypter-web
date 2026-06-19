@@ -1,4 +1,5 @@
 ---
+
 title: "Creación de entornos seguros: Cómo generar credenciales y perfiles aleatorios para testing"
 excerpt: "Aprende por qué nunca debes usar datos reales o credenciales de producción en tus entornos de pruebas y cómo generar perfiles seguros."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Nombres aleatorios, nombres de usuario ficticios, correos de prueba simulados y contraseñas de alta entropía que no se utilicen en ningún servicio real."
   - question: "¿Cómo ayuda la generación local a los desarrolladores?"
     answer: "Garantiza que ningún perfil de prueba generado se envíe a internet, cumpliendo con las regulaciones de protección de datos durante el desarrollo local."
+
 ---
 
 # Creación de entornos seguros: Cómo generar credenciales y perfiles aleatorios para testing

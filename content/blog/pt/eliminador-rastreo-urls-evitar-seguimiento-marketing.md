@@ -15,7 +15,9 @@ faqs:
     answer: "Eles permitem que plataformas (como Facebook ou Google) rastreiem quais links você compartilha com seus amigos e vinculem seus perfis de usuário em várias páginas."
   - question: "O removedor de rastreamento quebra o link?"
     answer: "Não. Ele apenas remove as variáveis ​​desnecessárias de marketing e rastreamento que vêm após o ponto de interrogação (?), deixando o link original intacto para carregar o site de forma idêntica."
+
 ---
+
 # Limpeza de URL: como remover parâmetros e rastreadores UTM de seus links
 
 Cada vez que você compartilha um link para um produto de seu interesse ou clica em uma notícia nas redes sociais, o endereço da web geralmente está cheio de tags longas. Esses parâmetros, como \`utm_source\`, \`fbclid\` ou \`gclid\`, são ferramentas de **rastreamento da web**.

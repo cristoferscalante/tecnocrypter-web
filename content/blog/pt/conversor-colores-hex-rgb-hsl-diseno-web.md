@@ -15,7 +15,9 @@ faqs:
     answer: "RGB representa mistura aditiva direta de luz (vermelho, verde, azul). HSL define a cor com base na percepção humana: Matiz (0-360 graus), Saturação (0-100%) e Luminosidade (0-100%)."
   - question: "/*Por que os web designers preferem usar HSL?*/"
     answer: "Porque é muito mais intuitivo fazer ajustes visuais: por exemplo, escurecer ou clarear uma cor basta modificar o percentual de luminosidade (L), mantendo intacto o mesmo tom (H)."
+
 ---
+
 # Teoria das cores digitais: Conversão entre os formatos HEX, RGB, HSL e Tailwind
 
 O design de interfaces web atraentes e funcionais depende em grande parte de um bom gerenciamento de cores. Computadores e telas exibem cores combinando três canais de luz (vermelho, verde e azul). No entanto, existem diferentes formas matemáticas de definir essas misturas no código-fonte.

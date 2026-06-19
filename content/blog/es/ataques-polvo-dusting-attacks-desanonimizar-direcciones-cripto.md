@@ -1,4 +1,5 @@
 ---
+
 title: "Ataques de polvo (Dusting): El truco invisible que usan los hackers para rastrear tu billetera cripto"
 excerpt: "Análisis de los Dusting Attacks en criptomonedas. Descubre cómo el envío de fracciones ínfimas de saldo sirve para desanonimizar identidades en la blockchain."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "El peligro no es la pérdida directa de fondos, sino la pérdida de tu privacidad. Al gastar ese 'polvo' junto con tus fondos normales, permites a los analistas vincular tus diferentes direcciones a una sola identidad física."
   - question: "¿Cómo puedo protegerme de los rastreos por dusting?"
     answer: "Puedes marcar esos saldos diminutos desconocidos como 'no gastables' (en billeteras con control de UTXO) o utilizar servicios de mezcla de privacidad para desvincular tus transacciones."
+
 ---
 
 # Ataques de polvo (Dusting): El truco invisible que usan los hackers para rastrear tu billetera cripto

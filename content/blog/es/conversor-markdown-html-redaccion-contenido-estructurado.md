@@ -1,4 +1,5 @@
 ---
+
 title: "Formato simplificado: Cómo convertir textos Markdown a código HTML limpio"
 excerpt: "Descubre las ventajas de redactar contenidos usando el estándar Markdown y aprende cómo se transforma en etiquetas HTML válidas."
 date: "2026-06-19"
@@ -13,7 +14,8 @@ faqs:
   - question: "/*¿Qué ventajas tiene escribir en Markdown frente a HTML?*/"
     answer: "Markdown evita tener que escribir decenas de etiquetas engorrosas como <h1>, <p> o <a> de forma manual, permitiendo concentrarse en la redacción y agilizando la creación de contenidos."
   - question: "/*¿Cómo se convierte un encabezado en Markdown?*/"
-    answer: "Se utilizan signos de almohadilla (#). Una sola almohadilla representa un título principal \`<h1>\`, dos representan un \`<h2>\`, y así sucesivamente hasta seis niveles."
+    answer: "Se utilizan signos de almohadilla (#). Una sola almohadilla representa un título principal `<h1>`, dos representan un `<h2>`, y así sucesivamente hasta seis niveles."
+
 ---
 
 # Formato simplificado: Cómo convertir textos Markdown a código HTML limpio

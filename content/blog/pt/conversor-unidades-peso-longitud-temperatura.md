@@ -15,7 +15,9 @@ faqs:
     answer: "Países como os Estados Unidos e o Reino Unido ainda utilizam unidades imperiais (polegadas, libras, Fahrenheit) no seu dia a dia e em indústrias específicas, como a aeronáutica ou a construção."
   - question: "/*Como você converte Fahrenheit em Celsius com precisão?*/"
     answer: "A fórmula matemática é: $C = (F - 32) \vezes 5/9$. Realizar esse cálculo mentalmente é complexo, por isso é melhor automatizá-lo com ferramentas locais."
+
 ---
+
 # Cálculos rápidos: como converter unidades de comprimento, peso e temperatura
 
 Esteja você programando software com suporte internacional, analisando especificações técnicas de hardware importado dos Estados Unidos ou simplesmente resolvendo problemas acadêmicos, a conversão de unidades é uma necessidade diária.

@@ -15,7 +15,9 @@ faqs:
     answer: "Les grandes entreprises technologiques et les centres de données dédiés à l’IA monopolisent la capacité de fabrication de mémoire DRAM et HBM. Cela réduit l’offre disponible pour les appareils mobiles et augmente les prix à l’échelle mondiale."
   - question: "Quels composants de téléphonie mobile sont devenus plus chers ?"
     answer: "Mémoire vive (RAM) et stockage physique (NAND Flash). Le PDG de Nothing indique qu'aujourd'hui la mémoire peut représenter plus de 50 % du coût matériel total d'un téléphone."
+
 ---
+
 # La mémoire est le nouveau roi du coût : Carl Pei explique pourquoi les prix des téléphones portables augmentent
 
 Le marché de la téléphonie mobile est confronté à un changement de paradigme silencieux mais dévastateur pour le portefeuille de l'utilisateur. **Carl Pei**, PDG des médias et fondateur de l'entreprise technologique **Nothing**, a élevé la voix pour mettre en garde contre une crise structurelle : **les puces mémoire (DRAM et NAND Flash) coûtent déjà plus cher que le processeur et l'écran réunis**.

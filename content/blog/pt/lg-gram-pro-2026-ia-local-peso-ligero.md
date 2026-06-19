@@ -15,7 +15,9 @@ faqs:
     answer: "Ele permite executar modelos de linguagem (LLMs), transcrição em tempo real e retoque de fotos diretamente no laptop sem enviar dados para a nuvem, reduzindo a latência e protegendo sua privacidade."
   - question: "Como o processamento local afeta a vida útil da bateria?"
     answer: "Ao contrário das GPUs tradicionais, as NPUs são extremamente eficientes, conseguindo estender a autonomia do LG gram Pro até 22 horas de uso misto mesmo executando processos de IA em segundo plano."
+
 ---
+
 # Leveza extrema e NPU massivo: O LG gram Pro (2026) redefine o poder da IA local
 
 A obsessão histórica da LG em fabricar os portáteis mais leves do planeta atingiu um novo marco técnico na sua gama **LG gram Pro (2026)**. O que antes forçava os profissionais a escolher entre o peso leve ou o poder de computação bruto para tarefas de inteligência artificial, hoje está fundido em um dispositivo que pesa apenas **1,09 kg** equipado com um mecanismo de aceleração neural de última geração.

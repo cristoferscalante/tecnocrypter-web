@@ -15,7 +15,9 @@ faqs:
     answer: "It is the base 2 number system, which uses only the digits 0 and 1. It is the natural language of transistors in digital electronics."
   - question: "How do I convert a Hexadecimal number to Binary?"
     answer: "Each hexadecimal digit is converted directly to its 4-bit binary value. For example, the digit '9' is '1001' and 'A' is '1010', so '9A' in hexadecimal is '10011010' in binary."
+
 ---
+
 # Machine language: Conversion between Hexadecimal, Binary and Decimal
 
 In computing and digital electronics, the use of the traditional decimal system (base 10) is inefficient for understanding how data flows in memory. Programmers and system administrators must master converting between **Binary (base 2)** and **Hexadecimal (base 16)** systems.

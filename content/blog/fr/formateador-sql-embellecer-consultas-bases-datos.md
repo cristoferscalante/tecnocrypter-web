@@ -15,7 +15,9 @@ faqs:
     answer: "Non. Les moteurs de base de données suppriment les espaces inutiles avant de compiler et d’optimiser le plan d’exécution des requêtes. L’amélioration est purement humaine."
   - question: "/*Quelles règles standard s'appliquent lors du formatage SQL ?*/"
     answer: "Écrivez les mots-clés en lettres majuscules (SELECT, FROM, JOIN, WHERE), tabulez les paramètres et organisez chaque section de filtre sur des lignes distinctes pour une lecture facile."
+
 ---
+
 # Nettoyer le code dans les bases de données : comment formater et embellir les requêtes SQL
 
 Dans l’administration de bases de données et le développement back-end, l’écriture de code structuré et propre est une règle d’or. Cependant, les requêtes **SQL** complexes se transforment souvent rapidement en longues chaînes de texte d'une seule ligne difficiles à comprendre lors des audits de performances ou des révisions de code.

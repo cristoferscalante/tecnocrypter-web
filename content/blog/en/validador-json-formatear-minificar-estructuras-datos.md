@@ -10,12 +10,14 @@ featured: false
 image: "/blogs/validador-json-formatear-minificar-estructuras-datos.png"
 faqs:
   - question: "/*What are common syntax errors in a JSON file?*/"
-    answer: "The most common errors are: leaving a comma at the end of the last element of an object or list, using single quotes (') instead of double quotes (\\"), or open braces and square brackets."
+    answer: "The most common errors are: leaving a comma at the end of the last element of an object or list, using single quotes (') instead of double quotes (\"), or open braces and square brackets."
   - question: "/*What is the difference between formatting and minifying JSON?*/"
     answer: "Formatting adds indentations and line breaks to make it easier for programmers to read. Minify removes all unnecessary spaces and blank lines to reduce file size when transmitting over the network."
   - question: "/*Is it safe to validate JSON files online?*/"
     answer: "Only if it is done locally in your browser using Javascript. If you send the JSON to remote servers for processing, you risk leaking client data or API keys."
+
 ---
+
 # Debugging APIs: How to validate, format and minify JSON files without errors
 
 The **JSON** (JavaScript Object Notation) format is the ubiquitous standard for data exchange on the modern web. Despite its simplicity, JSON has extremely strict syntactic rules that prevent parsers from reading the information if there is even the slightest error.

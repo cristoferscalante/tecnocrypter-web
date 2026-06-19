@@ -15,7 +15,9 @@ faqs:
     answer: "Il s’agit d’une manipulation psychologique incitant des personnes à entreprendre des actions volontaires ou à divulguer des informations confidentielles. Il est très efficace car il exploite les préjugés de confiance, d’urgence, d’obéissance à l’autorité ou de confusion des utilisateurs."
   - question: "Comment éviter la lassitude MFA et les attaques de phishing ?"
     answer: "Utiliser des clés physiques FIDO2/WebAuthn au lieu de SMS ou de codes push génériques, adopter des politiques rigoureuses de double vérification pour les demandes inhabituelles et renforcer la sensibilisation du personnel à la sécurité."
+
 ---
+
 # Human Hacking : Pourquoi l'ingénierie sociale bat le chiffrement mathématique
 
 Le célèbre cryptographe Bruce Schneier a écrit une phrase qui résume parfaitement le dilemme de sécurité moderne : *"La cryptographie est une question de mathématiques, et les mathématiques sont parfaites. Les logiciels sont écrits par des humains, et les humains font des erreurs. Mais la véritable sécurité est une question de personnes, et les gens sont faciles à tromper."*

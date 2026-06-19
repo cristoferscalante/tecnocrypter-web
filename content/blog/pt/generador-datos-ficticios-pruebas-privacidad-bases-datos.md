@@ -15,7 +15,9 @@ faqs:
     answer: "Permite preencher formulários de teste, bancos de dados ou interfaces em desenvolvimento com nomes, endereços e números de telefone fictícios para verificar seu funcionamento sem utilizar dados reais."
   - question: "Os dados gerados localmente são seguros?"
     answer: "Sim, pois quando processados ​​no seu próprio navegador, nenhum dado privado é transmitido a servidores externos, garantindo o anonimato dos seus testes."
+
 ---
+
 # Testes éticos: geração de dados fictícios realistas para proteger a privacidade
 
 Na era do Big Data e da estrita conformidade com a privacidade, é obrigatório proteger as informações que seus aplicativos manipulam durante as fases de desenvolvimento e demonstração comercial. 

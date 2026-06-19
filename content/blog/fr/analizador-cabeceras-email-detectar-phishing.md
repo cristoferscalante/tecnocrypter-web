@@ -15,7 +15,9 @@ faqs:
     answer: "Vous devez rechercher des incohérences entre le domaine de l'expéditeur visible et le serveur d'origine réel (Return-Path) et vérifier si les validations SPF ou DKIM ont échoué."
   - question: "Que signifient SPF, DKIM et DMARC ?"
     answer: "Ce sont des protocoles d'authentification de courrier électronique. SPF définit quels serveurs peuvent envoyer des e-mails à partir du domaine, DKIM ajoute une signature cryptographique de validation et DMARC établit des politiques pour gérer les e-mails qui échouent avec SPF ou DKIM."
+
 ---
+
 # Comment analyser les en-têtes d'e-mails pour détecter le phishing et l'usurpation d'identité
 
 Le courrier électronique reste le principal vecteur d’attaque des cybercriminels. Grâce à des techniques d'usurpation d'e-mails, les attaquants parviennent à camoufler les e-mails malveillants en les faisant passer pour des notifications provenant de votre banque, du support technique ou des dirigeants de l'entreprise.

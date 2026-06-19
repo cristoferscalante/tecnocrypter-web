@@ -15,7 +15,9 @@ faqs:
     answer: "Porque o comprimento aumenta exponencialmente o número total de combinações possíveis, enquanto adicionar caracteres especiais a uma senha curta apenas aumenta a base de poder linearmente."
   - question: "Quantos bits de entropia são considerados seguros hoje?"
     answer: "Uma senha com mais de 80 bits de entropia é considerada extremamente difícil de ser quebrada pela tecnologia de computação atual, exigindo séculos de força bruta."
+
 ---
+
 # A matemática da segurança: como calcular a entropia das suas senhas
 
 A força de uma senha não se baseia em quão “rara” ela é para você, mas em quanta resistência matemática ela oferece contra um ataque automatizado de força bruta. Essa medida é conhecida em criptografia como **entropia de senha**.

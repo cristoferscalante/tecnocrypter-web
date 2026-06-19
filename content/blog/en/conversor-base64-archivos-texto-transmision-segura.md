@@ -15,7 +15,9 @@ faqs:
     answer: "It is ideal for optimizing performance by embedding small icons or images in CSS or HTML style sheets, reducing the number of HTTP requests from the server."
   - question: "How much does converting to Base64 increase the file size?"
     answer: "Base64 encoding increases file size by approximately 33% compared to its original binary representation."
+
 ---
+
 # Data transmission on the web: Converting files and images to Base64
 
 Transporting binary data (such as images, audio, or PDF documents) through protocols designed exclusively for plain text (such as JSON or HTML) represents a classic challenge in software development. The standard solution is **Base64** encoding.

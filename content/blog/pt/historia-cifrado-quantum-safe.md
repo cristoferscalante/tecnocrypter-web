@@ -8,7 +8,9 @@ category: "encriptacion"
 tags: ["história da criptografia", "Figura de César", "criptografia moderna", "pós-quântico"]
 featured: false
 image: "/blogs/Historia_del_cifrado_quantum-safe.webp"
+
 ---
+
 # História da criptografia: da cifra de César à segurança quântica
 
 A necessidade de proteger a informação é tão antiga quanto a própria escrita. De métodos simples como a **cifra de César** a algoritmos complexos resistentes a computadores quânticos, a criptografia evoluiu com a humanidade.

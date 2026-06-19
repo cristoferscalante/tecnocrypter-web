@@ -1,4 +1,5 @@
 ---
+
 title: "Historia del cifrado: de la cifra César al quantum-safe"
 excerpt: "Desde los romanos hasta los retos cuánticos: conoce la evolución del cifrado a través de los siglos."
 date: "2025-09-24"
@@ -7,6 +8,7 @@ category: "encriptacion"
 tags: ["historia del cifrado", "cifra César", "criptografía moderna", "post cuántica"]
 featured: false
 image: "/blogs/Historia_del_cifrado_quantum-safe.webp"
+
 ---
 
 # Historia del cifrado: de la cifra César al quantum-safe

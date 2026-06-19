@@ -15,7 +15,9 @@ faqs:
     answer: "Par défaut non. Un JWT standard est signé et codé en Base64Url, ce qui signifie que n'importe qui peut lire la charge utile. Vous ne devez jamais insérer d’informations sensibles telles que des mots de passe dans le jeton."
   - question: "Comment empêcher la manipulation d’un JWT ?"
     answer: "Le jeton contient une signature cryptographique dans sa troisième section. Si un client modifie les données utiles, la signature ne correspond plus et le serveur rejette le jeton."
+
 ---
+
 # Guide standard JWT : Comment décoder et analyser en toute sécurité les jetons Web JSON
 
 Dans le développement Web moderne, les **JSON Web Tokens (JWT)** constituent la norme dominante pour la gestion des sessions utilisateur et l'authentification dans les API et les microservices. Ils permettent aux serveurs de vérifier l'identité d'un client sans avoir besoin d'interroger constamment les bases de données de session.

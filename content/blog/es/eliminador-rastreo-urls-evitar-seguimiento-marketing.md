@@ -1,4 +1,5 @@
 ---
+
 title: "Limpieza de URLs: Cómo eliminar parámetros UTM y rastreadores de tus enlaces"
 excerpt: "Descubre cómo los enlaces web recopilan información sobre tus hábitos de navegación mediante parámetros UTM y aprende a limpiar tus URLs para proteger tu privacidad."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Permiten que las plataformas (como Facebook o Google) rastreen qué enlaces compartes con tus amigos y vinculen tus perfiles de usuario a través de múltiples páginas."
   - question: "¿El eliminador de rastreo rompe el enlace?"
     answer: "No. Solo remueve las variables innecesarias de marketing y rastreo que van después del signo de interrogación (?), dejando el enlace original intacto para cargar el sitio de forma idéntica."
+
 ---
 
 # Limpieza de URLs: Cómo eliminar parámetros UTM y rastreadores de tus enlaces

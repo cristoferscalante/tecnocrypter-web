@@ -1,4 +1,5 @@
 ---
+
 title: "Control de cambios: Cómo usar visores Diff para comparar archivos línea por línea"
 excerpt: "Aprende cómo los desarrolladores comparan versiones de archivos y detectan diferencias lógicas en el código mediante algoritmos de comparación (Diff)."
 date: "2026-06-19"
@@ -14,6 +15,7 @@ faqs:
     answer: "Permite inspeccionar cambios antes de guardarlos en el control de versiones (Git), revisar parches de código y localizar errores lógicos introducidos en actualizaciones recientes."
   - question: "/*¿Es seguro comparar archivos con datos sensibles online?*/"
     answer: "Solo si la comparación se realiza completamente del lado del cliente mediante JavaScript. Enviar tus archivos a un servidor web de terceros para hacer el 'diff' expone tu propiedad intelectual o datos confidenciales."
+
 ---
 
 # Control de cambios: Cómo usar visores Diff para comparar archivos línea por línea

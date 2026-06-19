@@ -8,7 +8,9 @@ category: "noticias"
 tags: ["intelligence artificielle", "Guerre de l'IA", "Ballon intelligent NBA", "vente d'actions Nvidia", "fabrication de smartphones en Inde", "Risques GPT-5"]
 featured: true
 image: "/blogs/noticias_tech_2025.webp"
+
 ---
+
 #5 Nouvelles technologiques choquantes qui redéfinissent 2025
 
 Ce mois-ci, la guerre de plusieurs milliards entre Google, Amazon et Meta pour la domination de l’IA atteint des sommets historiques ; un ballon de basket intelligent infiltre déjà la NBA ; Le PDG de Nvidia exécute une vente d'actions de près de 40 millions de dollars ; L’Inde détrône la Chine en tant que principale usine de smartphones pour les États-Unis ; et GPT-5 effraie même ses propres créateurs. Découvrez comment ces cinq acteurs historiques remodèlent le paysage technologique et pourquoi vous ne voudrez pas être laissé pour compte.
