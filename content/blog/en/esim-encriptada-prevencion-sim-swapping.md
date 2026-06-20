@@ -21,6 +21,7 @@ faqs:
   - question: "How does it mitigate geographical tracking from cell towers?"
     answer: "It uses dynamic and rotating network identifiers instead of a static IMSI. This means local antennas cannot correlate your cellular signal with a persistent user identity."
 
+
 ---
 
 # How Encrypted eSIMs Prevent SIM Swapping and Network Interception Attacks

@@ -16,6 +16,7 @@ faqs:
   - question: "How relevant is Intel's 18A manufacturing process?"
     answer: "The 18A process (equivalent to 1.8nm) represents Intel's technological spearhead, which promises to surpass competing nodes through new transistor technologies and rear-side power delivery."
 
+
 ---
 
 # Intel Foundry resurfaces: It will manufacture Google TPUs and courts NVIDIA

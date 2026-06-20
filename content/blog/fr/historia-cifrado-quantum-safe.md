@@ -9,6 +9,7 @@ tags: ["histoire du cryptage", "Figurine César", "cryptographie moderne", "post
 featured: false
 image: "/blogs/Historia_del_cifrado_quantum-safe.webp"
 
+
 ---
 
 # Histoire du chiffrement : du chiffre César au quantique sécurisé

@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cuál es el rol de Scale AI en la estrategia de Meta?"
     answer: "Scale AI provee servicios críticos de etiquetado y curación de datos humanos (RLHF), esenciales para refinar los modelos fundacionales Llama y hacerlos competitivos frente a soluciones cerradas."
 
+
 ---
 
 # La trampa de los 14.000 millones: Meta invierte masivamente en IA para quedar en el mismo lugar

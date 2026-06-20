@@ -16,6 +16,7 @@ faqs:
   - question: "Is it possible to log in without passwords if I don't have internet?"
     answer: "Yes, Passkeys are securely stored locally on your device (or in your cloud keychain such as iCloud/Google Drive), allowing local authentication without the need for an active connection to external servers."
 
+
 ---
 
 # The end of passwords: Why Spotify's decision to force the use of Passkeys is a security success

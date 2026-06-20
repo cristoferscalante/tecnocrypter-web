@@ -9,6 +9,7 @@ tags: ["tendencies", "market", "investments"]
 featured: true
 image: "/blogs/tendencias_crypto_2025.webp"
 
+
 ---
 
 # Trends in Cryptocurrencies for 2025

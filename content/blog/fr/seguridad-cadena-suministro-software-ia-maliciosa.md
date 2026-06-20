@@ -16,6 +16,7 @@ faqs:
   - question: "Comment les développeurs peuvent-ils sécuriser leurs dépendances ?"
     answer: "En utilisant des outils d'analyse des dépendances statiques (SCA), en verrouillant des versions spécifiques à l'aide de fichiers de verrouillage, en auditant automatiquement les signatures numériques et en désactivant les scripts de post-installation non vérifiés."
 
+
 ---
 
 # Chevaux de Troie génératifs : l'IA automatise l'empoisonnement des référentiels dans la chaîne d'approvisionnement logicielle

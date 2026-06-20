@@ -16,6 +16,7 @@ faqs:
   - question: "Onde o Base32 é comumente usado?"
     answer: "Sua aplicação mais famosa é a criptografia de chaves secretas em aplicativos de autenticação de dois fatores (2FA/TOTP), como o Google Authenticator."
 
+
 ---
 
 # Codificação Base32: Quando usá-la versus Base64 e como seu algoritmo funciona

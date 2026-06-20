@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cómo ayuda la generación local a los desarrolladores?"
     answer: "Garantiza que ningún perfil de prueba generado se envíe a internet, cumpliendo con las regulaciones de protección de datos durante el desarrollo local."
 
+
 ---
 
 # Creación de entornos seguros: Cómo generar credenciales y perfiles aleatorios para testing

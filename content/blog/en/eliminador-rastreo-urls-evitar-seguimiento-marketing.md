@@ -16,6 +16,7 @@ faqs:
   - question: "Does tracking remover break link?"
     answer: "No. It only removes the unnecessary marketing and tracking variables that come after the question mark (?), leaving the original link intact to load the site identically."
 
+
 ---
 
 # URL Cleaning: How to Remove UTM Parameters and Trackers from Your Links

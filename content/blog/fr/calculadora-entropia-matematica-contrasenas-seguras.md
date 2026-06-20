@@ -16,6 +16,7 @@ faqs:
   - question: "Combien de bits d’entropie sont considérés comme sûrs aujourd’hui ?"
     answer: "Un mot de passe comportant plus de 80 bits d’entropie est considéré comme extrêmement difficile à déchiffrer par la technologie informatique actuelle, nécessitant des siècles de force brute."
 
+
 ---
 
 # Les mathématiques de la sécurité : Comment calculer l'entropie de vos mots de passe

@@ -16,6 +16,7 @@ faqs:
   - question: "Que sont les références déterministes ?"
     answer: "Il s'agit de systèmes de génération de noms d'utilisateur et de mots de passe basés sur des algorithmes déterministes basés sur un mot-clé, ce qui les rend récupérables mais uniques par plateforme."
 
+
 ---
 
 # E-mails et alias jetables : protégez votre boîte de réception contre le spam et les fuites

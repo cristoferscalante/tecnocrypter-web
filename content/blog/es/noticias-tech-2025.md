@@ -9,6 +9,7 @@ tags: ["inteligencia artificial", "guerra de IA", "pelota inteligente NBA", "ven
 featured: true
 image: "/blogs/noticias_tech_2025.webp"
 
+
 ---
 
 # 5 Impactantes Noticias Tech que Están Redefiniendo el 2025

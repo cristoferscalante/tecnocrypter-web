@@ -16,6 +16,7 @@ faqs:
   - question: "How does the price rise of Intel and AMD affect the technology market?"
     answer: "It forces internet megacorporations (hyperscalers) to internalize silicon design, accelerating market fragmentation and the decline of the traditional x86 model in favor of ARM and custom architectures."
 
+
 ---
 
 # Rebellion in silicon: ByteDance will manufacture its own chips to escape the prices of Intel and AMD

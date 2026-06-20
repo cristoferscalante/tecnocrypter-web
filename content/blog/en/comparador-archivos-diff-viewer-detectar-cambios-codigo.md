@@ -16,6 +16,7 @@ faqs:
   - question: "/*Is it safe to compare files with sensitive data online?*/"
     answer: "Only if the comparison is done completely client-side using JavaScript. Sending your files to a third-party web server to do the 'diff' exposes your intellectual property or sensitive data."
 
+
 ---
 
 # Track Changes: How to Use Diff Viewers to Compare Files Line by Line

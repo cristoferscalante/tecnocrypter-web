@@ -16,6 +16,7 @@ faqs:
   - question: "¿Es posible iniciar sesión sin contraseñas si no tengo internet?"
     answer: "Sí, las Passkeys se almacenan localmente de forma segura en tu dispositivo (o en tu llavero en la nube como iCloud/Google Drive), permitiendo la autenticación local sin necesidad de conexión activa a servidores externos."
 
+
 ---
 
 # El fin de las contraseñas: Por qué la decisión de Spotify de obligar al uso de Passkeys es un acierto de seguridad

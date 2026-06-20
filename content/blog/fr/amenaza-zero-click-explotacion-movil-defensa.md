@@ -16,6 +16,7 @@ faqs:
   - question: "Comment puis-je me défendre contre les attaques zéro clic sur mon smartphone ?"
     answer: "La défense la plus efficace consiste à activer le mode de verrouillage sur iOS, à désactiver les aperçus automatiques et à redémarrer le téléphone quotidiennement (ce qui expulse les implants de mémoire non persistants)."
 
+
 ---
 
 # La menace des exploits « Zéro-clic » : vulnérabilités sans interaction de l'utilisateur

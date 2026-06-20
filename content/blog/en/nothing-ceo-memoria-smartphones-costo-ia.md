@@ -16,6 +16,7 @@ faqs:
   - question: "What mobile phone components have become more expensive?"
     answer: "Random access memory (RAM) and physical storage (NAND Flash). The CEO of Nothing indicates that today memory can represent more than 50% of the total hardware cost of a phone."
 
+
 ---
 
 # Memory is the new king of cost: Carl Pei explains why mobile phones are rising in price

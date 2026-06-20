@@ -16,6 +16,7 @@ faqs:
   - question: "¿De qué manera pueden los desarrolladores proteger sus dependencias?"
     answer: "Mediante el uso de herramientas de escaneo de dependencias estáticas (SCA), el bloqueo de versiones específicas usando archivos lock, la auditoría automática de firmas digitales y la desactivación de scripts de post-instalación no verificados."
 
+
 ---
 
 # Caballos de Troya generativos: La IA automatiza el envenenamiento de repositorios en la cadena de suministro de software

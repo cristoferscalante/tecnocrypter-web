@@ -16,6 +16,7 @@ faqs:
   - question: "¿Dónde se utiliza comúnmente Base32?"
     answer: "Su aplicación más famosa es la codificación de las claves semilla secreta en aplicaciones de autenticación de doble factor (2FA/TOTP) como Google Authenticator."
 
+
 ---
 
 # Codificación Base32: Cuándo usarla frente a Base64 y cómo funciona su algoritmo

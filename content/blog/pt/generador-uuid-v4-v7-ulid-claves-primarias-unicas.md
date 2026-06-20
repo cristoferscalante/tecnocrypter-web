@@ -16,6 +16,7 @@ faqs:
   - question: "Como o UUID v7 e o ULID resolvem esse problema?"
     answer: "Eles integram um carimbo de data/hora de milissegundos na primeira seção do identificador. Isso os torna ordenados cronologicamente (monotônicos), preservando a velocidade de indexação no banco de dados."
 
+
 ---
 
 # Identificadores exclusivos: diferenças entre UUID v4, v7 e ULID em bancos de dados

@@ -23,6 +23,7 @@ faqs:
   - question: "Quais dispositivos são compatíveis com o eSIM?"
     answer: "Qualquer dispositivo moderno que suporte cartões SIM virtuais é compatível. Isso inclui a linha do iPhone XR ou superior, a série Samsung Galaxy S20 ou superior, e Google Pixel 3 ou superior."
 
+
 ---
 
 # eSIM Criptografado: O Guia Defensivo sobre Privacidade e Conectividade em Viagens

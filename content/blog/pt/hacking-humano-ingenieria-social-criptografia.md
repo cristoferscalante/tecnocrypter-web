@@ -16,6 +16,7 @@ faqs:
   - question: "Como você evita a fadiga do MFA e os ataques de phishing?"
     answer: "Usar chaves físicas FIDO2/WebAuthn em vez de SMS genéricos ou códigos push, adotar políticas rigorosas de verificação dupla para solicitações incomuns e reforçar a conscientização da equipe sobre segurança."
 
+
 ---
 
 # Human Hacking: Por que a engenharia social supera a criptografia matemática

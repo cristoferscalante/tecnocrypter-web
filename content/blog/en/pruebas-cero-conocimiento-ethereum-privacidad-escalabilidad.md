@@ -16,6 +16,7 @@ faqs:
   - question: "Why ZK testing is essential for financial privacy?"
     answer: "They allow you to verify that a cryptocurrency transaction complies with network rules (such as having a sufficient balance) without having to make the sender balance, the receiver balance, or the exact amount public in the browser."
 
+
 ---
 
 # Ethereum's Best Kept Secret: How Zero-Knowledge Proofs (ZKPs) Shield Your Privacy

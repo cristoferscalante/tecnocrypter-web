@@ -9,6 +9,7 @@ tags: ["digital scams", "ransomware", "phishing", "cybersecurity", "legal protec
 featured: true
 image: "/blogs/estafas-digitales.webp"
 
+
 ---
 
 # Digital Scams in the Age of Artificial Intelligence: Multidisciplinary Analysis of Emerging Threats and Protection Strategies

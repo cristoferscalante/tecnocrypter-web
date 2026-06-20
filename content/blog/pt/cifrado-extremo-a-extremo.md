@@ -9,6 +9,7 @@ tags: ["E2E", "criptografia de ponta a ponta", "segurança digital", "sinal", "W
 featured: true
 image: "/blogs/cifrado_extremo_a_extremo.webp"
 
+
 ---
 
 # O que é criptografia ponta a ponta e por que ela é essencial hoje

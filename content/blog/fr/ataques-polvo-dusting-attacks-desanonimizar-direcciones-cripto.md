@@ -16,6 +16,7 @@ faqs:
   - question: "Comment puis-je me protéger du suivi des poussières ?"
     answer: "Vous pouvez marquer ces minuscules soldes inconnus comme « non dépensés » (sur les portefeuilles contrôlés par UTXO) ou utiliser des services de mixage de confidentialité pour dissocier vos transactions."
 
+
 ---
 
 # Attaques de dépoussiérage : l'astuce invisible utilisée par les pirates pour suivre votre portefeuille crypto

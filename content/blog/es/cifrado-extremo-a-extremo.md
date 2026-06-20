@@ -9,6 +9,7 @@ tags: ["E2E", "cifrado extremo a extremo", "seguridad digital", "Signal", "Whats
 featured: true
 image: "/blogs/cifrado_extremo_a_extremo.webp"
 
+
 ---
 
 # Qué es el cifrado de extremo a extremo y por qué es esencial hoy

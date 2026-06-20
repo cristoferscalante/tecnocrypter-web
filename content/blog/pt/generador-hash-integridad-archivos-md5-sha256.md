@@ -16,6 +16,7 @@ faqs:
   - question: "/*O MD5 ainda é seguro?*/"
     answer: "Não é para fins criptográficos ou de autenticação de senha devido a colisões conhecidas, mas ainda é útil como uma soma de verificação básica para detectar erros de transferência de arquivos."
 
+
 ---
 
 # Integridade de dados: como verificar arquivos usando hashes MD5 e SHA-256

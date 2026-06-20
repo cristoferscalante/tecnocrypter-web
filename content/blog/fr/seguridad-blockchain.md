@@ -9,6 +9,7 @@ tags: ["chaîne de blocs", "sécurité", "crypto-monnaies"]
 featured: true
 image: "/blogs/seguridad_en_la_blockchain.webp"
 
+
 ---
 
 # Sécurité Blockchain : protéger vos actifs numériques

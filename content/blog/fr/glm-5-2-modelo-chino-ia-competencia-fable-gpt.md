@@ -16,6 +16,7 @@ faqs:
   - question: "Dans quelle mesure cette évolution est-elle pertinente pour l’industrie de l’IA en Chine ?"
     answer: "Cela démontre que l’écart technologique entre la Chine et les États-Unis dans le secteur du Deep Learning se réduit rapidement, défiant les sanctions et le contrôle du matériel avancé."
 
+
 ---
 
 # La surprise de Pékin : Comment le modèle chinois GLM-5.2 a réussi à tenir tête à Fable 5 et GPT-5.5

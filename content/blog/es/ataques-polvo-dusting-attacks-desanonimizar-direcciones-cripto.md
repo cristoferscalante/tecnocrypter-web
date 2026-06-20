@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cómo puedo protegerme de los rastreos por dusting?"
     answer: "Puedes marcar esos saldos diminutos desconocidos como 'no gastables' (en billeteras con control de UTXO) o utilizar servicios de mezcla de privacidad para desvincular tus transacciones."
 
+
 ---
 
 # Ataques de polvo (Dusting): El truco invisible que usan los hackers para rastrear tu billetera cripto

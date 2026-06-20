@@ -16,6 +16,7 @@ faqs:
   - question: "Est-il possible de se connecter sans mot de passe si je n'ai pas Internet ?"
     answer: "Oui, les clés d'accès sont stockées en toute sécurité localement sur votre appareil (ou dans votre trousseau cloud tel que iCloud/Google Drive), permettant une authentification locale sans avoir besoin d'une connexion active à des serveurs externes."
 
+
 ---
 
 # La fin des mots de passe : Pourquoi la décision de Spotify de forcer l'utilisation des Passkeys est une réussite en matière de sécurité

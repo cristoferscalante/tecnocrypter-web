@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cómo interpreta una computadora el texto ofuscado?"
     answer: "A nivel visual puede parecer distorsionado, pero la computadora lee los puntos de código Unicode individuales correspondientes a las letras base originales."
 
+
 ---
 
 # Ofuscación de caracteres: El arte de ocultar texto con Unicode y Zalgo

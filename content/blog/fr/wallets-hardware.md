@@ -9,6 +9,7 @@ tags: ["portefeuilles", "matériel", "stockage"]
 featured: false
 image: "/blogs/wallets_hardware.webp"
 
+
 ---
 
 # Comparatif des Hardware Wallets : Sécurité maximale pour vos cryptomonnaies

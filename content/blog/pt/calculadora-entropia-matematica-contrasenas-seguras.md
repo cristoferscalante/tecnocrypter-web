@@ -16,6 +16,7 @@ faqs:
   - question: "Quantos bits de entropia são considerados seguros hoje?"
     answer: "Uma senha com mais de 80 bits de entropia é considerada extremamente difícil de ser quebrada pela tecnologia de computação atual, exigindo séculos de força bruta."
 
+
 ---
 
 # A matemática da segurança: como calcular a entropia das suas senhas

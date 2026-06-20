@@ -16,6 +16,7 @@ faqs:
   - question: "/*Como faço para escapar caracteres especiais em um arquivo CSV?*/"
     answer: "Se um campo de texto contiver o delimitador (por exemplo, uma vírgula) ou uma quebra de linha, todo o campo deverá ser colocado entre aspas duplas (\") para que o analisador não o quebre ao lê-lo."
 
+
 ---
 
 # Manipulação de planilha: criação e exportação de arquivos CSV

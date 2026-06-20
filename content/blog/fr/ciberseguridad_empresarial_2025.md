@@ -14,6 +14,7 @@ seo:
   metaDescription: "15 mejores prácticas esenciales de ciberseguridad para empresas en 2025. Frameworks, herramientas y estrategias de implementación para CISOs."
   keywords: "ciberseguridad empresarial, mejores prácticas CISO, zero trust, incident response, compliance 2025"
 
+
 ---
 
 # Cybersécurité d'entreprise 2025 : 15 bonnes pratiques que tout RSSI devrait mettre en œuvre

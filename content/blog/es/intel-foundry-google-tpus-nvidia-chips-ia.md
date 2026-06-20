@@ -16,6 +16,7 @@ faqs:
   - question: "¿Qué relevancia tiene el proceso de fabricación 18A de Intel?"
     answer: "El proceso 18A (equivalente a 1.8nm) representa la punta de lanza tecnológica de Intel, que promete superar a los nodos competidores mediante nuevas tecnologías de transistores y entrega de energía por la cara trasera."
 
+
 ---
 
 # Intel Foundry resurge: Fabricará las TPUs de Google y corteja a NVIDIA

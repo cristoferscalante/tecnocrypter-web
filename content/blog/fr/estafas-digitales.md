@@ -9,6 +9,7 @@ tags: ["escroqueries numériques", "rançongiciel", "hameçonnage", "cybersécur
 featured: true
 image: "/blogs/estafas-digitales.webp"
 
+
 ---
 
 # Les arnaques numériques à l’ère de l’intelligence artificielle : analyse multidisciplinaire des menaces émergentes et stratégies de protection

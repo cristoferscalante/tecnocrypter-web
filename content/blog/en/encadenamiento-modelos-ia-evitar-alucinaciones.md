@@ -16,6 +16,7 @@ faqs:
   - question: "What security advantages does it offer over direct responses?"
     answer: "Acts as a smart firewall. It can intercept prompt injection attempts, detect leakage of sensitive information (PII), and block self-generated malicious code."
 
+
 ---
 
 # Intelligent Distrust: Why Model Chaining is the Real Defense Against AI Hallucinations

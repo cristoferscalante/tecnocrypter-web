@@ -16,6 +16,7 @@ faqs:
   - question: "Quelle est la différence entre l’IA sur site et dans le cloud privé (PCC) ?"
     answer: "L'IA locale s'exécute entièrement sur le matériel du téléphone pour des tâches simples. Les tâches complexes sont envoyées au Private Cloud Computing (PCC) d'Apple, qui traite les informations sous forme cryptée sans stocker les données des utilisateurs."
 
+
 ---
 
 # L'IA fera des ravages : Tim Cook prévient que le coût du traitement fera monter en flèche le prix de l'iPhone

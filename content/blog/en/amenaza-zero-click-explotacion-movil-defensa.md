@@ -16,6 +16,7 @@ faqs:
   - question: "How do I defend myself against zero-click attacks on my smartphone?"
     answer: "The most effective defense is to activate Lockdown Mode on iOS, disable automatic previews and restart the phone daily (which expels non-persistent memory implants)."
 
+
 ---
 
 # The Threat of \"Zero-Click\" Exploits: Vulnerabilities without user interaction

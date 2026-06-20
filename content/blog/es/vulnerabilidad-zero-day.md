@@ -9,6 +9,7 @@ tags: ["WinRAR", "zero‑day", "vulnerabilidades", "malware"]
 featured: true
 image: "/blogs/vulnerabilidad-zero‑day.webp"
 
+
 ---
 
 # Vulnerabilidad zero‑day en WinRAR: cómo se explota y cómo protegerte

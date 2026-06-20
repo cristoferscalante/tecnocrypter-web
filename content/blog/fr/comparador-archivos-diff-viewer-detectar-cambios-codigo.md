@@ -16,6 +16,7 @@ faqs:
   - question: "/*Est-il sécuritaire de comparer des fichiers contenant des données sensibles en ligne ?*/"
     answer: "Uniquement si la comparaison est effectuée entièrement côté client à l'aide de JavaScript. L'envoi de vos fichiers à un serveur Web tiers pour effectuer la « différence » expose votre propriété intellectuelle ou vos données sensibles."
 
+
 ---
 
 # Suivre les modifications : comment utiliser les visionneuses de différences pour comparer des fichiers ligne par ligne

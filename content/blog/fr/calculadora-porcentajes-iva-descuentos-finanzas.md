@@ -16,6 +16,7 @@ faqs:
   - question: "/*Qu'est-ce que le pourcentage d'augmentation ?*/"
     answer: "Mesure le changement relatif entre une valeur initiale et une valeur finale. Il est calculé en soustrayant la valeur initiale de la valeur finale, en divisant par la valeur initiale et en multipliant par 100."
 
+
 ---
 
 # Mathématiques au quotidien : comment calculer les pourcentages, la TVA et les remises en ligne

@@ -16,6 +16,7 @@ faqs:
   - question: "Pourquoi Vitalik Buterin met-il en garde contre une surcharge du consensus Ethereum ?"
     answer: "Parce que s’appuyer sur le consensus social d’Ethereum pour sauver les échecs des applications financières externes crée une fragilité systémique qui met en danger la sécurité de l’ensemble du réseau de base."
 
+
 ---
 
 # La bulle de restauration : les dangers cachés et le risque systémique d'EigenLayer sur Ethereum

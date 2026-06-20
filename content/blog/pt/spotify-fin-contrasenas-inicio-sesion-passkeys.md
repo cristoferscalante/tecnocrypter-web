@@ -16,6 +16,7 @@ faqs:
   - question: "É possível fazer login sem senha se eu não tiver internet?"
     answer: "Sim, as chaves de acesso são armazenadas com segurança localmente no seu dispositivo (ou nas chaves da nuvem, como iCloud/Google Drive), permitindo a autenticação local sem a necessidade de uma conexão ativa com servidores externos."
 
+
 ---
 
 # O fim das senhas: Por que a decisão do Spotify de forçar o uso de senhas é um sucesso de segurança

@@ -9,6 +9,7 @@ tags: ["cybermenaces", "vulnérabilités", "rançongiciel", "malware"]
 featured: false
 image: "/blogs/panorama_de_ciberamenazas.webp"
 
+
 ---
 
 # Paysage des cybermenaces : vulnérabilités et attaques en vedette pour août 2025

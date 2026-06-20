@@ -16,6 +16,7 @@ faqs:
   - question: "/*Is it safe to validate JSON files online?*/"
     answer: "Only if it is done locally in your browser using Javascript. If you send the JSON to remote servers for processing, you risk leaking client data or API keys."
 
+
 ---
 
 # Debugging APIs: How to validate, format and minify JSON files without errors

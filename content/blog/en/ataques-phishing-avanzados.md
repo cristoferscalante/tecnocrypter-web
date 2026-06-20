@@ -9,6 +9,7 @@ tags: ["phishing", "cybersecurity", "prevention"]
 featured: false
 image: "/blogs/ataques_phishing_avanzados.webp"
 
+
 ---
 
 # How to Detect and Prevent Advanced Phishing Attacks

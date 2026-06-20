@@ -16,6 +16,7 @@ faqs:
   - question: "How can I protect myself from dusting tracking?"
     answer: "You can mark those tiny unknown balances as 'non-spendable' (on UTXO-controlled wallets) or use privacy mixing services to unlink your transactions."
 
+
 ---
 
 # Dusting attacks: The invisible trick hackers use to track your crypto wallet

@@ -16,6 +16,7 @@ faqs:
   - question: "How relevant is this development for the AI ​​industry in China?"
     answer: "It demonstrates that the technological gap between China and the United States in the Deep Learning sector is rapidly closing, defying sanctions and control of advanced hardware."
 
+
 ---
 
 # The surprise of Beijing: How the Chinese model GLM-5.2 has managed to stand up to Fable 5 and GPT-5.5

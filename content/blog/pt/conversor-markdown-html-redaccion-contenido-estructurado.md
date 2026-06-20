@@ -16,6 +16,7 @@ faqs:
   - question: "/*Como você converte um cabeçalho no Markdown?*/"
     answer: "sinais de libra (#) são usados. Um único hash representa um cabeçalho principal `<h1>`, dois representam um `<h2>` e assim por diante até seis níveis."
 
+
 ---
 
 # Formatação simplificada: como converter textos Markdown em código HTML limpo

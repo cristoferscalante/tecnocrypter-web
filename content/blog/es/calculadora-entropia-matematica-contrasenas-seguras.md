@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cuántos bits de entropía se consideran seguros hoy en día?"
     answer: "Se considera que una contraseña con más de 80 bits de entropía es extremadamente difícil de descifrar por la tecnología de cómputo actual, requiriendo siglos de fuerza bruta."
 
+
 ---
 
 # La matemática de la seguridad: Cómo calcular la entropía de tus contraseñas

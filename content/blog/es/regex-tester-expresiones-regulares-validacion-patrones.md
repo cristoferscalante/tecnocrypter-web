@@ -16,6 +16,7 @@ faqs:
   - question: "/*¿Qué significan los modificadores globales (Flags) en Regex?*/"
     answer: "Son parámetros que alteran la búsqueda: 'g' (global, busca todas las coincidencias), 'i' (case-insensitive, ignora mayúsculas/minúsculas) y 'm' (multiline, evalúa coincidencias por líneas)."
 
+
 ---
 
 # El poder de las expresiones regulares: Cómo testear y construir patrones Regex

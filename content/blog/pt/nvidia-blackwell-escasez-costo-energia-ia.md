@@ -16,6 +16,7 @@ faqs:
   - question: "Como esse gargalo impacta os custos das startups de IA?"
     answer: "Provoca esperas de até 9 meses para acessar clusters de GPU e aumenta a taxa de aluguel por hora de computação na nuvem, encarecendo o treinamento de novos modelos."
 
+
 ---
 
 # O calcanhar de Aquiles da IA: a crise de abastecimento e o colossal consumo de eletricidade dos chips NVIDIA Blackwell

@@ -16,6 +16,7 @@ faqs:
   - question: "How many bits of entropy are considered safe today?"
     answer: "A password with more than 80 bits of entropy is considered extremely difficult to crack by current computing technology, requiring centuries of brute force."
 
+
 ---
 
 # The mathematics of security: How to calculate the entropy of your passwords

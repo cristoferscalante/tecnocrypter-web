@@ -16,6 +16,7 @@ faqs:
   - question: "/*What is the average human reading speed?*/"
     answer: "The average reading speed for an adult is 200 to 250 words per minute, useful information for calculating the estimated reading time of your articles."
 
+
 ---
 
 # Strategic writing: Tools to count words and respect SEO limits

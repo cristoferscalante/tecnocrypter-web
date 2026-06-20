@@ -16,6 +16,7 @@ faqs:
   - question: "Como os chips Secure Element protegem as carteiras?"
     answer: "Os chips Secure Element (como aqueles usados ​​em cartões de crédito) incorporam contramedidas físicas ativas, como a adição de ruído elétrico aleatório e blindagens físicas que impedem medições estáveis."
 
+
 ---
 
 # Pontos fortes violados: como os ataques de canal lateral desafiam a segurança das carteiras de hardware

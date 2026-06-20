@@ -16,6 +16,7 @@ faqs:
   - question: "Why is determinism critical in spatial software development?"
     answer: "Because aerospace software must behave exactly the same in each run. Probabilistic AI models can be misleading, making them unsuitable for critical onboard software."
 
+
 ---
 
 # SpaceX adopts Cursor as a programmer: The space race now depends on the autonomy of the agents

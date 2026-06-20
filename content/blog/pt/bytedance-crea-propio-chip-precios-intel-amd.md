@@ -16,6 +16,7 @@ faqs:
   - question: "Como o aumento de preços da Intel e da AMD afeta o mercado de tecnologia?"
     answer: "Força as megacorporações da Internet (hiperscalers) a internalizar o design do silício, acelerando a fragmentação do mercado e o declínio do modelo x86 tradicional em favor do ARM e de arquiteturas personalizadas."
 
+
 ---
 
 # Rebelião no silício: ByteDance fabricará seus próprios chips para fugir dos preços da Intel e AMD

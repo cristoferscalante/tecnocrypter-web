@@ -16,6 +16,7 @@ faqs:
   - question: "/*¿Cómo se convierte un encabezado en Markdown?*/"
     answer: "Se utilizan signos de almohadilla (#). Una sola almohadilla representa un título principal `<h1>`, dos representan un `<h2>`, y así sucesivamente hasta seis niveles."
 
+
 ---
 
 # Formato simplificado: Cómo convertir textos Markdown a código HTML limpio

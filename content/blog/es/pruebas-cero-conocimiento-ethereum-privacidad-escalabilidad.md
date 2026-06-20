@@ -16,6 +16,7 @@ faqs:
   - question: "¿Por qué las pruebas ZK son fundamentales para la privacidad financiera?"
     answer: "Permiten verificar que una transacción de criptomonedas cumple con las normas de la red (como tener saldo suficiente) sin necesidad de hacer públicos en el explorador el saldo emisor, el receptor ni el monto exacto."
 
+
 ---
 
 # El secreto mejor guardado de Ethereum: Cómo las pruebas de cero conocimiento (ZKPs) blindan tu privacidad

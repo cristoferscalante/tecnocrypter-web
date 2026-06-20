@@ -16,6 +16,7 @@ faqs:
   - question: "/*What do global modifiers (Flags) mean in Regex?*/"
     answer: "They are parameters that alter the search: 'g' (global, searches all matches), 'i' (case-insensitive, ignores upper/lower case) and 'm' (multiline, evaluates matches by lines)."
 
+
 ---
 
 # The power of regular expressions: How to test and build Regex patterns

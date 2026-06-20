@@ -16,6 +16,7 @@ faqs:
   - question: "How does a computer interpret obfuscated text?"
     answer: "Visually it may appear distorted, but the computer reads the individual Unicode code points corresponding to the original base letters."
 
+
 ---
 
 # Character Obfuscation: The Art of Hiding Text with Unicode and Zalgo

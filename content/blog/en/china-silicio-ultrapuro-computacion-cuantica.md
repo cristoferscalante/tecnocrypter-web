@@ -16,6 +16,7 @@ faqs:
   - question: "What does this advance mean for China's technological sovereignty?"
     answer: "Until now, global production of silicon-28 depended almost entirely on Russia and European infrastructure. Producing it domestically ensures that China can manufacture its own quantum processors at scale without fear of trade blockades."
 
+
 ---
 
 # China takes a decisive step towards quantum autonomy with ultrapure silicon

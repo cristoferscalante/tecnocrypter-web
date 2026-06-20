@@ -9,6 +9,7 @@ tags: ["Claude Fable 5", "Anthropic", "veto tecnológico", "seguridad nacional",
 featured: false
 image: "/blogs/veto-claude-fable-5-ia-seguridad-europa.png"
 
+
 ---
 
 # El veto a Claude Fable 5: La IA no es un producto comercial, es la nueva arma nacional

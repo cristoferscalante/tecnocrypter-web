@@ -16,6 +16,7 @@ faqs:
   - question: "¿Qué diferencia hay entre la IA en local y en la nube privada (PCC)?"
     answer: "La IA en local se ejecuta enteramente en el hardware del teléfono para tareas sencillas. Las tareas complejas se envían a la Computación en la Nube Privada (PCC) de Apple, que procesa la información de forma encriptada sin almacenar datos del usuario."
 
+
 ---
 
 # La IA pasará factura: Tim Cook advierte de que el coste de procesamiento disparará el precio del iPhone

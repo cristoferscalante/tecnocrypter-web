@@ -16,6 +16,7 @@ faqs:
   - question: "/*Quels problèmes une mauvaise utilisation du Lorem Ipsum peut-elle causer ?*/"
     answer: "Il peut masquer les besoins réels en espace si les textes réels finaux sont nettement plus longs ou plus courts que le remplissage simulé, il doit donc être combiné avec des tests de contenu réel."
 
+
 ---
 
 # Conception et mise en page : L'utilisation correcte du texte de remplissage (Lorem Ipsum)

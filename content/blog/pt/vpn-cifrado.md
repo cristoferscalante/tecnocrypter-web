@@ -9,6 +9,7 @@ tags: ["VPN", "criptografia VPN", "WireGuard", "OpenVPN"]
 featured: false
 image: "/blogs/vpn-cifrado.webp"
 
+
 ---
 
 # VPNs e criptografia: que tipo de criptografia eles usam e quão seguros são?

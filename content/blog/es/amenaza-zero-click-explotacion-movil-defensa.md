@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cómo me defiendo de ataques de clic cero en mi smartphone?"
     answer: "La defensa más efectiva es activar el Modo de Aislamiento (Lockdown Mode) en iOS, desactivar las previsualizaciones automáticas y reiniciar el móvil diariamente (lo que expulsa a implantes no persistentes de la memoria)."
 
+
 ---
 
 # La Amenaza de los Exploits \"Zero-Click\": Vulnerabilidades sin interacción del usuario

@@ -9,6 +9,7 @@ tags: ["encryption", "privacy", "communications"]
 featured: true
 image: "/blogs/encriptacion_end_to_end.webp"
 
+
 ---
 
 # End-to-End Encryption: The Key to Secure Communications

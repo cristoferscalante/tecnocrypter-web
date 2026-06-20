@@ -16,6 +16,7 @@ faqs:
   - question: "/*¿Qué reglas estándar se aplican al formatear SQL?*/"
     answer: "Escribir las palabras clave en mayúsculas (SELECT, FROM, JOIN, WHERE), tabular los parámetros y organizar cada sección de filtro en líneas independientes para fácil lectura."
 
+
 ---
 
 # Código limpio en bases de datos: Cómo formatear y embellecer consultas SQL

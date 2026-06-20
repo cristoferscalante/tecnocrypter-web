@@ -9,6 +9,7 @@ tags: ["notícias de tecnologia hoje", "IA de segurança cibernética", "fusões
 featured: true
 image: "/blogs/noticias-tech-julio.webp"
 
+
 ---
 
 # Incrível! 6 notícias técnicas de hoje que você não pode ignorar

@@ -16,6 +16,7 @@ faqs:
   - question: "Comment les puces Secure Element protègent-elles les portefeuilles ?"
     answer: "Les puces Secure Element (comme celles utilisées dans les cartes de crédit) intègrent des contre-mesures physiques actives, telles que l'ajout de bruit électrique aléatoire et de boucliers physiques qui empêchent les mesures stables."
 
+
 ---
 
 # Points forts violés : comment les attaques par canal secondaire remettent en question la sécurité des portefeuilles matériels

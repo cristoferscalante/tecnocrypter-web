@@ -16,6 +16,7 @@ faqs:
   - question: "/*How do you convert a header in Markdown?*/"
     answer: "pound signs (#) are used. A single hash represents a main heading `<h1>`, two represent a `<h2>`, and so on up to six levels."
 
+
 ---
 
 # Simplified formatting: How to convert Markdown texts to clean HTML code

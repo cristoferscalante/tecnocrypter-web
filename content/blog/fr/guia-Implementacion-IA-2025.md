@@ -9,6 +9,7 @@ tags: ["Implémentation de l'IA", "Stratégie d'entreprise", "Transformation num
 featured: true
 image: "/blogs/ai-business-implementation-2025.webp"
 
+
 ---
 
 # Guide définitif pour mettre en œuvre l'IA dans votre entreprise : 10 recommandations stratégiques pour 2025

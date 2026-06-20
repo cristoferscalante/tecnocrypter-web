@@ -16,6 +16,7 @@ faqs:
   - question: "Pourquoi les tests ZK sont essentiels à la confidentialité financière ?"
     answer: "Ils vous permettent de vérifier qu'une transaction de cryptomonnaie est conforme aux règles du réseau (comme avoir un solde suffisant) sans avoir à rendre publics le solde de l'expéditeur, le solde du destinataire ou le montant exact dans le navigateur."
 
+
 ---
 
 # Le secret le mieux gardé d'Ethereum : comment les preuves à connaissance nulle (ZKP) protègent votre vie privée

@@ -9,6 +9,7 @@ tags: ["Heartbleed", "vulnerabilidades criptográficas", "casos históricos de s
 featured: false
 image: "/blogs/vulnerabilidades-cifrado.webp"
 
+
 ---
 
 # Vulnerabilidades famosas en la encriptación: casos que marcaron la historia

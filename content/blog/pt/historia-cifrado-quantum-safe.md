@@ -9,6 +9,7 @@ tags: ["história da criptografia", "Figura de César", "criptografia moderna", 
 featured: false
 image: "/blogs/Historia_del_cifrado_quantum-safe.webp"
 
+
 ---
 
 # História da criptografia: da cifra de César à segurança quântica

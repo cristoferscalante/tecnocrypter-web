@@ -9,6 +9,7 @@ tags: ["robô humanóide", "Pemba", "Unidade G1", "Everest", "robótica extrema"
 featured: false
 image: "/blogs/robot-humanoide-pemba-everest-tecnologia.png"
 
+
 ---
 
 #Pemba, o robô humanóide que conquistou os Andes e agora aponta para o Everest

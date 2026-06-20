@@ -14,6 +14,7 @@ seo:
   metaDescription: "Descubre cómo los sitios web crean un perfil de tu navegador mediante cookies y huella digital (fingerprinting). Herramientas de análisis local."
   keywords: "cookies de rastreo, browser fingerprinting, huella digital navegador, analizar cookies, privacidad web"
 
+
 ---
 
 # Cookies, Huellas Digitales y Telemetría: Cómo los Sitios Web Rastrean tu Actividad y Cómo Evitarlo

@@ -16,6 +16,7 @@ faqs:
   - question: "What is the difference between AI on premises and in the private cloud (PCC)?"
     answer: "Local AI runs entirely on the phone's hardware for simple tasks. Complex tasks are sent to Apple's Private Cloud Computing (PCC), which processes information in encrypted form without storing user data."
 
+
 ---
 
 # AI will take its toll: Tim Cook warns that the cost of processing will skyrocket the price of the iPhone

@@ -16,6 +16,7 @@ faqs:
   - question: "/*O que é aumento percentual?*/"
     answer: "Mede a mudança relativa entre um valor inicial e um valor final. É calculado subtraindo o valor inicial do valor final, dividindo pelo valor inicial e multiplicando por 100."
 
+
 ---
 
 # Matemática do dia a dia: como calcular percentagens, IVA e descontos online

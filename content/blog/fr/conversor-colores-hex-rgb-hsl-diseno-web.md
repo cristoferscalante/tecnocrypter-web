@@ -16,6 +16,7 @@ faqs:
   - question: "/*Pourquoi les concepteurs Web préfèrent-ils utiliser HSL ?*/"
     answer: "Parce qu'il est beaucoup plus intuitif d'effectuer des réglages visuels : par exemple, assombrir ou éclaircir une couleur nécessite uniquement de modifier le pourcentage de luminosité (L), en gardant intact le même ton (H)."
 
+
 ---
 
 # Théorie numérique des couleurs : Conversion entre les formats HEX, RVB, HSL et Tailwind

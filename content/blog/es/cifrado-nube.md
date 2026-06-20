@@ -9,6 +9,7 @@ tags: ["cifrado en la nube", "seguridad cloud", "herramientas de cifrado", "Zero
 featured: false
 image: "/blogs/Como_cifrar_tus_datos_en_la_nube.webp"
 
+
 ---
 
 # Cómo cifrar tus datos en la nube: mejores herramientas y prácticas

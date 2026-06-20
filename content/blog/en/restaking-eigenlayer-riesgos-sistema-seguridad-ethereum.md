@@ -16,6 +16,7 @@ faqs:
   - question: "Why does Vitalik Buterin warn against overloading the Ethereum consensus?"
     answer: "Because relying on Ethereum's social consensus to rescue failures of external financial applications creates a systemic fragility that endangers the security of the entire base network."
 
+
 ---
 
 # The Restaking Bubble: The Hidden Dangers and Systemic Risk of EigenLayer on Ethereum

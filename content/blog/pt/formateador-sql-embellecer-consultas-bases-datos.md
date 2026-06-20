@@ -16,6 +16,7 @@ faqs:
   - question: "/*Quais regras padrão se aplicam ao formatar SQL?*/"
     answer: "Escreva as palavras-chave em letras maiúsculas (SELECT, FROM, JOIN, WHERE), tabule os parâmetros e organize cada seção de filtro em linhas separadas para facilitar a leitura."
 
+
 ---
 
 # Código limpo em bancos de dados: como formatar e embelezar consultas SQL

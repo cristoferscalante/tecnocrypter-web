@@ -16,6 +16,7 @@ faqs:
   - question: "How does local processing affect battery life?"
     answer: "Unlike traditional GPUs, NPUs are extremely efficient, managing to extend the autonomy of the LG gram Pro up to 22 hours of mixed use even running AI processes in the background."
 
+
 ---
 
 # Extreme lightness and massive NPU: The LG gram Pro (2026) redefines the power of local AI

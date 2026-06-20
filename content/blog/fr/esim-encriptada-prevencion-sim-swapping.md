@@ -21,6 +21,7 @@ faqs:
   - question: "Comment atténue-t-elle le suivi géographique des antennes relais ?"
     answer: "Elle utilise des identifiants réseau dynamiques et rotatifs au lieu d'un IMSI statique. Cela signifie que les antennes locales ne peuvent pas corréler votre signal cellulaire avec une identité utilisateur persistante."
 
+
 ---
 
 # Comment les eSIM Chiffrées Préviennent le SIM Swapping et l'Interception Réseau

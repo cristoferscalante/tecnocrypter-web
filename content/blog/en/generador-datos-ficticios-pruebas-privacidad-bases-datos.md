@@ -16,6 +16,7 @@ faqs:
   - question: "Is locally generated data secure?"
     answer: "Yes, since when processed in your own web browser, no private data is transmitted to external servers, guaranteeing the anonymity of your tests."
 
+
 ---
 
 # Ethical testing: Generation of realistic fictional data to protect privacy

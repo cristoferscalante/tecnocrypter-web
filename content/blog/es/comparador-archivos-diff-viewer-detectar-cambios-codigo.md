@@ -16,6 +16,7 @@ faqs:
   - question: "/*¿Es seguro comparar archivos con datos sensibles online?*/"
     answer: "Solo si la comparación se realiza completamente del lado del cliente mediante JavaScript. Enviar tus archivos a un servidor web de terceros para hacer el 'diff' expone tu propiedad intelectual o datos confidenciales."
 
+
 ---
 
 # Control de cambios: Cómo usar visores Diff para comparar archivos línea por línea

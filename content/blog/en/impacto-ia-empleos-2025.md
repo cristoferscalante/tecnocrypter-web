@@ -9,6 +9,7 @@ tags: ["job losses 2025", "automation and AI", "AI job cuts", "re-skilling Karna
 featured: true
 image: "/blogs/impacto-ia-empleos-2025.webp"
 
+
 ---
 
 # More than 10,000 Jobs Disappear in 2025: Are We Ready for the Future?

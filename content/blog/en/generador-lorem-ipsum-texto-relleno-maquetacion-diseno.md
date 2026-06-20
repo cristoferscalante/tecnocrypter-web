@@ -16,6 +16,7 @@ faqs:
   - question: "/*What problems can misuse of Lorem Ipsum cause?*/"
     answer: "It may hide real space needs if the final real texts are significantly longer or shorter than the simulated filler, so it should be combined with tests of real content."
 
+
 ---
 
 # Design and layout: The correct use of filler text (Lorem Ipsum)

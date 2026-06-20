@@ -16,6 +16,7 @@ faqs:
   - question: "¿Qué son las credenciales deterministas?"
     answer: "Son sistemas de generación de nombres de usuario y contraseñas basados en algoritmos deterministas a partir de una palabra clave, haciendo que sean recuperables pero únicos por plataforma."
 
+
 ---
 
 # Correos desechables y alias: Protege tu bandeja de entrada contra el spam y filtraciones

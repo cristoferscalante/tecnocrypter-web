@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cuánto aumenta el tamaño del archivo al convertirlo a Base64?"
     answer: "La codificación Base64 incrementa el tamaño del archivo en aproximadamente un 33% en comparación con su representación binaria original."
 
+
 ---
 
 # Transmisión de datos en la web: Conversión de archivos e imágenes a Base64

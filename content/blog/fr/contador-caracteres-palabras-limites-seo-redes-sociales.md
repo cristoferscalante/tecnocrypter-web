@@ -16,6 +16,7 @@ faqs:
   - question: "/*Quelle est la vitesse moyenne de lecture humaine ?*/"
     answer: "La vitesse moyenne de lecture pour un adulte est de 200 à 250 mots par minute, une information utile pour calculer le temps estimé de lecture de vos articles."
 
+
 ---
 
 # Rédaction stratégique : Des outils pour compter les mots et respecter les limites SEO

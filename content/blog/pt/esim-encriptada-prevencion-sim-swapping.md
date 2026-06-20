@@ -21,6 +21,7 @@ faqs:
   - question: "Como ele mitiga o rastreamento geográfico das torres celulares?"
     answer: "Utiliza identificadores de rede dinâmicos e rotativos em vez de um IMSI estático. Isso significa que as antenas locais não podem correlacionar o sinal do seu celular com uma identidade de usuário persistente."
 
+
 ---
 
 # Como os eSIMs Criptografados Previnem o SIM Swapping e a Interceptação de Rede

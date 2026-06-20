@@ -16,6 +16,7 @@ faqs:
   - question: "/*O que acontecerá com o clima do Unix no ano de 2038?*/"
     answer: "Em sistemas de 32 bits, o valor inteiro máximo irá estourar em 19 de janeiro de 2038 (o problema do ano 2038), causando erros críticos de tempo semelhantes ao efeito Y2K se não for migrado para arquiteturas de 64 bits."
 
+
 ---
 
 # Tempo na computação: convertendo o carimbo de data / hora do Epoch Unix em datas reais

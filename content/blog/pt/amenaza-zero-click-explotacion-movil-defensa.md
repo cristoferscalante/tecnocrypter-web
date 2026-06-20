@@ -16,6 +16,7 @@ faqs:
   - question: "Como posso me defender contra ataques de clique zero no meu smartphone?"
     answer: "A defesa mais eficaz é ativar o Modo Lockdown no iOS, desativar as visualizações automáticas e reiniciar o telefone diariamente (o que expele implantes de memória não persistentes)."
 
+
 ---
 
 # A ameaça de explorações de "clique zero": vulnerabilidades sem interação do usuário

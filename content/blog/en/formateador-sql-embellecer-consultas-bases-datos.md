@@ -16,6 +16,7 @@ faqs:
   - question: "/*What standard rules apply when formatting SQL?*/"
     answer: "Write the keywords in capital letters (SELECT, FROM, JOIN, WHERE), tabulate the parameters and organize each filter section on separate lines for easy reading."
 
+
 ---
 
 # Clean Code in Databases: How to Format and Beautify SQL Queries

@@ -16,6 +16,7 @@ faqs:
   - question: "How can I protect my DeFi transactions against MEV bots?"
     answer: "The most effective way is to set up a private RPC endpoint in your wallet (like MetaMask), like Flashbots Protect or MEV-Share, which sends your transactions directly to the block builders without going through the public mempool."
 
+
 ---
 
 # Invisible theft in DeFi: This is how MEV bots manipulate your transactions (and how to avoid it)

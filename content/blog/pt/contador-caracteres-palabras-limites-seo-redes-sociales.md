@@ -16,6 +16,7 @@ faqs:
   - question: "/*Qual é a velocidade média de leitura humana?*/"
     answer: "A velocidade média de leitura de um adulto é de 200 a 250 palavras por minuto, informação útil para calcular o tempo estimado de leitura de seus artigos."
 
+
 ---
 
 # Redação estratégica: ferramentas para contar palavras e respeitar os limites de SEO

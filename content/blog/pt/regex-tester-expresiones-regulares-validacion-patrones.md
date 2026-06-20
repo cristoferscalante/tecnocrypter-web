@@ -16,6 +16,7 @@ faqs:
   - question: "/*O que significam os modificadores globais (Sinalizadores) no Regex?*/"
     answer: "São parâmetros que alteram a pesquisa: 'g' (global, pesquisa todas as correspondências), 'i' (não diferencia maiúsculas de minúsculas, ignora maiúsculas/minúsculas) e 'm' (multilinha, avalia correspondências por linhas)."
 
+
 ---
 
 # O poder das expressões regulares: como testar e construir padrões Regex

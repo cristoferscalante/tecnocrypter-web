@@ -16,6 +16,7 @@ faqs:
   - question: "How do Secure Element chips protect wallets?"
     answer: "Secure Element chips (like those used in credit cards) incorporate active physical countermeasures, such as adding random electrical noise and physical shields that prevent stable measurements."
 
+
 ---
 
 # Strengths breached: How side-channel attacks challenge the security of Hardware Wallets

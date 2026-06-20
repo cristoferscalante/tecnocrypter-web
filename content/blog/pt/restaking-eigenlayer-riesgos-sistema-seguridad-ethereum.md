@@ -16,6 +16,7 @@ faqs:
   - question: "Por que Vitalik Buterin alerta contra a sobrecarga do consenso Ethereum?"
     answer: "Porque confiar no consenso social do Ethereum para resgatar falhas de aplicações financeiras externas cria uma fragilidade sistêmica que põe em risco a segurança de toda a rede base."
 
+
 ---
 
 # A bolha de restabelecimento: os perigos ocultos e o risco sistêmico do EigenLayer no Ethereum

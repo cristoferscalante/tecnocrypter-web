@@ -16,6 +16,7 @@ faqs:
   - question: "Where is Base32 commonly used?"
     answer: "Its most famous application is the encryption of secret seed keys in two-factor authentication (2FA/TOTP) applications such as Google Authenticator."
 
+
 ---
 
 # Base32 Encoding: When to use it vs. Base64 and how its algorithm works

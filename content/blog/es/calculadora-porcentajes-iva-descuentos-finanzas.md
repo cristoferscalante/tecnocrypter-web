@@ -16,6 +16,7 @@ faqs:
   - question: "/*¿Qué es el incremento porcentual?*/"
     answer: "Mide el cambio relativo entre un valor inicial y uno final. Se calcula restando el valor inicial al final, dividiendo entre el inicial y multiplicando por 100."
 
+
 ---
 
 # Matemáticas cotidianas: Cómo calcular porcentajes, IVA y descuentos online

@@ -9,6 +9,7 @@ tags: ["ameaças cibernéticas", "vulnerabilidades", "ransomware", "malware"]
 featured: false
 image: "/blogs/panorama_de_ciberamenazas.webp"
 
+
 ---
 
 # Cenário de ameaças cibernéticas: vulnerabilidades e ataques em destaque para agosto de 2025

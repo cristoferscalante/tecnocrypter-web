@@ -9,6 +9,7 @@ tags: ["AES", "ChaCha20", "comparação de criptografia", "segurança criptográ
 featured: false
 image: "/blogs/AES-vs-ChaCha20.webp"
 
+
 ---
 
 # AES vs ChaCha20: diferenças, vantagens e quando usar cada um

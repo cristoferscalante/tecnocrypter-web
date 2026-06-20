@@ -16,6 +16,7 @@ faqs:
   - question: "Dans quelle mesure la conversion en Base64 augmente-t-elle la taille du fichier ?"
     answer: "L'encodage Base64 augmente la taille du fichier d'environ 33 % par rapport à sa représentation binaire d'origine."
 
+
 ---
 
 # Transmission de données sur le web : Conversion de fichiers et d'images en Base64

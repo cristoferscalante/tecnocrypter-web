@@ -9,6 +9,7 @@ tags: ["cyber threats", "vulnerabilities", "ransomware", "malware"]
 featured: false
 image: "/blogs/panorama_de_ciberamenazas.webp"
 
+
 ---
 
 # Cyber Threat Landscape: Featured Vulnerabilities and Attacks for August 2025

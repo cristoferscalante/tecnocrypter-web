@@ -16,6 +16,7 @@ faqs:
   - question: "¿Por qué cambiar o alternar mi User-Agent?"
     answer: "Permite simular que estás navegando desde un dispositivo o sistema diferente, confundiendo a los algoritmos de tracking y permitiendo acceder a versiones web restringidas."
 
+
 ---
 
 # Evasión del Fingerprinting: Cómo usar User-Agents para proteger tu privacidad de navegación

@@ -16,6 +16,7 @@ faqs:
   - question: "How can developers secure their dependencies?"
     answer: "By using static dependency scanning (SCA) tools, locking specific versions using lock files, automatically auditing digital signatures, and disabling unverified post-installation scripts."
 
+
 ---
 
 # Generative Trojan Horses: AI Automates Repository Poisoning in the Software Supply Chain

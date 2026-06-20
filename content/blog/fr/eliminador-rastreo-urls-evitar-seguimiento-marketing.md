@@ -16,6 +16,7 @@ faqs:
   - question: "Le outil de suppression de suivi rompt-il le lien ?"
     answer: "Non. Il supprime uniquement les variables de marketing et de suivi inutiles qui viennent après le point d'interrogation (?), laissant le lien d'origine intact pour charger le site à l'identique."
 
+
 ---
 
 # Nettoyage d'URL : comment supprimer les paramètres et les trackers UTM de vos liens

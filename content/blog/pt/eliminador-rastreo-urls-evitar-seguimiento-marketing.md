@@ -16,6 +16,7 @@ faqs:
   - question: "O removedor de rastreamento quebra o link?"
     answer: "Não. Ele apenas remove as variáveis ​​desnecessárias de marketing e rastreamento que vêm após o ponto de interrogação (?), deixando o link original intacto para carregar o site de forma idêntica."
 
+
 ---
 
 # Limpeza de URL: como remover parâmetros e rastreadores UTM de seus links

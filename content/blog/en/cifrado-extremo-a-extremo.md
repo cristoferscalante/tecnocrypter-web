@@ -9,6 +9,7 @@ tags: ["E2E", "end to end encryption", "digital security", "signal", "WhatsApp"]
 featured: true
 image: "/blogs/cifrado_extremo_a_extremo.webp"
 
+
 ---
 
 # What is end-to-end encryption and why it is essential today

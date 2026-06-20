@@ -9,6 +9,7 @@ tags: ["E2E", "cryptage de bout en bout", "sécurité numérique", "signal", "Wh
 featured: true
 image: "/blogs/cifrado_extremo_a_extremo.webp"
 
+
 ---
 
 # Qu'est-ce que le chiffrement de bout en bout et pourquoi il est indispensable aujourd'hui

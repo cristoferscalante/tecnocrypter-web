@@ -16,6 +16,7 @@ faqs:
   - question: "/*¿La minificación puede romper mi código?*/"
     answer: "Solo si el código carece de sintaxis correcta (como la omisión de puntos y comas en JavaScript) o si los minificadores realizan ofuscación agresiva mal configurada. Un minificador básico estándar es seguro."
 
+
 ---
 
 # WPO avanzado: Cómo minificar CSS y Javascript para acelerar tu web

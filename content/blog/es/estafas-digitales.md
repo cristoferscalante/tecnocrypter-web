@@ -9,6 +9,7 @@ tags: ["estafas digitales", "ransomware", "phishing", "ciberseguridad", "protecc
 featured: true
 image: "/blogs/estafas-digitales.webp"
 
+
 ---
 
 # Estafas Digitales en la Era de la Inteligencia Artificial: Análisis Multidisciplinario de Amenazas Emergentes y Estrategias de Protección

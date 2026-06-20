@@ -16,6 +16,7 @@ faqs:
   - question: "Por que alterar ou alternar meu User-Agent?"
     answer: "Ele permite simular que você está navegando em um dispositivo ou sistema diferente, confundindo algoritmos de rastreamento e permitindo acesso a versões restritas da web."
 
+
 ---
 
 # Evasão de impressão digital: como usar agentes de usuário para proteger sua privacidade de navegação

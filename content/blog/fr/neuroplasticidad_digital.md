@@ -9,6 +9,7 @@ tags: ["neuroplasticité", "technologie", "cerveau", "IA", "cognition"]
 featured: true
 image: "/blogs/neuroplasticidad-digital.webp"
 
+
 ---
 
 # Neuroplasticité numérique : comment l'ère technologique remodèle le cerveau humain

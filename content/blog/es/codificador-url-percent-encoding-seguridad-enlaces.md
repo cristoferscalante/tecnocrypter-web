@@ -16,6 +16,7 @@ faqs:
   - question: "¿Qué caracteres se consideran reservados en una URL?"
     answer: "Los caracteres reservados tienen funciones sintácticas específicas (como ?, &, =, /, :, #). Si forman parte de un dato que queremos enviar como parámetro, deben codificarse para no romper la estructura de la URL."
 
+
 ---
 
 # Estructura web: Codificación de caracteres especiales en URLs (Percent-Encoding)

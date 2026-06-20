@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cómo repercute este cuello de botella en los costes de las startups de IA?"
     answer: "Provoca esperas de hasta 9 meses para acceder a clusters de GPU e incrementa la tarifa de alquiler por hora de cómputo en la nube, encareciendo el entrenamiento de nuevos modelos."
 
+
 ---
 
 # El talón de Aquiles de la IA: La crisis de suministro y el colosal consumo eléctrico de los chips NVIDIA Blackwell

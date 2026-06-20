@@ -16,6 +16,7 @@ faqs:
   - question: "Como posso me proteger do rastreamento de poeira?"
     answer: "Você pode marcar esses pequenos saldos desconhecidos como “não gastáveis” (em carteiras controladas por UTXO) ou usar serviços de combinação de privacidade para desvincular suas transações."
 
+
 ---
 
 # Ataques de poeira: o truque invisível que os hackers usam para rastrear sua carteira criptografada

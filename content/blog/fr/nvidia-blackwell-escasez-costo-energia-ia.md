@@ -16,6 +16,7 @@ faqs:
   - question: "Quel est l’impact de ce goulot d’étranglement sur les coûts des startups d’IA ?"
     answer: "Cela entraîne des attentes allant jusqu'à 9 mois pour accéder aux clusters GPU et augmente le tarif de location par heure de calcul dans le cloud, ce qui rend plus coûteux la formation de nouveaux modèles."
 
+
 ---
 
 # Le talon d'Achille de l'IA : La crise d'approvisionnement et la consommation électrique colossale des puces NVIDIA Blackwell

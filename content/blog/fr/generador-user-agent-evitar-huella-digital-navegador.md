@@ -16,6 +16,7 @@ faqs:
   - question: "Pourquoi changer ou basculer mon User-Agent ?"
     answer: "Il vous permet de simuler que vous naviguez à partir d'un appareil ou d'un système différent, ce qui confond les algorithmes de suivi et permet l'accès à des versions Web restreintes."
 
+
 ---
 
 # Évasion des empreintes digitales : comment utiliser des agents utilisateurs pour protéger votre confidentialité de navigation

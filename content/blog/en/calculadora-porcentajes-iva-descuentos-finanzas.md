@@ -16,6 +16,7 @@ faqs:
   - question: "/*What is percentage increase?*/"
     answer: "Measures the relative change between an initial value and a final value. It is calculated by subtracting the initial value from the final value, dividing by the initial value and multiplying by 100."
 
+
 ---
 
 # Everyday mathematics: How to calculate percentages, VAT and discounts online

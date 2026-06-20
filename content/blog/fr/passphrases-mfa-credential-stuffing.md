@@ -14,6 +14,7 @@ seo:
   metaDescription: "Fortalece tus cuentas. Descubre qué es la entropía de contraseñas, cómo usar frases de contraseña (passphrases) y la importancia del MFA offline."
   keywords: "frases de contraseña, entropía contraseñas, credential stuffing, generador TOTP, seguridad cuentas"
 
+
 ---
 
 # Au-delà des mots de passe courants : phrases secrètes et MFA vs. Credential Stuffing

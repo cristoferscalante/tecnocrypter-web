@@ -16,6 +16,7 @@ faqs:
   - question: "Comment empêcher la manipulation d’un JWT ?"
     answer: "Le jeton contient une signature cryptographique dans sa troisième section. Si un client modifie les données utiles, la signature ne correspond plus et le serveur rejette le jeton."
 
+
 ---
 
 # Guide standard JWT : Comment décoder et analyser en toute sécurité les jetons Web JSON

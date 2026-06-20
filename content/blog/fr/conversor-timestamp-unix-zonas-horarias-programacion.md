@@ -16,6 +16,7 @@ faqs:
   - question: "/*Qu'arrivera-t-il à la météo Unix en 2038 ?*/"
     answer: "Sur les systèmes 32 bits, la valeur entière maximale dépassera le 19 janvier 2038 (le problème de l'année 2038), provoquant des erreurs critiques similaires à l'effet de l'an 2000 si la migration n'est pas effectuée vers des architectures 64 bits."
 
+
 ---
 
 # Le temps en informatique : conversion de l'horodatage Epoch Unix en dates réelles

@@ -9,6 +9,7 @@ tags: ["EspaçoX", "xAI", "Cursor", "Grok", "aquisição tecnológica", "IA"]
 featured: true
 image: "/blogs/spacex-adquisicion-cursor-xai-grok.png"
 
+
 ---
 
 # SpaceX adquire Cursor por US$ 60 bilhões: o ás na manga para ressuscitar Grok

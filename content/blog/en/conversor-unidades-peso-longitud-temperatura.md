@@ -16,6 +16,7 @@ faqs:
   - question: "/*How do you convert Fahrenheit to Celsius accurately?*/"
     answer: "The mathematical formula is: $C = (F - 32) \times 5/9$. Performing this calculation mentally is complex, so it is best to automate it with local tools."
 
+
 ---
 
 # Quick calculations: How to convert units of length, weight and temperature

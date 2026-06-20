@@ -16,6 +16,7 @@ faqs:
   - question: "Comment la génération locale aide-t-elle les développeurs ?"
     answer: "Garantit qu'aucun profil de test généré n'est envoyé sur Internet, conformément aux réglementations en matière de protection des données lors du développement local."
 
+
 ---
 
 # Création d'environnements sécurisés : comment générer des informations d'identification et des profils aléatoires pour les tests

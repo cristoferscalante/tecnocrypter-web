@@ -16,6 +16,7 @@ faqs:
   - question: "Quels composants de téléphonie mobile sont devenus plus chers ?"
     answer: "Mémoire vive (RAM) et stockage physique (NAND Flash). Le PDG de Nothing indique qu'aujourd'hui la mémoire peut représenter plus de 50 % du coût matériel total d'un téléphone."
 
+
 ---
 
 # La mémoire est le nouveau roi du coût : Carl Pei explique pourquoi les prix des téléphones portables augmentent

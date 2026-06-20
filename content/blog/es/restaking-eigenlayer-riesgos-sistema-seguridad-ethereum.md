@@ -16,6 +16,7 @@ faqs:
   - question: "¿Por qué Vitalik Buterin advierte de no sobrecargar el consenso de Ethereum?"
     answer: "Porque depender del consenso social de Ethereum para rescatar fallos de aplicaciones financieras externas crea una fragilidad sistémica que pone en peligro la seguridad de toda la red base."
 
+
 ---
 
 # La burbuja del restaking: Los peligros ocultos y el riesgo sistémico de EigenLayer en Ethereum

@@ -16,6 +16,7 @@ faqs:
   - question: "How much does converting to Base64 increase the file size?"
     answer: "Base64 encoding increases file size by approximately 33% compared to its original binary representation."
 
+
 ---
 
 # Data transmission on the web: Converting files and images to Base64

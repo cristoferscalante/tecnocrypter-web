@@ -16,6 +16,7 @@ faqs:
   - question: "Comment puis-je protéger mes transactions DeFi contre les robots MEV ?"
     answer: "Le moyen le plus efficace consiste à configurer un point de terminaison RPC privé dans votre portefeuille (comme MetaMask), comme Flashbots Protect ou MEV-Share, qui envoie vos transactions directement aux constructeurs de blocs sans passer par le pool de mémoire public."
 
+
 ---
 
 # Vol invisible dans DeFi : voici comment les robots MEV manipulent vos transactions (et comment l'éviter)

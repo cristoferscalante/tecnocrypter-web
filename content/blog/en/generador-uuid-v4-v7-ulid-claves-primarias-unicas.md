@@ -16,6 +16,7 @@ faqs:
   - question: "How does UUID v7 and ULID solve this problem?"
     answer: "They integrate a timestamp of milliseconds in the first section of the identifier. This makes them ordered chronologically (monotonic), preserving the speed of indexing in the database."
 
+
 ---
 
 # Unique identifiers: Differences between UUID v4, v7 and ULID in databases

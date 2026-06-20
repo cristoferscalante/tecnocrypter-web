@@ -9,6 +9,7 @@ tags: ["artificial intelligence", "AI war", "NBA smart ball", "sale of Nvidia sh
 featured: true
 image: "/blogs/noticias_tech_2025.webp"
 
+
 ---
 
 #5 Shocking Tech News That Is Redefining 2025

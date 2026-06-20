@@ -16,6 +16,7 @@ faqs:
   - question: "Comment l'UUID v7 et l'ULID résolvent-ils ce problème ?"
     answer: "Ils intègrent un horodatage en millisecondes dans la première section de l'identifiant. Cela les rend ordonnés chronologiquement (monotones), préservant ainsi la rapidité d'indexation dans la base de données."
 
+
 ---
 
 # Identifiants uniques : Différences entre UUID v4, v7 et ULID dans les bases de données

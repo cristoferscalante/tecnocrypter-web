@@ -16,6 +16,7 @@ faqs:
   - question: "/*¿Cómo se escapan los caracteres especiales en un archivo CSV?*/"
     answer: "Si un campo de texto contiene el delimitador (ej. una coma) o un salto de línea, ese campo completo debe ir envuelto entre comillas dobles (\") para que el parser no lo rompa al leerlo."
 
+
 ---
 
 # Manipulación de hojas de cálculo: Creación y exportación de archivos CSV

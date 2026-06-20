@@ -16,6 +16,7 @@ faqs:
   - question: "/*¿Qué pasará con el tiempo Unix en el año 2038?*/"
     answer: "En sistemas de 32 bits, el valor máximo entero se desbordará el 19 de enero de 2038 (el problema del año 2038), provocando errores críticos de tiempo similar al efecto Y2K si no se migra a arquitecturas de 64 bits."
 
+
 ---
 
 # El tiempo en la informática: Conversión de Epoch Unix Timestamp a fechas reales

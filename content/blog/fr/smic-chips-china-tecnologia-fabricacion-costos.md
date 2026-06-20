@@ -9,6 +9,7 @@ tags: ["SMIC", "Chine", "semi-conducteurs", "Lithographie DUV", "5nm", "sanction
 featured: false
 image: "/blogs/smic-chips-china-tecnologia-fabricacion-costos.png"
 
+
 ---
 
 # Le miracle et le coût du 5nm en Chine : le SMIC contourne les sanctions grâce à la lithographie DUV

@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cómo se evitan los ataques de fatiga de MFA y phishing?"
     answer: "Utilizando llaves físicas FIDO2/WebAuthn en lugar de códigos SMS o push genéricos, adoptando políticas rigurosas de verificación doble de peticiones inusuales y reforzando la concienciación de seguridad del personal."
 
+
 ---
 
 # Hacking Humano: Por qué la ingeniería social supera a la encriptación matemática

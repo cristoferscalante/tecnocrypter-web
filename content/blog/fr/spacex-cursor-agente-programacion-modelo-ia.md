@@ -16,6 +16,7 @@ faqs:
   - question: "Pourquoi le déterminisme est-il essentiel dans le développement de logiciels spatiaux ?"
     answer: "Parce que les logiciels aérospatiaux doivent se comporter exactement de la même manière à chaque exécution. Les modèles d’IA probabilistes peuvent être trompeurs, les rendant inadaptés aux logiciels embarqués critiques."
 
+
 ---
 
 # SpaceX adopte Cursor comme programmeur : La course à l'espace dépend désormais de l'autonomie des agents

@@ -16,6 +16,7 @@ faqs:
   - question: "/*La minification peut-elle casser mon code ?*/"
     answer: "Uniquement si le code manque de syntaxe correcte (par exemple en omettant les points-virgules dans JavaScript) ou si les minificateurs effectuent un obscurcissement agressif mal configuré. Un minificateur de base standard est sûr."
 
+
 ---
 
 # Advanced WPO : Comment réduire CSS et Javascript pour accélérer votre site Web

@@ -9,6 +9,7 @@ tags: ["intelligence artificielle", "Guerre de l'IA", "Ballon intelligent NBA", 
 featured: true
 image: "/blogs/noticias_tech_2025.webp"
 
+
 ---
 
 #5 Nouvelles technologiques choquantes qui redéfinissent 2025

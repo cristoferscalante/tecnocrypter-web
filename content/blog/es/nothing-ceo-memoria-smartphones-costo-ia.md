@@ -16,6 +16,7 @@ faqs:
   - question: "¿Qué componentes de los móviles se han encarecido más?"
     answer: "La memoria de acceso aleatorio (RAM) y el almacenamiento físico (NAND Flash). El CEO de Nothing indica que hoy en día la memoria puede representar más del 50% del coste total de hardware de un teléfono."
 
+
 ---
 
 # La memoria es el nuevo rey del costo: Carl Pei explica por qué los móviles suben de precio

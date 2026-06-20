@@ -16,6 +16,7 @@ faqs:
   - question: "How do you prevent manipulation of a JWT?"
     answer: "The token contains a cryptographic signature in its third section. If a client alters the payload data, the signature no longer matches and the server rejects the token."
 
+
 ---
 
 # JWT Standard Guide: How to Securely Decode and Parse JSON Web Tokens

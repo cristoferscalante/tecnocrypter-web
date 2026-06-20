@@ -14,6 +14,7 @@ seo:
   metaDescription: "Protege tu privacidad digital. Aprende cómo elminar metadatos EXIF de tus archivos y limpiar parámetros de rastreo en tus enlaces compartidos."
   keywords: "eliminar metadatos, EXIF fotos, privacidad digital, eliminador de rastreo, opsec"
 
+
 ---
 
 # La menace invisible des métadonnées : comment protéger votre vie privée numérique

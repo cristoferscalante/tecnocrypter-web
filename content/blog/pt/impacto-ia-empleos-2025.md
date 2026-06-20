@@ -9,6 +9,7 @@ tags: ["perdas de empregos em 2025", "automação e IA", "Cortes de empregos de 
 featured: true
 image: "/blogs/impacto-ia-empleos-2025.webp"
 
+
 ---
 
 # Mais de 10.000 empregos desaparecem em 2025: estamos prontos para o futuro?

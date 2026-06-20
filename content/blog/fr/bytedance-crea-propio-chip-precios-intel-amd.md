@@ -16,6 +16,7 @@ faqs:
   - question: "Comment la hausse des prix d’Intel et d’AMD affecte-t-elle le marché technologique ?"
     answer: "Cela oblige les mégacorporations Internet (hyperscalers) à internaliser la conception du silicium, accélérant ainsi la fragmentation du marché et le déclin du modèle x86 traditionnel au profit d’ARM et d’architectures personnalisées."
 
+
 ---
 
 # Rébellion dans le silicium : ByteDance va fabriquer ses propres puces pour échapper aux prix d'Intel et d'AMD

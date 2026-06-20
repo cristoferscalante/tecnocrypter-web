@@ -16,6 +16,7 @@ faqs:
   - question: "Como faço para converter um número hexadecimal em binário?"
     answer: "Cada dígito hexadecimal é convertido diretamente em seu valor binário de 4 bits. Por exemplo, o dígito '9' é '1001' e 'A' é '1010', então '9A' em hexadecimal é '10011010' em binário."
 
+
 ---
 
 # Linguagem de máquina: Conversão entre Hexadecimal, Binário e Decimal

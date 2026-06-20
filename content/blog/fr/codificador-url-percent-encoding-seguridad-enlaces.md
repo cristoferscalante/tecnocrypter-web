@@ -16,6 +16,7 @@ faqs:
   - question: "Quels caractères sont considérés comme réservés dans une URL ?"
     answer: "Les caractères réservés ont des fonctions syntaxiques spécifiques (telles que ?, &, =, /, :, #). S'ils font partie d'une donnée que l'on souhaite envoyer en paramètre, ils doivent être encodés pour ne pas casser la structure de l'URL."
 
+
 ---
 
 # Structure Web : Encodage des caractères spéciaux dans les URL (Percent-Encoding)

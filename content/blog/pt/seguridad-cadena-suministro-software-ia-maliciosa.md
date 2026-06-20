@@ -16,6 +16,7 @@ faqs:
   - question: "Como os desenvolvedores podem proteger suas dependências?"
     answer: "Usando ferramentas de verificação de dependência estática (SCA), bloqueando versões específicas usando arquivos de bloqueio, auditando automaticamente assinaturas digitais e desativando scripts pós-instalação não verificados."
 
+
 ---
 
 # Cavalos de Tróia generativos: IA automatiza envenenamento de repositórios na cadeia de suprimentos de software

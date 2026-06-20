@@ -16,6 +16,7 @@ faqs:
   - question: "Où Base32 est-il couramment utilisé ?"
     answer: "Son application la plus connue est le cryptage des clés secrètes dans les applications d'authentification à deux facteurs (2FA/TOTP) telles que Google Authenticator."
 
+
 ---
 
 # Encodage Base32 : quand l'utiliser par rapport à Base64 et comment fonctionne son algorithme

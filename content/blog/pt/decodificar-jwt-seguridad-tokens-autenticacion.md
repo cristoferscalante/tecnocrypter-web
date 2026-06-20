@@ -16,6 +16,7 @@ faqs:
   - question: "Como você evita a manipulação de um JWT?"
     answer: "O token contém uma assinatura criptográfica em sua terceira seção. Se um cliente alterar os dados da carga útil, a assinatura não corresponderá mais e o servidor rejeitará o token."
 
+
 ---
 
 # Guia padrão JWT: como decodificar e analisar tokens JSON Web com segurança

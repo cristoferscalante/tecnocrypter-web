@@ -16,6 +16,7 @@ faqs:
   - question: "Comment un ordinateur interprète-t-il le texte obscurci ?"
     answer: "Visuellement, cela peut paraître déformé, mais l'ordinateur lit les points de code Unicode individuels correspondant aux lettres de base d'origine."
 
+
 ---
 
 # Obscurcissement des caractères : l'art de cacher du texte avec Unicode et Zalgo

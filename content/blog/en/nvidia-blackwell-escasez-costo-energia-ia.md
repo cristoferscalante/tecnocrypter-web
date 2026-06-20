@@ -16,6 +16,7 @@ faqs:
   - question: "How does this bottleneck impact the costs of AI startups?"
     answer: "It causes waits of up to 9 months to access GPU clusters and increases the rental rate per hour of computing in the cloud, making it more expensive to train new models."
 
+
 ---
 
 # The Achilles heel of AI: The supply crisis and the colossal electricity consumption of NVIDIA Blackwell chips

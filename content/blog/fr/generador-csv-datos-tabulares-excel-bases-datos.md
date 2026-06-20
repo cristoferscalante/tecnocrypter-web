@@ -16,6 +16,7 @@ faqs:
   - question: "/*Comment puis-je échapper les caractères spéciaux dans un fichier CSV ?*/"
     answer: "Si un champ de texte contient un délimiteur (par exemple une virgule) ou un saut de ligne, ce champ entier doit être entouré de guillemets doubles (\") afin que l'analyseur ne le brise pas lors de sa lecture."
 
+
 ---
 
 # Manipulation de feuilles de calcul : création et exportation de fichiers CSV

@@ -16,6 +16,7 @@ faqs:
   - question: "Is it safe to generate SSH or OpenSSL keys online?"
     answer: "Only if they are generated locally in your browser using the JavaScript Web Crypto API, without sending the keys to any server. Our tool works under this local security principle."
 
+
 ---
 
 # Asymmetric cryptography: Secure generation of RSA and ECDSA key pairs locally

@@ -16,6 +16,7 @@ faqs:
   - question: "Comment convertir un nombre hexadécimal en binaire ?"
     answer: "Chaque chiffre hexadécimal est converti directement en sa valeur binaire de 4 bits. Par exemple, le chiffre « 9 » est « 1001 » et « A » est « 1010 », donc « 9A » en hexadécimal est « 10011010 » en binaire."
 
+
 ---
 
 # Langage machine : Conversion entre Hexadécimal, Binaire et Décimal

@@ -9,6 +9,7 @@ tags: ["IA", "job", "productivity", "future"]
 featured: true
 image: "/blogs/semana-laboral-ia.webp"
 
+
 ---
 
 ## Will the 4-Day Workweek Arrive in 2040? AI Makes It Possible

@@ -16,6 +16,7 @@ faqs:
   - question: "/*What do the special characters (*, /, ,) mean in cron?*/"
     answer: "The asterisk (*) means 'any value', the slash (/) defines steps or intervals (e.g. */15 is every 15 minutes), and the comma (,) separates specific values."
 
+
 ---
 
 # Server Automation: A Practical Guide to Creating Crash-Free Cron Expressions

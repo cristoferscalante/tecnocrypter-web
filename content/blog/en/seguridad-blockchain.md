@@ -9,6 +9,7 @@ tags: ["blockchain", "security", "cryptocurrencies"]
 featured: true
 image: "/blogs/seguridad_en_la_blockchain.webp"
 
+
 ---
 
 # Blockchain Security: Protecting your Digital Assets

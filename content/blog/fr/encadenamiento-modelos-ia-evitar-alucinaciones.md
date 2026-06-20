@@ -16,6 +16,7 @@ faqs:
   - question: "Quels avantages en matière de sécurité offre-t-il par rapport aux réponses directes ?"
     answer: "Agit comme un pare-feu intelligent. Il peut intercepter les tentatives d'injection rapides, détecter les fuites d'informations sensibles (PII) et bloquer le code malveillant auto-généré."
 
+
 ---
 
 # Méfiance intelligente : pourquoi le chaînage de modèles est la véritable défense contre les hallucinations de l'IA

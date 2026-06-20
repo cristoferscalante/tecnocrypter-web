@@ -16,6 +16,7 @@ faqs:
   - question: "¿Los datos generados localmente son seguros?"
     answer: "Sí, ya que al procesarse en tu propio navegador web no se transmiten datos privados a servidores externos, garantizando el anonimato de tus pruebas."
 
+
 ---
 
 # Testing ético: Generación de datos ficticios realistas para proteger la privacidad

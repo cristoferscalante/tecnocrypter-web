@@ -9,6 +9,7 @@ tags: ["carteiras", "hardware", "armazenar"]
 featured: false
 image: "/blogs/wallets_hardware.webp"
 
+
 ---
 
 # Comparação de carteiras de hardware: segurança máxima para suas criptomoedas

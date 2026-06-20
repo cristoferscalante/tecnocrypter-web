@@ -9,6 +9,7 @@ tags: ["hameçonnage", "cybersécurité", "prévention"]
 featured: false
 image: "/blogs/ataques_phishing_avanzados.webp"
 
+
 ---
 
 # Comment détecter et prévenir les attaques de phishing avancées

@@ -16,6 +16,7 @@ faqs:
   - question: "Quão relevante é este desenvolvimento para a indústria de IA na China?"
     answer: "Demonstra que a lacuna tecnológica entre a China e os Estados Unidos no sector da aprendizagem profunda está a diminuir rapidamente, desafiando sanções e o controlo de hardware avançado."
 
+
 ---
 
 # A surpresa de Pequim: como o modelo chinês GLM-5.2 conseguiu enfrentar Fable 5 e GPT-5.5

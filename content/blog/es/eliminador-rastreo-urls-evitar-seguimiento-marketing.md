@@ -16,6 +16,7 @@ faqs:
   - question: "¿El eliminador de rastreo rompe el enlace?"
     answer: "No. Solo remueve las variables innecesarias de marketing y rastreo que van después del signo de interrogación (?), dejando el enlace original intacto para cargar el sitio de forma idéntica."
 
+
 ---
 
 # Limpieza de URLs: Cómo eliminar parámetros UTM y rastreadores de tus enlaces

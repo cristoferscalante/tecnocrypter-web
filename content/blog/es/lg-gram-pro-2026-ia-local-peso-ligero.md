@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cómo afecta el procesamiento en local a la duración de la batería?"
     answer: "A diferencia de las GPUs tradicionales, las NPUs son extremadamente eficientes, logrando prolongar la autonomía del LG gram Pro hasta las 22 horas de uso mixto incluso ejecutando procesos de IA en segundo plano."
 
+
 ---
 
 # Ligereza extrema y NPU masiva: El LG gram Pro (2026) redefine la potencia de la IA en local

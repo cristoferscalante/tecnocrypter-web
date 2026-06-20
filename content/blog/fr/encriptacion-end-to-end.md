@@ -9,6 +9,7 @@ tags: ["cryptage", "confidentialité", "communications"]
 featured: true
 image: "/blogs/encriptacion_end_to_end.webp"
 
+
 ---
 
 # Chiffrement de bout en bout : la clé des communications sécurisées

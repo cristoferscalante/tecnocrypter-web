@@ -9,6 +9,7 @@ tags: ["neuroplasticity", "technology", "brain", "IA", "cognition"]
 featured: true
 image: "/blogs/neuroplasticidad-digital.webp"
 
+
 ---
 
 # Digital Neuroplasticity: How the Technological Age is Reshaping the Human Brain

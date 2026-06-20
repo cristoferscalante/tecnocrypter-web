@@ -16,6 +16,7 @@ faqs:
   - question: "Que vantagens de segurança oferece em relação às respostas diretas?"
     answer: "Atua como um firewall inteligente. Ele pode interceptar tentativas de injeção imediata, detectar vazamento de informações confidenciais (PII) e bloquear códigos maliciosos gerados automaticamente."
 
+
 ---
 
 # Desconfiança inteligente: por que o encadeamento de modelos é a verdadeira defesa contra alucinações de IA

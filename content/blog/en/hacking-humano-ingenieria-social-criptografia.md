@@ -16,6 +16,7 @@ faqs:
   - question: "How do you avoid MFA fatigue and phishing attacks?"
     answer: "Using physical FIDO2/WebAuthn keys instead of generic SMS or push codes, adopting rigorous double-checking policies for unusual requests, and reinforcing staff security awareness."
 
+
 ---
 
 # Human Hacking: Why social engineering beats mathematical encryption

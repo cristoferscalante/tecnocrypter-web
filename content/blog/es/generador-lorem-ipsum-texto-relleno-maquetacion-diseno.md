@@ -16,6 +16,7 @@ faqs:
   - question: "/*¿Qué problemas puede causar un mal uso de Lorem Ipsum?*/"
     answer: "Puede ocultar necesidades reales de espacio si los textos reales finales son significativamente más largos o cortos que el relleno simulado, por lo que debe combinarse con pruebas de contenido real."
 
+
 ---
 
 # Diseño y maquetación: El uso correcto de texto de relleno (Lorem Ipsum)

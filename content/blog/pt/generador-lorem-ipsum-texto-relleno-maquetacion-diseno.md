@@ -16,6 +16,7 @@ faqs:
   - question: "/*Que problemas o uso indevido de Lorem Ipsum pode causar?*/"
     answer: "Pode ocultar necessidades reais de espaço se os textos reais finais forem significativamente mais longos ou mais curtos que o preenchimento simulado, por isso deve ser combinado com testes de conteúdo real."
 
+
 ---
 
 # Design e layout: O uso correto do texto de preenchimento (Lorem Ipsum)

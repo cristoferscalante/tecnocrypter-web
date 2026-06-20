@@ -16,6 +16,7 @@ faqs:
   - question: "/*Comment convertir un en-tête dans Markdown ?*/"
     answer: "des signes dièse (#) sont utilisés. Un seul hachage représente un en-tête principal `<h1>`, deux représentent un `<h2>`, et ainsi de suite jusqu'à six niveaux."
 
+
 ---
 
 # Formatage simplifié : Comment convertir des textes Markdown en code HTML propre

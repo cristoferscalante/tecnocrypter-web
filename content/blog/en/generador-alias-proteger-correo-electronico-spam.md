@@ -16,6 +16,7 @@ faqs:
   - question: "What are deterministic credentials?"
     answer: "They are username and password generation systems based on deterministic algorithms based on a keyword, making them recoverable but unique per platform."
 
+
 ---
 
 # Disposable emails and aliases: Protect your inbox against spam and leaks

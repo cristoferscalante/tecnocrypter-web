@@ -16,6 +16,7 @@ faqs:
   - question: "/*Why do web designers prefer to use HSL?*/"
     answer: "Because it is much more intuitive to make visual adjustments: for example, darkening or lightening a color only requires modifying the Lightness percentage (L), keeping the same tone (H) intact."
 
+
 ---
 
 # Digital color theory: Conversion between HEX, RGB, HSL and Tailwind formats

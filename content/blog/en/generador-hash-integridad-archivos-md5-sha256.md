@@ -16,6 +16,7 @@ faqs:
   - question: "/*Is MD5 still safe?*/"
     answer: "Not for cryptographic or password authentication purposes due to known collisions, but still useful as a basic checksum to detect file transfer errors."
 
+
 ---
 
 # Data integrity: How to verify files using MD5 and SHA-256 hashes

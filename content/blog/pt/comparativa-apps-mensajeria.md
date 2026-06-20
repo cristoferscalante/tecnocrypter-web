@@ -9,6 +9,7 @@ tags: ["aplicativos de mensagens seguros", "sinal", "Telegrama", "comparações 
 featured: false
 image: "/blogs/comparativa-apps-mensajeria.webp"
 
+
 ---
 
 # Comparação de aplicativos de mensagens seguras em 2025

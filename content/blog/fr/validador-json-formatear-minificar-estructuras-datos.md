@@ -16,6 +16,7 @@ faqs:
   - question: "/*Est-il sécuritaire de valider des fichiers JSON en ligne ?*/"
     answer: "Uniquement si cela est fait localement dans votre navigateur en utilisant Javascript. Si vous envoyez le JSON à des serveurs distants pour traitement, vous risquez de perdre des données client ou des clés API."
 
+
 ---
 
 # API de débogage : Comment valider, formater et réduire les fichiers JSON sans erreurs

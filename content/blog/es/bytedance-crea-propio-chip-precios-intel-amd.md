@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cómo afecta la subida de precios de Intel y AMD al mercado tecnológico?"
     answer: "Fuerza a las megacorporaciones de internet (hiperescaladores) a internalizar el diseño de silicio, acelerando la fragmentación del mercado y el declive del modelo x86 tradicional en favor de arquitecturas ARM y personalizadas."
 
+
 ---
 
 # Rebelión en el silicio: ByteDance fabricará sus propios chips para escapar de los precios de Intel y AMD

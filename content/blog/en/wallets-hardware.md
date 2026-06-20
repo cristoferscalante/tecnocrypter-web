@@ -9,6 +9,7 @@ tags: ["wallets", "hardware", "storage"]
 featured: false
 image: "/blogs/wallets_hardware.webp"
 
+
 ---
 
 # Comparison of Hardware Wallets: Maximum Security for your Cryptocurrencies

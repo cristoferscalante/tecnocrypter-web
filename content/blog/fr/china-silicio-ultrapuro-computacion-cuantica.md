@@ -16,6 +16,7 @@ faqs:
   - question: "Que signifie cette avancée pour la souveraineté technologique de la Chine ?"
     answer: "Jusqu’à présent, la production mondiale de silicium 28 dépendait presque entièrement des infrastructures russes et européennes. Le produire au niveau national garantit que la Chine peut fabriquer ses propres processeurs quantiques à grande échelle sans craindre de blocus commerciaux."
 
+
 ---
 
 # La Chine fait un pas décisif vers l'autonomie quantique avec le silicium ultrapur

@@ -16,6 +16,7 @@ faqs:
   - question: "/*Quelles règles standard s'appliquent lors du formatage SQL ?*/"
     answer: "Écrivez les mots-clés en lettres majuscules (SELECT, FROM, JOIN, WHERE), tabulez les paramètres et organisez chaque section de filtre sur des lignes distinctes pour une lecture facile."
 
+
 ---
 
 # Nettoyer le code dans les bases de données : comment formater et embellir les requêtes SQL

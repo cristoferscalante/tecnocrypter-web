@@ -16,6 +16,7 @@ faqs:
   - question: "O que este avanço significa para a soberania tecnológica da China?"
     answer: "Até agora, a produção global de silício-28 dependia quase inteiramente da Rússia e da infra-estrutura europeia. Produzi-lo internamente garante que a China possa fabricar os seus próprios processadores quânticos em grande escala, sem receio de bloqueios comerciais."
 
+
 ---
 
 # China dá um passo decisivo em direção à autonomia quântica com silício ultrapuro

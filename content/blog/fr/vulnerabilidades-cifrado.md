@@ -9,6 +9,7 @@ tags: ["saignement de cœur", "vulnérabilités cryptographiques", "cas de sécu
 featured: false
 image: "/blogs/vulnerabilidades-cifrado.webp"
 
+
 ---
 
 # Vulnérabilités célèbres du chiffrement : des cas qui ont marqué l'Histoire

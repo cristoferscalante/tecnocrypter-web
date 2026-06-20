@@ -16,6 +16,7 @@ faqs:
   - question: "/*O que significam os caracteres especiais (*, /, ,) no cron?*/"
     answer: "O asterisco (*) significa 'qualquer valor', a barra (/) define etapas ou intervalos (por exemplo, */15 é a cada 15 minutos) e a vírgula (,) separa valores específicos."
 
+
 ---
 
 # Automação de servidor: um guia prático para criar expressões Cron sem falhas

@@ -9,6 +9,7 @@ tags: ["robot humanoïde", "pemba", "Unitree G1", "Everest", "robotique extrême
 featured: false
 image: "/blogs/robot-humanoide-pemba-everest-tecnologia.png"
 
+
 ---
 
 # Pemba, le robot humanoïde qui a conquis les Andes et vise désormais l'Everest

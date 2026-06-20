@@ -16,6 +16,7 @@ faqs:
   - question: "O que significam SPF, DKIM e DMARC?"
     answer: "Eles são protocolos de autenticação de e-mail. O SPF define quais servidores podem enviar e-mails do domínio, o DKIM adiciona uma assinatura criptográfica de validação e o DMARC estabelece políticas para lidar com e-mails que falham no SPF ou DKIM."
 
+
 ---
 
 # Como analisar cabeçalhos de e-mail para detectar phishing e spoofing

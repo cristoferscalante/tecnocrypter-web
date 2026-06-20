@@ -9,6 +9,7 @@ tags: ["history of encryption", "Caesar figure", "modern cryptography", "post qu
 featured: false
 image: "/blogs/Historia_del_cifrado_quantum-safe.webp"
 
+
 ---
 
 # History of encryption: from the Caesar cipher to quantum-safe

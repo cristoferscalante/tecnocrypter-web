@@ -16,6 +16,7 @@ faqs:
   - question: "/*A minificação pode quebrar meu código?*/"
     answer: "Somente se o código não tiver sintaxe correta (como a omissão de ponto-e-vírgula em JavaScript) ou se os minificadores executarem ofuscação agressiva mal configurada. Um minificador básico padrão é seguro."
 
+
 ---
 
 # WPO avançado: como reduzir CSS e Javascript para acelerar seu site

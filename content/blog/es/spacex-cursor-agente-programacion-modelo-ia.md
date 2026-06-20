@@ -16,6 +16,7 @@ faqs:
   - question: "¿Por qué es crítico el determinismo en el desarrollo de software espacial?"
     answer: "Porque el software aeroespacial debe comportarse exactamente igual en cada ejecución. Los modelos probabilísticos de IA pueden alucinar, lo que los hace inadecuados para el software de a bordo crítico."
 
+
 ---
 
 # SpaceX adopta Cursor como programador: La carrera espacial ahora depende de la autonomía de los agentes

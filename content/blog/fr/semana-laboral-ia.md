@@ -9,6 +9,7 @@ tags: ["IA", "emploi", "productivité", "avenir"]
 featured: true
 image: "/blogs/semana-laboral-ia.webp"
 
+
 ---
 
 ## La semaine de travail de 4 jours arrivera-t-elle en 2040 ? L’IA rend cela possible

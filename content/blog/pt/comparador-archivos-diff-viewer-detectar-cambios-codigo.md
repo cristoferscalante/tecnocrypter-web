@@ -16,6 +16,7 @@ faqs:
   - question: "/*É seguro comparar arquivos com dados confidenciais on-line?*/"
     answer: "Somente se a comparação for feita totalmente do lado do cliente usando JavaScript. Enviar seus arquivos para um servidor web de terceiros para fazer a 'diferença' expõe sua propriedade intelectual ou dados confidenciais."
 
+
 ---
 
 # Rastrear alterações: como usar visualizadores de diferenças para comparar arquivos linha por linha

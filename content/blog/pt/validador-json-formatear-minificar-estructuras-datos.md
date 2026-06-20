@@ -16,6 +16,7 @@ faqs:
   - question: "/*É seguro validar arquivos JSON online?*/"
     answer: "Somente se for feito localmente no seu navegador usando Javascript. Se você enviar o JSON para servidores remotos para processamento, você corre o risco de vazar dados do cliente ou chaves de API."
 
+
 ---
 
 # APIs de depuração: como validar, formatar e reduzir arquivos JSON sem erros

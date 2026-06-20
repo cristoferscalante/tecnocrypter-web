@@ -16,6 +16,7 @@ faqs:
   - question: "Quais componentes de telefones celulares ficaram mais caros?"
     answer: "Memória de acesso aleatório (RAM) e armazenamento físico (NAND Flash). O CEO da Nothing indica que hoje a memória pode representar mais de 50% do custo total de hardware de um telefone."
 
+
 ---
 
 # A memória é o novo rei do custo: Carl Pei explica por que o preço dos telefones celulares está subindo

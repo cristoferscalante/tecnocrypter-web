@@ -16,6 +16,7 @@ faqs:
   - question: "Dans quelle mesure le processus de fabrication 18A d'Intel est-il pertinent ?"
     answer: "Le processus 18A (équivalent à 1,8 nm) représente le fer de lance technologique d'Intel, qui promet de surpasser les nœuds concurrents grâce à de nouvelles technologies de transistors et à une alimentation électrique par l'arrière."
 
+
 ---
 
 # Intel Foundry refait surface : Elle fabriquera les TPU Google et court NVIDIA

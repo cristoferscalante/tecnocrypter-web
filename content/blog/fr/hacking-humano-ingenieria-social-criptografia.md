@@ -16,6 +16,7 @@ faqs:
   - question: "Comment éviter la lassitude MFA et les attaques de phishing ?"
     answer: "Utiliser des clés physiques FIDO2/WebAuthn au lieu de SMS ou de codes push génériques, adopter des politiques rigoureuses de double vérification pour les demandes inhabituelles et renforcer la sensibilisation du personnel à la sécurité."
 
+
 ---
 
 # Human Hacking : Pourquoi l'ingénierie sociale bat le chiffrement mathématique

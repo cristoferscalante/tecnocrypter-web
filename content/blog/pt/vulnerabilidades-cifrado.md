@@ -9,6 +9,7 @@ tags: ["coração sangrando", "vulnerabilidades criptográficas", "casos histór
 featured: false
 image: "/blogs/vulnerabilidades-cifrado.webp"
 
+
 ---
 
 # Famosas vulnerabilidades em criptografia: casos que marcaram história

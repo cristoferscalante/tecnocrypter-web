@@ -9,6 +9,7 @@ tags: ["historia del cifrado", "cifra César", "criptografía moderna", "post cu
 featured: false
 image: "/blogs/Historia_del_cifrado_quantum-safe.webp"
 
+
 ---
 
 # Historia del cifrado: de la cifra César al quantum-safe

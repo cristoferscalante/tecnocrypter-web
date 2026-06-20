@@ -16,6 +16,7 @@ faqs:
   - question: "How does local generation help developers?"
     answer: "Ensures that no generated test profiles are sent to the internet, complying with data protection regulations during local development."
 
+
 ---
 
 # Creating secure environments: How to generate random credentials and profiles for testing

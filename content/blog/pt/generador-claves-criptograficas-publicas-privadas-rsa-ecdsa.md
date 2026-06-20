@@ -16,6 +16,7 @@ faqs:
   - question: "É seguro gerar chaves SSH ou OpenSSL online?"
     answer: "Somente se forem gerados localmente no seu navegador usando a API JavaScript Web Crypto, sem enviar as chaves para nenhum servidor. Nossa ferramenta funciona sob este princípio de segurança local."
 
+
 ---
 
 # Criptografia assimétrica: geração segura de pares de chaves RSA e ECDSA localmente

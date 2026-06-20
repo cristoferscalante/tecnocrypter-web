@@ -9,6 +9,7 @@ tags: ["IA", "Gemini", "Generación de Imágenes", "Machine Learning", "Google D
 featured: true
 image: "/blogs/gemini-nano-banana.webp"
 
+
 ---
 
 # Gemini 2.5 Flash Image Preview: Arquitectura Técnica y Avances en Generación de Imágenes por IA

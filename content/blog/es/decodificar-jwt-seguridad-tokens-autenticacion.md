@@ -16,6 +16,7 @@ faqs:
   - question: "¿Cómo se previene la manipulación de un JWT?"
     answer: "El token contiene una firma criptográfica en su tercera sección. Si un cliente altera los datos del payload, la firma deja de coincidir y el servidor rechaza el token."
 
+
 ---
 
 # Guía del estándar JWT: Cómo decodificar y analizar JSON Web Tokens de forma segura

@@ -16,6 +16,7 @@ faqs:
   - question: "/*Le MD5 est-il toujours sûr ?*/"
     answer: "Pas à des fins cryptographiques ou d'authentification par mot de passe en raison de collisions connues, mais toujours utile comme somme de contrôle de base pour détecter les erreurs de transfert de fichiers."
 
+
 ---
 
 # Intégrité des données : comment vérifier les fichiers à l'aide des hachages MD5 et SHA-256

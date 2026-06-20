@@ -9,6 +9,7 @@ tags: ["apps de mensajería seguras", "Signal", "Telegram", "comparativas seguri
 featured: false
 image: "/blogs/comparativa-apps-mensajeria.webp"
 
+
 ---
 
 # Comparativa de apps de mensajería seguras en 2025

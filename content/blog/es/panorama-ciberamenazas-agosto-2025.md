@@ -9,6 +9,7 @@ tags: ["ciberamenazas", "vulnerabilidades", "ransomware", "malware"]
 featured: false
 image: "/blogs/panorama_de_ciberamenazas.webp"
 
+
 ---
 
 # Panorama de ciberamenazas: vulnerabilidades y ataques destacados de agosto 2025

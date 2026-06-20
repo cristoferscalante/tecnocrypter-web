@@ -14,6 +14,7 @@ seo:
   metaDescription: "Aprende a proteger tus secretos en tránsito. Cómo cifrar datos localmente antes de enviarlos y cómo analizar JWT de manera segura."
   keywords: "cifrado online, cifrado extremo a extremo, decodificar JWT local, generador de claves, cifrado simétrico"
 
+
 ---
 
 # Chiffrement de bout en bout sur le Web : protection des données et des secrets en transit
