@@ -1,6 +1,9 @@
+export const dynamic = 'force-dynamic'
+
 import { NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
+import { ProductService } from '@/services/product-service'
 
 const BASE_URL = 'https://tecnocrypter.com'
 const LOCALES = ['es', 'en', 'fr', 'pt']
@@ -81,6 +84,7 @@ export async function GET() {
     { path: '/privacidad', priority: 0.3, changeFrequency: 'yearly' },
     { path: '/terminos', priority: 0.3, changeFrequency: 'yearly' },
     { path: '/cookies', priority: 0.3, changeFrequency: 'yearly' },
+    { path: '/terminos/verificador', priority: 0.6, changeFrequency: 'monthly' },
   ]
 
   const entries = []
@@ -122,6 +126,26 @@ export async function GET() {
         alternates: getAlternates(`/tools/${slug}`)
       })
     }
+  }
+
+  // Generate product pages dynamically
+  try {
+    const products = await ProductService.getAllProducts()
+    for (const locale of LOCALES) {
+      for (const product of products) {
+        if (product.id) {
+          entries.push({
+            url: getLocalePath(`/productos/${product.id}`, locale),
+            lastModified: product.updated_at ? new Date(product.updated_at) : now,
+            changeFrequency: 'weekly',
+            priority: 0.8,
+            alternates: getAlternates(`/productos/${product.id}`)
+          })
+        }
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching products for sitemap:', error)
   }
 
   // Build formatted XML
