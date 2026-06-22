@@ -17,9 +17,11 @@ import type { Product } from "@/types"
 import { useTranslations } from "next-intl"
 
 const getTranslationKey = (name: string) => {
-  if (name.includes("Desarrollo Web")) return "web_dev";
+  if (name.includes("Desarrollo Web") || name.includes("Web y Aplicaciones")) return "web_dev";
   if (name.includes("Seguridad Digital")) return "sec_training";
   if (name.includes("IA Segura")) return "ai_training";
+  if (name.includes("Prevención de Ataques") || name.includes("Prevención")) return "attack_prevention";
+  if (name.includes("Respuesta Rápida") || name.includes("Respuesta")) return "incident_response";
   return null;
 }
 
@@ -284,14 +286,16 @@ export default function ProductosPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredProducts.map((product) => (
-                <Card key={product.id} className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md">
-                  <div className="aspect-video relative bg-muted">
-                    <img
-                      src={product.images[0]?.url || "/placeholder.svg"}
-                      alt={product.name}
-                      className="object-cover w-full h-full"
-                    />
-                  </div>
+                <Card key={product.id} className="overflow-hidden flex flex-col h-full transition-all hover:shadow-md group">
+                  <Link href={`/productos/${product.id}`} className="block overflow-hidden">
+                    <div className="aspect-video relative bg-muted">
+                      <img
+                        src={product.images[0]?.url || "/placeholder.svg"}
+                        alt={product.name}
+                        className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </Link>
                   <CardContent className="p-4">
                     <div className="flex justify-between items-start mb-2">
                       <div className="flex gap-2">
@@ -307,10 +311,12 @@ export default function ProductosPage() {
                         4.8
                       </div>
                     </div>
-                    <h3 className="font-bold text-lg mb-2 line-clamp-2 mt-3 group-hover:text-primary transition-colors">
-                      {getTranslationKey(product.name) && t.has(`dbMapping.${getTranslationKey(product.name) as string}.name`) 
-                        ? t(`dbMapping.${getTranslationKey(product.name) as string}.name`) 
-                        : product.name}
+                    <h3 className="font-bold text-lg mb-2 line-clamp-2 mt-3 hover:text-primary transition-colors">
+                      <Link href={`/productos/${product.id}`}>
+                        {getTranslationKey(product.name) && t.has(`dbMapping.${getTranslationKey(product.name) as string}.name`) 
+                          ? t(`dbMapping.${getTranslationKey(product.name) as string}.name`) 
+                          : product.name}
+                      </Link>
                     </h3>
                     <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
                       {getTranslationKey(product.name) && t.has(`dbMapping.${getTranslationKey(product.name) as string}.description`) 
@@ -330,11 +336,29 @@ export default function ProductosPage() {
                       )}
                     </div>
                   </CardContent>
-                  <CardFooter className="pt-2 flex-col items-start gap-2">
-                    <div className="flex justify-center items-center w-full">
-                      <Button asChild size="sm" className="w-full">
-                        <Link href={`https://wa.me/573228836494?text=${encodeURIComponent(t("card.whatsappMessage") + " " + product.name)}`} target="_blank" rel="noopener noreferrer">
-                          {t("card.contactSupport")}
+                  <CardFooter className="pt-2 mt-auto">
+                    <div className="grid grid-cols-2 gap-2 w-full">
+                      <Button asChild size="sm" variant="default" className="w-full font-semibold">
+                        <Link href={`/productos/${product.id}`}>
+                          {t("card.viewDetails")}
+                        </Link>
+                      </Button>
+                      <Button asChild size="sm" variant="outline" className="w-full border-green-500/30 hover:bg-green-500/10 hover:text-green-500 text-green-600 dark:text-green-400">
+                        <Link 
+                          href={`https://wa.me/573228836494?text=${encodeURIComponent(
+                            t("card.whatsappMessage") + " " + 
+                            (getTranslationKey(product.name) && t.has(`dbMapping.${getTranslationKey(product.name) as string}.name`) 
+                              ? t(`dbMapping.${getTranslationKey(product.name) as string}.name`) 
+                              : product.name)
+                          )}`} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="flex items-center justify-center gap-1"
+                        >
+                          <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.66.986 3.284 1.447 5.361 1.448 5.4 0 9.79-4.385 9.793-9.772a9.697 9.697 0 0 0-2.87-6.916A9.684 9.684 0 0 0 12.01 1.18c-5.4 0-9.793 4.386-9.796 9.774-.001 2.052.493 3.655 1.472 5.29L2.68 21.23l5.006-1.314zM16.5 13.56c-.235-.118-1.393-.688-1.608-.767-.215-.078-.372-.118-.529.117-.157.235-.607.767-.744.922-.137.156-.274.176-.51.059a9.552 9.552 0 0 1-2.91-1.796c-.84-.748-1.407-1.672-1.572-1.957-.165-.284-.018-.438.12-.576.123-.124.274-.323.411-.484.137-.16.183-.274.274-.457.09-.182.046-.343-.023-.48-.069-.138-.529-1.272-.725-1.745-.19-.46-.382-.397-.529-.404-.137-.007-.294-.007-.451-.007-.157 0-.411.059-.626.294-.215.235-.822.802-.822 1.957s.84 2.27 1.057 2.564c.215.294 1.654 2.525 4.007 3.54.56.242.996.386 1.337.495.563.18 1.076.155 1.482.094.453-.068 1.393-.568 1.59-.1117.195-.55.195-1.02.137-1.1-.059-.08-.215-.118-.45-.236z"/>
+                          </svg>
+                          WhatsApp
                         </Link>
                       </Button>
                     </div>

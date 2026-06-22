@@ -102,7 +102,103 @@
       "ai_training": {
         "name": "Formation IA Sécurisée : Utilisation sans Exposition des Données",
         "description": "Apprenez à exploiter la puissance de l'intelligence artificielle sans compromettre vos données. Techniques d'anonymisation et utilisation sécurisée des LLM pour augmenter la productivité."
+      },
+      "attack_prevention": {
+        "name": "Prévention des Attaques et Sécurité d'Entreprise",
+        "description": "Service complet de prévention des cyberattaques pour votre site web et votre entreprise. Nous mettons en œuvre plusieurs couches de sécurité, une surveillance continue et des mesures préventives pour protéger vos actifs numériques contre les menaces actuelles et émergentes."
+      },
+      "incident_response": {
+        "name": "Réponse Rapide aux Incidents de Sécurité",
+        "description": "Service de réponse immédiate aux cyberattaques et violations de sécurité. Notre équipe spécialisée intervient rapidement pour contenir les menaces, restaurer les systèmes et prévenir de futurs incidents, disponible 24/7/365."
       }
+    },
+    "detail": {
+      "backToProducts": "Retour aux produits",
+      "mainFeatures": "Caractéristiques principales",
+      "productInfo": "Informations sur le produit",
+      "category": "Catégorie",
+      "vendor": "Fournisseur",
+      "delivery": "Livraison",
+      "instantDelivery": "Livraison immédiate",
+      "support": "Support",
+      "support247": "24/7",
+      "buyWithCrypto": "Acheter avec Crypto",
+      "relatedProducts": "Produits connexes",
+      "viewDetails": "Voir les détails",
+      "relatedProductPlaceholder": "Description du produit connexe...",
+      "home": "Accueil"
+    },
+    "productFaqs": {
+      "7": [
+        {
+          "question": "Comment garantissez-vous la sécurité dans le développement web ?",
+          "answer": "Nous mettons en œuvre la sécurité dès la conception (Security by Design), en suivant les directives de l'OWASP Top 10, en chiffrant les données sensibles et en effectuant des analyses de code statiques et dynamiques avant la livraison."
+        },
+        {
+          "question": "Quelles technologies utilisez-vous pour créer des applications sécurisées ?",
+          "answer": "Nous utilisons des frameworks robustes comme React, Next.js, Node.js et des bases de données sécurisées comme PostgreSQL, en intégrant des pare-feu d'applications web (WAF) et l'authentification multifacteur (MFA)."
+        },
+        {
+          "question": "Le code développé m'appartient-il ?",
+          "answer": "Oui, une fois le projet terminé et le paiement finalisé, 100 % des droits de propriété intellectuelle et le code source sont entièrement transférés à votre organisation."
+        }
+      ],
+      "8": [
+        {
+          "question": "Qui devrait suivre cette formation ?",
+          "answer": "Elle est conçue pour tout le personnel de l'entreprise, des rôles administratifs aux cadres, afin de renforcer le maillon le plus faible de la chaîne de sécurité : le facteur humain."
+        },
+        {
+          "question": "S'agit-il d'une formation théorique ou pratique ?",
+          "answer": "Elle est à 80% pratique. Nous réalisons des simulations de phishing en temps réel et configurons des outils de confidentialité quotidiens directement sur les appareils des participants."
+        },
+        {
+          "question": "Fournissez-vous des certificats de réussite ?",
+          "answer": "Oui, nous délivrons un certificat numérique vérifiable pour chaque participant qui termine les modules et réussit l'évaluation finale du cours."
+        }
+      ],
+      "9": [
+        {
+          "question": "Quels risques cette formation atténue-t-elle ?",
+          "answer": "Elle empêche la fuite accidentelle de propriété intellectuelle, de données clients ou de secrets commerciaux vers des modèles d'IA publics tiers, garantissant ainsi le respect des réglementations sur la vie privée."
+        },
+        {
+          "question": "Enseignez-vous comment implémenter des modèles d'IA locaux (On-Premise) ?",
+          "answer": "Oui, nous vous apprenons à configurer et à exécuter des modèles de langage open source (LLM) localement sur votre propre infrastructure pour garantir une souveraineté totale des données."
+        },
+        {
+          "question": "Faut-il des connaissances préalables en programmation ?",
+          "answer": "Ce n'est pas nécessaire. Nous adaptons le contenu aussi bien pour les utilisateurs non techniques qui utilisent l'IA au quotidien que pour les équipes de développement qui intègrent des API."
+        }
+      ],
+      "10": [
+        {
+          "question": "Comment fonctionne le service de surveillance des menaces ?",
+          "answer": "Nous surveillons en permanence le trafic et l'intégrité du système à la recherche d'anomalies, de tentatives d'intrusion et de schémas malveillants, en les bloquant automatiquement en temps réel."
+        },
+        {
+          "question": "Effectuez-vous des tests d'intrusion (Pentesting) ?",
+          "answer": "Oui, dans le cadre du service, nous effectuons des simulations contrôlées d'attaques réelles pour identifier les faiblesses du réseau et des applications avant qu'un attaquant ne le fasse."
+        },
+        {
+          "question": "Est-ce adapté aux petites et moyennes entreprises (PME) ?",
+          "answer": "Tout à fait. Nous concevons des plans évolutifs et des défenses personnalisées en fonction de la taille et de l'infrastructure de chaque entreprise, garantissant une protection optimale sans coûts excessifs."
+        }
+      ],
+      "11": [
+        {
+          "question": "Quel est le temps de réponse en cas d'incident actif ?",
+          "answer": "Notre équipe de réponse aux incidents est disponible 24/7/365 et intervient immédiatement après le rapport initial pour commencer le confinement."
+        },
+        {
+          "question": "Que dois-je faire si je soupçonne que mon entreprise est victime d'une attaque de ransomware ?",
+          "answer": "Déconnectez immédiatement les systèmes affectés du réseau et contactez notre équipe spécialisée pour empêcher la propagation et vous guider dans le processus de récupération."
+        },
+        {
+          "question": "Garantissez-vous la récupération complète des données chiffrées ?",
+          "answer": "Nous mettons tout en œuvre grâce à des techniques avancées et à l'analyse médico-légale. Si des sauvegardes propres sont disponibles, nous garantissons une restauration complète. Sinon, nous analysons le type de chiffrement pour rechercher des décrypteurs connus."
+        }
+      ]
     }
   }
 }

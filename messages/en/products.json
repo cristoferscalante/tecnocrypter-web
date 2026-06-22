@@ -102,7 +102,103 @@
       "ai_training": {
         "name": "Secure AI Training: Usage without Data Exposure",
         "description": "Learn to harness the power of artificial intelligence without compromising your data security. This training teaches you anonymization techniques and safe LLM usage to boost productivity safely."
+      },
+      "attack_prevention": {
+        "name": "Attack Prevention and Enterprise Security",
+        "description": "Comprehensive cyber attack prevention service for your website and business. We implement multiple layers of security, continuous monitoring, and preventive measures to protect your digital assets against current and emerging threats."
+      },
+      "incident_response": {
+        "name": "Rapid Incident Response",
+        "description": "Immediate response service for cyber attacks and security breaches. Our specialized team acts quickly to contain threats, recover systems, and prevent future incidents, available 24/7/365."
       }
+    },
+    "detail": {
+      "backToProducts": "Back to products",
+      "mainFeatures": "Key features",
+      "productInfo": "Product information",
+      "category": "Category",
+      "vendor": "Provider",
+      "delivery": "Delivery",
+      "instantDelivery": "Instant delivery",
+      "support": "Support",
+      "support247": "24/7",
+      "buyWithCrypto": "Buy with Crypto",
+      "relatedProducts": "Related products",
+      "viewDetails": "View details",
+      "relatedProductPlaceholder": "Related product description...",
+      "home": "Home"
+    },
+    "productFaqs": {
+      "7": [
+        {
+          "question": "How do you guarantee security in web development?",
+          "answer": "We implement security by design, following OWASP Top 10 guidelines, encrypting sensitive data, and performing static and dynamic code analysis before deployment."
+        },
+        {
+          "question": "What technologies do you use to build secure applications?",
+          "answer": "We use robust frameworks like React, Next.js, Node.js, and secure databases like PostgreSQL, integrating Web Application Firewalls (WAF) and multi-factor authentication (MFA)."
+        },
+        {
+          "question": "Does the developed code belong to me?",
+          "answer": "Yes, once the project is completed and payment is finalized, 100% of the intellectual property rights and the source code are fully transferred to your organization."
+        }
+      ],
+      "8": [
+        {
+          "question": "Who should take this training?",
+          "answer": "It is designed for all company personnel, from administrative roles to executives, in order to strengthen the weakest link in the security chain: the human factor."
+        },
+        {
+          "question": "Is the training theoretical or practical?",
+          "answer": "It is 80% practical. We conduct real-time phishing simulations and configure daily privacy tools directly on the attendees' devices."
+        },
+        {
+          "question": "Do you provide certificates of completion?",
+          "answer": "Yes, we issue a verifiable digital certificate for each participant who completes the modules and passes the final course assessment."
+        }
+      ],
+      "9": [
+        {
+          "question": "What risks does this training mitigate?",
+          "answer": "It prevents the accidental leakage of intellectual property, customer data, or trade secrets into third-party public AI models, ensuring compliance with privacy regulations."
+        },
+        {
+          "question": "Do you teach how to implement local (On-Premise) AI models?",
+          "answer": "Yes, we teach you how to configure and run open-source Large Language Models (LLMs) locally on your own infrastructure to guarantee total data sovereignty."
+        },
+        {
+          "question": "Does it require prior programming knowledge?",
+          "answer": "It is not necessary. We adapt the content for both non-technical users who use AI in their daily work and development teams integrating APIs."
+        }
+      ],
+      "10": [
+        {
+          "question": "How does the threat monitoring service work?",
+          "answer": "We constantly monitor traffic and system integrity for anomalies, intrusion attempts, and malicious patterns, automatically blocking them in real time."
+        },
+        {
+          "question": "Do you perform penetration testing (Pentesting)?",
+          "answer": "Yes, as part of the service we perform controlled simulations of real attacks to identify weaknesses in the network and applications before an attacker does."
+        },
+        {
+          "question": "Is it suitable for small and medium-sized businesses (SMEs)?",
+          "answer": "Absolutely. We design scalable plans and customized defenses according to the size and infrastructure of each company, ensuring optimal protection without excessive costs."
+        }
+      ],
+      "11": [
+        {
+          "question": "What is the response time for an active incident?",
+          "answer": "Our incident response team is available 24/7/365 and responds immediately after the initial report to begin containment."
+        },
+        {
+          "question": "What should I do if I suspect my company is under a ransomware attack?",
+          "answer": "Immediately disconnect affected systems from the network and contact our specialized team to prevent propagation and guide you through the recovery process."
+        },
+        {
+          "question": "Do you guarantee full recovery of encrypted data?",
+          "answer": "We do everything possible using advanced techniques and digital forensics. If clean backups are available, we guarantee full restoration. If not, we analyze the encryption type to check for known decryptors."
+        }
+      ]
     }
   }
 }

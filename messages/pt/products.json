@@ -101,8 +101,104 @@
       },
       "ai_training": {
         "name": "Treinamento em IA Segura: Uso sem Expor Dados",
-        "description": "Aprenda a aproveitar o poder da inteligência artificial sem comprometer a segurança de seus dados. Este treinamento ensina técnicas de anonimização e o uso seguro de LLMs."
+        "description": "Aprenda a aproveitar o poder de la inteligência artificial sem comprometer a segurança de seus dados. Este treinamento ensina técnicas de anonimização e o uso seguro de LLMs para aumentar a produtividade."
+      },
+      "attack_prevention": {
+        "name": "Prevenção de Ataques e Segurança Empresarial",
+        "description": "Serviço abrangente de prevenção de ataques cibernéticos para seu site e empresa. Implementamos múltiplas camadas de segurança, monitoramento contínuo e medidas preventivas para proteger seus ativos digitais contra ameaças atuais e emergentes."
+      },
+      "incident_response": {
+        "name": "Resposta Rápida a Incidentes de Segurança",
+        "description": "Serviço de resposta imediata a ataques cibernéticos e violações de segurança. Nossa equipe especializada age rapidamente para conter ameaças, recuperar sistemas e prevenir incidentes futuros, disponível 24/7/365."
       }
+    },
+    "detail": {
+      "backToProducts": "Voltar para produtos",
+      "mainFeatures": "Principais características",
+      "productInfo": "Informações do produto",
+      "category": "Categoria",
+      "vendor": "Fornecedor",
+      "delivery": "Entrega",
+      "instantDelivery": "Entrega imediata",
+      "support": "Suporte",
+      "support247": "24/7",
+      "buyWithCrypto": "Comprar com Crypto",
+      "relatedProducts": "Produtos relacionados",
+      "viewDetails": "Ver detalhes",
+      "relatedProductPlaceholder": "Descrição do produto relacionado...",
+      "home": "Início"
+    },
+    "productFaqs": {
+      "7": [
+        {
+          "question": "Como vocês garantem a segurança no desenvolvimento web?",
+          "answer": "Implementamos segurança desde o projeto (Security by Design), seguindo as diretrizes do OWASP Top 10, criptografando dados confidenciais e realizando análises estáticas e dinâmicas de código antes da entrega."
+        },
+        {
+          "question": "Quais tecnologias vocês usam para construir aplicativos seguros?",
+          "answer": "Utilizamos frameworks robustos como React, Next.js, Node.js e bancos de dados seguros como PostgreSQL, integrando firewalls de aplicativos web (WAF) e autenticação multifator (MFA)."
+        },
+        {
+          "question": "O código desenvolvido me pertence?",
+          "answer": "Sim, uma vez concluído o projeto e finalizado o pagamento, 100% dos direitos de propriedade intelectual e o código-fonte são totalmente transferidos para sua organização."
+        }
+      ],
+      "8": [
+        {
+          "question": "Quem deve fazer este treinamento?",
+          "answer": "É voltado para todos os colaboradores da empresa, desde cargos administrativos até executivos, com o objetivo de fortalecer o elo mais fraco da cadeia de segurança: o fator humano."
+        },
+        {
+          "question": "O treinamento é teórico ou prático?",
+          "answer": "É 80% prático. Realizamos simulações de phishing em tempo real e configuramos ferramentas de privacidade de uso diário diretamente nos dispositivos dos participantes."
+        },
+        {
+          "question": "Vocês fornecem certificados de conclusão?",
+          "answer": "Sim, emitimos um certificado digital verificável para cada participante que concluir os módulos e passar na avaliação final do curso."
+        }
+      ],
+      "9": [
+        {
+          "question": "Quais riscos este treinamento mitiga?",
+          "answer": "Evita o vazamento acidental de propriedade intelectual, dados de clientes ou segredos comerciais para modelos públicos de IA de terceiros, garantindo a conformidade com os regulamentos de privacidade."
+        },
+        {
+          "question": "Vocês ensinam a implementar modelos de IA locais (On-Premise)?",
+          "answer": "Sim, ensinamos como configurar e executar modelos de linguagem (LLM) de código aberto localmente em sua própria infraestrutura para garantir a total soberania dos dados."
+        },
+        {
+          "question": "Requer conhecimento prévio de programação?",
+          "answer": "Não é necessário. Adaptamos o conteúdo tanto para usuários não técnicos que usam IA no dia a dia quanto para equipes de desenvolvimento que integram APIs."
+        }
+      ],
+      "10": [
+        {
+          "question": "Como funciona o serviço de monitoramento de ameaças?",
+          "answer": "Monitoramos constantemente o tráfego e a integridade do sistema em busca de anomalias, tentativas de intrusão e padrões maliciosos, bloqueando-os automaticamente em tempo real."
+        },
+        {
+          "question": "Vocês realizam testes de invasão (Pentesting)?",
+          "answer": "Sim, como parte do serviço, realizamos simulações controladas de ataques reais para identificar pontos fracos na rede e nos aplicativos antes que um invasor o faça."
+        },
+        {
+          "question": "É adequado para pequenas e médias empresas (PMEs)?",
+          "answer": "Com certeza. Desenvolvemos planos escaláveis e defesas personalizadas de acordo com o tamanho e a infraestrutura de cada empresa, garantindo proteção ideal sem custos excessivos."
+        }
+      ],
+      "11": [
+        {
+          "question": "Qual é o tempo de resposta para um incidente ativo?",
+          "answer": "Nossa equipe de resposta a incidentes está disponível 24/7/365 e responde imediatamente após o relatório inicial para iniciar a contenção."
+        },
+        {
+          "question": "O que devo fazer se suspeitar que minha empresa está sofrendo um ataque de ransomware?",
+          "answer": "Desconecte imediatamente os sistemas afetados da rede e entre em contato com nossa equipe especializada para evitar a propagação e orientá-lo no processo de recuperação."
+        },
+        {
+          "question": "Vocês garantem a recuperação total dos dados criptografados?",
+          "answer": "Fazemos todo o possível por meio de técnicas avançadas e análise forense. Se houver backups limpos disponíveis, garantizamos a restauração completa. Caso contrário, analisamos o tipo de criptografia para verificar se existem decodificadores conhecidos."
+        }
+      ]
     }
   }
 }
