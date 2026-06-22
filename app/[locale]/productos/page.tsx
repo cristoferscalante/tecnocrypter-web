@@ -296,7 +296,7 @@ export default function ProductosPage() {
                       />
                     </div>
                   </Link>
-                  <CardContent className="p-4">
+                  <CardContent className="p-4 flex-grow flex flex-col">
                     <div className="flex justify-between items-start mb-2">
                       <div className="flex gap-2">
                         <Badge variant="outline" className="bg-background/50">
