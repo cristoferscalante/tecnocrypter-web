@@ -31,7 +31,6 @@ export default function ProductosPage() {
   const [loading, setLoading] = useState(true)
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("todos")
-  const [selectedPriceRanges, setSelectedPriceRanges] = useState<string[]>([])
   const [selectedVendors, setSelectedVendors] = useState<string[]>([])
   
   const categories = [
@@ -43,25 +42,12 @@ export default function ProductosPage() {
     { id: "incident-response", name: t("filters.incidentResponse") },
   ]
 
-  const priceRanges = [
-    { id: "range-1", label: t("filters.priceRange1"), min: 0, max: 1000 },
-    { id: "range-2", label: t("filters.priceRange2"), min: 1000, max: 2000 },
-    { id: "range-3", label: t("filters.priceRange3"), min: 2000, max: 4000 },
-    { id: "range-4", label: t("filters.priceRange4"), min: 4000, max: Infinity },
-  ]
 
   const vendors = [
     { id: "V1tr0", name: "V1tr0" },
     { id: "TecnoCrypter", name: "TecnoCrypter" },
   ]
 
-  const handlePriceChange = (rangeId: string) => {
-    setSelectedPriceRanges(prev =>
-      prev.includes(rangeId)
-        ? prev.filter(id => id !== rangeId)
-        : [...prev, rangeId]
-    )
-  }
 
   const handleVendorChange = (vendorId: string) => {
     setSelectedVendors(prev =>
@@ -73,7 +59,6 @@ export default function ProductosPage() {
 
   const clearFilters = () => {
     setSelectedCategory("todos")
-    setSelectedPriceRanges([])
     setSelectedVendors([])
     setSearchQuery("")
   }
@@ -109,17 +94,10 @@ export default function ProductosPage() {
                          product.description.toLowerCase().includes(searchQuery.toLowerCase())
     const matchesCategory = selectedCategory === "todos" || product.category === selectedCategory
     
-    // Filtro de precio
-    const matchesPrice = selectedPriceRanges.length === 0 || selectedPriceRanges.some(rangeId => {
-      const range = priceRanges.find(r => r.id === rangeId)
-      if (!range) return false
-      return product.price >= range.min && product.price < range.max
-    })
-    
     // Filtro de proveedor
     const matchesVendor = selectedVendors.length === 0 || selectedVendors.includes(product.vendor)
     
-    return matchesSearch && matchesCategory && matchesPrice && matchesVendor
+    return matchesSearch && matchesCategory && matchesVendor
   })
 
   if (loading) {
@@ -205,28 +183,6 @@ export default function ProductosPage() {
                     </div>
                   </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="price">
-                  <AccordionTrigger className="py-2">{t("filters.price")}</AccordionTrigger>
-                  <AccordionContent>
-                    <div className="space-y-2">
-                      {priceRanges.map((range) => (
-                        <div key={range.id} className="flex items-center space-x-2">
-                          <Checkbox 
-                            id={range.id}
-                            checked={selectedPriceRanges.includes(range.id)}
-                            onCheckedChange={() => handlePriceChange(range.id)}
-                          />
-                          <label
-                            htmlFor={range.id}
-                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                          >
-                            {range.label}
-                          </label>
-                        </div>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
                 <AccordionItem value="vendor">
                   <AccordionTrigger className="py-2">{t("filters.vendor")}</AccordionTrigger>
                   <AccordionContent>
@@ -273,8 +229,6 @@ export default function ProductosPage() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="featured">{t("filters.sortPopular")}</SelectItem>
-                    <SelectItem value="price-low">{t("filters.sortPriceLow")}</SelectItem>
-                    <SelectItem value="price-high">{t("filters.sortPriceHigh")}</SelectItem>
                     <SelectItem value="newest">{t("filters.sortNewest")}</SelectItem>
                   </SelectContent>
                 </Select>
