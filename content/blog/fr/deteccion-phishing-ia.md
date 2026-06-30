@@ -58,7 +58,7 @@ Les trois principaux mécanismes d'authentification que vous devez vérifier dan
 * **DKIM (DomainKeys Identifed Mail)** : Ajoute une signature numérique qui garantit que le courrier n'a pas été altéré pendant le transit.
 * **DMARC (Domain-based Message Authentication, Reporting, and Conformance)** : Détermine la marche à suivre si l'e-mail échoue aux tests SPF ou DKIM.
 
-Si vous soupçonnez l'authenticité d'un e-mail, copiez l'intégralité de son en-tête et analysez-le. Chez **TecnoCrypter**, nous proposons l'[Email Header Analyzer](/tools/analyzer-email), un outil local qui extrait instantanément les enregistrements SPF, DKIM et les sauts de réseau pour vous montrer la véritable origine du message de manière visuelle et compréhensible.
+Si vous soupçonnez l'authenticité d'un e-mail, copiez l'intégralité de son en-tête et analysez-le. Chez **TecnoCrypter**, nous proposons l'[Email Header Analyzer](/tools/analizador-email), un outil local qui extrait instantanément les enregistrements SPF, DKIM et les sauts de réseau pour vous montrer la véritable origine du message de manière visuelle et compréhensible.
 
 
 
@@ -84,15 +84,15 @@ Avant d'interagir :
 2. **Recherchez l'usurpation de caractères (attaques d'homographes)** : les attaquants utilisent des caractères Unicode similaires pour usurper des domaines légitimes (par exemple, en remplaçant un « o » latin par un « о » cyrillique).
 3. **Analyser l'URL en externe** : copiez l'adresse du lien en toute sécurité.
 
-Pour vérifier la sécurité de n'importe quel lien sans vous exposer, vous pouvez utiliser notre [TecnoCrypter URL Verifier](/tools/verifier). Cet utilitaire analyse le lien via les bases de données de menaces connues et analyse la réputation du domaine en temps réel pour vous alerter s'il est malveillant.
+Pour vérifier la sécurité de n'importe quel lien sans vous exposer, vous pouvez utiliser notre [TecnoCrypter URL Verifier](/tools/verificador). Cet utilitaire analyse le lien via les bases de données de menaces connues et analyse la réputation du domaine en temps réel pour vous alerter s'il est malveillant.
 
 ---
 ## Liste de contrôle rapide pour éviter le phishing
 
 * [ ] L'expéditeur visible correspond-il exactement à la véritable adresse e-mail ?
 * [ ] Le ton du message exige-t-il une urgence ou menace-t-il de graves conséquences ?
-* [ ] Les en-têtes de courrier affichent-ils les statuts « PASS » dans SPF et DKIM ? (Utilisez [Email Analyzer](/tools/email-analyzer))
-* [ ] Avez-vous vérifié les liens avant de les ouvrir ? (Utilisez [URL Verifier](/tools/verifier))
+* [ ] Les en-têtes de courrier affichent-ils les statuts « PASS » dans SPF et DKIM ? (Utilisez [Email Analyzer](/tools/analizador-email))
+* [ ] Avez-vous vérifié les liens avant de les ouvrir ? (Utilisez [URL Verifier](/tools/verificador))
 * [ ] L'authentification multifacteur (MFA) est-elle activée sur le compte cible ?
 
 ## Conclusion

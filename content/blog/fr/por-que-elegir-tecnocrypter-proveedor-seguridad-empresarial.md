@@ -34,4 +34,4 @@ Le partenariat avec un fournisseur tiers dédié apporte de l'objectivité et r�
 * **Mise à jour technologique permanente :** Nous protégeons votre organisation contre les vulnérabilités du jour zéro et les incidents avancés à l'aide d'outils cryptographiques modernes et d'une analyse proactive du paysage international des menaces.
 
 ---
-*Votre infrastructure a subi une intrusion ou vous souhaitez établir de manière préventive un plan de réponse aux incidents de ransomware ? Reprenez le contrôle opérationnel et minimisez l'impact avec notre équipe de [Réponse rapide aux incidents de sécurité](/products/11).*
+*Votre infrastructure a subi une intrusion ou vous souhaitez établir de manière préventive un plan de réponse aux incidents de ransomware ? Reprenez le contrôle opérationnel et minimisez l'impact avec notre équipe de [Réponse rapide aux incidents de sécurité](/productos/11).*

@@ -39,4 +39,4 @@ Using the Copilot SDK opens the door to advanced automation at several critical 
 Despite the power that the Copilot SDK provides, code patches proposed by AI must always be validated by experienced programmers. Blindly relying on automatic code generation without human security audits can introduce subtle logical exploits that are difficult to detect using ordinary automated tests.
 
 ---
-*Build your technology on robust and secure logical foundations. Protect the future of your B2B web applications with our specialized service in [Secure Web Development](/products/7).*
+*Build your technology on robust and secure logical foundations. Protect the future of your B2B web applications with our specialized service in [Secure Web Development](/productos/7).*

@@ -36,6 +36,6 @@ Isso garante:
 
 Para criar rapidamente conjuntos de credenciais seguras e perfis de usuário aleatoriamente, você pode usar nosso gerador:
 
-**[Experimente nosso gerador de credenciais de avaliação](/tools/credential-generator)**
+**[Experimente nosso gerador de credenciais de avaliação](/tools/generador-credenciales)**
 
 Gere instantaneamente identidades fictícias e chaves de teste locais para acelerar seus desenvolvimentos sem comprometer a privacidade.

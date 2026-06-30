@@ -46,4 +46,4 @@ Implement an intermediate security gateway (*LLM Gateway*) between the agent and
 * **Outbound Data Obfuscation:** Configure regex and structured data analysis rules to intercept the model response before it is sent to an external API, automatically filtering card numbers, passports, cryptographic keys or personal emails.
 
 ---
-*Ensure that your business adopts automation with AI under the most demanding cybersecurity standards. Learn about our tailored solutions in [Safe AI Training](/products/9).*
+*Ensure that your business adopts automation with AI under the most demanding cybersecurity standards. Learn about our tailored solutions in [Safe AI Training](/productos/9).*

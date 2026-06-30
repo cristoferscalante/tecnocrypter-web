@@ -44,4 +44,4 @@ To establish a shielded control session, follow this configuration protocol:
 4. **Disable DNS logs on the client:** Make sure that domain name resolution requests from your connections go through the encrypted and anonymous DNS provided by the encrypted eSIM to avoid query leaks.
 
 ---
-*Do you need to implement complex network architectures or shield your web applications against advanced attacks? Strengthen your foundations with our [Secure Web Development](/products/7) service.*
+*Do you need to implement complex network architectures or shield your web applications against advanced attacks? Strengthen your foundations with our [Secure Web Development](/productos/7) service.*

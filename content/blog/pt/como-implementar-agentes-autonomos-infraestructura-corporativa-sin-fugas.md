@@ -46,4 +46,4 @@ Implemente um gateway de segurança intermediário (*LLM Gateway*) entre o agent
 * **Ofuscação de dados de saída:** Configure regras de análise de dados estruturados e regex para interceptar a resposta do modelo antes que ela seja enviada para uma API externa, filtrando automaticamente números de cartões, passaportes, chaves criptográficas ou e-mails pessoais.
 
 ---
-*Garanta que sua empresa adote automação com IA sob os mais exigentes padrões de segurança cibernética. Saiba mais sobre nossas soluções personalizadas em [Safe AI Training](/products/9).*
+*Garanta que sua empresa adote automação com IA sob os mais exigentes padrões de segurança cibernética. Saiba mais sobre nossas soluções personalizadas em [Safe AI Training](/productos/9).*

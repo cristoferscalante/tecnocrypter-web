@@ -44,4 +44,4 @@ Para empresas que desenvolvem seus próprios sistemas conectando modelos de IA p
 * **Treinamento de equipe:** Ensine equipes de desenvolvimento e inovação a validar resultados de IA e detectar e mitigar explorações específicas de modelos de linguagem.
 
 ---
-*Treine suas equipes para adotar inteligência artificial sem comprometer seus dados confidenciais. Saiba mais sobre nosso serviço [Treinamento em IA e segurança cibernética](/products/3).*
+*Treine suas equipes para adotar inteligência artificial sem comprometer seus dados confidenciais. Saiba mais sobre nosso serviço [Treinamento em IA e segurança cibernética](/productos/3).*

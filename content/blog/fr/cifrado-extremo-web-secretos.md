@@ -48,9 +48,9 @@ Flujo de Cifrado Simétrico Local:
 
 
 
-Sur notre plateforme, nous proposons l'outil **[Online Encryption](/tools/online-encryption)**. Cet utilitaire fonctionne sur une base 100 % client (local), ce qui signifie que le texte brut n'est jamais transmis à nos serveurs. Tous les traitements cryptographiques utilisent les API natives du navigateur (« Web Crypto API »).
+Sur notre plateforme, nous proposons l'outil **[Online Encryption](/tools/cifrado-online)**. Cet utilitaire fonctionne sur une base 100 % client (local), ce qui signifie que le texte brut n'est jamais transmis à nos serveurs. Tous les traitements cryptographiques utilisent les API natives du navigateur (« Web Crypto API »).
 
-Pour compléter la sécurité de ce flux, vous pouvez utiliser notre **[Cryptographic Key Generator](/tools/generator-keys)** pour obtenir des clés de chiffrement cryptographiquement fortes et aléatoires de différentes longueurs (128, 256 ou 512 bits) prêtes pour vos déploiements ou chiffrement local.
+Pour compléter la sécurité de ce flux, vous pouvez utiliser notre **[Cryptographic Key Generator](/tools/generador-claves)** pour obtenir des clés de chiffrement cryptographiquement fortes et aléatoires de différentes longueurs (128, 256 ou 512 bits) prêtes pour vos déploiements ou chiffrement local.
 
 ---
 ## Le risque d'inspecter les jetons JWT sur des sites Web tiers
@@ -70,7 +70,7 @@ Estructura de un JWT:
 
 ### L'alternative sécurisée à TecnoCrypter
 
-Pour inspecter et interpréter en toute sécurité vos jetons Web JSON, nous avons développé **[JWT Decoder](/tools/jwt-decoder)**. 
+Pour inspecter et interpréter en toute sécurité vos jetons Web JSON, nous avons développé **[JWT Decoder](/tools/decodificador-jwt)**. 
 
 Comme nos autres outils, il effectue un décodage local. Le jeton est traité et décomposé dans votre propre navigateur en quelques millisecondes, vous permettant d'auditer son en-tête, sa charge utile et sa signature sans exposer vos données à Internet.
 
@@ -79,9 +79,9 @@ Comme nos autres outils, il effectue un décodage local. Le jeton est traité et
 
 | Ce qu'il ne faut PAS faire | Que FAIRE à la place | Outil recommandé |
 | :--- | :--- | :--- |
-| Envoyez un mot de passe directement via le chat d'entreprise. | Chiffrez-le localement avant de l'envoyer et transmettez le mot de passe par un autre moyen. | [Cryptage en ligne](/tools/online-encryption) |
-| Utilisez le mot « mot de passe » ou des clés faciles à deviner pour chiffrer. | Générez une clé cryptographique hautement aléatoire de 256 bits. | [Générateur de clés](/tools/key-generator) |
-| Collez le JWT de production dans des décodeurs Web externes. | Utilisez un décodeur Web hors ligne local. | [Décodeur JWT](/tools/jwt-decoder) |
+| Envoyez un mot de passe directement via le chat d'entreprise. | Chiffrez-le localement avant de l'envoyer et transmettez le mot de passe par un autre moyen. | [Cryptage en ligne](/tools/cifrado-online) |
+| Utilisez le mot « mot de passe » ou des clés faciles à deviner pour chiffrer. | Générez une clé cryptographique hautement aléatoire de 256 bits. | [Générateur de clés](/tools/generador-claves) |
+| Collez le JWT de production dans des décodeurs Web externes. | Utilisez un décodeur Web hors ligne local. | [Décodeur JWT](/tools/decodificador-jwt) |
 | Partagez des mots de passe et des clés de décryptage sur le même canal. | Canaux de transmission séparés (par exemple texte crypté par Slack, clé par appel). | - |
 
 ---
@@ -89,4 +89,4 @@ Comme nos autres outils, il effectue un décodage local. Le jeton est traité et
 
 La sécurité des informations confidentielles en transit relève de la responsabilité directe de ceux qui les manipulent. En utilisant le chiffrement local symétrique et les utilitaires locaux pour auditer les jetons de session, vous éliminez le recours à des serveurs intermédiaires fiables dans les applications de chat et de messagerie.
 
-* Sécurisez vos secrets pendant le transport. Générez des clés robustes avec notre [Key Generator](/tools/generator-claves), chiffrez vos messages dans [Online Encryption](/tools/online-encryption) et purgez vos jetons en toute sécurité à l'aide de notre [JWT Decoder](/tools/jwt-decoder).*
+* Sécurisez vos secrets pendant le transport. Générez des clés robustes avec notre [Key Generator](/tools/generador-claves), chiffrez vos messages dans [Online Encryption](/tools/cifrado-online) et purgez vos jetons en toute sécurité à l'aide de notre [JWT Decoder](/tools/decodificador-jwt).*

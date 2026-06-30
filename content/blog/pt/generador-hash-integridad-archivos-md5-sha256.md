@@ -36,6 +36,6 @@ Por esse motivo, as empresas publicam o hash oficial do arquivo baixado em seu s
 
 Para calcular as somas de verificação MD5, SHA-1 ou SHA-256 de seus textos ou arquivos localmente em seu navegador sem enviá-los para a internet, use nosso utilitário:
 
-**[Experimente nosso Gerador de Hash de Cripto](/tools/hash-generator)**
+**[Experimente nosso Gerador de Hash de Cripto](/tools/generador-hash)**
 
 Arraste qualquer arquivo para o navegador para calcular suas assinaturas criptográficas de forma instantânea, segura e privada.

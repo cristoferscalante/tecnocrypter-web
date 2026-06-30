@@ -34,4 +34,4 @@ Partnering with a dedicated third-party provider brings objectivity and signific
 * **Permanent Technological Update:** We keep your organization protected against zero-day vulnerabilities and advanced incidents using modern cryptographic tools and proactive analysis of the international threat landscape.
 
 ---
-*Has your infrastructure suffered an intrusion or do you want to preventively establish a response plan for ransomware incidents? Regain operational control and minimize the impact with our team at [Rapid Response to Security Incidents](/products/11).*
+*Has your infrastructure suffered an intrusion or do you want to preventively establish a response plan for ransomware incidents? Regain operational control and minimize the impact with our team at [Rapid Response to Security Incidents](/productos/11).*

@@ -37,6 +37,6 @@ This visual inspection prevents accidental typos or broken code from being uploa
 
 To securely and privately compare two texts or code files without sending the data to the internet, you can use our tool:
 
-**[Try our File Comparison (Diff Viewer)](/tools/comparador-files)**
+**[Try our File Comparison (Diff Viewer)](/tools/comparador-archivos)**
 
 Perform line-by-line gap analysis 100% locally in your own web browser.

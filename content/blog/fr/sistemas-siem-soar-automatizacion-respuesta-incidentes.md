@@ -40,4 +40,4 @@ Pendant que le SIEM détecte et signale, le système SOAR agit. À l'aide de flu
 3. **Génération de tickets :** Ouvrez un dossier d'assistance détaillant l'incident et informez l'équipe d'intervention rapide via des canaux cryptés.
 
 ---
-*Votre organisation a-t-elle subi un incident de sécurité ou avez-vous besoin de structurer des protocoles d'atténuation et de défense informatique rapides ? Reprenez le contrôle avec notre service [Rapid Incident Response] (/products/11).*
+*Votre organisation a-t-elle subi un incident de sécurité ou avez-vous besoin de structurer des protocoles d'atténuation et de défense informatique rapides ? Reprenez le contrôle avec notre service [Rapid Incident Response] (/productos/11).*

@@ -42,4 +42,4 @@ Le WAF analyse les requêtes pour détecter les modèles connus d'exploits logiq
 * **WAF local (sur site) :** Il est installé directement sur le serveur Web (comme Nginx ou Apache). Il offre un contrôle total sur la confidentialité du trafic de données, mais nécessite une maintenance continue par des ingénieurs système spécialisés.
 
 ---
-*Construisez vos plateformes Web selon les normes défensives les plus strictes, en intégrant des pare-feu logiques et un code propre à partir de sa conception originale. Protégez votre entreprise avec notre service [Développement Web sécurisé](/products/7).*
+*Construisez vos plateformes Web selon les normes défensives les plus strictes, en intégrant des pare-feu logiques et un code propre à partir de sa conception originale. Protégez votre entreprise avec notre service [Développement Web sécurisé](/productos/7).*

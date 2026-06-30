@@ -76,12 +76,12 @@ Para manter uma forte postura de Segurança Operacional (OPSEC), você deve limp
 ### 1. Limpeza de arquivo
 Antes de enviar uma imagem para as redes sociais ou enviar um documento confidencial a um cliente:
 * **Desative a localização da câmera** nas configurações do seu smartphone para evitar que as coordenadas GPS sejam registradas em fotos futuras.
-* **Use ferramentas de limpeza**: Você pode arrastar seus arquivos diretamente para nosso utilitário [Limpar Metadados do TecnoCrypter](/tools/clean-metadata). Esta ferramenta processa o arquivo 100% localmente no seu navegador (seus arquivos nunca são carregados em nenhum servidor), removendo todos os campos EXIF ​​​​e informações de autoria em segundos, proporcionando um arquivo limpo e seguro.
+* **Use ferramentas de limpeza**: Você pode arrastar seus arquivos diretamente para nosso utilitário [Limpar Metadados do TecnoCrypter](/tools/limpia-metadatos). Esta ferramenta processa o arquivo 100% localmente no seu navegador (seus arquivos nunca são carregados em nenhum servidor), removendo todos os campos EXIF ​​​​e informações de autoria em segundos, proporcionando um arquivo limpo e seguro.
 
 ### 2. Desinfecção de links (URLs)
 Antes de encaminhar um link para seus contatos:
 * **Remover parâmetros desnecessários**: Exclua tudo após o ponto de interrogação (`?`) na barra de endereço.
-* **Automatize o processo**: Copie o link e cole-o em nosso [TecnoCrypter Tracking Eliminator](/tools/tracking-eliminator). Nossa ferramenta identifica e remove instantaneamente rastreadores comerciais e de telemetria comuns sem quebrar o destino da URL.
+* **Automatize o processo**: Copie o link e cole-o em nosso [TecnoCrypter Tracking Eliminator](/tools/eliminador-rastreo). Nossa ferramenta identifica e remove instantaneamente rastreadores comerciais e de telemetria comuns sem quebrar o destino da URL.
 
 ---
 ## Tabela de comparação: arquivos e seu nível de risco de metadados
@@ -99,4 +99,4 @@ Antes de encaminhar um link para seus contatos:
 
 Privacidade não é esconder informações; é ter controle sobre quais informações você decide compartilhar. Metadados e URLs rastreados são vazamentos silenciosos de dados pessoais. Ao incorporar ferramentas de limpeza locais em seu fluxo de trabalho diário, você pode proteger sua identidade e manter seguras as informações confidenciais de sua empresa.
 
-*Proteja sua pegada digital hoje mesmo limpando seus documentos com nosso [Metadados Limpos](/tools/clean-metadata) e limpando seus links no [Eliminador de Rastreamento](/tools/eliminador-trastreo).*
+*Proteja sua pegada digital hoje mesmo limpando seus documentos com nosso [Metadados Limpos](/tools/limpia-metadatos) e limpando seus links no [Eliminador de Rastreamento](/tools/eliminador-rastreo).*

@@ -36,6 +36,6 @@ Os três pilares de autenticação que você deve revisar são:
 
 Para simplificar esta análise técnica, você pode usar nossa ferramenta interativa:
 
-**[Experimente nosso Analisador de Cabeçalho de E-mail](/tools/analisador-email)**
+**[Experimente nosso Analisador de Cabeçalho de E-mail](/tools/analizador-email)**
 
 Copie todo o cabeçalho do seu gerenciador de e-mail (Outlook, Gmail, etc.) e cole-o em nosso analisador para descriptografar instantaneamente os servidores envolvidos e verificar o status das assinaturas SPF, DKIM e DMARC.

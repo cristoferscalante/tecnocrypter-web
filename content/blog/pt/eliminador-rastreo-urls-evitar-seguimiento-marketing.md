@@ -34,6 +34,6 @@ Isso cria uma pegada de suas interações pessoais que as agências de publicida
 
 Para compartilhar links com seus amigos de forma limpa e manter sua privacidade de navegação, você pode usar nosso limpador local:
 
-**[Experimente nosso eliminador de rastreamento de URL](/tools/tracking-eliminator)**
+**[Experimente nosso eliminador de rastreamento de URL](/tools/eliminador-rastreo)**
 
 Cole qualquer link longo com parâmetros de anúncio e obtenha instantaneamente um URL limpo e sem rastreador para compartilhar com segurança.

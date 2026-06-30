@@ -34,6 +34,6 @@ Apesar da sua utilização diária, é muito comum cometer erros na adição ou 
 
 Para automatizar esses cálculos comerciais com precisão e localmente a partir do seu navegador, sem anúncios irritantes, use nossa calculadora:
 
-**[Experimente nossa calculadora de porcentagem e IVA](/tools/calculadora-percentajes)**
+**[Experimente nossa calculadora de porcentagem e IVA](/tools/calculadora-porcentajes)**
 
 Realize cálculos de aumentos, descontos, percentuais diretos e detalhamentos de impostos de forma instantânea e privada.

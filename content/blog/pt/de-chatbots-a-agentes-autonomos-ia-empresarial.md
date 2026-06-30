@@ -41,4 +41,4 @@ Por exemplo, em vez de perguntar “quanto gastamos no mês passado?”, um agen
 A implantação de agentes autônomos que lidam com dados confidenciais exige uma governança técnica rigorosa. Se um agente tiver permissões ilimitadas nos servidores da empresa, uma injeção indireta de um e-mail externo malicioso poderá forçar o agente a extrair informações confidenciais ou executar comandos destrutivos.
 
 ---
-*Treine suas equipes para adotar e implantar sistemas de inteligência artificial sem comprometer os dados confidenciais da sua organização. Saiba mais sobre nosso curso [Treinamento em IA segura](/products/9).*
+*Treine suas equipes para adotar e implantar sistemas de inteligência artificial sem comprometer os dados confidenciais da sua organização. Saiba mais sobre nosso curso [Treinamento em IA segura](/productos/9).*

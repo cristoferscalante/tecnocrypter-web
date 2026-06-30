@@ -45,6 +45,6 @@ Une erreur courante lors de l'écriture d'expressions cron complexes consiste à
 
 Pour créer et vérifier vos expressions cron rapidement et avec traduction textuelle afin d'éviter les erreurs de programmation, vous pouvez utiliser notre utilitaire interactif :
 
-**[Essayez notre générateur d'expressions Cron](/tools/generator-cron)**
+**[Essayez notre générateur d'expressions Cron](/tools/generador-cron)**
 
 Générez instantanément l'expression cron exacte pour les sauvegardes de votre serveur, visuellement et sans crash.

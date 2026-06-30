@@ -38,4 +38,4 @@ A principal motivação para abrir o capital é financeira. A corrida para desen
 Uma OpenAI de capital aberto significaria que o desenvolvimento da tecnologia de IA mais poderosa do mundo estaria sob a supervisão direta dos acionistas de Wall Street e dos reguladores financeiros governamentais. Isto poderia acelerar o escrutínio de segurança dos modelos, mas também aumentaria a pressão comercial para colocar os produtos no mercado rapidamente.
 
 ---
-*Garante que a adoção de ferramentas de IA na sua organização seja realizada de forma segura, estruturada e sem riscos jurídicos. Saiba mais sobre nosso serviço em [Safe AI Training](/products/9).*
+*Garante que a adoção de ferramentas de IA na sua organização seja realizada de forma segura, estruturada e sem riscos jurídicos. Saiba mais sobre nosso serviço em [Safe AI Training](/productos/9).*

@@ -33,6 +33,6 @@ Bien qu’à première vue cela puisse ressembler à une combinaison aléatoire 
 
 Pour générer rapidement des paragraphes personnalisés, des listes ou des mots de remplissage pour vos projets de conception et de mise en page, utilisez notre outil local :
 
-**[Essayez notre générateur Lorem Ipsum](/tools/lorem-generator)**
+**[Essayez notre générateur Lorem Ipsum](/tools/generador-lorem)**
 
 Définissez la quantité de texte dont vous avez besoin et copiez instantanément le remplissage dans le presse-papiers, sans publicité ni attente.

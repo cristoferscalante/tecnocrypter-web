@@ -40,4 +40,4 @@ Réaliser des audits externes de manière préventive présente des avantages op
 * **Protection de la réputation :** Prévenir une fuite de données est infiniment moins coûteux que gérer la perte de réputation, les amendes légales et le mécontentement des clients suite à une attaque réussie.
 
 ---
-*Découvrez les points faibles de votre infrastructure et renforcez vos défenses technologiques avant qu'il ne soit trop tard. Demandez un diagnostic personnalisé dans notre service [Conseil en Cybersécurité](/products/4).*
+*Découvrez les points faibles de votre infrastructure et renforcez vos défenses technologiques avant qu'il ne soit trop tard. Demandez un diagnostic personnalisé dans notre service [Conseil en Cybersécurité](/productos/4).*

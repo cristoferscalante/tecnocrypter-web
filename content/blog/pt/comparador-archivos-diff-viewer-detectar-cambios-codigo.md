@@ -37,6 +37,6 @@ Essa inspeção visual evita que erros de digitação acidentais ou códigos que
 
 Para comparar dois textos ou arquivos de código de forma segura e privada sem enviar os dados para a internet, você pode usar nossa ferramenta:
 
-**[Experimente nossa comparação de arquivos (Diff Viewer)](/tools/comparador-files)**
+**[Experimente nossa comparação de arquivos (Diff Viewer)](/tools/comparador-archivos)**
 
 Execute análises de lacunas linha por linha 100% localmente em seu próprio navegador.

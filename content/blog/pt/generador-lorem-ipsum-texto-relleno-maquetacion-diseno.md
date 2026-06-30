@@ -33,6 +33,6 @@ Embora à primeira vista possa parecer uma combinação aleatória de palavras l
 
 Para gerar rapidamente parágrafos personalizados, listas ou palavras de preenchimento para seus projetos de design e layout, use nossa ferramenta local:
 
-**[Experimente nosso Gerador Lorem Ipsum](/tools/lorem-generator)**
+**[Experimente nosso Gerador Lorem Ipsum](/tools/generador-lorem)**
 
 Defina a quantidade de texto necessária e copie o preenchimento para a área de transferência instantaneamente, sem anúncios ou espera.

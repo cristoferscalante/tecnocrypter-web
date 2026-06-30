@@ -39,4 +39,4 @@ La destination de ces fonds est divisée en trois priorités stratégiques :
 Alors que le traitement numérique mondial est concentré dans de grands centres à grande échelle, la sécurité physique et logique de ces installations devient un problème de sécurité nationale. La protection des données de formation et des clés cryptographiques du système est aujourd’hui la priorité absolue pour éviter l’espionnage industriel et les attaques avancées de ransomwares dans les environnements Cloud B2B.
 
 ---
-*Protégez l'intégrité de l'infrastructure de données de votre entreprise contre les attaques persistantes et les vulnérabilités complexes. Consultez notre service [Prévention des attaques et cybersécurité] (/products/10).*
+*Protégez l'intégrité de l'infrastructure de données de votre entreprise contre les attaques persistantes et les vulnérabilités complexes. Consultez notre service [Prévention des attaques et cybersécurité] (/productos/10).*

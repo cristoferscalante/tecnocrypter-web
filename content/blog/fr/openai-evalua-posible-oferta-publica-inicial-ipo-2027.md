@@ -38,4 +38,4 @@ La principale motivation pour entrer en bourse est financière. La course au dé
 Une OpenAI cotée en bourse signifierait que le développement de la technologie d'IA la plus puissante au monde serait sous la supervision directe des actionnaires de Wall Street et des régulateurs financiers gouvernementaux. Cela pourrait accélérer l’examen de la sécurité des modèles, mais augmenterait également la pression commerciale pour commercialiser rapidement les produits.
 
 ---
-*S'assure que l'adoption des outils d'IA dans votre organisation se fait de manière sécurisée, structurée et sans risques juridiques. Découvrez notre service sur [Safe AI Training](/products/9).*
+*S'assure que l'adoption des outils d'IA dans votre organisation se fait de manière sécurisée, structurée et sans risques juridiques. Découvrez notre service sur [Safe AI Training](/productos/9).*

@@ -38,4 +38,4 @@ O processo de autenticação segura do **Apptivar App** é baseado no painel de 
 Ao utilizar este método, sua conta é desvinculada do seu cartão SIM físico e do seu nome real, proporcionando uma camada insubstituível de privacidade em suas conversas diárias.
 
 ---
-*Descubra como configurar sistemas de comunicação blindados e mitigar vetores de ataques sociais e informáticos em sua organização com nosso [Treinamento em Segurança Digital](/products/8).*
+*Descubra como configurar sistemas de comunicação blindados e mitigar vetores de ataques sociais e informáticos em sua organização com nosso [Treinamento em Segurança Digital](/productos/8).*

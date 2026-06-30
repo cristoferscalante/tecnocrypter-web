@@ -38,4 +38,4 @@ The main motivation for going public is financial. The race to develop models wi
 A publicly traded OpenAI would mean that the development of the world's most powerful AI technology would be under the direct supervision of Wall Street shareholders and government financial regulators. This could speed up safety scrutiny of models, but would also increase commercial pressure to bring products to market quickly.
 
 ---
-*Ensures that the adoption of AI tools in your organization is carried out in a secure, structured manner and without legal risks. Learn about our service at [Safe AI Training](/products/9).*
+*Ensures that the adoption of AI tools in your organization is carried out in a secure, structured manner and without legal risks. Learn about our service at [Safe AI Training](/productos/9).*

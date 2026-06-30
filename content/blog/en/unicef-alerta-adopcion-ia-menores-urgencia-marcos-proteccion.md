@@ -38,4 +38,4 @@ The rapid penetration of this technology into homes and schools poses urgent cha
 UNICEF urges the industry to apply the principle of **child safety by design**. This involves natively limiting the data that models collect from users suspected of being minors and designing strict filters to block biased or harmful responses.
 
 ---
-*Educate and train your team and organization in the safe, conscious and regulated use of artificial intelligence tools. Learn about our [Safe AI Training](/products/9) program.*
+*Educate and train your team and organization in the safe, conscious and regulated use of artificial intelligence tools. Learn about our [Safe AI Training](/productos/9) program.*

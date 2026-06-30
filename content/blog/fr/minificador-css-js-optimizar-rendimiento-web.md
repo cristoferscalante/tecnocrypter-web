@@ -33,6 +33,6 @@ La minification élimine ce fardeau, en permettant des réductions de taille all
 
 Pour optimiser et réduire vos extraits CSS et JavaScript instantanément et en privé, utilisez notre outil local :
 
-**[Essayez notre Minifier CSS/JS](/tools/css-minifier)**
+**[Essayez notre Minifier CSS/JS](/tools/minificador-css)**
 
 Collez votre code formaté et obtenez instantanément une version minifiée optimale prête à être déployée dans votre environnement de production.

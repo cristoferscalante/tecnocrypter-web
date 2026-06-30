@@ -40,4 +40,4 @@ Un cours théorique annuel sur la cybersécurité ne suffit pas. Pour parvenir �
 3. **Renforcement positif :** Ne punissez pas l'employé qui commet l'erreur lors de l'exercice, mais fournissez plutôt une rétroaction immédiate et une formation axée sur le moment exact de l'échec.
 
 ---
-*Ne laissez pas la sécurité de votre entreprise au hasard. Faites de votre personnel la première ligne de défense active grâce à notre programme [Formation à la sécurité](/products/2).*
+*Ne laissez pas la sécurité de votre entreprise au hasard. Faites de votre personnel la première ligne de défense active grâce à notre programme [Formation à la sécurité](/productos/2).*

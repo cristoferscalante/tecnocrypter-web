@@ -32,7 +32,7 @@ Today, tracking goes far beyond a simple text file saved to your drive. Techniqu
 
 However, third-party cookies are placed by domains other than the site you are visiting (generally advertising networks). These cookies follow you from site to site, building a detailed record of your browsing habits.
 
-If you want to know what data the websites you visit are storing, you can use our **[TecnoCrypter Cookie Analyzer](/tools/cookies-analyzer)**. This tool examines local cookies loaded by any domain, classifying them by function (essential, performance, or tracking) so you know exactly what information is left on your device.
+If you want to know what data the websites you visit are storing, you can use our **[TecnoCrypter Cookie Analyzer](/tools/analizador-cookies)**. This tool examines local cookies loaded by any domain, classifying them by function (essential, performance, or tracking) so you know exactly what information is left on your device.
 
 ---
 ## 2. The New Frontier: Browser Fingerprinting
@@ -58,7 +58,7 @@ Creación de Huella Digital (Fingerprint):
 
 
 
-To audit how unique and exposed your browsing settings are, you can use our **[TecnoCrypter Fingerprint](/tools/fingerprint)** utility. This telemetry tool shows you the exact data your browser shares with the world and calculates your level of web uniqueness.
+To audit how unique and exposed your browsing settings are, you can use our **[TecnoCrypter Fingerprint](/tools/huella-digital)** utility. This telemetry tool shows you the exact data your browser shares with the world and calculates your level of web uniqueness.
 
 ---
 ## How to Mitigate Web Tracking
@@ -67,7 +67,7 @@ Although it is extremely difficult to avoid fingerprinting completely (as trying
 
 1. **Use Privacy Oriented Browsers**: Browsers like Brave, Firefox (with strict tracking protection enabled), or Tor Browser implement data "randomization" and "standardization" techniques so that all their users appear identical to trackers.
 2. **Clear your Browsing Data**: Configure your browser to automatically clear cookies and cache when you log out.
-3. **Audit your Frequent Sites**: Run the **[Cookie Analyzer](/tools/cookie-analyzer)** scanner on the portals you use regularly to make sure they do not use unnecessary trackers.
+3. **Audit your Frequent Sites**: Run the **[Cookie Analyzer](/tools/analizador-cookies)** scanner on the portals you use regularly to make sure they do not use unnecessary trackers.
 4. **Disable sending telemetry** in the settings of your operating system and your applications.
 
 ---
@@ -85,4 +85,4 @@ Although it is extremely difficult to avoid fingerprinting completely (as trying
 
 The internet advertising ecosystem has transformed web browsing into a constant surveillance system. However, knowledge is the best defense. By understanding how tracking cookies work and what hardware telemetry information your browser reveals when performing fingerprint queries, you can make informed decisions to protect your identity and browse much more securely.
 
-*Audit your privacy level. Discover the data you expose in our [Digital Fingerprint](/tools/digital-footprint) analyzer and clean your history by examining your cookies with the [Cookie Analyzer](/tools/cookies-analyzer).*
+*Audit your privacy level. Discover the data you expose in our [Digital Fingerprint](/tools/huella-digital) analyzer and clean your history by examining your cookies with the [Cookie Analyzer](/tools/analizador-cookies).*

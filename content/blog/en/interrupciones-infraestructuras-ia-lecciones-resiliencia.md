@@ -35,4 +35,4 @@ To build robust applications that will not be rendered inoperable by the failure
 * **Cryptographic Backup Management:** Encrypt historical prompts and responses at rest on the local server. In the event of a prolonged outage, the system can recover pre-calculated data and provide cached responses for frequently asked queries.
 
 ---
-*Has your business experienced service outage problems or do you need to audit and shield your computer systems from network crises? Regain operational control with our [Rapid Response to Security Incidents](/products/11) team.*
+*Has your business experienced service outage problems or do you need to audit and shield your computer systems from network crises? Regain operational control with our [Rapid Response to Security Incidents](/productos/11) team.*

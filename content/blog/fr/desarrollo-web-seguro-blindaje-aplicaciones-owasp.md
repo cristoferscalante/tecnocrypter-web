@@ -42,4 +42,4 @@ Une erreur courante consiste à effectuer des validations de sécurité uniqueme
 * **En-têtes de sécurité HTTP :** Configurez les en-têtes de réponse tels que « Content-Security-Policy » (CSP) pour empêcher les attaques de type Cross-Site Scripting (XSS) et « Strict-Transport-Security » (HSTS) pour forcer les connexions TLS.
 
 ---
-* Êtes-vous en train de créer votre prochaine application Web ou avez-vous besoin d'auditer la sécurité de votre code actuel ? Protégez l'avenir de votre entreprise numérique avec notre service professionnel [Développement Web sécurisé](/products/1).*
+* Êtes-vous en train de créer votre prochaine application Web ou avez-vous besoin d'auditer la sécurité de votre code actuel ? Protégez l'avenir de votre entreprise numérique avec notre service professionnel [Développement Web sécurisé](/productos/1).*

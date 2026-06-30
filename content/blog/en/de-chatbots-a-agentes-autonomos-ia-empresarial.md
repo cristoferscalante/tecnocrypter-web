@@ -41,4 +41,4 @@ For example, instead of asking 'how much did we spend last month?', a freelance 
 Deploying autonomous agents handling sensitive data requires rigorous technical governance. If an agent has unlimited permissions on company servers, an indirect prompt injection from a malicious external email could force the agent to extract sensitive information or execute destructive commands.
 
 ---
-*Train your teams to adopt and deploy artificial intelligence systems without compromising your organization's confidential data. Learn about our [Safe AI Training](/products/9) course.*
+*Train your teams to adopt and deploy artificial intelligence systems without compromising your organization's confidential data. Learn about our [Safe AI Training](/productos/9) course.*

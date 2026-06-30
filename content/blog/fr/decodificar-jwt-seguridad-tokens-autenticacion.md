@@ -35,6 +35,6 @@ Il est essentiel de se rappeler que les deux premières parties sont simplement 
 
 Pour inspecter le contenu et les dates d'expiration de vos tokens de manière sécurisée et locale, vous pouvez utiliser notre décodeur :
 
-**[Essayez notre décodeur JWT](/tools/decoder-jwt)**
+**[Essayez notre décodeur JWT](/tools/decodificador-jwt)**
 
 Décodez instantanément vos jetons pour vérifier leurs affirmations, vérifier les signatures et analyser leur structure sans envoyer de données sur Internet.

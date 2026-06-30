@@ -35,6 +35,6 @@ It is crucial to remember that the first two parts are simply Base64Url encoded,
 
 To inspect the content and expiration dates of your tokens securely and locally, you can use our decoder:
 
-**[Try our JWT Decoder](/tools/decoder-jwt)**
+**[Try our JWT Decoder](/tools/decodificador-jwt)**
 
 Instantly decode your tokens to verify their claims, verify signatures and analyze their structure without sending any data over the internet.

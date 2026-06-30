@@ -35,4 +35,4 @@ Cet écosystème défensif fonctionne à trois niveaux de sécurité :
 3. **Prévention des empreintes digitales réseau :** L'adresse IP qui signe la transaction dans la blockchain est celle du VPS, et non celle de votre connexion résidentielle. En changeant constamment votre point d'accès avec des identifiants de réseau rotatifs dans l'eSIM, vous évitez qu'un modèle géographique soit associé à vos opérations de cryptographie.
 
 ---
-*Apprenez à protéger vos finances, à configurer des portefeuilles froids et à appliquer des principes avancés de confidentialité dans les transactions numériques grâce à notre [Formation sur la sécurité numérique](/products/8).*
+*Apprenez à protéger vos finances, à configurer des portefeuilles froids et à appliquer des principes avancés de confidentialité dans les transactions numériques grâce à notre [Formation sur la sécurité numérique](/productos/8).*

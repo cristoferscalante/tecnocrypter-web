@@ -42,4 +42,4 @@ Aplique as seguintes medidas defensivas no seu dispositivo:
 3. **Auditoria rigorosa de permissões do sistema:** Defina as configurações do smartphone para limitar o acesso ao aplicativo tanto quanto possível. Nenhum aplicativo de armazenamento criptografado requer acesso permanente à sua geolocalização ou microfone. Conceda permissões temporárias ("somente enquanto o aplicativo estiver aberto") e revogue o acesso de execução em segundo plano.
 
 ---
-*Proteja a propriedade intelectual da sua empresa e treine sua equipe técnica na prevenção de invasões informáticas com nosso serviço [Prevenção de Ataques e Segurança Empresarial] (/products/10).*
+*Proteja a propriedade intelectual da sua empresa e treine sua equipe técnica na prevenção de invasões informáticas com nosso serviço [Prevenção de Ataques e Segurança Empresarial] (/productos/10).*

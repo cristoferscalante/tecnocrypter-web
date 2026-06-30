@@ -44,4 +44,4 @@ Unlike static analysis, dynamic application security testing takes the perspecti
 Combining SAST in the code writing phases of programmers, and DAST in the automatic pre-deployment phases of continuous integration, is the best strategy to ensure that the software your company compiles is free of serious vulnerabilities from the ground up.
 
 ---
-*Develop your web applications and corporate portals under secure DevSecOps standards and free of logical exploits. Learn about our [Secure Web Development] service (/products/7).*
+*Develop your web applications and corporate portals under secure DevSecOps standards and free of logical exploits. Learn about our [Secure Web Development] service (/productos/7).*

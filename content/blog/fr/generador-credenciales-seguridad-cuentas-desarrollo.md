@@ -36,6 +36,6 @@ Cela garantit :
 
 Pour créer rapidement des ensembles d'identifiants sécurisés et des profils d'utilisateurs de manière aléatoire, vous pouvez utiliser notre générateur :
 
-**[Essayez notre générateur d'informations d'identification d'essai](/tools/credential-generator)**
+**[Essayez notre générateur d'informations d'identification d'essai](/tools/generador-credenciales)**
 
 Générez instantanément des identités fictives et des clés de test locales pour accélérer vos développements sans compromettre la confidentialité.

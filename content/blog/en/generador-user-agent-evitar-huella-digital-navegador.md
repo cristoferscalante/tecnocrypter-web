@@ -33,6 +33,6 @@ Periodically modifying or toggling your User-Agent is a highly recommended activ
 
 To get updated User-Agent strings from different devices and operating systems for your privacy scripts or extensions, you can use our catalog:
 
-**[Try our User-Agent Generator](/tools/useragent-generator)**
+**[Try our User-Agent Generator](/tools/generador-useragent)**
 
 Instantly generate valid and clean headers from Chrome, Firefox, Safari, Android and iOS devices for your secure browsing.

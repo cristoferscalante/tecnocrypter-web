@@ -33,6 +33,6 @@ Ao usar um subconjunto limitado de caracteres, o Base32 foi projetado para resol
 
 Para codificar ou decodificar strings de texto para o formato Base32 em diferentes variantes (incluindo a versão Crockford altamente legível), você pode usar nossa ferramenta local:
 
-**[Experimente nosso codificador Base32](/tools/base32-encoder)**
+**[Experimente nosso codificador Base32](/tools/codificador-base32)**
 
 Codifique e decodifique instantaneamente dados binários de forma rápida e segura em seu navegador, sem enviar dados para a rede.

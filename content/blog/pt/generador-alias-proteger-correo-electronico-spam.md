@@ -35,6 +35,6 @@ Essa técnica permite criar regras de filtragem em sua caixa de correio para arq
 
 Para gerar esquemas de log seguros e gerenciar aliases lógicos, você pode usar nossa ferramenta:
 
-**[Experimente nosso gerador de aliases e credenciais](/tools/alias-generator)**
+**[Experimente nosso gerador de aliases e credenciais](/tools/generador-alias)**
 
 Crie aliases de e-mail e nomes de usuário estruturados por plataforma para proteger sua identidade primária em cada registro online.

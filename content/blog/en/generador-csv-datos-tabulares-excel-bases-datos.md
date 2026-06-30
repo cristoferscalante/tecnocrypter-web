@@ -41,6 +41,6 @@ This lightweight structure makes them ideal for exporting large collections of i
 
 To create, edit data tables in the browser, and export valid and compatible CSV files locally and securely, use our tool:
 
-**[Try our CSV File Generator](/tools/generator-csv)**
+**[Try our CSV File Generator](/tools/generador-csv)**
 
 Edit cells directly in an intuitive interface and download your CSV file instantly free of coding issues.

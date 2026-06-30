@@ -36,6 +36,6 @@ Aside from its aesthetic impact, text obfuscation by replacing characters with h
 
 To experiment with converting normal text to obfuscated, Unicode, or Zalgo format versions locally, you can use our tool:
 
-**[Try our Text Obfuscator](/tools/text-obfuscator)**
+**[Try our Text Obfuscator](/tools/ofuscador-texto)**
 
 Transform your texts instantly with different intensity levels and Unicode filters, keeping your data safe and local on your machine.

@@ -32,6 +32,6 @@ Effectuer des conversions rapides entre kilomètres et miles, kilogrammes et liv
 
 Pour convertir instantanément la longueur, le poids, la température et bien plus encore, utilisez notre convertisseur local dans votre navigateur :
 
-**[Essayez notre convertisseur d'unités](/tools/conversor-unites)**
+**[Essayez notre convertisseur d'unités](/tools/conversor-unidades)**
 
 Sélectionnez la catégorie, saisissez la valeur et obtenez instantanément toutes les conversions équivalentes localement et en toute sécurité.

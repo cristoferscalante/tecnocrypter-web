@@ -32,6 +32,6 @@ Conserver un format SQL structuré présente des avantages certains :
 
 Pour formater de manière professionnelle et lisible vos requêtes de base de données instantanément et localement, utilisez notre outil :
 
-**[Essayez notre formateur SQL](/tools/sql-formatter)**
+**[Essayez notre formateur SQL](/tools/formateador-sql)**
 
 Embellissez instantanément vos scripts et instructions SQL avec des paramètres d'indentation idéaux et une conversion automatique des mots clés en majuscules.

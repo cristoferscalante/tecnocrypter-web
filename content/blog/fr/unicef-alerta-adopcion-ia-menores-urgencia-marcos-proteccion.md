@@ -38,4 +38,4 @@ La pénétration rapide de cette technologie dans les foyers et les écoles pose
 L'UNICEF exhorte l'industrie à appliquer le principe de **sécurité des enfants dès la conception**. Cela implique de limiter nativement les données que les modèles collectent auprès des utilisateurs suspectés d’être mineurs et de concevoir des filtres stricts pour bloquer les réponses biaisées ou nuisibles.
 
 ---
-*Éduquez et formez votre équipe et votre organisation à l'utilisation sûre, consciente et réglementée des outils d'intelligence artificielle. Découvrez notre programme [Safe AI Training](/products/9).*
+*Éduquez et formez votre équipe et votre organisation à l'utilisation sûre, consciente et réglementée des outils d'intelligence artificielle. Découvrez notre programme [Safe AI Training](/productos/9).*

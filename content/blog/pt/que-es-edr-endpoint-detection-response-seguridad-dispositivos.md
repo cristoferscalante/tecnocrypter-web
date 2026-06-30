@@ -42,4 +42,4 @@ Se um programa de computador legítimo (como um processador de texto ou leitor d
 4. **Recuperação:** Certas soluções EDR avançadas podem restaurar cópias de sombra locais de arquivos danificados, revertendo o impacto do ataque em questão de minutos.
 
 ---
-*Proteja os dispositivos dos seus colaboradores contra malware avançado e ameaças persistentes. Saiba mais sobre nossas soluções personalizadas para [Prevenção contra ataques e segurança de endpoints](/products/10).*
+*Proteja os dispositivos dos seus colaboradores contra malware avançado e ameaças persistentes. Saiba mais sobre nossas soluções personalizadas para [Prevenção contra ataques e segurança de endpoints](/productos/10).*

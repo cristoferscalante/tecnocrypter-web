@@ -44,4 +44,4 @@ For companies that develop their own systems by connecting AI models through API
 * **Team Training:** Teach development and innovation teams to validate AI outputs and detect and mitigate language model-specific exploits.
 
 ---
-*Train your teams to adopt artificial intelligence without compromising your sensitive data. Learn about our [AI and Cybersecurity Training](/products/3) service.*
+*Train your teams to adopt artificial intelligence without compromising your sensitive data. Learn about our [AI and Cybersecurity Training](/productos/3) service.*

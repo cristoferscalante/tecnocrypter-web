@@ -38,4 +38,4 @@ Quando sua startup tentar fechar contratos de vendas com empresas estabelecidas,
 O cumprimento antecipado dos padrões de governança, como o **SOC 2**, ou a realização de auditorias externas de segurança cibernética demonstram maturidade corporativa aos investidores e ajudam você a fechar vendas corporativas com muito mais rapidez.
 
 ---
-*Construa sua tecnologia sobre bases indestrutíveis e acelere o crescimento de sua startup com nossas soluções abrangentes de [consultoria e segurança cibernética](/products/4).*
+*Construa sua tecnologia sobre bases indestrutíveis e acelere o crescimento de sua startup com nossas soluções abrangentes de [consultoria e segurança cibernética](/productos/4).*

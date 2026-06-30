@@ -44,4 +44,4 @@ Pour les entreprises qui développent leurs propres systèmes en connectant des 
 * **Formation d'équipe :** Apprenez aux équipes de développement et d'innovation à valider les résultats de l'IA et à détecter et atténuer les exploits spécifiques aux modèles de langage.
 
 ---
-*Formez vos équipes à adopter l'intelligence artificielle sans compromettre vos données sensibles. Découvrez notre service [Formation IA et cybersécurité](/products/3).*
+*Formez vos équipes à adopter l'intelligence artificielle sans compromettre vos données sensibles. Découvrez notre service [Formation IA et cybersécurité](/productos/3).*

@@ -36,4 +36,4 @@ Nosso aplicativo foi projetado sob rígidos padrões de segurança e oferece rec
 * **Gerenciamento VPN integrado:** Configure e ative seus túneis de roteamento criptografados para desviar seu tráfego para locais offshore com um único botão na interface.
 
 ---
-*Adote e gerencie ferramentas tecnológicas avançadas de forma responsável e segura em sua organização. Descubra como em nosso serviço [Treinamento de IA segura](/products/9).*
+*Adote e gerencie ferramentas tecnológicas avançadas de forma responsável e segura em sua organização. Descubra como em nosso serviço [Treinamento de IA segura](/productos/9).*

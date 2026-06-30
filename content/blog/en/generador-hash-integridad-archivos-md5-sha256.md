@@ -36,6 +36,6 @@ For this reason, companies publish the official hash of the download file on the
 
 To calculate the MD5, SHA-1 or SHA-256 checksums of your texts or files locally in your browser without uploading them to the internet, use our utility:
 
-**[Try our Crypto Hash Generator](/tools/hash-generator)**
+**[Try our Crypto Hash Generator](/tools/generador-hash)**
 
 Drag any file into the browser to calculate its cryptographic signatures instantly, securely and privately.

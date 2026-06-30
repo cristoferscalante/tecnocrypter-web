@@ -51,4 +51,4 @@ Proceso de Respuesta a Incidentes:
 * **Lições aprendidas:** Analise o que deu errado nas defesas e documente as melhorias necessárias para evitar eventos futuros.
 
 ---
-*A sua rede foi comprometida ou precisa de definir um plano defensivo contra crises informáticas? Recupere o controle operacional e minimize o impacto com nossa equipe de [Resposta a incidentes](/products/5).*
+*A sua rede foi comprometida ou precisa de definir um plano defensivo contra crises informáticas? Recupere o controle operacional e minimize o impacto com nossa equipe de [Resposta a incidentes](/productos/5).*

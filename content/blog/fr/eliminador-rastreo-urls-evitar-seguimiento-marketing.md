@@ -34,6 +34,6 @@ Cela crée une empreinte de vos interactions personnelles que les agences de pub
 
 Pour partager proprement des liens avec vos amis et préserver la confidentialité de votre navigation, vous pouvez utiliser notre nettoyeur local :
 
-**[Essayez notre éliminateur de suivi d'URL](/tools/tracking-eliminator)**
+**[Essayez notre éliminateur de suivi d'URL](/tools/eliminador-rastreo)**
 
 Collez n'importe quel lien long avec les paramètres de l'annonce et obtenez instantanément une URL propre et sans tracker à partager en toute sécurité.

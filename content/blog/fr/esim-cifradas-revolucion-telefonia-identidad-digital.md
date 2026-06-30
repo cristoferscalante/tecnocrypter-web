@@ -37,4 +37,4 @@ Les eSIM cryptées répondent à ces risques en mettant en œuvre des couches de
 La protection de notre identité n’est pas seulement une option, mais une nécessité opérationnelle à l’ère numérique d’aujourd’hui.
 
 ---
-*Établissez des politiques et des défenses d'entreprise robustes pour protéger les informations mobiles et prévenir les fuites dans votre entreprise. Consultez notre équipe spécialisée en [Prévention des attaques et sécurité des entreprises](/products/10).*
+*Établissez des politiques et des défenses d'entreprise robustes pour protéger les informations mobiles et prévenir les fuites dans votre entreprise. Consultez notre équipe spécialisée en [Prévention des attaques et sécurité des entreprises](/productos/10).*

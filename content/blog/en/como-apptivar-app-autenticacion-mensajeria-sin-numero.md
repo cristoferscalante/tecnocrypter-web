@@ -38,4 +38,4 @@ The process to securely authenticate **Apptivar App** is based on the panel of d
 By using this method, your account is detached from your physical SIM card and your real name, providing an irreplaceable layer of privacy in your daily conversations.
 
 ---
-*Discover how to configure armored communication systems and mitigate social and computer attack vectors in your organization with our [Digital Security Training](/products/8).*
+*Discover how to configure armored communication systems and mitigate social and computer attack vectors in your organization with our [Digital Security Training](/productos/8).*

@@ -33,6 +33,6 @@ By using a limited subset of characters, Base32 is designed to resolve human err
 
 To encode or decode text strings to Base32 format under different variants (including the highly readable Crockford version), you can use our local tool:
 
-**[Try our Base32 Encoder](/tools/base32-encoder)**
+**[Try our Base32 Encoder](/tools/codificador-base32)**
 
 Instantly encode and decode binary data quickly and securely in your browser without sending data to the network.

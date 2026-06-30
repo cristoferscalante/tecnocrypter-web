@@ -32,6 +32,6 @@ A realização de conversões rápidas entre quilômetros e milhas, quilogramas 
 
 Para converter instantaneamente comprimento, peso, temperatura e muito mais, use nosso conversor local em seu navegador:
 
-**[Experimente nosso conversor de unidades](/tools/conversor-unites)**
+**[Experimente nosso conversor de unidades](/tools/conversor-unidades)**
 
 Selecione a categoria, insira o valor e obtenha todas as conversões equivalentes instantaneamente, localmente e com segurança.

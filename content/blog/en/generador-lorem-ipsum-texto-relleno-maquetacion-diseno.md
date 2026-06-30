@@ -33,6 +33,6 @@ Although at first glance it may seem like a random combination of meaningless La
 
 To quickly generate custom paragraphs, lists, or filler words for your design and layout projects, use our local tool:
 
-**[Try our Lorem Ipsum Generator](/tools/lorem-generator)**
+**[Try our Lorem Ipsum Generator](/tools/generador-lorem)**
 
 Define the amount of text you need and copy the fill to the clipboard instantly without ads or waiting.

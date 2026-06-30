@@ -48,9 +48,9 @@ Flujo de Cifrado Simétrico Local:
 
 
 
-Em nossa plataforma oferecemos a ferramenta **[Criptografia Online](/tools/online-encryption)**. Este utilitário funciona 100% cliente (local), o que significa que texto simples nunca é transmitido aos nossos servidores. Todo o processamento criptográfico utiliza APIs nativas do navegador (`Web Crypto API`).
+Em nossa plataforma oferecemos a ferramenta **[Criptografia Online](/tools/cifrado-online)**. Este utilitário funciona 100% cliente (local), o que significa que texto simples nunca é transmitido aos nossos servidores. Todo o processamento criptográfico utiliza APIs nativas do navegador (`Web Crypto API`).
 
-Para complementar a segurança desse fluxo, você pode usar nosso **[Gerador de chaves criptográficas](/tools/generator-keys)** para obter chaves de criptografia aleatórias e criptograficamente fortes de diferentes comprimentos (128, 256 ou 512 bits) prontas para suas implantações ou criptografia local.
+Para complementar a segurança desse fluxo, você pode usar nosso **[Gerador de chaves criptográficas](/tools/generador-claves)** para obter chaves de criptografia aleatórias e criptograficamente fortes de diferentes comprimentos (128, 256 ou 512 bits) prontas para suas implantações ou criptografia local.
 
 ---
 ## O risco de inspecionar tokens JWT em sites de terceiros
@@ -70,7 +70,7 @@ Estructura de un JWT:
 
 ### A alternativa segura ao TecnoCrypter
 
-Para inspecionar e interpretar com segurança seus JSON Web Tokens, desenvolvemos o **[Decodificador JWT](/tools/jwt-decoder)**. 
+Para inspecionar e interpretar com segurança seus JSON Web Tokens, desenvolvemos o **[Decodificador JWT](/tools/decodificador-jwt)**. 
 
 Assim como nossas outras ferramentas, ele realiza decodificação local. O token é processado e dividido em seu próprio navegador em questão de milissegundos, permitindo auditar seu cabeçalho, carga útil e assinatura sem expor seus dados à Internet.
 
@@ -79,9 +79,9 @@ Assim como nossas outras ferramentas, ele realiza decodificação local. O token
 
 | O que NÃO fazer | O que fazer em vez disso | Ferramenta recomendada |
 | :--- | :--- | :--- |
-| Envie uma senha diretamente pelo chat corporativo. | Criptografe-o localmente antes de enviá-lo e passe a senha por outro meio. | [Criptografia Online](/tools/online-encryption) |
-| Use a palavra 'senha' ou chaves fáceis de adivinhar para criptografar. | Gere uma chave criptográfica altamente aleatória de 256 bits. | [Gerador de chaves](/tools/gerador de chaves) |
-| Cole o JWT de produção em decodificadores da Web externos. | Use um decodificador da web offline local. | [Decodificador JWT](/tools/jwt-decoder) |
+| Envie uma senha diretamente pelo chat corporativo. | Criptografe-o localmente antes de enviá-lo e passe a senha por outro meio. | [Criptografia Online](/tools/cifrado-online) |
+| Use a palavra 'senha' ou chaves fáceis de adivinhar para criptografar. | Gere uma chave criptográfica altamente aleatória de 256 bits. | [Gerador de chaves](/tools/generador-claves) |
+| Cole o JWT de produção em decodificadores da Web externos. | Use um decodificador da web offline local. | [Decodificador JWT](/tools/decodificador-jwt) |
 | Compartilhe senhas e chaves de descriptografia no mesmo canal. | Canais de transmissão separados (por exemplo, texto criptografado pelo Slack, chave por chamada). | - |
 
 ---
@@ -89,4 +89,4 @@ Assim como nossas outras ferramentas, ele realiza decodificação local. O token
 
 A segurança das informações confidenciais em trânsito é responsabilidade direta de quem as trata. Ao usar criptografia local simétrica e utilitários locais para auditar tokens de sessão, você elimina a dependência de servidores intermediários confiáveis ​​em aplicativos de bate-papo e mensagens.
 
-* Proteja seus segredos em trânsito. Gere chaves robustas com nosso [gerador de chaves](/tools/generator-claves), criptografe suas mensagens em [criptografia on-line](/tools/online-encryption) e limpe seus tokens com segurança usando nosso [decodificador JWT](/tools/jwt-decoder).*
+* Proteja seus segredos em trânsito. Gere chaves robustas com nosso [gerador de chaves](/tools/generador-claves), criptografe suas mensagens em [criptografia on-line](/tools/cifrado-online) e limpe seus tokens com segurança usando nosso [decodificador JWT](/tools/decodificador-jwt).*

@@ -39,4 +39,4 @@ L'accord prévoit l'intégration verticale des ressources des deux pays :
 La chaîne d’approvisionnement en matériel informatique est l’un des vecteurs d’attaque les plus difficiles à atténuer. Si un processeur est physiquement manipulé pendant sa phase de fabrication (en introduisant une porte dérobée logique dans le silicium), aucun logiciel de sécurité ultérieur ne pourra détecter la vulnérabilité. Protéger l’origine des composants physiques est essentiel pour protéger les serveurs du futur.
 
 ---
-* Auditez et mettez en œuvre des mesures avancées de protection numérique et de prévention des exploits dans votre infrastructure d'entreprise. Découvrez notre service [Prévention des attaques et sécurité de l'entreprise](/products/10).*
+* Auditez et mettez en œuvre des mesures avancées de protection numérique et de prévention des exploits dans votre infrastructure d'entreprise. Découvrez notre service [Prévention des attaques et sécurité de l'entreprise](/productos/10).*

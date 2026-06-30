@@ -42,4 +42,4 @@ If a legitimate computer program (such as a word processor or PDF reader) sudden
 4. **Recovery:** Certain advanced EDR solutions can restore local shadow copies of damaged files, reversing the impact of the attack in a matter of minutes.
 
 ---
-*Shield your collaborators' devices against advanced malware and persistent threats. Learn about our tailored solutions for [Attack Prevention and Endpoint Security](/products/10).*
+*Shield your collaborators' devices against advanced malware and persistent threats. Learn about our tailored solutions for [Attack Prevention and Endpoint Security](/productos/10).*

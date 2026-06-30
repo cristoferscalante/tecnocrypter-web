@@ -51,4 +51,4 @@ Proceso de Respuesta a Incidentes:
 * **Leçons apprises :** Analysez ce qui n'a pas fonctionné dans les défenses et documentez les améliorations nécessaires pour prévenir de futurs événements.
 
 ---
-*Votre réseau a été compromis ou vous devez définir un plan défensif face aux crises informatiques ? Reprenez le contrôle opérationnel et minimisez l'impact avec notre équipe [Réponse aux incidents](/products/5).*
+*Votre réseau a été compromis ou vous devez définir un plan défensif face aux crises informatiques ? Reprenez le contrôle opérationnel et minimisez l'impact avec notre équipe [Réponse aux incidents](/productos/5).*

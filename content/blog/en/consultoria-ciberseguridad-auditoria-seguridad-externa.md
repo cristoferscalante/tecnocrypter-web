@@ -40,4 +40,4 @@ Carrying out external audits preventively offers very significant operational ad
 * **Reputation Protection:** Preventing a data leak is infinitely cheaper than managing reputation loss, legal fines, and customer discontent following a successful attack.
 
 ---
-*Discover the weak points of your infrastructure and strengthen your technological defenses before it is too late. Request a personalized diagnosis in our [Cybersecurity Consulting](/products/4) service.*
+*Discover the weak points of your infrastructure and strengthen your technological defenses before it is too late. Request a personalized diagnosis in our [Cybersecurity Consulting](/productos/4) service.*

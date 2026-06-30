@@ -40,4 +40,4 @@ An annual cybersecurity theoretical course is not enough. To achieve a cultural 
 3. **Positive Reinforcement:** Do not punish the employee who makes the error in the drill, but rather provide immediate feedback and training focused on the exact moment of failure.
 
 ---
-*Don't leave your company's security to chance. Turn your staff into the first line of active defense with our [Security Training](/products/2) program.*
+*Don't leave your company's security to chance. Turn your staff into the first line of active defense with our [Security Training](/productos/2) program.*

@@ -37,6 +37,6 @@ When configuring systems, the two dominant options are:
 
 To generate your cryptographic key pairs securely from the privacy of your browser, you can use our tool:
 
-**[Try our Cryptographic Key Generator](/tools/generator-claves)**
+**[Try our Cryptographic Key Generator](/tools/generador-claves)**
 
 Instantly generate RSA and ECDSA keys in PEM format ready to configure your SSH servers, certificates or cryptographic signatures.

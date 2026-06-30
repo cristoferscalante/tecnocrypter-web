@@ -31,6 +31,6 @@ Lors de la conception de systèmes informatiques distribués, l'attribution de c
 
 Pour générer des identifiants UUID v4, v7 ou ULID en masse et localement pour vos développements logiciels, utilisez notre outil interactif :
 
-**[Essayez notre générateur UUID et ULID](/tools/generator-uuid)**
+**[Essayez notre générateur UUID et ULID](/tools/generador-uuid)**
 
 Générez instantanément des identifiants aléatoires ou chronologiques prêts à être utilisés dans vos scripts de migration ou vos bases de données.

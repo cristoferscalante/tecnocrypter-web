@@ -35,4 +35,4 @@ Our range of professional solutions covers the critical needs of the business te
 3. **Work Team Training:** We turn the human factor into an active defense barrier through advanced training in digital security, controlled phishing drills and safe guidelines for the corporate adoption of Artificial Intelligence.
 
 ---
-*Ensure the continuity of your business operations and shield your technological infrastructure against modern cyber threats. Request a diagnosis at [Cybersecurity Consulting](/products/10).*
+*Ensure the continuity of your business operations and shield your technological infrastructure against modern cyber threats. Request a diagnosis at [Cybersecurity Consulting](/productos/10).*

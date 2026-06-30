@@ -36,6 +36,6 @@ Pour cette raison, les entreprises publient le hachage officiel du fichier tél�
 
 Pour calculer les sommes de contrôle MD5, SHA-1 ou SHA-256 de vos textes ou fichiers localement dans votre navigateur sans les télécharger sur Internet, utilisez notre utilitaire :
 
-**[Essayez notre générateur de hachage crypto](/tools/hash-generator)**
+**[Essayez notre générateur de hachage crypto](/tools/generador-hash)**
 
 Faites glisser n'importe quel fichier dans le navigateur pour calculer ses signatures cryptographiques instantanément, en toute sécurité et en privé.

@@ -40,4 +40,4 @@ Para avaliar a real segurança de uma aplicação, devemos olhar além da public
 A utilização de ferramentas com código auditado e forte encriptação na fonte é a única garantia para proteger os nossos segredos e a soberania dos nossos dados informáticos.
 
 ---
-*Você está construindo plataformas web e precisa garantir o uso seguro de APIs e armazenamento criptografado em seu negócio? Conheça nosso serviço profissional de [Desenvolvimento Web Seguro](/products/7).*
+*Você está construindo plataformas web e precisa garantir o uso seguro de APIs e armazenamento criptografado em seu negócio? Conheça nosso serviço profissional de [Desenvolvimento Web Seguro](/productos/7).*

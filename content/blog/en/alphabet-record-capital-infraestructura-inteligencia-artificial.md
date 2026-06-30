@@ -39,4 +39,4 @@ The destination of these funds is divided into three strategic priorities:
 As global digital processing is concentrated in large hyperscale centers, the physical and logical security of these facilities becomes a national security issue. Protecting training data and system cryptographic keys is today the top priority to avoid industrial espionage and advanced ransomware attacks in Cloud B2B environments.
 
 ---
-*Protect the integrity of your corporation's data infrastructure against persistent attacks and complex vulnerabilities. Consult our [Attack Prevention and Cybersecurity] service (/products/10).*
+*Protect the integrity of your corporation's data infrastructure against persistent attacks and complex vulnerabilities. Consult our [Attack Prevention and Cybersecurity] service (/productos/10).*

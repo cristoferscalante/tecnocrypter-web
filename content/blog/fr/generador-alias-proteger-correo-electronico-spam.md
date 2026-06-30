@@ -35,6 +35,6 @@ Cette technique vous permet de créer des règles de filtrage dans votre boîte 
 
 Pour générer des schémas de journalisation sécurisés et gérer les alias logiques, vous pouvez utiliser notre outil :
 
-**[Essayez notre générateur d'alias et d'informations d'identification](/tools/alias-generator)**
+**[Essayez notre générateur d'alias et d'informations d'identification](/tools/generador-alias)**
 
 Créez des alias de messagerie et des noms d'utilisateur structurés par plateforme pour protéger votre identité principale à chaque inscription en ligne.

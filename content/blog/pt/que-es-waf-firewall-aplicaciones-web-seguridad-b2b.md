@@ -42,4 +42,4 @@ O WAF analisa solicitações de padrões conhecidos de explorações lógicas:
 * **WAF local (on-premise):** É instalado diretamente no servidor web (como Nginx ou Apache). Oferece controle total sobre a privacidade do tráfego de dados, mas requer manutenção contínua por engenheiros de sistemas especializados.
 
 ---
-*Construa suas plataformas web sob os mais rígidos padrões defensivos, integrando firewalls lógicos e código limpo de seu design original. Proteja sua empresa com nosso serviço [Desenvolvimento Web seguro](/products/7).*
+*Construa suas plataformas web sob os mais rígidos padrões defensivos, integrando firewalls lógicos e código limpo de seu design original. Proteja sua empresa com nosso serviço [Desenvolvimento Web seguro](/productos/7).*

@@ -42,4 +42,4 @@ A common mistake is to perform security validations only in the user interface (
 * **HTTP Security Headers:** Configure response headers such as `Content-Security-Policy` (CSP) to prevent Cross-Site Scripting (XSS) attacks and `Strict-Transport-Security` (HSTS) to force TLS connections.
 
 ---
-*Are you building your next web application or need to audit the security of your current code? Protect the future of your digital business with our professional [Secure Web Development](/products/1) service.*
+*Are you building your next web application or need to audit the security of your current code? Protect the future of your digital business with our professional [Secure Web Development](/productos/1) service.*

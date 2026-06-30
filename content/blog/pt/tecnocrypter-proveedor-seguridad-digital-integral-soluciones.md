@@ -35,4 +35,4 @@ Nossa gama de soluções profissionais cobre as necessidades críticas do ecossi
 3. **Treinamento da Equipe de Trabalho:** Transformamos o fator humano em uma barreira ativa de defesa por meio de treinamentos avançados em segurança digital, exercícios de phishing controlados e diretrizes seguras para adoção corporativa de Inteligência Artificial.
 
 ---
-*Garanta a continuidade de suas operações comerciais e proteja sua infraestrutura tecnológica contra ameaças cibernéticas modernas. Solicite um diagnóstico em [Consultoria de Cibersegurança](/products/10).*
+*Garanta a continuidade de suas operações comerciais e proteja sua infraestrutura tecnológica contra ameaças cibernéticas modernas. Solicite um diagnóstico em [Consultoria de Cibersegurança](/productos/10).*

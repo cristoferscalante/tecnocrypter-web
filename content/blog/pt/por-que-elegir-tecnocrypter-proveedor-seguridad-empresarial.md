@@ -34,4 +34,4 @@ A parceria com um fornecedor terceirizado dedicado traz objetividade e reduz sig
 * **Atualização tecnológica permanente:** Mantemos sua organização protegida contra vulnerabilidades de dia zero e incidentes avançados usando ferramentas criptográficas modernas e análise proativa do cenário de ameaças internacionais.
 
 ---
-*Sua infraestrutura sofreu uma intrusão ou deseja estabelecer preventivamente um plano de resposta a incidentes de ransomware? Recupere o controle operacional e minimize o impacto com nossa equipe em [Resposta Rápida a Incidentes de Segurança](/products/11).*
+*Sua infraestrutura sofreu uma intrusão ou deseja estabelecer preventivamente um plano de resposta a incidentes de ransomware? Recupere o controle operacional e minimize o impacto com nossa equipe em [Resposta Rápida a Incidentes de Segurança](/productos/11).*

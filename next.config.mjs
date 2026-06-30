@@ -12,6 +12,58 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Redirecciones para productos (de inglés a español)
+      {
+        source: '/products',
+        destination: '/productos',
+        permanent: true,
+      },
+      {
+        source: '/products/:id*',
+        destination: '/productos/:id*',
+        permanent: true,
+      },
+      {
+        source: '/:locale(en|fr|pt)/products',
+        destination: '/:locale/productos',
+        permanent: true,
+      },
+      {
+        source: '/:locale(en|fr|pt)/products/:id*',
+        destination: '/:locale/productos/:id*',
+        permanent: true,
+      },
+      // Redirecciones para herramientas con nombres traducidos
+      {
+        source: '/tools/clean-metadata',
+        destination: '/tools/limpia-metadatos',
+        permanent: true,
+      },
+      {
+        source: '/:locale(en|fr|pt)/tools/clean-metadata',
+        destination: '/:locale/tools/limpia-metadatos',
+        permanent: true,
+      },
+      {
+        source: '/tools/tracking-eliminator',
+        destination: '/tools/eliminador-rastreo',
+        permanent: true,
+      },
+      {
+        source: '/:locale(en|fr|pt)/tools/tracking-eliminator',
+        destination: '/:locale/tools/eliminador-rastreo',
+        permanent: true,
+      },
+      {
+        source: '/tools/eliminador-trastreo',
+        destination: '/tools/eliminador-rastreo',
+        permanent: true,
+      },
+      {
+        source: '/:locale(en|fr|pt)/tools/eliminador-trastreo',
+        destination: '/:locale/tools/eliminador-rastreo',
+        permanent: true,
+      },
       // Redirecciones para URLs rotas comunes
       {
         source: '/sobre-nosotros',

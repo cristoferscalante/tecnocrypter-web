@@ -37,6 +37,6 @@ Ao configurar sistemas, as duas opções dominantes são:
 
 Para gerar seus pares de chaves criptográficas com segurança na privacidade do seu navegador, você pode usar nossa ferramenta:
 
-**[Experimente nosso Gerador de Chave Criptográfica](/tools/generator-claves)**
+**[Experimente nosso Gerador de Chave Criptográfica](/tools/generador-claves)**
 
 Gere instantaneamente chaves RSA e ECDSA em formato PEM prontas para configurar seus servidores SSH, certificados ou assinaturas criptográficas.

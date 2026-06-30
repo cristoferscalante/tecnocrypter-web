@@ -46,4 +46,4 @@ Implémentez une passerelle de sécurité intermédiaire (*LLM Gateway*) entre l
 * **Obfuscation des données sortantes :** configurez les règles d'analyse des expressions régulières et des données structurées pour intercepter la réponse du modèle avant qu'elle ne soit envoyée à une API externe, en filtrant automatiquement les numéros de carte, les passeports, les clés cryptographiques ou les e-mails personnels.
 
 ---
-*Assurez-vous que votre entreprise adopte l'automatisation avec l'IA conformément aux normes de cybersécurité les plus exigeantes. Découvrez nos solutions sur mesure dans [Safe AI Training](/products/9).*
+*Assurez-vous que votre entreprise adopte l'automatisation avec l'IA conformément aux normes de cybersécurité les plus exigeantes. Découvrez nos solutions sur mesure dans [Safe AI Training](/productos/9).*

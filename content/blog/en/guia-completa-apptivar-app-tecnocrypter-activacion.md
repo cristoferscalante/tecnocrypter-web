@@ -36,4 +36,4 @@ Our application has been designed under strict security standards and offers cri
 * **Integrated VPN Management:** Configure and activate your encrypted routing tunnels to divert your traffic to offshore locations with a single button on the interface.
 
 ---
-*Adopt and manage advanced technological tools responsibly and safely in your organization. Find out how in our [Safe AI Training](/products/9) service.*
+*Adopt and manage advanced technological tools responsibly and safely in your organization. Find out how in our [Safe AI Training](/productos/9) service.*

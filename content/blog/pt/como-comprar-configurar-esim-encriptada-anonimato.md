@@ -43,4 +43,4 @@ Assim que a transação for concluída, você receberá um e-mail com um código
 4. Ative o eSIM criptografado como linha padrão para uso de dados. Todo o tráfego celular será canalizado através do túnel seguro da rede privada.
 
 ---
-*Você deseja proteger sua conectividade móvel e proteger suas comunicações de maneira profissional? Saiba mais sobre nosso programa de treinamento e consultoria sobre ferramentas de privacidade em [Treinamento em segurança digital](/products/8).*
+*Você deseja proteger sua conectividade móvel e proteger suas comunicações de maneira profissional? Saiba mais sobre nosso programa de treinamento e consultoria sobre ferramentas de privacidade em [Treinamento em segurança digital](/productos/8).*

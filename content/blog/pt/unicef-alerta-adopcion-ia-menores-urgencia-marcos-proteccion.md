@@ -38,4 +38,4 @@ A rápida penetração desta tecnologia nos lares e nas escolas coloca desafios 
 A UNICEF insta a indústria a aplicar o princípio da **segurança infantil desde a concepção**. Isso envolve limitar nativamente os dados que os modelos coletam de usuários suspeitos de serem menores e projetar filtros rígidos para bloquear respostas tendenciosas ou prejudiciais.
 
 ---
-*Eduque e treine sua equipe e organização no uso seguro, consciente e regulamentado de ferramentas de inteligência artificial. Saiba mais sobre nosso programa [Treinamento em IA segura](/products/9).*
+*Eduque e treine sua equipe e organização no uso seguro, consciente e regulamentado de ferramentas de inteligência artificial. Saiba mais sobre nosso programa [Treinamento em IA segura](/productos/9).*

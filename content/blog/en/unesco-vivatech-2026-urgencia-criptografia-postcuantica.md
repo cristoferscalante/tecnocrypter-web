@@ -39,4 +39,4 @@ Faced with the quantum threat to traditional RSA and elliptic curve (ECC) standa
 * **Hybrid Adoption:** Configure firewalls and VPN networks to operate in a hybrid model, combining classical and post-quantum algorithms simultaneously.
 
 ---
-*Anticipate the advanced cyber threats of the future and protect your computer systems with tailored consulting and diagnostics. Consult with our team at [Attack Prevention and Business Security](/products/10).*
+*Anticipate the advanced cyber threats of the future and protect your computer systems with tailored consulting and diagnostics. Consult with our team at [Attack Prevention and Business Security](/productos/10).*

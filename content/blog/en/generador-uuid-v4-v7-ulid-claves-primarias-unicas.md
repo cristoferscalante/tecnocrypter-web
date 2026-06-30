@@ -31,6 +31,6 @@ When designing distributed computing systems, assigning primary keys in database
 
 To generate UUID v4, v7 or ULID identifiers in bulk and locally for your software developments, use our interactive tool:
 
-**[Try our UUID and ULID Generator](/tools/generator-uuid)**
+**[Try our UUID and ULID Generator](/tools/generador-uuid)**
 
 Instantly generate random or chronological IDs ready to use in your migration scripts or databases.

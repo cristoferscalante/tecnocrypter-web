@@ -40,4 +40,4 @@ Um curso teórico anual de cibersegurança não é suficiente. Para conseguir um
 3. **Reforço Positivo:** Não punir o colaborador que comete o erro no exercício, mas sim fornecer feedback imediato e treinamento focado no momento exato da falha.
 
 ---
-*Não deixe a segurança da sua empresa ao acaso. Transforme sua equipe na primeira linha de defesa ativa com nosso programa [Treinamento em segurança](/products/2).*
+*Não deixe a segurança da sua empresa ao acaso. Transforme sua equipe na primeira linha de defesa ativa com nosso programa [Treinamento em segurança](/productos/2).*

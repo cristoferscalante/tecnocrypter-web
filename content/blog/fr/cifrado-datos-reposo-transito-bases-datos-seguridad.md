@@ -41,4 +41,4 @@ Lorsqu'une application backend effectue une requête SQL sur la base de données
 * **Tunnels VPN cryptés :** Acheminez la communication entre le serveur d'applications et le serveur de base de données via des tunnels IPsec ou WireGuard avec un cryptage avancé.
 
 ---
-*Protégez vos bases de données, API et environnements commerciaux avec des audits et des déploiements de sécurité robustes contre les fuites. Consultez notre équipe spécialisée en [Prévention des attaques et cybersécurité](/products/10).*
+*Protégez vos bases de données, API et environnements commerciaux avec des audits et des déploiements de sécurité robustes contre les fuites. Consultez notre équipe spécialisée en [Prévention des attaques et cybersécurité](/productos/10).*

@@ -44,4 +44,4 @@ Pour établir une session de contrôle blindée, suivez ce protocole de configur
 4. **Désactivez les journaux DNS sur le client :** Assurez-vous que les demandes de résolution de nom de domaine provenant de vos connexions passent par le DNS chiffré et anonyme fourni par l'eSIM chiffré pour éviter les fuites de requêtes.
 
 ---
-*Avez-vous besoin de mettre en œuvre des architectures réseau complexes ou de protéger vos applications Web contre des attaques avancées ? Renforcez vos fondations avec notre service [Développement Web sécurisé](/products/7).*
+*Avez-vous besoin de mettre en œuvre des architectures réseau complexes ou de protéger vos applications Web contre des attaques avancées ? Renforcez vos fondations avec notre service [Développement Web sécurisé](/productos/7).*

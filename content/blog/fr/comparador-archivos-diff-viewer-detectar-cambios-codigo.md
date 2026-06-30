@@ -37,6 +37,6 @@ Cette inspection visuelle empêche les fautes de frappe accidentelles ou le code
 
 Pour comparer de manière sécurisée et privée deux textes ou fichiers de code sans envoyer les données sur Internet, vous pouvez utiliser notre outil :
 
-**[Essayez notre comparaison de fichiers (Diff Viewer)](/tools/comparador-files)**
+**[Essayez notre comparaison de fichiers (Diff Viewer)](/tools/comparador-archivos)**
 
 Effectuez une analyse des écarts ligne par ligne 100 % localement dans votre propre navigateur Web.

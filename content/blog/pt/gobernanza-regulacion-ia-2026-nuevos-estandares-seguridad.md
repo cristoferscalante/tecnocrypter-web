@@ -39,4 +39,4 @@ Os novos padrões de governação global exigem que os criadores e fornecedores 
 Para as empresas, o cumprimento destes regulamentos exige a concepção de estruturas internas de governação de dados. Configurar um sistema de IA sem auditar o seu fluxo de informações confidenciais é, em 2026, uma imprudência jurídica e operacional de alto nível.
 
 ---
-*Estabeleça uma estrutura regulatória interna segura e treine sua organização para usar inteligência artificial sem riscos legais ou técnicos. Saiba mais sobre nosso serviço em [Safe AI Training](/products/9).*
+*Estabeleça uma estrutura regulatória interna segura e treine sua organização para usar inteligência artificial sem riscos legais ou técnicos. Saiba mais sobre nosso serviço em [Safe AI Training](/productos/9).*

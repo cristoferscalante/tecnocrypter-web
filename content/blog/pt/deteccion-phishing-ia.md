@@ -58,7 +58,7 @@ Os três principais mecanismos de autenticação que você deve verificar em um 
 * **DKIM (DomainKeys Identifed Mail)**: Adiciona uma assinatura digital que garante que a correspondência não foi alterada durante o trânsito.
 * **DMARC (autenticação, relatórios e conformidade de mensagens baseadas em domínio)**: determina o que fazer se o e-mail falhar nos testes SPF ou DKIM.
 
-Se você suspeitar da autenticidade de um e-mail, copie todo o cabeçalho e analise-o. No **TecnoCrypter** oferecemos o [Email Header Analyzer](/tools/analyzer-email), uma ferramenta local que extrai instantaneamente registros SPF, DKIM e saltos de rede para mostrar a real origem da mensagem de forma visual e compreensível.
+Se você suspeitar da autenticidade de um e-mail, copie todo o cabeçalho e analise-o. No **TecnoCrypter** oferecemos o [Email Header Analyzer](/tools/analizador-email), uma ferramenta local que extrai instantaneamente registros SPF, DKIM e saltos de rede para mostrar a real origem da mensagem de forma visual e compreensível.
 
 
 
@@ -84,15 +84,15 @@ Antes de interagir:
 2. **Procure falsificação de caracteres (ataques homógrafos)**: os invasores usam caracteres Unicode semelhantes para falsificar domínios legítimos (por exemplo, substituindo um `o` latino por um `о` cirílico).
 3. **Analisar o URL externamente**: Copie o endereço do link com segurança.
 
-Para verificar a segurança de qualquer link sem se expor, você pode utilizar nosso [Verificador de URL TecnoCrypter](/tools/verifier). Este utilitário verifica o link através de bancos de dados de ameaças conhecidas e analisa a reputação do domínio em tempo real para alertá-lo se ele for malicioso.
+Para verificar a segurança de qualquer link sem se expor, você pode utilizar nosso [Verificador de URL TecnoCrypter](/tools/verificador). Este utilitário verifica o link através de bancos de dados de ameaças conhecidas e analisa a reputação do domínio em tempo real para alertá-lo se ele for malicioso.
 
 ---
 ## Lista de verificação rápida para evitar phishing
 
 * [ ] O remetente visível corresponde exatamente ao endereço de e-mail real?
 * [ ] O tom da mensagem exige urgência ou ameaça consequências graves?
-* [] Os cabeçalhos de e-mail mostram status `PASS` em SPF e DKIM? (Use [Analisador de e-mail](/tools/email-analyzer))
-* [ ] Você verificou os links antes de abri-los? (Use [verificador de URL](/tools/verifier))
+* [] Os cabeçalhos de e-mail mostram status `PASS` em SPF e DKIM? (Use [Analisador de e-mail](/tools/analizador-email))
+* [ ] Você verificou os links antes de abri-los? (Use [verificador de URL](/tools/verificador))
 * [ ] Você tem a autenticação multifator (MFA) habilitada na conta de destino?
 
 ## Conclusão

@@ -43,4 +43,4 @@ Une fois la transaction terminée, vous recevrez un e-mail avec un code QR sécu
 4. Activez l'eSIM cryptée comme ligne par défaut pour l'utilisation des données. Tout le trafic cellulaire sera acheminé via le tunnel sécurisé du réseau privé.
 
 ---
-*Voulez-vous protéger votre connectivité mobile et protéger vos communications de manière professionnelle ? Découvrez notre programme de formation et de conseil sur les outils de confidentialité sur [Formation sur la sécurité numérique](/products/8).*
+*Voulez-vous protéger votre connectivité mobile et protéger vos communications de manière professionnelle ? Découvrez notre programme de formation et de conseil sur les outils de confidentialité sur [Formation sur la sécurité numérique](/productos/8).*

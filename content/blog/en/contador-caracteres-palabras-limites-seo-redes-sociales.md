@@ -33,6 +33,6 @@ Respecting length limits ensures that your message is delivered complete and wit
 
 To compose and control the lengths of your texts in real time locally and privately, you can use our counter:
 
-**[Try our Character and Word Counter](/tools/counter-characters)**
+**[Try our Character and Word Counter](/tools/contador-caracteres)**
 
 Type or paste your texts and instantly analyze metrics such as words, paragraphs, estimated reading time, and compliance with social media limits.

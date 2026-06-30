@@ -76,12 +76,12 @@ To maintain a strong Operational Security posture (OPSEC), you should clean file
 ### 1. File Cleanup
 Before uploading an image to social media or sending a confidential document to a client:
 * **Disable camera location** in your smartphone settings to prevent GPS coordinates from being recorded in future photos.
-* **Use cleaning tools**: You can drag your files directly to our utility [Clean TecnoCrypter Metadata](/tools/clean-metadata). This tool processes the file 100% locally in your browser (your files are never uploaded to any server), removing all EXIF ​​fields and authorship information in seconds, giving you a clean and secure file.
+* **Use cleaning tools**: You can drag your files directly to our utility [Clean TecnoCrypter Metadata](/tools/limpia-metadatos). This tool processes the file 100% locally in your browser (your files are never uploaded to any server), removing all EXIF ​​fields and authorship information in seconds, giving you a clean and secure file.
 
 ### 2. Link Disinfection (URLs)
 Before forwarding a link to your contacts:
 * **Remove unnecessary parameters**: Delete everything after the question mark (`?`) in the address bar.
-* **Automate the process**: Copy the link and paste it into our [TecnoCrypter Tracking Eliminator](/tools/tracking-eliminator). Our tool instantly identifies and removes common commercial and telemetry trackers without breaking the URL destination.
+* **Automate the process**: Copy the link and paste it into our [TecnoCrypter Tracking Eliminator](/tools/eliminador-rastreo). Our tool instantly identifies and removes common commercial and telemetry trackers without breaking the URL destination.
 
 ---
 ## Comparison Table: Files and their Metadata Risk Level
@@ -99,4 +99,4 @@ Before forwarding a link to your contacts:
 
 Privacy is not hiding information; is having control of what information you decide to share. Metadata and tracked URLs are silent leaks of personal data. By incorporating local cleaning tools into your daily workflow, you can protect your identity and keep your company's confidential information safe.
 
-*Protect your digital footprint today by cleaning your documents with our [Clean Metadata](/tools/clean-metadata) and sanitizing your links in the [Tracking Eliminator](/tools/eliminador-trastreo).*
+*Protect your digital footprint today by cleaning your documents with our [Clean Metadata](/tools/limpia-metadatos) and sanitizing your links in the [Tracking Eliminator](/tools/eliminador-rastreo).*

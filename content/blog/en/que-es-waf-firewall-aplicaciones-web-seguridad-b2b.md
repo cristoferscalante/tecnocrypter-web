@@ -42,4 +42,4 @@ The WAF analyzes requests for known patterns of logical exploits:
 * **Local WAF (on-premise):** It is installed directly on the web server (such as Nginx or Apache). It offers full control over data traffic privacy but requires ongoing maintenance by specialized systems engineers.
 
 ---
-*Build your web platforms under the strictest defensive standards, integrating logical firewalls and clean code from its original design. Protect your business with our [Secure Web Development](/products/7) service.*
+*Build your web platforms under the strictest defensive standards, integrating logical firewalls and clean code from its original design. Protect your business with our [Secure Web Development](/productos/7) service.*

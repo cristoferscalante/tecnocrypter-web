@@ -41,4 +41,4 @@ Par exemple, au lieu de demander « combien avons-nous dépensé le mois dernier
 Le déploiement d’agents autonomes gérant des données sensibles nécessite une gouvernance technique rigoureuse. Si un agent dispose d'autorisations illimitées sur les serveurs de l'entreprise, une injection d'invite indirecte provenant d'un e-mail externe malveillant pourrait forcer l'agent à extraire des informations sensibles ou à exécuter des commandes destructrices.
 
 ---
-*Formez vos équipes à adopter et déployer des systèmes d'intelligence artificielle sans compromettre les données confidentielles de votre organisation. Découvrez notre cours [Safe AI Training](/products/9).*
+*Formez vos équipes à adopter et déployer des systèmes d'intelligence artificielle sans compromettre les données confidentielles de votre organisation. Découvrez notre cours [Safe AI Training](/productos/9).*

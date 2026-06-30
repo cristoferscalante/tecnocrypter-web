@@ -40,4 +40,4 @@ Enquanto o SIEM detecta e reporta, o sistema SOAR entra em ação. Usando fluxos
 3. **Geração de tickets:** Abra um caso de suporte detalhando o incidente e notifique a equipe de resposta rápida por meio de canais criptografados.
 
 ---
-*Sua organização sofreu um incidente de segurança ou você precisa estruturar protocolos rápidos de mitigação e defesa informática? Restaure o controle com nosso serviço [Resposta rápida a incidentes] (/products/11).*
+*Sua organização sofreu um incidente de segurança ou você precisa estruturar protocolos rápidos de mitigação e defesa informática? Restaure o controle com nosso serviço [Resposta rápida a incidentes] (/productos/11).*

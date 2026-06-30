@@ -39,4 +39,4 @@ Les nouvelles normes de gouvernance mondiale exigent que les développeurs et fo
 Pour les entreprises, le respect de ces réglementations nécessite la conception de cadres internes de gouvernance des données. Mettre en place un système d’IA sans auditer ses flux d’informations confidentielles est, en 2026, une imprudence juridique et opérationnelle de premier plan.
 
 ---
-*Établissez un cadre réglementaire interne sécurisé et formez votre organisation à utiliser l'intelligence artificielle sans risques juridiques ou techniques. Découvrez notre service sur [Safe AI Training](/products/9).*
+*Établissez un cadre réglementaire interne sécurisé et formez votre organisation à utiliser l'intelligence artificielle sans risques juridiques ou techniques. Découvrez notre service sur [Safe AI Training](/productos/9).*

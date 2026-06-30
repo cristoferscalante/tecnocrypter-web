@@ -33,6 +33,6 @@ Le respect des limites de longueur garantit que votre message sera livré de man
 
 Pour composer et contrôler les longueurs de vos textes en temps réel en local et en privé, vous pouvez utiliser notre compteur :
 
-**[Essayez notre compteur de caractères et de mots](/tools/counter-characters)**
+**[Essayez notre compteur de caractères et de mots](/tools/contador-caracteres)**
 
 Tapez ou collez vos textes et analysez instantanément des indicateurs tels que les mots, les paragraphes, le temps de lecture estimé et le respect des limites des réseaux sociaux.

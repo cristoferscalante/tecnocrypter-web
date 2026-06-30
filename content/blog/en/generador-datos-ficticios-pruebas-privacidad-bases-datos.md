@@ -35,6 +35,6 @@ Using synthetic data ensures that your analysts and software testers have realis
 
 To quickly generate structured collections of mock data in JSON or CSV format, you can use our local generator:
 
-**[Try our Dummy Data Generator](/tools/generador-data)**
+**[Try our Dummy Data Generator](/tools/generador-datos)**
 
 Customize the fields you need and export secure test information for your databases instantly.

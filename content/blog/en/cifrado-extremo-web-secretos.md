@@ -48,9 +48,9 @@ Flujo de Cifrado Simétrico Local:
 
 
 
-On our platform we offer the tool **[Online Encryption](/tools/online-encryption)**. This utility works on a 100% client (local) basis, which means that plain text is never transmitted to our servers. All cryptographic processing uses the browser's native APIs (`Web Crypto API`).
+On our platform we offer the tool **[Online Encryption](/tools/cifrado-online)**. This utility works on a 100% client (local) basis, which means that plain text is never transmitted to our servers. All cryptographic processing uses the browser's native APIs (`Web Crypto API`).
 
-To complement the security of this flow, you can use our **[Cryptographic Key Generator](/tools/generator-keys)** to obtain cryptographically strong and random encryption keys of different lengths (128, 256 or 512 bits) ready for your deployments or local encryption.
+To complement the security of this flow, you can use our **[Cryptographic Key Generator](/tools/generador-claves)** to obtain cryptographically strong and random encryption keys of different lengths (128, 256 or 512 bits) ready for your deployments or local encryption.
 
 ---
 ## The Risk of Inspecting JWT Tokens on Third Party Websites
@@ -70,7 +70,7 @@ Estructura de un JWT:
 
 ### The Secure Alternative to TecnoCrypter
 
-To securely inspect and interpret your JSON Web Tokens, we have developed **[JWT Decoder](/tools/jwt-decoder)**. 
+To securely inspect and interpret your JSON Web Tokens, we have developed **[JWT Decoder](/tools/decodificador-jwt)**. 
 
 Like our other tools, it performs local decoding. The token is processed and broken down in your own browser in a matter of milliseconds, allowing you to audit its header, payload and signature without exposing your data to the internet.
 
@@ -79,9 +79,9 @@ Like our other tools, it performs local decoding. The token is processed and bro
 
 | What NOT to Do | What to DO instead | Recommended Tool |
 | :--- | :--- | :--- |
-| Send a password directly via corporate chat. | Encrypt it locally before sending it and pass the password through another means. | [Online Encryption](/tools/online-encryption) |
-| Use the word 'password' or easy-to-guess keys to encrypt. | Generate a highly random 256-bit cryptographic key. | [Key Generator](/tools/key-generator) |
-| Paste production JWT into external web decoders. | Use a local offline web decoder. | [JWT Decoder](/tools/jwt-decoder) |
+| Send a password directly via corporate chat. | Encrypt it locally before sending it and pass the password through another means. | [Online Encryption](/tools/cifrado-online) |
+| Use the word 'password' or easy-to-guess keys to encrypt. | Generate a highly random 256-bit cryptographic key. | [Key Generator](/tools/generador-claves) |
+| Paste production JWT into external web decoders. | Use a local offline web decoder. | [JWT Decoder](/tools/decodificador-jwt) |
 | Share passwords and decryption keys on the same channel. | Separate transmission channels (e.g. encrypted text by Slack, key by call). | - |
 
 ---
@@ -89,4 +89,4 @@ Like our other tools, it performs local decoding. The token is processed and bro
 
 The security of confidential information in transit is the direct responsibility of those who handle it. By using symmetric local encryption and local utilities to audit session tokens, you eliminate the reliance on trusting intermediate servers in chat and messaging applications.
 
-*Secure your secrets in transit. Generate robust keys with our [Key Generator](/tools/generator-claves), encrypt your messages in [Online Encryption](/tools/online-encryption) and securely purge your tokens using our [JWT Decoder](/tools/jwt-decoder).*
+*Secure your secrets in transit. Generate robust keys with our [Key Generator](/tools/generador-claves), encrypt your messages in [Online Encryption](/tools/cifrado-online) and securely purge your tokens using our [JWT Decoder](/tools/decodificador-jwt).*

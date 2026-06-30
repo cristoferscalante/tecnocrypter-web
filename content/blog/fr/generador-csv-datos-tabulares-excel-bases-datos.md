@@ -41,6 +41,6 @@ Cette structure légère les rend idéales pour exporter de grandes collections 
 
 Pour créer, modifier des tableaux de données dans le navigateur et exporter des fichiers CSV valides et compatibles localement et en toute sécurité, utilisez notre outil :
 
-**[Essayez notre générateur de fichiers CSV](/tools/generator-csv)**
+**[Essayez notre générateur de fichiers CSV](/tools/generador-csv)**
 
 Modifiez les cellules directement dans une interface intuitive et téléchargez votre fichier CSV instantanément sans problèmes de codage.

@@ -40,4 +40,4 @@ Pour évaluer la sécurité réelle d'une application, il faut aller au-delà de
 L'utilisation d'outils avec un code audité et un cryptage fort à la source est la seule garantie de protéger nos secrets et la souveraineté de nos données informatiques.
 
 ---
-*Vous construisez des plateformes Web et devez garantir l'utilisation sécurisée des API et du stockage crypté dans votre entreprise ? Découvrez notre service professionnel de [Développement Web sécurisé](/products/7).*
+*Vous construisez des plateformes Web et devez garantir l'utilisation sécurisée des API et du stockage crypté dans votre entreprise ? Découvrez notre service professionnel de [Développement Web sécurisé](/productos/7).*

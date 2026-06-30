@@ -32,7 +32,7 @@ Hoje, o rastreamento vai muito além de um simples arquivo de texto salvo em sua
 
 No entanto, os cookies de terceiros são colocados por domínios diferentes do site que você está visitando (geralmente redes de publicidade). Esses cookies acompanham você de site em site, criando um registro detalhado de seus hábitos de navegação.
 
-Se você quiser saber quais dados os sites que você visita estão armazenando, você pode usar nosso **[TecnoCrypter Cookie Analyzer](/tools/cookies-analyzer)**. Esta ferramenta examina os cookies locais carregados por qualquer domínio, classificando-os por função (essencial, desempenho ou rastreamento) para que você saiba exatamente quais informações permanecem no seu dispositivo.
+Se você quiser saber quais dados os sites que você visita estão armazenando, você pode usar nosso **[TecnoCrypter Cookie Analyzer](/tools/analizador-cookies)**. Esta ferramenta examina os cookies locais carregados por qualquer domínio, classificando-os por função (essencial, desempenho ou rastreamento) para que você saiba exatamente quais informações permanecem no seu dispositivo.
 
 ---
 ## 2. A nova fronteira: impressão digital do navegador
@@ -58,7 +58,7 @@ Creación de Huella Digital (Fingerprint):
 
 
 
-Para auditar o quão exclusivas e expostas são suas configurações de navegação, você pode usar nosso utilitário **[TecnoCrypter Fingerprint](/tools/fingerprint)**. Esta ferramenta de telemetria mostra os dados exatos que seu navegador compartilha com o mundo e calcula seu nível de exclusividade na web.
+Para auditar o quão exclusivas e expostas são suas configurações de navegação, você pode usar nosso utilitário **[TecnoCrypter Fingerprint](/tools/huella-digital)**. Esta ferramenta de telemetria mostra os dados exatos que seu navegador compartilha com o mundo e calcula seu nível de exclusividade na web.
 
 ---
 ## Como mitigar o rastreamento da web
@@ -67,7 +67,7 @@ Embora seja extremamente difícil evitar completamente a impressão digital (já
 
 1. **Use navegadores orientados à privacidade**: Navegadores como Brave, Firefox (com proteção estrita de rastreamento habilitada) ou Tor Browser implementam técnicas de "randomização" e "padronização" de dados para que todos os seus usuários pareçam idênticos aos rastreadores.
 2. **Limpe seus dados de navegação**: configure seu navegador para limpar automaticamente os cookies e o cache quando você sair.
-3. **Audite seus sites frequentes**: execute o scanner **[Cookie Analyzer](/tools/cookie-analyzer)** nos portais que você usa regularmente para garantir que eles não usem rastreadores desnecessários.
+3. **Audite seus sites frequentes**: execute o scanner **[Cookie Analyzer](/tools/analizador-cookies)** nos portais que você usa regularmente para garantir que eles não usem rastreadores desnecessários.
 4. **Desative o envio de telemetria** nas configurações do seu sistema operacional e dos seus aplicativos.
 
 ---
@@ -85,4 +85,4 @@ Embora seja extremamente difícil evitar completamente a impressão digital (já
 
 O ecossistema de publicidade na Internet transformou a navegação na web num sistema de vigilância constante. No entanto, o conhecimento é a melhor defesa. Ao compreender como funcionam os cookies de rastreamento e quais informações de telemetria de hardware seu navegador revela ao realizar consultas de impressão digital, você pode tomar decisões informadas para proteger sua identidade e navegar com muito mais segurança.
 
-* Audite seu nível de privacidade. Descubra os dados que você expõe em nosso analisador de [impressão digital](/tools/digital-footprint) e limpe seu histórico examinando seus cookies com o [Analisador de cookies](/tools/cookies-analyzer).*
+* Audite seu nível de privacidade. Descubra os dados que você expõe em nosso analisador de [impressão digital](/tools/huella-digital) e limpe seu histórico examinando seus cookies com o [Analisador de cookies](/tools/analizador-cookies).*

@@ -33,6 +33,6 @@ La modification ou le basculement périodique de votre User-Agent est une défen
 
 Pour obtenir des chaînes User-Agent mises à jour à partir de différents appareils et systèmes d'exploitation pour vos scripts ou extensions de confidentialité, vous pouvez utiliser notre catalogue :
 
-**[Essayez notre générateur d'agent utilisateur](/tools/useragent-generator)**
+**[Essayez notre générateur d'agent utilisateur](/tools/generador-useragent)**
 
 Générez instantanément des en-têtes valides et propres à partir des appareils Chrome, Firefox, Safari, Android et iOS pour votre navigation sécurisée.

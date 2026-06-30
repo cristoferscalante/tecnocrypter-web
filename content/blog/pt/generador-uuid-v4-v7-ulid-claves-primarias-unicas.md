@@ -31,6 +31,6 @@ Ao projetar sistemas de computação distribuídos, a atribuição de chaves pri
 
 Para gerar identificadores UUID v4, v7 ou ULID em massa e localmente para o desenvolvimento de seu software, use nossa ferramenta interativa:
 
-**[Experimente nosso gerador de UUID e ULID](/tools/generator-uuid)**
+**[Experimente nosso gerador de UUID e ULID](/tools/generador-uuid)**
 
 Gere instantaneamente IDs aleatórios ou cronológicos prontos para uso em seus scripts de migração ou bancos de dados.

@@ -41,4 +41,4 @@ Quando um aplicativo de back-end faz uma consulta SQL ao banco de dados, os resu
 * **Túneis VPN criptografados:** Roteie a comunicação entre o servidor de aplicativos e o servidor de banco de dados por meio de túneis IPsec ou WireGuard com criptografia avançada.
 
 ---
-*Proteja seus bancos de dados, APIs e ambientes de negócios com auditorias e implantações de segurança robustas contra vazamentos. Consulte nossa equipe especializada em [Prevenção de Ataques e Segurança Cibernética](/products/10).*
+*Proteja seus bancos de dados, APIs e ambientes de negócios com auditorias e implantações de segurança robustas contra vazamentos. Consulte nossa equipe especializada em [Prevenção de Ataques e Segurança Cibernética](/productos/10).*

@@ -58,7 +58,7 @@ The three main authentication mechanisms that you should verify in a header are:
 * **DKIM (DomainKeys Identifed Mail)**: Adds a digital signature that guarantees that the mail was not altered during transit.
 * **DMARC (Domain-based Message Authentication, Reporting, and Conformance)**: Determines what to do if the email fails SPF or DKIM tests.
 
-If you suspect the authenticity of an email, copy its entire header and analyze it. At **TecnoCrypter** we offer the [Email Header Analyzer](/tools/analyzer-email), a local tool that instantly extracts SPF, DKIM records and network hops to show you the real origin of the message in a visual and understandable way.
+If you suspect the authenticity of an email, copy its entire header and analyze it. At **TecnoCrypter** we offer the [Email Header Analyzer](/tools/analizador-email), a local tool that instantly extracts SPF, DKIM records and network hops to show you the real origin of the message in a visual and understandable way.
 
 
 
@@ -84,15 +84,15 @@ Before interacting:
 2. **Look for character spoofing (Homograph Attacks)**: Attackers use similar Unicode characters to spoof legitimate domains (for example, replacing a Latin `o` with a Cyrillic `о`).
 3. **Parse the URL externally**: Copy the link address safely.
 
-To verify the security of any link without exposing yourself, you can use our [TecnoCrypter URL Verifier](/tools/verifier). This utility scans the link through known threat databases and analyzes the domain's reputation in real time to alert you if it is malicious.
+To verify the security of any link without exposing yourself, you can use our [TecnoCrypter URL Verifier](/tools/verificador). This utility scans the link through known threat databases and analyzes the domain's reputation in real time to alert you if it is malicious.
 
 ---
 ## Quick Checklist to Avoid Phishing
 
 * [ ] Does the visible sender exactly match the real email address?
 * [ ] Does the tone of the message demand urgency or threaten serious consequences?
-* [ ] Do mail headers show `PASS` statuses in SPF and DKIM? (Use [Email Analyzer](/tools/email-analyzer))
-* [ ] Have you verified the links before opening them? (Use [URL Verifier](/tools/verifier))
+* [ ] Do mail headers show `PASS` statuses in SPF and DKIM? (Use [Email Analyzer](/tools/analizador-email))
+* [ ] Have you verified the links before opening them? (Use [URL Verifier](/tools/verificador))
 * [ ] Do you have multi-factor authentication (MFA) enabled on the target account?
 
 ## Conclusion

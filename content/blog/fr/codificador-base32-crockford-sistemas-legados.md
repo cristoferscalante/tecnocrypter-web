@@ -33,6 +33,6 @@ En utilisant un sous-ensemble limité de caractères, Base32 est conçu pour ré
 
 Pour encoder ou décoder des chaînes de texte au format Base32 sous différentes variantes (y compris la version Crockford hautement lisible), vous pouvez utiliser notre outil local :
 
-**[Essayez notre encodeur Base32](/tools/base32-encoder)**
+**[Essayez notre encodeur Base32](/tools/codificador-base32)**
 
 Encodez et décodez instantanément les données binaires rapidement et en toute sécurité dans votre navigateur sans envoyer de données au réseau.

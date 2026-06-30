@@ -35,4 +35,4 @@ Para construir aplicações robustas que não ficarão inoperantes pela falha de
 * **Gerenciamento de backup criptográfico:** Criptografe solicitações e respostas históricas em repouso no servidor local. No caso de uma interrupção prolongada, o sistema pode recuperar dados pré-calculados e fornecer respostas em cache para consultas frequentes.
 
 ---
-*Sua empresa teve problemas de interrupção de serviço ou você precisa auditar e proteger seus sistemas de computador contra crises de rede? Recupere o controle operacional com nossa equipe de [Resposta rápida a incidentes de segurança](/products/11).*
+*Sua empresa teve problemas de interrupção de serviço ou você precisa auditar e proteger seus sistemas de computador contra crises de rede? Recupere o controle operacional com nossa equipe de [Resposta rápida a incidentes de segurança](/productos/11).*

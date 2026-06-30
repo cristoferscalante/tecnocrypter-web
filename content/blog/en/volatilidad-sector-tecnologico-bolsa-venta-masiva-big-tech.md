@@ -39,4 +39,4 @@ Financial analysts point to three main catalysts for this liquidation of technol
 For midsize companies and software development startups, this scenario underscores the importance of operating efficiently. Basing the business model on burning capital for experimental development is no longer sustainable; The priority in 2026 is the profitability of the applications and the logical security of their services.
 
 ---
-*Ensures that your company's technological infrastructure is robust, secure and profitable in the long term. Learn about our professional solutions for [Cybersecurity Consulting](/products/10).*
+*Ensures that your company's technological infrastructure is robust, secure and profitable in the long term. Learn about our professional solutions for [Cybersecurity Consulting](/productos/10).*

@@ -51,9 +51,9 @@ Fuerza Bruta vs. Entropía:
 
 
 Pour vous aider à créer et valider la force de vos informations d'identification, vous pouvez utiliser nos outils locaux :
-1. **[Password Generator](/tools/generator-passwords)** : Si vous avez besoin d'un mot de passe traditionnel aléatoire et complexe.
-2. **[Passphrase Generator](/tools/passphrase-generator)** : créez des phrases sécurisées en combinant des mots aléatoires basés sur des dictionnaires sécurisés à haute entropie.
-3. **[Password Verifier](/tools/verificador-passwords)** : Analysez le niveau d'entropie en bits et estimez le temps nécessaire pour casser votre identifiant à l'aide d'attaques par force brute.
+1. **[Password Generator](/tools/generador-contrasenas)** : Si vous avez besoin d'un mot de passe traditionnel aléatoire et complexe.
+2. **[Passphrase Generator](/tools/generador-passphrase)** : créez des phrases sécurisées en combinant des mots aléatoires basés sur des dictionnaires sécurisés à haute entropie.
+3. **[Password Verifier](/tools/verificador-contrasenas)** : Analysez le niveau d'entropie en bits et estimez le temps nécessaire pour casser votre identifiant à l'aide d'attaques par force brute.
 
 ---
 ## La couche de défense ultime : MFA hors ligne (TOTP)
@@ -86,7 +86,7 @@ def generate_totp(secret_key):
 
 
 
-Le protocole TOTP fonctionne 100% hors ligne. Il n'est pas nécessaire que votre appareil ait accès à Internet pour valider le code, vous protégeant ainsi de toute interception. Sur notre plateforme nous avons **[TOTP Generator](/tools/generator-totp)**, un outil web intégré qui vous permet d'importer des clés secrètes ou de scanner des seed d'authentification pour générer vos codes d'accès localement et en privé.
+Le protocole TOTP fonctionne 100% hors ligne. Il n'est pas nécessaire que votre appareil ait accès à Internet pour valider le code, vous protégeant ainsi de toute interception. Sur notre plateforme nous avons **[TOTP Generator](/tools/generador-totp)**, un outil web intégré qui vous permet d'importer des clés secrètes ou de scanner des seed d'authentification pour générer vos codes d'accès localement et en privé.
 
 ---
 ## Bonnes pratiques de gestion des informations d'identification
@@ -94,10 +94,10 @@ Le protocole TOTP fonctionne 100% hors ligne. Il n'est pas nécessaire que votre
 * **Ne réutilisez jamais vos mots de passe** : si un service est divulgué, tous vos comptes seront en danger.
 * **Utilisez un gestionnaire de mots de passe local** : stockez vos clés cryptées avec une clé principale forte basée sur une *phrase secrète*.
 * **Activez TOTP sur chaque compte** : remplacez les SMS par des générateurs de code TOTP locaux.
-* **Évaluez vos mots de passe** : avant d'enregistrer un compte important, vérifiez son entropie avec notre **[Password Checker](/tools/verificador-passesenas)**.
+* **Évaluez vos mots de passe** : avant d'enregistrer un compte important, vérifiez son entropie avec notre **[Password Checker](/tools/verificador-contrasenas)**.
 
 ## Conclusion
 
 Le credential stuffing est une menace massive et automatisée, mais elle est totalement neutralisable. En adoptant des phrases secrètes longues et à haute entropie et en protégeant vos connexions avec des doubles facteurs locaux basés sur TOTP, vous fermez la porte à la grande majorité des cyberattaques ciblant les comptes personnels et d'entreprise.
 
-*Renforcez votre identité numérique. Commencez dès aujourd'hui en générant des clés indéchiffrables dans notre [Passphrase Generator](/tools/passphrase-generator) et en configurant MFA dans [TOTP Generator](/tools/totp-generator).*
+*Renforcez votre identité numérique. Commencez dès aujourd'hui en générant des clés indéchiffrables dans notre [Passphrase Generator](/tools/generador-passphrase) et en configurant MFA dans [TOTP Generator](/tools/generador-totp).*

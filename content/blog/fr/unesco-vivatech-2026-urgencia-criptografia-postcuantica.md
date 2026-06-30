@@ -39,4 +39,4 @@ Face à la menace quantique qui pèse sur les normes traditionnelles RSA et de c
 * **Adoption hybride :** configurez les pare-feu et les réseaux VPN pour qu'ils fonctionnent dans un modèle hybride, combinant simultanément des algorithmes classiques et post-quantiques.
 
 ---
-*Anticipez les cybermenaces avancées du futur et protégez vos systèmes informatiques avec des conseils et des diagnostics sur mesure. Consultez notre équipe de [Prévention des attaques et sécurité de l'entreprise](/products/10).*
+*Anticipez les cybermenaces avancées du futur et protégez vos systèmes informatiques avec des conseils et des diagnostics sur mesure. Consultez notre équipe de [Prévention des attaques et sécurité de l'entreprise](/productos/10).*

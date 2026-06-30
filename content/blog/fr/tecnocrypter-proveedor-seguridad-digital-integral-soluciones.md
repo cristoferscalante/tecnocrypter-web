@@ -35,4 +35,4 @@ Notre gamme de solutions professionnelles couvre les besoins critiques de l’é
 3. **Formation de l'équipe de travail :** Nous transformons le facteur humain en une barrière de défense active grâce à une formation avancée en sécurité numérique, des exercices de phishing contrôlés et des lignes directrices sûres pour l'adoption de l'intelligence artificielle par les entreprises.
 
 ---
-*Assurez la continuité de vos opérations commerciales et protégez votre infrastructure technologique contre les cybermenaces modernes. Demandez un diagnostic à [Cybersecurity Consulting](/products/10).*
+*Assurez la continuité de vos opérations commerciales et protégez votre infrastructure technologique contre les cybermenaces modernes. Demandez un diagnostic à [Cybersecurity Consulting](/productos/10).*

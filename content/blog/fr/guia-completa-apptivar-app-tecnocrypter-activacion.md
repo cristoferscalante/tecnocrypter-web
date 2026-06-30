@@ -36,4 +36,4 @@ Notre application a été conçue selon des normes de sécurité strictes et off
 * **Gestion VPN intégrée :** Configurez et activez vos tunnels de routage cryptés pour détourner votre trafic vers des emplacements offshore avec un seul bouton sur l'interface.
 
 ---
-*Adoptez et gérez les outils technologiques avancés de manière responsable et sécuritaire dans votre organisation. Découvrez comment procéder dans notre service [Safe AI Training](/products/9).*
+*Adoptez et gérez les outils technologiques avancés de manière responsable et sécuritaire dans votre organisation. Découvrez comment procéder dans notre service [Safe AI Training](/productos/9).*

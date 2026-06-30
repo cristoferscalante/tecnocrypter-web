@@ -36,6 +36,6 @@ Além de seu impacto estético, o ofuscamento do texto pela substituição de ca
 
 Para experimentar a conversão de texto normal em versões ofuscadas, no formato Unicode ou Zalgo localmente, você pode usar nossa ferramenta:
 
-**[Experimente nosso Ofuscador de Texto](/tools/text-obfuscator)**
+**[Experimente nosso Ofuscador de Texto](/tools/ofuscador-texto)**
 
 Transforme seus textos instantaneamente com diferentes níveis de intensidade e filtros Unicode, mantendo seus dados seguros e locais em sua máquina.

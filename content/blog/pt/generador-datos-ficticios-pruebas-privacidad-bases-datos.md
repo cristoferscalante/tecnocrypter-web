@@ -35,6 +35,6 @@ O uso de dados sintéticos garante que seus analistas e testadores de software t
 
 Para gerar rapidamente coleções estruturadas de dados simulados em formato JSON ou CSV, você pode usar nosso gerador local:
 
-**[Experimente nosso gerador de dados fictícios](/tools/generador-data)**
+**[Experimente nosso gerador de dados fictícios](/tools/generador-datos)**
 
 Personalize os campos necessários e exporte informações de teste seguras para seus bancos de dados instantaneamente.

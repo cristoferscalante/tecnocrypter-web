@@ -38,4 +38,4 @@ Lorsque votre startup tentera de conclure des contrats de vente avec des entrepr
 Le fait de se conformer à l'avance aux normes de gouvernance telles que **SOC 2** ou de réaliser des audits externes de cybersécurité démontre la maturité de l'entreprise aux investisseurs et vous aide à conclure des ventes d'entreprise beaucoup plus rapidement.
 
 ---
-*Construisez votre technologie sur des bases indestructibles et accélérez la croissance de votre startup grâce à nos solutions complètes de [Conseil et Cybersécurité](/products/4).*
+*Construisez votre technologie sur des bases indestructibles et accélérez la croissance de votre startup grâce à nos solutions complètes de [Conseil et Cybersécurité](/productos/4).*

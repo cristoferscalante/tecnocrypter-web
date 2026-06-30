@@ -35,4 +35,4 @@ Este ecossistema defensivo funciona em três níveis de segurança:
 3. **Prevenção de impressão digital de rede:** O IP que assina a transação no blockchain é o do VPS, não o da sua conexão residencial. Ao alterar constantemente seu ponto de acesso com identificadores de rede rotativos no eSIM, você evita que um padrão geográfico seja associado às suas operações criptográficas.
 
 ---
-*Aprenda como proteger suas finanças, configurar carteiras frias e aplicar princípios avançados de privacidade em transações digitais com nosso [Treinamento em segurança digital](/products/8).*
+*Aprenda como proteger suas finanças, configurar carteiras frias e aplicar princípios avançados de privacidade em transações digitais com nosso [Treinamento em segurança digital](/productos/8).*

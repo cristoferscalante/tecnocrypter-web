@@ -33,6 +33,6 @@ Minification eliminates this burden, achieving size reductions of up to **40%** 
 
 To optimize and minify your CSS and JavaScript snippets instantly and privately, use our local tool:
 
-**[Try our CSS/JS Minifier](/tools/css-minifier)**
+**[Try our CSS/JS Minifier](/tools/minificador-css)**
 
 Paste your formatted code and instantly get an optimal minified version ready to deploy to your production environment.

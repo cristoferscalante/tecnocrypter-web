@@ -33,6 +33,6 @@ A minificação elimina essa carga, alcançando reduções de tamanho de até **
 
 Para otimizar e reduzir seus snippets CSS e JavaScript de forma instantânea e privada, use nossa ferramenta local:
 
-**[Experimente nosso minificador CSS/JS](/tools/css-minifier)**
+**[Experimente nosso minificador CSS/JS](/tools/minificador-css)**
 
 Cole seu código formatado e obtenha instantaneamente uma versão minificada ideal, pronta para implantação em seu ambiente de produção.

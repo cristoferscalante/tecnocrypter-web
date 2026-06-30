@@ -32,6 +32,6 @@ Manter um formato SQL estruturado oferece vantagens definitivas:
 
 Para formatar suas consultas de banco de dados de maneira profissional e legível, instantânea e localmente, use nossa ferramenta:
 
-**[Experimente nosso Formatador SQL](/tools/sql-formatter)**
+**[Experimente nosso Formatador SQL](/tools/formateador-sql)**
 
 Embeleze seus scripts e instruções SQL instantaneamente com configurações de recuo ideais e conversão automática de palavras-chave para letras maiúsculas.

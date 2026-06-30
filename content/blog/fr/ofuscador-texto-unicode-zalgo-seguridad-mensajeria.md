@@ -36,6 +36,6 @@ Outre son impact esthétique, l'obscurcissement du texte en remplaçant les cara
 
 Pour expérimenter localement la conversion de texte normal en versions obscurcies, au format Unicode ou Zalgo, vous pouvez utiliser notre outil :
 
-**[Essayez notre obfuscateur de texte](/tools/text-obfuscator)**
+**[Essayez notre obfuscateur de texte](/tools/ofuscador-texto)**
 
 Transformez instantanément vos textes avec différents niveaux d'intensité et filtres Unicode, gardant vos données en sécurité et locales sur votre machine.

@@ -76,12 +76,12 @@ Pour maintenir une solide posture de sécurité opérationnelle (OPSEC), vous de
 ### 1. Nettoyage des fichiers
 Avant de télécharger une image sur les réseaux sociaux ou d'envoyer un document confidentiel à un client :
 * **Désactivez la localisation de l'appareil photo** dans les paramètres de votre smartphone pour empêcher l'enregistrement des coordonnées GPS sur les futures photos.
-* **Utiliser des outils de nettoyage** : Vous pouvez faire glisser vos fichiers directement vers notre utilitaire [Clean TecnoCrypter Metadata](/tools/clean-metadata). Cet outil traite le fichier 100 % localement dans votre navigateur (vos fichiers ne sont jamais téléchargés sur aucun serveur), supprimant tous les champs EXIF ​​​​et les informations de paternité en quelques secondes, vous donnant ainsi un fichier propre et sécurisé.
+* **Utiliser des outils de nettoyage** : Vous pouvez faire glisser vos fichiers directement vers notre utilitaire [Clean TecnoCrypter Metadata](/tools/limpia-metadatos). Cet outil traite le fichier 100 % localement dans votre navigateur (vos fichiers ne sont jamais téléchargés sur aucun serveur), supprimant tous les champs EXIF ​​​​et les informations de paternité en quelques secondes, vous donnant ainsi un fichier propre et sécurisé.
 
 ### 2. Désinfection des liens (URL)
 Avant de transmettre un lien à vos contacts :
 * **Supprimez les paramètres inutiles** : supprimez tout ce qui se trouve après le point d'interrogation (`?`) dans la barre d'adresse.
-* **Automatisez le processus** : copiez le lien et collez-le dans notre [TecnoCrypter Tracking Eliminator](/tools/tracking-eliminator). Notre outil identifie et supprime instantanément les trackers commerciaux et télémétriques courants sans casser la destination de l'URL.
+* **Automatisez le processus** : copiez le lien et collez-le dans notre [TecnoCrypter Tracking Eliminator](/tools/eliminador-rastreo). Notre outil identifie et supprime instantanément les trackers commerciaux et télémétriques courants sans casser la destination de l'URL.
 
 ---
 ## Tableau de comparaison : fichiers et leur niveau de risque de métadonnées
@@ -99,4 +99,4 @@ Avant de transmettre un lien à vos contacts :
 
 La confidentialité ne consiste pas à cacher des informations ; c'est avoir le contrôle des informations que vous décidez de partager. Les métadonnées et les URL suivies sont des fuites silencieuses de données personnelles. En intégrant des outils de nettoyage locaux dans votre flux de travail quotidien, vous pouvez protéger votre identité et protéger les informations confidentielles de votre entreprise.
 
-*Protégez votre empreinte numérique dès aujourd'hui en nettoyant vos documents avec notre [Clean Metadata](/tools/clean-metadata) et en nettoyant vos liens dans [Tracking Eliminator](/tools/eliminador-trastreo).*
+*Protégez votre empreinte numérique dès aujourd'hui en nettoyant vos documents avec notre [Clean Metadata](/tools/limpia-metadatos) et en nettoyant vos liens dans [Tracking Eliminator](/tools/eliminador-rastreo).*

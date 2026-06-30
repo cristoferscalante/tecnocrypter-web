@@ -34,6 +34,6 @@ This creates a footprint of your personal interactions that digital advertising 
 
 To share links with your friends cleanly and maintain your browsing privacy, you can use our local cleaner:
 
-**[Try our URL Tracking Eliminator](/tools/tracking-eliminator)**
+**[Try our URL Tracking Eliminator](/tools/eliminador-rastreo)**
 
 Paste any long link with ad parameters and instantly get a clean, tracker-free URL to share safely.

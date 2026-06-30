@@ -35,6 +35,6 @@ Um token JWT consiste em três partes separadas por pontos (\`.\`):
 
 Para inspecionar o conteúdo e as datas de validade dos seus tokens de forma segura e local, você pode usar nosso decodificador:
 
-**[Experimente nosso decodificador JWT](/tools/decoder-jwt)**
+**[Experimente nosso decodificador JWT](/tools/decodificador-jwt)**
 
 Decodifique instantaneamente seus tokens para verificar suas reivindicações, verificar assinaturas e analisar sua estrutura sem enviar nenhum dado pela Internet.

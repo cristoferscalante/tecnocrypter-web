@@ -40,4 +40,4 @@ A realização preventiva de auditorias externas oferece vantagens operacionais 
 * **Proteção de reputação:** Prevenir um vazamento de dados é infinitamente mais barato do que gerenciar perda de reputação, multas legais e descontentamento do cliente após um ataque bem-sucedido.
 
 ---
-*Descubra os pontos fracos da sua infraestrutura e fortaleça as suas defesas tecnológicas antes que seja tarde demais. Solicite um diagnóstico personalizado em nosso serviço de [Consultoria de Segurança Cibernética](/products/4).*
+*Descubra os pontos fracos da sua infraestrutura e fortaleça as suas defesas tecnológicas antes que seja tarde demais. Solicite um diagnóstico personalizado em nosso serviço de [Consultoria de Segurança Cibernética](/productos/4).*

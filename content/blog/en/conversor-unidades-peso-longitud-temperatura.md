@@ -32,6 +32,6 @@ Performing quick conversions between kilometers and miles, kilograms and pounds,
 
 To instantly convert length, weight, temperature, and more, use our local converter in your browser:
 
-**[Try our Unit Converter](/tools/conversor-unites)**
+**[Try our Unit Converter](/tools/conversor-unidades)**
 
 Select the category, enter the value and get all the equivalent conversions instantly locally and securely.

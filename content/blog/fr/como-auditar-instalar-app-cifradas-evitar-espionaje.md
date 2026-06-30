@@ -42,4 +42,4 @@ Appliquez les mesures défensives suivantes sur votre appareil :
 3. **Audit rigoureux des autorisations système :** Configurez les paramètres du smartphone pour limiter autant que possible l'accès aux applications. Aucune application de stockage crypté ne nécessite un accès permanent à votre géolocalisation ou à votre microphone. Accordez des autorisations temporaires (« uniquement lorsque l'application est ouverte ») et révoquez l'accès en arrière-plan.
 
 ---
-*Protégez la propriété intellectuelle de votre entreprise et formez votre équipe technique à la prévention des intrusions informatiques avec notre service [Prévention des attaques et sécurité des entreprises] (/products/10).*
+*Protégez la propriété intellectuelle de votre entreprise et formez votre équipe technique à la prévention des intrusions informatiques avec notre service [Prévention des attaques et sécurité des entreprises] (/productos/10).*

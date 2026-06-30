@@ -44,4 +44,4 @@ Contrairement à l’analyse statique, les tests dynamiques de sécurité des ap
 Combiner SAST dans les phases d'écriture de code des programmeurs et DAST dans les phases de pré-déploiement automatique de l'intégration continue est la meilleure stratégie pour garantir que les logiciels que votre entreprise compile sont exempts de vulnérabilités graves dès le départ.
 
 ---
-*Développez vos applications Web et portails d'entreprise selon les normes DevSecOps sécurisées et exemptes d'exploits logiques. Découvrez notre service [Développement Web sécurisé] (/products/7).*
+*Développez vos applications Web et portails d'entreprise selon les normes DevSecOps sécurisées et exemptes d'exploits logiques. Découvrez notre service [Développement Web sécurisé] (/productos/7).*

@@ -35,4 +35,4 @@ This defensive ecosystem works at three security levels:
 3. **Network Fingerprint Prevention:** The IP that signs the transaction in the blockchain is that of the VPS, not that of your residential connection. By constantly changing your access point with rotating network identifiers in the eSIM, you prevent a geographic pattern from being associated with your crypto operations.
 
 ---
-*Learn how to protect your finances, set up cold wallets, and apply advanced privacy principles in digital transactions with our [Digital Security Training](/products/8).*
+*Learn how to protect your finances, set up cold wallets, and apply advanced privacy principles in digital transactions with our [Digital Security Training](/productos/8).*

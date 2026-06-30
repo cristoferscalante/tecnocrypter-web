@@ -36,6 +36,6 @@ This guarantees:
 
 To quickly create sets of secure credentials and user profiles at random, you can use our generator:
 
-**[Try our Trial Credential Generator](/tools/credential-generator)**
+**[Try our Trial Credential Generator](/tools/generador-credenciales)**
 
 Instantly generate fictitious identities and local test keys to speed up your developments without compromising privacy.

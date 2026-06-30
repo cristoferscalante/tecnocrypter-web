@@ -33,6 +33,6 @@ Modificar ou alternar periodicamente seu User-Agent é uma defesa ativa altament
 
 Para obter strings de User-Agent atualizadas de diferentes dispositivos e sistemas operacionais para seus scripts ou extensões de privacidade, você pode usar nosso catálogo:
 
-**[Experimente nosso gerador de agente de usuário](/tools/useragent-generator)**
+**[Experimente nosso gerador de agente de usuário](/tools/generador-useragent)**
 
 Gere instantaneamente cabeçalhos válidos e limpos de dispositivos Chrome, Firefox, Safari, Android e iOS para sua navegação segura.

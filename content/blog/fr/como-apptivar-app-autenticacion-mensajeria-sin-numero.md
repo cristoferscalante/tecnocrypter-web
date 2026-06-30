@@ -38,4 +38,4 @@ Le processus d'authentification sécurisée de **Apptivar App** est basé sur le
 En utilisant cette méthode, votre compte est détaché de votre carte SIM physique et de votre vrai nom, offrant ainsi une couche de confidentialité irremplaçable dans vos conversations quotidiennes.
 
 ---
-*Découvrez comment configurer des systèmes de communication blindés et atténuer les vecteurs d'attaques sociales et informatiques dans votre organisation grâce à notre [Formation à la sécurité numérique](/products/8).*
+*Découvrez comment configurer des systèmes de communication blindés et atténuer les vecteurs d'attaques sociales et informatiques dans votre organisation grâce à notre [Formation à la sécurité numérique](/productos/8).*

@@ -45,6 +45,6 @@ Um erro comum ao escrever expressões cron complexas é confundir a ordem dos ca
 
 Para construir e verificar suas expressões cron rapidamente e com tradução textual para evitar erros de programação, você pode usar nosso utilitário interativo:
 
-**[Experimente nosso Gerador de Expressões Cron](/tools/generator-cron)**
+**[Experimente nosso Gerador de Expressões Cron](/tools/generador-cron)**
 
 Gere instantaneamente a expressão cron exata para os backups do seu servidor, de forma visual e sem falhas.

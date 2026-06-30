@@ -34,6 +34,6 @@ Malgré son utilisation quotidienne, faire des erreurs lors de l'ajout ou de la 
 
 Pour automatiser ces calculs commerciaux avec précision et localement depuis votre navigateur sans publicités gênantes, utilisez notre calculateur :
 
-**[Essayez notre calculateur de pourcentage et de TVA](/tools/calculadora-percentajes)**
+**[Essayez notre calculateur de pourcentage et de TVA](/tools/calculadora-porcentajes)**
 
 Effectuez des calculs d'augmentations, de remises, de pourcentages directs et de répartitions fiscales instantanément et en privé.

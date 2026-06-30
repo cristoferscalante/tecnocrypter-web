@@ -42,4 +42,4 @@ Si un programme informatique légitime (tel qu'un traitement de texte ou un lect
 4. **Récupération :** Certaines solutions EDR avancées peuvent restaurer des clichés instantanés locaux de fichiers endommagés, annulant ainsi l'impact de l'attaque en quelques minutes.
 
 ---
-*Protégez les appareils de vos collaborateurs contre les logiciels malveillants avancés et les menaces persistantes. Découvrez nos solutions sur mesure pour [Prévention des attaques et sécurité des points finaux](/products/10).*
+*Protégez les appareils de vos collaborateurs contre les logiciels malveillants avancés et les menaces persistantes. Découvrez nos solutions sur mesure pour [Prévention des attaques et sécurité des points finaux](/productos/10).*

@@ -35,6 +35,6 @@ L’utilisation de données synthétiques garantit que vos analystes et testeurs
 
 Pour générer rapidement des collections structurées de données fictives au format JSON ou CSV, vous pouvez utiliser notre générateur local :
 
-**[Essayez notre générateur de données factices](/tools/generador-data)**
+**[Essayez notre générateur de données factices](/tools/generador-datos)**
 
 Personnalisez les champs dont vous avez besoin et exportez instantanément les informations de test sécurisées pour vos bases de données.

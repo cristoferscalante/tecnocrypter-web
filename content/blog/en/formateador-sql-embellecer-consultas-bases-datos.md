@@ -32,6 +32,6 @@ Maintaining a structured SQL format provides definite advantages:
 
 To professionally and readably format your database queries instantly and locally, use our tool:
 
-**[Try our SQL Formatter](/tools/sql-formatter)**
+**[Try our SQL Formatter](/tools/formateador-sql)**
 
 Beautify your scripts and SQL statements instantly with ideal indentation settings and automatic keyword conversion to capitalization.

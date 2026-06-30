@@ -37,6 +37,6 @@ Since the length ($L$) acts as a direct multiplier on the logarithm of the reper
 
 To analyze your credentials and mathematically estimate the decryption time, you can use our local tool:
 
-**[Try our Entropy Calculator](/tools/entropy-calculator)**
+**[Try our Entropy Calculator](/tools/calculadora-entropia)**
 
 Enter any phrase or password and instantly discover its exact entropy bits and actual security level against supercomputers.

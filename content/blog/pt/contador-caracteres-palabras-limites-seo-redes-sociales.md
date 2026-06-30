@@ -33,6 +33,6 @@ Respeitar os limites de comprimento garante que sua mensagem seja entregue compl
 
 Para compor e controlar a duração dos seus textos em tempo real, localmente e de forma privada, você pode usar nosso contador:
 
-**[Experimente nosso contador de caracteres e palavras](/tools/counter-characters)**
+**[Experimente nosso contador de caracteres e palavras](/tools/contador-caracteres)**
 
 Digite ou cole seus textos e analise instantaneamente métricas como palavras, parágrafos, tempo estimado de leitura e cumprimento dos limites das redes sociais.

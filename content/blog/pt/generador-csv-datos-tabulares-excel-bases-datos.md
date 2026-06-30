@@ -41,6 +41,6 @@ Essa estrutura leve os torna ideais para exportar grandes coleções de informa�
 
 Para criar, editar tabelas de dados no navegador e exportar arquivos CSV válidos e compatíveis de forma local e segura, utilize nossa ferramenta:
 
-**[Experimente nosso gerador de arquivo CSV](/tools/generator-csv)**
+**[Experimente nosso gerador de arquivo CSV](/tools/generador-csv)**
 
 Edite células diretamente em uma interface intuitiva e baixe seu arquivo CSV instantaneamente, sem problemas de codificação.

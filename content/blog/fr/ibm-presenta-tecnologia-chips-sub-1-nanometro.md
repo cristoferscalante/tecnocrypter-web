@@ -40,4 +40,4 @@ Ce dernier point est le plus pertinent en 2026. Avec l’explosion de la formati
 L’avènement des processeurs à l’échelle atomique obligera les développeurs de logiciels à repenser les optimisations de bas niveau des systèmes. Un matériel plus puissant nécessite un logiciel conçu de manière efficace pour éviter les fuites de mémoire et les exploits physiques logiques.
 
 ---
-*Vous construisez des plateformes Web performantes et devez assurer la sécurité logique de vos logiciels dès le premier jour ? Protégez vos systèmes avec notre service professionnel [Développement Web sécurisé](/products/7).*
+*Vous construisez des plateformes Web performantes et devez assurer la sécurité logique de vos logiciels dès le premier jour ? Protégez vos systèmes avec notre service professionnel [Développement Web sécurisé](/productos/7).*

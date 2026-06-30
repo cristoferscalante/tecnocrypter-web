@@ -34,6 +34,6 @@ Despite its daily use, making mistakes when adding or subtracting percentages is
 
 To automate these business calculations accurately and locally from your browser without annoying ads, use our calculator:
 
-**[Try our Percentage and VAT Calculator](/tools/calculadora-percentajes)**
+**[Try our Percentage and VAT Calculator](/tools/calculadora-porcentajes)**
 
 Perform calculations of increases, discounts, direct percentages and tax breakdowns instantly and privately.

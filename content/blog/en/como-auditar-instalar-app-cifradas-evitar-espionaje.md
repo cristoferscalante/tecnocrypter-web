@@ -42,4 +42,4 @@ Apply the following defensive measures on your device:
 3. **Rigorous System Permissions Audit:** Configure the smartphone settings to limit app access as much as possible. No encrypted storage app requires permanent access to your geolocation or microphone. Grant temporary permissions ("only while the app is open") and revoke background running access.
 
 ---
-*Protect your company's intellectual property and train your technical team in preventing computer intrusions with our [Attack Prevention and Business Security] service (/products/10).*
+*Protect your company's intellectual property and train your technical team in preventing computer intrusions with our [Attack Prevention and Business Security] service (/productos/10).*

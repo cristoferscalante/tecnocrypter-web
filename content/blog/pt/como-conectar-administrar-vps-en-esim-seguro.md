@@ -44,4 +44,4 @@ Para estabelecer uma sessão de controle blindada, siga este protocolo de config
 4. **Desative os logs DNS no cliente:** Certifique-se de que as solicitações de resolução de nomes de domínio de suas conexões passem pelo DNS criptografado e anônimo fornecido pelo eSIM criptografado para evitar vazamentos de consulta.
 
 ---
-*Você precisa implementar arquiteturas de rede complexas ou proteger suas aplicações web contra ataques avançados? Fortaleça suas bases com nosso serviço [Desenvolvimento Web seguro](/products/7).*
+*Você precisa implementar arquiteturas de rede complexas ou proteger suas aplicações web contra ataques avançados? Fortaleça suas bases com nosso serviço [Desenvolvimento Web seguro](/productos/7).*

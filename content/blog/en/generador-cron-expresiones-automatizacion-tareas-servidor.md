@@ -45,6 +45,6 @@ A common mistake when writing complex cron expressions is confusing the order of
 
 To build and verify your cron expressions quickly and with textual translation to avoid programming errors, you can use our interactive utility:
 
-**[Try our Cron Expression Generator](/tools/generator-cron)**
+**[Try our Cron Expression Generator](/tools/generador-cron)**
 
 Instantly generate the exact cron expression for your server backups visually and crash-free.

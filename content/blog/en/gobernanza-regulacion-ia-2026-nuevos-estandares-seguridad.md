@@ -39,4 +39,4 @@ The new global governance standards require AI developers and providers to meet 
 For corporations, complying with these regulations requires the design of internal data governance frameworks. Setting up an AI system without auditing its flow of confidential information is, in 2026, a top-level legal and operational imprudence.
 
 ---
-*Establish a secure internal regulatory framework and train your organization to use artificial intelligence without legal or technical risks. Learn about our service at [Safe AI Training](/products/9).*
+*Establish a secure internal regulatory framework and train your organization to use artificial intelligence without legal or technical risks. Learn about our service at [Safe AI Training](/productos/9).*

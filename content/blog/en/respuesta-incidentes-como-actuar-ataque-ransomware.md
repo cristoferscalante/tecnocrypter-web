@@ -51,4 +51,4 @@ Proceso de Respuesta a Incidentes:
 * **Lessons Learned:** Analyze what went wrong in the defenses and document the improvements necessary to prevent future events.
 
 ---
-*Has your network been compromised or do you need to define a defensive plan against computer crises? Regain operational control and minimize impact with our [Incident Response](/products/5) team.*
+*Has your network been compromised or do you need to define a defensive plan against computer crises? Regain operational control and minimize impact with our [Incident Response](/productos/5) team.*

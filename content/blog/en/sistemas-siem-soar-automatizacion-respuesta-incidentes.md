@@ -40,4 +40,4 @@ While the SIEM detects and reports, the SOAR system takes action. Using predefin
 3. **Ticket Generation:** Open a support case detailing the incident and notify the rapid response team through encrypted channels.
 
 ---
-*Has your organization suffered a security incident or do you need to structure quick mitigation and computer defense protocols? Restore control with our [Rapid Incident Response] service (/products/11).*
+*Has your organization suffered a security incident or do you need to structure quick mitigation and computer defense protocols? Restore control with our [Rapid Incident Response] service (/productos/11).*

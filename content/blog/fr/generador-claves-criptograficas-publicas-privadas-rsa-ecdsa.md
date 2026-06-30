@@ -37,6 +37,6 @@ Lors de la configuration des systèmes, les deux options dominantes sont :
 
 Pour générer vos bi-clés cryptographiques en toute sécurité depuis la confidentialité de votre navigateur, vous pouvez utiliser notre outil :
 
-**[Essayez notre générateur de clé cryptographique](/tools/generator-claves)**
+**[Essayez notre générateur de clé cryptographique](/tools/generador-claves)**
 
 Générez instantanément des clés RSA et ECDSA au format PEM prêtes à configurer vos serveurs SSH, certificats ou signatures cryptographiques.

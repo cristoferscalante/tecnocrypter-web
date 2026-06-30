@@ -32,7 +32,7 @@ Les **cookies** sont de petits éléments de données qu'un site Web stocke dans
 
 Toutefois, les cookies tiers sont déposés par des domaines autres que le site que vous visitez (généralement des réseaux publicitaires). Ces cookies vous suivent de site en site, créant un enregistrement détaillé de vos habitudes de navigation.
 
-Si vous souhaitez savoir quelles données stockent les sites Web que vous visitez, vous pouvez utiliser notre **[TecnoCrypter Cookie Analyzer](/tools/cookies-analyzer)**. Cet outil examine les cookies locaux chargés par n'importe quel domaine, les classant par fonction (essentiel, performance ou suivi) afin que vous sachiez exactement quelles informations sont laissées sur votre appareil.
+Si vous souhaitez savoir quelles données stockent les sites Web que vous visitez, vous pouvez utiliser notre **[TecnoCrypter Cookie Analyzer](/tools/analizador-cookies)**. Cet outil examine les cookies locaux chargés par n'importe quel domaine, les classant par fonction (essentiel, performance ou suivi) afin que vous sachiez exactement quelles informations sont laissées sur votre appareil.
 
 ---
 ## 2. La nouvelle frontière : les empreintes digitales du navigateur
@@ -58,7 +58,7 @@ Creación de Huella Digital (Fingerprint):
 
 
 
-Pour vérifier à quel point vos paramètres de navigation sont uniques et exposés, vous pouvez utiliser notre utilitaire **[TecnoCrypter Fingerprint](/tools/fingerprint)**. Cet outil de télémétrie vous montre les données exactes que votre navigateur partage avec le monde et calcule votre niveau d'unicité sur le Web.
+Pour vérifier à quel point vos paramètres de navigation sont uniques et exposés, vous pouvez utiliser notre utilitaire **[TecnoCrypter Fingerprint](/tools/huella-digital)**. Cet outil de télémétrie vous montre les données exactes que votre navigateur partage avec le monde et calcule votre niveau d'unicité sur le Web.
 
 ---
 ## Comment atténuer le suivi Web
@@ -67,7 +67,7 @@ Bien qu'il soit extrêmement difficile d'éviter complètement les empreintes di
 
 1. **Utilisez des navigateurs axés sur la confidentialité** : des navigateurs comme Brave, Firefox (avec une protection stricte contre le pistage activée) ou Tor Browser mettent en œuvre des techniques de « randomisation » et de « standardisation » des données afin que tous leurs utilisateurs apparaissent identiques aux trackers.
 2. **Effacez vos données de navigation** : configurez votre navigateur pour qu'il efface automatiquement les cookies et le cache lorsque vous vous déconnectez.
-3. **Auditez vos sites fréquents** : exécutez le scanner **[Cookie Analyzer](/tools/cookie-analyzer)** sur les portails que vous utilisez régulièrement pour vous assurer qu'ils n'utilisent pas de trackers inutiles.
+3. **Auditez vos sites fréquents** : exécutez le scanner **[Cookie Analyzer](/tools/analizador-cookies)** sur les portails que vous utilisez régulièrement pour vous assurer qu'ils n'utilisent pas de trackers inutiles.
 4. **Désactivez l'envoi de télémétrie** dans les paramètres de votre système d'exploitation et de vos applications.
 
 ---
@@ -85,4 +85,4 @@ Bien qu'il soit extrêmement difficile d'éviter complètement les empreintes di
 
 L’écosystème de la publicité sur Internet a transformé la navigation sur le Web en un système de surveillance constante. Cependant, la connaissance est la meilleure défense. En comprenant comment fonctionnent les cookies de suivi et quelles informations de télémétrie matérielle votre navigateur révèle lors de requêtes d'empreintes digitales, vous pouvez prendre des décisions éclairées pour protéger votre identité et naviguer de manière beaucoup plus sécurisée.
 
-* Vérifiez votre niveau de confidentialité. Découvrez les données que vous exposez dans notre analyseur [Digital Fingerprint](/tools/digital-footprint) et nettoyez votre historique en examinant vos cookies avec l'[Cookie Analyzer](/tools/cookies-analyzer).*
+* Vérifiez votre niveau de confidentialité. Découvrez les données que vous exposez dans notre analyseur [Digital Fingerprint](/tools/huella-digital) et nettoyez votre historique en examinant vos cookies avec l'[Cookie Analyzer](/tools/analizador-cookies).*

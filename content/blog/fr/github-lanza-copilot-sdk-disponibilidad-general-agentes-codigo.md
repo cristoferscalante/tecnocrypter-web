@@ -39,4 +39,4 @@ L'utilisation du SDK Copilot ouvre la porte à une automatisation avancée à pl
 Malgré la puissance fournie par le SDK Copilot, les correctifs de code proposés par l'IA doivent toujours être validés par des programmeurs expérimentés. S'appuyer aveuglément sur la génération automatique de code sans audits de sécurité humains peut introduire des exploits logiques subtils difficiles à détecter à l'aide de tests automatisés ordinaires.
 
 ---
-*Construisez votre technologie sur des fondations logiques robustes et sécurisées. Protégez l'avenir de vos applications Web B2B avec notre service spécialisé en [Développement Web sécurisé](/products/7).*
+*Construisez votre technologie sur des fondations logiques robustes et sécurisées. Protégez l'avenir de vos applications Web B2B avec notre service spécialisé en [Développement Web sécurisé](/productos/7).*

@@ -39,4 +39,4 @@ Os analistas financeiros apontam três principais catalisadores para esta liquid
 Para empresas de médio porte e startups de desenvolvimento de software, esse cenário ressalta a importância de operar com eficiência. Basear o modelo de negócio na queima de capital para o desenvolvimento experimental já não é sustentável; A prioridade em 2026 é a rentabilidade das aplicações e a segurança lógica dos seus serviços.
 
 ---
-*Garante que a infraestrutura tecnológica da sua empresa seja robusta, segura e lucrativa no longo prazo. Conheça nossas soluções profissionais para [consultoria de segurança cibernética](/products/10).*
+*Garante que a infraestrutura tecnológica da sua empresa seja robusta, segura e lucrativa no longo prazo. Conheça nossas soluções profissionais para [consultoria de segurança cibernética](/productos/10).*

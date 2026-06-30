@@ -37,6 +37,6 @@ Où :
 
 Pour analyser vos identifiants et estimer mathématiquement le temps de décryptage, vous pouvez utiliser notre outil local :
 
-**[Essayez notre calculateur d'entropie](/tools/entropy-calculator)**
+**[Essayez notre calculateur d'entropie](/tools/calculadora-entropia)**
 
 Entrez n'importe quelle phrase ou mot de passe et découvrez instantanément ses bits d'entropie exacts et son niveau de sécurité réel contre les superordinateurs.

@@ -35,4 +35,4 @@ Pour créer des applications robustes qui ne seront pas rendues inutilisables pa
 * **Gestion des sauvegardes cryptographiques :** Chiffrez les invites et les réponses historiques au repos sur le serveur local. En cas de panne prolongée, le système peut récupérer des données précalculées et fournir des réponses mises en cache aux requêtes fréquemment posées.
 
 ---
-*Votre entreprise a-t-elle connu des problèmes de panne de service ou avez-vous besoin d'auditer et de protéger vos systèmes informatiques contre les crises de réseau ? Reprenez le contrôle opérationnel avec notre équipe [Réponse rapide aux incidents de sécurité](/products/11).*
+*Votre entreprise a-t-elle connu des problèmes de panne de service ou avez-vous besoin d'auditer et de protéger vos systèmes informatiques contre les crises de réseau ? Reprenez le contrôle opérationnel avec notre équipe [Réponse rapide aux incidents de sécurité](/productos/11).*

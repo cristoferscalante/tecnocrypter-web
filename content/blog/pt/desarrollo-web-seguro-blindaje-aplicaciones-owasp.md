@@ -42,4 +42,4 @@ Um erro comum é realizar validações de segurança apenas na interface do usu�
 * **Cabeçalhos de segurança HTTP:** Configure cabeçalhos de resposta como `Content-Security-Policy` (CSP) para evitar ataques de Cross-Site Scripting (XSS) e `Strict-Transport-Security` (HSTS) para forçar conexões TLS.
 
 ---
-*Você está construindo sua próxima aplicação web ou precisa auditar a segurança do seu código atual? Proteja o futuro do seu negócio digital com nosso serviço profissional de [Desenvolvimento Web Seguro](/products/1).*
+*Você está construindo sua próxima aplicação web ou precisa auditar a segurança do seu código atual? Proteja o futuro do seu negócio digital com nosso serviço profissional de [Desenvolvimento Web Seguro](/productos/1).*

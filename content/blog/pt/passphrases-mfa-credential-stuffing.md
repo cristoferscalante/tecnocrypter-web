@@ -51,9 +51,9 @@ Fuerza Bruta vs. Entropía:
 
 
 Para ajudá-lo a criar e validar a força de suas credenciais, você pode usar nossas ferramentas locais:
-1. **[Gerador de senha](/tools/generator-passwords)**: Se você precisar de uma senha tradicional, aleatória e complexa.
-2. **[Gerador de frase secreta](/tools/passphrase-generator)**: Crie frases seguras combinando palavras aleatórias com base em dicionários seguros de alta entropia.
-3. **[Verificador de senhas](/tools/verificador-passwords)**: Analise o nível de entropia em bits e estime o tempo necessário para quebrar sua credencial usando ataques de força bruta.
+1. **[Gerador de senha](/tools/generador-contrasenas)**: Se você precisar de uma senha tradicional, aleatória e complexa.
+2. **[Gerador de frase secreta](/tools/generador-passphrase)**: Crie frases seguras combinando palavras aleatórias com base em dicionários seguros de alta entropia.
+3. **[Verificador de senhas](/tools/verificador-contrasenas)**: Analise o nível de entropia em bits e estime o tempo necessário para quebrar sua credencial usando ataques de força bruta.
 
 ---
 ## A camada de defesa definitiva: MFA offline (TOTP)
@@ -86,7 +86,7 @@ def generate_totp(secret_key):
 
 
 
-O protocolo TOTP funciona 100% offline. Não é necessário que seu dispositivo tenha acesso à internet para validar o código, protegendo você contra interceptações. Em nossa plataforma temos o **[TOTP Generator](/tools/generator-totp)**, uma ferramenta web integrada que permite importar chaves secretas ou escanear sementes de autenticação para gerar seus códigos de acesso de forma local e privada.
+O protocolo TOTP funciona 100% offline. Não é necessário que seu dispositivo tenha acesso à internet para validar o código, protegendo você contra interceptações. Em nossa plataforma temos o **[TOTP Generator](/tools/generador-totp)**, uma ferramenta web integrada que permite importar chaves secretas ou escanear sementes de autenticação para gerar seus códigos de acesso de forma local e privada.
 
 ---
 ## Boas práticas de gerenciamento de credenciais
@@ -94,10 +94,10 @@ O protocolo TOTP funciona 100% offline. Não é necessário que seu dispositivo 
 * **Nunca reutilize senhas**: se um serviço vazar, todas as suas contas estarão em risco.
 * **Use um gerenciador de senhas local**: armazene suas chaves criptografadas com uma chave mestra forte baseada em uma *senha*.
 * **Ativar TOTP em cada conta**: Substitua SMS por geradores de código TOTP locais.
-* **Avalie suas senhas**: Antes de registrar uma conta importante, verifique sua entropia com nosso **[Verificador de senhas](/tools/verificador-passesenas)**.
+* **Avalie suas senhas**: Antes de registrar uma conta importante, verifique sua entropia com nosso **[Verificador de senhas](/tools/verificador-contrasenas)**.
 
 ## Conclusão
 
 O preenchimento de credenciais é uma ameaça enorme e automatizada, mas é completamente neutralizável. Ao adotar senhas longas e de alta entropia e proteger seus logins com fatores duplos locais baseados em TOTP, você fecha a porta para a grande maioria dos ataques cibernéticos direcionados a contas pessoais e corporativas.
 
-*Fortaleça sua identidade digital. Comece hoje mesmo gerando chaves indecifráveis ​​em nosso [Gerador de frase secreta](/tools/passphrase-generator) e configurando MFA em [Gerador TOTP](/tools/totp-generator).*
+*Fortaleça sua identidade digital. Comece hoje mesmo gerando chaves indecifráveis ​​em nosso [Gerador de frase secreta](/tools/generador-passphrase) e configurando MFA em [Gerador TOTP](/tools/generador-totp).*

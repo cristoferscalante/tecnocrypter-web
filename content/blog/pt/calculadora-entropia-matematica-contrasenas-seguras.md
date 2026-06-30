@@ -37,6 +37,6 @@ Como o comprimento ($L$) atua como um multiplicador direto no logaritmo do taman
 
 Para analisar suas credenciais e estimar matematicamente o tempo de descriptografia, você pode usar nossa ferramenta local:
 
-**[Experimente nossa calculadora de entropia](/tools/entropy-calculator)**
+**[Experimente nossa calculadora de entropia](/tools/calculadora-entropia)**
 
 Digite qualquer frase ou senha e descubra instantaneamente seus bits exatos de entropia e o nível real de segurança contra supercomputadores.

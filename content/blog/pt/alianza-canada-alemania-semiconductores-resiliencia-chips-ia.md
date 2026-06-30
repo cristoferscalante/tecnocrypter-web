@@ -39,4 +39,4 @@ O acordo prevê a integração vertical dos recursos de ambos os países:
 A cadeia de fornecimento de hardware é um dos vetores de ataque mais difíceis de mitigar. Se um processador for manipulado fisicamente durante sua fase de fabricação (através da introdução de um backdoor lógico no silício), nenhum software de segurança subsequente será capaz de detectar a vulnerabilidade. Proteger a origem dos componentes físicos é fundamental para proteger os servidores do futuro.
 
 ---
-* Audite e implemente medidas avançadas de proteção digital e prevenção de exploração em sua infraestrutura corporativa. Saiba mais sobre nosso serviço [Prevenção contra ataques e segurança empresarial](/products/10).*
+* Audite e implemente medidas avançadas de proteção digital e prevenção de exploração em sua infraestrutura corporativa. Saiba mais sobre nosso serviço [Prevenção contra ataques e segurança empresarial](/productos/10).*

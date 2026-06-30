@@ -35,6 +35,6 @@ This technique allows you to create filtering rules in your mailbox to automatic
 
 To generate secure logging schemes and manage logical aliases, you can use our tool:
 
-**[Try our Aliases and Credentials Generator](/tools/alias-generator)**
+**[Try our Aliases and Credentials Generator](/tools/generador-alias)**
 
 Create email aliases and usernames structured by platform to protect your primary identity with every online registration.

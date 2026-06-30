@@ -37,4 +37,4 @@ Encrypted eSIMs address these risks by implementing layers of protection directl
 Protecting our identity is not just an option, but an operational necessity in today's digital age.
 
 ---
-*Establish robust corporate policies and defenses to protect mobile information and prevent leaks in your company. Consult with our team specialized in [Attack Prevention and Business Security](/products/10).*
+*Establish robust corporate policies and defenses to protect mobile information and prevent leaks in your company. Consult with our team specialized in [Attack Prevention and Business Security](/productos/10).*

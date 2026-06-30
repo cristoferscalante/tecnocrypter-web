@@ -43,4 +43,4 @@ Once the transaction is completed, you will receive an email with a secure QR co
 4. Activate the encrypted eSIM as the default line for data use. All cellular traffic will be channeled through the private network's secure tunnel.
 
 ---
-*Do you want to shield your mobile connectivity and protect your communications in a professional way? Learn about our training and advisory program on privacy tools at [Digital Security Training](/products/8).*
+*Do you want to shield your mobile connectivity and protect your communications in a professional way? Learn about our training and advisory program on privacy tools at [Digital Security Training](/productos/8).*
